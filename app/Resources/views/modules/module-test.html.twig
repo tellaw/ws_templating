@@ -1,0 +1,10 @@
+<h2>Mon module</h2>
+<p>{{content.title}}</p>
+<p>{{content.text | raw }}</p>
+
+<ul>
+    {% for item in content.textes %}
+        <li>{{ item }}</li>
+    {% endfor %}
+</ul>
+
