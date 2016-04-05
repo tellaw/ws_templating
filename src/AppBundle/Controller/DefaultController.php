@@ -14,7 +14,6 @@ class DefaultController extends Controller
      */
     public function indexAction(Request $request, $name = "default/index")
     {
-
         // replace this example code with whatever you need
         return $this->render('pages/'.$name.'.html.twig', [
             'base_dir' => realpath($this->getParameter('kernel.root_dir').'/..'),

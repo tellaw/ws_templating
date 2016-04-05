@@ -1,0 +1,18 @@
+{# template : Le nom de mon template #}
+{# description : La description sur une ligne de mon template #}
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <h1>Hello World 2</h1>
+
+    {{ render(controller( 'AppBundle:Default:modules',   { 'name': 'module-test' } )) }}
+
+    {{ render(controller( 'AppBundle:Default:modules',   { 'name': 'module-test' } )) }}
+
+    {{ render(controller( 'AppBundle:Default:modules',   { 'name': 'module-test' } )) }}
+
+    {{ render(controller( 'AppBundle:Default:modules',   { 'name': 'module-test' } )) }}
+
+{% endblock %}
+
