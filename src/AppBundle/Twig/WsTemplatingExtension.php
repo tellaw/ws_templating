@@ -63,6 +63,7 @@ class WsTemplatingExtension extends \Twig_Extension
 
 
 	}
+
 	public function getJs ($value) {
 
 		$path = $this->container->get('router')->getContext()->getBaseUrl();
