@@ -1,7 +1,21 @@
+<<<<<<< HEAD
 h1 {
   font-size:10px;
 }
 .pousse {
   left: 295px;
   position: relative;
+=======
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+  color: $primary-color;
+  h2 {
+    color:red;
+    font-size: 50px;
+  }
+>>>>>>> 11fa066fce1097adc02ff86ab967efee287ab019
 }
