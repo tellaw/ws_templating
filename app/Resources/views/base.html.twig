@@ -4,11 +4,250 @@
         <meta charset="UTF-8" />
         <title>{% block title %}Welcome!{% endblock %}</title>
         <link rel="stylesheet" href="{{ css("style.css") }}">
-        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <!-- Web Fonts -->
+        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin">
 
+        <!-- CSS Global Compulsory -->
+        <link rel="stylesheet" href="{{ bootstrap("plugins/bootstrap/css/bootstrap.css") }}">
+        <link rel="stylesheet" href="{{ bootstrap("css/style.css") }}">
+
+        <!-- CSS Header and Footer -->
+        <link rel="stylesheet" href="{{ bootstrap("css/headers/header-v1.css") }}">
+        <link rel="stylesheet" href="{{ bootstrap("css/footers/footer-v2.css") }}">
+
+        <!-- CSS Header actuel -->
+        <!--<link rel="stylesheet" href="{{ css("header.css") }}">-->
+        <link rel="stylesheet" href="{{ css("responsive.css") }}">
+        <link rel="stylesheet" href="{{ css("style.css") }}">
+
+        <!-- CSS Implementing Plugins -->
+        <link rel="stylesheet" href="{{ bootstrap("plugins/animate.css") }}">
+        <link rel="stylesheet" href="{{ bootstrap("plugins/line-icons/line-icons.css") }}">
+        <link rel="stylesheet" href="{{ bootstrap("plugins/font-awesome/css/font-awesome.min.css") }}">
+        <link rel="stylesheet" href="{{ bootstrap("plugins/login-signup-modal-window/css/style.css") }}">
+
+        <!-- CSS Theme -->
+        <link rel="stylesheet" href="{{ bootstrap("css/theme-colors/light.css") }}" id="style_color">
+        <link rel="stylesheet" href="{{ bootstrap("css/theme-skins/dark.css") }}">
+        <link rel="stylesheet" href="{{ bootstrap("plugins/owl-carousel2/assets/owl.carousel.css") }}">
+
+        <!-- CSS Customization -->
+        <link rel="stylesheet" href="{{ bootstrap("css/custom.css") }}">
+
+        <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
+        <style>
+            .form-control:focus{
+                background-color: #F3F3F3;
+                -moz-box-shadow: inset 0px 0px 10px 0px #df2626;
+                -webkit-box-shadow: inset 0px 0px 10px 0px #df2626;
+                -o-box-shadow: inset 0px 0px 10px 0px #df2626;
+                box-shadow: inset 0px 0px 10px 0px #df2626;
+                filter:progid:DXImageTransform.Microsoft.Shadow(color=#df2626, Direction=NaN, Strength=10);
+            }
+            .has-error .form-control:focus{
+                box-shadow: none;
+                -webkit-box-shadow: none
+            }
+        </style>
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <script type="text/javascript" src="{{ bootstrap("plugins/jquery/jquery.min.js") }}"></script>
     </head>
     <body>
         {% block body %}{% endblock %}
         {% block javascripts %}{% endblock %}
+
+        <!-- JS Global Compulsory -->
+        <script type="text/javascript" src="{{ bootstrap("plugins/jquery/jquery.min.js") }}"></script>
+        <script type="text/javascript" src="{{ bootstrap("plugins/jquery/jquery-migrate.min.js") }}"></script>
+        <script type="text/javascript" src="{{ bootstrap("plugins/bootstrap/js/bootstrap.min.js") }}"></script>
+        <!-- JS Implementing Plugins -->
+        <script type="text/javascript" src="{{ bootstrap("plugins/back-to-top.js") }}"></script>
+        <script type="text/javascript" src="{{ bootstrap("plugins/smoothScroll.js") }}"></script>
+        <script type="text/javascript" src="{{ bootstrap("plugins/modernizr.js") }}"></script>
+        <script type="text/javascript" src="{{ bootstrap("plugins/jquery.parallax.js") }}"></script>
+        <script type="text/javascript" src="{{ bootstrap("plugins/bootstrap-tabcollapse.js") }}"></script>
+        <script src="{{ bootstrap("plugins/login-signup-modal-window/js/main.js") }}"></script> <!-- Gem jQuery -->
+        <script src="{{ bootstrap("plugins/owl-carousel2/owl.carousel.min.js") }}"></script>
+        <!-- JS Customization -->
+        <script type="text/javascript" src="{{ bootstrap("js/custom.js") }}"></script>
+        <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
+
+        <script src="https://use.typekit.net/edt6ead.js"></script>
+        <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+
+        <!-- JS Page Level -->
+        <script type="text/javascript" src="{{ bootstrap("js/app.js") }}"></script>
+        <!-- 			<script type="text/javascript" src="assets/plugins/style-switcher.js"></script>
+        -->		<script type="text/javascript">
+            jQuery(document).ready(function() {
+                if (($(window).width() >= 992) && ($(window).scrollTop() == 0)) {
+                    $("#navbar-x").addClass("in");
+                    $("#button-menu-header").css('cssText', 'display: none !important');
+                }
+
+                if (($(window).width() >= 992) && ($(window).scrollTop() == 0)) {
+                    $("#navbar-x").addClass("in");
+                    $("#button-menu-header").css('cssText', 'display: none !important');
+                }
+
+                $(window).scroll(function(){
+                    if (($(window).width() >= 992) && ($(window).scrollTop() == 0)) {
+                        $("#navbar-x").addClass("in");
+                        $("#advanced-search-box").css('cssText', 'display: block !important');
+                        $("#button-menu-header").css('cssText', 'display: none !important');
+                        $("#div-menu-header").css('cssText', 'display: none !important');
+
+                    } else if (($(window).width() >= 992) && ($(window).scrollTop() != 0)) {
+                        $("#navbar-x").removeClass("in");
+                        $("#advanced-search-box").hide();
+                        $("#button-menu-header").css('cssText', 'display: block !important');
+                        $("#div-menu-header").css('cssText', 'display: block !important');
+
+                    }
+                });
+
+                App.init();
+                //StyleSwitcher.initStyleSwitcher();
+                $('.your-class').slick({
+                    dots: true,
+                    arrows: false,
+                    //autoplay: true,
+                    //autoplaySpeed: 3000
+                });
+                $(".owl-carousel").owlCarousel({
+                    loop: false,
+                    responsiveClass: true,
+                    slideBy: 2,
+                    responsive: {
+                        0: {
+                            items: 1,
+                            nav: false
+                        },
+                        426: {
+                            items: 2,
+                            nav: true
+                        }
+                    },
+                    navText: [
+                        "<i class='fa fa-angle-left'></i>",
+                        "<i class='fa fa-angle-right'></i>"
+                    ],
+                    navClass: [
+                        "owl-custom-left",
+                        "owl-custom-right"
+                    ],
+                    controlsClass: "owl-custom-controls"
+                });
+
+            });
+
+            $('#sticky-menu-phone').on('click', function() {
+                $('#sticky-menu-slide-phone').animate({
+                    right:"40px"
+                }, 500);
+
+                var hiddenField = $('#sticky-menu-phone'),
+                        val = hiddenField.val();
+                hiddenField.val(val === "true" ? "false" : "true");
+
+                if (hiddenField.val() == "true") {
+                    $('#sticky-menu-slide-share').animate({
+                        right:"-220px"
+                    }, 500);
+                    $('#sticky-menu-slide-plane').animate({
+                        right:"-220px"
+                    }, 500);
+
+                    var hiddenFieldd = $('#sticky-menu-share'),
+                            val = hiddenFieldd.val();
+                    hiddenFieldd.val("false");
+
+                    var hiddenFielddd = $('#sticky-menu-plane'),
+                            val = hiddenFielddd.val();
+                    hiddenFielddd.val("false");
+
+                }
+                else if (hiddenField.val() == "false"){
+                    $('#sticky-menu-slide-phone').animate({
+                        right:"-220px"
+                    }, 500);
+                }
+            });
+
+            $('#sticky-menu-share').on('click', function() {
+                $('#sticky-menu-slide-share').animate({
+                    right:"40px"
+                }, 500);
+
+                var hiddenField = $('#sticky-menu-share'),
+                        val = hiddenField.val();
+                hiddenField.val(val === "true" ? "false" : "true");
+
+                if (hiddenField.val() == "true") {
+                    $('#sticky-menu-slide-phone').animate({
+                        right:"-220px"
+                    }, 500);
+                    $('#sticky-menu-slide-plane').animate({
+                        right:"-220px"
+                    }, 500);
+
+                    var hiddenFieldd = $('#sticky-menu-phone'),
+                            val = hiddenFieldd.val();
+                    hiddenFieldd.val("false");
+
+                    var hiddenFielddd = $('#sticky-menu-plane'),
+                            val = hiddenFielddd.val();
+                    hiddenFielddd.val("false");
+
+
+                }
+                else if (hiddenField.val() == "false"){
+                    $('#sticky-menu-slide-share').animate({
+                        right:"-220px"
+                    }, 500);
+                }
+            });
+
+            $('#sticky-menu-plane').on('click', function() {
+                $('#sticky-menu-slide-plane').animate({
+                    right:"40px"
+                }, 500);
+
+                var hiddenField = $('#sticky-menu-plane'),
+                        val = hiddenField.val();
+                hiddenField.val(val === "true" ? "false" : "true");
+
+                if (hiddenField.val() == "true") {
+                    $('#sticky-menu-slide-phone').animate({
+                        right:"-220px"
+                    }, 500);
+                    $('#sticky-menu-slide-share').animate({
+                        right:"-220px"
+                    }, 500);
+
+                    var hiddenFieldd = $('#sticky-menu-phone'),
+                            val = hiddenFieldd.val();
+                    hiddenFieldd.val("false");
+
+                    var hiddenFielddd = $('#sticky-menu-share'),
+                            val = hiddenFielddd.val();
+                    hiddenFielddd.val("false");
+
+
+                }
+                else if (hiddenField.val() == "false"){
+                    $('#sticky-menu-slide-plane').animate({
+                        right:"-220px"
+                    }, 500);
+                }
+            });
+        </script>
+
+        <!--[if lt IE 9]>
+        <script src="{{ bootstrap("plugins/respond.js") }}"></script>
+        <script src="{{ bootstrap("plugins/html5shiv.js") }}"></script>
+        <script src="{{ bootstrap("plugins/placeholder-IE-fixes.js") }}"></script>
+        <![endif]-->
     </body>
 </html>

@@ -25,6 +25,7 @@ class WsTemplatingExtension extends \Twig_Extension
 			'module' => new \Twig_Function_Method($this, 'getModule'),
 			'media' => new \Twig_Function_Method($this, 'getMedia'),
 			'css' => new \Twig_Function_Method($this, 'getCss'),
+			'bootstrap' => new \Twig_Function_Method($this, 'getBootstrap'),
 			'js' => new \Twig_Function_Method($this, 'getJs')
 		);
 	}
@@ -49,7 +50,7 @@ class WsTemplatingExtension extends \Twig_Extension
 		$path = $this->container->get('router')->getContext()->getBaseUrl();
 		$path = str_replace ("app_dev.php", "", $path);
 		// replace this example code with whatever you need
-		echo ($path."bundles/framework/images/".$value);
+		echo ($path."images/".$value);
 
 
 	}
@@ -60,6 +61,16 @@ class WsTemplatingExtension extends \Twig_Extension
 		$path = str_replace ("app_dev.php", "", $path);
 		// replace this example code with whatever you need
 		echo ($path."css/".$value);
+
+
+	}
+
+	public function getBootstrap ($value) {
+
+		$path = $this->container->get('router')->getContext()->getBaseUrl();
+		$path = str_replace ("app_dev.php", "", $path);
+		// replace this example code with whatever you need
+		echo ($path."assets/".$value);
 
 
 	}

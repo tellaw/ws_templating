@@ -1,0 +1,195 @@
+
+.subMenu {
+	height: 70px;
+	z-index: 10;
+	width: 100%;
+	background: #0977bc;
+}
+
+.subMenu .inner {
+	padding:0;
+	font-weight: 400;
+	margin: 0 auto;
+}
+
+.inner {
+	width: 960px;
+	margin: 0 auto;
+	position: relative;
+	min-height: 50px;
+	height: 70px;
+	padding:30px 0;
+	font-size: 18px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+}
+
+.inner:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.subNavBtn {
+	display: block;
+	height: 35px;
+	height: 100%;
+	width: 20%;
+	float: left;
+	margin: 0px 0px 0 0;
+	text-decoration: none;
+	font-size: 14px;
+	padding: 15px 2% 0 2%;
+	text-align: center;	
+	color: #fff;
+}
+
+.subMenu a:hover {
+	background: #1783c7;
+}
+
+.active {
+	background: #25aae1;
+}
+.end {
+	margin: 0;
+}
+
+@media screen and (max-width: 959px) { 
+
+	.wrap {
+		width: 100%;
+		max-width: 640px;
+		min-width: 320px;
+		z-index: 10;
+		position: relative;
+		margin: 0 auto;
+		padding: 0;
+	}
+
+	.inner {
+		width:90%;
+		padding:0 5%;
+	}
+
+	.section {
+		min-width: 320px;
+	}
+
+	.section .inner {
+		padding:20px 5%;
+	}
+
+	.subMenu {
+		position: relative;
+		min-height: 50px;
+		z-index: 1000;
+		width: 100%;
+		//max-width: 640px;
+		//min-width: 320px;
+	}
+
+	.subMenu .inner {
+		width: 100% ;
+		padding: 0;
+	}
+
+	.subNavBtn {
+		font-size: 12px;
+		padding: 15px 3px 0 3px;
+	}
+}
+
+@media screen and (max-width: 640px) { 
+
+	.wrap {
+		max-width: 480px;
+	}
+
+	.sTop {}
+
+	/*.subNavBtn {
+		display: block;
+		height: 40px;
+		width: 21%;
+		float: left;
+		margin: 0px 0px 0 0;
+		text-decoration: none;
+		font-size: 12px;
+		padding: 15px 2% 0 2%;
+		text-align: center;
+	}*/
+
+	.twWrap {
+		right:none;
+		left:0;
+	}
+
+	.subMenu {
+		height: 90px;
+		/*top: 356px;*/
+		max-width: 480px;
+	}
+
+}
+
+@media screen and(min-width: 330px) and (max-width: 480px) { 
+	.wrap {
+		max-width: 320px;
+	}
+
+	.sTop { }
+
+	.subMenu {
+		top:290px;
+		max-width: 320px;
+	}
+
+	.fxd{
+		top: none!!important;
+		bottom:0!important;
+	}
+
+}
+
+@media screen and (max-width: 480px) { 
+	.inner {
+		height: 35px;
+		font-size: 16px;
+	}
+
+	.sTop {
+
+	}
+
+	.subMenu {
+		height: 35px;
+	}
+
+	.subNavBtn {
+		display: block;
+		height: 100%;
+		width: 20%;
+		float: left;
+		margin: 0px 0px 0 0;
+		text-decoration: none;
+		font-size: 12px;
+		padding: 10px 2% 0 2%;
+		text-align: center;
+		line-height: 110%;
+	}
+
+	.active {
+		background: #25aae1;
+	}
+
+	.subMenu {
+		/*top:290px;*/
+	}
+
+	.fxd{
+		top: none!!important;
+		bottom:0!important;
+	}
+
+}
