@@ -1,0 +1,23 @@
+#preprod
+deployment:
+  user: jenkins
+  from: ./
+  to: /data/apps/ti_catalogue
+  excludes:
+  strategy: targz
+releases:
+  enabled: true
+  max: 3
+  symlink: current
+  directory: releases
+hosts:
+  - 10.25.109.234
+tasks:
+  pre-deploy:
+    - composer-install: {dev: true}
+  on-deploy:
+    - chmod
+    - filesystem/link-shared-files: {linked_files : [], linked_folders: [var/cache, var/logs, var/sessions, app/logs]}
+    - chmod
+  post-release:
+  post-deploy:
