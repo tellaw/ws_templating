@@ -1,0 +1,169 @@
+/* Small only */
+@media screen and (max-width: 768px) {
+  .row .small-collapse-left {
+    padding-left: 0; }
+  .row .small-collapse-right {
+    padding-right: 0; }
+  .row .small-collapse-all {
+    padding-left: 0;
+    padding-right: 0; }
+  .no-gutters {
+    padding-right: 0;
+    padding-left: 0; } }
+
+/* Medium only */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .row .medium-collapse-left {
+    padding-left: 0; }
+  .row .medium-collapse-right {
+    padding-right: 0; }
+  .row .medium-collapse-all {
+    padding-left: 0;
+    padding-right: 0; }
+  .posts_list .visuel {
+    width: 100%;
+    /*padding: 0 10px 0 0;*/ }
+  .posts_list .zoning {
+    /*max-height: 225px;
+      overflow: hidden;*/ } }
+
+/* Large and up */
+@media screen and (min-width: 1200px) {
+  .row .large-collapse-left {
+    padding-left: 0; }
+  .row .large-collapse-right {
+    padding-right: 0; }
+  .row .large-collapse-all {
+    padding-left: 0;
+    padding-right: 0; }
+  #header {
+    padding: 10px 0; }
+  #search-box form {
+    position: relative;
+    margin-top: 0.5rem; }
+  #register_link-connected {
+    margin: 10px 0 0 0;
+    float: none; }
+    #register_link-connected a {
+      padding: 10px; }
+  #espace-abo .contact-link {
+    float: none;
+    padding: 0;
+    margin: 0.6rem 0 0 0; }
+    #espace-abo .contact-link .symbole {
+      height: auto;
+      width: auto;
+      display: inline-block;
+      font-size: 14px;
+      line-height: 19px;
+      padding: 0px 7px 1px 6px; }
+  #main-menu {
+    height: 40px; }
+    #main-menu ul {
+      background-color: transparent; }
+      #main-menu ul li.active {
+        height: 40px; }
+      #main-menu ul li.resdoc, #main-menu ul li.actu {
+        background: none; }
+      #main-menu ul li.actu {
+        /*padding: 0 50px 0 0;*/ }
+      #main-menu ul li.bouton:hover a {
+        color: #ffffff;
+        background: #ca030a; }
+      #main-menu ul li.externe:hover {
+        background: black; }
+        #main-menu ul li.externe:hover a {
+          color: #ffffff; }
+      #main-menu ul li a {
+        padding: 1.2rem 0.5rem 0.7rem;
+        height: 40px;
+        color: #333333;
+        border-bottom: none; }
+      #main-menu ul li.externe a {
+        font-size: 10px;
+        text-transform: uppercase;
+        font-weight: normal;
+        padding: 14px 5px 16px 15px; }
+      #main-menu ul li.whitepaper a {
+        background: url("../images/arrow-red-right.png") 6px 17px no-repeat !important; }
+      #main-menu ul li.bout a {
+        background: url("../images/arrow-orange-right.png") 6px 17px no-repeat !important; }
+  #header .container {
+    width: 960px; }
+  .navbar .container {
+    width: 960px; }
+  .bandeau-top .title {
+    font-size: 1.5rem; }
+    .bandeau-top .title .goToShop {
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      color: #333333;
+      background-color: #f3f3f3;
+      padding: 5px;
+      float: right;
+      margin-top: 4px;
+      font-weight: bold; }
+  .posts_list .visuel {
+    width: 100%;
+    /*padding: 0 10px 0 0;*/ }
+  .navbar-collapse.collapse {
+    display: block; } }
+
+/* small and up */
+@media screen and (min-width: 0px) and (max-width: 1200px) {
+  .top-bar-right {
+    width: 100%; }
+  .buton-grey {
+    background: #d3d3d3; }
+  #bloc-ressources-documentaires .top {
+    background-size: 100% 100%;
+    height: 160px; }
+    #bloc-ressources-documentaires .top a {
+      padding: 50px 0; }
+  #owl-carousel .item .contentContainer {
+    width: 100%;
+    background: none; }
+    #owl-carousel .item .contentContainer .title {
+      position: absolute;
+      top: 0;
+      text-align: center;
+      margin-top: 20px;
+      padding: 0 10px;
+      width: 100%;
+      color: white;
+      font-size: 1em;
+      font-weight: bold; }
+  #shorcuts_nav {
+    background: #333333; }
+  .posts_list .infos-post .titre a {
+    min-height: 66px; }
+  .navbar {
+    min-height: 0; }
+  #shorcuts_nav {
+    background: #333333; }
+  .navbar-toggle {
+    display: block; }
+  .navbar-nav > li {
+    float: none; }
+  .navbar-nav {
+    float: none; }
+  #main-menu ul li.externe {
+    float: none; }
+  #main-menu ul li {
+    padding-left: 0px !important;
+    padding-right: 0px !important; }
+    #main-menu ul li a {
+      padding: 15px !important; }
+  #liens-reseaux-sociaux ul {
+    float: none; }
+    #liens-reseaux-sociaux ul li a {
+      border: none; }
+  .navbar-toggle {
+    margin: 0; }
+  #search-box form {
+    margin-top: 12px; }
+  #register_link-connected {
+    margin: 10px 5px 0;
+    padding: 6px; }
+  #espace-abo .contact-link {
+    margin-top: 2px; } }
