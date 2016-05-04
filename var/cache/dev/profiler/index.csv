@@ -37,6 +37,12 @@ b46d4e,192.168.56.1,GET,http://local.dev/ws_templating/web/app_dev.php/page/test
 6332fb,192.168.56.1,GET,http://local.dev/ws_templating/web/app_dev.php/page/test/actualite/test,1459867931,2990f3,200
 2990f3,192.168.56.1,GET,http://local.dev/ws_templating/web/app_dev.php/page/test/actualite/test,1459867931,,500
 527978,192.168.56.1,GET,http://local.dev/ws_templating/web/app_dev.php/page/test/actualite/test,1459867964,,200
+<<<<<<< HEAD
+116eef,192.168.56.1,GET,http://local.dev/ws_templating/web/app_dev.php/page/test/actualite/toto,1460528912,05ff65,200
+05ff65,192.168.56.1,GET,http://local.dev/ws_templating/web/app_dev.php/page/test/actualite/toto,1460528912,,500
+f6001c,192.168.56.1,GET,http://local.dev/ws_templating/web/app_dev.php/page/test/actualite/test,1460528935,,200
+2b7e5a,192.168.56.1,GET,http://local.dev/ws_templating/web/app_dev.php/page/test/actualite/test,1460529060,,200
+=======
 ef3508,::1,GET,http://localhost/~ericwallet/ws_templating/web/app_dev.php/page/,1460469772,195ef3,200
 195ef3,::1,GET,http://localhost/~ericwallet/ws_templating/web/app_dev.php/page/,1460469772,,404
 87ffd6,::1,GET,http://localhost/~ericwallet/ws_templating/web/app_dev.php/page/test/actualite/test,1460469801,,200
@@ -54,3 +60,4 @@ a2127c,::1,GET,http://localhost/~ericwallet/ws_templating/web/app_dev.php/page/t
 4656f5,::1,GET,http://localhost/~ericwallet/ws_templating/web/app_dev.php/web/,1460471005,,404
 c63cfb,::1,GET,http://localhost/~ericwallet/ws_templating/web/app_dev.php/page/test/actualite/test,1460471083,,200
 3ab35f,::1,GET,http://localhost/~ericwallet/ws_templating/web/app_dev.php/page/test/actualite/test,1460471103,,200
+>>>>>>> 11fa066fce1097adc02ff86ab967efee287ab019
