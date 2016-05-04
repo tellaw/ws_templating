@@ -4,6 +4,10 @@ deployment:
   from: ./
   to: /data/apps/ti_catalogue
   excludes:
+    - var/cache
+    - var/logs
+    - var/sessions
+    - app/logs
   strategy: targz
 releases:
   enabled: true
@@ -16,7 +20,6 @@ tasks:
   pre-deploy:
     - composer-install: {dev: true}
   on-deploy:
-    - chmod
     - filesystem/link-shared-files: {linked_files : [], linked_folders: [var/cache, var/logs, var/sessions, app/logs]}
     - chmod
   post-release:
