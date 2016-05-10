@@ -9,7 +9,7 @@
                         <li id="menu-item-530" class="bouton ress actu menu-item menu-item-type-custom menu-item-object-custom menu-item-530"><a href="/actualite/">Espace actualité</a></li>
                         <li id="menu-item-531" class="bouton bout externe formation menu-item menu-item-type-custom menu-item-object-custom menu-item-531"><a href="/formation/">Formation</a></li>
                         <li id="menu-item-16" class="bouton bout externe conseil menu-item menu-item-type-custom menu-item-object-custom menu-item-16"><a href="/boutique/conseil">Conseil</a></li>
-                        <li id="menu-item-406" class="bouton whitepaper externe menu-item menu-item-type-custom menu-item-object-custom menu-item-406"><a href="/actualite/livre-blanc/">Téléchargements gratuits</a></li>
+                        <li id="menu-item-406" class="bouton whitepaper externe menu-item menu-item-type-custom menu-item-object-custom menu-item-406"><a href="./gratuits">Téléchargements gratuits</a></li>
                         <li id="menu-item-419" class="contact menu-item menu-item-type-custom menu-item-object-custom menu-item-419"><a href="/edito/contact.html">Contact</a></li>
                     </ul>                </div>
                 <ul class="right">
@@ -106,7 +106,7 @@
                     <li class="bouton ress actu menu-item menu-item-type-custom menu-item-object-custom menu-item-530"><a href="/actualite/">Espace actualité</a></li>
                     <li class="bouton bout externe formation menu-item menu-item-type-custom menu-item-object-custom menu-item-531"><a href="/formation/">Formation</a></li>
                     <li class="bouton bout externe conseil menu-item menu-item-type-custom menu-item-object-custom menu-item-16"><a href="/boutique/conseil">Conseil</a></li>
-                    <li class="bouton whitepaper externe menu-item menu-item-type-custom menu-item-object-custom menu-item-406"><a href="/actualite/livre-blanc/">Téléchargements gratuits</a></li>
+                    <li class="bouton whitepaper externe menu-item menu-item-type-custom menu-item-object-custom menu-item-406"><a href="./gratuits">Téléchargements gratuits</a></li>
                     <li class="contact menu-item menu-item-type-custom menu-item-object-custom menu-item-419"><a href="/edito/contact.html">Contact</a></li>
                 </ul>
                 <ul class="right">
@@ -189,11 +189,11 @@
             var url = link.attr('href');
             var label = link.text();
             e.preventDefault();
-            if(typeof(ga) == "function") {
+            /*if(typeof(ga) == "function") {
                 ga('send', 'event', 'header_unique_2015', label);
             }else{
                 __gaTracker('send', 'event', 'header_unique_2015', label);
-            }
+            }*/
             //_gaq.push(['_trackEvent', 'header_unique_2015', label]);
             setTimeout(function () {
                 document.location = url;

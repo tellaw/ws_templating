@@ -11,12 +11,12 @@
                     <div class="col-xs-11 col-sm-4 col-md-3 xxs-margin-top-10">
                         <a href="">
                             <center>
-                                <img id="logo-header" class="img-responsive xs-margin-top-0 sm-margin-top-20  lg-margin-top" src="assets/img/logo-eti.png" alt="Logo">
+                                <img id="logo-header" class="img-responsive xs-margin-top-0 sm-margin-top-20  lg-margin-top" src="{{ bootstrap("img/logo-eti.png") }}" alt="Logo">
                             </center>
                         </a>
                     </div>
                     <div class="col-xs-1 col-sm-1 col-md-6" style="padding-right: 0px;">
-                        <h5 class="margin-top-55 color-red-eti hidden-xs hidden-sm title-font-size" ><strong>L'EXPERT TECHNIQUE ET SCIENTIFIQUE DE RÉFÉRENCE</strong></h5>
+                        <h5 class="margin-top-55 color-red-eti hidden-xs hidden-sm title-font-size"><strong>L'EXPERT TECHNIQUE ET SCIENTIFIQUE DE RÉFÉRENCE</strong></h5>
                     </div>
                     <div class="hidden-xs hidden-sm col-sm-7 col-md-3 hdr-srch-col" style="padding-left: 0px;padding-right: 0px;">
 
@@ -41,9 +41,9 @@
                             <button type="button" class="btn-u btn-color margin-bottom-10 xs-margin-top-2 xs-font-size-20 sm-margin-top-20 md-margin-top-35"><i class="fa fa-user header-btn-size"></i></button>
                         </center>
                     </div>
-                    <div id="div-menu-header" class="col-xs-3 col-sm-4 col-md-4 hdr-btn-col">
+                    <div id="div-menu-header" class="col-xs-3 col-sm-4 col-md-4 hdr-btn-col" style="display: none !important;">
                         <center>
-                            <button id="button-menu-header" type="button" class="btn-u btn-color margin-bottom-10 xs-margin-top-2 xs-font-size-20 sm-margin-top-20 md-margin-top-35" data-toggle="collapse" data-target=".navbar-responsive-collapse"><i class="fa fa-bars header-btn-size"></i></button>
+                            <button id="button-menu-header" type="button" class="btn-u btn-color margin-bottom-10 xs-margin-top-2 xs-font-size-20 sm-margin-top-20 md-margin-top-35" data-toggle="collapse" data-target=".navbar-responsive-collapse" style="display: none !important;"><i class="fa fa-bars header-btn-size"></i></button>
                         </center>
                     </div>
                 </div>
@@ -54,7 +54,7 @@
         <div class="clearfix"></div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div id="navbar-x"  class="collapse navbar-responsive-collapse menu-background-color border-navbar">
+        <div id="navbar-x" class="collapse navbar-responsive-collapse menu-background-color border-navbar in">
             <div class="container border-bottom-dark-gray">
                 <ul class="nav navbar-nav" style="width: 100%;">
 
@@ -142,13 +142,13 @@
                                     <li><a href="#"> Géopolitique de l'énergie</a></li>
                                     <li><a href="#"> High-tech</a></li>
                                     <li><a href="#"> Web</a></li>
-                                    <li><a href="#"> Recherche, innovation & Espace</a></li>
+                                    <li><a href="#"> Recherche, innovation &amp; Espace</a></li>
                                 </ul>
                             </div>
                             <div class="col-md-4">
                                 <ul class="list-unstyled equal-height-list">
-                                    <li><a href="#"> Matériaux innovants & nano</a></li>
-                                    <li><a href="#"> Biotech & Chimie</a></li>
+                                    <li><a href="#"> Matériaux innovants &amp; nano</a></li>
+                                    <li><a href="#"> Biotech &amp; Chimie</a></li>
                                     <li><a href="#"> Entreprise</a></li>
                                     <li><a href="#"> Etre Ingénieur</a></li>
                                     <li><a href="#"> Insolite</a></li>
@@ -233,13 +233,13 @@
                     <!-- CONTACTS -->
                     <li class="dropdown dropdown-style navbar-mods md-lg-hide">
                         <p>
-                        <div class="input-group input-grp" style="width: 100%;">
-                            <input class="form-control input-srch-col search-bar" style="padding-left: 8px; width: 187px;"placeholder="Tapez votre recherche ici" type="text">
+                        </p><div class="input-group input-grp" style="width: 100%;">
+                            <input class="form-control input-srch-col search-bar" style="padding-left: 8px; width: 187px;" placeholder="Tapez votre recherche ici" type="text">
 										<span class="input-group-btn">
 											<button class="btn-u bg-color-red-eti " type="button"><i class="glyphicon glyphicon-search"></i></button>
 										</span>
                         </div>
-                        </p>
+                        <p></p>
                     </li>
                     <!-- End CONTACTS -->
 

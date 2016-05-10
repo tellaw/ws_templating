@@ -1,5 +1,5 @@
-{# wk-template : Le nom de mon template #}
-{# wk-description : La description sur une ligne de mon template #}
+{# wk-template : gratuits.html.twig #}
+{# wk-description : Page les gratuits du site #}
 {% extends 'base.html.twig' %}
 
 {% block body %}
@@ -51,49 +51,83 @@
 
         <div class="margin-bottom-40 margin-right-left-160">
             <div class="row">
-                {{ module('recherche/recherche') }}
+                <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2">
+                    {{ module('recherche/recherche') }}
+                </div>
             </div>
         </div>
 
-        <hr id="hr-separator" class="margin-top-10">
+        <hr id="hr-separator">
         <i class="fa fa-bullseye accueil-title-icon-1"></i>
         <h3 class="text-red font-weight-300 margin-bottom-10"><i class="fa fa-bullseye accueil-title-icon-2"></i>LE MAGAZINE DE <strong>L'ACTUALITE</strong></h3>
         <div class="eti-accueil-devider margin-left-23 margin-bottom-20"></div>
 
-        <div>
-            <div class="row margin-left-right">
-                <div class="hidden-xs hidden-sm col-md-4 no-gutters">
-                    {{ module('actualite/article-300x510') }}
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-8">
-                    <div class="row">
-                        <div class="col-xs-6 col-sm-6 col-md-6 no-gutters">
-                            {{ module('actualite/article-300x250') }}
-                            {{ module('actualite/emplacement-pub-300x250') }}
-                        </div>
-                        <div class="col-xs-6 col-sm-6 col-md-6 no-gutters">
-                            <div class="row">
-                                {{ module('actualite/article-300x250') }}
-                                {{ module('actualite/article-300x250') }}
-                            </div>
+        <div class="row margin-left-right">
+            <div class="hidden-xs hidden-sm col-md-4 no-gutters">
+                {{ module('actualite/article-300x510') }}
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-8">
+                <div class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-6 no-gutters">
+                        {{ module('actualite/article-300x250') }}
+                        {{ module('actualite/article-300x250') }}
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-6 no-gutters">
+                        <div class="row">
+                            {{ module('actualite/article-300x510') }}
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <p class="text-center margin-top-40">
+            <a href="#" class="btn-u btn-brd btn-u-red btn-u-sm color-red-eti" type="button"><i class="fa fa-fa fa-chevron-right margin-right-5"></i> TOUTE L'ACTUALITÉ</a>
+        </p>
 
-        <hr id="hr-separator" class="margin-top-10">
+        <hr id="hr-separator">
         <i class="fa fa-bullseye accueil-title-icon-1"></i>
         <h3 class="text-red font-weight-300 margin-bottom-10"><i class="fa fa-bullseye accueil-title-icon-2"></i>LES<strong>LIVRES BLANCS</strong></h3>
         <div class="eti-accueil-devider margin-left-23 margin-bottom-20"></div>
+        <div class="row margin-left-right">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 xs-padding-0 no-gutters">
+                {{ module("livre-blanc/livre-blanc") }}
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 xs-padding-0 no-gutters">
+                {{ module("livre-blanc/livre-blanc") }}
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 xs-padding-0 no-gutters">
+                {{ module("livre-blanc/livre-blanc") }}
+            </div>
+        </div>
+        <p class="text-center margin-top-40">
+            <a href="#" class="btn-u btn-brd btn-u-red btn-u-sm color-red-eti" type="button"><i class="fa fa-fa fa-chevron-right margin-right-5"></i> TOUS LES LIVRES BLANCS</a>
+        </p>
 
-        <hr id="hr-separator" class="margin-top-10">
+        <hr id="hr-separator">
         <i class="fa fa-bullseye accueil-title-icon-1"></i>
         <h3 class="text-red font-weight-300 margin-bottom-10"><i class="fa fa-bullseye accueil-title-icon-2"></i>LES<strong>CONFÉRENCES</strong></h3>
         <div class="eti-accueil-devider margin-left-23 margin-bottom-20"></div>
+        <div class="row margin-left-right">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 xs-padding-0 xs-margin-bottom-15 no-gutters">
+                {{ module("conference/conference") }}
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 xs-padding-0 xs-margin-bottom-15 no-gutters">
+                {{ module("conference/conference") }}
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 xs-padding-0 xs-margin-bottom-15 no-gutters">
+                {{ module("conference/conference") }}
+            </div>
+        </div>
+        <p class="text-center margin-top-40">
+            <a href="#" class="btn-u btn-brd btn-u-red btn-u-sm color-red-eti" type="button"><i class="fa fa-fa fa-chevron-right margin-right-5"></i> TOUTES LES CONFERENCES</a>
+        </p>
 
-        <hr id="hr-separator" class="margin-top-10">
+        <hr id="hr-separator">
         {{ module('newsletter/newsletter') }}
+
+        {{ module('reassurance/reassurance2') }}
+
+        {{ module('footer/footer') }}
     </div>
 
 </div><!--/wrapper-->

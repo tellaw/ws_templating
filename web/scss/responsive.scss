@@ -158,11 +158,11 @@ $color-red : #ca030a;
     }
   }
 
-  .navbar {
+  /*.navbar {
     .container {
       width: 960px;
     }
-  }
+  }*/
 
   .bandeau-top {
     .title {
@@ -256,9 +256,11 @@ $color-red : #ca030a;
     display: block;
   }
 
-  .navbar-nav{
-    >li {
-      float:none;
+  .wrapper {
+    .navbar-nav{
+      >li {
+        float:none;
+      }
     }
   }
 

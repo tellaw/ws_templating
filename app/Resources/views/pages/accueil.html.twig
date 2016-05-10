@@ -1,5 +1,5 @@
-{# wk-template : Le nom de mon template #}
-{# wk-description : La description sur une ligne de mon template #}
+{# wk-template : accueil.html.twig #}
+{# wk-description : Page d'accueil du site #}
 {% extends 'base.html.twig' %}
 
 {% block body %}
@@ -61,7 +61,9 @@
 					<h3 class="color-red-eti font-weight-300 margin-bottom-10">PAR <strong>MOTS-CLES</strong></h3>
 					<div class="eti-accueil-devider margin-bottom-20"></div>
 				</div>
-				{{ module('recherche/recherche') }}
+				<div class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
+					{{ module('recherche/recherche') }}
+				</div>
 			</div>
 		</div>
 
@@ -74,34 +76,34 @@
 		<h3 class="text-red font-weight-300 margin-bottom-10"><i class="fa fa-bullseye accueil-title-icon-2"></i>LE MAGAZINE DE <strong>L'ACTUALITE</strong></h3>
 		<div class="eti-accueil-devider margin-left-23 margin-bottom-20"></div>
 
-		<div>
-			<p class="text-right margin-right-0 pub-annonce" ><a class="act margin-right-20" href="">Publicité</a><a class="act" href="">Devenez annonceur</a></p>
-			<div class="row margin-left-right">
-				<div class="hidden-xs hidden-sm col-md-4 no-gutters">
-					{{ module('actualite/article-300x510') }}
-				</div>
-				<div class="col-xs-12 col-sm-12 col-md-8">
-					<div class="row">
-						<div class="col-xs-6 col-sm-6 col-md-6 no-gutters">
+		<div class="row margin-left-right">
+			<p class="text-right margin-right-6" ><a class="act margin-right-20" href="">Publicité</a><a class="act" href="">Devenez annonceur</a></p>
+		</div>
+		<div class="row margin-left-right">
+			<div class="hidden-xs hidden-sm col-md-4 no-gutters">
+				{{ module('actualite/article-300x510') }}
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-8">
+				<div class="row">
+					<div class="col-xs-6 col-sm-6 col-md-6 no-gutters">
+						{{ module('actualite/article-300x250') }}
+						{{ module('actualite/emplacement-pub-300x250') }}
+					</div>
+					<div class="col-xs-6 col-sm-6 col-md-6 no-gutters">
+						<div class="row">
 							{{ module('actualite/article-300x250') }}
-							{{ module('actualite/emplacement-pub-300x250') }}
-						</div>
-						<div class="col-xs-6 col-sm-6 col-md-6 no-gutters">
-							<div class="row">
-								{{ module('actualite/article-300x250') }}
-								{{ module('actualite/article-300x250') }}
-							</div>
+							{{ module('actualite/article-300x250') }}
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="row margin-left-right">
-				<div class="hidden-xs hidden-sm col-md-4 no-gutters">
-					{{ module('actualite/article-300x250') }}
-				</div>
-				<div class="hidden-xs col-sm-12 col-md-8 no-gutters">
-					{{ module('actualite/article-610x250') }}
-				</div>
+		</div>
+		<div class="row margin-left-right">
+			<div class="hidden-xs hidden-sm col-md-4 no-gutters">
+				{{ module('actualite/article-300x250') }}
+			</div>
+			<div class="hidden-xs col-sm-12 col-md-8 no-gutters">
+				{{ module('actualite/article-610x250') }}
 			</div>
 		</div>
 

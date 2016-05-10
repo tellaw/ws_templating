@@ -24,7 +24,7 @@
     height: 26px;
     overflow: hidden;
     font-family: DIN-Alternate-medium, Century Gothic, Arial;
-    color: #df2626; }
+    color: #ea2336; }
   #site-name span {
     height: 16px;
     letter-spacing: 1.3px;
@@ -100,7 +100,7 @@
       text-transform: uppercase; }
     #espace-abo .contact-link .symbole {
       padding: 3px 6px 1px 5px;
-      background-color: #df2626;
+      background-color: #ea2336;
       height: 28px;
       width: 28px;
       display: block;
@@ -179,7 +179,7 @@
     color: #ffffff; }
     #main-menu ul li.active a {
       color: #ffffff;
-      background: #df2626; }
+      background: #ea2336; }
     #main-menu ul li.active ul li .is-drilldown-submenu-item a {
       background: #333333 !important; }
   #main-menu ul li.resdoc, #main-menu ul li.actu {

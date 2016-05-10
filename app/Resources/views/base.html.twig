@@ -19,12 +19,14 @@
         <!--<link rel="stylesheet" href="{{ css("header.css") }}">-->
         <link rel="stylesheet" href="{{ css("responsive.css") }}">
         <link rel="stylesheet" href="{{ css("style.css") }}">
+        <link rel="stylesheet" href="{{ css("catalogue.css") }}">
 
         <!-- CSS Implementing Plugins -->
         <link rel="stylesheet" href="{{ bootstrap("plugins/animate.css") }}">
         <link rel="stylesheet" href="{{ bootstrap("plugins/line-icons/line-icons.css") }}">
         <link rel="stylesheet" href="{{ bootstrap("plugins/font-awesome/css/font-awesome.min.css") }}">
         <link rel="stylesheet" href="{{ bootstrap("plugins/login-signup-modal-window/css/style.css") }}">
+        <link rel="stylesheet" href="{{ bootstrap("css/headers/header-default-centered.css") }}">
 
         <!-- CSS Theme -->
         <link rel="stylesheet" href="{{ bootstrap("css/theme-colors/light.css") }}" id="style_color">
@@ -38,11 +40,11 @@
         <style>
             .form-control:focus{
                 background-color: #F3F3F3;
-                -moz-box-shadow: inset 0px 0px 10px 0px #df2626;
-                -webkit-box-shadow: inset 0px 0px 10px 0px #df2626;
-                -o-box-shadow: inset 0px 0px 10px 0px #df2626;
-                box-shadow: inset 0px 0px 10px 0px #df2626;
-                filter:progid:DXImageTransform.Microsoft.Shadow(color=#df2626, Direction=NaN, Strength=10);
+                -moz-box-shadow: inset 0px 0px 10px 0px #ea2336;
+                -webkit-box-shadow: inset 0px 0px 10px 0px #ea2336;
+                -o-box-shadow: inset 0px 0px 10px 0px #ea2336;
+                box-shadow: inset 0px 0px 10px 0px #ea2336;
+                filter:progid:DXImageTransform.Microsoft.Shadow(color=#ea2336, Direction=NaN, Strength=10);
             }
             .has-error .form-control:focus{
                 box-shadow: none;
@@ -53,6 +55,7 @@
         <script type="text/javascript" src="{{ bootstrap("plugins/jquery/jquery.min.js") }}"></script>
     </head>
     <body>
+        {{ module("navigation/navigation-catalogue") }}
         {% block body %}{% endblock %}
         {% block javascripts %}{% endblock %}
 
