@@ -24,13 +24,13 @@
 }
 
 #module-sticky {
-  position:relative;
   >div {
     height:122px;
+    position:relative;
   }
   #sticky-menu {
     position: absolute!important;
-    top:165px!important;
+    top:0!important;
   }
   #sticky-menu-slide {
     position: absolute;
@@ -81,6 +81,10 @@ div[id^="module-"] {
     .navbar-fixed-top {
       top: 63px;
     }
+  }
+
+  .catalogue-margin-top {
+    margin-top: 70px !important;
   }
 }
 
