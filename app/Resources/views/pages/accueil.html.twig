@@ -29,10 +29,10 @@
 
 		<h1 class="text-center color-red-eti margin-bottom-15 font-weight-300 font-size-24-22-20"><strong>RECHERCHEZ </strong>parmi plus de <strong>8000</strong> articles de références<br>ou pratiques et <strong>4000</strong> articles d'actualité</h1>
 
-		<div class="margin-bottom-50 margin-right-left-160">
+		<div class="margin-bottom-50 margin-right-left-150">
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-8">
-					<h3 class="color-red-eti margin-top-30 margin-bottom-20">PAR DOMAINE <strong>D'EXPERTISE</strong></h3>
+					<h3 class="color-red-eti margin-top-30 margin-bottom-20 font-weight-300">PAR DOMAINE <strong>D'EXPERTISE</strong></h3>
 					<div class="eti-accueil-devider margin-bottom-20"></div>
 					<div class="row">
 						<div class="col-xs-12 col-sm-6 col-md-6">
@@ -44,7 +44,7 @@
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-12 col-md-4">
-					<h3 class="color-red-eti margin-top-30 margin-bottom-20">PAR SECTEUR <strong>INDUSTRIEL</strong></h3>
+					<h3 class="color-red-eti margin-top-30 margin-bottom-20 font-weight-300">PAR SECTEUR <strong>INDUSTRIEL</strong></h3>
 					<div class="eti-accueil-devider margin-bottom-20"></div>
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-12">
@@ -55,7 +55,7 @@
 			</div>
 		</div>
 
-		<div class="margin-bottom-40 margin-right-left-160">
+		<div class="margin-bottom-40 margin-right-left-150">
 			<div class="row">
 				<div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
 					<h3 class="color-red-eti font-weight-300 margin-bottom-20">PAR <strong>MOTS-CLES</strong></h3>
@@ -72,9 +72,11 @@
 
 		<hr id="hr-separator" class="margin-top-10">
 		<h2 class="text-red text-center margin-bottom-20 padding-bottom-20 font-size-24 font-weight-300"><strong>DÉCOUVREZ</strong> AUSSI</h2>
-		<i class="fa fa-bullseye accueil-title-icon-1"></i>
-		<h3 class="text-red font-weight-300 margin-bottom-20"><i class="fa fa-bullseye accueil-title-icon-2"></i>LE MAGAZINE DE <strong>L'ACTUALITE</strong></h3>
-		<div class="eti-accueil-devider margin-left-23 margin-bottom-20"></div>
+		<div class="margin-left-right">
+			<i class="fa fa-bullseye accueil-title-icon-1"></i>
+			<h3 class="text-red font-weight-300 margin-bottom-20"><i class="fa fa-bullseye accueil-title-icon-2"></i>LE MAGAZINE DE <strong>L'ACTUALITE</strong></h3>
+			<div class="eti-accueil-devider margin-left-45 margin-bottom-20"></div>
+		</div>
 
 		<div class="row margin-left-right">
 			<p class="text-right margin-right-6" ><a class="act margin-right-20" href="">Publicité</a><a class="act" href="">Devenez annonceur</a></p>
@@ -107,14 +109,18 @@
 			</div>
 		</div>
 
-		<i class="fa fa-wrench accueil-title-icon-1"></i>
-		<h3 class="text-red font-weight-300 margin-bottom-20"><i class="fa fa-wrench accueil-title-icon-2"></i>AUTRES <strong>PRODUITS</strong> ET <strong>LOGICIELS</strong></h3>
-		<div class="eti-accueil-devider margin-left-23 margin-bottom-40"></div>
+		<div class="row margin-left-right">
+			<i class="fa fa-wrench accueil-title-icon-1"></i>
+			<h3 class="text-red font-weight-300 margin-bottom-20"><i class="fa fa-wrench accueil-title-icon-2"></i>AUTRES <strong>PRODUITS</strong> ET <strong>LOGICIELS</strong></h3>
+			<div class="eti-accueil-devider margin-left-45 margin-bottom-40"></div>
+		</div>
 		{{ module('boutique/produits-logiciels') }}
 
-		<i class="fa fa-television accueil-title-icon-1"></i>
-		<h3 class="text-red font-weight-300 margin-bottom-20"><i class="fa fa-television accueil-title-icon-2"></i>LES <strong>OFFRES À LA UNE</strong></h3>
-		<div class="eti-accueil-devider margin-left-30 margin-bottom-40"></div>
+		<div class="row margin-left-right">
+			<i class="fa fa-television accueil-title-icon-1"></i>
+			<h3 class="text-red font-weight-300 margin-bottom-20"><i class="fa fa-television accueil-title-icon-2"></i>LES <strong>OFFRES À LA UNE</strong></h3>
+			<div class="eti-accueil-devider margin-left-45 margin-bottom-40"></div>
+		</div>
 		{{ module('boutique/offres') }}
 
 		{{ module('reassurance/reassurance2') }}

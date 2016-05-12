@@ -683,6 +683,9 @@ $color-red : #ea2336 ;
   .margin-left-30 {
     margin-left: 0px !important;
   }
+  .margin-left-45 {
+    margin-left: 0px !important;
+  }
 }
 
 /* Medium and up */
@@ -752,8 +755,8 @@ $color-red : #ea2336 ;
     padding-top: 30px;
   }
   .padding-sides-200 {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 105px;
+    padding-right: 105px;
   }
   .accueil-title-icon-1 {
     font-size: 30px;
@@ -761,9 +764,10 @@ $color-red : #ea2336 ;
     display: none;
   }
   .accueil-title-icon-2 {
-    font-size: 20px;
+    font-size: 35px;
     color: #ea2336;
     display: inline;
+    margin-right: 14px;
   }
   .mots-clef-title {
     font-size: 18px !important;
@@ -1146,9 +1150,9 @@ $color-red : #ea2336 ;
     margin-left: 105px;
     margin-right: 105px;
   }
-  .margin-right-left-160 {
-    margin-right:160px;
-    margin-left:160px;
+  .margin-right-left-150 {
+    margin-right:150px;
+    margin-left:150px;
   }
 }
 
