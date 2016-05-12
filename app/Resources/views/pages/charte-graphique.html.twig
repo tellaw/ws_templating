@@ -1,0 +1,82 @@
+{# wk-template : charte-graphique.html.twig #}
+{# wk-description : Listing de tous les eléments graphique du site #}
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="container catalogue-margin-top" xmlns="http://www.w3.org/1999/html">
+        <div class="row">
+            <div class="col-md-12 no-gutters listing-elements">
+                <div id="charte-logo">
+                    <div>
+                        <p>LOGO TECHNIQUE DE L'INGÉNIEUR :</p>
+                        <div class="eti-accueil-devider margin-bottom-20"></div>
+                        <img id="logo-header" src="{{ bootstrap("img/logo-eti.png") }}" alt="Logo">
+                    </div>
+                </div>
+
+                <div id="charte-font">
+                    <div>
+                        <p>FONTS :</p>
+                        <div class="eti-accueil-devider margin-bottom-20"></div>
+                        <p>Myriad Pro -> <span style="font-family:myriad-pro, sans-serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec euismod ante, in tempus metus. Duis interdum lacinia dui eu.</span></p> <br />
+                        <p>Myriad Pro condensed -> <span style="font-family:myriad-pro-condensed, sans-serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec euismod ante, in tempus metus. Duis interdum lacinia dui eu.</span></p> <br />
+                        <p>ico-font Awesome -> <i class="fa fa-shopping-cart header-btn-size"></i> <i class="fa fa-bullseye accueil-title-icon-2"></i> <i class="fa fa-user header-btn-size"></i> <i class="fa fa-wrench accueil-title-icon-2"></i></p>
+                    </div>
+                </div>
+
+                <div id="charte-couleurs">
+                    <div>
+                        <p>COULEURS :</p>
+                        <div class="eti-accueil-devider margin-bottom-20"></div>
+                        <p class="color-red-eti">Rouge : #ea2336</p>
+                        <p class="dark-grey-title">Gris foncé : #697277</p>
+                    </div>
+                </div>
+
+                <div id="charte-titres">
+                    <div>
+                        <p>TITRES :</p>
+                        <div class="eti-accueil-devider margin-bottom-20"></div>
+                        <p>H1 : color:#ea2336 / font-size:24px / font-family: "myriad-pro", sans-serif; letter-spacing: 1px; (class="color-red-eti font-weight-300 font-size-24-22-20")</p>
+                        <h1 class="color-red-eti font-weight-300 font-size-24-22-20"><strong>RECHERCHEZ </strong>parmi plus de <strong>8000</strong> articles de références<br>ou pratiques et <strong>4000</strong> articles d'actualité</h1>
+                        <br />
+                        <p>H2 : </p>
+                        <br />
+                        <p>H3 : </p>
+                        <br />
+                        <p>H4 : </p>
+                    </div>
+                </div>
+
+                <div id="charte-boutons">
+                    <div>
+                        <p>BOUTONS :</p>
+                        <div class="eti-accueil-devider margin-bottom-20"></div>
+                        <p>
+                            <button class="btn-u bg-color-red-eti" type="button"><i class="fa fa-arrow-right btn-logiciel-icon"></i><p class="btn-logiciel">EN SAVOIR PLUS</p></button>
+                        </p>
+                        <br />
+                        <p>
+                            <button class="btn-u bg-color-red-eti" type="button"><i class="fa fa-shopping-cart margin-right-10 fa-size-1v3"></i>  AJOUTER AU PANIER</button>
+                        </p>
+                        <br />
+                        <p>
+                            <a href="#" class="btn-u btn-brd btn-u-red btn-u-sm color-red-eti btn-center" type="button"><i class="fa fa-fa fa-chevron-right margin-right-5"></i> TOUS LES LIVRES BLANCS</a>
+                        </p>
+                        <br />
+                        <p>
+                            <a href="#" class="btn-u btn-brd btn-u-red btn-u-sm color-red-eti btn-center" type="button"><i class="fa fa-fa fa-chevron-right margin-right-5"></i> TOUTE L'ACTUALITÉ</a>
+                        </p>
+                    </div>
+                </div>
+
+            </div><!--/wrapper-->
+
+            <!--[if lt IE 9]>
+            <script src="web/assets/plugins/respond.js"></script>
+            <script src="web/assets/plugins/html5shiv.js"></script>
+            <script src="web/assets/plugins/placeholder-IE-fixes.js"></script>
+            <![endif]-->
+        </div>
+    </div>
+{% endblock %}

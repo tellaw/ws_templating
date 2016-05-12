@@ -1,13 +1,13 @@
 .wrapper .navbar-fixed-top {
   top: 142px; }
 
-.listing-modules {
+.listing-elements {
   margin: 20px auto 0;
   overflow: hidden; }
-  .listing-modules .header-v1 {
+  .listing-elements .header-v1 {
     position: relative;
     z-index: 1030 !important; }
-    .listing-modules .header-v1 .navbar-fixed-top {
+    .listing-elements .header-v1 .navbar-fixed-top {
       position: relative; }
 
 .header {
@@ -37,18 +37,18 @@
 .catalogue-margin-top {
   margin-top: 145px !important; }
 
-div[id^="module-"] {
+div[id^="module-"], div[id^="charte-"] {
   padding-top: 165px;
   position: relative;
   top: -165px;
   margin-bottom: -135px; }
-  div[id^="module-"] > div {
+  div[id^="module-"] > div, div[id^="charte-"] > div {
     border: solid 1px #eee;
     padding: 10px; }
-    div[id^="module-"] > div > p {
+    div[id^="module-"] > div > p, div[id^="charte-"] > div > p {
       font-size: 16px;
       margin-bottom: 0; }
-      div[id^="module-"] > div > p .emplacement {
+      div[id^="module-"] > div > p .emplacement, div[id^="charte-"] > div > p .emplacement {
         font-size: 12px; }
 
 @media (max-width: 1200px) {

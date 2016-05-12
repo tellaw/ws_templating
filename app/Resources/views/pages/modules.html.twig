@@ -5,7 +5,7 @@
 {% block body %}
 <div class="container catalogue-margin-top">
     <div class="row">
-        <div class="col-md-12 no-gutters listing-modules">
+        <div class="col-md-12 no-gutters listing-elements">
             <div id="module-header">
                 <div>
                     <p>Module HEADER ANCIEN : <span class="emplacement">module > header > header-ancien.html.twig</span></p>
@@ -83,6 +83,14 @@
                     <p>Module LIVRE BLANC : <span class="emplacement">module > livre-blanc > livre-blanc.html.twig</span></p>
                     <div class="eti-accueil-devider margin-bottom-20"></div>
                     {{ module("livre-blanc/livre-blanc") }}
+                </div>
+            </div>
+
+            <div id="module-onglets" style="z-index: 1">
+                <div>
+                    <p>Module ONGLETS : <span class="emplacement">module > livre-blanc > livre-blanc.html.twig</span></p>
+                    <div class="eti-accueil-devider margin-bottom-20"></div>
+                    <div class="tab-v1">{{ module("navigation/onglets") }}</div>
                 </div>
             </div>
 

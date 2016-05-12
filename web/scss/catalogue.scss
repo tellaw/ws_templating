@@ -4,7 +4,7 @@
   }
 }
 
-.listing-modules {
+.listing-elements {
   margin:20px auto 0;
   overflow:hidden;
   .header-v1 {
@@ -50,7 +50,7 @@
   margin-top: 145px!important;
 }
 
-div[id^="module-"] {
+div[id^="module-"], div[id^="charte-"] {
   padding-top: 165px;
   position: relative;
   top: -165px;
