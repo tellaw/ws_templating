@@ -4,12 +4,6 @@ var/*
 .DS_Store
 vendor/
 
-# Cache and logs (Symfony2)
-/app/cache/*
-/app/logs/*
-!app/cache/.gitkeep
-!app/logs/.gitkeep
-!app/sessions/.gitkeep
 /composer.lock
 !var/sessions/.gitkeep
 !var/cache/.gitkeep
