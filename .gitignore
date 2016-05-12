@@ -3,3 +3,18 @@ var/*
 .idea/
 .DS_Store
 vendor/
+
+# Cache and logs (Symfony2)
+/app/cache/*
+/app/logs/*
+!app/cache/.gitkeep
+!app/logs/.gitkeep
+!app/sessions/.gitkeep
+/composer.lock
+!var/logs/.gitkeep
+*.log
+*.sh
+
+!var/bootstrap.php.cache
+!var/SymfonyRequirements.php
+
