@@ -66,7 +66,7 @@ class WsTemplatingExtension extends \Twig_Extension
 	public function getBootstrap ($value) {
 
 		$path = $this->container->get('router')->getContext()->getBaseUrl();
-		$path .= str_replace ("app_dev.php", "", $path);
+		$path = str_replace ("app_dev.php", "", $path);
 		// replace this example code with whatever you need
 		echo ("/".$path."assets/".$value);
 

@@ -1192,18 +1192,12 @@ $color-red : #ea2336 ;
 }
 
 
-/* FOOTER */
-/*
-Theme Name: TI
-Author: Weka
-Author URI: http://weka.fr
-Template: twentyfourteen
-Description:  Twenty Fourteen Child Theme
-Version: 1.0.0
-*/
+/* FOOTER ANCIEN */
+@media  screen and (max-width: 1024px) {
+  #footer {
+    width:100%
+  }
 
-/* TABLETTE */
-@media all and (max-width:800px) {
   #footer {
     .container_24 {
       width:100% !important

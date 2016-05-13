@@ -3,26 +3,6 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-<div class="wrapper">
-    <!--=== Header actuel ===-->
-    <div class="navbar-fixed-top">
-        {{  module('header/header-ancien')  }}
-
-        {#{{  module('navigation/navigation')  }}#}
-    </div>
-    <!--=== End Header actuel ===-->
-    {{  module('sticky/sticky')  }}
-
-    <!--=== Breadcrumbs ===-->
-    <!-- <div class="container">
-        <ul class="pull-left breadcrumb">
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="">Ressources documentaires</a></li>
-            <li class="brd-active">Environnement - sécurité</li>
-        </ul>
-    </div> -->
-    <!--=== End Breadcrumbs ===-->
-
     <!--=== Content Part  ===-->
     <div class="container slider-margin-top">
         <h1 class="text-center color-red-eti margin-bottom-15 font-weight-300 font-size-24-22-20"><strong>TOUT </strong>les contenus gratuits de <strong>Technique de l'Ingénieur</strong></h1>
@@ -126,15 +106,5 @@
         {{ module('newsletter/newsletter') }}
 
         {{ module('reassurance/reassurance2') }}
-
-        {{ module('footer/footer') }}
     </div>
-
-</div><!--/wrapper-->
-
-<!--[if lt IE 9]>
-<script src="web/assets/plugins/respond.js"></script>
-<script src="web/assets/plugins/html5shiv.js"></script>
-<script src="web/assets/plugins/placeholder-IE-fixes.js"></script>
-<![endif]-->
 {% endblock %}

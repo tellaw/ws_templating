@@ -3,26 +3,6 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-<div class="wrapper">
-	<!--=== Header actuel ===-->
-	<div class="navbar-fixed-top">
-		{{  module('header/header-ancien')  }}
-
-		{#{{  module('navigation/navigation')  }}#}
-	</div>
-	<!--=== End Header actuel ===-->
-	{{  module('sticky/sticky')  }}
-
-	<!--=== Breadcrumbs ===-->
-	<!-- <div class="container">
-        <ul class="pull-left breadcrumb">
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="">Ressources documentaires</a></li>
-            <li class="brd-active">Environnement - sécurité</li>
-        </ul>
-    </div> -->
-	<!--=== End Breadcrumbs ===-->
-
 	<!--=== Content Part  ===-->
 	<div class="container slider-margin-top">
 		{{ module('slider/slider-home') }}
@@ -89,11 +69,11 @@
 				<div class="row">
 					<div class="col-xs-6 col-sm-6 col-md-6 no-gutters">
 						{{ module('actualite/article-300x250') }}
-						{{ module('actualite/emplacement-pub-300x250') }}
+						{{ module('actualite/article-300x250') }}
 					</div>
 					<div class="col-xs-6 col-sm-6 col-md-6 no-gutters">
 						<div class="row">
-							{{ module('actualite/article-300x250') }}
+							{{ module('actualite/emplacement-pub-300x250') }}
 							{{ module('actualite/article-300x250') }}
 						</div>
 					</div>
@@ -105,6 +85,33 @@
 				{{ module('actualite/article-300x250') }}
 			</div>
 			<div class="hidden-xs col-sm-12 col-md-8 no-gutters">
+				{{ module('actualite/article-610x250') }}
+			</div>
+		</div>
+
+
+		<div class="row margin-left-right">
+			<div class="hidden-xs col-sm-12 col-md-8 no-gutters">
+				{{ module('actualite/article-610x250') }}
+			</div>
+			<div class="hidden-xs hidden-sm col-md-4 no-gutters">
+				{{ module('actualite/emplacement-pub-300x250') }}
+			</div>
+		</div>
+		<div class="row margin-left-right margin-bottom-40">
+			<div class="col-xs-12 col-sm-6 col-md-4 no-gutters">
+				{{ module('actualite/article-300x250') }}
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-4 no-gutters">
+				{{ module('actualite/article-300x250') }}
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-4 no-gutters">
+				{{ module('actualite/article-300x250') }}
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-4 no-gutters">
+				{{ module('actualite/article-300x250') }}
+			</div>
+			<div class="hidden-xs hidden-sm col-md-8 no-gutters">
 				{{ module('actualite/article-610x250') }}
 			</div>
 		</div>
@@ -124,14 +131,5 @@
 		{{ module('boutique/offres') }}
 
 		{{ module('reassurance/reassurance2') }}
-
-		{{ module('footer/footer-ancien') }}
 	</div>
-</div><!--/wrapper-->
-
-<!--[if lt IE 9]>
-<script src="web/assets/plugins/respond.js"></script>
-<script src="web/assets/plugins/html5shiv.js"></script>
-<script src="web/assets/plugins/placeholder-IE-fixes.js"></script>
-<![endif]-->
 {% endblock %}
