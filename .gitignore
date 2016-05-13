@@ -4,3 +4,14 @@ var/
 .idea/
 .DS_Store
 vendor/
+
+/composer.lock
+!var/sessions/.gitkeep
+!var/cache/.gitkeep
+!var/logs/.gitkeep
+*.log
+*.sh
+
+!var/bootstrap.php.cache
+!var/SymfonyRequirements.php
+
