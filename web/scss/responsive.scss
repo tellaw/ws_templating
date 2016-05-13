@@ -1190,3 +1190,73 @@ $color-red : #ea2336 ;
     width: 215px;
   }
 }
+
+
+/* FOOTER */
+/*
+Theme Name: TI
+Author: Weka
+Author URI: http://weka.fr
+Template: twentyfourteen
+Description:  Twenty Fourteen Child Theme
+Version: 1.0.0
+*/
+
+/* TABLETTE */
+@media all and (max-width:800px) {
+  #footer {
+    .container_24 {
+      width:100% !important
+    }
+  }
+  #footer-cols {
+    .col {
+      width:33% !important
+    }
+  }
+  #footer {
+    .quicklinks {
+      .col-pad {
+        background:none !important;
+      }
+    }
+  }
+  #footer-cols {
+    h4.ressdoc, p.ressdoc {
+      padding:0 0 7px 45px !important;
+      line-height: 13px;
+    }
+  }
+}
+
+/* MOBILE PORTRAIT et PAYSAGE */
+@media all and (max-width:680px) {
+  #footer {
+    padding:0 2%
+  }
+  #footer {
+    #shorcuts_nav {
+      padding: 9px 0;
+    }
+  }
+  #footer {
+    #shorcuts_nav {
+      li {
+        margin: 3px 0 0 0;
+        line-height: 17px;
+      }
+    }
+  }
+  #footer {
+    .container_24 {
+      width:100% !important;
+      background:none !important;
+    }
+  }
+  #footer-cols {
+    .col {
+      width:100% !important
+    }
+  }
+}
+
