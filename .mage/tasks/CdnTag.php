@@ -31,6 +31,7 @@ class CdnTag extends AbstractTask
 
 		// Move to top dir : /data/apps/eti_cdn/lucy/ti/
 		$commands[] = "cd ../../../";
+		$commands[] = "pwd";
 
 		// create if not exist
 		$commands[] = "mkdir -p $shared $tag";
