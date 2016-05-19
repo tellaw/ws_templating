@@ -18,6 +18,12 @@ class CdnTag extends AbstractTask
 
 	public function run()
 	{
+
+		$commands[] = "pwd";
+
+		foreach ($commands as $command) {
+			if (!$this->runCommandRemote($command)) return false;
+		}
 		return true;
 	}
 }

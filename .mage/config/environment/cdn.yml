@@ -38,6 +38,6 @@ tasks:
   pre-deploy:
   on-deploy:
     - chmod
-    - cdn-tag
   post-release:
   post-deploy:
+    - cdn-tag
