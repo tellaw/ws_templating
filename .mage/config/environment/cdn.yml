@@ -15,6 +15,17 @@ deployment:
     - composer.json
     - gulpfile.js
     - phpunit.xml.dist
+    - web/.htaccess
+    - web/app.php
+    - web/app_dev.php
+    - web/apple-touch-icon.png
+    - web/config.php
+    - web/favicon.ico
+    - web/robots.txt
+    - web/scss
+    - web/bundles
+    - web/assets/maquettes
+    - web/php
   strategy: targz
 releases:
   enabled: true
