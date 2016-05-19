@@ -1,0 +1,181 @@
+/*****************************
+FOOTER
+*******************************/
+#shorcuts_nav {
+    padding: 14px;
+    font-size: 11px;
+    color: #FFF!important;
+}
+#shorcuts_nav li {
+    color: #FFF!important;
+}
+#shorcuts_nav a{
+    color: #FFF!important;
+    font-family: Arial, Helvetica, Verdana, sans-serif!important;
+}
+
+#shorcuts_nav .inline .line1 {
+    padding-bottom: 6px;
+}
+
+#shorcuts_nav .inline {
+    display: inline;
+    padding: 0;
+}
+.bg {
+    background: #e2e3e4;
+}
+.line1 li,.line2 li {
+    border-right: 1px solid;
+}
+.line2 ul.inline {
+    margin-bottom: 0;
+}
+ul.inline li {
+    display: inline;
+    padding: 0 5px;
+}
+ul.inline li.last {
+    border-right: none !important;
+}
+.center {
+    text-align: center;
+    margin: 0 auto;
+}
+
+#footer {
+    padding-bottom: 20px;
+    background: url('../images/fond_footer.png') 0 0 transparent repeat-x;
+    position: relative;
+    z-index: 1;
+}
+#footer .container_24 {
+    width:960px;
+    margin: 0 auto;
+}
+#footer * {
+    font-family: DIN-Alternate-medium, century gothic!important;
+}
+
+#footer a {
+    color: #565c60;
+}
+#footer a:hover {
+    color:#565c60;
+    text-decoration:underline;
+}
+/****** footer_searchForm *******/
+#footer_searchForm_holder {
+    position: relative;
+    height: 78px;
+    margin-bottom: 15px;
+    width: 963px;
+}
+
+*+html #footer_searchForm {
+    margin-left: 275px;
+    left: 0;
+}
+
+#footer_searchForm {
+    position: absolute;
+    width: 397px;
+    left: 50%;
+    top: 9px;
+    margin-left: -198px;
+    padding: 14px 0 0 12px;
+}
+
+/****** QuickLinks *******/
+#footer-cols {
+    margin: 15px 0;
+    padding-bottom: 15px;
+}
+
+#footer-cols .col {
+    width: 33.33333333%;
+    float: left;
+}
+
+#footer-cols h4, #footer-cols p.rub {
+    font-size: 14px;
+    font-weight: 700;
+    height: 25px;
+    padding: 7px 0 0 45px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #333;
+}
+
+#footer-cols h4.actu, #footer-cols p.actu  {
+    padding: 7px 0 0 20px;
+}
+
+#footer-cols h4.ressdoc, #footer-cols p.ressdoc {
+    background: url("../images/picto_basdoc.png") no-repeat scroll 5px 0 rgba(0, 0, 0, 0);
+}
+
+#footer-cols h4.conseil, #footer-cols p.conseil {
+    background: url("../images/picto_conseil.png") no-repeat scroll 5px 0 rgba(0, 0, 0, 0);
+}
+
+#footer-cols h4.formation, #footer-cols p.formation {
+    background: url("../images/picto_formation.png") no-repeat scroll 5px 0 rgba(0, 0, 0, 0);
+}
+
+/****** QuickLinks *******/
+#footerlinks .line1,#footerlinks .line2,#seo,#baseline {
+    margin: 0 0 5px;
+}
+
+#footerlinks .line1,#footerlinks .line2 {
+    padding: 5px;
+}
+
+#footerlinks *, #baseline * {
+    font-size: 11px;
+    font-family: Arial, Helvetica, Verdana, sans-serif!important;
+}
+#baseline {
+    margin: 20px 0 0;
+}
+#footer-cols .col {width:33.33333333%; float:left;}
+
+/***** quicklink *****/
+.quicklinks {
+    background: transparent url(../images/dots.png) repeat-x 0 100%;
+}
+
+.quicklinks .col-pad {
+    background: transparent url(../images/dots_vertical.png) repeat-y 50% 0;
+}
+
+.quicklinks ul,.quicklinks h3 {
+    padding: 0;
+    margin: 0 0 10px 20px;
+}
+
+.quicklinks h3 {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 18px;
+}
+
+.quicklinks li {
+    background: transparent url(../images/bullet_arrow_red_smll.png) no-repeat 0 4px;
+    padding: 0 0 0 12px;
+    display: block;
+    font-size: 11px;
+}
+#footer .quicklinks li a {
+    font-family: Arial, Helvetica, Verdana, sans-serif!important;
+}
+#seo a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, Verdana, sans-serif!important;
+}
+#seo * {
+    font-family: Arial, Helvetica, Verdana, sans-serif!important;
+    color:#333;
+    font-size: 12px;
+}

@@ -17,6 +17,7 @@
 
         <!-- CSS Header actuel -->
         <!--<link rel="stylesheet" href="{{ css("header.css") }}">-->
+
         <link rel="stylesheet" href="{{ css("style.css") }}">
         <link rel="stylesheet" href="{{ css("catalogue.css") }}">
 
@@ -34,6 +35,7 @@
 
         <!-- CSS Customization -->
         <link rel="stylesheet" href="{{ bootstrap("css/custom.css") }}">
+        <link rel="stylesheet" href="{{ css("footer.css") }}">
         <link rel="stylesheet" href="{{ css("responsive.css") }}">
 
         <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
@@ -57,7 +59,26 @@
     </head>
     <body>
         {{ module("navigation/navigation-catalogue") }}
-        {% block body %}{% endblock %}
+        <div class="wrapper">
+            <!--=== Header actuel ===-->
+            <div class="navbar-fixed-top">
+                {{  module('header/header-ancien')  }}
+
+                {#{{  module('navigation/navigation')  }}#}
+            </div>
+            <!--=== End Header actuel ===-->
+            {{  module('sticky/sticky')  }}
+
+            {% block body %}{% endblock %}
+
+            {{ module('footer/footer-ancien') }}
+        </div><!--/wrapper-->
+
+        <!--[if lt IE 9]>
+        <script src="web/assets/plugins/respond.js"></script>
+        <script src="web/assets/plugins/html5shiv.js"></script>
+        <script src="web/assets/plugins/placeholder-IE-fixes.js"></script>
+        <![endif]-->
         {% block javascripts %}{% endblock %}
 
         <!-- JS Global Compulsory -->
