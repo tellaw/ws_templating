@@ -34,20 +34,20 @@ class CdnTag extends AbstractTask
 		$commands[] = "mkdir -p $shared $tag";
 
 		// copy directories shared and link in tag
-		$commands[] = "cp -rp $src/assets/img $shared/ && ln -s $src/img $tag/img";
-		$commands[] = "cp -rp $src/assets/plugins $shared/ && ln -s $src/plugins $tag/plugins";
-		$commands[] = "cp -rp $src/assets/video $shared/ && ln -s $src/video $tag/video";
-		$commands[] = "cp -rp $src/images $shared/ && ln -s $src/images $tag/images";
-		$commands[] = "cp -rp $src/fonts $shared/ && ln -s $src/fonts $tag/fonts";
+		$commands[] = "cp -r $src/assets/img $shared/ && ln -s $src/img $tag/img";
+		$commands[] = "cp -r $src/assets/plugins $shared/ && ln -s $src/plugins $tag/plugins";
+		$commands[] = "cp -r $src/assets/video $shared/ && ln -s $src/video $tag/video";
+		$commands[] = "cp -r $src/images $shared/ && ln -s $src/images $tag/images";
+		$commands[] = "cp -r $src/fonts $shared/ && ln -s $src/fonts $tag/fonts";
 
 		// copy directories tag
-		$commands[] = "cp -rp $src/assets/ajax $tag/";
+		$commands[] = "cp -r $src/assets/ajax $tag/";
 		$commands[] = "mkdir -p $tag/css/private";
 		$commands[] = "mkdir -p $tag/js/private";
-		$commands[] = "cp -rp $src/assets/css $tag";
-		$commands[] = "cp -rp $src/js $tag/css/private";
-		$commands[] = "cp -rp $src/assets/js $tag";
-		$commands[] = "cp -rp $src/js $tag/js/private";
+		$commands[] = "cp -r $src/assets/css $tag";
+		$commands[] = "cp -r $src/js $tag/css/private";
+		$commands[] = "cp -r $src/assets/js $tag";
+		$commands[] = "cp -r $src/js $tag/js/private";
 
 		$commands[] = "sudo chmod -R 775 .";
 
