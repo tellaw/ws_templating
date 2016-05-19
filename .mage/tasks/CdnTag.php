@@ -20,9 +20,10 @@ class CdnTag extends AbstractTask
 	public function run()
 	{
 
-		$src = "app/current/web";
-		$shared = "shared";
-		$tag = getenv("CDN_TAG");
+		$tmpl_dir = "/data/apps/eti_cdn/lucy/ti";
+		$src = $tmpl_dir."/app/current/web";
+		$shared = $tmpl_dir."/shared";
+		$tag = $tmpl_dir."/".getenv("CDN_TAG");
 
 		if (empty($tag)) {
 			echo "Environment variable 'CDN_TAG' is empty";
@@ -52,8 +53,6 @@ class CdnTag extends AbstractTask
 
 		// Execute commands
 		foreach ($commands as $command) {
-			// Move to top dir : /data/apps/eti_cdn/lucy/ti/
-			$command = "pwd && cd ../../../ && $command";
 			// And run
 			if (!$this->runCommandRemote($command)) return false;
 		}
