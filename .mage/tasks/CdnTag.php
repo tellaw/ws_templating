@@ -13,14 +13,47 @@ class CdnTag extends AbstractTask
 {
 	public function getName()
 	{
-		return 'Create CDN Tag Directory tree.';
+		$tag = getenv("CDN_TAG");
+		return "Create CDN $tag Directory tree.";
 	}
 
 	public function run()
 	{
 
-		$commands[] = "pwd";
+		$src = "app/current/web";
+		$shared = "shared";
+		$tag = getenv("CDN_TAG");
 
+		if (empty($tag)) {
+			echo "Environment variable 'CDN_TAG' is empty";
+			return false;
+		}
+
+		// Move to top dir : /data/apps/eti_cdn/lucy/ti/
+		$commands[] = "cd ../../../";
+
+		// create if not exist
+		$commands[] = "mkdir -p $shared $tag";
+
+		// copy directories shared and link in tag
+		$commands[] = "cp -rp $src/assets/img $shared/ && ln -s $src/img $tag/img";
+		$commands[] = "cp -rp $src/assets/plugins $shared/ && ln -s $src/plugins $tag/plugins";
+		$commands[] = "cp -rp $src/assets/video $shared/ && ln -s $src/video $tag/video";
+		$commands[] = "cp -rp $src/images $shared/ && ln -s $src/images $tag/images";
+		$commands[] = "cp -rp $src/fonts $shared/ && ln -s $src/fonts $tag/fonts";
+
+		// copy directories tag
+		$commands[] = "cp -rp $src/assets/ajax $tag/";
+		$commands[] = "mkdir -p $tag/css/private";
+		$commands[] = "mkdir -p $tag/js/private";
+		$commands[] = "cp -rp $src/assets/css $tag";
+		$commands[] = "cp -rp $src/js $tag/css/private";
+		$commands[] = "cp -rp $src/assets/js $tag";
+		$commands[] = "cp -rp $src/js $tag/js/private";
+
+		$commands[] = "sudo chmod -R 775 .";
+
+		// Execute commands
 		foreach ($commands as $command) {
 			if (!$this->runCommandRemote($command)) return false;
 		}
