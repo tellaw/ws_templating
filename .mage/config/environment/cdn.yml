@@ -9,6 +9,8 @@ deployment:
     - src
     - templates
     - var
+    - vendor
+    - composer.lock
     - accueil.html
     - composer.json
     - gulpfile.js
