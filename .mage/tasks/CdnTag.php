@@ -28,11 +28,7 @@ class CdnTag extends AbstractTask
 			echo "Environment variable 'CDN_TAG' is empty";
 			return false;
 		}
-
-		// Move to top dir : /data/apps/eti_cdn/lucy/ti/
-		$commands[] = "cd ../../../";
-		$commands[] = "pwd";
-
+		
 		// create if not exist
 		$commands[] = "mkdir -p $shared $tag";
 
@@ -56,6 +52,9 @@ class CdnTag extends AbstractTask
 
 		// Execute commands
 		foreach ($commands as $command) {
+			// Move to top dir : /data/apps/eti_cdn/lucy/ti/
+			$command = "cd ../../../ && $command";
+			// And run
 			if (!$this->runCommandRemote($command)) return false;
 		}
 		return true;
