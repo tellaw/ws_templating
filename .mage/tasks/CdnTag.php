@@ -45,11 +45,12 @@ class CdnTag extends AbstractTask
 		$commands[] = "mkdir -p $tag/css/private";
 		$commands[] = "mkdir -p $tag/js/private";
 		$commands[] = "cp -r $src/assets/css $tag";
-		$commands[] = "cp -r $src/js $tag/css/private";
+		$commands[] = "cp -r $src/css/* $tag/css/private";
 		$commands[] = "cp -r $src/assets/js $tag";
-		$commands[] = "cp -r $src/js $tag/js/private";
+//		$commands[] = "cp -r $src/js/* $tag/js/private";
 
-		$commands[] = "sudo chmod -R 775 .";
+		$commands[] = "sudo chmod -R 775 $shared";
+		$commands[] = "sudo chmod -R 775 $tag";
 
 		// Execute commands
 		foreach ($commands as $command) {
