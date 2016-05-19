@@ -2,22 +2,29 @@
 deployment:
   user: jenkins
   from: ./
-  to: /data/apps/ti_catalogue
+  to: /data/apps/eti_cdn
   excludes:
+    - app
+    - bin
+    - src
+    - templates
+    - var
+    - accueil.html
+    - composer.json
+    - gulpfile.js
+    - phpunit.xml.dist
   strategy: targz
 releases:
   enabled: true
-  max: 3
+  max: 5
   symlink: current
   directory: releases
 hosts:
-  - 10.25.109.234
+  - 10.25.109.32
 tasks:
   pre-deploy:
-    - composer-install: {dev: true}
   on-deploy:
     - chmod
-    - filesystem/link-shared-files: {linked_files : [], linked_folders: [var/cache, var/logs, var/sessions, app/logs]}
-    - chmod
+    - cdn-tag
   post-release:
   post-deploy:
