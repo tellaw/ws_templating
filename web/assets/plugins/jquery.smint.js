@@ -34,8 +34,10 @@ If you like Smint, or have suggestions on how it could be improved, send me a tw
 			lastScrollTop = 0,
 			menuHeight = $(".smint").height(),
 			smint = $('.smint'),
-        	smintA = $('.smint a'),
-        	myOffset = smint.height();
+        	smintA = $('.smint a.subNavBtn'),
+        	myOffset = smint.height(),
+			footerHeight = $(".bottom-bloc").height() - $(".blocs").height() + $("#footer").height(),
+			headerHeight = $('.navbar-fixed-top').height() + $('#main-menu').height();
 
       
 
@@ -59,13 +61,11 @@ If you like Smint, or have suggestions on how it could be improved, send me a tw
 				$(this).attr('id', id);
 			}
 
-			
 			//Fill the menu
 			optionLocs.push(Array(
 				$(mySelector+"."+id).position().top-menuHeight, 
 				$(mySelector+"."+id).height()+$(mySelector+"."+id).position().top, id)
 			);
-
 			///////////////////////////////////
 
 			// get initial top offset for the menu 
@@ -75,12 +75,12 @@ If you like Smint, or have suggestions on how it could be improved, send me a tw
 			var stickyMenu = function(direction){
 
 				// current distance top
-				var scrollTop = $(window).scrollTop()+myOffset; 
+				var scrollTop = $(window).scrollTop()+myOffset;
 
 				// if we scroll more than the navigation, change its position to fixed and add class 'fxd', otherwise change it back to absolute and remove the class
-				if (scrollTop > stickyTop+myOffset) { 
+				if (scrollTop > stickyTop+myOffset) {
 					smint.css({ 'position': 'fixed', 'top':0,'left':0 }).addClass('fxd');
-					$('#sub-menu').css('margin-top', $('#main-header').height());
+					$('#sub-menu').css('margin-top', $('.navbar-fixed-top').height() + $('#main-menu').height());
 
 					// add padding to the body to make up for the loss in heigt when the menu goes to a fixed position.
 					// When an item is fixed, its removed from the flow so its height doesnt impact the other items on the page
@@ -94,13 +94,13 @@ If you like Smint, or have suggestions on how it could be improved, send me a tw
 
 				// Check if the position is inside then change the menu
 				// Courtesy of Ryan Clarke (@clarkieryan)
-				if(optionLocs[index][0] <= scrollTop && scrollTop <= optionLocs[index][1]){	
+				if(optionLocs[index][0] <= scrollTop && scrollTop <= optionLocs[index][1]){
 					if(direction == "up"){
 						$("#"+id).addClass("active");
 						$("#d-"+id).addClass("active");
 						$("#"+optionLocs[index+1][2]).removeClass("active");
 						$("#d-"+optionLocs[index+1][2]).removeClass("active");
-					} else if(index > 0) {
+					} else if(index > 0 && index < optionLocs.length -1) {
 						$("#"+id).addClass("active");
 						$("#d-"+id).addClass("active");
 						$("#"+optionLocs[index-1][2]).removeClass("active");
@@ -111,7 +111,6 @@ If you like Smint, or have suggestions on how it could be improved, send me a tw
 					}
 					$.each(optionLocs, function(i){
 						if(id != optionLocs[i][2]){
-							
 							$("#"+optionLocs[i][2]).removeClass("active");
 						}
 					});
@@ -136,12 +135,13 @@ If you like Smint, or have suggestions on how it could be improved, send me a tw
 				// Check if at bottom of page, if so, add class to last <a> as sometimes the last div
 				// isnt long enough to scroll to the top of the page and trigger the active state.
 
-				if($(window).scrollTop() + $(window).height() == $(document).height()) {
+				if($(window).scrollTop() + $(window).height() >= $(document).height() - footerHeight + headerHeight + menuHeight) {
 	       			smintA.removeClass('active')
 	       			$(".smint a:not('.extLink'):last").addClass('active')
-	       			
+					smint.hide();
    				} else {
    					smintA.last().removeClass('active')
+					smint.show();
    				}
 			});
 

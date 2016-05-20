@@ -16,7 +16,6 @@
         <link rel="stylesheet" href="{{ bootstrap("css/footers/footer-v2.css") }}">
 
         <!-- CSS Header actuel -->
-        <!--<link rel="stylesheet" href="{{ css("header.css") }}">-->
 
         <link rel="stylesheet" href="{{ css("style.css") }}">
         <link rel="stylesheet" href="{{ css("catalogue.css") }}">
@@ -35,26 +34,13 @@
 
         <!-- CSS Customization -->
         <link rel="stylesheet" href="{{ bootstrap("css/custom.css") }}">
+        <link rel="stylesheet" href="{{ bootstrap("css/smint-env-sec.css") }}">
         <link rel="stylesheet" href="{{ css("footer.css") }}">
         <link rel="stylesheet" href="{{ css("responsive.css") }}">
 
         <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
 
-        <style>
-            .form-control:focus{
-                background-color: #F3F3F3;
-                -moz-box-shadow: inset 0px 0px 10px 0px #ea2336;
-                -webkit-box-shadow: inset 0px 0px 10px 0px #ea2336;
-                -o-box-shadow: inset 0px 0px 10px 0px #ea2336;
-                box-shadow: inset 0px 0px 10px 0px #ea2336;
-                filter:progid:DXImageTransform.Microsoft.Shadow(color=#ea2336, Direction=NaN, Strength=10);
-            }
-            .has-error .form-control:focus{
-                box-shadow: none;
-                -webkit-box-shadow: none
-            }
-        </style>
-        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <link rel="icon" type="image/x-icon" href="{{ asset("favicon.ico") }}" />
         <script type="text/javascript" src="{{ bootstrap("plugins/jquery/jquery.min.js") }}"></script>
     </head>
     <body>
@@ -62,22 +48,22 @@
         <div class="wrapper">
             <!--=== Header actuel ===-->
             <div class="navbar-fixed-top">
-                {{  module('header/header-ancien')  }}
+                {{  module("header/header-ancien")  }}
 
-                {#{{  module('navigation/navigation')  }}#}
+                {#{{  module("navigation/navigation")  }}#}
             </div>
             <!--=== End Header actuel ===-->
-            {{  module('sticky/sticky')  }}
+            {{  module("sticky/sticky")  }}
 
             {% block body %}{% endblock %}
 
-            {{ module('footer/footer-ancien') }}
+            {{ module("footer/footer-ancien") }}
         </div><!--/wrapper-->
 
         <!--[if lt IE 9]>
-        <script src="web/assets/plugins/respond.js"></script>
-        <script src="web/assets/plugins/html5shiv.js"></script>
-        <script src="web/assets/plugins/placeholder-IE-fixes.js"></script>
+        <script src="{{ bootstrap("plugins/respond.js") }}"></script>
+        <script src="{{ bootstrap("web/assets/plugins/html5shiv.js") }}"></script>
+        <script src="{{ bootstrap("web/assets/plugins/placeholder-IE-fixes.js") }}"></script>
         <![endif]-->
         {% block javascripts %}{% endblock %}
 
@@ -91,15 +77,13 @@
         <script type="text/javascript" src="{{ bootstrap("plugins/modernizr.js") }}"></script>
         <script type="text/javascript" src="{{ bootstrap("plugins/jquery.parallax.js") }}"></script>
         <script type="text/javascript" src="{{ bootstrap("plugins/bootstrap-tabcollapse.js") }}"></script>
+        <script type="text/javascript" src="{{ bootstrap("plugins/jquery.smint.js") }}"></script>
+        <script type="text/javascript" src="{{ bootstrap("plugins/jquery-scrollto.js") }}"></script>
         <script src="{{ bootstrap("plugins/login-signup-modal-window/js/main.js") }}"></script> <!-- Gem jQuery -->
         <script src="{{ bootstrap("plugins/owl-carousel2/owl.carousel.min.js") }}"></script>
         <!-- JS Customization -->
         <script type="text/javascript" src="{{ bootstrap("js/custom.js") }}"></script>
         <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
-
-        <link rel="stylesheet" href="https://use.typekit.net/c/b6ff5f/1w;myriad-pro,7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191,ftg:W:i4,ftc:W:n3,ftf:W:n4,fth:W:n6,ftk:W:n7;myriad-pro-condensed,7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191,fts:W:i4,ftx:W:i7,ftr:W:n4,ftw:W:n7/l" media="all">
-        <script>try{Typekit.load({ async: false });}catch(e){}</script>
-
 
         <!-- JS Page Level -->
         <script type="text/javascript" src="{{ bootstrap("js/app.js") }}"></script>
@@ -130,6 +114,201 @@
                         $("#div-menu-header").css('cssText', 'display: block !important');
 
                     }
+                });
+
+                $(document).ready( function() {
+                    $('.subMenu').smint({
+                        'scrollSpeed' : 1000
+                    });
+                });
+                $(document).ready(function(){
+                    $('body').scrollspy({target: ".subMenu", offset: 50});
+                });
+
+                $("#btn-xpnd-1").click(function(){
+
+                    if ($("#btn-xpnd-1").text() == "+") {
+                        $("#btn-xpnd-1").text('-');
+                        $("#btn-xpnd-1").css("background-color", "#9EB504");
+                        $("#btn-xpnd-1").css("color", "#fff");
+
+                    } else if ($("#btn-xpnd-1").text() == "-") {
+                        $("#btn-xpnd-1").text('+');
+                        $("#btn-xpnd-1").css("background-color", "#fff");
+                        $("#btn-xpnd-1").css("color", "#9EB504");
+
+                    }
+
+                });
+
+                $("#btn-xpnd-2").click(function(){
+
+                    if ($("#btn-xpnd-2").text() == "+") {
+                        $("#btn-xpnd-2").text('-');
+                        $("#btn-xpnd-2").css("background-color", "#9EB504");
+                        $("#btn-xpnd-2").css("color", "#fff");
+
+                    } else if ($("#btn-xpnd-2").text() == "-") {
+                        $("#btn-xpnd-2").text('+');
+                        $("#btn-xpnd-2").css("background-color", "#fff");
+                        $("#btn-xpnd-2").css("color", "#9EB504");
+                    }
+
+                });
+
+                $("#btn-xpnd-3").click(function(){
+
+                    if ($("#btn-xpnd-3").text() == "+") {
+                        $("#btn-xpnd-3").text('-');
+                        $("#btn-xpnd-3").css("background-color", "#9EB504");
+                        $("#btn-xpnd-3").css("color", "#fff");
+
+                    } else if ($("#btn-xpnd-3").text() == "-") {
+                        $("#btn-xpnd-3").text('+');
+                        $("#btn-xpnd-3").css("background-color", "#fff");
+                        $("#btn-xpnd-3").css("color", "#9EB504");
+                    }
+
+                });
+
+                $("#btn-xpnd-4").click(function(){
+
+                    if ($("#btn-xpnd-4").text() == "+") {
+                        $("#btn-xpnd-4").text('-');
+                        $("#btn-xpnd-4").css("background-color", "#9EB504");
+                        $("#btn-xpnd-4").css("color", "#fff");
+
+                    } else if ($("#btn-xpnd-4").text() == "-") {
+                        $("#btn-xpnd-4").text('+');
+                        $("#btn-xpnd-4").css("background-color", "#fff");
+                        $("#btn-xpnd-4").css("color", "#9EB504");
+
+                    }
+
+                });
+
+                $("#btn-xpnd-5").click(function(){
+
+                    if ($("#btn-xpnd-5").text() == "+") {
+                        $("#btn-xpnd-5").text('-');
+                        $("#btn-xpnd-5").css("background-color", "#9EB504");
+                        $("#btn-xpnd-5").css("color", "#fff");
+
+                    } else if ($("#btn-xpnd-5").text() == "-") {
+                        $("#btn-xpnd-5").text('+');
+                        $("#btn-xpnd-5").css("background-color", "#fff");
+                        $("#btn-xpnd-5").css("color", "#9EB504");
+
+                    }
+
+                });
+
+                $("#btn-xpnd-6").click(function(){
+
+                    if ($("#btn-xpnd-6").text() == "+") {
+                        $("#btn-xpnd-6").text('-');
+                        $("#btn-xpnd-6").css("background-color", "#9EB504");
+                        $("#btn-xpnd-6").css("color", "#fff");
+
+                    } else if ($("#btn-xpnd-6").text() == "-") {
+                        $("#btn-xpnd-6").text('+');
+                        $("#btn-xpnd-6").css("background-color", "#fff");
+                        $("#btn-xpnd-6").css("color", "#9EB504");
+                    }
+
+                });
+
+                $("#btn-xpnd-1-smint").click(function(){
+
+                    if ($("#btn-xpnd-1-smint").text() == "+") {
+                        $("#btn-xpnd-1-smint").text('-');
+                        $("#btn-xpnd-1-smint").css("background-color", "#9EB504");
+                        $("#btn-xpnd-1-smint").css("color", "#fff");
+
+                    } else if ($("#btn-xpnd-1-smint").text() == "-") {
+                        $("#btn-xpnd-1-smint").text('+');
+                        $("#btn-xpnd-1-smint").css("background-color", "#fff");
+                        $("#btn-xpnd-1-smint").css("color", "#9EB504");
+
+                    }
+
+                });
+
+                $("#btn-xpnd-2-smint").click(function(){
+
+                    if ($("#btn-xpnd-2-smint").text() == "+") {
+                        $("#btn-xpnd-2-smint").text('-');
+                        $("#btn-xpnd-2-smint").css("background-color", "#9EB504");
+                        $("#btn-xpnd-2-smint").css("color", "#fff");
+
+                    } else if ($("#btn-xpnd-2-smint").text() == "-") {
+                        $("#btn-xpnd-2-smint").text('+');
+                        $("#btn-xpnd-2-smint").css("background-color", "#fff");
+                        $("#btn-xpnd-2-smint").css("color", "#9EB504");
+                    }
+
+                });
+
+                $("#btn-xpnd-3-smint").click(function(){
+
+                    if ($("#btn-xpnd-3-smint").text() == "+") {
+                        $("#btn-xpnd-3-smint").text('-');
+                        $("#btn-xpnd-3-smint").css("background-color", "#9EB504");
+                        $("#btn-xpnd-3-smint").css("color", "#fff");
+
+                    } else if ($("#btn-xpnd-3-smint").text() == "-") {
+                        $("#btn-xpnd-3-smint").text('+');
+                        $("#btn-xpnd-3-smint").css("background-color", "#fff");
+                        $("#btn-xpnd-3-smint").css("color", "#9EB504");
+                    }
+
+                });
+
+                $("#btn-xpnd-4-smint").click(function(){
+
+                    if ($("#btn-xpnd-4-smint").text() == "+") {
+                        $("#btn-xpnd-4-smint").text('-');
+                        $("#btn-xpnd-4-smint").css("background-color", "#9EB504");
+                        $("#btn-xpnd-4-smint").css("color", "#fff");
+
+                    } else if ($("#btn-xpnd-4-smint").text() == "-") {
+                        $("#btn-xpnd-4-smint").text('+');
+                        $("#btn-xpnd-4-smint").css("background-color", "#fff");
+                        $("#btn-xpnd-4-smint").css("color", "#9EB504");
+
+                    }
+
+                });
+
+                $("#btn-xpnd-5-smint").click(function(){
+
+                    if ($("#btn-xpnd-5-smint").text() == "+") {
+                        $("#btn-xpnd-5-smint").text('-');
+                        $("#btn-xpnd-5-smint").css("background-color", "#9EB504");
+                        $("#btn-xpnd-5-smint").css("color", "#fff");
+
+                    } else if ($("#btn-xpnd-5-smint").text() == "-") {
+                        $("#btn-xpnd-5-smint").text('+');
+                        $("#btn-xpnd-5-smint").css("background-color", "#fff");
+                        $("#btn-xpnd-5-smint").css("color", "#9EB504");
+
+                    }
+
+                });
+
+                $("#btn-xpnd-6-smint").click(function(){
+
+                    if ($("#btn-xpnd-6-smint").text() == "+") {
+                        $("#btn-xpnd-6-smint").text('-');
+                        $("#btn-xpnd-6-smint").css("background-color", "#9EB504");
+                        $("#btn-xpnd-6-smint").css("color", "#fff");
+
+                    } else if ($("#btn-xpnd-6-smint").text() == "-") {
+                        $("#btn-xpnd-6-smint").text('+');
+                        $("#btn-xpnd-6-smint").css("background-color", "#fff");
+                        $("#btn-xpnd-6-smint").css("color", "#9EB504");
+                    }
+
                 });
 
                 App.init();
@@ -269,10 +448,28 @@
             });
         </script>
 
-        <!--[if lt IE 9]>
-        <script src="{{ bootstrap("plugins/respond.js") }}"></script>
-        <script src="{{ bootstrap("plugins/html5shiv.js") }}"></script>
-        <script src="{{ bootstrap("plugins/placeholder-IE-fixes.js") }}"></script>
-        <![endif]-->
+        <script>
+            (function() {
+                var v = document.getElementsByClassName("youtube-player");
+                for (var n = 0; n < v.length; n++) {
+                    var p = document.createElement("div");
+                    p.innerHTML = labnolThumb(v[n].dataset.id);
+                    p.onclick = labnolIframe;
+                    v[n].appendChild(p);
+                }
+            })();
+
+            function labnolThumb(id) {
+                return '<img class="youtube-thumb" src="//i.ytimg.com/vi/' + id + '/hqdefault.jpg"><div class="play-button"></div>';
+            }
+
+            function labnolIframe() {
+                var iframe = document.createElement("iframe");
+                iframe.setAttribute("src", "//www.youtube.com/embed/" + this.parentNode.dataset.id + "?autoplay=1&autohide=2&border=0&wmode=opaque&enablejsapi=1&controls=0&showinfo=0");
+                iframe.setAttribute("frameborder", "0");
+                iframe.setAttribute("id", "youtube-iframe");
+                this.parentNode.replaceChild(iframe, this);
+            }
+        </script>
     </body>
 </html>

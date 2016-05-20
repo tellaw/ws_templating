@@ -89,3 +89,14 @@ img.zoom {
 .pousse {
   left: 295px;
   position: relative; }
+
+.border-red {
+  border: 1px solid #ea2336; }
+
+div.border-red {
+  position: absolute;
+  top: -5px;
+  left: 40px;
+  height: 119px;
+  width: 88px;
+  z-index: 1; }

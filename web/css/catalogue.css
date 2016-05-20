@@ -58,7 +58,7 @@ div[id^="module-"], div[id^="charte-"] {
       width: 69%;
       margin: 10px 0 !important; }
   .wrapper .navbar-fixed-top {
-    top: 63px; }
+    top: 66px; }
   .catalogue-margin-top {
     margin-top: 70px !important; } }
 
@@ -68,6 +68,6 @@ div[id^="module-"], div[id^="charte-"] {
 
 @media (max-width: 1024px) {
   .wrapper .navbar-fixed-top {
-    top: 63px; }
+    top: 66px; }
   .slider-margin-top {
     margin-top: 145px !important; } }

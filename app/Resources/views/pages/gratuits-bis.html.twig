@@ -1,0 +1,80 @@
+{# wk-template : gratuits.html.twig #}
+{# wk-description : Page les gratuits du site #}
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <!--=== Content Part  ===-->
+    <div class="container slider-margin-top">
+        <h1 class="text-center color-red-eti margin-bottom-15 font-weight-300 font-size-24-22-20"><strong>TOUT </strong>les contenus gratuits de <strong>Technique de l'Ingénieur</strong></h1>
+        <p class="text-center font-size-15">Une véritable (r)évolution des comportements a vu le jour depuis que le respect de l’environnement et la prévention des risques sont au coeur des préoccupations des entreprises. Pour un produit, un procédé ou une installation, c’est le cycle de vie complet qui est analysé pour améliorer la performance écologique et économique, anticiper les risques et les maîtriser.</p>
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-4">
+                <i class="fa fa-bullseye accueil-title-icon-1"></i>
+                <h3 class="text-red font-weight-300 margin-bottom-10"><i class="fa fa-bullseye accueil-title-icon-2"></i>LE MAGAZINE DE <strong>L'ACTUALITE</strong></h3>
+                <div class="eti-accueil-devider margin-left-45 margin-bottom-20"></div>
+
+                <div class="col-xs-12 col-sm-6 col-md-12 no-gutters">{{ module('actualite/article-300x250') }}</div>
+                <div class="col-xs-12 col-sm-6 col-md-12 no-gutters">{{ module('actualite/article-300x250') }}</div>
+                <div class="col-xs-12 hidden-sm col-md-12 no-gutters">{{ module('actualite/article-300x250') }}</div>
+                <p class="text-center margin-top-40">
+                    <a href="#" class="btn-u btn-brd btn-u-red btn-u-sm color-red-eti" type="button"><i class="fa fa-fa fa-chevron-right margin-right-5"></i> TOUTE L'ACTUALITÉ</a>
+                </p>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-4">
+                <i class="fa fa-bullseye accueil-title-icon-1"></i>
+                <h3 class="text-red font-weight-300 margin-bottom-10"><i class="fa fa-bullseye accueil-title-icon-2"></i>LES <strong>LIVRES BLANCS</strong></h3>
+                <div class="eti-accueil-devider margin-left-45 margin-bottom-20"></div>
+
+                <div class="col-xs-12 col-sm-6 col-md-12 no-gutters">{{ module("livre-blanc/livre-blanc") }}</div>
+                <div class="col-xs-12 col-sm-6 col-md-12 no-gutters">{{ module("livre-blanc/livre-blanc") }}</div>
+                <div class="col-xs-12 hidden-sm col-md-12 no-gutters">{{ module("livre-blanc/livre-blanc") }}</div>
+                <p class="text-center margin-top-40">
+                    <a href="#" class="btn-u btn-brd btn-u-red btn-u-sm color-red-eti" type="button"><i class="fa fa-fa fa-chevron-right margin-right-5"></i> TOUS LES LIVRES BLANCS</a>
+                </p>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-4">
+                <i class="fa fa-bullseye accueil-title-icon-1"></i>
+                <h3 class="text-red font-weight-300 margin-bottom-10"><i class="fa fa-bullseye accueil-title-icon-2"></i>LES<strong>CONFÉRENCES</strong></h3>
+                <div class="eti-accueil-devider margin-left-45 margin-bottom-20"></div>
+
+                <div class="col-xs-12 col-sm-6 col-md-12 no-gutters">{{ module("conference/conference") }}</div>
+                <div class="col-xs-12 col-sm-6 col-md-12 no-gutters">{{ module("conference/conference") }}</div>
+                <div class="col-xs-12 hidden-sm col-md-12 no-gutters">{{ module("conference/conference") }}</div>
+                <p class="text-center margin-top-40">
+                    <a href="#" class="btn-u btn-brd btn-u-red btn-u-sm color-red-eti" type="button"><i class="fa fa-fa fa-chevron-right margin-right-5"></i> TOUTES LES CONFERENCES</a>
+                </p>
+            </div>
+        </div>
+
+
+
+
+        <hr id="hr-separator">
+        <i class="fa fa-bullseye accueil-title-icon-1"></i>
+        <h3 class="text-red font-weight-300 margin-bottom-10"><i class="fa fa-bullseye accueil-title-icon-2"></i>DANS LES <strong>RESSOURCES DOCUMENTAIRES</strong></h3>
+        <div class="eti-accueil-devider margin-left-45 margin-bottom-20"></div>
+
+        <div class="row margin-left-right">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 xs-padding-0 no-gutters">
+                {{ module("livre-blanc/livre-blanc") }}
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 xs-padding-0 no-gutters">
+                {{ module("livre-blanc/livre-blanc") }}
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 xs-padding-0 no-gutters">
+                {{ module("livre-blanc/livre-blanc") }}
+            </div>
+        </div>
+        <p class="text-center margin-top-40">
+            <a href="#" class="btn-u btn-brd btn-u-red btn-u-sm color-red-eti" type="button"><i class="fa fa-fa fa-chevron-right margin-right-5"></i> TOUS LES LIVRES BLANCS</a>
+        </p>
+        
+        <hr id="hr-separator">
+        {{ module('newsletter/newsletter') }}
+
+        {{ module('reassurance/reassurance2') }}
+    </div>
+{% endblock %}
