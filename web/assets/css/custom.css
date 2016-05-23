@@ -20,6 +20,7 @@
 }
 body {
 	font-family: "myriad-pro", sans-serif;
+	color:#697277;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -1194,6 +1195,10 @@ div[class^="element-wrapper-"] img {
 	padding-left: 0px !important;
 }
 
+.margin-right-50 {
+	margin-right: 50px !important ;
+}
+
 .margin-right-70 {
 	margin-right: 70px !important ;
 }
@@ -1728,6 +1733,12 @@ div[class^="element-wrapper-"] img {
 	padding-left: 20px !important;
 }
 .padding-left-40{
+	padding-left: 40px !important;
+}
+.padding-left-50{
+	padding-left: 50px !important;
+}
+.padding-left-60{
 	padding-left: 60px !important;
 }
 .offre-width{
