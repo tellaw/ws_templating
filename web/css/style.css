@@ -111,3 +111,6 @@ div.border-red {
 .picto-article-temoin:hover {
   text-decoration: underline;
   color: #697277; }
+
+.header .navbar-toggle {
+  margin-top: 8px !important; }

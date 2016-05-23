@@ -629,72 +629,13 @@ a:hover {
 	background-color: #ea2336!important;
 	color: #fff !important;
 }
-#souscrire-btn:hover {
+.btn-u-red:hover,
+.btn-u-red:focus {
 	background-color: #EA2336 !important;
 	color: #fff !important;
 }
 
-#livres-btn:hover {
-	background-color: #EA2336 !important;
-	color: #fff !important;
-
-
-
-
-
-}
-#actualite-btn:hover {
-	background-color: #EA2336 !important;
-	color: #fff !important;
-
-
-}
-
-
-#conferences-btn:hover {
-	background-color: #EA2336 !important;
-	color: #fff !important;
-
-
-
-}
 #cat-btn:focus {
-	background-color: #EA2336 !important;
-	color: #fff !important;
-
-
-
-
-
-
-}
-
-#souscrire-btn:focus {
-	background-color: #EA2336 !important;
-	color: #fff !important;
-
-
-
-}
-
-#livres-btn:focus {
-	background-color: #EA2336 !important;
-	color: #fff !important;
-
-
-
-
-}
-
-#actualite-btn:focus {
-	background-color: #EA2336 !important;
-	color: #fff !important;
-
-
-}
-
-#conferences-btn:focus {
-
 	background-color: #EA2336 !important;
 	color: #fff !important;
 }
@@ -1041,7 +982,7 @@ div[class^="element-wrapper-"] img {
 }
 
 .slider-margin-top {
-	margin-top: 185px;
+	margin-top: 120px;
 }
 
 .rech-rapide {
@@ -1132,7 +1073,7 @@ div[class^="element-wrapper-"] img {
 }
 
 .btn-action {
-	padding: 12px 25px 12px 25px;
+	padding: 12px;
 	font-size: 11px;
 	border-bottom: 1px #fff solid;
 	height: 40px;
@@ -1262,13 +1203,15 @@ div[class^="element-wrapper-"] img {
 }
 
 .breadcrumb>li+li:before {
-	content: ">\00a0"
+	content: ">\00a0";
+	color: #697277;
 }
 
 .breadcrumb {
 	font-size: 11px;
 	left: -20px;
 	margin-bottom: 0px;
+	top:0;
 }
 
 .env-sec-box {
