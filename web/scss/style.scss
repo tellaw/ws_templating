@@ -113,3 +113,15 @@ div.border-red {
   width:88px;
   z-index: 1;
 }
+
+.picto-article-temoin {
+  background: url("../images/picto-article-temoin.png") no-repeat center left transparent;
+  height: 52px;
+  display: block;
+  float: left;
+  color:#697277;
+}
+.picto-article-temoin:hover {
+  text-decoration: underline;
+  color:#697277;
+}

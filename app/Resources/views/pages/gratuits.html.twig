@@ -5,31 +5,10 @@
 {% block body %}
     <!--=== Content Part  ===-->
     <div class="container slider-margin-top">
-        <h1 class="text-center color-red-eti margin-bottom-15 font-weight-300 font-size-24-22-20"><strong>TOUT </strong>les contenus gratuits de <strong>Technique de l'Ingénieur</strong></h1>
+        <h1 class="text-center color-red-eti margin-bottom-25 font-weight-300 font-size-24-22-20"><span class="font-family-myriadpro-bold">TOUS </span>les contenus gratuits de <span class="font-family-myriadpro-bold">Technique de l'Ingénieur</span></h1>
+        <p class="text-center font-size-15 letter-spacing-75">Rechercher uniquement dans le contenu libre d'accès.</p>
 
-        <i class="fa fa-bullseye accueil-title-icon-1"></i>
-        <h3 class="text-red font-weight-300 margin-bottom-10"><i class="fa fa-bullseye accueil-title-icon-2"></i>DANS LES <strong>RESSOURCES DOCUMENTAIRES</strong></h3>
-        <div class="eti-accueil-devider margin-left-45 margin-bottom-20"></div>
-
-        <div class="margin-bottom-50 margin-right-left-150">
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-4 col-md-4">
-                            {{ module('domaine/listing') }}
-                        </div>
-                        <div class="col-xs-12 col-sm-4 col-md-4">
-                            {{ module('domaine/listing') }}
-                        </div>
-                        <div class="col-xs-12 col-sm-4 col-md-4">
-                            {{ module('domaine/listing') }}
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="margin-bottom-40 margin-right-left-150">
+        <div class="margin-top-25 margin-bottom-40 margin-right-left-150">
             <div class="row">
                 <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2">
                     {{ module('recherche/recherche') }}
@@ -37,70 +16,80 @@
             </div>
         </div>
 
-        <hr id="hr-separator">
         <i class="fa fa-bullseye accueil-title-icon-1"></i>
-        <h3 class="text-red font-weight-300 margin-bottom-10"><i class="fa fa-bullseye accueil-title-icon-2"></i>LE MAGAZINE DE <strong>L'ACTUALITE</strong></h3>
+        <h3 class="text-red font-weight-300 margin-bottom-20"><i class="fa fa-bullseye accueil-title-icon-2"></i><span class="font-family-myriadpro-bold">ARTICLES TÉMOINS</span> ET <span class="font-family-myriadpro-bold">EXTRAITS GRATUITS</span> DANS LES <span class="font-family-myriadpro-bold">RESSOURCES DOCUMENTAIRES</span></h3>
         <div class="eti-accueil-devider margin-left-45 margin-bottom-20"></div>
 
-        <div class="row margin-left-right">
-            <div class="hidden-xs hidden-sm col-md-4 no-gutters">
-                {{ module('actualite/article-300x510') }}
-            </div>
-            <div class="col-xs-12 col-sm-12 col-md-8">
-                <div class="row">
-                    <div class="col-xs-6 col-sm-6 col-md-6 no-gutters">
-                        {{ module('actualite/article-300x250') }}
-                        {{ module('actualite/article-300x250') }}
-                    </div>
-                    <div class="col-xs-6 col-sm-6 col-md-6 no-gutters">
-                        <div class="row">
-                            {{ module('actualite/article-300x510') }}
+        <p class="font-size-15 letter-spacing-75 line-height-16 margin-left-45 padding-top-15 margin-top-30"><span class="color-red-eti">Un aricle témoin, par domaine...</span></p>
+
+        <div class="margin-bottom-50 margin-right-left-150">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-4 col-md-4">
+                            {{ module("domaine/article-temoin") }}
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4">
+                            {{ module("domaine/article-temoin") }}
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4">
+                            {{ module("domaine/article-temoin") }}
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <p class="text-center margin-top-40">
-            <a href="#" class="btn-u btn-brd btn-u-red btn-u-sm color-red-eti" type="button"><i class="fa fa-fa fa-chevron-right margin-right-5"></i> TOUTE L'ACTUALITÉ</a>
-        </p>
+
+        <p class="font-size-15 letter-spacing-50 line-height-16 margin-left-45 padding-top-15 margin-top-30"><span class="color-red-eti">Un aricle témoin, par domaine...</span></p>
+        <a class="color-red-eti font-family-myriadpro-semibold letter-spacing-75 font-size-15 margin-left-45 padding-top-15 margin-top-30" href=""><i class="fa fa-fa fa-chevron-right margin-right-5"></i>Aller dans les ressources documentaires pour voir les extraits</a>
 
         <hr id="hr-separator">
         <i class="fa fa-bullseye accueil-title-icon-1"></i>
-        <h3 class="text-red font-weight-300 margin-bottom-10"><i class="fa fa-bullseye accueil-title-icon-2"></i>LES <strong>LIVRES BLANCS</strong></h3>
+        <h3 class="text-red font-weight-300 margin-bottom-20"><i class="fa fa-bullseye accueil-title-icon-2"></i>DANS <strong class="font-family-myriadpro-bold">L'ACTUALITE</strong></h3>
         <div class="eti-accueil-devider margin-left-45 margin-bottom-20"></div>
-        <div class="row margin-left-right">
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 xs-padding-0 no-gutters">
-                {{ module("livre-blanc/livre-blanc") }}
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 xs-padding-0 no-gutters">
-                {{ module("livre-blanc/livre-blanc") }}
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 xs-padding-0 no-gutters">
-                {{ module("livre-blanc/livre-blanc") }}
-            </div>
-        </div>
-        <p class="text-center margin-top-40">
-            <a href="#" class="btn-u btn-brd btn-u-red btn-u-sm color-red-eti" type="button"><i class="fa fa-fa fa-chevron-right margin-right-5"></i> TOUS LES LIVRES BLANCS</a>
-        </p>
 
-        <hr id="hr-separator">
-        <i class="fa fa-bullseye accueil-title-icon-1"></i>
-        <h3 class="text-red font-weight-300 margin-bottom-10"><i class="fa fa-bullseye accueil-title-icon-2"></i>LES<strong>CONFÉRENCES</strong></h3>
-        <div class="eti-accueil-devider margin-left-45 margin-bottom-20"></div>
-        <div class="row margin-left-right">
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 xs-padding-0 xs-margin-bottom-15 no-gutters">
-                {{ module("conference/conference") }}
+        <p class="font-size-15 letter-spacing-75 line-height-16 margin-left-45 padding-top-15 margin-top-30">Vous accédez librement à tous les articles d'actualité, livres blancs et conférence en ligne.</p>
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-4">
+                <h3 class="text-red font-weight-300 lg-margin-left-30 margin-bottom-20">LE MAGAZINE DE <strong class="font-family-myriadpro-bold">L'ACTUALITE</strong></h3>
+                <div class="eti-accueil-devider lg-margin-left-30 margin-bottom-20"></div>
+                <p class="font-size-12 letter-spacing-50 line-height-16 lg-margin-left-30 margin-top-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget laoreet turpis. In congue sollicitudin orci, eget placerat lorem. Nullam ac dolor magna.</p>
+
+                <div class="col-xs-12 col-sm-6 col-md-12 no-gutters margin-top-30">{{ module('actualite/article-300x250') }}</div>
+                <div class="col-xs-12 col-sm-6 col-md-12 no-gutters margin-top-30">{{ module('actualite/article-300x250') }}</div>
+                <div class="col-xs-12 hidden-sm col-md-12 no-gutters margin-top-30">{{ module('actualite/article-300x250') }}</div>
+                <p class="col-xs-12 col-sm-12 col-md-12 text-center margin-top-40">
+                    <a href="#" class="btn-u btn-brd btn-u-red btn-u-sm color-red-eti" type="button"><i class="fa fa-fa fa-chevron-right margin-right-5"></i> TOUTE L'ACTUALITÉ</a>
+                </p>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 xs-padding-0 xs-margin-bottom-15 no-gutters">
-                {{ module("conference/conference") }}
+
+            <div class="col-xs-12 col-sm-12 col-md-4">
+                <h3 class="text-red font-weight-300 lg-margin-left-30 margin-bottom-20">LES <strong class="font-family-myriadpro-bold">LIVRES BLANCS</strong></h3>
+                <div class="eti-accueil-devider lg-margin-left-30 margin-bottom-20"></div>
+                <p class="font-size-12 letter-spacing-50 line-height-16 lg-margin-left-30 margin-top-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget laoreet turpis. In congue sollicitudin orci, eget placerat lorem. Nullam ac dolor magna.</p>
+
+                <div class="col-xs-12 col-sm-6 col-md-12 no-gutters margin-top-30">{{ module("livre-blanc/livre-blanc") }}</div>
+                <div class="col-xs-12 col-sm-6 col-md-12 no-gutters margin-top-30">{{ module("livre-blanc/livre-blanc") }}</div>
+                <div class="col-xs-12 hidden-sm col-md-12 no-gutters margin-top-30">{{ module("livre-blanc/livre-blanc") }}</div>
+                <p class="col-xs-12 col-sm-12 col-md-12 text-center margin-top-40">
+                    <a href="#" class="btn-u btn-brd btn-u-red btn-u-sm color-red-eti" type="button"><i class="fa fa-fa fa-chevron-right margin-right-5"></i> TOUS LES LIVRES BLANCS</a>
+                </p>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 xs-padding-0 xs-margin-bottom-15 no-gutters">
-                {{ module("conference/conference") }}
+
+            <div class="col-xs-12 col-sm-12 col-md-4">
+                <h3 class="text-red font-weight-300 lg-margin-left-30 margin-bottom-20">LES <strong class="font-family-myriadpro-bold">CONFÉRENCES EN LIGNE</strong></h3>
+                <div class="eti-accueil-devider lg-margin-left-30 margin-bottom-20"></div>
+                <p class="font-size-12 letter-spacing-50 line-height-16 lg-margin-left-30 margin-top-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget laoreet turpis. In congue sollicitudin orci, eget placerat lorem. Nullam ac dolor magna.</p>
+
+                <div class="col-xs-12 col-sm-6 col-md-12 no-gutters margin-top-30">{{ module("conference/conference") }}</div>
+                <div class="col-xs-12 col-sm-6 col-md-12 no-gutters margin-top-30">{{ module("conference/conference") }}</div>
+                <div class="col-xs-12 hidden-sm col-md-12 no-gutters margin-top-30">{{ module("conference/conference") }}</div>
+                <p class="col-xs-12 col-sm-12 col-md-12 text-center margin-top-40">
+                    <a href="#" class="btn-u btn-brd btn-u-red btn-u-sm color-red-eti" type="button"><i class="fa fa-fa fa-chevron-right margin-right-5"></i> TOUTES LES CONFERENCES</a>
+                </p>
             </div>
         </div>
-        <p class="text-center margin-top-40">
-            <a href="#" class="btn-u btn-brd btn-u-red btn-u-sm color-red-eti" type="button"><i class="fa fa-fa fa-chevron-right margin-right-5"></i> TOUTES LES CONFERENCES</a>
-        </p>
 
         <hr id="hr-separator">
         {{ module('newsletter/newsletter') }}
