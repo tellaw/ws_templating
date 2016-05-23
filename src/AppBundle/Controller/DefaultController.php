@@ -4,20 +4,37 @@ namespace AppBundle\Controller;
 
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\Config\Definition\Exception\Exception;
 use Symfony\Component\HttpFoundation\Request;
 
 class DefaultController extends Controller
 {
     /**
-     * @Route("/", name="homepage")
-     * @Route("/page/{name}", name="homepage2", requirements={"name"=".+"})
+     * @param Request $request
+     * @Route ("/", name="home")
+     * @return \Symfony\Component\HttpFoundation\Response
      */
-    public function indexAction(Request $request, $name = "default/index")
+    public function indexAction(Request $request) {
+        return $this->render('pages/accueil.html.twig');
+    }
+
+    /**
+     * @Route("/{slug}", name="homepage3", requirements={"slug"=".+"})
+     * @param Request $request
+     * @param string $slug
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public function pageAction(Request $request, $slug = "accueil")
     {
-        // replace this example code with whatever you need
-        return $this->render('pages/'.$name.'.html.twig', [
-            'base_dir' => realpath($this->getParameter('kernel.root_dir').'/..'),
-        ]);
+        $slug = str_replace("page/", "" , $slug);
+        $slug = str_replace("page", "" , $slug);
+        if (strlen($slug) < 2) return $this->redirect("/");
+
+        try {
+            return $this->render('pages/'.$slug.'.html.twig');
+        } catch(Exception $e) {
+            return $this->redirect("/");
+        }
     }
 
     /**
