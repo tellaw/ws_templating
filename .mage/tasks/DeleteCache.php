@@ -10,7 +10,7 @@ namespace Task;
 use Mage\Task\AbstractTask;
 
 
-class ComposerInstall extends AbstractTask
+class DeleteCache extends AbstractTask
 {
     public function getName()
     {

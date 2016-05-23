@@ -24,4 +24,4 @@ tasks:
     - chmod
   post-release:
   post-deploy:
-    - clear-cache
+    - delete-cache
