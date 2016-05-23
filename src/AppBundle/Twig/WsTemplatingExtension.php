@@ -48,7 +48,7 @@ class WsTemplatingExtension extends \Twig_Extension
 	public function getMedia ($value) {
 
 		$path = $this->container->get('router')->getContext()->getBaseUrl();
-		$path = str_replace ("app_dev.php", "", $path);
+		$path = str_replace ("/app_dev.php", "", $path);
 		// replace this example code with whatever you need
 		echo ("/".$path."images/".$value);
 	}
@@ -56,7 +56,7 @@ class WsTemplatingExtension extends \Twig_Extension
 	public function getCss ($value) {
 
 		$path = $this->container->get('router')->getContext()->getBaseUrl();
-		$path = str_replace ("app_dev.php", "", $path);
+		$path = str_replace ("/app_dev.php", "", $path);
 		// replace this example code with whatever you need
 		echo ("/".$path."css/".$value);
 
@@ -66,7 +66,7 @@ class WsTemplatingExtension extends \Twig_Extension
 	public function getBootstrap ($value) {
 
 		$path = $this->container->get('router')->getContext()->getBaseUrl();
-		$path = str_replace ("app_dev.php", "", $path);
+		$path = str_replace ("/app_dev.php", "", $path);
 		// replace this example code with whatever you need
 		echo ("/".$path."assets/".$value);
 
@@ -76,7 +76,7 @@ class WsTemplatingExtension extends \Twig_Extension
 	public function getJs ($value) {
 
 		$path = $this->container->get('router')->getContext()->getBaseUrl();
-		$path = str_replace ("app_dev.php", "", $path);
+		$path = str_replace ("/app_dev.php", "", $path);
 		// replace this example code with whatever you need
 		echo ($path."bundles/framework/js/".$value);
 
