@@ -78,7 +78,7 @@ class WsTemplatingExtension extends \Twig_Extension
 		$path = $this->container->get('router')->getContext()->getBaseUrl();
 		$path = str_replace ("/app_dev.php", "", $path);
 		// replace this example code with whatever you need
-		echo ($path."bundles/framework/js/".$value);
+		echo ("/".$path."js/".$value);
 
 
 	}
