@@ -1,5 +1,5 @@
 .wrapper .navbar-fixed-top {
-  top: 142px; }
+  top: 42px; }
 
 .listing-elements {
   margin: 20px auto 0;
@@ -32,15 +32,15 @@
     position: absolute !important; }
 
 .slider-margin-top {
-  margin-top: 330px !important; }
+  margin-top: 200px !important; }
 
 .catalogue-margin-top {
-  margin-top: 145px !important; }
+  margin-top: 195px !important; }
 
 div[id^="module-"], div[id^="charte-"] {
-  padding-top: 165px;
+  padding-top: 200px;
   position: relative;
-  top: -165px;
+  top: -145px;
   margin-bottom: -135px; }
   div[id^="module-"] > div, div[id^="charte-"] > div {
     border: solid 1px #eee;
@@ -58,7 +58,7 @@ div[id^="module-"], div[id^="charte-"] {
       width: 69%;
       margin: 10px 0 !important; }
   .wrapper .navbar-fixed-top {
-    top: 66px; }
+    top: 51px; }
   .catalogue-margin-top {
     margin-top: 70px !important; } }
 
@@ -68,6 +68,6 @@ div[id^="module-"], div[id^="charte-"] {
 
 @media (max-width: 1024px) {
   .wrapper .navbar-fixed-top {
-    top: 66px; }
+    top: 48px; }
   .slider-margin-top {
     margin-top: 145px !important; } }

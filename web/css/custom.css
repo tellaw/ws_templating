@@ -629,72 +629,13 @@ a:hover {
 	background-color: #ea2336!important;
 	color: #fff !important;
 }
-#souscrire-btn:hover {
+.btn-u-red:hover,
+.btn-u-red:focus {
 	background-color: #EA2336 !important;
 	color: #fff !important;
 }
 
-#livres-btn:hover {
-	background-color: #EA2336 !important;
-	color: #fff !important;
-
-
-
-
-
-}
-#actualite-btn:hover {
-	background-color: #EA2336 !important;
-	color: #fff !important;
-
-
-}
-
-
-#conferences-btn:hover {
-	background-color: #EA2336 !important;
-	color: #fff !important;
-
-
-
-}
 #cat-btn:focus {
-	background-color: #EA2336 !important;
-	color: #fff !important;
-
-
-
-
-
-
-}
-
-#souscrire-btn:focus {
-	background-color: #EA2336 !important;
-	color: #fff !important;
-
-
-
-}
-
-#livres-btn:focus {
-	background-color: #EA2336 !important;
-	color: #fff !important;
-
-
-
-
-}
-
-#actualite-btn:focus {
-	background-color: #EA2336 !important;
-	color: #fff !important;
-
-
-}
-
-#conferences-btn:focus {
-
 	background-color: #EA2336 !important;
 	color: #fff !important;
 }
@@ -1041,7 +982,7 @@ div[class^="element-wrapper-"] img {
 }
 
 .slider-margin-top {
-	margin-top: 185px;
+	margin-top: 120px;
 }
 
 .rech-rapide {
@@ -1132,7 +1073,7 @@ div[class^="element-wrapper-"] img {
 }
 
 .btn-action {
-	padding: 12px 25px 12px 25px;
+	padding: 12px;
 	font-size: 11px;
 	border-bottom: 1px #fff solid;
 	height: 40px;
@@ -1262,13 +1203,15 @@ div[class^="element-wrapper-"] img {
 }
 
 .breadcrumb>li+li:before {
-	content: ">\00a0"
+	content: ">\00a0";
+	color: #697277;
 }
 
 .breadcrumb {
 	font-size: 11px;
 	left: -20px;
 	margin-bottom: 0px;
+	top:0;
 }
 
 .env-sec-box {
@@ -2020,7 +1963,7 @@ div[class^="element-wrapper-"] img {
 	opacity: 0.8;
 }
 .picto-plus-zoom {
-	background:url("../img/picto-plus-zoom.png") no-repeat center center transparent;
+	background:url("../images/picto-plus-zoom.png") no-repeat center center transparent;
 	position:absolute;
 	height: 54px;
 	width: 52px;
@@ -2105,7 +2048,7 @@ div.play-button {
 	margin-left: -36px;
 	margin-top: -36px;
 	position: absolute;
-	background: url("../img/main/play.png") no-repeat
+	background: url("../assets/img/main/play.png") no-repeat
 }
 
 #youtube-iframe {
@@ -2155,4 +2098,8 @@ div.play-button {
 }
 .line-height-16 {
 	line-height: 16px;
+}
+
+.slick-slider {
+	margin-top:20px
 }
