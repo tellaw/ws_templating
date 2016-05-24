@@ -29,7 +29,6 @@ deployment:
   strategy: targz
 releases:
   enabled: true
-  max: 5
   symlink: current
   directory: releases
 hosts:
