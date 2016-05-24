@@ -44,6 +44,7 @@ class CdnTag extends AbstractTask
 		$commands[] = "cp -r $src/fonts $shared/ && ln -s $src/fonts $tag/fonts && cp .htaccess $tag/fonts";
 
 		// copy directories tag
+		$commands[] = "mkdir -p $tmpl_dir/latest";
 		$commands[] = "mkdir -p $tag/css/private";
 		$commands[] = "mkdir -p $tag/js/private";
 		$commands[] = "cp -r $src/assets/ajax $tag/ && cp .htaccess $tag/ajax";
@@ -52,7 +53,7 @@ class CdnTag extends AbstractTask
 		$commands[] = "cp -r $src/assets/js $tag && cp .htaccess $tag/js";
 //		$commands[] = "cp -r $src/js/* $tag/js/private";
 
-		$commands[] = "cp -r $tag/* $tmpl_dir/latest";
+		$commands[] = "rm -rf $tmpl_dir/latest/* && cp -r $tag/* $tmpl_dir/latest/";
 		$commands[] = "sudo chmod -R 775 $tmpl_dir";
 
 		// Execute commands
