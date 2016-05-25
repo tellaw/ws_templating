@@ -1437,7 +1437,7 @@ div[class^="element-wrapper-"] img {
 	padding: 0px 0px;
 	color: #E72C46;
 	margin-bottom: 0px;
-	margin-top: 10px;
+	margin-top: 6px;
 	width: 300px;
 }
 .margin-tagbox-actualite{
@@ -2026,6 +2026,7 @@ a.large-img:hover .picto-plus-zoom {
 	margin: 0px auto;
 	width: 100%;
 	max-width: 600px;
+	height:178px;
 }
 .youtube-container iframe {
 	width: 300px !important;
