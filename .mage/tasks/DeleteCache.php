@@ -21,7 +21,7 @@ class DeleteCache extends AbstractTask
     {
         $this->runCommandRemote('sudo php bin/console clear:cache');
         $this->runCommandRemote('sudo php bin/console --env=prod clear:cache');
-        $this->runCommandRemote('chmod -r 777 var/cache');
+        $this->runCommandRemote('chmod -R 777 ../../shared/var/cache/');
         return true;
     }
 }
