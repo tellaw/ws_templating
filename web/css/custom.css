@@ -982,7 +982,7 @@ div[class^="element-wrapper-"] img {
 }
 
 .slider-margin-top {
-	margin-top: 120px;
+	margin-top: 170px;
 }
 
 .rech-rapide {
@@ -1624,7 +1624,12 @@ div[class^="element-wrapper-"] img {
 }
 .cadre-downloads a {
 	display:block;
-	height:250px;
+	/*height:250px;*/
+}
+.cadre-downloads a img,
+.cadre-downloads img{
+	width: 300px !important;
+	height:178px !important;
 }
 .cadre-downloads .book {
 	border-bottom:1px solid #E3E3E3;
@@ -1642,7 +1647,7 @@ div[class^="element-wrapper-"] img {
 	-o-box-shadow: 0px 0px 1px 0px #9b9b9b;
 	box-shadow: 0px 0px 1px 0px #9b9b9b;
 	filter:progid:DXImageTransform.Microsoft.Shadow(color=#9b9b9b, Direction=NaN, Strength=1);
-	border-bottom:0px solid #C7C7C7;
+	border-bottom:1px solid #FFF;
 }
 .cadre-downloads .book img {
 	margin-top: 0;
