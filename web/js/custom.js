@@ -35,7 +35,7 @@ jQuery(document).ready(function() {
         } else if (($(window).width() >= 992) && ($(window).scrollTop() != 0)) {
             $("#navbar-x").removeClass("in");
             $("#advanced-search-box").hide();
-            $("#button-menu-header").css('cssText', 'display: block !important');
+            $("#button-menu-header").css('cssText', 'display: inline-block !important');
             $("#div-menu-header").css('cssText', 'display: block !important');
 
         }
