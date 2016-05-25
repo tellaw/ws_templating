@@ -1622,14 +1622,9 @@ div[class^="element-wrapper-"] img {
 	margin-left: auto;
 	position:relative;
 }
-.cadre-downloads a {
+.cadre-downloads>a {
 	display:block;
-	/*height:250px;*/
-}
-.cadre-downloads a img,
-.cadre-downloads img{
-	width: 300px !important;
-	height:178px !important;
+	height:250px;
 }
 .cadre-downloads .book {
 	border-bottom:1px solid #E3E3E3;
@@ -2035,6 +2030,11 @@ a.large-img:hover .picto-plus-zoom {
 .youtube-container iframe {
 	width: 300px !important;
 	height: 178px !important;
+}
+.youtube-container a img,
+.youtube-container img{
+	width: 300px !important;
+	height:178px !important;
 }
 .youtube-player {
 	display: block;
