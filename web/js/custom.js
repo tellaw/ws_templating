@@ -196,6 +196,13 @@ jQuery(document).ready(function() {
             }, 500);
         }
     });
+
+    // gestion des ancres pour les onglets
+    if (window.location.href.indexOf("#") > 0) {
+        var anchor = window.location.href.substring(window.location.href.indexOf("#")+1, window.location.href.length);
+        anchor = anchor.substring(0, anchor.indexOf("?"));
+        jQuery("#"+anchor+"_linl").click();
+    }
 });
 
 (function() {
