@@ -1,20 +1,20 @@
 // Home javascript
 
-jQuery( window ).resize(function() {
+jQuery( window ).resize(function($) {
     if ($( "#sub-menu" ).hasClass( "fxd" )) {
         $('#sub-menu').css('margin-top', $('#main-header').height());
     } else if (!$( "#sub-menu" ).hasClass( "fxd" )) {
     }
 });
 
-jQuery( window ).ready(function() {
+jQuery( window ).ready(function($) {
     if ($( "#sub-menu" ).hasClass( "fxd" )) {
         $('#sub-menu').css('margin-top', $('#main-header').height());
     } else if (!$( "#sub-menu" ).hasClass( "fxd" )) {
     }
 });
 
-jQuery(document).ready(function() {
+jQuery(document).ready(function($) {
     if (($(window).width() >= 992) && ($(window).scrollTop() == 0)) {
         $("#navbar-x").addClass("in");
         $("#button-menu-header").css('cssText', 'display: none !important');
