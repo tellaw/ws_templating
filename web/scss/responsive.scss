@@ -797,8 +797,8 @@ $color-red : #ea2336 ;
 /* Medium and down */
 @media (max-width: 991px) {
   .navbar-mods {
-    padding-right: 36px !important;
-    padding-left: 36px !important;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
   }
   .accueil-title-icon-1 {
     font-size: 30px;
@@ -1092,33 +1092,8 @@ $color-red : #ea2336 ;
     padding-top: 8px;
   }
   .navbar-mods {
-    padding-right: 22px !important;
-    padding-left: 22px !important;
-  }
-  #tab-1::after {
-    font-family: FontAwesome;
-    content: "\f107";
-    display: inline-block;
-    padding-right: 3px;
-    vertical-align: middle;
-    color: #ea2336 !important;
-    top: 2px;
-    left: 425px;
-    position: absolute;
-
-  }
-
-  #tab-2::after {
-    font-family: FontAwesome;
-    content: "\f107";
-    display: inline-block;
-    padding-right: 3px;
-    vertical-align: middle;
-    color: #ea2336 !important;
-    top: 2px;
-    left: 220px;
-    position: absolute;
-
+    padding-right: 37px !important;
+    padding-left: 37px !important;
   }
   .padding-menu-cart{
     padding-left:45px !important;
@@ -1300,33 +1275,8 @@ $color-red : #ea2336 ;
     padding-top: 90px;
   }
   .navbar-mods {
-    padding-right: 45px !important;
-    padding-left: 45px !important;
-  }
-  #tab-1::after {
-    font-family: FontAwesome;
-    content: "\f107";
-    display: inline-block;
-    padding-right: 3px;
-    vertical-align: middle;
-    color: #ea2336 !important;
-    top: 2px;
-    left: 495px;
-    position: absolute;
-
-  }
-
-  #tab-2::after {
-    font-family: FontAwesome;
-    content: "\f107";
-    display: inline-block;
-    padding-right: 3px;
-    vertical-align: middle;
-    color: #ea2336 !important;
-    top: 2px;
-    left: 245px;
-    position: absolute;
-
+    padding-right: 62px !important;
+    padding-left: 62px !important;
   }
   .nav-tabs {
     /*padding-left: 10px;
@@ -1347,6 +1297,21 @@ $color-red : #ea2336 ;
   }
   .lg-margin-left-30 {
     margin-left: 30px !important;
+  }
+  .lg-margin-left-45 {
+    margin-left: 45px !important;
+  }
+  .lg-margin-left-90 {
+    margin-left: 90px !important;
+  }
+  .lg-margin-right-45 {
+    margin-left: 45px !important;
+  }
+  .lg-padding-left-45 {
+    padding-left: 45px !important;
+  }
+  .lg-padding-right-45 {
+    pading-left: 45px !important;
   }
 }
 
@@ -1410,8 +1375,17 @@ $color-red : #ea2336 ;
       }
     }
   }
+  .footer-thematique {
+    background:none !important;
+  }
   #footer-cols {
     h4.ressdoc, p.ressdoc {
+      padding:0 0 7px 45px !important;
+      line-height: 13px;
+    }
+  }
+  #menu-footer-generique {
+    li.ressdoc>a {
       padding:0 0 7px 45px !important;
       line-height: 13px;
     }
@@ -1446,6 +1420,9 @@ $color-red : #ea2336 ;
     .col {
       width:100% !important
     }
+  }
+  #menu-footer-generique>li {
+    width:100% !important
   }
 }
 

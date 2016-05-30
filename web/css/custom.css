@@ -103,14 +103,37 @@ a:hover {
 	content: "";
 }
 
-.header-v1 .dropdown > a:after {
+/*.header-v1 .dropdown > a:after {
 	content: "";
-}
+}*/
 
 .header-v1-logo-padding {
 	padding: 8px;
 }
 
+.navbar-mods:first-child {
+	padding-left: 0!important;
+}
+.navbar-mods:last-child {
+	padding-right: 0!important;
+}
+.header-v1 .navbar-default .navbar-nav > li > a,
+.header-v1 .navbar-default .navbar-nav > li > a:hover,
+.header-v1 .navbar-default .navbar-nav > li > a:focus {
+	padding: 15px 0px 15px 0px;
+	bottom: -1px;
+	color: #697277;
+}
+.header-v1 .navbar-default .navbar-nav > li > a:hover,
+.brd-active a {
+	border-bottom: 2px solid #ea2336;
+}
+.header-v1 .dropdown > a:after {
+	right:-20px;
+	color:#EA2336;
+	font-size: 15px;
+	top: 14px;
+}
 /*Pour l'icone menu*/
 .border-0 {
 	border: 0px !important;
