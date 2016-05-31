@@ -125,9 +125,11 @@
     color: #fff; } }
 
 /* Mobile portrait */
-@media (max-width: 425px) {
+@media screen and (max-width: 425px) {
   #sub-menu {
     padding: 0 15px; }
+  .xs-margin-top-10 {
+    margin-top: 23px !important; }
   .badge-env {
     margin-top: 4px;
     background-color: #ea2336 !important;
@@ -783,8 +785,8 @@
     font-size: 14px;
     padding-top: 8px; }
   .navbar-mods {
-    padding-right: 37px !important;
-    padding-left: 37px !important; }
+    padding-right: 41px !important;
+    padding-left: 41px !important; }
   .padding-menu-cart {
     padding-left: 45px !important; }
   .padding-menu-account {
@@ -919,8 +921,8 @@
   .domaine-padding-top {
     padding-top: 90px; }
   .navbar-mods {
-    padding-right: 62px !important;
-    padding-left: 62px !important; }
+    padding-right: 66px !important;
+    padding-left: 66px !important; }
   .nav-tabs {
     /*padding-left: 10px;
     padding-right: 10px;*/ }

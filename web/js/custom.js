@@ -1,16 +1,16 @@
 // Home javascript
 
 jQuery( window ).resize(function($) {
-    if ($( "#sub-menu" ).hasClass( "fxd" )) {
-        $('#sub-menu').css('margin-top', $('#main-header').height());
-    } else if (!$( "#sub-menu" ).hasClass( "fxd" )) {
+    if (jQuery( "#sub-menu" ).hasClass( "fxd" )) {
+        jQuery('#sub-menu').css('margin-top', $('#main-header').height());
+    } else if (!jQuery( "#sub-menu" ).hasClass( "fxd" )) {
     }
 });
 
 jQuery( window ).ready(function($) {
-    if ($( "#sub-menu" ).hasClass( "fxd" )) {
-        $('#sub-menu').css('margin-top', $('#main-header').height());
-    } else if (!$( "#sub-menu" ).hasClass( "fxd" )) {
+    if (jQuery( "#sub-menu" ).hasClass( "fxd" )) {
+        jQuery('#sub-menu').css('margin-top', $('#main-header').height());
+    } else if (!jQuery( "#sub-menu" ).hasClass( "fxd" )) {
     }
 });
 

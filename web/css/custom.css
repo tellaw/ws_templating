@@ -120,7 +120,7 @@ a:hover {
 .header-v1 .navbar-default .navbar-nav > li > a,
 .header-v1 .navbar-default .navbar-nav > li > a:hover,
 .header-v1 .navbar-default .navbar-nav > li > a:focus {
-	padding: 15px 0px 15px 0px;
+	padding: 15px 0px 15px 0px!important;
 	bottom: -1px;
 	color: #697277;
 }
