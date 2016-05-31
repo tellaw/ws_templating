@@ -112,6 +112,7 @@ ul.inline li.last {
     text-align: left;
     text-transform: uppercase;
     color: #333;
+    margin-bottom: 10px;
 }
 
 #footer-cols h4.actu, #footer-cols p.actu,
