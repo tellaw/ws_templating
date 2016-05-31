@@ -113,6 +113,7 @@ ul.inline li.last {
     text-transform: uppercase;
     color: #333;
     margin-bottom: 10px;
+    display: block;
 }
 
 #footer-cols h4.actu, #footer-cols p.actu,

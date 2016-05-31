@@ -572,6 +572,12 @@ $color-red : #ea2336 ;
   .padding-left-img {
     padding-right: 0px;
   }
+  #menu-footer-generique {
+    >li {
+      width:50%;
+    }
+  }
+
 }
 
 /* Tablette portrait and up */
@@ -1388,9 +1394,11 @@ $color-red : #ea2336 ;
     }
   }
   #menu-footer-generique {
-    li.ressdoc>a {
-      padding:0 0 7px 45px !important;
-      line-height: 13px;
+    li.ressdoc{
+      >a {
+        padding:0 0 7px 45px !important;
+        line-height: 13px;
+      }
     }
   }
 }
@@ -1424,8 +1432,10 @@ $color-red : #ea2336 ;
       width:100% !important
     }
   }
-  #menu-footer-generique>li {
-    width:100% !important
+  #menu-footer-generique{
+    >li {
+      width:100% !important
+    }
   }
 }
 

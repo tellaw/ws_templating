@@ -424,7 +424,9 @@
   .margin-left-right .col-xs-6 {
     width: 100%; }
   .padding-left-img {
-    padding-right: 0px; } }
+    padding-right: 0px; }
+  #menu-footer-generique > li {
+    width: 50%; } }
 
 /* Tablette portrait and up */
 @media (min-width: 768px) {
