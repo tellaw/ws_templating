@@ -124,15 +124,18 @@ a:hover {
 	bottom: -1px;
 	color: #697277;
 }
-.header-v1 .navbar-default .navbar-nav > li > a:hover,
+.header-v1 .navbar-default .navbar-nav > li:hover > a,
 .brd-active a {
 	border-bottom: 2px solid #ea2336;
 }
 .header-v1 .dropdown > a:after {
-	right:-20px;
+	right:-28px;
 	color:#EA2336;
-	font-size: 15px;
+	font-size: 18px;
 	top: 14px;
+}
+.header-v1 .navbar-default .navbar-nav > li:hover > a {
+	color:#697277;
 }
 /*Pour l'icone menu*/
 .border-0 {
