@@ -1469,6 +1469,7 @@ div[class^="element-wrapper-"] img {
 	margin-bottom: 10px;
 	margin-top: 6px;
 	width: 300px;
+	min-height: 66px;
 }
 .margin-tagbox-actualite{
 	margin-top: 5px !important;
