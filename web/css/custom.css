@@ -1466,7 +1466,7 @@ div[class^="element-wrapper-"] img {
 	z-index: 2;
 	padding: 0px 10px;
 	color: #E72C46;
-	margin-bottom: 9px;
+	margin-bottom: 0;
 	margin-top: 6px;
 	width: 300px;
 	min-height: 66px;
@@ -1653,15 +1653,10 @@ div[class^="element-wrapper-"] img {
 	margin-left: auto;
 	position:relative;
 }
-.pub-style:hover,
-.cadre-downloads:hover {
-	background-color:#E3E3E3;
-}
 .cadre-downloads>a {
 	display:block;
 	height:250px;
 }
-.cadre-downloads .conf-title,
 .cadre-downloads .book {
 	border-bottom:1px solid #E3E3E3;
 }
@@ -1673,12 +1668,12 @@ div[class^="element-wrapper-"] img {
 	filter: progid:DXImageTransform.Microsoft.Shadow(color=#ea2336, Direction=134, Strength=0);
 }
 .cadre-downloads .book:hover {
-	/*-moz-box-shadow: 0px 0px 1px 0px #9b9b9b;
+	-moz-box-shadow: 0px 0px 1px 0px #9b9b9b;
 	-webkit-box-shadow: 0px 0px 1px 0px #9b9b9b;
 	-o-box-shadow: 0px 0px 1px 0px #9b9b9b;
 	box-shadow: 0px 0px 1px 0px #9b9b9b;
 	filter:progid:DXImageTransform.Microsoft.Shadow(color=#9b9b9b, Direction=NaN, Strength=1);
-	border-bottom:0px solid #FFF;*/
+	border-bottom:0px solid #FFF;
 }
 .cadre-downloads .book img {
 	margin-top: 0;
