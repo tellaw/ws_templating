@@ -907,3 +907,7 @@ body>.container_16 {
     border-radius: 0;
   }
 }
+
+#top_ad_wrapper {
+  display:none
+}
