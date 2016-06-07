@@ -179,8 +179,9 @@
     left: 30px;
     top: -40px;
     display: block !important; }
-  .slider-margin-top {
-    margin-top: 70px; }
+  /*.slider-margin-top {
+    margin-top: 70px;
+  }*/
   .env-sec-box h1 {
     margin-top: 18px;
     margin-bottom: 40px;
@@ -972,8 +973,9 @@
 
 /* FOOTER ANCIEN */
 @media screen and (max-width: 1024px) {
-  .slider-margin-top {
-    margin-top: 70px; }
+  /*.slider-margin-top {
+    margin-top: 70px;
+  }*/
   #footer {
     width: 100%; }
   #footer .container_24 {
