@@ -911,3 +911,7 @@ body>.container_16 {
 #top_ad_wrapper {
   display:none
 }
+
+.no-margin-top {
+  margin-top: 0!important;
+}
