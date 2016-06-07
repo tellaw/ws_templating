@@ -237,10 +237,7 @@ $color-red : #ea2336 ;
     top: -40px;
     display: block !important;
   }
-  .slider-margin-top,
-  #content.site-content,
-  body>.container_24,
-  body>.container_16 {
+  .slider-margin-top {
     margin-top: 70px;
   }
   .env-sec-box {
@@ -1370,10 +1367,7 @@ $color-red : #ea2336 ;
 
 /* FOOTER ANCIEN */
 @media  screen and (max-width: 1024px) {
-  .slider-margin-top,
-  #content.site-content,
-  body>.container_24,
-  body>.container_16 {
+  .slider-margin-top {
     margin-top: 70px;
   }
   #footer {
