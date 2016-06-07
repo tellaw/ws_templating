@@ -125,11 +125,9 @@
     color: #fff; } }
 
 /* Mobile portrait */
-@media screen and (max-width: 425px) {
+@media (max-width: 425px) {
   #sub-menu {
     padding: 0 15px; }
-  .xs-margin-top-10 {
-    margin-top: 23px !important; }
   .badge-env {
     margin-top: 4px;
     background-color: #ea2336 !important;
@@ -146,6 +144,7 @@
   .subscription-btn {
     display: none; }
   .search-bar {
+    margin-top: 0px;
     padding-left: 20px; }
   .subscription-btn-2 {
     display: block;
@@ -179,9 +178,8 @@
     left: 30px;
     top: -40px;
     display: block !important; }
-  /*.slider-margin-top {
-    margin-top: 70px;
-  }*/
+  .slider-margin-top {
+    margin-top: 70px; }
   .env-sec-box h1 {
     margin-top: 18px;
     margin-bottom: 40px;
@@ -973,9 +971,8 @@
 
 /* FOOTER ANCIEN */
 @media screen and (max-width: 1024px) {
-  /*.slider-margin-top {
-    margin-top: 70px;
-  }*/
+  .slider-margin-top {
+    margin-top: 70px; }
   #footer {
     width: 100%; }
   #footer .container_24 {

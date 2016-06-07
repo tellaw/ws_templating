@@ -162,13 +162,11 @@ $color-red : #ea2336 ;
 }
 
 /* Mobile portrait */
-@media screen and (max-width: 425px) {
+@media (max-width: 425px) {
   #sub-menu {
     padding: 0 15px;
   }
-  .xs-margin-top-10 {
-    margin-top: 23px!important;
-  }
+
   .badge-env {
     margin-top: 4px;
     background-color: #ea2336 !important;
@@ -189,6 +187,7 @@ $color-red : #ea2336 ;
     display: none;
   }
   .search-bar {
+    margin-top: 0px;
     padding-left: 20px;
   }
   .subscription-btn-2 {
@@ -238,9 +237,9 @@ $color-red : #ea2336 ;
     top: -40px;
     display: block !important;
   }
-  /*.slider-margin-top {
+  .slider-margin-top {
     margin-top: 70px;
-  }*/
+  }
   .env-sec-box {
     h1 {
       margin-top: 18px;
@@ -1362,9 +1361,9 @@ $color-red : #ea2336 ;
 
 /* FOOTER ANCIEN */
 @media  screen and (max-width: 1024px) {
-  /*.slider-margin-top {
+  .slider-margin-top {
     margin-top: 70px;
-  }*/
+  }
   #footer {
     width:100%
   }
