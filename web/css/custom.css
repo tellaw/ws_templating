@@ -335,6 +335,9 @@ a:hover {
 .color-red-eti {
 	color: #ea2336 !important;
 }
+.color-blue-eti {
+	color: #1b8bbb !important;
+}
 
 .menu-environnement-text-size {
 	font-size: 18px !important ;
@@ -663,6 +666,11 @@ a:hover {
 .btn-u-red:hover,
 .btn-u-red:focus {
 	background-color: #EA2336 !important;
+	color: #fff !important;
+}
+.btn-u-blue:hover,
+.btn-u-blue:focus {
+	background-color: #1b8bbb !important;
 	color: #fff !important;
 }
 
