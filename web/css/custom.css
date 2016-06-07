@@ -1012,7 +1012,10 @@ div[class^="element-wrapper-"] img {
 	border-color: #ddd !important;
 }
 
-.slider-margin-top {
+.slider-margin-top,
+#content.site-content,
+body>.container_24,
+body>.container_16 {
 	margin-top: 170px;
 }
 
