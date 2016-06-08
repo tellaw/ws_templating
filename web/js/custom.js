@@ -253,6 +253,7 @@ jQuery(document).ready(function($) {
         $("#services-popin").dialog("widget").css("top", "70px");
 
         $("#design-services-popin").css("left", (($(window).width()-$("#design-services-popin").width())/2));
+        $("#design-services-popin").css("height", "295px");
         return false;
     });
 });
