@@ -886,7 +886,7 @@ div[class^="element-wrapper-"] img {
 }
 
 .acceuil-title p {
-	display:none;
+	display: none;
 }
 
 .acceuil-title-2 {
@@ -2021,7 +2021,7 @@ a.haute-img:hover img {
 a.pub-style:hover .acceuil-title p,
 a.large-img:hover .acceuil-title p,
 a.haute-img:hover .acceuil-title p  {
-	display:block;
+	display: block;
 }
 
 .picto-plus-zoom {
