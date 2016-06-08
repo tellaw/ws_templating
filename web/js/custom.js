@@ -212,6 +212,19 @@ jQuery(document).ready(function($) {
         window.location.href= link + anchor;
     })
 
+    // gestion erreur formulaire
+    $('#newsletter-form').ready(function($){
+        var form = $('#newsletter-form');
+        var inputField = form.find('.newsletter-input');
+        form.submit(function(e){
+            var email = inputField.val();
+            if(email.indexOf("@",1) == -1 || email.indexOf(".", email.indexOf("@",1)+1) == -1 || email.length <= 5){
+                inputField.siblings('.form-error').remove();
+                inputField.after('<p class="form-error">Veuillez saisir une adresse e-mail valide.</p>');
+                e.preventDefault();
+            }
+        });
+    });
 });
 
 (function() {
