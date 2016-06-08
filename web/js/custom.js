@@ -227,13 +227,13 @@ jQuery(document).ready(function($) {
     });
 
     // gestion des popins
-    $("a.popin").click(function() {
-        if (!$("#popin").html()) {
-            var ui = '<div id="popin" role="dialog" style="display:none;z-index:1001;">' + '<iframe frameborder="0" style="width:100%;height:98%;" src=""></iframe>' + '</div>';
+    $("a.services-popin").click(function() {
+        if (!$("#services-popin").html()) {
+            var ui = '<div id="services-popin" role="dialog" style="display:none;z-index:1001;">' + '<iframe frameborder="0" style="width:100%;height:98%;" src=""></iframe>' + '</div>';
             $("body").append(ui);
         }
         window.scrollTo(0, 0);
-        $("#popin").dialog({
+        $("#services-popin").dialog({
             modal: true,
             title: $(this).attr("title"),
             width: 920,
@@ -244,13 +244,13 @@ jQuery(document).ready(function($) {
                 return false;
             },
             close: function() {
-                $("#popin").remove();
+                $("#services-popin").remove();
                 return false;
             }
         });
-        $("#popin").dialog("widget").attr("id", "design-services-popin").css("position", "absolute");
-        $("#popin iframe").attr("src", $(this).attr("href"));
-        $("#popin").dialog("widget").css("top", "70px");
+        $("#services-popin").dialog("widget").attr("id", "design-services-services-popin").css("position", "absolute");
+        $("#services-popin iframe").attr("src", $(this).attr("href"));
+        $("#services-popin").dialog("widget").css("top", "70px");
         return false;
     });
 });
