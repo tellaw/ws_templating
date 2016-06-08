@@ -251,10 +251,10 @@ jQuery(document).ready(function($) {
         $("#services-popin").dialog("widget").attr("id", "design-services-popin").css("position", "absolute");
         $("#services-popin iframe").attr("src", $(this).attr("href"));
         $("#services-popin").dialog("widget").css("top", "70px");
+
+        $("#design-services-popin").css("left", (($(window).width()-$("#design-services-popin").width())/2));
         return false;
     });
-
-    $("#design-services-popin").css("left", (($(window).width()-$("#design-services-popin").width())/2));
 });
 
 (function() {
