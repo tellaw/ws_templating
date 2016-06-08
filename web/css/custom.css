@@ -885,6 +885,10 @@ div[class^="element-wrapper-"] img {
 	line-height: 18px;
 }
 
+.acceuil-title p {
+	display:none;
+}
+
 .acceuil-title-2 {
 	background-color: #fff !important;
 	position: absolute;
@@ -2005,12 +2009,19 @@ div[class^="element-wrapper-"] img {
 	padding-left: 80px !important ;
 }
 
-a.pub-style:hover img {
+a.pub-style:hover img,
+a.large-img:hover img,
+a.haute-img:hover img {
 	-webkit-transform: scale(1.1);
 	-ms-transform: scale(1.1);
 	transform: scale(1.1);
 	opacity: 0.8;
 	transition: all .2s ease-in-out;
+}
+a.pub-style:hover .acceuil-title p,
+a.large-img:hover .acceuil-title p,
+a.haute-img:hover .acceuil-title p  {
+	display:block;
 }
 
 .picto-plus-zoom {
