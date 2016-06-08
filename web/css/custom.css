@@ -2005,14 +2005,14 @@ div[class^="element-wrapper-"] img {
 	padding-left: 80px !important ;
 }
 
-.zoom-img {
+a.pub-style:hover img {
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+	opacity: 0.8;
 	transition: all .2s ease-in-out;
 }
 
-.zoom-img:hover {
-	transform: scale(1.1);
-	opacity: 0.8;
-}
 .picto-plus-zoom {
 	background:url("../images/picto-plus-zoom.png") no-repeat center center transparent;
 	position:absolute;
@@ -2037,7 +2037,7 @@ a.haute-img .picto-plus-zoom {
 
 a.pub-style:hover .picto-plus-zoom,
 a.large-img:hover .picto-plus-zoom {
-	transition: opacity .5s ease-in-out;
+	transition: all .2s ease-in-out;
 	opacity:1;
 	-moz-opacity : 100;
 	-ms-filter: "alpha(opacity=100)";
