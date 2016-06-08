@@ -2168,3 +2168,9 @@ div.play-button {
 .slick-slider {
 	margin-top:20px
 }
+
+.vertical-align-center {
+	display: inline-block;
+	vertical-align: middle;
+	float: none;
+}
