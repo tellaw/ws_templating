@@ -225,6 +225,34 @@ jQuery(document).ready(function($) {
             }
         });
     });
+
+    // gestion des popins
+    $("a.popin").click(function() {
+        if (!$("#popin").html()) {
+            var ui = '<div id="popin" role="dialog" style="display:none;z-index:1001;">' + '<iframe frameborder="0" style="width:100%;height:98%;" src=""></iframe>' + '</div>';
+            $("body").append(ui);
+        }
+        window.scrollTo(0, 0);
+        $("#popin").dialog({
+            modal: true,
+            title: $(this).attr("title"),
+            width: 920,
+            top: 100,
+            closeText: "Fermer X",
+            open: function() {
+                window.scrollTo(0, 0);
+                return false;
+            },
+            close: function() {
+                $("#popin").remove();
+                return false;
+            }
+        });
+        $("#popin").dialog("widget").attr("id", "design-services-popin").css("position", "absolute");
+        $("#popin iframe").attr("src", $(this).attr("href"));
+        $("#popin").dialog("widget").css("top", "70px");
+        return false;
+    });
 });
 
 (function() {
