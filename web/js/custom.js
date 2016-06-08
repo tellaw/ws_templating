@@ -200,9 +200,18 @@ jQuery(document).ready(function($) {
     // gestion des ancres pour les onglets
     if (window.location.href.indexOf("#") > 0) {
         var anchor = window.location.href.substring(window.location.href.indexOf("#")+1, window.location.href.length);
-        anchor = anchor.substring(0, anchor.indexOf("?"));
-        jQuery("#"+anchor+"_linl").click();
+        anchor = anchor.substring(anchor.indexOf("?"), anchor.length);
+        jQuery("#"+anchor+"_link").click();
     }
+    $(".nav-tabs a").on("click", function(){
+        var link = window.location.href;
+        var anchor = $(this).attr("href");
+        if (window.location.href.indexOf("#") > 0) {
+            link = window.location.href.substring(0, window.location.href.indexOf("#"));
+        }
+        window.location.href= link + anchor;
+    })
+
 });
 
 (function() {
