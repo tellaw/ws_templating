@@ -249,15 +249,12 @@ jQuery(document).ready(function($) {
             }
         });
         $("#services-popin").dialog("widget").attr("id", "design-services-popin").css("position", "absolute");
-        $("#services-popin").dialog("widget").attr("id", "design-services-popin").position({
-            my: "center",
-            at: "center",
-            of: "body"
-        });
         $("#services-popin iframe").attr("src", $(this).attr("href"));
         $("#services-popin").dialog("widget").css("top", "70px");
         return false;
     });
+
+    $("#design-services-popin").css("left", (($(window).width()-$("#design-services-popin").width())/2));
 });
 
 (function() {
