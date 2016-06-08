@@ -252,7 +252,7 @@ jQuery(document).ready(function($) {
         $("#services-popin").position({
             my: "center",
             at: "center",
-            of: window
+            of: "body"
         });
         $("#services-popin iframe").attr("src", $(this).attr("href"));
         $("#services-popin").dialog("widget").css("top", "70px");
