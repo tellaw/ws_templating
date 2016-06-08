@@ -2185,3 +2185,8 @@ div.play-button {
 	vertical-align: middle;
 	float: none;
 }
+
+
+#design-services-popin {
+	background: url(../images/fond_hachure.png) repeat-y left top #fff;
+}

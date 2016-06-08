@@ -248,7 +248,8 @@ jQuery(document).ready(function($) {
                 return false;
             }
         });
-        $("#services-popin").dialog("widget").attr("id", "design-services-services-popin").css("position", "absolute");
+        $("#services-popin").dialog("widget").attr("id", "design-services-popin").css("position", "absolute");
+        $("#services-popin").dialog('option', 'position', 'center');
         $("#services-popin iframe").attr("src", $(this).attr("href"));
         $("#services-popin").dialog("widget").css("top", "70px");
         return false;
