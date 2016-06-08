@@ -249,7 +249,7 @@ jQuery(document).ready(function($) {
             }
         });
         $("#services-popin").dialog("widget").attr("id", "design-services-popin").css("position", "absolute");
-        $("#services-popin").position({
+        $("#services-popin").dialog("widget").attr("id", "design-services-popin").position({
             my: "center",
             at: "center",
             of: "body"
