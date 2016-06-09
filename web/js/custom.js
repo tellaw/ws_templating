@@ -96,16 +96,20 @@ jQuery(document).ready(function($) {
         controlsClass: "owl-custom-controls"
     });
 
-    $('#sticky-menu-phone').on('click', function() {
-        $('#sticky-menu-slide-phone').animate({
-            right:"40px"
-        }, 500);
+    var eventStick;
+    if ($(window).width() < 1024) {eventStick='click'} else {eventStick='mouseenter mouseleave'};
+    $('#sticky-menu-phone').on(eventStick, function() {
 
         var hiddenField = $('#sticky-menu-phone'),
             val = hiddenField.val();
         hiddenField.val(val === "true" ? "false" : "true");
 
+        console.log(hiddenField.val());
+
         if (hiddenField.val() == "true") {
+            $('#sticky-menu-slide-phone').animate({
+                right:"40px"
+            }, 500);
             $('#sticky-menu-slide-share').animate({
                 right:"-220px"
             }, 500);
@@ -129,16 +133,16 @@ jQuery(document).ready(function($) {
         }
     });
 
-    $('#sticky-menu-share').on('click', function() {
-        $('#sticky-menu-slide-share').animate({
-            right:"40px"
-        }, 500);
+    $('#sticky-menu-share').on(eventStick, function() {
 
         var hiddenField = $('#sticky-menu-share'),
             val = hiddenField.val();
         hiddenField.val(val === "true" ? "false" : "true");
 
         if (hiddenField.val() == "true") {
+            $('#sticky-menu-slide-share').animate({
+                right:"40px"
+            }, 500);
             $('#sticky-menu-slide-phone').animate({
                 right:"-220px"
             }, 500);
@@ -163,16 +167,16 @@ jQuery(document).ready(function($) {
         }
     });
 
-    $('#sticky-menu-plane').on('click', function() {
-        $('#sticky-menu-slide-plane').animate({
-            right:"40px"
-        }, 500);
+    $('#sticky-menu-plane').on(eventStick, function() {
 
         var hiddenField = $('#sticky-menu-plane'),
             val = hiddenField.val();
         hiddenField.val(val === "true" ? "false" : "true");
 
         if (hiddenField.val() == "true") {
+            $('#sticky-menu-slide-plane').animate({
+                right:"40px"
+            }, 500);
             $('#sticky-menu-slide-phone').animate({
                 right:"-220px"
             }, 500);
