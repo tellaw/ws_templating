@@ -2009,31 +2009,52 @@ div[class^="element-wrapper-"] img {
 	padding-left: 80px !important ;
 }
 
+a.pub-style img,
+a.large-img img,
+a.haute-img img {
+	transition: transform 4s cubic-bezier(.19,1,.22,1) 0ms;
+}
+
 a.pub-style:hover img,
 a.large-img:hover img,
 a.haute-img:hover img {
 	-webkit-transform: scale(1.1);
 	-ms-transform: scale(1.1);
 	transform: scale(1.1);
-	opacity: 0.8;
-	transition: all .2s ease-in-out;
 }
+
 a.pub-style:hover .acceuil-title p,
 a.large-img:hover .acceuil-title p,
 a.haute-img:hover .acceuil-title p  {
 	display: block;
 }
 
-.picto-plus-zoom {
-	background:url("../images/picto-plus-zoom.png") no-repeat center center transparent;
+a.pub-style:hover .overlay,
+a.large-img:hover .overlay,
+a.haute-img:hover .overlay  {
+	display: block;
+}
+a.pub-style:hover .acceuil-title h3,
+a.large-img:hover .acceuil-title h3,
+a.haute-img:hover .acceuil-title h3  {
+	display: none;
+}
+
+a.pub-style:hover .acceuil-title,
+a.large-img:hover .acceuil-title,
+a.haute-img:hover .acceuil-title  {
+	background-color: transparent !important;
+}
+
+.overlay {
+	display:none;
+	background-color: rgba(0,0,0,.6);
 	position:absolute;
-	height: 54px;
-	width: 52px;
-	top: 39%;
-	left: 41%;
-	opacity: 0;
-	-moz-opacity : 0;
-	-ms-filter: "alpha(opacity=0)";
+	height: 250px;
+	width: 300px;
+	top: 0;
+	left: 0;
+	z-index:1;
 }
 
 a.large-img .picto-plus-zoom {
