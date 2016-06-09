@@ -97,7 +97,8 @@ jQuery(document).ready(function($) {
     });
 
     var eventStick;
-    if ($(window).width() < 1024) {eventStick='click'} else {eventStick='mouseenter mouseleave'};
+    if ($(window).width() < 1024) {eventStick='click'} else {eventStick='mouseenter'};
+
     $('#sticky-menu-phone').on(eventStick, function() {
 
         var hiddenField = $('#sticky-menu-phone'),
@@ -199,6 +200,30 @@ jQuery(document).ready(function($) {
                 right:"-220px"
             }, 500);
         }
+    });
+
+    $("#sticky").on('mouseleave', function() {
+        $('#sticky-menu-slide-plane').animate({
+            right:"-220px"
+        }, 500);
+        $('#sticky-menu-slide-phone').animate({
+            right:"-220px"
+        }, 500);
+        $('#sticky-menu-slide-share').animate({
+            right:"-220px"
+        }, 500);
+
+        var hiddenField = $('#sticky-menu-plane'),
+            val = hiddenField.val();
+        hiddenField.val("false");
+
+        var hiddenFieldd = $('#sticky-menu-phone'),
+            val = hiddenFieldd.val();
+        hiddenFieldd.val("false");
+
+        var hiddenFielddd = $('#sticky-menu-share'),
+            val = hiddenFielddd.val();
+        hiddenFielddd.val("false");
     });
 
     // gestion des ancres pour les onglets
