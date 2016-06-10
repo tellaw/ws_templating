@@ -2030,6 +2030,15 @@ a.haute-img:hover .acceuil-title p  {
 	color:#697277;
 }
 
+a.pub-style:hover .acceuil-title p span,
+a.large-img:hover .acceuil-title p span,
+a.haute-img:hover .acceuil-title p span {
+	float: left;
+	margin: 0 0 0 5px;
+	display: inline-block;
+	width: 193px;
+}
+
 a.pub-style:hover .overlay,
 a.large-img:hover .overlay,
 a.haute-img:hover .overlay  {
