@@ -105,8 +105,6 @@ jQuery(document).ready(function($) {
             val = hiddenField.val();
         hiddenField.val(val === "true" ? "false" : "true");
 
-        console.log(hiddenField.val());
-
         if (hiddenField.val() == "true") {
             $('#sticky-menu-slide-phone').animate({
                 right:"40px"
