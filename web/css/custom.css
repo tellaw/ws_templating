@@ -2041,11 +2041,11 @@ a.haute-img:hover .acceuil-title h3  {
 	display: none;
 }
 
-a.pub-style:hover .acceuil-title,
+/*a.pub-style:hover .acceuil-title,
 a.large-img:hover .acceuil-title,
 a.haute-img:hover .acceuil-title  {
 	background-color: rgba(255,255,255,.6) !important;
-}
+}*/
 
 .overlay {
 	display:none;
