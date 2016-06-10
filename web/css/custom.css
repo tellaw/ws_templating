@@ -2027,7 +2027,7 @@ a.pub-style:hover .acceuil-title p,
 a.large-img:hover .acceuil-title p,
 a.haute-img:hover .acceuil-title p  {
 	display: block;
-	color:#fff;
+	color:#333;
 }
 
 a.pub-style:hover .overlay,
@@ -2044,7 +2044,7 @@ a.haute-img:hover .acceuil-title h3  {
 a.pub-style:hover .acceuil-title,
 a.large-img:hover .acceuil-title,
 a.haute-img:hover .acceuil-title  {
-	background-color: transparent !important;
+	background-color: rgba(255,255,255,.6) !important;
 }
 
 .overlay {
