@@ -887,6 +887,7 @@ div[class^="element-wrapper-"] img {
 
 .acceuil-title p {
 	display: none;
+	font-size:12px;
 }
 
 .acceuil-title-2 {
@@ -2008,7 +2009,7 @@ div[class^="element-wrapper-"] img {
 .padding-80 {
 	padding-left: 80px !important ;
 }
-
+.acceuil-title p
 a.pub-style img,
 a.large-img img,
 a.haute-img img {
