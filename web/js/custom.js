@@ -106,13 +106,13 @@ jQuery(document).ready(function($) {
         hiddenField.val(val === "true" ? "false" : "true");
 
         if (hiddenField.val() == "true") {
-            $('#sticky-menu-slide-phone').animate({
+            $('#sticky-menu-slide-phone').stop().animate({
                 right:"40px"
             }, 500);
-            $('#sticky-menu-slide-share').animate({
+            $('#sticky-menu-slide-share').stop().animate({
                 right:"-220px"
             }, 500);
-            $('#sticky-menu-slide-plane').animate({
+            $('#sticky-menu-slide-plane').stop().animate({
                 right:"-220px"
             }, 500);
 
@@ -126,7 +126,7 @@ jQuery(document).ready(function($) {
 
         }
         else if (hiddenField.val() == "false"){
-            $('#sticky-menu-slide-phone').animate({
+            $('#sticky-menu-slide-phone').stop().animate({
                 right:"-220px"
             }, 500);
         }
@@ -139,13 +139,13 @@ jQuery(document).ready(function($) {
         hiddenField.val(val === "true" ? "false" : "true");
 
         if (hiddenField.val() == "true") {
-            $('#sticky-menu-slide-share').animate({
+            $('#sticky-menu-slide-share').stop().animate({
                 right:"40px"
             }, 500);
-            $('#sticky-menu-slide-phone').animate({
+            $('#sticky-menu-slide-phone').stop().animate({
                 right:"-220px"
             }, 500);
-            $('#sticky-menu-slide-plane').animate({
+            $('#sticky-menu-slide-plane').stop().animate({
                 right:"-220px"
             }, 500);
 
@@ -159,7 +159,7 @@ jQuery(document).ready(function($) {
 
 
         }
-        else if (hiddenField.val() == "false"){
+        else if (hiddenField.val() == "fa.stop()lse"){
             $('#sticky-menu-slide-share').animate({
                 right:"-220px"
             }, 500);
@@ -173,13 +173,13 @@ jQuery(document).ready(function($) {
         hiddenField.val(val === "true" ? "false" : "true");
 
         if (hiddenField.val() == "true") {
-            $('#sticky-menu-slide-plane').animate({
+            $('#sticky-menu-slide-plane').stop().animate({
                 right:"40px"
             }, 500);
-            $('#sticky-menu-slide-phone').animate({
+            $('#sticky-menu-slide-phone').stop().animate({
                 right:"-220px"
             }, 500);
-            $('#sticky-menu-slide-share').animate({
+            $('#sticky-menu-slide-share').stop().animate({
                 right:"-220px"
             }, 500);
 
@@ -194,20 +194,20 @@ jQuery(document).ready(function($) {
 
         }
         else if (hiddenField.val() == "false"){
-            $('#sticky-menu-slide-plane').animate({
+            $('#sticky-menu-slide-plane').stop().animate({
                 right:"-220px"
             }, 500);
         }
     });
 
     $("#sticky").on('mouseleave', function() {
-        $('#sticky-menu-slide-plane').animate({
+        $('#sticky-menu-slide-plane').stop().animate({
             right:"-220px"
         }, 500);
-        $('#sticky-menu-slide-phone').animate({
+        $('#sticky-menu-slide-phone').stop().animate({
             right:"-220px"
         }, 500);
-        $('#sticky-menu-slide-share').animate({
+        $('#sticky-menu-slide-share').stop().animate({
             right:"-220px"
         }, 500);
 
