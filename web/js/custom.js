@@ -126,7 +126,7 @@ jQuery(document).ready(function($) {
 
         }
         else if (hiddenField.val() == "false"){
-            $('#sticky-menu-slide-phone').stop().animate({
+            $('#sticky-menu-slide-phone').animate({
                 right:"-220px"
             }, 500);
         }
@@ -159,7 +159,7 @@ jQuery(document).ready(function($) {
 
 
         }
-        else if (hiddenField.val() == "fa.stop()lse"){
+        else if (hiddenField.val() == "false"){
             $('#sticky-menu-slide-share').animate({
                 right:"-220px"
             }, 500);
@@ -194,7 +194,7 @@ jQuery(document).ready(function($) {
 
         }
         else if (hiddenField.val() == "false"){
-            $('#sticky-menu-slide-plane').stop().animate({
+            $('#sticky-menu-slide-plane').animate({
                 right:"-220px"
             }, 500);
         }
