@@ -1361,12 +1361,20 @@ div[class^="element-wrapper-"] img {
 }
 
 
-#cellule-list {
+.cellule-list {
 	margin-left: 190px;
 }
+p.cellule-list {
+	margin-bottom:0px;
+}
 
-#cellule-list li:before {
+.cellule-list li:before {
 	content: "- " ;
+	font-weight: bold;
+	margin-right: 20px;
+}
+.cellule-list-2 li:before {
+	content: "> " ;
 	font-weight: bold;
 	margin-right: 20px;
 }
