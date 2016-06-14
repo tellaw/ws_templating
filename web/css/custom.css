@@ -2270,7 +2270,78 @@ div.play-button {
 	padding: 4px 7px;
 }
 
-/*.attachment-300x250 {
-	margin-left: -92%;
-	height: 250px;
-}*/
+.myti-info-compte {
+	background: -moz-linear-gradient(top, rgba(69, 170, 203, 1) 0%,
+	rgba(62, 132, 178, 1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(69,
+	170, 203, 1)), color-stop(100%, rgba(62, 132, 178, 1)));
+	/* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(69, 170, 203, 1) 0%,
+	rgba(62, 132, 178, 1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(69, 170, 203, 1) 0%,
+	rgba(62, 132, 178, 1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(69, 170, 203, 1) 0%,
+	rgba(62, 132, 178, 1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(69, 170, 203, 1) 0%,
+	rgba(62, 132, 178, 1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#45aacb',
+	endColorstr='#3e84b2', GradientType=0); /* IE6-8 */
+	margin: 0px auto 10px;
+	border: 1px solid #E5E5E5;
+	border-top: none;
+	border-bottom: 1px solid #165078;
+	-webkit-border-radius: 0 0 3px 3px;
+	border-radius: 0 0 3px 3px;
+	padding: 9px 0;
+	max-width:960px;
+}
+
+.myti-info-compte div span.text,
+.myti-info-compte div.text-ip,
+.myti-info-compte div .text-ip a
+{
+	color: #fff;
+	font-weight: bold;
+}
+
+.myti-info-compte div.text-ip {
+	display: inline-block;
+	margin:0;
+	padding:10px 0 0 0;
+	line-height:20px;
+	width:60%;
+}
+
+.myti-info-compte .buton-abos {margin:5px 20px 0 0; padding:0; float:right;}
+.myti-info-compte .buton-abos a,
+.myti-info-compte .buton-abos a:hover {text-decoration:none; color:#FFF;}
+
+.myti-info-compte div .img-ip {
+	margin: 7px 22px
+}
+
+.myti-info-compte div.text-ip a {
+	color: #fff;
+	font-weight: bold;
+}
+
+.myti-info-compte .myti-buton-red {
+	padding: 3px 3px 1px 3px;
+}
+
+.myti-info-compte .myti-buton-red img {
+	margin: 0 3px 0 0;
+}
+
+.myti-info-compte .myti-buton-red span.text {
+	margin: 2px 0;
+	padding: 3px 0 3px 20px;
+	font-size: 12px;
+}
+
+.myti-info-compte .myti-icon {
+	padding: 0 0 15px 23px
+}
+.myti-info-compte .left {
+	float: left;
+}
