@@ -1229,7 +1229,7 @@ div[class^="element-wrapper-"] img {
 }
 
 .offres-paddings {
-	padding: 2px 18px 0px 18px;
+	padding: 0px 18px 0px 18px;
 }
 .inscription-newsletter-slide {
 	padding-top: 10px !important;
@@ -1258,14 +1258,15 @@ div[class^="element-wrapper-"] img {
 	top:0;
 }
 
-.env-sec-box {
+.domaine-secteur-box {
 	padding-top: 10px;
 	padding-left: 0px;
 	padding-right: 0px;
 }
 
-.env-sec-box img {
+.domaine-secteur-box img {
 	width: 80px;
+	display:block;
 }
 
 
@@ -1287,8 +1288,8 @@ div[class^="element-wrapper-"] img {
 }
 
 .btn-x {
-	border: 1px #9eb504 solid;
-	color: #9eb504;
+	border: 1px #ea2336 solid;
+	color: #ea2336;
 	background-color: rgba(149, 165, 166, 0);
 	font-size: 10px;
 	padding-top: 3px;
@@ -1296,7 +1297,20 @@ div[class^="element-wrapper-"] img {
 }
 
 .btn-x:hover {
-	background-color: #9eb504;
+	background-color: #ea2336;
+}
+
+.btn-expend {
+	border: 1px #697277 solid;
+	color: #697277;
+	background-color: rgba(149, 165, 166, 0);
+	font-size: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.btn-expend:hover {
+	background-color: #697277;
 }
 
 .img-x {
@@ -1320,7 +1334,7 @@ div[class^="element-wrapper-"] img {
 .cellule h4 {
 	text-transform: uppercase;
 	margin: 0px;
-	color: #9eb504;
+	color: #697277;
 }
 .cellule h5 {
 }
@@ -1336,25 +1350,23 @@ div[class^="element-wrapper-"] img {
 .price-1 {
 	text-decoration:line-through;
 	font-size: 10px;
-	margin-top: 10px !important;
+	margin-top: 20px !important;
 }
 
 .price-2 {
-	color: #9eb504;
-	font-size: 24px;
-	font-weight: bold;
+	color: #697277;
 	margin-left: 20px;
-	height: 34px;
+	height: 25px;
+	margin-top: 15px !important;
 }
 
 
 #cellule-list {
-	margin-left: 180px;
+	margin-left: 190px;
 }
 
 #cellule-list li:before {
-	content: "> " ;
-	color: #9eb504;
+	content: "- " ;
 	font-weight: bold;
 	margin-right: 20px;
 }
@@ -1382,17 +1394,6 @@ div[class^="element-wrapper-"] img {
 	text-transform: uppercase;
 	text-align: center;
 	font-weight: bold;
-}
-
-
-.form-control:focus {
-	background-color: #fff;
-	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #b30404;
-}
-
-.form-control:focus {
-	box-shadow: none;
-	-webkit-box-shadow: none;
 }
 
 #dom-sc .col-xs-12 li a:hover {
@@ -1641,13 +1642,13 @@ div[class^="element-wrapper-"] img {
 }
 
 .tab-v1 .nav-tabs {
-	border-bottom: solid 2px #9eb504;
+	border-bottom: solid 2px #697277;
 }
 
 .tab-v1 .nav-tabs > .active > a,
 .tab-v1 .nav-tabs > .active > a:hover,
 .tab-v1 .nav-tabs > .active > a:focus {
-	background: #9eb504 !important;
+	background: #697277 !important;
 }
 .tab-v1 .tab-content img {
 	 margin-top: 0;
@@ -1715,7 +1716,7 @@ div[class^="element-wrapper-"] img {
 	height: 0;
 	border-left: 8px solid transparent;
 	border-right: 8px solid transparent;
-	border-top: 8px solid #9EB504;
+	border-top: 8px solid #697277;
 	margin-left: 45%;
 	position: absolute;
 	display: none;
@@ -1913,6 +1914,9 @@ div[class^="element-wrapper-"] img {
 
 .font-weight-700 {
 	font-weight: 700 !important;
+}
+.font-size-7 {
+	font-size: 7px !important;
 }
 .font-size-8 {
 	font-size: 8px !important;
@@ -2183,12 +2187,12 @@ div.play-button {
 }
 
 .form-control:focus{
-	background-color: #F3F3F3;
 	-moz-box-shadow: inset 0px 0px 10px 0px #ea2336;
 	-webkit-box-shadow: inset 0px 0px 10px 0px #ea2336;
 	-o-box-shadow: inset 0px 0px 10px 0px #ea2336;
 	box-shadow: inset 0px 0px 10px 0px #ea2336;
 	filter:progid:DXImageTransform.Microsoft.Shadow(color=#ea2336, Direction=NaN, Strength=10);
+	background-color: #fff;
 }
 .has-error .form-control:focus{
 	box-shadow: none;
@@ -2220,4 +2224,39 @@ div.play-button {
 
 #design-services-popin {
 	background: url(../images/fond_hachure.png) repeat-y left top #fff;
+}
+
+.offer-devider {
+	width: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	border-bottom: 2.5px #EA2336 solid;
+}
+
+.badge-x i {
+	margin-right: 0px;
+}
+
+.badge-x {
+	background: #1b8bbb !important;
+	position: relative;
+	top: 3px;
+	left: -15px;
+	width: 21px;
+	padding-left: 4px !important;
+}
+
+.badge-xx {
+	left: -6px !important;
+}
+
+.badge-xxx {
+	left: 7px !important;
+}
+
+.badge {
+	color: #fff;
+	font-weight: 400;
+	padding: 4px 7px;
 }

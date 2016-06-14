@@ -239,22 +239,23 @@ $color-red : #ea2336 ;
   .slider-margin-top {
     margin-top: 51px;
   }
-  .env-sec-box {
+  .domaine-secteur-box {
     h1 {
       margin-top: 18px;
       margin-bottom: 40px;
-      margin-left: 390px;
-      margin-right: 390px;
-      padding: 9px 5px 4px 5px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 9px 15px 4px 15px;
       background-color: #9eb504;
       color: #fff;
       text-transform: uppercase;
       font-size: 20px;
       font-weight: 600;
+      display: inline-block;
     }
   }
 
-  .env-sec-box {
+  .domaine-secteur-box {
     h5 {
       line-height: 1.5;
     }
@@ -286,22 +287,23 @@ $color-red : #ea2336 ;
     padding-left: 0px;
     margin-left: -8px !important;
   }
-  .env-sec-box {
+  .domaine-secteur-box {
     h1 {
       margin-top: 18px;
       margin-bottom: 40px;
-      margin-left: 50px;
-      margin-right: 50px;
-      padding: 5px 5px 5px 5px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 5px 15px 5px 15px;
       background-color: #9eb504;
       color: #fff;
       text-transform: uppercase;
       font-size: 20px;
       font-weight: 600;
+      display: inline-block;
     }
   }
 
-  .env-sec-box {
+  .domaine-secteur-box {
     h5 {
       line-height: 1.5;
     }
@@ -972,22 +974,23 @@ $color-red : #ea2336 ;
   .colu-width {
     margin-left: 25px !important;
   }
-  .env-sec-box {
+  .domaine-secteur-box {
     h1 {
       margin-top: 18px;
       margin-bottom: 40px;
-      margin-left: 390px;
-      margin-right: 390px;
-      padding: 5px 5px 0px 5px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 5px 15px 0px 15px;
       background-color: #9eb504;
       color: #fff;
       text-transform: uppercase;
       font-size: 20px;
       font-weight: 600;
+      display: inline-block;
     }
   }
 
-  .env-sec-box {
+  .domaine-secteur-box {
     h5 {
       margin-left: 110px;
       margin-right: 110px;
@@ -1079,32 +1082,28 @@ $color-red : #ea2336 ;
   .domaine-padding-top {
     padding-top: 90px;
   }
-  .env-sec-box {
+  .domaine-secteur-box {
     h1 {
       margin-top: 18px;
       margin-bottom: 40px;
-      margin-left: 295px;
-      margin-right: 295px;
-      padding: 5px 5px 5px 5px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 5px 15px 5px 15px;
       background-color: #9eb504;
       color: #fff;
       text-transform: uppercase;
       font-size: 20px;
       font-weight: 600;
+      display: inline-block;
     }
   }
 
-  .env-sec-box {
+  .domaine-secteur-box {
     h5 {
       margin-left: 110px;
       margin-right: 110px;
       line-height: 2.5;
     }
-  }
-
-  .price-2 {
-    font-size: 14px;
-    padding-top: 8px;
   }
   .navbar-mods {
     padding-right: 41px !important;
@@ -1360,6 +1359,15 @@ $color-red : #ea2336 ;
   }
   .advanced-search {
     width: 215px;
+  }
+  .badge-xxx {
+    left: 0px !important;
+  }
+  .price-2{
+    &.abo {
+      margin-left:5px!important;
+      font-size:11px!important;
+    }
   }
 }
 

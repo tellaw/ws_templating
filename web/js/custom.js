@@ -51,13 +51,13 @@ jQuery(document).ready(function($) {
 
         if ($(this).text() == "+") {
             $(this).text('-');
-            $(this).css("background-color", "#9EB504");
+            $(this).css("background-color", "#697277");
             $(this).css("color", "#fff");
 
         } else if ($(this).text() == "-") {
             $(this).text('+');
             $(this).css("background-color", "#fff");
-            $(this).css("color", "#9EB504");
+            $(this).css("color", "#697277");
         }
 
     });

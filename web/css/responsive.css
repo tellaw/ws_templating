@@ -179,20 +179,21 @@
     display: block !important; }
   .slider-margin-top {
     margin-top: 51px; }
-  .env-sec-box h1 {
+  .domaine-secteur-box h1 {
     margin-top: 18px;
     margin-bottom: 40px;
-    margin-left: 390px;
-    margin-right: 390px;
-    padding: 9px 5px 4px 5px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 9px 15px 4px 15px;
     background-color: #9eb504;
     color: #fff;
     text-transform: uppercase;
     font-size: 20px;
-    font-weight: 600; }
-  .env-sec-box {
+    font-weight: 600;
+    display: inline-block; }
+  .domaine-secteur-box {
     line-height: 1.5; }
-    .env-sec-box h5 {
+    .domaine-secteur-box h5 {
       line-height: 1.5; }
   .col-mod-tags {
     padding-left: 0px;
@@ -212,18 +213,19 @@
   .col-mod-tags {
     padding-left: 0px;
     margin-left: -8px !important; }
-  .env-sec-box h1 {
+  .domaine-secteur-box h1 {
     margin-top: 18px;
     margin-bottom: 40px;
-    margin-left: 50px;
-    margin-right: 50px;
-    padding: 5px 5px 5px 5px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px 15px 5px 15px;
     background-color: #9eb504;
     color: #fff;
     text-transform: uppercase;
     font-size: 20px;
-    font-weight: 600; }
-  .env-sec-box h5 {
+    font-weight: 600;
+    display: inline-block; }
+  .domaine-secteur-box h5 {
     line-height: 1.5; } }
 
 @media screen and (min-width: 426px) and (max-width: 639px) {
@@ -693,18 +695,19 @@
     font-size: 18px !important; }
   .colu-width {
     margin-left: 25px !important; }
-  .env-sec-box h1 {
+  .domaine-secteur-box h1 {
     margin-top: 18px;
     margin-bottom: 40px;
-    margin-left: 390px;
-    margin-right: 390px;
-    padding: 5px 5px 0px 5px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px 15px 0px 15px;
     background-color: #9eb504;
     color: #fff;
     text-transform: uppercase;
     font-size: 20px;
-    font-weight: 600; }
-  .env-sec-box h5 {
+    font-weight: 600;
+    display: inline-block; }
+  .domaine-secteur-box h5 {
     margin-left: 110px;
     margin-right: 110px;
     line-height: 2.5; }
@@ -769,24 +772,22 @@
     height: 381px; }
   .domaine-padding-top {
     padding-top: 90px; }
-  .env-sec-box h1 {
+  .domaine-secteur-box h1 {
     margin-top: 18px;
     margin-bottom: 40px;
-    margin-left: 295px;
-    margin-right: 295px;
-    padding: 5px 5px 5px 5px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px 15px 5px 15px;
     background-color: #9eb504;
     color: #fff;
     text-transform: uppercase;
     font-size: 20px;
-    font-weight: 600; }
-  .env-sec-box h5 {
+    font-weight: 600;
+    display: inline-block; }
+  .domaine-secteur-box h5 {
     margin-left: 110px;
     margin-right: 110px;
     line-height: 2.5; }
-  .price-2 {
-    font-size: 14px;
-    padding-top: 8px; }
   .navbar-mods {
     padding-right: 41px !important;
     padding-left: 41px !important; }
@@ -972,7 +973,12 @@
   .title-font-size {
     font-size: 12px !important; }
   .advanced-search {
-    width: 215px; } }
+    width: 215px; }
+  .badge-xxx {
+    left: 0px !important; }
+  .price-2.abo {
+    margin-left: 5px !important;
+    font-size: 11px !important; } }
 
 /* FOOTER ANCIEN */
 @media screen and (max-width: 1024px) {
