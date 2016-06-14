@@ -888,6 +888,7 @@ div[class^="element-wrapper-"] img {
 .acceuil-title p {
 	display: none;
 	font-size:12px;
+	min-height:82px;
 }
 
 .acceuil-title-2 {

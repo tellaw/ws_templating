@@ -247,7 +247,7 @@ jQuery(document).ready(function($) {
             var email = inputField.val();
             if(email.indexOf("@",1) == -1 || email.indexOf(".", email.indexOf("@",1)+1) == -1 || email.length <= 5){
                 inputField.siblings('.form-error').remove();
-                inputField.after('<p class="form-error color-red-eti padding-left-10">Veuillez saisir une adresse e-mail valide.</p>');
+                inputField.after('<p class="form-error color-red-eti padding-left-10">Veuillez saisir une adresse email valide.</p>');
                 e.preventDefault();
             }
         });
