@@ -1,5 +1,5 @@
 // Home javascript
-$.noConflict();
+jQuery.noConflict();
 jQuery( window ).resize(function($) {
     if (jQuery( "#sub-menu" ).hasClass( "fxd" )) {
         jQuery('#sub-menu').css('margin-top', $('#main-header').height());
