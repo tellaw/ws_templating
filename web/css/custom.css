@@ -2270,6 +2270,10 @@ div.play-button {
 	padding: 4px 7px;
 }
 
+.myti-info-compte .left {
+	float: left;
+}
+
 .myti-info-compte {
 	background: -moz-linear-gradient(top, rgba(69, 170, 203, 1) 0%,
 	rgba(62, 132, 178, 1) 100%); /* FF3.6+ */
@@ -2341,7 +2345,4 @@ div.play-button {
 
 .myti-info-compte .myti-icon {
 	padding: 0 0 15px 23px
-}
-.myti-info-compte .left {
-	float: left;
 }
