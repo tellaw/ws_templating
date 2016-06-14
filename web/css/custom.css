@@ -2269,3 +2269,8 @@ div.play-button {
 	font-weight: 400;
 	padding: 4px 7px;
 }
+
+.attachment-300x250 {
+	margin-left: -92%;
+	height: 250px;
+}
