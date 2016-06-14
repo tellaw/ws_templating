@@ -18,10 +18,7 @@ If you like Smint, or have suggestions on how it could be improved, send me a tw
 
 	$.fn.smint = function( options ) {
 
-		var settings = $.extend({
-			'scrollSpeed'  : 500,
-			'mySelector'     : 'div'
-		}, options);
+		var settings = options;
 
 		// adding a class to users div
 		$(this).addClass('smint');
