@@ -26,7 +26,7 @@ $domaines_secteurs_colors: #008BBB, #00A56D, #E07701, #F6BD00, #A9B200, #008CBB,
 $i: 1;
 @each $class in $domaines_secteurs_code {
   /* #{nth($domaines_secteurs_name, $i)} */
-  .#{$class} {
+  .skin-#{$class} {
     .background-encart {
       background-color: nth($domaines_secteurs_colors, $i);
     }
