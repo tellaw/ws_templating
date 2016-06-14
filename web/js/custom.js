@@ -41,11 +41,14 @@ jQuery(document).ready(function($) {
         }
     });
 
-    $('.subMenu').smint({
-        'scrollSpeed' : 1000
-    });
+    if ( $( ".subMenu" ).length ) {
+        $('.subMenu').smint({
+            'scrollSpeed' : 1000
+        });
 
-    $('body').scrollspy({target: ".subMenu", offset: 50});
+        $('body').scrollspy({target: ".subMenu", offset: 50});
+    }
+
 
     $(".btn-xpnd-smint").click(function(){
 
