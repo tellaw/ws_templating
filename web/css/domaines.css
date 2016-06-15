@@ -157,3 +157,13 @@
 
 .skin-th16 .text-color {
   color: #959594; }
+
+/* agroalimentaire */
+.skin-sc1 .background-encart {
+  background-color: #23AB75; }
+
+.skin-sc1 .border-encart {
+  border: 1px solid #23AB75; }
+
+.skin-sc1 .text-color {
+  color: #23AB75; }
