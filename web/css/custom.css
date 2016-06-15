@@ -1114,11 +1114,11 @@ div[class^="element-wrapper-"] img {
 	right: -220px;
 }
 .btn-stk {
-	padding: 4.5px 10px 4.5px 10px;
+	padding: 5px 0 5px;
 	font-size: 20px;
 	margin: 0px;
 	height: 40px;
-	width: 41px;
+	width: 40px;
 }
 
 .btn-action {
@@ -1484,8 +1484,8 @@ p.cellule-list {
 /* seif-custom */
 
 .btn-center{
-	padding-top: 8px !important;
-	padding-bottom: 3px !important;
+	padding-top: 6px !important;
+	padding-bottom: 4px !important;
 }
 .conf-title {
 	left: 0px;
