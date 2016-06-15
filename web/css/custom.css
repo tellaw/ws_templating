@@ -1484,8 +1484,9 @@ p.cellule-list {
 /* seif-custom */
 
 .btn-center{
-	padding-top: 6px !important;
-	padding-bottom: 4px !important;
+	padding-top: 9px !important;
+	padding-bottom: 9px !important;
+	line-height:12px;
 }
 .conf-title {
 	left: 0px;
@@ -2214,6 +2215,12 @@ div.play-button {
 
 .bottom-bloc button {
 	width:100%;
+}
+.line-height-12 {
+	line-height: 12px;
+}
+.line-height-14 {
+	line-height: 14px;
 }
 .line-height-16 {
 	line-height: 16px;
