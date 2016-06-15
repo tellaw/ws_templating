@@ -1003,7 +1003,7 @@
     padding: 0 0 7px 45px !important;
     line-height: 13px; } }
 
-@media screen {
+@media only screen {
   a.pub-style img,
   a.large-img img,
   a.haute-img img {

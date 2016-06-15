@@ -1420,7 +1420,7 @@ $color-red : #ea2336 ;
   }
 }
 
-@media screen {
+@media only screen {
   a.pub-style img,
   a.large-img img,
   a.haute-img img {
