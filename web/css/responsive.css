@@ -1004,36 +1004,24 @@
     line-height: 13px; } }
 
 @media only screen and (min-width: 1024px) {
-  a.pub-style img,
-  a.large-img img,
-  a.haute-img img {
+  a.pub-style img, a.large-img img, a.haute-img img {
     transition: transform 4s cubic-bezier(0.19, 1, 0.22, 1) 0ms; }
-  a.pub-style:hover img,
-  a.large-img:hover img,
-  a.haute-img:hover img {
+  a.pub-style:hover img, a.large-img:hover img, a.haute-img:hover img {
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1); }
-  a.pub-style:hover .acceuil-title p,
-  a.large-img:hover .acceuil-title p,
-  a.haute-img:hover .acceuil-title p {
+  a.pub-style:hover .acceuil-title p, a.large-img:hover .acceuil-title p, a.haute-img:hover .acceuil-title p {
     display: block;
     color: #697277; }
-  a.pub-style:hover .acceuil-title p span,
-  a.large-img:hover .acceuil-title p span,
-  a.haute-img:hover .acceuil-title p span {
-    float: left;
-    margin: 0 0 0 5px;
-    display: inline-block;
-    width: 190px; }
-  a.pub-style:hover .overlay,
-  a.large-img:hover .overlay,
-  a.haute-img:hover .overlay {
-    display: block; }
-  a.pub-style:hover .acceuil-title h3,
-  a.large-img:hover .acceuil-title h3,
-  a.haute-img:hover .acceuil-title h3 {
-    display: none; } }
+    a.pub-style:hover .acceuil-title p span, a.large-img:hover .acceuil-title p span, a.haute-img:hover .acceuil-title p span {
+      float: left;
+      margin: 0 0 0 5px;
+      display: inline-block;
+      width: 190px; }
+  a.pub-style:hover .acceuil-title h3, a.large-img:hover .acceuil-title h3, a.haute-img:hover .acceuil-title h3 {
+    display: none; }
+  a.pub-style:hover .overlay, a.large-img:hover .overlay, a.haute-img:hover .overlay {
+    display: block; } }
 
 /* MOBILE PORTRAIT et PAYSAGE */
 @media all and (max-width: 680px) {
