@@ -407,6 +407,8 @@
     margin-left: 0px !important; }
   .xs-margin-bottom-25 {
     margin-bottom: 25px; }
+  .xs-text-center {
+    text-align: center; }
   .subscription-btn {
     font-size: 10px;
     display: block;
@@ -492,6 +494,8 @@
     margin-bottom: 30px !important; }
   .sm-margin-bottom-40 {
     margin-bottom: 40px !important; }
+  .sm-text-center {
+    text-align: center; }
   .cellule-padding-top-20 {
     padding-top: 22px; }
   .cellule-padding-top-30 {
@@ -673,6 +677,8 @@
     margin-right: -35px; }
   .md-padding-right-0 {
     padding-right: 0px; }
+  .md-text-center {
+    text-align: center; }
   .cellule-padding-top-10 {
     padding-top: 10px; }
   .cellule-padding-top-20 {
