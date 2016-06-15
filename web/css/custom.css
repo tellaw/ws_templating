@@ -1,22 +1,18 @@
 @font-face {
-	font-family: 'myriad-pro-bold';
-	font-weight: bold;
-	src: url("../fonts/MyriadPro-Bold.otf") format("opentype");
-}
-@font-face {
 	font-family: 'myriad-pro';
 	font-weight: normal;
 	src: url("../fonts/MyriadPro-Regular.otf") format("opentype");
+	src: url('../fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/MyriadPro-Regular.woff') format('woff'),
+	url('../fonts/MyriadPro-Regular.ttf') format('truetype');
 }
 @font-face {
 	font-family: 'myriad-pro-semi-bold';
 	font-weight: lighter;
 	src: url("../fonts/MyriadPro-Semibold.otf") format("opentype");
-}
-@font-face {
-	font-family: 'myriad-pro-condensed';
-	font-weight: normal;
-	src: url("../fonts/MyriadPro-Cond.otf") format("opentype");
+	src: url('../fonts/MyriadPro-Semibold.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/MyriadPro-Semibold.woff') format('woff'),
+	url('../fonts/MyriadPro-Semibold.ttf') format('truetype');
 }
 body {
 	font-family: "myriad-pro", sans-serif;
