@@ -36,7 +36,7 @@
 	font-size: 16px;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
-	background-color: #9DB53A;
+	background-color: #697277;
 }
 
 .inner:after {
@@ -71,12 +71,12 @@
 	color: #fff;
 }
 .subMenu a:hover {
-	background: #9DB53A;
+	background: #697277;
 	color: #fff !important;
 }
 
 /*.active {
-	background-color: #9DB53A;
+	background-color: #697277;
 	color: #fff !important;
 }*/
 .end {
@@ -116,7 +116,7 @@
 	width: 100%;
 	position: relative;
 	height: 40px;
-	background-color: #9DB53A;
+	background-color: #697277;
 	font-size: 18px;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
@@ -128,7 +128,7 @@
 	width: 75%;
 	font-size: 16px;
 	padding: 10px 0px 15px 15px;
-	background-color: #9DB53A;
+	background-color: #697277;
 	color: #fff !important;
 	/*text-align: center;*/
 	float: left;
@@ -164,7 +164,7 @@
 
 	.inner {
 		width: 720px;
-		background-color: #9DB53A;
+		background-color: #697277;
 	}
 
 	.subMenu {
@@ -179,7 +179,7 @@
 		/* width: 100%;*/
 		margin-left: 15px !important;
 		margin-right: 15px !important;
-		background-color: #9DB53A;
+		background-color: #697277;
 	}
 
 	.subMenu {
