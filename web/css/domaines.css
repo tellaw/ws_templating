@@ -158,12 +158,62 @@
 .skin-th16 .text-color {
   color: #959594; }
 
-/* agroalimentaire */
+/* aerospatial */
 .skin-sc1 .background-encart {
-  background-color: #23AB75; }
+  background-color: #25445C; }
 
 .skin-sc1 .border-encart {
-  border: 1px solid #23AB75; }
+  border: 1px solid #25445C; }
 
 .skin-sc1 .text-color {
+  color: #25445C; }
+
+/* agroalimentaire */
+.skin-sc2 .background-encart {
+  background-color: #23AB75; }
+
+.skin-sc2 .border-encart {
+  border: 1px solid #23AB75; }
+
+.skin-sc2 .text-color {
   color: #23AB75; }
+
+/* automobile */
+.skin-sc3 .background-encart {
+  background-color: #222221; }
+
+.skin-sc3 .border-encart {
+  border: 1px solid #222221; }
+
+.skin-sc3 .text-color {
+  color: #222221; }
+
+/* eco-indiustrie */
+.skin-sc4 .background-encart {
+  background-color: #9DB51D; }
+
+.skin-sc4 .border-encart {
+  border: 1px solid #9DB51D; }
+
+.skin-sc4 .text-color {
+  color: #9DB51D; }
+
+/* equipement-industriel */
+.skin-sc5 .background-encart {
+  background-color: #D31E2C; }
+
+.skin-sc5 .border-encart {
+  border: 1px solid #D31E2C; }
+
+.skin-sc5 .text-color {
+  color: #D31E2C; }
+
+/* plasturgie */
+.skin-sc6 .background-encart {
+  background-color: #642F85; }
+
+.skin-sc6 .border-encart {
+  border: 1px solid #642F85; }
+
+.skin-sc6 .text-color {
+  color: #642F85; }
