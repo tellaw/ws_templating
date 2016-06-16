@@ -876,6 +876,13 @@ $color-red : #ea2336 ;
   }
 }
 
+@media (max-width: 992px) {
+  .row {
+    &.margin-top-30 {
+      margin-top:0px !important;
+    }
+  }
+}
 /* Medium and up */
 @media (min-width: 992px) {
   .no-gutters-md {

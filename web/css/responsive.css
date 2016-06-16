@@ -627,6 +627,10 @@
   .btn-u.btn-color {
     padding: 6px 8px; } }
 
+@media (max-width: 992px) {
+  .row.margin-top-30 {
+    margin-top: 0px !important; } }
+
 /* Medium and up */
 @media (min-width: 992px) {
   .no-gutters-md {

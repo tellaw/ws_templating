@@ -1208,6 +1208,7 @@ div[class^="element-wrapper-"] img {
 	width: 30px !important;
 	margin-right: 25px;
 	text-align: center;
+	float:left !important;
 }
 
 .dl-horizontal dd {
@@ -2173,6 +2174,9 @@ div.play-button {
 
 .bottom-bloc button {
 	width:100%;
+}
+.bottom-bloc .pub-bloc {
+	margin-top:30px !important;
 }
 .line-height-12 {
 	line-height: 12px;
