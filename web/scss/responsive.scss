@@ -479,15 +479,18 @@ $color-red : #ea2336 ;
     width: 90%;
     margin: 0 auto;
   }
+
   .panel-heading {
     .btn-block {
       float:right;
       width:auto;
     }
-  }
-  .panel-heading {
     .badge {
       margin-top: 0!important;
+    }
+    .price-1 {
+      margin-top:9px !important;
+      margin-right: 10px !important;
     }
     .price-2 {
       margin-top:7px !important;

@@ -366,6 +366,9 @@
     width: auto; }
   .panel-heading .badge {
     margin-top: 0 !important; }
+  .panel-heading .price-1 {
+    margin-top: 9px !important;
+    margin-right: 10px !important; }
   .panel-heading .price-2 {
     margin-top: 7px !important; }
   .xs-padding-top-20 {
@@ -626,9 +629,6 @@
 
 /* Medium and up */
 @media (min-width: 992px) {
-  .subNavBtn {
-    color: #333;
-  }
   .no-gutters-md {
     padding-left: 0;
     padding-right: 0; }
