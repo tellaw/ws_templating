@@ -1360,7 +1360,6 @@ div[class^="element-wrapper-"] img {
 
 .price-2 {
 	color: #697277;
-	margin-left: 20px;
 	height: 25px;
 	margin-top: 15px !important;
 }
@@ -2231,7 +2230,7 @@ div.play-button {
 }
 
 .badge-xxx {
-	left: 7px !important;
+	left: 0px !important;
 }
 
 .badge {

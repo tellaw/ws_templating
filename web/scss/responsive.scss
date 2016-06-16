@@ -423,10 +423,6 @@ $color-red : #ea2336 ;
 
 /* Tab portrait à mobile paysage*/
 @media screen and (min-width: 426px) and (max-width: 768px) {
-  .header-padding {
-    width: 425px;
-    margin: 0 auto;
-  }
   .element {
     border-top-width: 1px !important;
     border-left-width: 0px !important;
@@ -479,6 +475,24 @@ $color-red : #ea2336 ;
 
 /* Small only */
 @media screen and (max-width: 768px) {
+  .header-padding {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .panel-heading {
+    .btn-block {
+      float:right;
+      width:auto;
+    }
+  }
+  .panel-heading {
+    .badge {
+      margin-top: 0!important;
+    }
+    .price-2 {
+      margin-top:7px !important;
+    }
+  }
   .xs-padding-top-20 {
     padding-top:20px !important;
   }
@@ -590,6 +604,9 @@ $color-red : #ea2336 ;
 
 /* Tablette portrait and up */
 @media (min-width: 768px){
+  .price-2 {
+    float:right!important;
+  }
   .menu-title {
     width: 100%;
     margin-bottom: 10px;
