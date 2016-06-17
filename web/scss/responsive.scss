@@ -607,6 +607,9 @@ $color-red : #ea2336 ;
 
 /* Tablette portrait and up */
 @media (min-width: 768px){
+  #sub-menu {
+    width: 750px;
+  }
   .price-2 {
     float:right!important;
   }

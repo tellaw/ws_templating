@@ -2320,6 +2320,6 @@ div.play-button {
 	padding: 0 0 15px 23px
 }
 
-.panel-heading a:hover {
+.panel-heading .downloads-title a:hover {
 	text-decoration: underline;
 }
