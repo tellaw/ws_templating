@@ -238,7 +238,7 @@ jQuery(document).ready(function($) {
         var link = window.location.href;
         var anchor = jQuery(this).attr("href");
         //affichage ou non de la freezone en col de droite
-        if (anchor != "documents") {
+        if (anchor != "#documents") {
             jQuery(".col-droite div.pub-bloc div.freezone").hide();
         }
         else {
