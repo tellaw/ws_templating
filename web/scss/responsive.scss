@@ -885,6 +885,15 @@ $color-red : #ea2336 ;
       margin-top:0px !important;
     }
   }
+  .col-droite {
+    position: relative;
+    top: 40px;
+    right: 0;
+    float: none;
+  }
+  .margin-top-40-pub {
+    margin-top: 0;
+  }
 }
 /* Medium and up */
 @media (min-width: 992px) {

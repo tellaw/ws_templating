@@ -2323,3 +2323,9 @@ div.play-button {
 .panel-heading .downloads-title a:hover {
 	text-decoration: underline;
 }
+
+.col-droite {
+	position: absolute;
+	top: 103px;
+	right: -9px;
+}
