@@ -234,9 +234,17 @@ jQuery(document).ready(function($) {
         anchor = anchor.substring(anchor.indexOf("?"), anchor.length);
         jQuery("#"+anchor+"_link").click();
     }
-    $(".nav-tabs a").on("click", function(){
+    jQuery(".nav-tabs a").on("click", function(){
         var link = window.location.href;
-        var anchor = $(this).attr("href");
+        var anchor = jQuery(this).attr("href");
+        //affichage ou non de la freezone en col de droite
+        if (anchor != "documents") {
+            jQuery(".col-droite div.pub-bloc div.freezone").hide();
+        }
+        else {
+            jQuery(".col-droite div.pub-bloc div.freezone").show();
+        }
+        //ajout de l'ancre dans l'url
         if (window.location.href.indexOf("#") > 0) {
             link = window.location.href.substring(0, window.location.href.indexOf("#"));
         }

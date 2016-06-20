@@ -358,6 +358,9 @@
 
 /* Small only */
 @media screen and (max-width: 768px) {
+  #design-services-popin {
+    width: 90% !important;
+    height: 370px !important; }
   .header-padding {
     width: 90%;
     margin: 0 auto; }
