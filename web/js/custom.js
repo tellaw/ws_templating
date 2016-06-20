@@ -238,11 +238,11 @@ jQuery(document).ready(function($) {
         var link = window.location.href;
         var anchor = jQuery(this).attr("href");
         //affichage ou non de la freezone en col de droite
-        if (anchor != "#documents") {
-            jQuery(".col-droite div.pub-bloc div.freezone").hide();
+        if (anchor == "#documents") {
+            jQuery(".col-droite div.pub-bloc div.freezone").show();
         }
         else {
-            jQuery(".col-droite div.pub-bloc div.freezone").show();
+            jQuery(".col-droite div.pub-bloc div.freezone").hide();
         }
         //ajout de l'ancre dans l'url
         if (window.location.href.indexOf("#") > 0) {

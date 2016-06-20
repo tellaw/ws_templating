@@ -2329,3 +2329,7 @@ div.play-button {
 	top: 103px;
 	right: -9px;
 }
+
+.col-droite div.pub-bloc div.freezone {
+	display:none;
+}
