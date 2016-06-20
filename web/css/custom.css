@@ -2335,7 +2335,7 @@ div.play-button {
 }
 
 /*POPIN CONFERENCES*/
-#di-conf-popin {height:auto!important;}
+#di-conf-popin {height:auto!important;padding: .5em 1em .5em 1em;}
 #di-conf-popin p {display:inline-block;}
 #di-conf-popin label,
 #di-conf-popin #form-container #di-form .condition {font-size:13px; display:inline-block;}
@@ -2345,11 +2345,18 @@ div.play-button {
 	width:200px;
 	height:28px;
 	display:inline-block;
-	background:#fefefe;
-	border:1px solid #F7F7F7;
-	border-top:1px solid #acabab;
-	border-left:1px solid #acabab;
+	border: 0px;
+	background-color: #F3F3F3;
 	padding:0;
+}
+#di-conf-popin input:focus{
+	-moz-box-shadow: 0px 0px 10px 0px #ea2336;
+	-webkit-box-shadow: 0px 0px 10px 0px #ea2336;
+	-o-box-shadow: 0px 0px 10px 0px #ea2336;
+	box-shadow: 0px 0px 10px 0px #ea2336;
+	filter:progid:DXImageTransform.Microsoft.Shadow(color=#ea2336, Direction=NaN, Strength=10);
+	background-color: #fff;
+	outline:none;
 }
 #di-conf-popin .formErrorContent {
 	position:relative;
