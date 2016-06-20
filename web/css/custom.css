@@ -2333,3 +2333,56 @@ div.play-button {
 .col-droite div.pub-bloc div.freezone {
 	display:none;
 }
+
+/*POPIN CONFERENCES*/
+#di-conf-popin {height:auto!important;}
+#di-conf-popin p {display:inline-block;}
+#di-conf-popin label,
+#di-conf-popin #form-container #di-form .condition {font-size:13px; display:inline-block;}
+#di-conf-popin input {
+	font-size:13px;
+	color:#000;
+	width:200px;
+	height:28px;
+	display:inline-block;
+	background:#fefefe;
+	border:1px solid #F7F7F7;
+	border-top:1px solid #acabab;
+	border-left:1px solid #acabab;
+	padding:0;
+}
+#di-conf-popin .formErrorContent {
+	position:relative;
+	left:-15px;
+	display:inline-block;
+	color:#d11111;
+	font-size:12px;
+	float:left;
+}
+#di-conf-popin .champs-requis {
+	display:inline-block;
+	margin:0;
+	padding:0;
+	font-size:12px;
+	position:absolute;
+	bottom:10px;
+	left:20px;
+}
+#di-conf-popin .button {
+	background:#d11111!important;
+	width: 150px;
+	height: 26px;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: bold;
+	color: #FFF;
+	border: none;
+	cursor: pointer;
+	margin: 0 0 0 15px;
+	padding: 0;
+	border-radius: 0;
+}
+#di-conf-popin .bottom {
+	margin:20px 0;
+	padding:0;
+}
