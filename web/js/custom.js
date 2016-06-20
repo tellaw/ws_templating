@@ -295,6 +295,11 @@ jQuery(document).ready(function($) {
         $("#design-services-popin").css("height", "295px");
         return false;
     });
+
+    //popin webinar
+    $("#di-conf-popin").dialog("widget").attr("id", "design-di-conf-popin").css("position", "fixed");
+    $("#di-conf-popin").dialog("widget").css("top", "70px");
+    $("#design-di-conf-popin").css("left", (($(window).width()-$("#design-di-conf-popin").width())/2));
 });
 
 (function() {
