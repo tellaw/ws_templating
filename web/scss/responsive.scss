@@ -634,6 +634,9 @@ $color-red : #ea2336 ;
 
 /* Medium only */
 @media screen and (min-width: 768px) and (max-width: 991px) {
+  .margin-top-40-pub {
+    margin-top: 0;
+  }
   .no-gutters-sm {
     padding-left: 0;
     padding-right: 0;
@@ -887,12 +890,9 @@ $color-red : #ea2336 ;
   }
   .col-droite {
     position: relative;
-    top: 40px;
+    top: 10px;
     right: 0;
     float: none;
-  }
-  .margin-top-40-pub {
-    margin-top: 0;
   }
 }
 /* Medium and up */
