@@ -20,14 +20,18 @@ class CdnTag extends AbstractTask
 	public function run()
 	{
 
+		$new_tag = getenv("CDN_TAG");
 		$tmpl_dir = "/data/apps/eti_cdn/lucy/ti";
 		$src = $tmpl_dir."/app/current/web";
-		$tag = $tmpl_dir."/".getenv("CDN_TAG");
+		$tag = $tmpl_dir."/".$new_tag;
 
 		if (empty($tag)) {
 			echo "Environment variable 'CDN_TAG' is empty";
 			return false;
 		}
+
+		if (stristr($new_tag, "preprod")) // if new tag is preprod delete all other
+			$commands[] = "rm -rf $tmpl_dir/cdn.preprod*";
 
 		// create Htaccess no index
 		$commands[] = 'touch .htaccess && echo "Options -Indexes" > .htaccess';
