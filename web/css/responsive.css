@@ -126,6 +126,17 @@
 
 /* Mobile portrait */
 @media (max-width: 425px) {
+  #design-di-conf-popin #form-container {
+    margin: 0 0 0 40px !important;
+    z-index: 100;
+    background: #fff;
+    padding: 15px;
+    width: 90%; }
+  #di-conf-popin input {
+    width: 150px;
+    margin-right: 0; }
+  #di-conf-popin .services-logo {
+    display: none; }
   #sub-menu {
     padding: 0 30px 0 0; }
   .badge-env {
