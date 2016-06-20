@@ -482,6 +482,11 @@ $color-red : #ea2336 ;
   #design-di-conf-popin {
     width:90% !important;
   }
+  #design-di-conf-popin {
+    #form-container {
+      margin: 0 0 0 95px;
+    }
+  }
 
   .header-padding {
     width: 90%;

@@ -2348,6 +2348,7 @@ div.play-button {
 	border: 0px;
 	background-color: #F3F3F3;
 	padding:0;
+	margin: 0 15px 0 0;
 }
 #di-conf-popin input:focus{
 	-moz-box-shadow: 0px 0px 10px 0px #ea2336;
@@ -2373,11 +2374,11 @@ div.play-button {
 	font-size:12px;
 	position:absolute;
 	bottom:10px;
-	left:20px;
+	left:0px;
 }
 #di-conf-popin .button {
-	background:#d11111!important;
-	width: 150px;
+	background: #EA2336!important;
+	width: auto;
 	height: 26px;
 	text-transform: uppercase;
 	font-size: 13px;
@@ -2385,11 +2386,34 @@ div.play-button {
 	color: #FFF;
 	border: none;
 	cursor: pointer;
-	margin: 0 0 0 15px;
-	padding: 0;
+	margin: 0;
+	padding: 0 10px;
 	border-radius: 0;
 }
 #di-conf-popin .bottom {
 	margin:20px 0;
 	padding:0;
+}
+#di-conf-popin .services-logo {
+	position: absolute;
+	bottom: 40px;
+	left: 1em;
+}
+#di-conf-popin .titre {
+	font-size: 14px;
+	margin: 0 0 30px;
+	width: auto;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #333;
+	font-family: Arial, Helvetica, Verdana, sans-serif;
+}
+#design-di-conf-popin {
+	background: url(../images/fond_hachure.png) repeat-y left top #fff;
+}
+#form-container {
+	width: 65%;
+	margin: 0 auto;
+	position:relative;
+	overflow:hidden
 }
