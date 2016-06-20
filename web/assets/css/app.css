@@ -882,14 +882,14 @@ a.btn-u-xs {
 }
 
 .btn-u.btn-brd.btn-u-blue {
-	border-color: #3498db;
+	border-color: #1b8bbb;
 }
 .btn-u.btn-brd.btn-u-blue:hover {
-	color: #2980b9;
-	border-color: #2980b9;
+	color: #1b8bbb;
+	border-color: #1b8bbb;
 }
 .btn-u.btn-brd.btn-u-blue.btn-brd-hover:hover {
-	background: #2980b9;
+	background: #1b8bbb;
 }
 
 .btn-u.btn-brd.btn-u-red {

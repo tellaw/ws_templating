@@ -1,226 +1,917 @@
-#header {
-  background-color: #000000;
-  padding: 0; }
-  #header .title-bar {
-    padding-top: 0;
-    padding-bottom: 0; }
-    #header .title-bar a {
-      display: inline-block;
-      padding: 10px 5px;
-      border-right: 1px solid #3a414d;
-      border-left: 1px solid #3a414d; }
-    #header .title-bar a, #header .title-bar button {
-      width: 47%; }
+#bandeau-cookie {z-index:9999;position:fixed;bottom:50px;left:0;background:#333333;padding: 2px;color:#ffffff;width:350px;text-align:left;display:none;-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;}
+#bandeau-cookie .puce {line-height: 16px;border-radius: 20px;background: #fff; float: left; position: absolute; overflow: hidden; width: 22px; height: 22px; right:12px}
+#bandeau-cookie .puce span {height: 0; position: absolute; left: 6px; top: 2px; z-index: 1;color:#000000;font-family: arial black;font-size: 14px;}
+#bandeau-cookie>div {margin:0 auto;height:auto;border: 2px solid #fff;padding: 5px;background:#000000;-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;}
+#bandeau-cookie div a {color:#fff;text-decoration:underline;margin: 0 10px;}
+#bandeau-cookie div p {margin:0;padding: 3px 0 3px 5px;font-size:13px;font-weight:bold;line-height: 25px;}
+#bandeau-cookie div p span {font-size:20px;}
+#bandeau-cookie div .puce:hover {text-decoration:none;cursor:pointer}
 
-#site-name {
-  font-size: 11px;
-  overflow: hidden;
-  margin: 0; }
-  #site-name span:first-child {
-    font-size: 23px;
-    font-weight: bold;
-    letter-spacing: 3px;
-    line-height: 26px;
-    height: 26px;
-    overflow: hidden;
-    font-family: DIN-Alternate-medium, Century Gothic, Arial;
-    color: #ea2336; }
-  #site-name span {
-    height: 16px;
-    letter-spacing: 1.3px;
-    line-height: 16px;
-    display: block;
-    color: #ffffff;
-    text-transform: uppercase; }
+@media all and (max-width:680px) {
+  #bandeau-cookie{
+    right: 0;
+    width: 100%;
+    bottom: 0;
+  }
+}
 
-#search-box form {
+@font-face {
+  font-family: 'DIN-Alternate-medium';
+  src: url('../fonts/din_alternate_medium-webfont.eot');
+  src: url('../fonts/din_alternate_medium-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/din_alternate_medium-webfont.woff') format('woff'),
+  url('../fonts/din_alternate_medium-webfont.ttf') format('truetype'),
+  url('../fonts/din_alternate_medium-webfont.svg#din_alternate_medium-webfont') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+#masthead {
+  background: #000000;
+  margin:0;
+  padding:0;
+  max-width: 100%;
+  top: 0;
+  color:#fff;
+  font-family:DIN-Alternate-medium, century gothic;
+  text-transform:uppercase;
   position: relative;
-  margin-top: 0.7rem; }
-  #search-box form #search_form_submit_span {
-    position: absolute;
-    top: 0;
-    right: 1px;
-    height: 25px;
-    width: 30px;
-    display: block;
-    background: url(../images/search-picto.png) no-repeat center; }
-    #search-box form #search_form_submit_span input {
-      background: transparent;
-      border: none;
-      height: 25px;
-      width: 25px;
-      cursor: pointer; }
-
-#search-box [type='text'] {
+  z-index: 1001;
+}
+#masthead * {
+  box-sizing:content-box!important ;
+  font-family:DIN-Alternate-medium, century gothic!important;
+}
+#masthead strong,
+#masthead  b {
+  font-weight:bold;
+}
+#masthead h1 {
+  color:#fff;
+}
+#menu-cache {
+  display:none;
+}
+#logo {
+  display: block;
+  float: left;
+}
+#slogan {
+  font-size: 18px;
+  line-height: 23px;
+}
+.red {
+  color: #ed1b2e!important;
+}
+#searchform {
+  float: left;
+  border: 1px solid #DADADA;
+  color: #747678;
+  background: #ffffff;
   padding: 0;
-  border: none;
-  background-color: #ffffff;
-  margin: 0;
-  height: 24px;
-  width: 100%; }
-
+}
+#searchform input[type=text] {
+  border: none!important;
+  background: none!important;
+}
+#content-header {
+  margin: 0 auto;
+  height: 96px;
+  width: 960px;
+  clear: both;
+}
+#search-box {
+  position: relative;
+  float: left;
+  width: 405px;
+  margin:0 5px 0 115px;
+  display: inline;
+}
+#site-name {
+  margin:0;
+  font-weight: normal;
+}
+#search-box span {
+  padding:0;
+  margin:0;
+  font-size:12px;
+  letter-spacing:1.3px;
+  line-height: 16px;
+  display: block;
+}
+#search-box #site-name .red {
+  font-size:23px;
+  font-weight:bold;
+  letter-spacing:3px;
+  line-height: 26px;
+  height: 26px;
+  overflow: hidden;
+}
+#search-box #site-name span {
+  height: 16px;
+  overflow: hidden;
+}
+#search-box #searchCommand {
+  width:98%;
+  margin:5px 0 0 0
+}
 #search-box fieldset {
   border: 1px solid #68737a;
   color: #747678;
   background: #ffffff;
+  padding:0;
+  margin: 0;
+}
+#search-box .left {
+  float: left;
+}
+#search-box .textField {
+  padding: 1px 3px;
+  width:89%
+}
+#search-box .textFieldImp {
+  width: 100%;
+  border: none;
   padding: 0;
-  margin: 0; }
-
+  height: 24px;
+  background: #fff;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  color: #000;
+  font-size: 12px;
+}
+#search-box .submit-image {
+  background: transparent;
+  width: 31px;
+  height: 25px;
+  cursor: pointer;
+}
+#search-box #search_form_submit_span {
+  height: 25px;
+  width: 31px;
+  display: block;
+  float: right;
+  margin-right: 2px;
+  background: url(//www.techniques-ingenieur.fr/actualite/wp-content/themes/ti/images/search-picto.png) no-repeat center;
+}
+#search-box #search_form_submit_span input[type=submit] {
+  border: none;
+  height: 25px;
+  width: 25px;
+  padding: 0;
+}
 #links {
   list-style: none;
+  padding: 0;
   overflow: hidden;
   font-size: 11px;
   font-weight: 700;
-  float: left;
-  margin: 46px 0 0 0; }
-  #links a {
-    color: #dbdbdb;
-    text-decoration: none;
-    text-transform: none;
-    font-size: 11px;
-    letter-spacing: 0.8px; }
-
-#espace-abo {
-  float: right;
-  text-align: right;
-  margin: 0.1rem 0 0 0; }
-  #espace-abo .contact-link {
-    color: #fff;
-    font-size: 12px;
-    font-weight: bold;
-    text-decoration: none;
-    display: block;
-    line-height: 19px;
-    float: left;
-    padding: 8px 5px; }
-    #espace-abo .contact-link .text {
-      letter-spacing: 1.3px;
-      padding: 0;
-      display: inline-block;
-      text-transform: uppercase; }
-    #espace-abo .contact-link .symbole {
-      padding: 3px 6px 1px 5px;
-      background-color: #ea2336;
-      height: 28px;
-      width: 28px;
-      display: block;
-      font-size: 22px;
-      line-height: 24px; }
-
-#register_link-connected {
-  padding: 10px;
-  position: relative;
-  float: left;
-  margin: 0; }
-  #register_link-connected .icon-silhouette {
-    background: url(../images/icon-silhouette.png) no-repeat 0 0;
-    width: 16px;
-    height: 17px;
-    display: block;
-    float: right; }
-  #register_link-connected.open #myti-short-list {
-    padding: 14px;
-    width: 266px;
-    z-index: 5;
-    box-sizing: content-box; }
-  #register_link-connected .register_link {
-    border-top: 1px solid #bcbcbc; }
-    #register_link-connected .register_link p {
-      margin: 0 0 10px 0;
-      font-size: 12px;
-      font-weight: normal;
-      font-family: Arial; }
-    #register_link-connected .register_link .titre {
-      color: #1b6990;
-      text-transform: uppercase;
-      font-weight: bold;
-      font-size: 16px;
-      letter-spacing: 1.3px;
-      margin: 15px 0 5px;
-      font-family: DIN-Alternate-medium, Century Gothic, Arial; }
-    #register_link-connected .register_link a {
-      color: #fff;
-      padding: 10px 14px;
-      min-width: 150px;
-      width: 150px;
-      height: 18px;
-      display: block;
-      text-transform: uppercase; }
-
-.navbar-default {
-  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
-  background-color: #f5f5f5;
-  position: relative;
-  z-index: 3;
-  border: none;
-  border-radius: 0;
-  min-height: 40px;
-  margin: 0; }
-
-#main-menu.pousse {
-  position: fixed;
-  z-index: 1000;
-  top: 0;
+  float:left;
+  margin: 46px 0 0 0;
+}
+#links li a {
+  color: #dbdbdb;
+  text-decoration: none;
+  text-transform:none;
+  font-size: 11px;
+  letter-spacing: 0.8px;
+  font-weight:normal
+}
+#search-box .search-pop {
+  display: none;
+  position: absolute;
+  top: 100%;
   left: 0;
-  width: 295px;
-  height: 100% !important;
-  background-color: #515b62;
-  border-right: 1px solid #68737a;
-  overflow-y: scroll; }
+  font-size: 11px;
+  font-family: Verdana;
+  color: #666;
+  padding: 10px;
+  width: auto;
+  z-index: 999999;
+  border: 2px solid #ccc;
+  width: 305px;
+  background-color: #f5f5f5;
+}
+#search-box .search-pop .closeSearchDiv {
+  text-align: right;
+  cursor: pointer;
+  float: right;
+  display: inline;
+}
+#search-box .search-pop p {
+  border: 0;
+  margin: 0 0 2px;
+  padding: 0 0 20px;
+}
+#search-box .search-pop input[type=text] {
+  color: #666;
+  font-size: 11px;
+  width: 298px;
+  margin: 0;
+  padding: 2px;
+  height: 22px;
+  line-height: 22px;
+  border-radius: 3px;
+  border: 1px solid #DADADA;
+  color: #747678;
+  background: #ffffff;
+}
+#search-box .search-pop input[type=text],
+#search-box .search-pop select {
+  width: 100%;
+}
+#search-box .search-pop .myti-buton-black {
+  background: -moz-linear-gradient(top, #424242 0%, #282828 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #424242), color-stop(100%, #282828));
+  background: -webkit-linear-gradient(top, #424242 0%, #282828 100%);
+  background: -o-linear-gradient(top, #424242 0%, #282828 100%);
+  background: -ms-linear-gradient(top, #424242 0%, #282828 100%);
+  background: linear-gradient(to bottom, #424242 0%, #282828 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#424242', endColorstr='#282828', GradientType=0);
+  text-transform: uppercase;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border: none;
+  height: 27px;
+  font-weight: bold;
+  color: #fff;
+  padding: 0 8px;
+  font-size: 12px;
+  cursor: pointer;
+}
+div.iframe_cas iframe {
+  border: none;
+  height: 94px !important;
+  width: 300px;
+  background: none;
+}
+.iframe_cas .contact {
+  position:absolute;
+  bottom:20px;
+  left:11px;
+  line-height:11px
+}
+.iframe_cas .contact a {
+  color:#ca030a;
+  text-decoration:underline
+}
+#espace-abo {
+  float:right;
+  text-align: right;
+  margin: 5px 0 0 0;
+}
+#register_link-connected {
+  width:200px;
+  margin: 10px 0 0 0;
+  padding:0;
+}
+#register_link-connected a {
+  display: block;
+  margin:0;
+  padding:10px;
+}
+#register_link-connected a:hover{
+  color:#fff;
+  text-decoration:none;
+  cursor:pointer;
+}
+#register_link-connected.open #myti-short-list {
+  display:block;
+  padding:14px;
+  width:266px;
+  z-index: 999;
+}
 
-#main-menu .top-bar {
-  padding: 0; }
+/* #register_link-connected .backdrop{
+    display: none;
+}
 
-#main-menu ul {
-  background-color: #515b62; }
-  #main-menu ul li.active {
-    padding: 0;
-    margin: 0;
-    color: #ffffff; }
-    #main-menu ul li.active a {
-      color: #ffffff;
-      background: #ea2336; }
-    #main-menu ul li.active ul li .is-drilldown-submenu-item a {
-      background: #333333 !important; }
-  #main-menu ul li.resdoc, #main-menu ul li.actu {
-    background: #68737a;
-    padding: 0; }
-  #main-menu ul li a {
-    color: #ffffff;
-    text-transform: uppercase;
-    font-size: 12px;
-    text-decoration: none;
-    font-weight: bold;
-    display: block;
-    letter-spacing: 1px;
-    padding: 1.5rem 0.25rem;
-    border-bottom: 1px solid #b4b9bd;
-    font-family: DIN-Alternate-medium, Century Gothic, Arial;
-    line-height: normal; }
-  #main-menu ul li.externe {
-    float: right; }
-    #main-menu ul li.externe:hover {
-      background-color: #000000; }
-    #main-menu ul li.externe a {
-      font-size: 12px;
-      padding: 1.5rem 0.25rem; }
-  #main-menu ul li.whitepaper a {
-    background: none; }
-  #main-menu ul li.bout a {
-    background: none; }
+#register_link-connected.open .backdrop{
+    display:block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+} */
+.register_link {
+  border-top:1px solid #bcbcbc;
+}
+#myti-short-list {
+  display: none;
+  border: 1px solid #DADADA;
+  font-weight: bold;
+  background: #f5f5f5; /* Old browsers */
+  background: -moz-linear-gradient(top,  #f5f5f5 2%, #d0d0d0 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(2%,#f5f5f5), color-stop(100%,#d0d0d0)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #f5f5f5 2%,#d0d0d0 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #f5f5f5 2%,#d0d0d0 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #f5f5f5 2%,#d0d0d0 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #f5f5f5 2%,#d0d0d0 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#d0d0d0',GradientType=0 ); /* IE6-9 */
+  position: absolute;
+  z-index: 999;
+  zoom: 1;
+  right: 0;
+  text-align:left;
+  color:#333;
+  text-transform:none;
+  -moz-box-shadow: 0px 5px 5px 0px #656565;
+  -webkit-box-shadow: 0px 5px 5px 0px #656565;
+  -o-box-shadow: 0px 5px 5px 0px #656565;
+  box-shadow: 0px 5px 5px 0px #656565;
+  filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=180, Strength=5);
+}
+#myti-short-list .casiframe {
+  height:161px;
+  border:none;
+}
+#myti-short-list p {
+  margin:0 0 10px 0;
+  font-size:12px;
+  font-weight:normal;
+  font-family: Arial;
+}
+#myti-short-list .register-link p {
+  text-transform:none;
+}
+#myti-short-list .titre {
+  color:#1b6990;
+  text-transform:uppercase;
+  font-weight:bold;
+  font-size: 16px;
+  letter-spacing: 1.3px;
+  margin: 15px 0 5px;
+  font-family:DIN-Alternate-medium, century gothic;
+}
+#myti-short-list ul {
+  list-style:none;
+  margin: 10px 0 0 0;
+  padding: 0;
+}
+#myti-short-list ul li {
+  height: 26px;
+  font-size: 12px;
+  background: url("//www.techniques-ingenieur.fr/actualite/wp-content/themes/ti/images/arrow-grey-right.png") center left no-repeat;
+}
+#myti-short-list a {
+  color: #3B3B3B;
+  padding: 5px 10px;
+  display: block;
+  text-transform:uppercase;
+}
+#myti-short-list .register_link a{
+  color:#fff;
+  margin: 0 auto;
+  width:auto;
+  padding: 10px 14px;
+  min-width:150px;
+  width:150px;
+  text-align: center;
+  height:18px;
+}
+#myti-short-list ul li:hover {
+  background: #1c7099;
+}
+.icon-silhouette {
+  background: url(//www.techniques-ingenieur.fr/actualite/wp-content/themes/ti/images/icon-silhouette.png) no-repeat 0 0 ;
+  width: 16px;
+  height: 17px;
+  display: block;
+  float: right;
+  margin: 0 0 0 10px;
+}
+#myti-short-list .lien {
+  color: #fff;
+  font-size: 12px;
+  padding: 8px;
+  letter-spacing: 1.3px;
+}
+#myti-short-list .compte {
+  background-color: #1d729c;
+  float: left;
+}
+#register_link-connected #myti-short-list .compte {
+  min-width:80px;
+}
+#myti-short-list .abonnement {
+  background-color: #000;
+  float: right;
+}
+#register_link-connected #myti-short-list .abonnement {
+  min-width:130px;
+}
+#masthead #content-header {
+  position: relative;
+  padding:10px 0 0 0
+}
+#masthead #iframe.pngfix {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: -moz-linear-gradient(top, #ffffff 0%, #f6f6f6 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #f6f6f6));
+  background: -webkit-linear-gradient(top, #ffffff 0%, #f6f6f6 100%);
+  background: -o-linear-gradient(top, #ffffff 0%, #f6f6f6 100%);
+  background: -ms-linear-gradient(top, #ffffff 0%, #f6f6f6 100%);
+  background: linear-gradient(to bottom, #ffffff 0%, #f6f6f6 100%) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6', GradientType=0);
+  height: 97px!important;
+  width: 263px!important;
+  -webkit-border-radius: 3px!important;
+  -moz-border-radius: 3px!important;
+  border-radius: 3px!important;
+  border: 1px solid #DADADA!important;
+  margin: 8px 0 0 0!important;
+}
 
-#main-menu .is-drilldown-submenu-parent > a::after {
-  border-color: transparent transparent transparent #ffffff; }
+iframe #login-box #fm1 {
+  padding: 16px 6px 16px 6px !important;
+}
 
-#main-menu .js-drilldown-back::before {
-  margin-top: 24px;
-  border-color: transparent #ffffff transparent transparent; }
-
-#liens-reseaux-sociaux ul {
+#iframe #register_link {
+  font-weight: bold;
+  top: 2px;
+  right: 3px;
+  padding: 0;
+  position: absolute;
+  text-align: center;
+  width: 65px;
+  z-index: 99;
+}
+#iframe #register_link a {
+  color: #888;
+  font-size: 10px;
+  line-height: 10px;
+  text-align: center;
+  text-decoration: underline;
+  float: right;
+}
+.main-menu-container#freezone {
+  position: relative;
+  left: auto;
+  top: auto;
+  -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+  background:#f5f5f5
+}
+.main-menu-container#freezone>div{
+  margin: auto;
+  width:960px;
+}
+.main-menu-container#freezone .main-menu {
+  width: 835px;
+  height: 40px;
+  position: relative;
+  z-index: 99;
+  float:left;
+  margin:0;
+  padding: 0;
+}
+.main-menu-container#freezone .main-menu > li {
+  display: block;
+  float: left;
+  position: static;
   padding: 0;
   margin: 0;
-  float: right; }
-  #liens-reseaux-sociaux ul li {
-    padding: 0; }
-    #liens-reseaux-sociaux ul li a {
-      padding: 10px 0 0 1rem; }
+  height: 40px;
+  line-height: 40px;
+}
+.main-menu-container#freezone .main-menu > li.compte {
+  display:none;
+}
+.main-menu-container#freezone .main-menu > li:hover,
+.main-menu-container#freezone .main-menu > li.active{
+  background: #ca030a;
+  height: 34px;
+  margin: 2px 0 0;
+  padding: 6px 0;
+}
+.main-menu-container#freezone .main-menu > li:hover > a,
+.main-menu-container#freezone .main-menu > li.active > a{
+  background: none;
+  border: none;
+  color:#fff
+}
+.main-menu-container#freezone .main-menu > li > a {
+  color: #333;
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+  height: 40px;
+  font-weight: bold;
+  display: block;
+  padding: 0 8px;
+  letter-spacing:1px;
+}
+.main-menu-container#freezone .main-menu > li.accueil > a {
+  padding:0 4px
+}
+.main-menu-container#freezone .main-menu > li:hover,
+.main-menu-container#freezone .main-menu > li.active {
+  padding: 0;
+  height: 40px;
+  margin: 0;
+  background: #ca030a;
+}
+.main-menu-container#freezone .main-menu > li.contact {
+  display:none;
+}
+#masthead .main-menu-container ul li.externe {
+  float: right;
+}
+#masthead .main-menu-container ul li.externe:hover,
+#masthead .main-menu-container ul li.externe.active{
+  background: url("//www.techniques-ingenieur.fr/actualite/wp-content/themes/ti/images/arrow-orange-right.png") #000 6px 17px no-repeat;
+}
+#masthead .main-menu-container ul li.whitepaper a,
+#masthead .main-menu-container ul li.whitepaper:hover a {
+  background: url("//www.techniques-ingenieur.fr/actualite/wp-content/themes/ti/images/arrow-red-right.png") 6px 17px no-repeat;
+}
+#masthead .main-menu-container ul li.bout a,
+#masthead .main-menu-container ul li.bout:hover a {
+  background: url("//www.techniques-ingenieur.fr/actualite/wp-content/themes/ti/images/arrow-orange-right.png") 6px 17px no-repeat;
+}
+#masthead .main-menu-container ul li.externe a {
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: normal;
+  padding:0 5px 0 15px
+}
+.main-menu-container#freezone .right {
+  height:40px;
+  float:right;
+  padding:0;
+  margin:0;
+  list-style: none;
+}
+.main-menu-container#freezone .right img {
+  height:18px;
+  width:18px;
+  margin: 0 0 0 6px;
+}
+.main-menu-container#freezone .right li{
+  /*line-height:37px;*/
+  line-height:46px;
+  float:left;
+}
+.buton-blue {
+  background: #1d729b; /* Old browsers */
+  background: -moz-linear-gradient(top,  #1d729b 0%, #196185 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1d729b), color-stop(100%,#196185)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #1d729b 0%,#196185 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #1d729b 0%,#196185 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #1d729b 0%,#196185 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #1d729b 0%,#196185 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d729b', endColorstr='#196185',GradientType=0 ); /* IE6-9 */
+  border: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 10px 14px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.buton-black {
+  background: #333333; /* Old browsers */
+  background: -moz-linear-gradient(top,  #333333 0%, #2b2b2b 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#333333), color-stop(100%,#2b2b2b)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #333333 0%,#2b2b2b 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #333333 0%,#2b2b2b 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #333333 0%,#2b2b2b 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #333333 0%,#2b2b2b 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#2b2b2b',GradientType=0 ); /* IE6-9 */
+  border: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 7px 11px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.buton-blue .text {
+  letter-spacing:1px;
+  max-width: 150px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 0;
+  float: left;
+  display: inline-block;
+  text-align: center;
+  display: block;
+  width: 100%;
+  line-height: 18px;
+}
+
+.site-header #myti-short-list .register_link .buton-blue .text{
+  width: 100%;
+  display: block;
+  float: initial;
+}
+
+.contact-link,
+.contact-link:hover {
+  color:#fff;
+  font-size:12px;
+  font-weight:bold;
+  text-decoration:none;
+  display: block;
+  line-height: 19px;
+}
+.contact-link .symbole {
+  background:#ca030a;
+  padding: 3px 6px 1px 5px;
+  font-size: 13px;
+}
+.contact-link .text {
+  letter-spacing: 1.3px;
+  padding: 0;
+  display: inline-block;
+}
+#poussemenu {
+  display:none;
+}
+.lecture_facile #masthead {display:none;}
+
+@media all and (max-width: 1024px) {
+  body {
+    line-height:normal !important;
+  }
+  #search-box p,
+  #site-name,
+  #links,
+  #register_link-connected>a .text,
+  .contact-link .text,
+  .main-menu-container#freezone {
+    display:none;
+  }
+  #masthead #content-header {
+    padding:0;
+  }
+  .buton-grey {
+    background:#d3d3d3;
+  }
+  #content-header {
+    width:100%;
+    height:51px;
+    margin:0 !important;
+  }
+  #menu-cache {
+    display:block;
+    float:left;
+    padding: 10px 10px 9px 10px;
+  }
+  #logo,
+  #menu-cache {
+    border-right:1px solid #3a414d
+  }
+  #logo {
+    padding: 4px 10px 3px;
+  }
+  #logo a{
+    background: url(//www.techniques-ingenieur.fr/actualite/wp-content/themes/ti/images/sprite-mobile.png) no-repeat 8px -111px;
+    height: 44px;
+    width: 40px;
+    display: block;
+  }
+  #logo img{
+    width: 35px;
+    height: 40px;
+    display:none;
+  }
+  #search-box {
+    width:380px;
+    margin: 5px 10px;
+  }
+  #search-box .textField {
+    width:88%;
+  }
+  #search-box #searchCommand {
+    width: 100%;
+    margin: 5px 0 0 0;
+  }
+  #espace-abo {
+    margin: 0;
+    width:100px;
+  }
+  .contact-link,
+  #register_link-connected {
+    float:left;
+    height: 28px;
+    width: 28px;
+    overflow: hidden;
+    padding : 10px;
+    border-left:1px solid #3a414d
+  }
+
+  #register_link-connected {
+    width:28px;
+    margin:0;
+  }
+  #register_link-connected>a {
+    padding: 5px 0px;
+    min-width: 28px;
+  }
+  .icon-silhouette {
+    margin: 0 5px 0 0;
+  }
+  .contact-link .symbole {
+    font-size:20px;
+    padding: 2px 9px;
+    display: block;
+    text-decoration: none;
+  }
+  #myti-short-list {
+    top:48px;
+  }
+
+  #myti-short-list .lien {
+    font-size: 11px;
+    letter-spacing: 1px;
+  }
+  #poussemenu {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: -230px;
+    width: 295px;
+    height: 100%;
+    background-color: #515b62;
+    border-right: 1px solid #68737a;
+    overflow-y: scroll;
+  }
+  #poussemenu ul {
+    margin:0;
+    padding:0;
+  }
+  #poussemenu ul.right {
+    margin:0 37px;
+  }
+  #poussemenu ul.right li.left {
+    margin: 10px;
+    float:left;
+  }
+  .pousse {
+    position:relative;
+    left: 295px !important;
+  }
+  #poussemenu.pousse {
+    display:block;
+    left:0 !important;
+  }
+
+  #poussemenu .menu-actualite {
+    display:none;
+  }
+  #poussemenu .menu-actualite #ti_actu_submenu_container li {
+    position:relative;
+  }
+  #poussemenu .menu-actualite #ti_actu_submenu_container li .arrow-bottom {
+    border-color: #fff transparent transparent transparent;
+    border-style: solid;
+    border-width: 7px;
+    height: 0;
+    position: absolute;
+    right: 10px;
+    top: 32px;
+    z-index: 99;
+  }
+  #poussemenu .menu-actualite #ti_actu_submenu_container li .sub-menu {
+    width: 111.5%;
+    top:22px;
+    left:-30px;
+    position:relative;
+  }
+  #poussemenu #menu-menu-generique-ti li a,
+  #poussemenu .menu-actualite>a {
+    display:block;
+    height:22px;
+    border-bottom:1px solid #b4b9bd;
+    padding: 21px 0 21px 10px;
+    color: #fff;
+    font-family:DIN-Alternate-medium, century gothic;
+    font-size:14px;
+    font-weight:bold;
+  }
+  #poussemenu #menu-menu-generique-ti li.accueil {
+    background:#7e878d;
+  }
+  #poussemenu #menu-menu-generique-ti li.actu,
+  #poussemenu #menu-menu-generique-ti li.resdoc,
+  #poussemenu .menu-actualite {
+    background: #68737a;
+  }
+
+  #poussemenu #menu-menu-generique-ti > li.active {
+    padding: 0;
+    margin: 0;
+    background: #ca030a;
+  }
+  #poussemenu .menu-actualite {
+    position:relative;
+  }
+  #poussemenu .menu-actualite>a {
+    position:relative;
+    z-index:9;
+    padding-left:0px;
+    margin-left:30px;
+    border:none;
+  }
+  #poussemenu .menu-actualite .arrow-left {
+    border-color: transparent #fff transparent transparent;
+    border-style: solid;
+    border-width: 7px;
+    height: 0;
+    position: absolute;
+    left: 2px;
+    top: 23px;
+    z-index: 99;
+  }
+  #poussemenu .menu-actualite div ul li {
+    float:none;
+    border-bottom: 1px solid #b4b9bd;
+    min-height: 22px;
+    padding: 21px 0 21px 30px;
+    color: #fff;
+    font-family: DIN-Alternate-medium, century gothic;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  #poussemenu .menu-actualite div ul li:first-child + li {
+    border-top: 1px solid #b4b9bd;
+  }
+  #poussemenu .menu-actualite #ti_actu_submenu_container a {
+    font-size: 14px;
+  }
+  #poussemenu .menu-actualite div ul li.home {
+    display:none;
+  }
+  #poussemenu .menu-actualite #ti_actu_submenu_container li.insolite a {
+    background:none;
+  }
+  .home-slider .slidersContainer {
+    min-height: 236px !important;
+  }
+}
+@media all and (max-width: 480px) {
+  #site-name {
+    display:none;
+  }
+  #search-box {
+    width:95px;
+    margin: 5px 10px;
+  }
+  #search-box .textField {
+    width:50%;
+  }
+}
+
+/* gestion du header fixe partout */
+#content.site-content,
+body>.container_24,
+body>.container_16 {
+  margin-top: 170px;
+}
+
+@media all and (max-width: 425px) {
+  #content.site-content,
+  body > .container_24,
+  body > .container_16 {
+    margin-top: 51px;
+  }
+}
+
+@media  screen and (max-width: 1024px) {
+  #content.site-content,
+  body > .container_24,
+  body > .container_16 {
+    margin-top: 51px;
+  }
+}
+
+.navbar-fixed-top {
+  top: 0;
+  border-width: 0 0 1px;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+@media (min-width: 768px) {
+  .navbar-fixed-top {
+    border-radius: 0;
+  }
+}
+
+#top_ad_wrapper {
+  display:none
+}
+
+.no-margin-top {
+  margin-top: 0!important;
+}

@@ -87,17 +87,24 @@ ul.inline li.last {
 }
 
 /****** QuickLinks *******/
-#footer-cols {
+#footer-cols,
+.footer-thematique {
     margin: 15px 0;
     padding-bottom: 15px;
 }
-
-#footer-cols .col {
+#menu-footer-generique {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#footer-cols .col,
+#menu-footer-generique>li {
     width: 33.33333333%;
     float: left;
 }
 
-#footer-cols h4, #footer-cols p.rub {
+#footer-cols h4, #footer-cols p.rub,
+#menu-footer-generique>li>a {
     font-size: 14px;
     font-weight: 700;
     height: 25px;
@@ -105,21 +112,27 @@ ul.inline li.last {
     text-align: left;
     text-transform: uppercase;
     color: #333;
+    margin-bottom: 10px;
+    display: block;
 }
 
-#footer-cols h4.actu, #footer-cols p.actu  {
+#footer-cols h4.actu, #footer-cols p.actu,
+#menu-footer-generique li.actu>a {
     padding: 7px 0 0 20px;
 }
 
-#footer-cols h4.ressdoc, #footer-cols p.ressdoc {
+#footer-cols h4.ressdoc, #footer-cols p.ressdoc,
+#menu-footer-generique li.ressdoc>a{
     background: url("../images/picto_basdoc.png") no-repeat scroll 5px 0 rgba(0, 0, 0, 0);
 }
 
-#footer-cols h4.conseil, #footer-cols p.conseil {
+#footer-cols h4.conseil, #footer-cols p.conseil,
+#menu-footer-generique li.conseil>a {
     background: url("../images/picto_conseil.png") no-repeat scroll 5px 0 rgba(0, 0, 0, 0);
 }
 
-#footer-cols h4.formation, #footer-cols p.formation {
+#footer-cols h4.formation, #footer-cols p.formation,
+#menu-footer-generique li.formation>a {
     background: url("../images/picto_formation.png") no-repeat scroll 5px 0 rgba(0, 0, 0, 0);
 }
 
@@ -142,15 +155,18 @@ ul.inline li.last {
 #footer-cols .col {width:33.33333333%; float:left;}
 
 /***** quicklink *****/
-.quicklinks {
+.quicklinks,
+.col-pad .border-bottom {
     background: transparent url(../images/dots.png) repeat-x 0 100%;
+    border:none;
 }
 
-.quicklinks .col-pad {
+.quicklinks .col-pad,
+.footer-thematique  {
     background: transparent url(../images/dots_vertical.png) repeat-y 50% 0;
 }
 
-.quicklinks ul,.quicklinks h3 {
+.quicklinks ul,.quicklinks h3, #menu-footer-generique li .sub-menu {
     padding: 0;
     margin: 0 0 10px 20px;
 }
@@ -161,13 +177,14 @@ ul.inline li.last {
     line-height: 18px;
 }
 
-.quicklinks li {
+.quicklinks li, #menu-footer-generique li .sub-menu li {
     background: transparent url(../images/bullet_arrow_red_smll.png) no-repeat 0 4px;
     padding: 0 0 0 12px;
     display: block;
     font-size: 11px;
 }
-#footer .quicklinks li a {
+#footer .quicklinks li a,
+#menu-footer-generique li .sub-menu li a{
     font-family: Arial, Helvetica, Verdana, sans-serif!important;
 }
 #seo a {
