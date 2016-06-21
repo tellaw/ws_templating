@@ -1376,12 +1376,12 @@ p.cellule-list {
 .cellule-list li:before {
 	content: "- " ;
 	font-weight: bold;
-	margin-right: 20px;
+	margin-right: 10px;
 }
 .cellule-list-2 li:before {
 	content: "> " ;
 	font-weight: bold;
-	margin-right: 20px;
+	margin-right: 10px;
 }
 
 .env-test-pub-links a {
@@ -1531,6 +1531,9 @@ p.cellule-list {
 .padding-bottom-10 {
 	padding-bottom:10px !important;
 
+}
+.padding-bottom-15 {
+	padding-bottom:15px !important;
 }
 .padding-bottom-20 {
 	padding-bottom:20px !important;
