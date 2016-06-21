@@ -1670,6 +1670,10 @@ p.cellule-list {
 	 margin-top: 0;
 	 margin-bottom: 0;
 }
+.tab-content .documents-smint {
+	min-height: 1020px;
+}
+
 .offres-title {
 	color: #ea2336 !important;
 	font-weight: 800;
@@ -2419,4 +2423,8 @@ div.play-button {
 	margin: 0 auto;
 	position:relative;
 	overflow:hidden
+}
+.ez_html_module .panel-heading img {
+	width: 100%;
+	padding-top: 30px;
 }
