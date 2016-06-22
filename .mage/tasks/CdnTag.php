@@ -47,7 +47,7 @@ class CdnTag extends AbstractTask
 		$commands[] = "cp -r $src/images $tag/";
 		$commands[] = "cp -r $src/js $tag/";	
 
-		$commands[] = "rm $tmpl_dir/latest && ln -s $tag $tmpl_dir/latest";
+		$commands[] = "rm $tmpl_dir/latest 2>/dev/null && ln -s $tag $tmpl_dir/latest";
 		$commands[] = "sudo chmod -R 775 $tmpl_dir/";
 
 		// Execute commands
