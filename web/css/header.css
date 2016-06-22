@@ -870,29 +870,6 @@ iframe #login-box #fm1 {
   }
 }
 
-/* gestion du header fixe partout */
-#content.site-content,
-body>.container_24,
-body>.container_16 {
-  margin-top: 170px;
-}
-
-@media all and (max-width: 425px) {
-  #content.site-content,
-  body > .container_24,
-  body > .container_16 {
-    margin-top: 51px;
-  }
-}
-
-@media  screen and (max-width: 1024px) {
-  #content.site-content,
-  body > .container_24,
-  body > .container_16 {
-    margin-top: 51px;
-  }
-}
-
 .navbar-fixed-top {
   top: 0;
   border-width: 0 0 1px;
