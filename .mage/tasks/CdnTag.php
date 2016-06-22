@@ -21,7 +21,7 @@ class CdnTag extends AbstractTask
 	{
 
 		$new_tag = getenv("CDN_TAG");
-		$tmpl_dir = "/data/apps/eti_cdn/lucy/ti";
+		$tmpl_dir = "/data/apps/lucy";
 		$src = $tmpl_dir."/app/current/web";
 		$tag = $tmpl_dir."/".$new_tag;
 
@@ -30,7 +30,8 @@ class CdnTag extends AbstractTask
 			return false;
 		}
 
-		if (stristr($new_tag, "preprod")) // if new tag is preprod delete all other
+		// if new tag is preprod delete all other
+		if (stristr($new_tag, "preprod"))
 			$commands[] = "rm -rf $tmpl_dir/cdn.preprod*";
 
 		// create Htaccess no index
@@ -44,7 +45,7 @@ class CdnTag extends AbstractTask
 		$commands[] = "cp -r $src/css $tag/";
 		$commands[] = "cp -r $src/fonts $tag/";
 		$commands[] = "cp -r $src/images $tag/";
-		$commands[] = "cp -r $src/js $tag/";
+		$commands[] = "cp -r $src/js $tag/";	
 
 		$commands[] = "rm $tmpl_dir/latest && ln -s $tag $tmpl_dir/latest";
 		$commands[] = "sudo chmod -R 775 $tmpl_dir/";
