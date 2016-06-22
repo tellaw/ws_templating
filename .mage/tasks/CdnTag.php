@@ -21,7 +21,7 @@ class CdnTag extends AbstractTask
 	{
 
 		$new_tag = getenv("CDN_TAG");
-		$tmpl_dir = "/data/apps/lucy";
+		$tmpl_dir = "/data/apps/lucy/ti";
 		$src = $tmpl_dir."/app/current/web";
 		$tag = $tmpl_dir."/".$new_tag;
 

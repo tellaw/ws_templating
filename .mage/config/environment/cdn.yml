@@ -2,7 +2,7 @@
 deployment:
   user: jenkins
   from: ./
-  to: /data/apps/eti_cdn/lucy/ti/app/
+  to: /data/apps/lucy/ti/app/
   excludes:
     - app
     - bin
