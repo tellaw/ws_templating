@@ -2445,3 +2445,26 @@ div.play-button {
 	width: 100%;
 	padding-top: 30px;
 }
+
+/* exception pour le bandeau IP */
+@media screen and (max-width: 800px) {
+	.myti-info-compte div.text-ip {
+		padding: 3px 0 0 0;
+		width: 85%;
+
+	}
+	.myti-info-compte .buton-abos {
+		float: none;
+		clear: both;
+		width: auto;
+	}
+}
+@media screen and (max-width: 425px) {
+	.myti-info-compte .left:first-child {
+		display:none;
+	}
+	.myti-info-compte div.text-ip {
+		text-align: center;
+		width: 100%
+	}
+}
