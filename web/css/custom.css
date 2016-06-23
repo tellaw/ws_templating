@@ -2461,7 +2461,7 @@ div.play-button {
 	}
 }
 @media screen and (max-width: 425px) {
-	.myti-info-compte > .left:first-child {
+	.myti-info-compte div.left:first-child {
 		display:none;
 	}
 	.myti-info-compte div.text-ip {
