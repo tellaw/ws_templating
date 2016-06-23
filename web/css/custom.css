@@ -2254,7 +2254,7 @@ div.play-button {
 	float: left;
 }
 
-.myti-info-compte .left:first-child {
+.myti-info-compte > .left:first-child {
 	width: 10%;
 	text-align: center;
 }
@@ -2264,6 +2264,7 @@ div.play-button {
 	margin: 0px auto 10px;
 	padding: 15px 0;
 	max-width:1140px;
+	border: none;
 }
 
 .myti-info-compte div span.text,
@@ -2460,7 +2461,7 @@ div.play-button {
 	}
 }
 @media screen and (max-width: 425px) {
-	.myti-info-compte .left:first-child {
+	.myti-info-compte > .left:first-child {
 		display:none;
 	}
 	.myti-info-compte div.text-ip {
