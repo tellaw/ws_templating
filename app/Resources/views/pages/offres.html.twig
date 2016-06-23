@@ -1,0 +1,490 @@
+{# wk-template : domaine.html.twig #}
+{# wk-description : Page domaine du site #}
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <!--=== Content Part  ===-->
+    <div class="container slider-margin-top">
+        <!--=== Breadcrumbs ===-->
+        {{ module("navigation/breadcrumb") }}
+        <!--=== End Breadcrumbs ===-->
+        {{ module("header/header-offre") }}
+
+        <div id="menu-smint" class="tab-v1 tab-domaines">
+            <div id="sub-menu" class="subMenu margin-bottom-20" style="position: fixed; margin-top: 0px; top: 0px; left: 0px;">
+                <div class="inner">
+                    <a href="#presentation-smint" id="presentation-smint" class="subNavBtn active pull-left">Présentation de l'offre</a>
+                    <a href="#expert-smint" id="expert-smint" class="subNavBtn">Experts scientifique et auteurs</a>
+                    <a href="#maj-smint" id="maj-smint" class="subNavBtn">Les dernières mise a jour</a>
+                    <a href="#details-smint" id="details-smint" class="subNavBtn">Avantages et détails de l'offre</a>
+                    <a href="#rien-smint" id="rien-smint" class="subNavBtn"></a>
+                    <a href="javascript:void(0);" class="btn menu-button dropdown-toggle extLink" data-toggle="dropdown">
+                        <i class="fa fa-angle-down menu-icon"></i>
+                    </a>
+                    <ul class="dropdown-menu pull-right pop-up-menu list-unstyled link-list-cstm padding-bottom-0 padding-top-0">
+                        <li onclick="$('.presentation-smint').ScrollTo();"><p id="d-documents" class="pop-up-style margin-top-5 margin-bottom-5">Présentation de l'offre</p></li>
+                        <li onclick="$('.expert-smint').ScrollTo();"><p id="d-expert" class="pop-up-style margin-top-5 margin-bottom-5">Experts scientifique et auteurs</p></li>
+                        <li onclick="$('.maj-smint').ScrollTo();"><p id="d-maj" class="pop-up-style margin-top-5 margin-bottom-5">Les dernières mise a jour</p></li>
+                        <li onclick="$('.details-smint').ScrollTo();"><p id="d-details" class="pop-up-style margin-top-5 margin-bottom-5">Avantages et détails de l'offre</p></li>
+                    </ul>
+                </div>
+            </div>
+            {{ module("navigation/onglets-offre") }}
+            <div class="tab-content tab-content-domaine">
+                <!--=== onglet presentation de l'offre ===-->
+                <div id="presentation" class="tab-pane fade in tab-bg active presentation-smint">
+                    {{ module("reassurance/reassurance-offre") }}
+
+                    <p class="text-center margin-top-35 margin-bottom-40 color-red-eti margin-right-200 font-size-17 letter-spacing-75">Les <span class="font-family-myriadpro-semibold text-uppercase">216 articles</span> de cette offre sont organisés en <span class="font-family-myriadpro-semibold text-uppercase">10 rubriques</span> &nbsp;&gt;&nbsp; <span class="font-family-myriadpro-semibold text-uppercase">18 nouveaux articles</span> ont été ajoutées cette semaine</p>
+
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                            {{ module("offre/rubriques-listing") }}
+                        </div>
+                        <div class="hidden-xs hidden-sm col-sm-12 col-md-4 col-lg-4 md-margin-top-30">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6 col-md-12">
+                                    {{ module("offre/mot-editrice") }}
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-12">
+                                    {{ module("offre/temoignages") }}
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-12 ">
+                                    {{ module("offre/offre-dans") }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--=== onglet experts ===-->
+                <div id="expert" class="tab-pane fade tab-bg expert-smint">
+                    <div class="mint margin-top-20 margin-bottom-20">
+                        <div class="menu">
+                            <p class="menuBtn">Experts scientifique et auteurs</p>
+                            <a href="javascript:void(0);" class="btn menu-button dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-angle-down menu-icon"></i>
+                            </a>
+                            <ul class="dropdown-menu pull-right pop-up-menu list-unstyled link-list-cstm padding-bottom-0 padding-top-0">
+                                <li onclick="$('.presentation-smint').ScrollTo();"><p id="d-documents" class="pop-up-style margin-top-5 margin-bottom-5">Présentation de l'offre</p></li>
+                                <li onclick="$('.expert-smint').ScrollTo();"><p id="d-expert" class="pop-up-style margin-top-5 margin-bottom-5">Experts scientifique et auteurs</p></li>
+                                <li onclick="$('.maj-smint').ScrollTo();"><p id="d-maj" class="pop-up-style margin-top-5 margin-bottom-5">Les dernières mise a jour</p></li>
+                                <li onclick="$('.details-smint').ScrollTo();"><p id="d-details" class="pop-up-style margin-top-5 margin-bottom-5">Avantages et détails de l'offre</p></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <p class="abonnees-text font-size-21">Les <span class="hilighted-word">articles</span> ont été rédigés par le <span class="hilighted-word"> comité d'experts scientifiques</span> suivants :</p>
+
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 margin-top-30" >
+                            <div class="row">
+                                <div class="col-xs-5 col-sm-3 col-md-3 col-lg-3 lg-width xs-width" >
+                                    <img class="img-abonne" src="assets/img/main/img17.jpg">
+                                </div>
+                                <div class="col-xs-7 col-sm-9 col-md-9 col-lg-9" >
+                                    <p class="color-red-eti font-size-13 letter-spacing-1v2"><strong> Jean-Pierre DAL PONT</strong></p>
+                                    <p class="cv-text">Président de la SFGP (Société française de génie des procédés) <br> Secrétaire général de l'EFCE (Fédération européenne du génie chimique) <br> Président de la SECF (Société des experts chimistes de France) </p>
+                                </div>
+                            </div>
+                            <hr id="hr-separator sparator-margin">
+
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 xs-margin-bottom-25 img-padding-offre">
+                                    <div class="col-xs-5 col-sm-5 col-md-6 col-lg-5 xs-width xs-padding-left">
+                                        <img class="img-abonne" src="assets/img/main/img17.jpg">
+                                    </div>
+                                    <div class="col-xs-7 col-sm-7 col-md-6 col-lg-7 txt-padding-offre" >
+                                        <p class="color-red-eti font-size-13 letter-spacing-1v2"><strong> William DAB</strong></p>
+                                        <p class="cv-text">Titulaire de la chaire <br>d'Hygiène et Sécurité, CNAM </p>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 img-padding-offre">
+                                    <div class="col-xs-5 col-sm-5 col-md-6 col-lg-5 xs-width  xs-padding-left">
+                                        <img class="img-abonne" src="assets/img/main/img17.jpg">
+                                    </div>
+                                    <div class="col-xs-7 col-sm-7 col-md-6 col-lg-7 txt-padding-offre">
+                                        <p class="color-red-eti font-size-13 letter-spacing-1v2"><strong> François FONTAINE</strong></p>
+                                        <p class="cv-text">Coordinateur des activités  <br>"Sécurité globale", INERIS</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr id="hr-separator sparator-margin">
+
+                            <div class="row" >
+                                <div class="col-xs-5 col-sm-2 col-md-3 col-lg-2 xs-width-2" >
+                                    <img class="img-abonne" src="assets/img/main/img17.jpg">
+                                </div>
+                                <div class="col-xs-7 col-sm-10 col-md-9 col-lg-10 txt2-padding-offre " >
+                                    <p class="color-red-eti font-size-13 letter-spacing-1v2"><strong> Jean-Pierre DAL PONT</strong></p>
+                                    <p class="cv-text">Titulaire de la chaire d'Hygiène et Sécurité, CNAM</p>
+                                </div>
+                                <div class="col-xs-12 col-sm-10 col-md-9 col-lg-10 txt2-padding-offre xs-width-3 " >
+                                    <p class="cv-text">Témoignage: Les Techniques de l'Ingénieur: un vecteur de promotion de la culture «sécurité». Promouvoir le développement d'une culture de sécurité, indispensable à un développement <br>industriel durable en Europe, nécessite de mieux partager les connaissances accumulées.</p>
+                                </div>
+                            </div>
+                            <div class="row" >
+                                <div class="col-xs-12 col-sm-12 col-md-12 margin-top-15">
+                                    <p class="cv-text">Ce savoir est détenu par un nombre limité d'experts, mais ceux-ci sont dispersés au sein des groupes industriels, des sociétés d'ingénierie, des organismes d'expertise, des universités, des grandes écoles... ou déjà à la retraite. L'étendue des connaissances nécessaires pour couvrir le domaine de la sécurité industrielle ne fait que s'élargir au fil des évolutions technologiques et des attentes sociales toujours plus exigeantes en termes de prévention et de maîtrise des risques. Être conseiller éditorial pour le traité «Sécurité et gestion des risques» des Techniques de l'Ingénieur m'a semblé important pour participer à la mise en forme de connaissances au service des ingénieurs et techniciens qui sont confrontés régulièrement à des problèmes de sécurité et qui ont très peu de documents techniques actualisés à leur disposition.</p>
+                                </div>
+                            </div>
+                            <hr id="hr-separator sparator-margin">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 xs-margin-bottom-25 img-padding-offre">
+                                    <div class="col-xs-5 col-sm-5 col-md-6 col-lg-5 xs-width xs-padding-left">
+                                        <img class="img-abonne" src="assets/img/main/img17.jpg">
+                                    </div>
+                                    <div class="col-xs-7 col-sm-7 col-md-6 col-lg-7 txt-padding-offre">
+                                        <p class="color-red-eti font-size-13 letter-spacing-1v2"><strong> William DAB</strong></p>
+                                        <p class="cv-text">Titulaire de la chaire <br>d'Hygiène et Sécurité, CNAM </p>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 img-padding-offre">
+                                    <div class="col-xs-5 col-sm-5 col-md-6 col-lg-5 xs-width xs-padding-left">
+                                        <img class="img-abonne" src="assets/img/main/img17.jpg">
+                                    </div>
+                                    <div class="col-xs-7 col-sm-7 col-md-6 col-lg-7 txt-padding-offre">
+                                        <p class="color-red-eti font-size-13 letter-spacing-1v2"><strong> François FONTAINE</strong></p>
+                                        <p class="cv-text">Coordinateur des activités  <br>"Sécurité globale", INERIS</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr id="hr-separator sparator-margin">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 xs-margin-bottom-25 img-padding-offre">
+                                    <div class="col-xs-5 col-sm-5 col-md-6 col-lg-5 xs-width xs-padding-left">
+                                        <img class="img-abonne" src="assets/img/main/img17.jpg">
+                                    </div>
+                                    <div class="col-xs-7 col-sm-7 col-md-6 col-lg-7 txt-padding-offre">
+                                        <p class="color-red-eti font-size-13 letter-spacing-1v2"><strong> William DAB</strong></p>
+                                        <p class="cv-text">Titulaire de la chaire <br>d'Hygiène et Sécurité, CNAM </p>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 img-padding-offre">
+                                    <div class="col-xs-5 col-sm-5 col-md-6 col-lg-5 xs-width xs-padding-left">
+                                        <img class="img-abonne" src="assets/img/main/img17.jpg">
+                                    </div>
+                                    <div class="col-xs-7 col-sm-7 col-md-6 col-lg-7 txt-padding-offre">
+                                        <p class="color-red-eti font-size-13 letter-spacing-1v2"><strong> François FONTAINE</strong></p>
+                                        <p class="cv-text">Coordinateur des activités  <br>"Sécurité globale", INERIS</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="hidden-md hidden-lg "id="hr-separator sparator-margin">
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 md-margin-top-30">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6 col-md-12">
+                                    {{ module("offre/mot-editrice") }}
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-12">
+                                    {{ module("offre/temoignages") }}
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-12 ">
+                                    {{ module("offre/offre-dans") }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--=== onglet mise a jour ===-->
+                <div id="maj" class="tab-pane fade tab-bg maj-smint">
+                    <div class="mint margin-top-20 margin-bottom-20">
+                        <div class="menu">
+                            <p class="menuBtn">Les dernières mise a jour</p>
+                            <a href="javascript:void(0);" class="btn menu-button dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-angle-down menu-icon"></i>
+                            </a>
+                            <ul class="dropdown-menu pull-right pop-up-menu list-unstyled link-list-cstm padding-bottom-0 padding-top-0">
+                                <li onclick="$('.presentation-smint').ScrollTo();"><p id="d-documents" class="pop-up-style margin-top-5 margin-bottom-5">Présentation de l'offre</p></li>
+                                <li onclick="$('.expert-smint').ScrollTo();"><p id="d-expert" class="pop-up-style margin-top-5 margin-bottom-5">Experts scientifique et auteurs</p></li>
+                                <li onclick="$('.maj-smint').ScrollTo();"><p id="d-maj" class="pop-up-style margin-top-5 margin-bottom-5">Les dernières mise a jour</p></li>
+                                <li onclick="$('.details-smint').ScrollTo();"><p id="d-details" class="pop-up-style margin-top-5 margin-bottom-5">Avantages et détails de l'offre</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!--=== onglet avantages et détails ===-->
+                <div id="details" class="tab-pane fade tab-bg details-smint">
+                    <div class="mint margin-top-20 margin-bottom-20">
+                        <div class="menu">
+                            <p class="menuBtn">Avantages et détails de l'offre</p>
+                            <a href="javascript:void(0);" class="btn menu-button dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-angle-down menu-icon"></i>
+                            </a>
+                            <ul class="dropdown-menu pull-right pop-up-menu list-unstyled link-list-cstm padding-bottom-0 padding-top-0">
+                                <li onclick="$('.presentation-smint').ScrollTo();"><p id="d-documents" class="pop-up-style margin-top-5 margin-bottom-5">Présentation de l'offre</p></li>
+                                <li onclick="$('.expert-smint').ScrollTo();"><p id="d-expert" class="pop-up-style margin-top-5 margin-bottom-5">Experts scientifique et auteurs</p></li>
+                                <li onclick="$('.maj-smint').ScrollTo();"><p id="d-maj" class="pop-up-style margin-top-5 margin-bottom-5">Les dernières mise a jour</p></li>
+                                <li onclick="$('.details-smint').ScrollTo();"><p id="d-details" class="pop-up-style margin-top-5 margin-bottom-5">Avantages et détails de l'offre</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                    {{ module("reassurance/reassurance-offre") }}
+
+                    <p class="text-red text-center font-size-20 margin-top-55 margin-bottom-40 letter-spacing-2">Les <strong class="downloads-title">avantages</strong> et <strong class="downloads-title">services</strong> compris dans votre offre</p>
+                    <i class="fa fa-list title-icon-1 color-red-eti"></i>
+                    <h3 class="best-sales color-red-eti font-weight-300 margin-bottom-15 downloads-title"><i class="fa fa-list margin-right-10 title-icon-2 color-red-eti"></i>accès</h3>
+                    <div class="eti-offers-devider hr-border-red margin-left-30 margin-bottom-40 xs-margin-bottom-10"></div>
+                    <div class="row row-acces-margin-bottom">
+                        <div class="col-xs-12 col-sm-4 col-md-4">
+                            <div class="elem1 service-box-padding elem-center-tablet">
+                                <div class="row">
+                                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><i class="fa fa-flag margin-right-20 bootstrap-icon-size-2 vertical-align-middle"></i></div>
+                                    <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                                        <p class="font-size-15 letter-spacing-1">Accès HTML illimité des<br class="rwd-break"> articles actuels et à venir</p>
+                                        <p class="margin-bottom-20 font-size-12"><i class="fa fa-angle-right margin-right-10 bootstrap-icon-size-1v5"></i>Enrichis et mis à jour pendant<br class="rwd-break"> toute la durée de la souscription</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4">
+                            <div class="elem2 service-box-padding elem-center-tablet">
+                                <div class="row">
+                                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><i class="fa fa-refresh margin-right-20 bootstrap-icon-size-2 vertical-align-middle"></i></div>
+                                    <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                                        <p class="font-size-15 letter-spacing-1">Téléchargement des versions<br class="rwd-break"> PDF de chaque article</p>
+                                        <p class="margin-bottom-20 font-size-12"><i class="fa fa-angle-right margin-right-10 bootstrap-icon-size-1v5"></i>Disponible hors connexion</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4">
+                            <div class="elem3 service-box-padding elem-center-tablet">
+                                <div class="row">
+                                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><i class="fa fa-cog margin-right-20 bootstrap-icon-size-2 vertical-align-middle"></i></div>
+                                    <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                                        <p class="font-size-15 letter-spacing-1 margin-bottom-acces">Consultation sur tous<br class="rwd-break"> les supports numériques</p>
+                                        <p class="margin-bottom-20 font-size-12"><i class="fa fa-angle-right margin-right-10 bootstrap-icon-size-1v5"></i>Des contenus optimisés pour<br class="rwd-break"> ordinateurs, tablettes et mobiles</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <i class="fa fa-plus title-icon-1 color-red-eti"></i>
+                    <h3 class="best-sales color-red-eti font-weight-300 margin-bottom-15 downloads-title"><i class="fa fa-plus margin-right-10 title-icon-2 color-red-eti"></i>services et outils pratiques</h3>
+                    <div class="eti-offers-devider hr-border-red margin-left-30 margin-bottom-40 xs-margin-bottom-10"></div>
+                    <div class="row row-services-margin-bottom">
+                        <div class="col-xs-12 col-sm-4 col-md-4">
+                            <div class="services-boxes service-box-padding service-element-border elem-center-tablet">
+                                <a href="" style="text-decoration:none;">
+                                    <div class="row">
+
+                                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><i class="fa fa-thumbs-o-up margin-right-20 bootstrap-icon-size-2 vertical-align-middle"></i></div>
+                                        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+
+                                            <p class="font-size-15 letter-spacing-1">Service de questions - réponses </p>
+                                            <p class="margin-bottom-40 font-size-12"><i class="fa fa-angle-right margin-right-10 bootstrap-icon-size-1v5"></i>Les meilleurs experts techniques<br class="rwd-break"> et scientifiques vous répondent</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4">
+                            <div class="services-boxes service-box-padding service-element-border elem-center-tablet">
+                                <a href="" style="text-decoration:none;">
+                                    <div class="row">
+
+                                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><i class="fa fa-plus margin-right-20 bootstrap-icon-size-2 vertical-align-middle"></i></div>
+                                        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+
+                                            <p class="font-size-15 letter-spacing-1 article-margin">Articles découverte</p>
+                                            <p class="margin-bottom-40 font-size-12"><i class="fa fa-angle-right margin-right-10 bootstrap-icon-size-1v5"></i>La possibilité de consulter des<br class="rwd-break"> articles en dehors de votre offre</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4">
+                            <div class="services-boxes service-box-padding service-element-border elem-center-tablet">
+                                <a href="" style="text-decoration:none;">
+                                    <div class="row">
+
+                                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><i class="fa fa-lock margin-right-20 bootstrap-icon-size-2 vertical-align-middle"></i></div>
+                                        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 sm-padding-right-0">
+
+                                            <p class="font-size-15 letter-spacing-1">Dictionnaire technique multilingue</p>
+                                            <p class=" margin-bottom-40 font-size-12"><i class="fa fa-angle-right margin-right-10 bootstrap-icon-size-1v5"></i>45 000 termes en français, anglais,<br class="rwd-break"> espagnol et allemand</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row margin-bottom-65">
+                        <div class="col-xs-12 col-sm-4 col-md-4">
+                            <div class="services-boxes service-box-padding service-element-border elem-center-tablet">
+                                <a href="" style="text-decoration:none;">
+                                    <div class="row">
+
+                                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><i class="fa fa-files-o margin-right-20 bootstrap-icon-size-2 vertical-align-middle"></i></div>
+                                        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+
+                                            <p class="font-size-15 letter-spacing-1 archive-info-margin">Archives</p>
+                                            <p class="margin-bottom-40 font-size-12"><i class="fa fa-angle-right margin-right-10 bootstrap-icon-size-1v5"></i>Technologies anciennes et versions<br class="rwd-break"> antérieures des articles</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4">
+                            <div class="services-boxes service-box-padding service-element-border elem-center-tablet">
+                                <a href="" style="text-decoration:none;">
+                                    <div class="row">
+                                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><i class="fa fa-pie-chart margin-right-20 bootstrap-icon-size-2 vertical-align-middle"></i></div>
+                                        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+
+                                            <p class="font-size-15 letter-spacing-1">Impression à la demande</p>
+                                            <p class="margin-bottom-40 font-size-12"><i class="fa fa-angle-right margin-right-10 bootstrap-icon-size-1v5"></i>Commandez les éditions papiers<br class="rwd-break"> de vos ressources documentaires</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4">
+                            <div class="services-boxes service-box-padding service-element-border elem-center-tablet">
+                                <a href="" style="text-decoration:none;">
+                                    <div class="row">
+
+                                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><i class="fa fa-cog margin-right-20 bootstrap-icon-size-2 vertical-align-middle"></i></div>
+                                        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+
+                                            <p class="font-size-15 letter-spacing-1 archive-info-margin">Infos - Mise à jour</p>
+                                            <p class="margin-bottom-40 font-size-12"><i class="fa fa-angle-right margin-right-10 bootstrap-icon-size-1v5"></i>Recevez par email toutes les nouveautés<br class="rwd-break"> de vos ressources documentaires</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-red font-weight-300 downloads-title text-center font-size-20 margin-details-offre margin-bottom-40"><strong>détails </strong>de l'offre</p>
+
+                    <table class="table table-striped">
+                        <thead>
+                        <tr>
+                            <th></th>
+                            <th align="center" class="border-right-1-white bg-green th-align-center"><span class="font-family-myriadpro-bold downloads-title">License</span> annuelle monoposte</th>
+                            <th align="center" class="border-right-1 bg-green th-align-center"><span class="font-family-myriadpro-bold downloads-title">License</span> Pluriannuelle et/ou monoposte</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="border-left-1 border-top-1 letter-spacing-1v5 downloads-title"><strong>Droit d'accès</strong></td>
+                            <td></td>
+                            <td class="border-right-1"></td>
+                        </tr>
+                        <tr>
+                            <td class="border-left-1 border-right-1 border-top-0">Accès HTML des articles</td>
+                            <td align="center" class="border-right-1 border-top-0">Illimité</td>
+                            <td align="center" class="border-right-1 border-top-0">Illimité</td>
+                        </tr>
+                        <tr>
+                            <td class="border-left-1 border-right-1 border-top-0">Téléchargement des versions .pdf</td>
+                            <td align="center" class="border-right-1 border-top-0">5 / jour</td>
+                            <td align="center" class="border-right-1 border-top-0">5 / jour</td>
+                        </tr>
+                        <tr>
+                            <td class="border-left-1 border-right-1 border-top-0">Consultation multi-supports</td>
+                            <td align="center" class="border-right-1 border-top-0">Oui</td>
+                            <td align="center" class="border-right-1 border-top-0">Oui</td>
+                        </tr>
+                        <tr>
+                            <td class="border-left-1 border-top-1 letter-spacing-1v5 downloads-title"><strong>Les services</strong></td>
+                            <td align="center" class="border-top-1"></td>
+                            <td align="center" class="border-top-1 border-right-1"></td>
+                        </tr>
+                        <tr>
+                            <td class="border-left-1 border-right-1 border-top-0">Service de Questions / Réponses (1) (2)</td>
+                            <td align="center" class="border-right-1 border-top-0"> 4 / an</td>
+                            <td align="center" class="border-right-1 border-top-0"> 4 / an</td>
+                        </tr>
+                        <tr>
+                            <td class="border-left-1 border-right-1 border-top-0">Articles Découvertes</td>
+                            <td align="center" class="border-right-1 border-top-0">5 / an</td>
+                            <td align="center" class="border-right-1 border-top-0"> 5 / an</td>
+                        </tr>
+                        <tr>
+                            <td class="border-left-1 border-right-1 border-top-0">Dictionnaire technique multiliingue</td>
+                            <td align="center" class="border-right-1 border-top-0">Oui</td>
+                            <td align="center" class="border-right-1 border-top-0">Oui</td>
+                        </tr>
+                        <tr>
+                            <td class="border-left-1 border-right-1 border-top-0">Archives</td>
+                            <td align="center" class="border-right-1 border-top-0">Oui</td>
+                            <td align="center" class="border-right-1 border-top-0">Oui</td>
+                        </tr>
+                        <tr>
+                            <td class="border-left-1 border-right-1 border-top-0">Impression à la demande</td>
+                            <td align="center" class="border-right-1 border-top-0">45 € / base</td>
+                            <td align="center" class="border-right-1 border-top-0">45 € / base</td>
+                        </tr>
+                        <tr>
+                            <td class="border-left-1 border-right-1 border-bottom-1 border-top-0">Infos mise à jour</td>
+                            <td align="center" class="border-right-1 border-bottom-1 border-top-0">Oui</td>
+                            <td align="center" class="border-right-1 border-bottom-1 border-top-0">Oui</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <p class="font-size-10 letter-spacing-1v5">(1) Disponible pour la France, le Luxembourg, la Belgique, la Suisse et Monaco. (2) Non disponible pour les établissements scolaires, écoles, universités et autres organismes de formation.</p>
+                    <div class="row">
+                        <div class="hidden-xs">
+
+                            <table class="table">
+                                <tbody>
+                                <tr>
+                                    <td class="border-top-0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                    <td class="text-center border-top-0">
+                                        <a class="btn-u btn-block btn-offers--details bg-color-74b504 btn-height">
+                                            <i class="fa fa-shopping-cart center-btn-icon margin-right-10"></i>  <span>AJOUTER AU PANIER</span>
+                                        </a>
+                                    </td>
+                                    <td class="text-center border-top-0">
+                                        <a class="btn-u btn-block btn-devis--details bg-color-697277 xs-margin-left-devis width-btn margin-left-10 btn-height">
+                                            <i class="fa fa-chevron-right center-btn-icon margin-right-10"></i>  DEMANDER UN DEVIS
+                                        </a>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="hidden-sm hidden-md hidden-lg col-xs-12">
+                            <div class="text-center">
+
+                                <a class="btn-u btn-block btn-offers--details bg-color-74b504 margins-btns btn-height">
+                                    <i class="fa fa-shopping-cart center-btn-icon margin-right-10"></i>  <span>AJOUTER AU PANIER</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="hidden-sm hidden-md hidden-lg col-xs-12">
+                            <div class="text-center">
+                                <a class="btn-u btn-block btn-offers--details bg-color-697277 margins-btns btn-height">
+                                    <i class="fa fa-chevron-right center-btn-icon margin-right-10"></i>  DEMANDER UN DEVIS
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!--=== onglet rien ===-->
+                <div class="rien-smint tab-pane fade tab-bg" id="rien"></div>
+            </div>
+        </div>
+
+        <div class="block-bottom">
+            <hr id="hr-separator">
+            <i class="fa fa-television accueil-title-icon-1"></i>
+            <h3 class="text-red font-weight-300 margin-bottom-20"><i class="fa fa-television accueil-title-icon-2"></i>LES <strong>OFFRES À LA UNE</strong></h3>
+            <div class="eti-accueil-devider margin-left-45 margin-bottom-40"></div>
+            {{ module('boutique/offres') }}
+
+            {{ module('reassurance/reassurance2') }}
+        </div>
+    </div>
+{% endblock %}

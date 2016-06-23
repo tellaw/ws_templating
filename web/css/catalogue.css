@@ -10,7 +10,7 @@
     .listing-elements .header-v1 .navbar-fixed-top {
       position: relative; }
 
-.header {
+#main-menu.header {
   z-index: 1050 !important;
   position: fixed !important;
   top: 0;
@@ -52,9 +52,9 @@ div[id^="module-"], div[id^="charte-"] {
         font-size: 12px; }
 
 @media (max-width: 1200px) {
-  .header .logo {
+  #main-menu.header .logo {
     float: left; }
-    .header .logo img {
+    #main-menu.header .logo img {
       width: 69%;
       margin: 10px 0 !important; }
   .wrapper .navbar-fixed-top {

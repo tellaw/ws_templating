@@ -16,7 +16,7 @@
   }
 }
 
-.header {
+#main-menu.header {
   z-index: 1050!important;
   position: fixed!important;
   top: 0;
@@ -69,7 +69,7 @@ div[id^="module-"], div[id^="charte-"] {
 }
 
 @media (max-width: 1200px) {
-  .header .logo {
+  #main-menu.header .logo {
     float: left;
     img {
       width:69%;

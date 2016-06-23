@@ -6,14 +6,15 @@
         </p>
     </div>
     <div class="col-xs-12 col-md-10">
-        <h3 class="color-red-eti text-center font-family-myriadpro-bold letter-spacing-110">INSCRIVEZ-VOUS AUX NEWSLETTERS GRATUITES !</h3>
+        <h2 class="color-red-eti font-family-myriadpro-bold letter-spacing-110 xs-text-center sm-text-center margin-top-20 margin-bottom-0">INSCRIVEZ-VOUS AUX NEWSLETTERS GRATUITES !</h2>
         <div class="row">
-            <form action="" method="">
-                <div class="col-xs-12 col-sm-12 col-md-5 col-lg-4">
-                    <p class="newsletter-text text-left margin-top-15 letter-spacing-110 line-height-16 margin-bottom-5 font-size-13">Inscrivez-vous gratuitement aux newsletters du magazine d'actualité et Info mises à jour des ressources documentaires.</p>
+            <form id="newsletter-form" action="/newsletter.html" method="POST">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <p class="newsletter-text text-left margin-top-15 letter-spacing-110 line-height-16 margin-bottom-5">Inscrivez-vous gratuitement aux newsletters du magazine d'actualité et Info mises à jour des ressources documentaires.</p>
                 </div>
-                <div class="col-xs-6 col-sm-9 col-md-4 col-lg-5">
-                    <input class="form-control input-srch-col margin-top-25 search-bar newsletter-input margin-bottom-5" placeholder="Saisissez votre email" type="text">
+                <div class="col-xs-6 col-sm-9 col-md-5 col-lg-5">
+                    <input class="form-control input-srch-col margin-top-25 search-bar newsletter-input margin-bottom-5" name="email" placeholder="Saisissez votre email">
+                    <p class="form-error"></p>
                 </div>
                 <div class="col-xs-6 col-sm-3 col-md-2 col-lg-2 no-gutters-md no-gutters-lg">
                     <button class="btn-u btn-brd btn-u-red btn-u-sm color-red-eti btn-center margin-top-25 letter-spacing-75 margin-bottom-5" type="submit"><i class="fa fa-fa fa-arrow-right margin-right-5"></i> S'INSCRIRE</button>

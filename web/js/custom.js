@@ -1,81 +1,80 @@
 // Home javascript
-jQuery.noConflict();
-jQuery( window ).resize(function($) {
+jQuery( window ).resize(function(jQuery) {
     if (jQuery( "#sub-menu" ).hasClass( "fxd" )) {
-        jQuery('#sub-menu').css('margin-top', $('#main-header').height());
+        jQuery('#sub-menu').css('margin-top', jQuery('#main-header').height());
     } else if (!jQuery( "#sub-menu" ).hasClass( "fxd" )) {
     }
 });
 
-jQuery( window ).ready(function($) {
+jQuery( window ).ready(function(jQuery) {
     if (jQuery( "#sub-menu" ).hasClass( "fxd" )) {
-        jQuery('#sub-menu').css('margin-top', $('#main-header').height());
+        jQuery('#sub-menu').css('margin-top', jQuery('#main-header').height());
     } else if (!jQuery( "#sub-menu" ).hasClass( "fxd" )) {
     }
 });
 
-jQuery(document).ready(function($) {
-    if (($(window).width() >= 992) && ($(window).scrollTop() == 0)) {
-        $("#navbar-x").addClass("in");
-        $("#button-menu-header").css('cssText', 'display: none !important');
+jQuery(document).ready(function(jQuery) {
+    if ((jQuery(window).width() >= 992) && (jQuery(window).scrollTop() == 0)) {
+        jQuery("#navbar-x").addClass("in");
+        jQuery("#button-menu-header").css('cssText', 'display: none !important');
     }
 
-    if (($(window).width() >= 992) && ($(window).scrollTop() == 0)) {
-        $("#navbar-x").addClass("in");
-        $("#button-menu-header").css('cssText', 'display: none !important');
+    if ((jQuery(window).width() >= 992) && (jQuery(window).scrollTop() == 0)) {
+        jQuery("#navbar-x").addClass("in");
+        jQuery("#button-menu-header").css('cssText', 'display: none !important');
     }
 
-    $(window).scroll(function(){
-        if (($(window).width() >= 992) && ($(window).scrollTop() == 0)) {
-            $("#navbar-x").addClass("in");
-            $("#advanced-search-box").css('cssText', 'display: block !important');
-            $("#button-menu-header").css('cssText', 'display: none !important');
-            $("#div-menu-header").css('cssText', 'display: none !important');
+    jQuery(window).scroll(function(){
+        if ((jQuery(window).width() >= 992) && (jQuery(window).scrollTop() == 0)) {
+            jQuery("#navbar-x").addClass("in");
+            jQuery("#advanced-search-box").css('cssText', 'display: block !important');
+            jQuery("#button-menu-header").css('cssText', 'display: none !important');
+            jQuery("#div-menu-header").css('cssText', 'display: none !important');
 
-        } else if (($(window).width() >= 992) && ($(window).scrollTop() != 0)) {
-            $("#navbar-x").removeClass("in");
-            $("#advanced-search-box").hide();
-            $("#button-menu-header").css('cssText', 'display: inline-block !important');
-            $("#div-menu-header").css('cssText', 'display: block !important');
+        } else if ((jQuery(window).width() >= 992) && (jQuery(window).scrollTop() != 0)) {
+            jQuery("#navbar-x").removeClass("in");
+            jQuery("#advanced-search-box").hide();
+            jQuery("#button-menu-header").css('cssText', 'display: inline-block !important');
+            jQuery("#div-menu-header").css('cssText', 'display: block !important');
 
         }
     });
 
-    if ( $( ".subMenu" ).length ) {
-        $('.subMenu').smint({
+    if ( jQuery( ".subMenu" ).length ) {
+        jQuery('.subMenu').smint({
             'scrollSpeed' : 1000,
             'mySelector'     : 'div'
         });
 
-        $('body').scrollspy({target: ".subMenu", offset: 50});
+        jQuery('body').scrollspy({target: ".subMenu", offset: 50});
     }
 
 
-    $(".btn-xpnd-smint").click(function(){
+    jQuery(".btn-xpnd-smint").click(function(){
 
-        if ($(this).text() == "+") {
-            $(this).text('-');
-            $(this).css("background-color", "#697277");
-            $(this).css("color", "#fff");
+        if (jQuery(this).text() == "+") {
+            jQuery(this).text('-');
+            jQuery(this).css("background-color", "#697277");
+            jQuery(this).css("color", "#fff");
 
-        } else if ($(this).text() == "-") {
-            $(this).text('+');
-            $(this).css("background-color", "#fff");
-            $(this).css("color", "#697277");
+        } else if (jQuery(this).text() == "-") {
+            jQuery(this).text('+');
+            jQuery(this).css("background-color", "#fff");
+            jQuery(this).css("color", "#697277");
         }
 
     });
 
     App.init();
     //StyleSwitcher.initStyleSwitcher();
-    $('.your-class').slick({
+    jQuery('.your-class').slick({
         dots: true,
         arrows: false,
         //autoplay: true,
         //autoplaySpeed: 3000
     });
 
-    $(".owl-carousel").owlCarousel({
+    jQuery(".owl-carousel").owlCarousel({
         loop: false,
         responsiveClass: true,
         slideBy: 2,
@@ -101,129 +100,129 @@ jQuery(document).ready(function($) {
     });
 
     var eventStick;
-    if ($(window).width() < 1024) {eventStick='click'} else {eventStick='mouseenter'};
+    if (jQuery(window).width() < 1024) {eventStick='click'} else {eventStick='mouseenter'};
 
-    $('#sticky-menu-phone').on(eventStick, function() {
+    jQuery('#sticky-menu-phone').on(eventStick, function() {
 
-        var hiddenField = $('#sticky-menu-phone'),
+        var hiddenField = jQuery('#sticky-menu-phone'),
             val = hiddenField.val();
         hiddenField.val(val === "true" ? "false" : "true");
 
         if (hiddenField.val() == "true") {
-            $('#sticky-menu-slide-phone').stop().animate({
+            jQuery('#sticky-menu-slide-phone').stop().animate({
                 right:"40px"
             }, 500);
-            $('#sticky-menu-slide-share').stop().animate({
+            jQuery('#sticky-menu-slide-share').stop().animate({
                 right:"-220px"
             }, 500);
-            $('#sticky-menu-slide-plane').stop().animate({
+            jQuery('#sticky-menu-slide-plane').stop().animate({
                 right:"-220px"
             }, 500);
 
-            var hiddenFieldd = $('#sticky-menu-share'),
+            var hiddenFieldd = jQuery('#sticky-menu-share'),
                 val = hiddenFieldd.val();
             hiddenFieldd.val("false");
 
-            var hiddenFielddd = $('#sticky-menu-plane'),
+            var hiddenFielddd = jQuery('#sticky-menu-plane'),
                 val = hiddenFielddd.val();
             hiddenFielddd.val("false");
 
         }
         else if (hiddenField.val() == "false"){
-            $('#sticky-menu-slide-phone').animate({
+            jQuery('#sticky-menu-slide-phone').animate({
                 right:"-220px"
             }, 500);
         }
     });
 
-    $('#sticky-menu-share').on(eventStick, function() {
+    jQuery('#sticky-menu-share').on(eventStick, function() {
 
-        var hiddenField = $('#sticky-menu-share'),
+        var hiddenField = jQuery('#sticky-menu-share'),
             val = hiddenField.val();
         hiddenField.val(val === "true" ? "false" : "true");
 
         if (hiddenField.val() == "true") {
-            $('#sticky-menu-slide-share').stop().animate({
+            jQuery('#sticky-menu-slide-share').stop().animate({
                 right:"40px"
             }, 500);
-            $('#sticky-menu-slide-phone').stop().animate({
+            jQuery('#sticky-menu-slide-phone').stop().animate({
                 right:"-220px"
             }, 500);
-            $('#sticky-menu-slide-plane').stop().animate({
+            jQuery('#sticky-menu-slide-plane').stop().animate({
                 right:"-220px"
             }, 500);
 
-            var hiddenFieldd = $('#sticky-menu-phone'),
+            var hiddenFieldd = jQuery('#sticky-menu-phone'),
                 val = hiddenFieldd.val();
             hiddenFieldd.val("false");
 
-            var hiddenFielddd = $('#sticky-menu-plane'),
-                val = hiddenFielddd.val();
-            hiddenFielddd.val("false");
-
-
-        }
-        else if (hiddenField.val() == "false"){
-            $('#sticky-menu-slide-share').animate({
-                right:"-220px"
-            }, 500);
-        }
-    });
-
-    $('#sticky-menu-plane').on(eventStick, function() {
-
-        var hiddenField = $('#sticky-menu-plane'),
-            val = hiddenField.val();
-        hiddenField.val(val === "true" ? "false" : "true");
-
-        if (hiddenField.val() == "true") {
-            $('#sticky-menu-slide-plane').stop().animate({
-                right:"40px"
-            }, 500);
-            $('#sticky-menu-slide-phone').stop().animate({
-                right:"-220px"
-            }, 500);
-            $('#sticky-menu-slide-share').stop().animate({
-                right:"-220px"
-            }, 500);
-
-            var hiddenFieldd = $('#sticky-menu-phone'),
-                val = hiddenFieldd.val();
-            hiddenFieldd.val("false");
-
-            var hiddenFielddd = $('#sticky-menu-share'),
+            var hiddenFielddd = jQuery('#sticky-menu-plane'),
                 val = hiddenFielddd.val();
             hiddenFielddd.val("false");
 
 
         }
         else if (hiddenField.val() == "false"){
-            $('#sticky-menu-slide-plane').animate({
+            jQuery('#sticky-menu-slide-share').animate({
                 right:"-220px"
             }, 500);
         }
     });
 
-    $("#sticky").on('mouseleave', function() {
-        $('#sticky-menu-slide-plane').stop().animate({
+    jQuery('#sticky-menu-plane').on(eventStick, function() {
+
+        var hiddenField = jQuery('#sticky-menu-plane'),
+            val = hiddenField.val();
+        hiddenField.val(val === "true" ? "false" : "true");
+
+        if (hiddenField.val() == "true") {
+            jQuery('#sticky-menu-slide-plane').stop().animate({
+                right:"40px"
+            }, 500);
+            jQuery('#sticky-menu-slide-phone').stop().animate({
+                right:"-220px"
+            }, 500);
+            jQuery('#sticky-menu-slide-share').stop().animate({
+                right:"-220px"
+            }, 500);
+
+            var hiddenFieldd = jQuery('#sticky-menu-phone'),
+                val = hiddenFieldd.val();
+            hiddenFieldd.val("false");
+
+            var hiddenFielddd = jQuery('#sticky-menu-share'),
+                val = hiddenFielddd.val();
+            hiddenFielddd.val("false");
+
+
+        }
+        else if (hiddenField.val() == "false"){
+            jQuery('#sticky-menu-slide-plane').animate({
+                right:"-220px"
+            }, 500);
+        }
+    });
+
+    jQuery("#sticky").on('mouseleave', function() {
+        jQuery('#sticky-menu-slide-plane').stop().animate({
             right:"-220px"
         }, 500);
-        $('#sticky-menu-slide-phone').stop().animate({
+        jQuery('#sticky-menu-slide-phone').stop().animate({
             right:"-220px"
         }, 500);
-        $('#sticky-menu-slide-share').stop().animate({
+        jQuery('#sticky-menu-slide-share').stop().animate({
             right:"-220px"
         }, 500);
 
-        var hiddenField = $('#sticky-menu-plane'),
+        var hiddenField = jQuery('#sticky-menu-plane'),
             val = hiddenField.val();
         hiddenField.val("false");
 
-        var hiddenFieldd = $('#sticky-menu-phone'),
+        var hiddenFieldd = jQuery('#sticky-menu-phone'),
             val = hiddenFieldd.val();
         hiddenFieldd.val("false");
 
-        var hiddenFielddd = $('#sticky-menu-share'),
+        var hiddenFielddd = jQuery('#sticky-menu-share'),
             val = hiddenFielddd.val();
         hiddenFielddd.val("false");
     });
@@ -252,8 +251,8 @@ jQuery(document).ready(function($) {
     })
 
     // gestion erreur formulaire
-    $('#newsletter-form').ready(function($){
-        var form = $('#newsletter-form');
+    jQuery('#newsletter-form').ready(function(jQuery){
+        var form = jQuery('#newsletter-form');
         var inputField = form.find('.newsletter-input');
         form.submit(function(e){
             var email = inputField.val();
@@ -266,15 +265,15 @@ jQuery(document).ready(function($) {
     });
 
     // gestion des popins
-    $("a.services-popin").click(function() {
-        if (!$("#services-popin").html()) {
+    jQuery("a.services-popin").click(function() {
+        if (!jQuery("#services-popin").html()) {
             var ui = '<div id="services-popin" role="dialog" style="display:none;z-index:1001;">' + '<iframe frameborder="0" style="width:100%;height:98%;" src=""></iframe>' + '</div>';
-            $("body").append(ui);
+            jQuery("body").append(ui);
         }
         window.scrollTo(0, 0);
-        $("#services-popin").dialog({
+        jQuery("#services-popin").dialog({
             modal: true,
-            title: $(this).attr("title"),
+            title: jQuery(this).attr("title"),
             width: 920,
             top: 100,
             closeText: "Fermer X",
@@ -283,18 +282,113 @@ jQuery(document).ready(function($) {
                 return false;
             },
             close: function() {
-                $("#services-popin").remove();
+                jQuery("#services-popin").remove();
                 return false;
             }
         });
-        $("#services-popin").dialog("widget").attr("id", "design-services-popin").css("position", "fixed");
-        $("#services-popin iframe").attr("src", $(this).attr("href"));
-        $("#services-popin").dialog("widget").css("top", "70px");
+        jQuery("#services-popin").dialog("widget").attr("id", "design-services-popin").css("position", "fixed");
+        jQuery("#services-popin iframe").attr("src", jQuery(this).attr("href"));
+        jQuery("#services-popin").dialog("widget").css("top", "70px");
 
-        $("#design-services-popin").css("left", (($(window).width()-$("#design-services-popin").width())/2));
-        $("#design-services-popin").css("height", "295px");
+        jQuery("#design-services-popin").css("left", ((jQuery(window).width()-jQuery("#design-services-popin").width())/2));
+        jQuery("#design-services-popin").css("height", "295px");
         return false;
     });
+
+    jQuery('.visiteur.panel-title a').click(function(event) {
+
+        jQuery('#accordion-1').children().each(function(index, element){
+            var elem = jQuery(element).find('a').attr('id') == event.currentTarget.id;
+            if (jQuery(element).find('i').hasClass('fa-angle-up') && !(elem)) {
+                jQuery(jQuery(element).find('span')).removeClass('color-red');
+                jQuery(jQuery(element).find('i')).toggleClass('fa-angle-up fa-angle-down');
+            }
+        });
+
+        if(jQuery(event.target).hasClass("accordion-toggle") ) {
+            jQuery(event.target).addClass('disabled');
+            jQuery(event.target.childNodes[1]).toggleClass('color-red');
+            jQuery(event.target.childNodes[2]).toggleClass('fa-angle-up fa-angle-down');
+            setTimeout(function(){ jQuery(event.target).removeClass('disabled'); }, 1000);
+        }
+
+        if(jQuery(event.target).hasClass("title-element")) {
+            jQuery(event.target).addClass('disabled');
+            jQuery(event.target).toggleClass('color-red');
+            jQuery(event.target).next().toggleClass('fa-angle-up fa-angle-down');
+            setTimeout(function(){ jQuery(event.target).closest('a').removeClass('disabled'); }, 1000);
+        }
+
+        if(jQuery(event.target).hasClass("fa")) {
+            jQuery(event.target).addClass('disabled');
+            jQuery(event.target).prev().toggleClass('color-red');
+            jQuery(event.target).toggleClass('fa-angle-up fa-angle-down');
+            setTimeout(function(){ jQuery(event.target).closest('a').removeClass('disabled'); }, 1000);
+        }
+    });
+
+    jQuery('.offres.panel-title a').click(function(event) {
+
+        jQuery('#accordion-1').children().each(function(index, element){
+            var elem = jQuery(element).find('a').attr('id') == event.currentTarget.id;
+            if (jQuery(element).find('i').hasClass('fa-angle-up') && !(elem)) {
+                jQuery(jQuery(element).find('span')).removeClass('color-green');
+                jQuery(jQuery(element).find('i')).toggleClass('fa-angle-up fa-angle-down');
+            }
+        });
+
+        if(jQuery(event.target).hasClass("accordion-toggle") ) {
+            jQuery(event.target).addClass('disabled');
+            jQuery(event.target.childNodes[1]).toggleClass('color-green');
+            jQuery(event.target.childNodes[2]).toggleClass('fa-angle-up fa-angle-down');
+            setTimeout(function(){ jQuery(event.target).closest('a').removeClass('disabled'); }, 1000);
+        }
+
+        if(jQuery(event.target).hasClass("title-element") ) {
+            jQuery(event.target).closest('a').addClass('disabled');
+            jQuery(event.target).toggleClass('color-green');
+            jQuery(event.target).next().toggleClass('fa-angle-up fa-angle-down');
+            setTimeout(function(){ jQuery(event.target).closest('a').removeClass('disabled'); }, 1000);
+        }
+
+        if(jQuery(event.target).hasClass("fa") ) {
+            jQuery(event.target).closest('a').addClass('disabled');
+            jQuery(event.target).prev().toggleClass('color-green');
+            jQuery(event.target).toggleClass('fa-angle-up fa-angle-down');
+            setTimeout(function(){ jQuery(event.target).closest('a').removeClass('disabled'); }, 1000);
+        }
+    });
+
+    jQuery('.tout-ouvrir').toggle(function() {
+        jQuery('.panel-collapse:not(".in")').collapse('show');
+        jQuery('#accordion-1').children().each(function(index, element){
+            if (jQuery(element).find('i').hasClass('fa-angle-up')) {
+                jQuery(jQuery(element).find('span')).removeClass('color-red');
+                jQuery(jQuery(element).find('i')).toggleClass('fa-angle-up fa-angle-down');
+            }
+        });
+        jQuery('h4.panel-title a i').each(function(index, element) {
+            jQuery( element ).toggleClass('fa-angle-down fa-angle-up');
+        });
+        jQuery('.tout-ouvrir').text('Tout fermer');
+    }, function() {
+        jQuery('.panel-collapse.in').collapse('hide');
+        jQuery('h4.panel-title a i').each(function(index, element) {
+            jQuery( element ).toggleClass('fa-angle-down fa-angle-up');
+        });
+        jQuery('.tout-ouvrir').text('Tout ouvrir');
+    });
+
+    $(".zoning")
+        .css("cursor", "pointer")
+        .click(
+            function(a){
+                if($(this).find("a").attr("href")!=undefined)
+                    window.location=$(this).find("a").attr("href")
+                return false;
+            }
+        );
+
 });
 
 (function() {

@@ -5473,8 +5473,9 @@
 }
 
 .tab-v1 .tab-content {
-	padding: 10px 0;
+	padding: 0 0 10px 0;
     position:relative;
+    z-index: 1;
 }
 
 .tab-v1 .tab-content img {
