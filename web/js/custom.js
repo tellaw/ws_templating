@@ -380,7 +380,6 @@ jQuery(document).ready(function(jQuery) {
     });
 
     $(".zoning")
-        .css("cursor", "pointer")
         .click(
             function(a){
                 if($(this).find("a").attr("href")!=undefined)

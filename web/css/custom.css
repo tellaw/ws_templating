@@ -2570,6 +2570,10 @@ div.play-button {
 }
 .table > tbody > tr:hover * {
 	color: #EA2336!important;
+	cursor: pointer;
+}
+.table > tbody > tr:hover td.col1 * {
+	color: #ffffff!important;
 }
 .table > tbody > tr > td {
 	border-top: 0px solid #ddd;
