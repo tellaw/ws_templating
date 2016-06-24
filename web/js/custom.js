@@ -388,6 +388,8 @@ jQuery(document).ready(function(jQuery) {
             }
         );
 
+    $(".tab-content .documents-smint").css("minHeight", $(".tab-content .col-droite").height() + 86);
+
 });
 
 (function() {
