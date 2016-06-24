@@ -379,16 +379,16 @@ jQuery(document).ready(function(jQuery) {
         jQuery('.tout-ouvrir').text('Tout ouvrir');
     });
 
-    $(".zoning")
+    jQuery(".zoning")
         .click(
             function(a){
-                if($(this).find("a").attr("href")!=undefined)
-                    window.location=$(this).find("a").attr("href")
+                if(jQuery(this).find("a").attr("href")!=undefined)
+                    window.location=jQuery(this).find("a").attr("href")
                 return false;
             }
         );
 
-    $(".tab-content .documents-smint").css("minHeight", $(".tab-content .col-droite").height() + 86);
+    jQuery(".tab-content .documents-smint").css({"minHeight" : jQuery(".tab-content .col-droite").height() + 86});
 
 });
 
