@@ -217,3 +217,91 @@
 
 .skin-sc6 .text-color {
   color: #642F85; }
+
+/* mesures analyse */
+.zone-th1 {
+  background-color: #008BBB; }
+
+/* procedes chimie bio agro */
+.zone-th2 {
+  background-color: #00A56D; }
+
+/* construction */
+.zone-th3 {
+  background-color: #E07701; }
+
+/* energie */
+.zone-th4 {
+  background-color: #F6BD00; }
+
+/* environement */
+.zone-th5 {
+  background-color: #A9B200; }
+
+/* genie industriel */
+.zone-th6 {
+  background-color: #008CBB; }
+
+/* mecanique */
+.zone-th7 {
+  background-color: #CF2D23; }
+
+/* sciences fondamentales */
+.zone-th8 {
+  background-color: #009997; }
+
+/* technologie de l information */
+.zone-th9 {
+  background-color: #C1A581; }
+
+/* nanotechnologies */
+.zone-th10 {
+  background-color: #A60077; }
+
+/* materiaux */
+.zone-th11 {
+  background-color: #63398B; }
+
+/* archives */
+.zone-th12 {
+  background-color: #6f6f6f; }
+
+/* electronique photonique */
+.zone-th13 {
+  background-color: #E3004E; }
+
+/* transports */
+.zone-th14 {
+  background-color: #27445B; }
+
+/* biomediacl pharma */
+.zone-th15 {
+  background-color: #242E6E; }
+
+/* automatique robotique */
+.zone-th16 {
+  background-color: #E4054F; }
+
+/* aerospatial */
+.zone-sc1 {
+  background-color: #25445C; }
+
+/* agroalimentaire */
+.zone-sc2 {
+  background-color: #23AB75; }
+
+/* automobile */
+.zone-sc3 {
+  background-color: #222221; }
+
+/* eco-indiustrie */
+.zone-sc4 {
+  background-color: #9DB51D; }
+
+/* equipement-industriel */
+.zone-sc5 {
+  background-color: #D31E2C; }
+
+/* plasturgie */
+.zone-sc6 {
+  background-color: #642F85; }

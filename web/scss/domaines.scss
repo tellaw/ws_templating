@@ -39,3 +39,12 @@ $i: 1;
   }
   $i: $i + 1;
 }
+
+$i: 1;
+@each $class in $domaines_secteurs_code {
+  /* #{nth($domaines_secteurs_name, $i)} */
+  .zone-#{$class} {
+    background-color: nth($domaines_secteurs_colors, $i);
+  }
+  $i: $i + 1;
+}

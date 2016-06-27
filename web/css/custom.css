@@ -2215,6 +2215,9 @@ div.play-button {
 .line-height-20 {
 	line-height: 20px;
 }
+.line-height-35 {
+	line-height: 35px;
+}
 .slick-slider {
 	margin-top:20px
 }
@@ -2236,37 +2239,6 @@ div.play-button {
 	margin-right: auto;
 	margin-bottom: 20px;
 	border-bottom: 2.5px #EA2336 solid;
-}
-
-.badge-x i {
-	margin-right: 0px;
-}
-
-.badge-x {
-	background: #1b8bbb !important;
-	position: relative;
-	top: 3px;
-	left: -15px;
-	width: 21px;
-	padding-left: 4px !important;
-}
-
-.badge-xx {
-	left: -6px !important;
-}
-
-.badge-xxx {
-	left: 0px !important;
-}
-
-.badge-xxxx {
-	top: 0px !important;
-}
-
-.badge {
-	color: #fff;
-	font-weight: 400;
-	padding: 4px 7px;
 }
 
 .myti-info-compte .left {
@@ -2568,26 +2540,26 @@ div.play-button {
 	color: #697277;
 	letter-spacing: 1px;
 }
-.table > tbody > tr:hover * {
+#presentation .table > tbody > tr:hover * {
 	color: #EA2336!important;
 	cursor: pointer;
 }
-.table > tbody > tr:hover td.col1 * {
+#presentation .table > tbody > tr:hover td.col1 * {
 	color: #ffffff!important;
 }
-.table > tbody > tr > td {
+#presentation .table > tbody > tr > td {
 	border-top: 0px solid #ddd;
 	height: 30px !important;
 	padding: 4px 8px!important;
 }
-.table > tbody > tr > td.col1 {
+#presentation .table > tbody > tr > td.col1 {
 	width:5%;
 	padding-left:0px !important
  }
-.table > tbody > tr > td.col2 {
+#presentation .table > tbody > tr > td.col2 {
 	width:10%;
 }
-.table > tbody > tr > td.col3 {
+#presentation .table > tbody > tr > td.col3 {
 	width:10%;
 }
 
@@ -3698,6 +3670,7 @@ a.abonnement-text:hover {
 .badge-x i {
 	margin-right: 0px;
 }
+
 .badge-x {
 	background: #1b8bbb !important;
 	position: relative;
@@ -3706,8 +3679,23 @@ a.abonnement-text:hover {
 	width: 21px;
 	padding-left: 4px !important;
 }
+
 .badge-xx {
 	left: -6px !important;
+}
+
+.badge-xxx {
+	left: 0px !important;
+}
+
+.badge-xxxx {
+	top: 0px !important;
+}
+
+.badge {
+	color: #fff;
+	font-weight: 400;
+	padding: 4px 2px;
 }
 .icon {
 	position: relative;
@@ -3759,8 +3747,7 @@ a.abonnement-text:hover {
 	height: 219px;
 	/*width: 320px;*/
 }
-#offres h1 {
-	padding: 0px 0px 0px 0px !important;
+#offres p {
 	margin-left: 0px !important;
 	margin-right: 0px !important;
 	margin-bottom: 8px;
@@ -3997,6 +3984,7 @@ td, th, tr{
 .cv-text {
 	font-size: 11px;
 	letter-spacing: 0.8px;
+	margin:0;
 }
 @media (min-width: 1200px) {
 	.lg-width {
