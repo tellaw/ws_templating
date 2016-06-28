@@ -2365,6 +2365,13 @@ div.play-button {
 	display:none;
 }
 
+.col-droite-2 {
+	position: absolute;
+	top: 190px;
+	right: -9px;
+	z-index: 1;
+}
+
 /*POPIN CONFERENCES*/
 #di-conf-popin {height:auto!important;padding: .5em 1em .5em 1em;}
 #di-conf-popin p {display:inline-block;}
@@ -4377,3 +4384,8 @@ td, th, tr{
 .timeline-v2 > li .cbp_tmtime span {
 	color: #9FA1A2!important;
 }
+ #details,
+ #maj {
+	 position:relative;
+	 z-index: 99;
+ }
