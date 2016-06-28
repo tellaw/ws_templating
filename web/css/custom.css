@@ -49,6 +49,10 @@ a, p {
 
 a:hover {
 	text-decoration: none;
+	cursor:pointer;
+}
+.zoning {
+	cursor: pointer;
 }
 dl {
 	padding: 0.5em;
@@ -60,6 +64,9 @@ dt {
 	width: 25px !important;
 	text-align: right;
 	font-weight: bold;
+}
+.block-bottom {
+	clear:both;
 }
 .footer3-bg-color {
 	background-color : #ea2336 !important ;
@@ -181,6 +188,9 @@ dt {
 }
 .margin-bottom-10 {
 	margin-bottom: 10px;
+}
+.margin-top-13 {
+	margin-top: 13px;
 }
 .margin-bottom-30 {
 	margin-bottom: 30px;
@@ -1767,6 +1777,9 @@ p.cellule-list {
 .padding-left-20{
 	padding-left: 20px !important;
 }
+.padding-left-30{
+	padding-left: 30px !important;
+}
 .padding-left-40{
 	padding-left: 40px !important;
 }
@@ -2540,6 +2553,15 @@ div.play-button {
 	color: #697277;
 	letter-spacing: 1px;
 }
+.timeline-v2 > li .cbp_tmlabel .table > tbody > tr > td {
+	padding-top: 0px;
+}
+.timeline-v2 > li .cbp_tmlabel .table {
+	margin-bottom: 0;
+}
+.timeline-v2 > li:hover .cbp_tmlabel div * {
+	color: #EA2336!important;
+}
 #presentation .table > tbody > tr:hover * {
 	color: #EA2336!important;
 	cursor: pointer;
@@ -2552,7 +2574,7 @@ div.play-button {
 	height: 30px !important;
 	padding: 4px 8px!important;
 }
-#presentation .table > tbody > tr > td.col1 {
+#presentation .table > tbody > tr > td.col1{
 	width:5%;
 	padding-left:0px !important
  }
@@ -2562,7 +2584,15 @@ div.play-button {
 #presentation .table > tbody > tr > td.col3 {
 	width:10%;
 }
-
+.timeline-v2 > li .cbp_tmlabel span{
+	padding: 8px;
+	line-height: 35px;
+	font-size: 15px;
+	letter-spacing: 1px;
+}
+.timeline-v2 > li .cbp_tmlabel span:first-child {
+	padding-left: 0px;
+}
 .color-697277  {
 	color: #697277 !important;
 }
@@ -3588,8 +3618,6 @@ div.play-button {
 	height: 100%;
 	padding-top: 30px;
 	padding-bottom: 30px;
-	margin-left: -25px;
-	margin-right: -25px;
 }
 .title-icon {
 	display: inline-block;
@@ -3601,6 +3629,10 @@ div.play-button {
 	border-right: 1px solid #c6c6c6;
 	padding-left: 40px;
 	padding-right: 40px;
+}
+.menu-abonnee-pos a:hover p[class*="-text"] {
+	background: #697277;
+	color:#fff;
 }
 .abonnement-img {
 	margin-bottom: 0px;
@@ -3964,6 +3996,10 @@ td, th, tr{
 	background-color: #74b504;
 	color: white;
 }
+.bg-gray {
+	background-color: #697277;
+	color: white;
+}
 .bold-text {
 	font-weight: bold;
 }
@@ -4305,4 +4341,31 @@ td, th, tr{
 	margin-top: -7px;
 	letter-spacing: 2px;
 }
-
+.timeline-v2 > li .cbp_tmlabel{
+	background: none;
+	margin-bottom:0px;
+	padding-left:0px;
+}
+.timeline-v2 > li.last .cbp_tmlabel {
+	padding-bottom:0;
+}
+.timeline-v2 > li.last .cbp_tmlabel > p {
+	margin-bottom:0;
+}
+.timeline-v2 > li .cbp_tmlabel .table > tbody > tr > td {
+	border:none;
+}
+.timeline-v2 > li .cbp_tmicon {
+	background: #ea2336;
+	box-shadow: 0 0 0 4px #dcdcdc;
+}
+.timeline-v2 > li .cbp_tmlabel:after {
+	border:0;
+}
+.timeline-v2:before {
+	background: #dcdcdc;
+	top: 20px;
+}
+.timeline-v2 > li .cbp_tmtime span {
+	color: #9FA1A2!important;
+}

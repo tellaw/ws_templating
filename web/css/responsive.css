@@ -126,6 +126,10 @@
 
 /* Mobile portrait */
 @media (max-width: 425px) {
+  .timeline-v2 > li .cbp_tmlabel {
+    padding-top: 0px; }
+  .timeline-v2 > li .cbp_tmlabel span {
+    line-height: 20px; }
   #design-di-conf-popin #form-container {
     margin: 0 0 0 40px !important;
     z-index: 100;
