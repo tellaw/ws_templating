@@ -190,7 +190,7 @@ dt {
 	margin-bottom: 10px;
 }
 .margin-top-13 {
-	margin-top: 13px;
+	margin-top: 13px!important;
 }
 .margin-bottom-30 {
 	margin-bottom: 30px;
@@ -2562,7 +2562,7 @@ div.play-button {
 .timeline-v2 > li:hover .cbp_tmlabel div * {
 	color: #EA2336!important;
 }
-#presentation .table > tbody > tr:hover * {
+#presentation .table > tbody > tr.zoning:hover * {
 	color: #EA2336!important;
 	cursor: pointer;
 }
@@ -2572,11 +2572,12 @@ div.play-button {
 #presentation .table > tbody > tr > td {
 	border-top: 0px solid #ddd;
 	height: 30px !important;
-	padding: 4px 8px!important;
+	padding: 4px 8px;
+	vertical-align: top!important;
 }
 #presentation .table > tbody > tr > td.col1{
 	width:5%;
-	padding-left:0px !important
+	padding-left:0px;
  }
 #presentation .table > tbody > tr > td.col2 {
 	width:10%;
@@ -2716,6 +2717,7 @@ div.play-button {
 
 .prices {
 	margin-top: -2px;
+	min-height:42px;
 }
 
 .old-price {
@@ -2871,6 +2873,7 @@ div.play-button {
 
 .panel-custom .panel-body {
 	border-top-width: 0px !important;
+	padding:0 15px 15px 15px;
 }
 
 .offer-text {
@@ -2978,9 +2981,17 @@ div.play-button {
 	padding-bottom: 5px !important;
 }
 
+#mot-editrice .illus {
+	float: left;
+}
 #mot-editrice img {
 	height: 91px;
 	width: 98px;
+	margin:0 10px 0 0;
+}
+
+#mot-editrice .text {
+	line-height: 16px;
 }
 
 #mot-editrice .fa-angle-double-left {
@@ -3009,7 +3020,7 @@ div.play-button {
 	margin-right: auto;
 	padding-bottom: 10px;
 	margin-bottom: 0px;
-	height: 219px;
+	min-height: 219px;
 }
 
 .author-text {
@@ -3032,14 +3043,12 @@ div.play-button {
 	padding: 0px 25px 0px 25px;
 	line-height: 1.2;
 	letter-spacing: 1px;
+	max-height: 42px;
+	overflow: hidden;
 }
 
 #temoignages .testimonials .carousel-control.left {
 	left: -210px;
-}
-
-#temoignages .carousel-arrow {
-	top: -195px;
 }
 
 #temoignages-2 .testimonial-info {
@@ -3086,6 +3095,9 @@ div.play-button {
 	top: -195px;
 }
 
+.testimonials .carousel-arrow {
+	top: -60px;
+}
 .width-dt dt {
 	width: 60px !important;
 	font-family: 'myriad-pro', sans-serif;
@@ -3176,10 +3188,6 @@ div.play-button {
 
 	#temoignages .testimonials .carousel-control.left {
 		left: -254px;
-	}
-
-	#temoignages .carousel-arrow {
-		top: -180px;
 	}
 
 	#temoignages-2 .testimonials .carousel-control.left {
