@@ -43,7 +43,7 @@ jQuery(document).ready(function() {
     if ( jQuery( ".subMenu" ).length ) {
         jQuery('.subMenu').smint({
             'scrollSpeed' : 1000,
-            'mySelector'     : 'div'
+            'mySelector'     : 'section'
         });
 
         jQuery('body').scrollspy({target: ".subMenu", offset: 50});
