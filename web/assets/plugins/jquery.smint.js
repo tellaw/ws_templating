@@ -63,7 +63,7 @@ If you like Smint, or have suggestions on how it could be improved, send me a tw
 
 			//Fill the menu
 			optionLocs.push(Array(
-				jQuery(mySelector+"."+id).position().top-menuHeight, 
+				jQuery(mySelector+"."+id).position().top,
 				jQuery(mySelector+"."+id).height()+jQuery(mySelector+"."+id).position().top, id)
 			);
 			///////////////////////////////////

@@ -2357,7 +2357,7 @@ div.play-button {
 
 .col-droite {
 	position: absolute;
-	top: 103px;
+	top: 74px;
 	right: -9px;
 }
 
@@ -2936,7 +2936,7 @@ div.play-button {
 	width: 30px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	border-bottom: 2.5px #9eb504 solid;
 }
 
@@ -3018,7 +3018,8 @@ div.play-button {
 
 #temoignages .testimonial-info {
 	line-height: 1.05;
-	padding-left: 32px;
+	padding: 0;
+	min-height: 70px;
 }
 
 #temoignages {
@@ -3028,6 +3029,8 @@ div.play-button {
 	padding-bottom: 10px;
 	margin-bottom: 0px;
 	min-height: 219px;
+	padding-right: 30px;
+	padding-left: 29px;
 }
 
 .author-text {
@@ -3047,7 +3050,7 @@ div.play-button {
 #temoignages p {
 	font-size: 12px;
 	font-style: normal;
-	padding: 0px 25px 0px 25px;
+	padding: 0px;
 	line-height: 1.2;
 	letter-spacing: 1px;
 	max-height: 42px;
@@ -3058,6 +3061,9 @@ div.play-button {
 	left: -210px;
 }
 
+#temoignages .testimonials .testimonial-info span {
+	top:-5px;
+}
 #temoignages-2 .testimonial-info {
 	line-height: 1.05;
 	padding-left: 32px;
@@ -3104,6 +3110,10 @@ div.play-button {
 
 .testimonials .carousel-arrow {
 	top: -60px;
+	left:3px;
+}
+.testimonials .carousel-control.right {
+	right:-12px;
 }
 .width-dt dt {
 	width: 60px !important;
@@ -3784,14 +3794,14 @@ a.abonnement-text:hover {
 }
 #offres {
 	background-color: #f3f3f3;
-	padding-left: 48px;
-	padding-right: 39px;
+	padding-left: 29px;
+	padding-right: 30px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 15px;
 	padding-bottom: 30px;
 	margin-bottom: 0px;
-	height: 219px;
+	min-height: auto;
 	/*width: 320px;*/
 }
 #offres p {
@@ -4048,14 +4058,14 @@ td, th, tr{
 	}
 	#offres {
 		background-color: #f3f3f3;
-		padding-left: 48px;
-		padding-right: 39px;
+		padding-left: 29px;
+		padding-right: 30px;
 		margin-left: auto;
 		margin-right: auto;
 		margin-top: 15px;
 		padding-bottom: 30px;
 		margin-bottom: 0px;
-		height: 219px;
+		height: auto;
 		width: 320px;
 	}
 }
@@ -4388,4 +4398,10 @@ td, th, tr{
  #maj {
 	 position:relative;
 	 z-index: 99;
+ }
+ .ez_content .expert h4 {
+	 color: #ea2336 !important;
+	 font-size:13px;
+	 letter-spacing: 1px;
+	 font-weight:bold
  }

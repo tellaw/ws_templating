@@ -1,19 +1,19 @@
 // Home javascript
-jQuery( window ).resize(function(jQuery) {
+jQuery( window ).resize(function() {
     if (jQuery( "#sub-menu" ).hasClass( "fxd" )) {
         jQuery('#sub-menu').css('margin-top', jQuery('#main-header').height());
     } else if (!jQuery( "#sub-menu" ).hasClass( "fxd" )) {
     }
 });
 
-jQuery( window ).ready(function(jQuery) {
+jQuery( window ).ready(function() {
     if (jQuery( "#sub-menu" ).hasClass( "fxd" )) {
         jQuery('#sub-menu').css('margin-top', jQuery('#main-header').height());
     } else if (!jQuery( "#sub-menu" ).hasClass( "fxd" )) {
     }
 });
 
-jQuery(document).ready(function(jQuery) {
+jQuery(document).ready(function() {
     if ((jQuery(window).width() >= 992) && (jQuery(window).scrollTop() == 0)) {
         jQuery("#navbar-x").addClass("in");
         jQuery("#button-menu-header").css('cssText', 'display: none !important');
@@ -389,6 +389,9 @@ jQuery(document).ready(function(jQuery) {
         );
 
     jQuery(".tab-content .documents-smint").css({"minHeight" : jQuery(".tab-content .col-droite").height() + 86});
+
+    jQuery(".tab-content .presentation-smint").css({"minHeight" : jQuery(".tab-content .col-droite-2").height() + 210});
+    jQuery(".tab-content .expert-smint").css({"minHeight" : jQuery(".tab-content .col-droite-2").height() + 210});
 
 });
 
