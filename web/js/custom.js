@@ -393,8 +393,8 @@ jQuery(document).ready(function() {
 
     jQuery(".tab-content .documents-smint").css({"minHeight" : jQuery(".tab-content .col-droite").height() + 86});
 
-    jQuery(".tab-content .presentation-smint").css({"minHeight" : jQuery(".tab-content .col-droite-2").height() + 210});
-    jQuery(".tab-content .expert-smint").css({"minHeight" : jQuery(".tab-content .col-droite-2").height() + 210});
+    jQuery(".tab-content .presentation-smint").css({"minHeight" : jQuery(".tab-content .col-droite-2").height() + 60});
+    jQuery(".tab-content .expert-smint").css({"minHeight" : jQuery(".tab-content .col-droite-2").height() + 60});
 
 });
 
