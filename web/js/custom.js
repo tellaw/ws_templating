@@ -248,7 +248,10 @@ jQuery(document).ready(function() {
             link = window.location.href.substring(0, window.location.href.indexOf("#"));
         }
         window.location.href= link + anchor;
-    })
+    });
+
+    var nbOnglets = jQuery(".nav-tabs li").length;
+    jQuery(".nav-tabs li").css("width", ((jQuery(".nav-tabs").width()/jQuery(".nav-tabs li").length)*100)/jQuery(".nav-tabs").width()+"%");
 
     // gestion erreur formulaire
     jQuery('#newsletter-form').ready(function(jQuery){

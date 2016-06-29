@@ -1680,6 +1680,10 @@ p.cellule-list {
 	letter-spacing: 1.20px;
 }
 
+.nav-tabs > li {
+	text-align: center;
+}
+
 .tab-v1 .nav-tabs {
 	border-bottom: solid 2px #697277;
 	position: relative;
@@ -1754,6 +1758,11 @@ p.cellule-list {
 .nav-tabs li a {
 	padding-top: 10px !important;
 	padding-bottom: 10px !important;
+	margin-right: 0px;
+	margin-left: 2px;
+}
+.nav-tabs li:first-child a {
+	margin-left: 0px;
 }
 
 #triangle-down {
@@ -2363,7 +2372,7 @@ div.play-button {
 
 .col-droite-2 {
 	position: absolute;
-	top: 190px;
+	top: 71px;
 	right: -9px;
 	z-index: 1;
 }
@@ -2872,6 +2881,9 @@ div.play-button {
 	margin-right: 0px;
 }
 
+.panel-custom .panel-heading a .title-element {
+	padding-right: 32px;
+}
 
 
 .panel-custom .panel-body {
@@ -3191,9 +3203,6 @@ div.play-button {
 }
 
 @media screen and (min-width: 1200px) {
-	#mot-editrice {
-		height: 275px;
-	}
 
 	#mot-editrice .fa-angle-double-left {
 		left: 45px;
@@ -3209,10 +3218,6 @@ div.play-button {
 
 	#temoignages-2 .carousel-arrow {
 		top: -180px;
-	}
-
-	#mot-editrice {
-		width: 320px;
 	}
 
 	#temoignages {
@@ -3233,9 +3238,6 @@ div.play-button {
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-	#mot-editrice {
-		height: 320px;
-	}
 
 	#mot-editrice .fa-angle-double-left {
 		top: 25px;
@@ -3280,7 +3282,6 @@ div.play-button {
 @media screen and (min-width: 768px) and (max-width: 991px) {
 
 	#mot-editrice {
-		height: 270px;
 		padding-right: 30px;
 		padding-left: 29px;
 		padding-bottom: 0px !important;
@@ -3346,7 +3347,6 @@ div.play-button {
 
 @media screen and (min-width: 425px) and (max-width: 767px) {
 	#mot-editrice {
-		height: 293px;
 		padding-right: 30px;
 		padding-left: 29px;
 		padding-bottom: 0px !important;
@@ -3400,7 +3400,6 @@ div.play-button {
 @media screen and (max-width: 424px) {
 
 	#mot-editrice {
-		height: 290px;
 		padding-right: 30px;
 		padding-left: 29px;
 		padding-bottom: 0px !important;
@@ -3805,7 +3804,6 @@ a.abonnement-text:hover {
 	margin-right: 0px !important;
 	margin-bottom: 8px;
 	font-size: 11px;
-	text-align: center;
 }
 #offres .text {
 	background-color: #f3f3f3;
