@@ -199,7 +199,8 @@
     margin-bottom: 40px;
     margin-left: auto;
     margin-right: auto;
-    padding: 4px 15px 4px 15px;
+    padding: 11px 15px;
+    line-height: 22px;
     background-color: #9eb504;
     color: #fff;
     text-transform: uppercase;
@@ -233,7 +234,8 @@
     margin-bottom: 40px;
     margin-left: auto;
     margin-right: auto;
-    padding: 5px 15px 5px 15px;
+    padding: 11px 15px;
+    line-height: 22px;
     background-color: #9eb504;
     color: #fff;
     text-transform: uppercase;
@@ -753,7 +755,8 @@
     margin-bottom: 40px;
     margin-left: auto;
     margin-right: auto;
-    padding: 5px 15px 5px 15px;
+    padding: 11px 15px;
+    line-height: 22px;
     background-color: #9eb504;
     color: #fff;
     text-transform: uppercase;
@@ -830,7 +833,8 @@
     margin-bottom: 40px;
     margin-left: auto;
     margin-right: auto;
-    padding: 5px 15px 5px 15px;
+    padding: 11px 15px;
+    line-height: 22px;
     background-color: #9eb504;
     color: #fff;
     text-transform: uppercase;
