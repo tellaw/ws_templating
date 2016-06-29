@@ -228,14 +228,14 @@ jQuery(document).ready(function() {
     });
 
     // gestion des ancres pour les onglets
-    var anchor = "";
     if (window.location.href.indexOf("#") > 0) {
-        anchor = window.location.href.substring(window.location.href.indexOf("#")+1, window.location.href.length);
+        var anchor = window.location.href.substring(window.location.href.indexOf("#")+1, window.location.href.length);
         anchor = anchor.substring(anchor.indexOf("?"), anchor.length);
         jQuery("#"+anchor+"_link").click();
     }
     jQuery(".nav-tabs a").on("click", function(){
         var link = window.location.href;
+        var anchor = jQuery(this).attr("href");
         //affichage ou non de la freezone en col de droite
         if (anchor =="" || anchor == "#documents") {
             jQuery(".col-droite div.pub-bloc div.freezone").show();
