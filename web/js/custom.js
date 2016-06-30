@@ -232,19 +232,22 @@ jQuery(document).ready(function() {
         var anchor = window.location.href.substring(window.location.href.indexOf("#")+1, window.location.href.length);
         anchor = anchor.substring(anchor.indexOf("?"), anchor.length);
         jQuery("#"+anchor+"_link").click();
-        if (anchor != "documents") {
+        if (anchor != "documents" || anchor != "presentation" || anchor != "expert") {
             jQuery(".col-droite div.pub-bloc div.freezone").hide();
+            jQuery(".col-droite-2").hide();
         }
     }
     jQuery(".nav-tabs a").on("click", function(){
         var link = window.location.href;
         var anchor = jQuery(this).attr("href");
         //affichage ou non de la freezone en col de droite
-        if (anchor != "#documents") {
+        if (anchor != "#documents" || anchor != "#presentation" || anchor != "#expert") {
             jQuery(".col-droite div.pub-bloc div.freezone").hide();
+            jQuery(".col-droite-2").hide();
         }
         else {
             jQuery(".col-droite div.pub-bloc div.freezone").show();
+            jQuery(".col-droite-2").show();
         }
         //ajout de l'ancre dans l'url
         if (window.location.href.indexOf("#") > 0) {
