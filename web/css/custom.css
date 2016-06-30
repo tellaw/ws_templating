@@ -3356,7 +3356,7 @@ div.play-button {
 	}
 
 	.tb-cstm {
-		width: 300px;
+		width: 90%;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -3369,27 +3369,61 @@ div.play-button {
 		margin-top: 15px;
 	}
 
-	.devis{
-		width: 220px !important;
+	.devis, .tag-box--middle{
+		width: 100% !important;
 		padding-left: 0px;
 		padding-right: 0px;
 	}
 
 	.width-btn{
 		width: 175px;
+		margin:0;
 	}
 	.xs-padding-top-0{
 		padding-top:0px;
 	}
 	.padding-lft-5{
-		padding-left: 20px !important;
+		padding-left: 0px !important;
 	}
 	.xs-margin-left-devis {
 		margin-left: 30px !important;
 	}
+	.btn-offers--details {
+		margin-left:0 !important;
+	}
+	.tag-box {
+		padding-left:0;
+		padding-right:0;
+	}
 
+	.tag-box .licence {
+		padding-left:10px;
+	}
 
+	.tag-box .prices {
+		padding-right:10px;
+	}
 }
+
+@media screen and (max-width: 468px) {
+	.tb-cstm .col-xs-6 {
+		width: 100%
+	}
+	.tag-box .licence {
+		padding-left:10px;
+		height:40px;
+	}
+
+	.tag-box .prices {
+		padding-right:10px;
+	}
+	.devis, .tag-box--middle{
+		width: 100% !important;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+}
+
 @media screen and (max-width: 646px) {
 	.header-last-title {
 		font-size: 21px;
@@ -3409,9 +3443,10 @@ div.play-button {
 	}
 
 	.tb-cstm {
-		width: 300px;
+		width: 90%;
 		margin-left: auto;
 		margin-right: auto;
+		margin: 10px auto !important;
 	}
 
 	.img-offre {
@@ -3419,7 +3454,7 @@ div.play-button {
 	}
 
 	.devis{
-		width: 220px !important;
+		width: 100% !important;
 		padding-left: 0px;
 		padding-right: 5px;
 	}
@@ -3460,6 +3495,7 @@ div.play-button {
 		/* width: 664px; */
 		margin-left: auto;
 		margin-right: auto;
+		margin: 20px auto !important;
 	}
 	#mot-editrice {
 		width: 300px;

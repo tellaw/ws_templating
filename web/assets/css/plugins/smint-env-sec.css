@@ -176,7 +176,14 @@
 @media screen and (min-width: 426px) and (max-width: 768px) {
 
 	.inner {
-		/* width: 100%;*/
+		width: 100%;
+		/*margin-left: 15px !important;
+		margin-right: 15px !important;*/
+		background-color: #697277;
+	}
+
+	.fxd .inner {
+		/*width: 100%;*/
 		margin-left: 15px !important;
 		margin-right: 15px !important;
 		background-color: #697277;

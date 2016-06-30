@@ -471,7 +471,7 @@
 /* Tablette portrait and up */
 @media (min-width: 768px) {
   #sub-menu {
-    width: 750px; }
+    width: 720px; }
   .price-2 {
     float: right !important; }
   .menu-title {
