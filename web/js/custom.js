@@ -240,6 +240,7 @@ jQuery(document).ready(function() {
     jQuery(".nav-tabs a").on("click", function(){
         var link = window.location.href;
         var anchor = jQuery(this).attr("href");
+        console.log(anchor);
         //affichage ou non de la freezone en col de droite
         if (anchor != "#documents" || anchor != "#presentation" || anchor != "#expert") {
             jQuery(".col-droite div.pub-bloc div.freezone").hide();
