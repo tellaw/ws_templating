@@ -232,6 +232,9 @@ jQuery(document).ready(function() {
         var anchor = window.location.href.substring(window.location.href.indexOf("#")+1, window.location.href.length);
         anchor = anchor.substring(anchor.indexOf("?"), anchor.length);
         jQuery("#"+anchor+"_link").click();
+        if (anchor != "documents") {
+            jQuery(".col-droite div.pub-bloc div.freezone").hide();
+        }
     }
     jQuery(".nav-tabs a").on("click", function(){
         var link = window.location.href;
