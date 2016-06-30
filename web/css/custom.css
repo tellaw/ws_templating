@@ -3724,7 +3724,7 @@ a.abonnement-text:hover {
 }
 
 .badge-x {
-	background: #1b8bbb !important;
+	background: #1b8bbb;
 	position: relative;
 	top: 3px;
 	left: -15px;
@@ -3748,6 +3748,9 @@ a.abonnement-text:hover {
 	color: #fff;
 	font-weight: 400;
 	padding: 4px 2px;
+}
+.suspended {
+	background: #697277 !important;
 }
 .icon {
 	position: relative;
