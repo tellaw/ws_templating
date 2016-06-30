@@ -232,7 +232,7 @@ jQuery(document).ready(function() {
         var anchor = window.location.href.substring(window.location.href.indexOf("#")+1, window.location.href.length);
         anchor = anchor.substring(anchor.indexOf("?"), anchor.length);
         jQuery("#"+anchor+"_link").click();
-        if (anchor != "documents" || anchor != "presentation" || anchor != "expert") {
+        if (anchor != "documents" && anchor != "presentation" && anchor != "expert") {
             jQuery(".col-droite div.pub-bloc div.freezone").hide();
             jQuery(".col-droite-2").hide();
         }
@@ -242,7 +242,7 @@ jQuery(document).ready(function() {
         var anchor = jQuery(this).attr("href");
         console.log(anchor);
         //affichage ou non de la freezone en col de droite
-        if (anchor != "#documents" || anchor != "#presentation" || anchor != "#expert") {
+        if (anchor != "#documents" && anchor != "#presentation" && anchor != "#expert") {
             jQuery(".col-droite div.pub-bloc div.freezone").hide();
             jQuery(".col-droite-2").hide();
         }
