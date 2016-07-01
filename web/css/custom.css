@@ -4436,3 +4436,17 @@ td, th, tr{
 	 letter-spacing: 1px;
 	 font-weight:bold
  }
+ .sous-rubrique td {
+	 padding-left:0!important;
+	 padding-top: 20px!important;
+ }
+.sous-rubrique td span{
+	display:block;
+	padding-top: 20px!important;
+	border-top:1px solid #EEE;
+}
+.sous-rubrique:first-child td span{
+	display:block;
+	padding-top: 0px!important;
+	border-top:none!important;
+}
