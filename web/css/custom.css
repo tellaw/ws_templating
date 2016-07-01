@@ -3388,9 +3388,6 @@ div.play-button {
 	.xs-margin-left-devis {
 		margin-left: 30px !important;
 	}
-	.btn-offers--details {
-		margin-left:0 !important;
-	}
 	.tag-box {
 		padding-left:0;
 		padding-right:0;
@@ -3398,6 +3395,7 @@ div.play-button {
 
 	.tag-box .licence {
 		padding-left:10px;
+		height:40px;
 	}
 
 	.tag-box .prices {
@@ -3990,9 +3988,6 @@ a.abonnement-text:hover {
 	.fleche-menu {
 		margin-left: -30px;
 		margin-top: -10px;
-	}
-	.row-3-blocks {
-		margin-right: -15px;
 	}
 }
 @media screen and (max-width: 768px) {

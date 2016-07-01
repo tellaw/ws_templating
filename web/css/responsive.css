@@ -142,7 +142,7 @@
   #di-conf-popin .services-logo {
     display: none; }
   #sub-menu {
-    padding: 0 30px 0 0; }
+    padding: 0; }
   .badge-env {
     margin-top: 4px;
     background-color: #ea2336 !important;
