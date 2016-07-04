@@ -52,7 +52,6 @@ If you like Smint, or have suggestions on how it could be improved, send me a tw
 		};
 
 
-
 		return smintA.each( function(index) {
             
 			var id = jQuery(this).attr('href').split('#')[1];
@@ -63,8 +62,8 @@ If you like Smint, or have suggestions on how it could be improved, send me a tw
 
 			//Fill the menu
 			optionLocs.push(Array(
-				jQuery(mySelector+"."+id).position().top,
-				jQuery(mySelector+"."+id).height()+jQuery(mySelector+"."+id).position().top, id)
+				jQuery(mySelector+"."+id).offset().top,
+				jQuery(mySelector+"."+id).height()+jQuery(mySelector+"."+id).offset().top, id)
 			);
 			///////////////////////////////////
 
