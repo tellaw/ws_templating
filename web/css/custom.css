@@ -3761,12 +3761,12 @@ a.abonnement-text:hover {
 }
 
 .badge-x {
-	background: #1b8bbb;
+	background: #1b8bbb !important;
 	position: relative;
 	top: 3px;
 	left: -15px;
 	width: 21px;
-	padding-left: 4px !important;
+	padding-left: 3px !important;
 }
 
 .badge-xx {
