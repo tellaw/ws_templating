@@ -1089,7 +1089,7 @@ div[class^="element-wrapper-"] img {
 	position: fixed;
 	z-index: 100;
 	color: #fff;
-	top: 20%;
+	top: 264px;
 	right: 0px;
 }
 
@@ -1097,7 +1097,7 @@ div[class^="element-wrapper-"] img {
 	position: fixed;
 	z-index: 50;
 	color: #fff;
-	top: 20%;
+	top: 264px;
 	right: -220px;
 }
 
