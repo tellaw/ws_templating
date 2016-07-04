@@ -309,6 +309,43 @@ jQuery(document).ready(function() {
 
         jQuery('#accordion-1').children().each(function(index, element){
             var elem = jQuery(element).find('a').attr('id') == event.currentTarget.id;
+            console.log(elem);
+            if (jQuery(element).find('i').hasClass('fa-angle-up') && !(elem)) {
+                jQuery(jQuery(element).find('span')).removeClass('color-red');
+                jQuery(jQuery(element).find('i')).toggleClass('fa-angle-up fa-angle-down');
+                console.log('toto1');
+            }
+        });
+
+        if(jQuery(event.target).hasClass("accordion-toggle") ) {
+            jQuery(event.target).addClass('disabled');
+            jQuery(event.target.childNodes[1]).toggleClass('color-red');
+            jQuery(event.target.childNodes[2]).toggleClass('fa-angle-up fa-angle-down');
+            setTimeout(function(){ jQuery(event.target).removeClass('disabled'); }, 1000);
+            console.log('toto2');
+        }
+
+        if(jQuery(event.target).hasClass("title-element")) {
+            jQuery(event.target).addClass('disabled');
+            jQuery(event.target).toggleClass('color-red');
+            jQuery(event.target).next().toggleClass('fa-angle-up fa-angle-down');
+            setTimeout(function(){ jQuery(event.target).closest('a').removeClass('disabled'); }, 1000);
+            console.log('toto3');
+        }
+
+        if(jQuery(event.target).hasClass("fa")) {
+            jQuery(event.target).addClass('disabled');
+            jQuery(event.target).prev().toggleClass('color-red');
+            jQuery(event.target).toggleClass('fa-angle-up fa-angle-down');
+            setTimeout(function(){ jQuery(event.target).closest('a').removeClass('disabled'); }, 1000);
+            console.log('toto4');
+        }
+    });
+
+    jQuery('.offres.panel-title a').click(function(event) {
+
+        jQuery('#accordion-1').children().each(function(index, element){
+            var elem = jQuery(element).find('a').attr('id') == event.currentTarget.id;
             if (jQuery(element).find('i').hasClass('fa-angle-up') && !(elem)) {
                 jQuery(jQuery(element).find('span')).removeClass('color-red');
                 jQuery(jQuery(element).find('i')).toggleClass('fa-angle-up fa-angle-down');
@@ -318,38 +355,6 @@ jQuery(document).ready(function() {
         if(jQuery(event.target).hasClass("accordion-toggle") ) {
             jQuery(event.target).addClass('disabled');
             jQuery(event.target.childNodes[1]).toggleClass('color-red');
-            jQuery(event.target.childNodes[2]).toggleClass('fa-angle-up fa-angle-down');
-            setTimeout(function(){ jQuery(event.target).removeClass('disabled'); }, 1000);
-        }
-
-        if(jQuery(event.target).hasClass("title-element")) {
-            jQuery(event.target).addClass('disabled');
-            jQuery(event.target).toggleClass('color-red');
-            jQuery(event.target).next().toggleClass('fa-angle-up fa-angle-down');
-            setTimeout(function(){ jQuery(event.target).closest('a').removeClass('disabled'); }, 1000);
-        }
-
-        if(jQuery(event.target).hasClass("fa")) {
-            jQuery(event.target).addClass('disabled');
-            jQuery(event.target).prev().toggleClass('color-red');
-            jQuery(event.target).toggleClass('fa-angle-up fa-angle-down');
-            setTimeout(function(){ jQuery(event.target).closest('a').removeClass('disabled'); }, 1000);
-        }
-    });
-
-    jQuery('.offres.panel-title a').click(function(event) {
-
-        jQuery('#accordion-1').children().each(function(index, element){
-            var elem = jQuery(element).find('a').attr('id') == event.currentTarget.id;
-            if (jQuery(element).find('i').hasClass('fa-angle-up') && !(elem)) {
-                jQuery(jQuery(element).find('span')).removeClass('color-green');
-                jQuery(jQuery(element).find('i')).toggleClass('fa-angle-up fa-angle-down');
-            }
-        });
-
-        if(jQuery(event.target).hasClass("accordion-toggle") ) {
-            jQuery(event.target).addClass('disabled');
-            jQuery(event.target.childNodes[1]).toggleClass('color-green');
             jQuery(event.target.childNodes[2]).toggleClass('fa-angle-up fa-angle-down');
             setTimeout(function(){ jQuery(event.target).closest('a').removeClass('disabled'); }, 1000);
         }
@@ -363,7 +368,7 @@ jQuery(document).ready(function() {
 
         if(jQuery(event.target).hasClass("fa") ) {
             jQuery(event.target).closest('a').addClass('disabled');
-            jQuery(event.target).prev().toggleClass('color-green');
+            jQuery(event.target).prev().toggleClass('color-red');
             jQuery(event.target).toggleClass('fa-angle-up fa-angle-down');
             setTimeout(function(){ jQuery(event.target).closest('a').removeClass('disabled'); }, 1000);
         }
