@@ -4426,12 +4426,23 @@ td, th, tr{
 	 position:relative;
 	 z-index: 99;
  }
- .ez_content .expert h4 {
+.ez_content .expert {
+	margin:20px 0 0 0;
+}
+.ez_content .expert:first-child {
+	margin:0
+}
+.ez_content .expert h4,
+.ez_content .expert p b {
 	 color: #ea2336 !important;
 	 font-size:13px;
 	 letter-spacing: 1px;
-	 font-weight:bold
- }
+	 font-weight:bold;
+	 margin:0;
+}
+.ez_content .expert p {
+	margin:0;
+}
  .sous-rubrique td {
 	 padding-left:0!important;
 	 padding-top: 20px!important;
