@@ -427,9 +427,10 @@ function labnolIframe() {
     this.parentNode.replaceChild(iframe, this);
 }
 
-function simulationOnglets(link){
+function simulationOnglets(lien){
     var link = window.location.href;
-    var anchor = link;
+    var anchor = lien;
+
     //affichage ou non de la freezone en col de droite
     if (anchor != "#documents" && anchor != "#presentation" && anchor != "#expert") {
         jQuery(".col-droite div.pub-bloc div.freezone").hide();
@@ -443,5 +444,6 @@ function simulationOnglets(link){
     if (window.location.href.indexOf("#") > 0) {
         link = window.location.href.substring(0, window.location.href.indexOf("#"));
     }
-    window.location.href= link + anchor;
+    console.log(link);
+    jQuery(anchor+"_link").click();
 }

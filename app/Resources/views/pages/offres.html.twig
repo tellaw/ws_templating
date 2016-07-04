@@ -33,9 +33,9 @@
             {{ module("reassurance/reassurance-offre") }}
             <div class="tab-content tab-content-domaine">
                 <!--=== onglet presentation de l'offre ===-->
-                <div id="presentation" class="tab-pane fade in tab-bg active presentation-smint">
+                <section id="presentation" class="tab-pane fade in tab-bg active presentation-smint">
 
-                    <p class="text-center margin-top-35 margin-bottom-40 color-red-eti margin-right-200 font-size-17 letter-spacing-75">Les <span class="font-family-myriadpro-semibold text-uppercase">216 articles</span> de cette offre sont organisés en <span class="font-family-myriadpro-semibold text-uppercase">10 rubriques</span> &nbsp;&gt;&nbsp; <span class="font-family-myriadpro-semibold text-uppercase">18 nouveaux articles</span> ont été ajoutées cette semaine</p>
+                    <p class="text-center margin-top-35 margin-bottom-40 color-red-eti margin-right-200 font-size-17 letter-spacing-75">Les <span class="font-family-myriadpro-semibold text-uppercase">${count} articles</span> de cette offre sont organisés en <span class="font-family-myriadpro-semibold text-uppercase">${rubriqueCount} rubriques</span> &nbsp;&gt;&nbsp; Voir les derniers <a onclick="simulationOnglets('#maj');" href="#maj"><span class="color-red-eti font-family-myriadpro-semibold text-uppercase">ARTICLES PARUS</span></a></p>
 
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
@@ -55,10 +55,10 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
 
                 <!--=== onglet experts ===-->
-                <div id="expert" class="tab-pane fade tab-bg expert-smint">
+                <section id="expert" class="tab-pane fade tab-bg expert-smint">
                     <div class="mint margin-top-20 margin-bottom-20">
                         <div class="menu">
                             <p class="menuBtn">Experts scientifique et auteurs</p>
@@ -118,10 +118,10 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
 
                 <!--=== onglet mise a jour ===-->
-                <div id="maj" class="tab-pane fade tab-bg maj-smint">
+                <section id="maj" class="tab-pane fade tab-bg maj-smint">
                     <div class="mint margin-top-20 margin-bottom-20">
                         <div class="menu">
                             <p class="menuBtn">Les dernières mise a jour</p>
@@ -140,10 +140,10 @@
                     <p class="text-center margin-top-35 margin-bottom-40 color-red-eti margin-right-200 font-size-17 letter-spacing-75">Les <span class="font-family-myriadpro-semibold text-uppercase">216 articles</span> de cette offre sont organisés en <span class="font-family-myriadpro-semibold text-uppercase"> 10 rubriques</span></p>
 
                     {{ module("offre/maj") }}
-                </div>
+                </section>
 
                 <!--=== onglet avantages et détails ===-->
-                <div id="details" class="tab-pane fade tab-bg details-smint">
+                <section id="details" class="tab-pane fade tab-bg details-smint">
                     <div class="mint margin-top-20 margin-bottom-20">
                         <div class="menu">
                             <p class="menuBtn">Avantages et détails de l'offre</p>
@@ -195,10 +195,10 @@
 
                     {{ module("offre/detail") }}
 
-                </div>
+                </section>
 
                 <!--=== onglet rien ===-->
-                <div class="rien-smint tab-pane fade tab-bg" id="rien"></div>
+                <section class="rien-smint tab-pane fade tab-bg" id="rien"></section>
             </div>
         </div>
 
