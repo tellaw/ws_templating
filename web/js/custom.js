@@ -427,9 +427,9 @@ function labnolIframe() {
     this.parentNode.replaceChild(iframe, this);
 }
 
-function simulationOnglets(){
+function simulationOnglets(link){
     var link = window.location.href;
-    var anchor = jQuery(this).attr("href");
+    var anchor = link;
     //affichage ou non de la freezone en col de droite
     if (anchor != "#documents" && anchor != "#presentation" && anchor != "#expert") {
         jQuery(".col-droite div.pub-bloc div.freezone").hide();
