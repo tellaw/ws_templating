@@ -4443,7 +4443,7 @@ td, th, tr{
 .sous-rubrique td span{
 	display:block;
 	padding-top: 20px!important;
-	border-top:1px solid #EEE;
+	border-top:2px solid #E5E5E5;
 }
 .sous-rubrique:first-child td span{
 	display:block;
