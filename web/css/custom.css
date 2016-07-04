@@ -1694,6 +1694,7 @@ p.cellule-list {
 .tab-v1 .nav-tabs > .active > a:hover,
 .tab-v1 .nav-tabs > .active > a:focus {
 	background: #697277 !important;
+	padding: 5px 0;
 }
 .tab-v1 .tab-content img {
 	 margin-top: 0;
