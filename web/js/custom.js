@@ -426,3 +426,22 @@ function labnolIframe() {
     iframe.setAttribute("id", "youtube-iframe");
     this.parentNode.replaceChild(iframe, this);
 }
+
+function simulationOnglets(){
+    var link = window.location.href;
+    var anchor = jQuery(this).attr("href");
+    //affichage ou non de la freezone en col de droite
+    if (anchor != "#documents" && anchor != "#presentation" && anchor != "#expert") {
+        jQuery(".col-droite div.pub-bloc div.freezone").hide();
+        jQuery(".col-droite-2").hide();
+    }
+    else {
+        jQuery(".col-droite div.pub-bloc div.freezone").show();
+        jQuery(".col-droite-2").show();
+    }
+    //ajout de l'ancre dans l'url
+    if (window.location.href.indexOf("#") > 0) {
+        link = window.location.href.substring(0, window.location.href.indexOf("#"));
+    }
+    window.location.href= link + anchor;
+}
