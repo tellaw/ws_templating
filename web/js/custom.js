@@ -377,13 +377,13 @@ jQuery(document).ready(function() {
                 jQuery(jQuery(element).find('i')).toggleClass('fa-angle-up fa-angle-down');
             }
         });
-        jQuery('h4.panel-title a i').each(function(index, element) {
+        jQuery('.panel-title a i').each(function(index, element) {
             jQuery( element ).toggleClass('fa-angle-down fa-angle-up');
         });
         jQuery('.tout-ouvrir').text('Tout fermer');
     }, function() {
         jQuery('.panel-collapse.in').collapse('hide');
-        jQuery('h4.panel-title a i').each(function(index, element) {
+        jQuery('.panel-title a i').each(function(index, element) {
             jQuery( element ).toggleClass('fa-angle-down fa-angle-up');
         });
         jQuery('.tout-ouvrir').text('Tout ouvrir');
