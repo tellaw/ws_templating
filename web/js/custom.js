@@ -300,7 +300,6 @@ jQuery(document).ready(function() {
             var ui = '<div id="services-popin" role="dialog" style="display:none;z-index:1001;">' + '<iframe frameborder="0" style="width:100%;height:98%;" src=""></iframe>' + '</div>';
             jQuery("body").append(ui);
         }
-        //window.scrollTo(0, 0);
         jQuery("#services-popin").dialog({
             modal: true,
             title: jQuery(this).attr("title"),
@@ -308,7 +307,6 @@ jQuery(document).ready(function() {
             top: 100,
             closeText: "Fermer X",
             open: function() {
-                //window.scrollTo(0, 0);
                 return false;
             },
             close: function() {
@@ -316,7 +314,7 @@ jQuery(document).ready(function() {
                 return false;
             }
         });
-        jQuery("#services-popin").dialog("widget").attr("id", "design-services-popin").css("position", "fixed");
+        jQuery("#services-popin").dialog("widget").attr("id", "design-services-popin").css("position", "absolute");
         jQuery("#services-popin iframe").attr("src", jQuery(this).attr("href"));
         jQuery("#services-popin").dialog("widget").css("top", "70px");
 
