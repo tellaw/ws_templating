@@ -300,7 +300,7 @@ jQuery(document).ready(function() {
             var ui = '<div id="services-popin" role="dialog" style="display:none;z-index:1001;">' + '<iframe frameborder="0" style="width:100%;height:98%;" src=""></iframe>' + '</div>';
             jQuery("body").append(ui);
         }
-        window.scrollTo(0, 0);
+        //window.scrollTo(0, 0);
         jQuery("#services-popin").dialog({
             modal: true,
             title: jQuery(this).attr("title"),
