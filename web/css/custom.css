@@ -4434,8 +4434,11 @@ td, th, tr{
 	 z-index: 99;
  }
 .ez_content .expert ,
-.ez_content .expert .text > p{
+.ez_content .expert .text > p {
 	margin:20px 0 0 0;
+}
+.ez_content .expert .text h4 + p {
+	margin:0;
 }
 .ez_content .expert:first-child {
 	margin:0
