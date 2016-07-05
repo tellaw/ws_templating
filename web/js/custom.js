@@ -308,7 +308,7 @@ jQuery(document).ready(function() {
             top: 100,
             closeText: "Fermer X",
             open: function() {
-                window.scrollTo(0, 0);
+                //window.scrollTo(0, 0);
                 return false;
             },
             close: function() {
