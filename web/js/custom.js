@@ -13,9 +13,9 @@ jQuery( window ).ready(function() {
     }
 });
 
-$(document).ready(function() {
+jQuery(document).ready(function() {
     // add a hash to the URL when the user clicks on a tab
-    $('a[data-toggle="tab"]').on('click', function(e) {
+    jQuery('a[data-toggle="tab"]').on('click', function(e) {
         history.pushState(null, null, $(this).attr('href'));
     });
     // navigate to a tab when the history changes
@@ -24,7 +24,7 @@ $(document).ready(function() {
         if (activeTab.length) {
             activeTab.tab('show');
         } else {
-            $('.nav-tabs a:first').tab('show');
+            jQuery('.nav-tabs a:first').tab('show');
         }
     });
 });
