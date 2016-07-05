@@ -15,7 +15,9 @@ jQuery( window ).ready(function() {
 
 //gestion back des onglets page domaines/secteurs/offres
 jQuery(document).ready(function() {
-    history.pushState(null, null, jQuery('a[data-toggle="tab"]:first-child').attr('href'));
+    if (window.location.href.indexOf("#") > 0) {
+        history.pushState(null, null, jQuery('a[data-toggle="tab"]:first-child').attr('href'));
+    }
     // add a hash to the URL when the user clicks on a tab
     jQuery('a[data-toggle="tab"]').on('click', function(e) {
         history.pushState(null, null, jQuery(this).attr('href'));
