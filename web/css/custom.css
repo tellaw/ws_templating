@@ -4433,7 +4433,8 @@ td, th, tr{
 	 position:relative;
 	 z-index: 99;
  }
-.ez_content .expert {
+.ez_content .expert ,
+.ez_content .expert .text > p{
 	margin:20px 0 0 0;
 }
 .ez_content .expert:first-child {
