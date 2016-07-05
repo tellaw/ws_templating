@@ -13,6 +13,22 @@ jQuery( window ).ready(function() {
     }
 });
 
+$(document).ready(function() {
+    // add a hash to the URL when the user clicks on a tab
+    $('a[data-toggle="tab"]').on('click', function(e) {
+        history.pushState(null, null, $(this).attr('href'));
+    });
+    // navigate to a tab when the history changes
+    window.addEventListener("popstate", function(e) {
+        var activeTab = $('[href=' + location.hash + ']');
+        if (activeTab.length) {
+            activeTab.tab('show');
+        } else {
+            $('.nav-tabs a:first').tab('show');
+        }
+    });
+});
+
 jQuery(document).ready(function() {
     if ((jQuery(window).width() >= 992) && (jQuery(window).scrollTop() == 0)) {
         jQuery("#navbar-x").addClass("in");
@@ -240,7 +256,7 @@ jQuery(document).ready(function() {
     jQuery(".nav-tabs a").on("click", function(){
         var link = window.location.href;
         var anchor = jQuery(this).attr("href");
-        console.log(anchor);
+
         //affichage ou non de la freezone en col de droite
         if (anchor != "#documents" && anchor != "#presentation" && anchor != "#expert") {
             jQuery(".col-droite div.pub-bloc div.freezone").hide();
@@ -309,11 +325,10 @@ jQuery(document).ready(function() {
 
         jQuery('#accordion-1').children().each(function(index, element){
             var elem = jQuery(element).find('a').attr('id') == event.currentTarget.id;
-            console.log(elem);
+
             if (jQuery(element).find('i').hasClass('fa-angle-up') && !(elem)) {
                 jQuery(jQuery(element).find('span')).removeClass('color-red');
                 jQuery(jQuery(element).find('i')).toggleClass('fa-angle-up fa-angle-down');
-                console.log('toto1');
             }
         });
 
@@ -322,7 +337,6 @@ jQuery(document).ready(function() {
             jQuery(event.target.childNodes[1]).toggleClass('color-red');
             jQuery(event.target.childNodes[2]).toggleClass('fa-angle-up fa-angle-down');
             setTimeout(function(){ jQuery(event.target).removeClass('disabled'); }, 1000);
-            console.log('toto2');
         }
 
         if(jQuery(event.target).hasClass("title-element")) {
@@ -330,7 +344,6 @@ jQuery(document).ready(function() {
             jQuery(event.target).toggleClass('color-red');
             jQuery(event.target).next().toggleClass('fa-angle-up fa-angle-down');
             setTimeout(function(){ jQuery(event.target).closest('a').removeClass('disabled'); }, 1000);
-            console.log('toto3');
         }
 
         if(jQuery(event.target).hasClass("fa")) {
@@ -338,7 +351,6 @@ jQuery(document).ready(function() {
             jQuery(event.target).prev().toggleClass('color-red');
             jQuery(event.target).toggleClass('fa-angle-up fa-angle-down');
             setTimeout(function(){ jQuery(event.target).closest('a').removeClass('disabled'); }, 1000);
-            console.log('toto4');
         }
     });
 
@@ -449,6 +461,5 @@ function simulationOnglets(lien){
     if (window.location.href.indexOf("#") > 0) {
         link = window.location.href.substring(0, window.location.href.indexOf("#"));
     }
-    console.log(link);
     jQuery(anchor+"_link").click();
 }
