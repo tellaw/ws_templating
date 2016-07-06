@@ -4179,9 +4179,6 @@ td, th, tr{
 	.txt-centrer {
 		text-align: center;
 	}
-	#bande {
-		height: 550px;
-	}
 }
 
 @media screen and (min-width: 426px) and (max-width: 767px) {
