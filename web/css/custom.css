@@ -2647,12 +2647,11 @@ div.play-button {
 	position: relative;
 	z-index: 10;
 }
-#menu-smint {
+#menu-smint section.tab-pane {
 	position: relative;
 	z-index: 9;
-	top:-180px;
-	margin-bottom:-180px;
-	padding-top:180px;
+	top:-300px;
+	padding-top:265px;
 }
 #header.abo {
 	margin-bottom: 30px;
@@ -3697,6 +3696,8 @@ div.play-button {
 	height: 100%;
 	padding-top: 30px;
 	padding-bottom: 30px;
+	position: relative;
+	z-index: 2;
 }
 .title-icon {
 	display: inline-block;
