@@ -1320,6 +1320,7 @@ div[class^="element-wrapper-"] img {
 	border: 1px #ea2336 solid;
 	color: #ea2336;
 	background-color: rgba(149, 165, 166, 0);
+	background: #fff;
 	font-size: 10px;
 	padding-top: 3px;
 	padding-bottom: 3px;
@@ -1877,6 +1878,8 @@ p.cellule-list {
 .pub-bloc > p {
 	position:absolute;
 	top:-18px;
+	left: 50%;
+	margin-left: -150px;
 }
 .pub-width{
 	width: 300px !important;
@@ -2014,6 +2017,9 @@ p.cellule-list {
 }
 .font-size-17 {
 	font-size: 17px !important;
+}
+.font-size-18 {
+	font-size: 18px !important;
 }
 .font-size-26 {
 	font-size: 26px !important;
@@ -2190,6 +2196,10 @@ div.play-button {
 
 .font-family-myriadpro-semibold {
 	font-family: 'myriad-pro-semi-bold';
+}
+
+.font-family-myriadpro {
+	font-family: 'myriad-pro';
 }
 .letter-spacing-1 {
 	letter-spacing: 1px;
@@ -2897,6 +2907,9 @@ div.play-button {
 	padding:0 15px 15px 15px;
 }
 
+.panel-custom .panel-body u.title-element:hover {
+	color:#EA2336;
+}
 .offer-text {
 	font-size: 19px;
 	padding-left: 25px;
@@ -3685,14 +3698,23 @@ div.play-button {
 	padding-left: 40px;
 	padding-right: 40px;
 }
-.menu-abonnee-pos a:hover p[class*="-img"] i {
+.abo a:hover p[class*="-img"] i {
 	color:#1B8BBB !important;
 	border: 1.5px solid #1B8BBB;
 }
-.menu-abonnee-pos a:hover p[class*="-text"] {
+.abo a:hover p[class*="-text"] {
 	background: #1B8BBB;
 	color:#fff;
 	border: 1.5px solid #1B8BBB;
+}
+.no-abo a:hover p[class*="-img"] i {
+	color:#697277 !important;
+	border: 1.5px solid #697277;
+}
+.no-abo a:hover p[class*="-text"] {
+	background: #697277;
+	color:#fff;
+	border: 1.5px solid #697277;
 }
 .abonnement-img {
 	margin-bottom: 0px;
@@ -3706,16 +3728,18 @@ div.play-button {
 	padding: 1px;
 	margin-top: -1px;
 	padding-top: 4px;
+	background: #fff;
 }
 .abonnement-text {
-	height: 26px;
+	height: 21px;
 	line-height: 14px;
-	font-size: 13px;
+	font-size: 12px;
 	border: 1.5px solid #697277;
-	padding: 6px 10px 7px 10px;
+	padding: 3px 10px 0px 10px;
 	text-align: center;
 	display: block;
 	width: 100%;
+	background: #fff;
 }
 
 a.abonnement-text {
@@ -3788,6 +3812,7 @@ a.abonnement-text:hover {
 	color: #fff;
 	font-weight: 400;
 	padding: 4px 2px;
+	margin:0;
 }
 .suspended {
 	background: #697277 !important;
@@ -4105,7 +4130,7 @@ td, th, tr{
 }
 @media (min-width: 768px) and (max-width: 991px) {
 	.snd-row {
-		margin-top: 10px;
+		margin-top: 0px;
 		margin-left: 0px;
 		margin-right: 0px;
 	}
@@ -4188,7 +4213,7 @@ td, th, tr{
 
 	}
 
-	.annuaire,
+	.article,
 	.dictionnaire,
 	.questions,
 	.complement {
@@ -4228,6 +4253,9 @@ td, th, tr{
 	.rwd-break {
 		display: none;
 	}
+	.offers-title {
+		margin-bottom:10px;
+	}
 }
 @media screen and (max-width: 991px) {
 	.md-display {
@@ -4240,7 +4268,7 @@ td, th, tr{
 }
 
 
-.complement {
+.no-abo {
 	opacity: 0.5 !important;
 }
 @media screen and (min-width: 992px) {
@@ -4264,9 +4292,6 @@ td, th, tr{
 	.icon {
 		margin-left: -30px;
 	}
-	.snd-row {
-		margin-left: -45px;
-	}
 	.complement {
 		margin-left: -15px;
 		margin-right: 15px;
@@ -4279,11 +4304,17 @@ td, th, tr{
 		margin-left: -10px;
 		margin-right: -10px;
 	}
-	.annuaire,
+	.article,
 	.dictionnaire,
 	.questions,
 	.complement {
-		margin-top: 7px;
+		text-align: center;
+	}
+	.article a,
+	.dictionnaire a,
+	.questions a,
+	.complement a {
+		display: inline-block;
 	}
 	.calage-menu-abonnees {
 		margin-right: -50px;
@@ -4297,26 +4328,17 @@ td, th, tr{
 	}
 }
 @media screen and (min-width: 1200px) {
-	.annuaire {
-		margin-right: 20px;
-	}
-	.complement {
-		margin-left: -50px;
-		margin-right: 65px;
-	}
-	.dictionnaire {
-		margin-left: -35px;
-		margin-right: 20px;
-	}
-	.questions {
-		margin-left: -35px;
-		margin-right: 35px;
-	}
-	.annuaire,
+	.article,
 	.dictionnaire,
 	.questions,
 	.complement {
-		margin-top: 7px;
+		text-align: center;
+	}
+	.article a,
+	.dictionnaire a,
+	.questions a,
+	.complement a {
+		display: inline-block;
 	}
 	.calage-menu-abonnees {
 		margin-right: -50px;
@@ -4329,9 +4351,6 @@ td, th, tr{
 	}
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-	#bande {
-		height: 250px;
-	}
 	.sm-padding-left-30 {
 		padding-left: 30px !important;
 	}
@@ -4356,7 +4375,7 @@ td, th, tr{
 		margin-top: 5px;
 		margin-left: 0px;
 	}
-	.annuaire,
+	.article,
 	.dictionnaire,
 	.questions,
 	.complement {
@@ -4369,11 +4388,14 @@ td, th, tr{
 	}
 }
 @media screen and (max-width: 340px) {
-	.annuaire,
+	.article,
 	.dictionnaire,
 	.questions,
 	.complement {
 		width: 80%;
+	}
+	.offers-title {
+		margin-bottom:10px;
 	}
 }
 
