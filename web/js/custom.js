@@ -300,15 +300,14 @@ jQuery(document).ready(function() {
             var ui = '<div id="services-popin" role="dialog" style="display:none;z-index:1001;">' + '<iframe frameborder="0" style="width:100%;height:98%;" src=""></iframe>' + '</div>';
             jQuery("body").append(ui);
         }
-        var top = jQuery(this).offset().top - jQuery(window).height() / 2;
+        var top = jQuery(this).offset().top;
         jQuery("#services-popin").dialog({
             modal: true,
             title: jQuery(this).attr("title"),
             width: 920,
-            top: 100,
             closeText: "Fermer X",
             open: function() {
-                window.scrollTo(0, top);
+                window.scrollTo(0, top - jQuery(window).height() / 2);
                 return false;
             },
             close: function() {
@@ -318,7 +317,7 @@ jQuery(document).ready(function() {
         });
         jQuery("#services-popin").dialog("widget").attr("id", "design-services-popin").css("position", "absolute");
         jQuery("#services-popin iframe").attr("src", jQuery(this).attr("href"));
-        jQuery("#services-popin").dialog("widget").css("top", "70px");
+        jQuery("#services-popin").dialog("widget").css("top", top - jQuery(window).height() / 4);
 
         jQuery("#design-services-popin").css("left", ((jQuery(window).width()-jQuery("#design-services-popin").width())/2));
         jQuery("#design-services-popin").css("height", "295px");
