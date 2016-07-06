@@ -300,8 +300,7 @@ jQuery(document).ready(function() {
             var ui = '<div id="services-popin" role="dialog" style="display:none;z-index:1001;">' + '<iframe frameborder="0" style="width:100%;height:98%;" src=""></iframe>' + '</div>';
             jQuery("body").append(ui);
         }
-        window.scrollTo(0, jQuery(this).offset().top - jQuery(window).height() / 2);
-
+        var top = jQuery(this).offset().top - jQuery(window).height() / 2;
         jQuery("#services-popin").dialog({
             modal: true,
             title: jQuery(this).attr("title"),
@@ -309,6 +308,7 @@ jQuery(document).ready(function() {
             top: 100,
             closeText: "Fermer X",
             open: function() {
+                window.scrollTo(0, top);
                 return false;
             },
             close: function() {
