@@ -320,7 +320,7 @@ jQuery(document).ready(function() {
         });
         jQuery("#services-popin").dialog("widget").attr("id", "design-services-popin").css("position", "absolute");
         jQuery("#services-popin iframe").attr("src", jQuery(this).attr("href"));
-        jQuery("#services-popin").dialog("widget").css("top", top - jQuery(window).height() / 43);
+        jQuery("#services-popin").dialog("widget").css("top", top - jQuery(window).height() / 3);
 
         jQuery("#design-services-popin").css("left", ((jQuery(window).width()-jQuery("#design-services-popin").width())/2));
         jQuery("#design-services-popin").css("height", "295px");
