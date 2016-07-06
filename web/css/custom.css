@@ -2388,9 +2388,9 @@ div.play-button {
 
 .col-droite-2 {
 	position: absolute;
-	top: 71px;
+	top: 106px;
 	right: -9px;
-	z-index: 1;
+	z-index: 9;
 }
 
 /*POPIN CONFERENCES*/
@@ -2651,7 +2651,7 @@ div.play-button {
 	position: relative;
 	z-index: 9;
 	top:-300px;
-	padding-top:265px;
+	padding-top:300px;
 }
 #header.abo {
 	margin-bottom: 30px;
@@ -3924,6 +3924,8 @@ a.abonnement-text:hover {
 	margin-right: 0;
 	margin-left: 0;
 	height: 100%;
+	position: relative;
+	z-index: 2;
 }
 .tb-cstm-abonnees {
 	margin-top: 40px;
