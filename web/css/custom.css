@@ -2388,9 +2388,9 @@ div.play-button {
 
 .col-droite-2 {
 	position: absolute;
-	top: 106px;
+	top: 71px;
 	right: -9px;
-	z-index: 9;
+	z-index: 1;
 }
 
 /*POPIN CONFERENCES*/
@@ -2644,14 +2644,6 @@ div.play-button {
 	background-repeat: no-repeat;
 	background-size: 100% 300px;
 	padding: 25px 0px;
-	position: relative;
-	z-index: 10;
-}
-#menu-smint section.tab-pane {
-	position: relative;
-	z-index: 9;
-	top:-300px;
-	padding-top:300px;
 }
 #header.abo {
 	margin-bottom: 30px;
@@ -3696,8 +3688,6 @@ div.play-button {
 	height: 100%;
 	padding-top: 30px;
 	padding-bottom: 30px;
-	position: relative;
-	z-index: 2;
 }
 .title-icon {
 	display: inline-block;
@@ -3924,8 +3914,6 @@ a.abonnement-text:hover {
 	margin-right: 0;
 	margin-left: 0;
 	height: 100%;
-	position: relative;
-	z-index: 2;
 }
 .tb-cstm-abonnees {
 	margin-top: 40px;
