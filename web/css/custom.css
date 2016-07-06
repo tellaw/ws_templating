@@ -2644,6 +2644,15 @@ div.play-button {
 	background-repeat: no-repeat;
 	background-size: 100% 300px;
 	padding: 25px 0px;
+	position: relative;
+	z-index: 10;
+}
+#menu-smint {
+	position: relative;
+	z-index: 9;
+	top:-180px;
+	margin-bottom:-180px;
+	padding-top:180px;
 }
 #header.abo {
 	margin-bottom: 30px;
