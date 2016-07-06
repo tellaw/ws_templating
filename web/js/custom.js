@@ -301,6 +301,9 @@ jQuery(document).ready(function() {
             jQuery("body").append(ui);
         }
         var top = jQuery(this).offset().top;
+        console.log(top);
+        console.log(top - jQuery(window).height() / 2);
+        console.log(top - jQuery(window).height() / 4);
         jQuery("#services-popin").dialog({
             modal: true,
             title: jQuery(this).attr("title"),
