@@ -1255,6 +1255,7 @@ div[class^="element-wrapper-"] img {
 	font-weight: 800;
 	font-size: 15px;
 	text-transform: uppercase;
+	line-height: 14px;
 }
 
 .offres-paddings {
