@@ -2645,7 +2645,9 @@ div.play-button {
 	background-size: 100% 300px;
 	padding: 25px 0px;
 }
-
+#header.abo {
+	margin-bottom: 30px;
+}
 #main-menu.header {
 	margin-bottom: 35px;
 }
