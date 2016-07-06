@@ -2380,20 +2380,6 @@ div.play-button {
 	text-decoration: underline;
 }
 
-.col-droite {
-	position: absolute;
-	top: 92px;
-	right: -9px;
-	z-index: 10;
-}
-
-.col-droite-2 {
-	position: absolute;
-	top: 106px;
-	right: -9px;
-	z-index: 9;
-}
-
 /*POPIN CONFERENCES*/
 #di-conf-popin {height:auto!important;padding: .5em 1em .5em 1em;}
 #di-conf-popin p {display:inline-block;}
@@ -3224,6 +3210,19 @@ div.play-button {
 		z-index: 9;
 		top:-300px;
 		padding-top:300px;
+	}
+	.col-droite {
+		position: absolute;
+		top: 92px;
+		right: -9px;
+		z-index: 10;
+	}
+
+	.col-droite-2 {
+		position: absolute;
+		top: 106px;
+		right: -9px;
+		z-index: 9;
 	}
 }
 
