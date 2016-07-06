@@ -1291,15 +1291,14 @@ div[class^="element-wrapper-"] img {
 	padding-top: 10px;
 	padding-left: 0px;
 	padding-right: 0px;
+	position: relative;
+	z-index: 10;
 }
 
 .domaine-secteur-box img {
 	width: 80px;
 	display:block;
 }
-
-
-
 
 .text-9eb504 {
 	color: #9eb504;
@@ -2382,15 +2381,16 @@ div.play-button {
 
 .col-droite {
 	position: absolute;
-	top: 74px;
+	top: 92px;
 	right: -9px;
+	z-index: 10;
 }
 
 .col-droite-2 {
 	position: absolute;
-	top: 71px;
+	top: 106px;
 	right: -9px;
-	z-index: 1;
+	z-index: 9;
 }
 
 /*POPIN CONFERENCES*/
@@ -2644,6 +2644,14 @@ div.play-button {
 	background-repeat: no-repeat;
 	background-size: 100% 300px;
 	padding: 25px 0px;
+	position: relative;
+	z-index: 10;
+}
+#menu-smint section.tab-pane {
+	position: relative;
+	z-index: 9;
+	top:-300px;
+	padding-top:300px;
 }
 #header.abo {
 	margin-bottom: 30px;
@@ -3688,6 +3696,8 @@ div.play-button {
 	height: 100%;
 	padding-top: 30px;
 	padding-bottom: 30px;
+	position: relative;
+	z-index: 2;
 }
 .title-icon {
 	display: inline-block;
@@ -3914,6 +3924,8 @@ a.abonnement-text:hover {
 	margin-right: 0;
 	margin-left: 0;
 	height: 100%;
+	position: relative;
+	z-index: 2;
 }
 .tb-cstm-abonnees {
 	margin-top: 40px;
