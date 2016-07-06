@@ -1,6 +1,6 @@
 # global settings
 name: Magento PimLink
-email: ewallet@weka.fr
+email: fguerard@weka.fr
 notifications: true
 logging: true
 maxlogs: 30
