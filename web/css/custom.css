@@ -3205,12 +3205,6 @@ div.play-button {
 	.tag-box--right {
 		margin-left: 1px;
 	}
-	#menu-smint section.tab-pane {
-		position: relative;
-		z-index: 9;
-		top:-300px;
-		padding-top:300px;
-	}
 	.col-droite {
 		position: absolute;
 		top: 92px;
