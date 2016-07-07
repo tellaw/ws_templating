@@ -794,6 +794,11 @@ div[class^="element-wrapper-"] img {
 	color: #ea2336;
 }
 
+.owl-custom-left:hover,
+.owl-custom-right:hover {
+	cursor:pointer;
+}
+
 .mos-img-1 {
 	width: 100%;
 }
@@ -2960,6 +2965,7 @@ div.play-button {
 
 .carousel-title-adds {
 	letter-spacing: 1px;
+	height:44px;
 }
 
 .carousel-cat-adds {
@@ -2968,6 +2974,7 @@ div.play-button {
 
 .carousel-text {
 	letter-spacing: 0.4px;
+	height:54px;
 }
 
 .slider-digit-offers {
@@ -3656,10 +3663,8 @@ div.play-button {
 }
 
 .offre-img {
-	width: 170px !important;
+	width: auto !important;
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
 }
 
 @media (max-width: 425px) {

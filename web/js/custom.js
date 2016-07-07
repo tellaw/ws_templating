@@ -92,7 +92,7 @@ jQuery(document).ready(function() {
     });
 
     jQuery(".owl-carousel").owlCarousel({
-        loop: false,
+        loop: true,
         responsiveClass: true,
         slideBy: 2,
         responsive: {
