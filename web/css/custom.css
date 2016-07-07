@@ -1241,19 +1241,16 @@ div[class^="element-wrapper-"] img {
 
 .dl-horizontal dd {
 	text-align: left;
-	text-transform: uppercase;
 	font-size: 12px;
 	margin-top: -2px;
 	margin-bottom: 8px;
+	letter-spacing: 0.75px;
 }
 
 .box-colors {
 	background-color: #f4f3f3 !important;
 	color: #697277 !important;
 }
-
-
-
 
 .offres-title {
 	color: #ea2336 !important;
@@ -1397,6 +1394,8 @@ div[class^="element-wrapper-"] img {
 
 .cellule-list {
 	margin-left: 190px;
+	font-size:13px;
+	letter-spacing: 0.75px;
 }
 p.cellule-list {
 	margin-bottom:0px;
@@ -3031,6 +3030,7 @@ div.play-button {
 	top: 26px;
 	font-size: 20px;
 	color: #9eb504;
+	left : 35px;
 }
 
 #mot-editrice .fa-angle-double-right {
@@ -3266,7 +3266,7 @@ div.play-button {
 
 	#mot-editrice .fa-angle-double-left {
 		top: 25px;
-		left: 45px;
+		left: 35px;
 	}
 
 	#mot-editrice .fa-angle-double-right {
@@ -3328,7 +3328,7 @@ div.play-button {
 	}
 
 	#mot-editrice .fa-angle-double-right {
-		left: 290px;
+		left: 270px;
 	}
 
 	#temoignages .testimonials .carousel-control.left {
@@ -4115,7 +4115,7 @@ td, th, tr{
 	width: 128px;
 }
 .cv-text {
-	font-size: 11px;
+	font-size: 12px;
 	letter-spacing: 0.8px;
 	margin:0;
 }
