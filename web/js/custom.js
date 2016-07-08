@@ -330,6 +330,7 @@ jQuery(document).ready(function() {
     });
 
     jQuery('.visiteur.panel-title a').click(function(event) {
+        console.log(event);
 
         jQuery('#accordion-1').children().each(function(index, element){
             var elem = jQuery(element).find('a').attr('id') == event.currentTarget.id;
