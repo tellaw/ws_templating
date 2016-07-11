@@ -195,7 +195,7 @@ $color-red : #ea2336 ;
 }
 
 /* Mobile portrait */
-@media (max-width: 425px) {
+@media screen and (max-width: 425px) {
   .timeline-v2 > li .cbp_tmlabel {
     padding-top: 0px;
   }
@@ -1055,7 +1055,7 @@ $color-red : #ea2336 ;
 }
 
 /* Tablette portrait and up */
-@media (min-width: 768px){
+@media screen and (min-width: 768px){
   #sub-menu {
     width: 720px;
   }
@@ -1385,7 +1385,7 @@ $color-red : #ea2336 ;
 }
 
 /* Medium and down */
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
   .navbar-mods {
     padding-right: 0px !important;
     padding-left: 0px !important;
@@ -1435,7 +1435,7 @@ $color-red : #ea2336 ;
   }
 }
 
-@media (max-width: 992px) {
+@media screen and (max-width: 992px) {
   .row {
     &.margin-top-30 {
       margin-top:0px !important;
@@ -1469,7 +1469,7 @@ $color-red : #ea2336 ;
   }
 }
 /* Medium and up */
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   .no-gutters-md {
     padding-left: 0;
     padding-right: 0;
@@ -1662,7 +1662,7 @@ $color-red : #ea2336 ;
 }
 
 /* Large à intermédiaire bootstrap */
-@media (min-width: 992px) and (max-width: 1200px)  {
+@media screen and (min-width: 992px) and (max-width: 1200px)  {
   #cellule-list {
     margin-left: 157px;
   }
