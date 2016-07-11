@@ -980,7 +980,15 @@
     right: 0;
     float: none; }
   #presentation-smint, #expert-smint, #maj-smint, #details-smint {
-    margin: 0px 25px; }
+    margin: 0px 25px; } }
+
+/* Medium and up */
+@media screen and (min-width: 992px) {
+  .no-gutters-md {
+    padding-left: 0;
+    padding-right: 0; }
+  .br_tablet {
+    display: none; }
   .tag-box--right {
     margin-left: 1px; }
   .col-droite {
@@ -992,15 +1000,7 @@
     position: absolute;
     top: 106px;
     right: -9px;
-    z-index: 9; } }
-
-/* Medium and up */
-@media screen and (min-width: 992px) {
-  .no-gutters-md {
-    padding-left: 0;
-    padding-right: 0; }
-  .br_tablet {
-    display: none; }
+    z-index: 9; }
   .mv-image-1 {
     margin-bottom: 35px !important; }
   .tag-box--middle {

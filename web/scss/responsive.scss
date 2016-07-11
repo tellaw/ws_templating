@@ -1450,7 +1450,16 @@ $color-red : #ea2336 ;
   #presentation-smint, #expert-smint, #maj-smint, #details-smint {
     margin: 0px 25px;
   }
-
+}
+/* Medium and up */
+@media screen and (min-width: 992px) {
+  .no-gutters-md {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .br_tablet {
+    display: none;
+  }
   .tag-box--right {
     margin-left: 1px;
   }
@@ -1466,16 +1475,6 @@ $color-red : #ea2336 ;
     top: 106px;
     right: -9px;
     z-index: 9;
-  }
-}
-/* Medium and up */
-@media screen and (min-width: 992px) {
-  .no-gutters-md {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .br_tablet {
-    display: none;
   }
   .mv-image-1 {
     margin-bottom: 35px !important;
