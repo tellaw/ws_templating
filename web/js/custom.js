@@ -329,17 +329,7 @@ jQuery(document).ready(function() {
         return false;
     });
 
-    jQuery('.visiteur.panel-title a').click(function(event) {
-        console.log(event);
-
-        jQuery('#accordion-1').children().each(function(index, element){
-            var elem = jQuery(element).find('a').attr('id') == event.currentTarget.id;
-
-            if (jQuery(element).find('i').hasClass('fa-angle-up') && !(elem)) {
-                jQuery(jQuery(element).find('span')).removeClass('color-red');
-                jQuery(jQuery(element).find('i')).toggleClass('fa-angle-up fa-angle-down');
-            }
-        });
+    jQuery('.panel-title a').click(function(event) {
 
         if(jQuery(event.target).hasClass("accordion-toggle") ) {
             jQuery(event.target).addClass('disabled');
@@ -363,56 +353,29 @@ jQuery(document).ready(function() {
         }
     });
 
-    jQuery('.offres.panel-title a').click(function(event) {
-
-        jQuery('#accordion-1').children().each(function(index, element){
-            var elem = jQuery(element).find('a').attr('id') == event.currentTarget.id;
-            if (jQuery(element).find('i').hasClass('fa-angle-up') && !(elem)) {
-                jQuery(jQuery(element).find('span')).removeClass('color-red');
-                jQuery(jQuery(element).find('i')).toggleClass('fa-angle-up fa-angle-down');
-            }
-        });
-
-        if(jQuery(event.target).hasClass("accordion-toggle") ) {
-            jQuery(event.target).addClass('disabled');
-            jQuery(event.target.childNodes[1]).toggleClass('color-red');
-            jQuery(event.target.childNodes[2]).toggleClass('fa-angle-up fa-angle-down');
-            setTimeout(function(){ jQuery(event.target).closest('a').removeClass('disabled'); }, 1000);
+    var active = true;
+    jQuery('.tout-ouvrir').click(function () {
+        if (active) {
+            active = false;
+            jQuery('.panel-collapse').collapse('show');
+            jQuery('#accordion-1 .panel-title a').each(function(index, element) {
+                if (jQuery(this).find('i').hasClass('fa-angle-down')) {
+                    jQuery(this).find('i').toggleClass('fa-angle-down fa-angle-up');
+                    jQuery(this).find('span').addClass('color-red');
+                }
+            });
+            jQuery('.tout-ouvrir').text('Tout fermer');
+        } else {
+            active = true;
+            jQuery('.panel-collapse').collapse('hide');
+            jQuery('#accordion-1 .panel-title a').each(function(index, element) {
+                if (jQuery(this).find('i').hasClass('fa-angle-up')) {
+                    jQuery(this).find('i').toggleClass('fa-angle-up fa-angle-down');
+                    jQuery(this).find('span').removeClass('color-red');
+                }
+            });
+            jQuery('.tout-ouvrir').text('Tout ouvrir');
         }
-
-        if(jQuery(event.target).hasClass("title-element") ) {
-            jQuery(event.target).closest('a').addClass('disabled');
-            jQuery(event.target).toggleClass('color-green');
-            jQuery(event.target).next().toggleClass('fa-angle-up fa-angle-down');
-            setTimeout(function(){ jQuery(event.target).closest('a').removeClass('disabled'); }, 1000);
-        }
-
-        if(jQuery(event.target).hasClass("fa") ) {
-            jQuery(event.target).closest('a').addClass('disabled');
-            jQuery(event.target).prev().toggleClass('color-red');
-            jQuery(event.target).toggleClass('fa-angle-up fa-angle-down');
-            setTimeout(function(){ jQuery(event.target).closest('a').removeClass('disabled'); }, 1000);
-        }
-    });
-
-    jQuery('.tout-ouvrir').toggle(function() {
-        jQuery('.panel-collapse:not(".in")').collapse('show');
-        jQuery('#accordion-1').children().each(function(index, element){
-            if (jQuery(element).find('i').hasClass('fa-angle-up')) {
-                jQuery(jQuery(element).find('span')).removeClass('color-red');
-                jQuery(jQuery(element).find('i')).toggleClass('fa-angle-up fa-angle-down');
-            }
-        });
-        jQuery('.panel-title a i').each(function(index, element) {
-            jQuery( element ).toggleClass('fa-angle-down fa-angle-up');
-        });
-        jQuery('.tout-ouvrir').text('Tout fermer');
-    }, function() {
-        jQuery('.panel-collapse.in').collapse('hide');
-        jQuery('.panel-title a i').each(function(index, element) {
-            jQuery( element ).toggleClass('fa-angle-down fa-angle-up');
-        });
-        jQuery('.tout-ouvrir').text('Tout ouvrir');
     });
 
     jQuery('#accordion-1').on('shown.bs.collapse', function (e) {
@@ -422,6 +385,7 @@ jQuery(document).ready(function() {
                 scrollTop: jQuery(offset).offset().top -180
             }, 500);
         }
+        if (active) $('#accordion .in').collapse('hide');
     });
 
     jQuery(".zoning")
