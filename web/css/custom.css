@@ -3276,12 +3276,16 @@ td, th, tr{
 #header-rubrique .nav-rubrique * {
 	color: #babec1 !important;
 	letter-spacing: 0.75px;
+	margin-bottom:0;
 }
 #header-rubrique .nav-rubrique a {
 	font-family: myriad-pro-semi-bold;
 	font-size: 14px;
 	display: block;
 	min-height:40px;
+}
+#header-rubrique .nav-rubrique a span {
+	color:#FFF !important;
 }
 #header-rubrique .nav-rubrique:hover * {
 	color: #697277 !important;
