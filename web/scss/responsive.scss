@@ -627,7 +627,8 @@ $color-red : #ea2336 ;
   .font-size-24-22-20 {
     font-size: 22px !important;
   }
-  #mot-editrice {
+  #mot-editrice ,
+  #desc-rubrique{
     padding-right: 30px;
     padding-left: 29px;
     padding-bottom: 0px !important;
@@ -744,7 +745,8 @@ $color-red : #ea2336 ;
   }
 }
 @media screen and (max-width: 424px) {
-  #mot-editrice {
+  #mot-editrice,
+  #desc-rubrique {
     padding-right: 30px;
     padding-left: 29px;
     padding-bottom: 0px !important;
@@ -836,7 +838,8 @@ $color-red : #ea2336 ;
     margin-right: auto;
     margin: 20px auto !important;
   }
-  #mot-editrice {
+  #mot-editrice,
+  #desc-rubrique {
     width: 300px;
   }
   #temoignages {
@@ -2084,7 +2087,7 @@ $color-red : #ea2336 ;
     }
   }
 
-  #temoignages, #mot-editrice {
+  #temoignages, #mot-editrice, #desc-rubrique {
     width: 320px;
   }
 

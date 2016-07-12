@@ -463,7 +463,8 @@
     margin-top: 10px; }
   .font-size-24-22-20 {
     font-size: 22px !important; }
-  #mot-editrice {
+  #mot-editrice,
+  #desc-rubrique {
     padding-right: 30px;
     padding-left: 29px;
     padding-bottom: 0px !important; }
@@ -538,7 +539,8 @@
     line-height: 1.4; } }
 
 @media screen and (max-width: 424px) {
-  #mot-editrice {
+  #mot-editrice,
+  #desc-rubrique {
     padding-right: 30px;
     padding-left: 29px;
     padding-bottom: 0px !important; }
@@ -601,7 +603,8 @@
     margin-left: auto;
     margin-right: auto;
     margin: 20px auto !important; }
-  #mot-editrice {
+  #mot-editrice,
+  #desc-rubrique {
     width: 300px; }
   #temoignages {
     width: 300px; }
@@ -1415,7 +1418,7 @@
     left: -254px; }
   #temoignages-2 .carousel-arrow {
     top: -180px; }
-  #temoignages, #mot-editrice {
+  #temoignages, #mot-editrice, #desc-rubrique {
     width: 320px; }
   #temoignages-2 {
     width: 320px; }
