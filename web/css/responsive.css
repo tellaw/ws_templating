@@ -978,9 +978,7 @@
     position: relative;
     top: 10px;
     right: 0;
-    float: none; }
-  #presentation-smint, #expert-smint, #maj-smint, #details-smint {
-    margin: 0px 25px; } }
+    float: none; } }
 
 /* Medium and up */
 @media screen and (min-width: 992px) {
