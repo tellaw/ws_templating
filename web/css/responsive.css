@@ -1002,6 +1002,11 @@
     top: 106px;
     right: -9px;
     z-index: 9; }
+  .col-droite-3 {
+    position: absolute;
+    top: 40px;
+    right: -9px;
+    z-index: 9; }
   .mv-image-1 {
     margin-bottom: 35px !important; }
   .tag-box--middle {

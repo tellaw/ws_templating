@@ -402,6 +402,9 @@ jQuery(document).ready(function() {
     jQuery(".tab-content .presentation-smint").css({"minHeight" : jQuery(".tab-content .col-droite-2").height() + 60});
     jQuery(".tab-content .expert-smint").css({"minHeight" : jQuery(".tab-content .col-droite-2").height() + 60});
 
+    jQuery(".tab-content .presentation-smint").css({"minHeight" : jQuery(".tab-content .col-droite-3").height() + 60});
+    jQuery(".tab-content .expert-smint").css({"minHeight" : jQuery(".tab-content .col-droite-3").height() + 60});
+
 });
 
 (function() {
