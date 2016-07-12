@@ -1166,6 +1166,7 @@ div[class^="element-wrapper-"] img {
 	margin-top: -2px;
 	margin-bottom: 11px;
 	letter-spacing: 0.75px;
+	line-height: 16px;
 }
 
 .box-colors {
@@ -3035,7 +3036,7 @@ a.abonnement-text:hover {
 	letter-spacing: 1px;
 	margin-top: 5px;
 	margin-bottom: 0px;
-	font-size: 14.64px;
+	font-size: 13px;
 }
 .petit-text {
 	font-size: 12px !important;
