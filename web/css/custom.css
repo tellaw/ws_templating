@@ -174,12 +174,13 @@ dt {
 .padding-80 {padding-left: 80px !important ;}
 
 .margin-bottom-0 {margin-bottom: 0px;}
-.margin-bottom-1 {margin-bottom: 1px;}
+.margin-bottom-1 {margin-bottom: 1px!important;}
 .margin-bottom-10 { margin-bottom: 10px;}
 .margin-bottom-14 { margin-bottom: 14px;}
 .margin-bottom-20{margin-bottom: 23px !important;}
 .margin-bottom-30 { margin-bottom: 30px;}
 .margin-bottom-45 {margin-bottom: 45px;}
+.margin-bottom-65 {margin-bottom: 65px ;}
 .margin-bottom-100 {margin-bottom: 100px;}
 
 .margin-top-0  { margin-top:0px;}
@@ -3142,9 +3143,6 @@ td, th, tr{
 	margin-bottom: 50px;
 }
 
-.margin-bottom-65 {
-	margin-bottom: 65px ;
-}
 /* ALAEDDINE END */
 
 .disabled {
