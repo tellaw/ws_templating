@@ -3287,3 +3287,7 @@ td, th, tr{
 #header-rubrique .nav-rubrique:hover * {
 	color: #697277 !important;
 }
+
+.liste-articles-rubrique {
+	border-top: 2px solid #ec1625;
+}
