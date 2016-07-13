@@ -244,6 +244,17 @@ jQuery(document).ready(function() {
         hiddenFielddd.val("false");
     });
 
+    if (jQuery(window).width() >= 1024) {
+        jQuery('#sticky-menu-phone').wrap('<a class="services-popin" href="/switch.html"></a>');
+    };
+
+    // !!!! ATTENTION / À MODIFIER LORS DU CHANGEMENT DE HEADER !!!!!
+    if (jQuery(window).width() >= 1024) {
+        var link;
+        if(jQuery("#register_link-connected").hasClass("no-connect-header")){link = "/newsletter.html"}else{link = "/myti/newsletter.html"};
+        jQuery('#sticky-menu-plane').wrap('<a href='+link+'></a>');
+    };
+
     // gestion des ancres pour les onglets
     if (window.location.href.indexOf("#") > 0) {
         var anchor = window.location.href.substring(window.location.href.indexOf("#")+1, window.location.href.length);
