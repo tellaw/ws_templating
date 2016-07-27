@@ -2901,15 +2901,16 @@ a.abonnement-text:hover {
 }
 .badge-x i {
 	margin-right: 0px;
+	font-size: 10px;
 }
 
 .badge-x {
 	background: #1b8bbb !important;
 	position: relative;
-	top: 3px;
+	top: 2px;
 	left: -15px;
-	width: 21px;
-	padding-left: 3px !important;
+	width: 17px;
+	padding-left: 4px !important;
 }
 
 .badge-xx {
@@ -2920,14 +2921,10 @@ a.abonnement-text:hover {
 	left: 0px !important;
 }
 
-.badge-xxxx {
-	top: 0px !important;
-}
-
 .badge {
 	color: #fff;
 	font-weight: 400;
-	padding: 4px 2px;
+	padding: 2px 2px 3px;
 	margin:0;
 }
 .suspended {
@@ -3293,4 +3290,5 @@ td, th, tr{
 
 .liste-articles-rubrique {
 	border-top: 2px solid #ec1625;
+	border-bottom: 2px solid #ec1625;
 }
