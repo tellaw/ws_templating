@@ -408,13 +408,33 @@ jQuery(document).ready(function() {
             }
         );
 
-    jQuery(".tab-content .documents-smint").css({"minHeight" : jQuery(".tab-content .col-droite").height() + 86});
+    if (jQuery(window).width() >= 1024) {
+        jQuery(".tab-content .documents-smint").css({"minHeight": jQuery(".tab-content .col-droite").height() + 86});
 
-    jQuery(".tab-content-domaine .presentation-smint").css({"minHeight" : jQuery(".tab-content .col-droite-2").height() + 60});
-    jQuery(".tab-content-domaine .expert-smint").css({"minHeight" : jQuery(".tab-content .col-droite-2").height() + 60});
+        jQuery(".tab-content-domaine .presentation-smint").css({"minHeight": jQuery(".tab-content .col-droite-2").height() + 60});
+        jQuery(".tab-content-domaine .expert-smint").css({"minHeight": jQuery(".tab-content .col-droite-2").height() + 60});
 
-    jQuery(".tab-content-rubrique .presentation-smint").css({"minHeight" : jQuery(".tab-content .col-droite-3").height() + 60});
-    jQuery(".tab-content-rubrique .expert-smint").css({"minHeight" : jQuery(".tab-content .col-droite-3").height() + 60});
+        jQuery(".tab-content-rubrique .presentation-smint").css({"minHeight": jQuery(".tab-content .col-droite-3").height() + 60});
+        jQuery(".tab-content-rubrique .expert-smint").css({"minHeight": jQuery(".tab-content .col-droite-3").height() + 60});
+    }
+
+    /* Correction des ancres */
+    var anchor = location.hash.substring(1);
+    if (anchor.length > 0) {
+        var elems = jQuery('[data-anchor="' + anchor + '"]');
+
+        if (elems.length > 0) {
+            var offsetCorrection = 50;
+
+            var branding = jQuery('#branding');
+
+            if (branding.length > 0 && branding.css('position') === 'fixed') {
+                offsetCorrection += branding.height();
+            }
+
+            jQuery('html, body').animate({ scrollTop: elems.offset().top - offsetCorrection }, 200 );
+        }
+    }
 
 });
 
