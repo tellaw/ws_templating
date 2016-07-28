@@ -1573,7 +1573,7 @@ p.cellule-list {
 	border-left: 8px solid transparent;
 	border-right: 8px solid transparent;
 	border-top: 8px solid #697277;
-	margin-left: 45%;
+	margin-left: 48%;
 	position: absolute;
 	display: none;
 }
@@ -2348,6 +2348,7 @@ div.play-button {
 .old-price {
 	font-size: 11.93px;
 	padding-left: 12px;
+	text-align: right;
 }
 
 .strike-center {
@@ -2362,8 +2363,7 @@ div.play-button {
 	content: "";
 	right: 0;
 	top:40%;
-	width: 40px;
-	left: 10px;
+	width: 50%;
 }
 
 .old-price span {
@@ -3023,7 +3023,6 @@ a.abonnement-text:hover {
 	margin-left: 0;
 	height: 100%;
 	position: relative;
-	z-index: 2;
 }
 .tb-cstm-abonnees {
 	margin-top: 40px;
@@ -3290,5 +3289,4 @@ td, th, tr{
 
 .liste-articles-rubrique {
 	border-top: 2px solid #ec1625;
-	border-bottom: 2px solid #ec1625;
 }
