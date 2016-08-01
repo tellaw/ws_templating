@@ -389,7 +389,7 @@ jQuery(document).ready(function() {
         }
     });
 
-    jQuery('#accordion-1').on('shown.bs.collapse', function (e) {
+    /*jQuery('#accordion-1').on('shown.bs.collapse', function (e) {
         var offset = jQuery(this).find('.collapse.in').prev('.panel-heading');
         if(offset) {
             jQuery('html,body').animate({
@@ -397,7 +397,7 @@ jQuery(document).ready(function() {
             }, 500);
         }
         if (active) $('#accordion .in').collapse('hide');
-    });
+    });*/
 
     jQuery(".zoning")
         .click(
