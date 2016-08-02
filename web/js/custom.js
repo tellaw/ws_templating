@@ -436,6 +436,9 @@ jQuery(document).ready(function() {
         }
     }
 
+    // gérer les warning dans les listing rubrique
+    jQuery( ".zoning.warning" ).parents('.panel-default').find(".my-warning-to-display").css("display", "inline");
+
 });
 
 (function() {
