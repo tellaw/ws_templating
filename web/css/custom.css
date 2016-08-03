@@ -3292,3 +3292,6 @@ td, th, tr{
 .liste-articles-rubrique {
 	border-top: 2px solid #ec1625;
 }
+.acc-v1 .panel-heading a {
+	padding:5px 0;
+}
