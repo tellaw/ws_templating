@@ -2255,7 +2255,7 @@ div.play-button {
 	top: 0px;
 }
 
-#header {
+#offre-header {
 	background-image: url('../assets/img/main/img1.jpg');
 	background-repeat: no-repeat;
 	background-size: 100% 300px;
@@ -2263,7 +2263,8 @@ div.play-button {
 	position: relative;
 	z-index: 10;
 }
-#header.abo {
+#header.abo,
+#offre-header.abo {
 	margin-bottom: 30px;
 }
 #main-menu.header {
