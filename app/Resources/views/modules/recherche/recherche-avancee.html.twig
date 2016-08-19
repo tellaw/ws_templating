@@ -62,17 +62,22 @@
                             <div class='input-group date' id='datetimepicker6'>
                                 <input type='text' class="form-control" />
                                 <span class="input-group-addon">
-                                    <span class="glyphicon glyphicon-calendar"></span>
+                                    <span class="icon-append fa fa-calendar"></span>
                                 </span>
                             </div>
                         </div>
+
+                        <label class="input">
+                            <i class="icon-append fa fa-calendar"></i>
+                            <input type="text" name="start" id="start" placeholder="Start date" class="hasDatepicker">
+                        </label>
 
                         <div class="form-group">
                             <label>Recherche après le :</label>
                             <div class='input-group date' id='datetimepicker7'>
                                 <input type='text' class="form-control" />
                                 <span class="input-group-addon">
-                                    <span class="glyphicon glyphicon-calendar"></span>
+                                    <span class="icon-append fa fa-calendar"></span>
                                 </span>
                             </div>
                         </div>
@@ -141,22 +146,15 @@
                 </form>
 
             </div>
-
         </div>
     </div>
 </div>
 <script type="text/javascript">
-    $(function () {
-        $('#datetimepicker6').datetimepicker();
-        $('#datetimepicker7').datetimepicker({
-            useCurrent: false //Important! See issue #1075
-        });
-        $("#datetimepicker6").on("dp.change", function (e) {
-            $('#datetimepicker7').data("DateTimePicker").minDate(e.date);
-        });
-        $("#datetimepicker7").on("dp.change", function (e) {
-            $('#datetimepicker6').data("DateTimePicker").maxDate(e.date);
-        });
+    jQuery(document).ready(function() {
+        App.init();
+        Masking.initMasking();
+        Datepicker.initDatepicker();
+        Validation.initValidation();
+        StyleSwitcher.initStyleSwitcher();
     });
 </script>
-
