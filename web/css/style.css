@@ -117,3 +117,81 @@ div.border-red {
 
 .search-free p {
   display: none; }
+
+/*RECHERCHE AVANCEE*/
+.recherche-avancee .border-grey,
+.filtre .border-grey {
+  border: 1px solid #697277; }
+
+.recherche-avancee .resize-314,
+.filtre .resize-314 {
+  width: 314px; }
+
+.recherche-avancee .bloc-toogle a,
+.filtre .bloc-toogle a {
+  background: #646d72;
+  display: block;
+  margin: 0;
+  padding: 10px;
+  font-size: 14px; }
+
+.recherche-avancee .title-element,
+.filtre .title-element {
+  color: #FFF;
+  margin: 0;
+  paddng: 10px; }
+
+.recherche-avancee label,
+.filtre label {
+  font-size: 12px;
+  color: #4d5356; }
+
+.recherche-avancee .section-title,
+.filtre .section-title {
+  text-transform: uppercase;
+  color: #ec1625;
+  font-size: 13px;
+  font-weight: bold;
+  margin: 10px 0 0 0; }
+
+.recherche-avancee .form-group,
+.filtre .form-group {
+  margin: 10px 10px 0 10px;
+  padding: 0; }
+
+.recherche-avancee .form-control,
+.filtre .form-control {
+  height: 29px; }
+
+.recherche-avancee .syntaxe,
+.filtre .syntaxe {
+  font-size: 10px; }
+
+.recherche-avancee .syntaxe-or span,
+.filtre .syntaxe-or span {
+  display: block; }
+
+.recherche-avancee .btn-u,
+.filtre .btn-u {
+  margin: 20px 0 0 10px; }
+
+.recherche-avancee .but-recherche,
+.filtre .but-recherche {
+  display: block;
+  margin: 20px auto 20px; }
+
+.filtre .resize-314 {
+  width: 314px; }
+
+.filtre ul {
+  margin: 0;
+  padding: 0 0 0 10px; }
+  .filtre ul ul {
+    margin: 0;
+    padding: 0 0 0 20px; }
+
+.filtre hr {
+  margin: 20px 0; }
+
+.color-f4f3f3 {
+  background-color: #f4f3f3; }
