@@ -1,6 +1,6 @@
 <div class="row">
     <div class="hidden-sx hidden-sm col-md-12 recherche-avancee">
-        <div class="resize-314 border-grey">
+        <div class="border-grey">
             <p class="bloc-toogle">
                 <a class="margin-0 accordion-toggle font-family-myriadpro-semibold" data-toggle="collapse" href="#collapse-0">
                     <span class="title-element">RECHERCHE AVANCÉE</span>
@@ -8,137 +8,127 @@
                 </a>
             </p>
             <div id="collapse-0" class="padding-10"> <!--ajouter la classe panel-collapse collapse-->
-
-                <form method="GET" action="#" class="sky-form">
-
-                    <fieldset>
-                        <div class="checkbox">
-                            <label for="titre">
-                                <input type="checkbox" value="#" id="titre" />
-                                Uniquement dans le titre
-                            </label>
-                            <br />
-                            <label for="abo">
-                                <input type="checkbox" value="" id="abo" />
-                                Uniquement dans mes abonnements
-                            </label>
-                        </div>
-                    </fieldset>
-
-                    <fieldset>
-                        <p class="section-title font-family-myriadpro-semibold">Dans les ressources documentaires</p>
-
-                        <div class="form-group">
-                            <label>Recherche avec opérateurs :</label>
-                            <input type="text" class="form-control" id="operateur" name="query" value="" />
-                            <span class="pull-right syntaxe">Syntaxe des opérateurs</span>
-                            <div id="operateurs" class="syntaxe-or" style="display:none;">
-                                <span><b>Phrases exactes</b> - ex&nbsp;: "mécanique quantique"</span>
-                                <span><b>Termes exacts</b> - ex&nbsp;: "quantique"</span>
-                                <span><b>Exclure des termes</b> - ex&nbsp;: mécanique -quantique</span>
-                                <span><b>Recherche par préfixe</b> - ex&nbsp;: méca*</span>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label>Recherche par auteur :</label>
-                            <input type="text" class="form-control" id="auteurs" name="auteurs" value="" />
-                        </div>
-
-                        <div class="form-group">
-                            <label>Recherche par référence :</label>
-                            <input type="text" class="form-control" id="ref" name="ref" value="" />
-                            <span class="pull-right syntaxe">Syntaxe des références</span>
-                            <div id="references" class="syntaxe-or" style="display:none;">
-                                <span><b>Article de référence</b> - ex : p4220</span>
-                                <span><b>Fiche pratique</b> - ex : 0039</span>
-                                <span><b>Base documentaire</b> - ex : 42104210</span>
-                                <span><b>Pack</b> - ex : ti052</span>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label>Recherche avant le :</label>
-                            <div class="input-group date">
-                                <input type="text" name="start" id="start" class="hasDatepicker form-control" />
-                                <span class="input-group-addon">
-                                    <span class="icon-append fa fa-calendar"></span>
-                                </span>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label>Recherche après le :</label>
-                            <div class="input-group date">
-                                <input type="text" name="finish" id="finish" class="hasDatepicker form-control" />
-                                <span class="input-group-addon">
-                                    <span class="icon-append fa fa-calendar"></span>
-                                </span>
-                            </div>
-                        </div>
-
-                    </fieldset>
-
-                    <div>
-                        <p class="section-title font-family-myriadpro-semibold">Dans les formations</p>
-                        <fieldset>
-                            <div class="form-group">
-                                <select name="g_periode" id="select" class="form-control">
-                                    <option value="">Choisir une période</option>
-                                    <option value="g_periode:2016\-09">Septembre 2016</option>
-                                    <option value="g_periode:2016\-10">Octobre 2016</option>
-                                    <option value="g_periode:2016\-11">Novembre 2016</option>
-                                    <option value="g_periode:2016\-12">Décembre 2016</option>
-                                    <option value="g_periode:2017\-01">Janvier 2017</option>
-                                    <option value="g_periode:2017\-02">Février 2017</option>
-                                    <option value="g_periode:2017\-03">Mars 2017</option>
-                                    <option value="g_periode:2017\-04">Avril 2017</option>
-                                    <option value="g_periode:2017\-05">Mai 2017</option>
-                                    <option value="g_periode:2017\-06">Juin 2017</option>
-                                    <option value="g_periode:2017\-07">Juillet 2017</option>
-                                </select>
-                            </div>
-                        </fieldset>
-
-                        <fieldset>
-                            <div class="form-group">
-                                <select name="g_duree" id="select" class="form-control">
-                                    <option value="">Choisir une durée</option>
-                                    <option value="g_duree:000\ heures">0 heures</option>
-                                    <option value="g_duree:001\ jour\ \-\ 7\ heures">1 jour - 7 heures</option>
-                                    <option value="g_duree:001.5\ jours\ \-\ 10.5\ heures">1.5 jours - 10.5 heures</option>
-                                    <option value="g_duree:0010\ heures">10 heures</option>
-                                    <option value="g_duree:0010\ jours\ \-\ 70\ heures">10 jours - 70 heures</option>
-                                    <option value="g_duree:0015\ jours\ \-\ 105\ heures">15 jours - 105 heures</option>
-                                    <option value="g_duree:002\ \+\ 2\ jours\ \-\ 28\ heures">2 + 2 jours - 28 heures</option>
-                                    <option value="g_duree:002\ jours\ \-\ 14\ heures">2 jours - 14 heures</option>
-                                    <option value="g_duree:002\*2\ jours\ \-\ 28\ heures">2*2 jours - 28 heures</option>
-                                    <option value="g_duree:002\+2\ jours\ \-\ 28\ heures">2+2 jours - 28 heures</option>
-                                    <option value="g_duree:002.5\ jours\ \-\ 17.5\ heures">2.5 jours - 17.5 heures</option>
-                                    <option value="g_duree:0020\ heures">20 heures</option>
-                                    <option value="g_duree:002j\ \+\ 2j\ jours\ \-\ 28\ heures">2j + 2j jours - 28 heures</option>
-                                    <option value="g_duree:003\ heures">3 heures</option>
-                                    <option value="g_duree:003\ jours\ \-\ 21\ heures">3 jours - 21 heures</option>
-                                    <option value="g_duree:003\*2\ jours\ \-\ 42\ heures">3*2 jours - 42 heures</option>
-                                    <option value="g_duree:004\ heures">4 heures</option>
-                                    <option value="g_duree:004\ jours\ \-\ 28\ heures">4 jours - 28 heures</option>
-                                    <option value="g_duree:005\ jours\ \-\ 35\ heures">5 jours - 35 heures</option>
-                                    <option value="g_duree:005\ modules\ de\ 2h\ en\ visioconférence\ jours\ \-\ 10\ heures">5 modules de 2h en visioconférence jours - 10 heures</option>
-                                    <option value="g_duree:006\ jours\ \-\ 42\ heures">6 jours - 42 heures</option>
-                                    <option value="g_duree:007\ jours\ \-\ 49\ heures">7 jours - 49 heures</option>
-                                    <option value="g_duree:008\ jours\ \-\ 56\ heures">8 jours - 56 heures</option>
-                                    <option value="g_duree:009\ jours\ \-\ 63\ heures">9 jours - 63 heures</option>
-                                </select>
-                            </div>
-                        </fieldset>
+                <fieldset>
+                    <div class="checkbox">
+                        <label for="titre">
+                            <input type="checkbox" value="#" id="titre" />
+                            Uniquement dans le titre
+                        </label>
+                        <br />
+                        <label for="abo">
+                            <input type="checkbox" value="" id="abo" />
+                            Uniquement dans mes abonnements
+                        </label>
                     </div>
+                </fieldset>
+                <p class="section-title font-family-myriadpro-semibold">Dans les ressources documentaires</p>
+                <fieldset class="form-group">
+                    <label>Recherche avec opérateurs :</label>
+                    <input type="text" class="form-control" id="operateur" name="query" value="" />
+                    <span class="pull-right syntaxe">Syntaxe des opérateurs</span>
+                    <div id="operateurs" class="syntaxe-or" style="display:none;">
+                        <span><b>Phrases exactes</b> - ex&nbsp;: "mécanique quantique"</span>
+                        <span><b>Termes exacts</b> - ex&nbsp;: "quantique"</span>
+                        <span><b>Exclure des termes</b> - ex&nbsp;: mécanique -quantique</span>
+                        <span><b>Recherche par préfixe</b> - ex&nbsp;: méca*</span>
+                    </div>
+                </fieldset>
 
-                    <button class="btn-u bg-color-red-eti but-recherche" type="button">
-                        <i class="fa fa-arrow-right btn-logiciel-icon"></i>
-                        <p class="btn-logiciel">LANCER LA RECHERCHE AVANCÉE</p>
-                    </button>
+                <fieldset class="form-group">
+                    <label>Recherche par auteur :</label>
+                    <input type="text" class="form-control" id="auteurs" name="auteurs" value="" />
+                </fieldset>
 
-                </form>
+                <fieldset class="form-group">
+                    <label>Recherche par référence :</label>
+                    <input type="text" class="form-control" id="ref" name="ref" value="" />
+                    <span class="pull-right syntaxe">Syntaxe des références</span>
+                    <div id="references" class="syntaxe-or" style="display:none;">
+                        <span><b>Article de référence</b> - ex : p4220</span>
+                        <span><b>Fiche pratique</b> - ex : 0039</span>
+                        <span><b>Base documentaire</b> - ex : 42104210</span>
+                        <span><b>Pack</b> - ex : ti052</span>
+                    </div>
+                </fieldset>
+
+                <fieldset class="form-group">
+                    <label>Recherche avant le :</label>
+                    <div class="input-group date">
+                        <input type="text" name="start" id="start" class="hasDatepicker form-control" />
+                        <span class="input-group-addon">
+                            <span class="icon-append fa fa-calendar"></span>
+                        </span>
+                    </div>
+                </fieldset>
+
+                <fieldset class="form-group">
+                    <label>Recherche après le :</label>
+                    <div class="input-group date">
+                        <input type="text" name="finish" id="finish" class="hasDatepicker form-control" />
+                        <span class="input-group-addon">
+                            <span class="icon-append fa fa-calendar"></span>
+                        </span>
+                    </div>
+                </fieldset>
+
+                <div>
+                    <p class="section-title font-family-myriadpro-semibold">Dans les formations</p>
+                    <fieldset>
+                        <div class="form-group">
+                            <select name="g_periode" id="select" class="form-control">
+                                <option value="">Choisir une période</option>
+                                <option value="g_periode:2016\-09">Septembre 2016</option>
+                                <option value="g_periode:2016\-10">Octobre 2016</option>
+                                <option value="g_periode:2016\-11">Novembre 2016</option>
+                                <option value="g_periode:2016\-12">Décembre 2016</option>
+                                <option value="g_periode:2017\-01">Janvier 2017</option>
+                                <option value="g_periode:2017\-02">Février 2017</option>
+                                <option value="g_periode:2017\-03">Mars 2017</option>
+                                <option value="g_periode:2017\-04">Avril 2017</option>
+                                <option value="g_periode:2017\-05">Mai 2017</option>
+                                <option value="g_periode:2017\-06">Juin 2017</option>
+                                <option value="g_periode:2017\-07">Juillet 2017</option>
+                            </select>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <div class="form-group">
+                            <select name="g_duree" id="select" class="form-control">
+                                <option value="">Choisir une durée</option>
+                                <option value="g_duree:000\ heures">0 heures</option>
+                                <option value="g_duree:001\ jour\ \-\ 7\ heures">1 jour - 7 heures</option>
+                                <option value="g_duree:001.5\ jours\ \-\ 10.5\ heures">1.5 jours - 10.5 heures</option>
+                                <option value="g_duree:0010\ heures">10 heures</option>
+                                <option value="g_duree:0010\ jours\ \-\ 70\ heures">10 jours - 70 heures</option>
+                                <option value="g_duree:0015\ jours\ \-\ 105\ heures">15 jours - 105 heures</option>
+                                <option value="g_duree:002\ \+\ 2\ jours\ \-\ 28\ heures">2 + 2 jours - 28 heures</option>
+                                <option value="g_duree:002\ jours\ \-\ 14\ heures">2 jours - 14 heures</option>
+                                <option value="g_duree:002\*2\ jours\ \-\ 28\ heures">2*2 jours - 28 heures</option>
+                                <option value="g_duree:002\+2\ jours\ \-\ 28\ heures">2+2 jours - 28 heures</option>
+                                <option value="g_duree:002.5\ jours\ \-\ 17.5\ heures">2.5 jours - 17.5 heures</option>
+                                <option value="g_duree:0020\ heures">20 heures</option>
+                                <option value="g_duree:002j\ \+\ 2j\ jours\ \-\ 28\ heures">2j + 2j jours - 28 heures</option>
+                                <option value="g_duree:003\ heures">3 heures</option>
+                                <option value="g_duree:003\ jours\ \-\ 21\ heures">3 jours - 21 heures</option>
+                                <option value="g_duree:003\*2\ jours\ \-\ 42\ heures">3*2 jours - 42 heures</option>
+                                <option value="g_duree:004\ heures">4 heures</option>
+                                <option value="g_duree:004\ jours\ \-\ 28\ heures">4 jours - 28 heures</option>
+                                <option value="g_duree:005\ jours\ \-\ 35\ heures">5 jours - 35 heures</option>
+                                <option value="g_duree:005\ modules\ de\ 2h\ en\ visioconférence\ jours\ \-\ 10\ heures">5 modules de 2h en visioconférence jours - 10 heures</option>
+                                <option value="g_duree:006\ jours\ \-\ 42\ heures">6 jours - 42 heures</option>
+                                <option value="g_duree:007\ jours\ \-\ 49\ heures">7 jours - 49 heures</option>
+                                <option value="g_duree:008\ jours\ \-\ 56\ heures">8 jours - 56 heures</option>
+                                <option value="g_duree:009\ jours\ \-\ 63\ heures">9 jours - 63 heures</option>
+                            </select>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <button class="btn-u bg-color-red-eti but-recherche" type="button">
+                    <i class="fa fa-arrow-right btn-logiciel-icon"></i>
+                    <p class="btn-logiciel">LANCER LA RECHERCHE AVANCÉE</p>
+                </button>
 
             </div>
         </div>
