@@ -119,13 +119,8 @@ div.border-red {
   display: none; }
 
 /*RECHERCHE AVANCEE*/
-.recherche-avancee .border-grey,
-.filtre .border-grey {
+.border-grey {
   border: 1px solid #697277; }
-
-.recherche-avancee .resize-314,
-.filtre .resize-314 {
-  width: 314px; }
 
 .recherche-avancee .bloc-toogle a,
 .filtre .bloc-toogle a {

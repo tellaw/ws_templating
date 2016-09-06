@@ -139,14 +139,11 @@ div.border-red {
 }
 
 /*RECHERCHE AVANCEE*/
+.border-grey {
+  border:1px solid #697277;
+}
 .recherche-avancee,
 .filtre {
-  .border-grey {
-    border:1px solid #697277;
-  }
-  .resize-314 {
-    width:314px;
-  }
   .bloc-toogle {
     a {
       background:#646d72;

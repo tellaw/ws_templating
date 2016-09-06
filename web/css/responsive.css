@@ -47,7 +47,7 @@
 @media screen and (max-width: 340px) {
   .dt-height {
     height: 90px !important; }
-  .article,
+  .article-decouverte,
   .dictionnaire,
   .questions,
   .complement {
@@ -175,7 +175,7 @@
     padding-bottom: 20px !important; }
   .xs-width-3 {
     width: 100% !important; }
-  .article,
+  .article-decouverte,
   .dictionnaire,
   .questions,
   .complement {
@@ -577,7 +577,7 @@
   .margins-btns {
     margin-top: 5px;
     margin-left: 0px; }
-  .article,
+  .article-decouverte,
   .dictionnaire,
   .questions,
   .complement {
@@ -1194,12 +1194,12 @@
   .questions {
     margin-left: -10px;
     margin-right: -10px; }
-  .article,
+  .article-decouverte,
   .dictionnaire,
   .questions,
   .complement {
     text-align: center; }
-  .article a, .dictionnaire a, .questions a, .complement a {
+  .article-decouverte a, .dictionnaire a, .questions a, .complement a {
     display: inline-block; }
   .calage-menu-abonnees {
     margin-right: -50px; }
@@ -1431,12 +1431,12 @@
     width: 285.9px; }
   .last-tab {
     width: 284px !important; }
-  .article,
+  .article-decouverte,
   .dictionnaire,
   .questions,
   .complement {
     text-align: center; }
-  .article a, .dictionnaire a, .questions a, .complement a {
+  .article-decouverte a, .dictionnaire a, .questions a, .complement a {
     display: inline-block; }
   .calage-menu-abonnees {
     margin-right: -50px; } }
