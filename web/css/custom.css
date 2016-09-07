@@ -1513,6 +1513,7 @@ p.cellule-list {
 
 .tab-v1 .nav-tabs a {
 	padding: 5px 0;
+	border: 1px solid #697277 !important;
 }
 .tab-v1 .nav-tabs > .active > a,
 .tab-v1 .nav-tabs > .active > a:hover,
@@ -2327,7 +2328,7 @@ div.play-button {
 .ref {
 	margin: 0px auto 0px auto;
 	text-transform: uppercase;
-	font-size: 11px;
+	font-size: 14px;
 	width: fit-content;
 	width: -moz-max-content;
 	width: intrinsic;
@@ -2338,8 +2339,8 @@ div.play-button {
 	margin: 5px auto 0px auto;
 	width: fit-content;
 	text-transform: uppercase;
-	color: #9eb504;
-	font-size: 19px;
+	color: #EC1625;
+	font-size: 20px;
 	letter-spacing: 1.2px;
 	text-align: center;
 	line-height: 22px;
@@ -2347,16 +2348,12 @@ div.play-button {
 
 .ref-sub-title {
 	color: #9eb504;
-	font-size: 13.81px !important;
+	font-size: 15px !important;
 	text-align: center;
 	line-height: 18px !important;
 	letter-spacing: 1.2px;
 	margin: 5px auto 0px auto;
 	width: fit-content;
-}
-
-.licence {
-	font-size: 11px;
 }
 
 .tag-box--details {
@@ -2422,9 +2419,9 @@ div.play-button {
 .devis-box-text {
 	line-height: 1.35;
 	margin-bottom: 17px !important;
-	margin-top: 5px !important;
+	margin-top: -4px !important;
 	padding-left: 25px;
-	font-size: 11px;
+	font-size: 14px!important;
 }
 
 .margin-top-85 {
@@ -3069,7 +3066,7 @@ a.abonnement-text:hover {
 	letter-spacing: 1px;
 	margin-top: 5px;
 	margin-bottom: 0px;
-	font-size: 13px;
+	font-size: 14px;
 }
 .petit-text {
 	font-size: 12px !important;
