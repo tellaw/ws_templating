@@ -170,7 +170,8 @@ dt {
 .margin-0 { margin:0;}
 
 .padding-0{ padding-right: 0px !important; padding-left: 0px !important;}
-.padding-10 { padding: 10px;}
+.padding-10 { padding: 10px!important;}
+.padding-15 { padding: 15px!important;}
 .padding-80 {padding-left: 80px !important ;}
 
 .margin-bottom-0 {margin-bottom: 0px!important;}

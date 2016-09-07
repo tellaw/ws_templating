@@ -119,13 +119,8 @@ div.border-red {
   display: none; }
 
 /*RECHERCHE AVANCEE*/
-.recherche-avancee .border-grey,
-.filtre .border-grey {
+.border-grey {
   border: 1px solid #697277; }
-
-.recherche-avancee .resize-314,
-.filtre .resize-314 {
-  width: 314px; }
 
 .recherche-avancee .bloc-toogle a,
 .filtre .bloc-toogle a {
@@ -156,7 +151,7 @@ div.border-red {
 
 .recherche-avancee .form-group,
 .filtre .form-group {
-  margin: 10px 10px 0 10px;
+  margin: 10px 22px 0;
   padding: 0; }
 
 .recherche-avancee .form-control,
@@ -175,10 +170,14 @@ div.border-red {
 .filtre .btn-u {
   margin: 20px 0 0 10px; }
 
-.recherche-avancee .but-recherche,
-.filtre .but-recherche {
+.recherche-avancee .btn-recherche,
+.filtre .btn-recherche {
   display: block;
   margin: 20px auto 20px; }
+  .recherche-avancee .btn-recherche input,
+  .filtre .btn-recherche input {
+    border: none;
+    background: none; }
 
 .filtre .resize-314 {
   width: 314px; }

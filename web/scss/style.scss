@@ -139,14 +139,11 @@ div.border-red {
 }
 
 /*RECHERCHE AVANCEE*/
+.border-grey {
+  border:1px solid #697277;
+}
 .recherche-avancee,
 .filtre {
-  .border-grey {
-    border:1px solid #697277;
-  }
-  .resize-314 {
-    width:314px;
-  }
   .bloc-toogle {
     a {
       background:#646d72;
@@ -173,7 +170,7 @@ div.border-red {
     margin:10px 0 0 0;
   }
   .form-group {
-    margin:10px 10px 0 10px;
+    margin:10px 22px 0;
     padding:0;
   }
   .form-control {
@@ -190,9 +187,13 @@ div.border-red {
   .btn-u {
     margin:20px 0 0 10px;
   }
-  .but-recherche {
+  .btn-recherche {
     display:block;
     margin:20px auto 20px;
+    input {
+      border:none;
+      background: none;
+    }
   }
 }
 
