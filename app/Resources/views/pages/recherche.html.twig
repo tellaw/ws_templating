@@ -44,7 +44,7 @@
                     <!--COLUMN LEFT-->
                     <div class="hidden-xs col-md-4 col-lg-4 related-search">
                         <div class="row">
-                            <div class="col-md-12 col-sm-6 margin-bottom-30">
+                            <div class="margin-bottom-30">
                                 <ul class="list-group sidebar-nav-v1" id="sidebar-nav">
                                     {{ module("recherche/recherche-avancee") }}
                                     {{ module("recherche/filtre") }}
@@ -56,28 +56,29 @@
 
                     <!--COLUMN RIGHT-->
                     <div class="col-md-8">
-                        <ul class="col-md-12 list-inline color-f4f3f3 padding-10 clear-both">
+                        <ul class="col-md-12 list-inline color-f4f3f3 padding-10 clear-both tab-search">
                             <li class="col-md-3">
                                 <a href="#">> Voir mes favoris</a>
                             </li>
                             <li class="col-md-3" id="wrap-history">
                                 <a href="#">> Voir mon historique</a>
-                                <div id="boxHistory">
-                                    <p>
-                                        <a href="/search.html?advancedSearch=true">
-                                            jkfhdj fhdjhf jdfhsjdf djsfhjdfhjdsf hjdsh
-                                        </a>
-                                    </p>
+                                <div class="alert fade in alert-dismissable boxHistory">
+                                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                                    Risque chimique <br />
+                                    Risque chimique <br />
+                                    Risque chimique <br />
+                                    Risque chimique <br />
+                                    Risque chimique
                                 </div>
                             </li>
                             <li class="col-md-4 center">
                                 Trier par :
                                 <select class="pertinence" onchange="window.location.href=this.value;">
                                     <option value="/search.html?advancedSearch=true&amp;limit=10&amp;sort=score+desc">Pertinence</option>
-                                    <option value="/search.html?advancedSearch=true&amp;limit=10&amp;sort=g_date+asc">Date de publication : les plus anciens</option>
-                                    <option value="/search.html?advancedSearch=true&amp;limit=10&amp;sort=g_date+desc">Date de publication : les plus récents</option>
-                                    <option value="/search.html?advancedSearch=true&amp;limit=10&amp;sort=g_title_sort+asc">Titre : croissant</option>
-                                    <option value="/search.html?advancedSearch=true&amp;sort=g_title_sort+desc&amp;limit=10">Titre : décroissant</option>
+                                    <option value="/search.html?advancedSearch=true&amp;limit=10&amp;sort=g_date+asc">Plus anciens</option>
+                                    <option value="/search.html?advancedSearch=true&amp;limit=10&amp;sort=g_date+desc">Plus récents</option>
+                                    <option value="/search.html?advancedSearch=true&amp;limit=10&amp;sort=g_title_sort+asc">Titre : Croissant</option>
+                                    <option value="/search.html?advancedSearch=true&amp;sort=g_title_sort+desc&amp;limit=10">Titre : Décroissant</option>
                                 </select>
                             </li>
                             <li class="col-md-2">
@@ -89,7 +90,7 @@
                                 </select>
                             </li>
                         </ul>
-                        <ul class="col-md-12 list-inline padding-10 margin-top-30">
+                        <ul class="col-md-12 list-inline padding-10 margin-top-30 tab-search">
                             <li class="col-md-3">
                                 <div class="checkbox margin-0 actions-select-all">
                                     <label for="actions-select-all">
