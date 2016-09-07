@@ -1253,8 +1253,8 @@ div[class^="element-wrapper-"] img {
 	border: 1px #1B8BBB solid;
 	background-color: #1B8BBB;
 	font-size: 12px;
-	padding-top: 9px;
-	padding-bottom: 9px;
+	padding-top:7px;
+	padding-bottom: 7px;
 }
 
 .btn-x.btn-u-blue:hover {
@@ -1266,8 +1266,8 @@ div[class^="element-wrapper-"] img {
 	border: 1px #EC1625 solid;
 	background-color: #EC1625;
 	font-size: 12px;
-	padding-top: 9px;
-	padding-bottom: 9px;
+	padding-top: 7px;
+	padding-bottom: 7px;
 }
 
 .btn-x.btn-u-red:hover {
@@ -1327,7 +1327,7 @@ div[class^="element-wrapper-"] img {
 
 .cellule-list {
 	margin-left: 190px;
-	font-size:13px;
+	font-size:14px;
 	letter-spacing: 0.75px;
 }
 p.cellule-list {
@@ -1416,9 +1416,10 @@ p.cellule-list {
 /* seif-custom */
 
 .btn-center{
-	padding-top: 9px !important;
-	padding-bottom: 9px !important;
+	padding-top: 13px !important;
+	padding-bottom: 13px !important;
 	line-height:12px;
+	letter-spacing: 1px;
 }
 .conf-title {
 	left: 0px;
@@ -2148,24 +2149,33 @@ div.play-button {
 }
 .btn-devis--details {
 	width: 175px;
-	font-size: 10px;
+	font-size: 11px;
 	letter-spacing: 1px;
-	padding-bottom: 5.5px;
-	padding-top: 5.5px;
+	padding-bottom: 11.5px;
+	padding-top: 11.5px;
 	font-family: 'myriad-pro-semi-bold';
+	border:1px solid #697277;
 }
-
+.btn-devis--details:hover {
+	background-color: #fff;
+	color:#697277;
+}
 
 .btn-offers--details {
 	width: 172px;
-	font-size: 10px;
+	font-size: 11px;
 	letter-spacing: 1px;
-	padding-bottom: 5.5px;
-	padding-top: 5.5px;
+	padding-bottom: 11.5px;
+	padding-top: 11.5px;
 	margin-left: 5px;
 	font-family: 'myriad-pro-semi-bold';
+	border:1px solid #74b504;
 }
 
+.btn-offers--details:hover {
+	background-color: #fff;
+	color: #74b504;
+}
 .btn-offers--details i {
 	font-size: 16px;
 }
@@ -2227,6 +2237,10 @@ div.play-button {
 #presentation .table > tbody > tr.zoning:hover * {
 	color: #EC1625!important;
 	cursor: pointer;
+	text-decoration: underline;
+}
+#presentation .table > tbody > tr.zoning:hover td:first-child * {
+	text-decoration: none!important;
 }
 #presentation .table > tbody > tr:hover td.col1 * {
 	color: #ffffff!important;
