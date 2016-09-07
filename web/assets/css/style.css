@@ -16,7 +16,6 @@
 
 body {
  color: #333;
- font-size: 12px;
  line-height: 1.6;
 }
 
@@ -38,7 +37,7 @@ p,
 li,
 li a,
 label {
- color: #697277;
+ color: #4D5356;
 }
 
 a {
