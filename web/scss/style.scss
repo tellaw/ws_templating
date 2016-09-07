@@ -218,9 +218,14 @@ div.border-red {
   ul {
     margin:0;
     padding:0 0 0 10px;
+    background:#FFF;
     ul {
       margin:0;
       padding:0 0 0 20px;
+      background:#FFF;
+      li {
+        background:#FFF;
+      }
     }
   }
   .section-title {
@@ -404,6 +409,7 @@ hr {
 .list-group-item:last-child {
   background:#697277;
   color:#FFF;
+  position:relative;
 }
 .s-results {
   .related-search {
@@ -416,11 +422,15 @@ hr {
   color: #fff;
   content: "\f107";
   font-size:2.5em;
-  top:-4px;
+  top:-9px;
 }
 .list-toggle.active:after {
   color: #fff;
   content: "\f106";
   font-size:2.5em;
-  top:-5px;
+  top:-10px;
+}
+.tab-search {
+  height:45px;
+  margin:0;
 }
