@@ -1213,7 +1213,6 @@ div[class^="element-wrapper-"] img {
 
 .breadcrumb {
 	font-size: 11px;
-	left: -5px;
 	margin-bottom: 0px;
 	top:0;
 }
@@ -1588,6 +1587,9 @@ p.cellule-list {
 }
 .nav-tabs li:first-child a {
 	margin-left: 0px;
+}
+.nav-tabs li a:hover {
+	background: #697277 !important;
 }
 
 #triangle-down {
@@ -2645,6 +2647,7 @@ div.play-button {
 
 #mot-editrice .text {
 	line-height: 16px;
+	font-size:13px;
 }
 
 #mot-editrice .fa-angle-double-left {
@@ -2696,7 +2699,7 @@ div.play-button {
 
 #temoignages p,
 #desc-rubrique h2 {
-	font-size: 12px;
+	font-size: 13px;
 	font-style: normal;
 	padding: 0px;
 	line-height: 1.2;
@@ -2704,8 +2707,8 @@ div.play-button {
 	color: #4d5356;
 }
 #temoignages p {
-	max-height: 42px;
-	overflow: hidden;
+	max-height: 45px;
+	overflow: hidden;background: none!important;
 }
 
 #temoignages .testimonials .carousel-control.left {
@@ -3021,7 +3024,7 @@ a.abonnement-text:hover {
 }
 #offres .text {
 	background-color: #e2e1e1;
-	font-size: 14px;
+	font-size: 13px;
 	font-style: normal;
 	padding-right: 0px;
 	padding-left: 0px;
