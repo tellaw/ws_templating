@@ -696,13 +696,13 @@ dt {
 }
 .btn-u-red:hover,
 .btn-u-red:focus {
-	background-color: #EC1625 !important;
-	color: #fff !important;
+	background-color: #fff !important;
+	color: #ec1625 !important;
 }
 .btn-u-blue:hover,
 .btn-u-blue:focus {
-	background-color: #1b8bbb !important;
-	color: #fff !important;
+	background-color: #fff !important;
+	color: #1b8bbb !important;
 }
 
 #cat-btn:focus {
@@ -1249,18 +1249,30 @@ div[class^="element-wrapper-"] img {
 	border-color: #fff;
 }
 
-.btn-x {
-	border: 1px #EC1625 solid;
-	color: #EC1625;
-	background-color: rgba(149, 165, 166, 0);
-	background: #fff;
-	font-size: 10px;
-	padding-top: 3px;
-	padding-bottom: 3px;
+.btn-x.btn-u-blue {
+	border: 1px #1B8BBB solid;
+	background-color: #1B8BBB;
+	font-size: 12px;
+	padding-top: 9px;
+	padding-bottom: 9px;
 }
 
-.btn-x:hover {
+.btn-x.btn-u-blue:hover {
+	color: #1B8BBB;
+	background: #fff;
+}
+
+.btn-x.btn-u-red {
+	border: 1px #EC1625 solid;
 	background-color: #EC1625;
+	font-size: 12px;
+	padding-top: 9px;
+	padding-bottom: 9px;
+}
+
+.btn-x.btn-u-red:hover {
+	color: #EC1625;
+	background: #fff;
 }
 
 .btn-expend {

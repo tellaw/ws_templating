@@ -654,14 +654,15 @@ a.btn-u-xs {
 }
 
 .btn-u.btn-u-blue {
-	background: #3498db;
+	background: #1B8BBB;
+	border: 1px solid #1B8BBB;
 }
 .btn-u.btn-u-blue:hover,
 .btn-u.btn-u-blue:focus,
 .btn-u.btn-u-blue:active,
 .btn-u.btn-u-blue.active,
 .open .dropdown-toggle.btn-u.btn-u-blue {
-	background: #2980b9;
+	background: #1B8BBB;
 }
 .btn-u.btn-u-split-blue.dropdown-toggle {
 	border-left: solid 1px #2980b9;
@@ -669,13 +670,14 @@ a.btn-u-xs {
 
 .btn-u.btn-u-red {
 	background: #ec1625;
+	border: 1px solid #EC1625;
 }
 .btn-u.btn-u-red:hover,
 .btn-u.btn-u-red:focus,
 .btn-u.btn-u-red:active,
 .btn-u.btn-u-red.active,
 .open .dropdown-toggle.btn-u.btn-u-red {
-	background: #c0392b;
+	background: #EC1625;
 }
 .btn-u.btn-u-split-red.dropdown-toggle {
 	border-left: solid 1px #c0392b;
