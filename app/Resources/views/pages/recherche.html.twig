@@ -7,13 +7,11 @@
     <div class="container slider-margin-top">
 
         <!--FAVORIS ET IMPRIMER-->
-        <div class="container margin-bottom-50">
-            <div class="row margin-left-right">
-                <p class="text-right margin-right-6">
-                    <a class="act margin-right-20" href="javascript:alert('Pour ajouter cette recherche à vos favoris, vous devez être identifié');" title="Pour ajouter cette recherche à vos favoris, vous devez être identifié">Favoris</a>
-                    <a href="javascript:window.print()">Imprimer</a>
-                </p>
-            </div>
+        <div class="row fp pull-right">
+            <ul class="col-md-12 col-lg-12 list-inline">
+                <li class="offset-10 col-md-1 col-lg-1 favoris"><a class="act margin-right-20" href="javascript:alert('Pour ajouter cette recherche à vos favoris, vous devez être identifié');" title="Pour ajouter cette recherche à vos favoris, vous devez être identifié"><img src="images/favoris-picto.png" alt="Ajouter aux favoris" width="16" height="16" /></a></li>
+                <li class="col-md-1 col-lg-1 print"><a href="javascript:window.print()"><img src="images/print-picto.png" alt="Imprimer" width="16" height="16" /></a></li>
+            </ul>
         </div>
 
         <!--BARRE DE RECHERCHE-->
@@ -32,44 +30,49 @@
         <!--END OF BARRE DE RECHERCHE-->
 
         <!--NOMBRE RESULTATS-->
-        <div class="container">
-            <div class="row results-number">
-                <h2 class="text-red text-center margin-bottom-20 padding-bottom-20 font-size-18 font-family-myriadpro-semibold"><span class="font-size-22">2263</span> résultats pour 'Risques chimiques et environnement international sélectionné'</h2>
-            </div>
+        <div class="row results-number">
+            <h2 class="col-md-12 text-red text-center margin-bottom-20 padding-bottom-20 font-size-18 font-family-myriadpro-semibold"><span class="font-size-22">2263</span> résultats pour 'Risques chimiques et environnement international sélectionné'</h2>
         </div>
 
         <!-- PARTIE RECHERCHE -->
-        <div class="container s-results margin-bottom-50">
+        <div class="s-results margin-bottom-50">
             <div class="row">
+
                 <form id="searchCommandOperateur" method="GET" action="/search.html" class="sky-form" onsubmit="purgeDefault()">
-                    <input type="hidden" name="advancedSearch" value="true" />
+                <input type="hidden" name="advancedSearch" value="true" />
+
                     <!--COLUMN LEFT-->
-                        <div class="col-md-4 hidden-xs hidden-sm related-search no-padding-left">
-                            <div class="row">
-                                <div class="col-md-12">
+                    <div class="hidden-xs col-md-4 col-lg-4 related-search">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-6 margin-bottom-30">
+                                <ul class="list-group sidebar-nav-v1" id="sidebar-nav">
                                     {{ module("recherche/recherche-avancee") }}
-                                </div>
-                                <div class="col-md-12 margin-top-30 ">
                                     {{ module("recherche/filtre") }}
-                                </div>
+                                </ul>
                             </div>
                         </div>
+                    </div>
                     <!--END OF COLUMN LEFT-->
 
                     <!--COLUMN RIGHT-->
                     <div class="col-md-8">
-
-                        <!--METTRE LE BANDEAU GRIS ICI-->
-                        <ul class="row list-unstyled color-f4f3f3 padding-10">
-                            <li class="col-md-2">
+                        <ul class="col-md-12 list-inline color-f4f3f3 padding-10 clear-both">
+                            <li class="col-md-3">
                                 <a href="#">> Voir mes favoris</a>
                             </li>
-                            <li class="col-md-3">
+                            <li class="col-md-3" id="wrap-history">
                                 <a href="#">> Voir mon historique</a>
+                                <div id="boxHistory">
+                                    <p>
+                                        <a href="/search.html?advancedSearch=true">
+                                            jkfhdj fhdjhf jdfhsjdf djsfhjdfhjdsf hjdsh
+                                        </a>
+                                    </p>
+                                </div>
                             </li>
-                            <li class="col-md-5 center">
+                            <li class="col-md-4 center">
                                 Trier par :
-                                <select onchange="window.location.href=this.value;">
+                                <select class="pertinence" onchange="window.location.href=this.value;">
                                     <option value="/search.html?advancedSearch=true&amp;limit=10&amp;sort=score+desc">Pertinence</option>
                                     <option value="/search.html?advancedSearch=true&amp;limit=10&amp;sort=g_date+asc">Date de publication : les plus anciens</option>
                                     <option value="/search.html?advancedSearch=true&amp;limit=10&amp;sort=g_date+desc">Date de publication : les plus récents</option>
@@ -77,7 +80,6 @@
                                     <option value="/search.html?advancedSearch=true&amp;sort=g_title_sort+desc&amp;limit=10">Titre : décroissant</option>
                                 </select>
                             </li>
-
                             <li class="col-md-2">
                                 Afficher :
                                 <select onchange="window.location.href=this.value;">
@@ -87,155 +89,158 @@
                                 </select>
                             </li>
                         </ul>
-
-                        <ul class="row list-unstyled margin-top-30">
-                            <li class="col-md-4">
-                                <div class="checkbox margin-0">
+                        <ul class="col-md-12 list-inline padding-10 margin-top-30">
+                            <li class="col-md-3">
+                                <div class="checkbox margin-0 actions-select-all">
                                     <label for="actions-select-all">
                                         <input id="actions-select-all" type="checkbox" onclick="selectAll();">
                                         Sélectionner tout
                                     </label>
                                 </div>
                             </li>
-                            <li class="col-md-4">
+                            <li class="col-md-5">
                                 <div>
                                     <a onclick="exportSelection();" style="text-decoration:underline;">> Exporter la(les) référence(s) sélectionnée(s)</a>
                                 </div>
                             </li>
-                            <li class="col-md-4 pull-right no-gutters-right">
-                                <div>
-                                    <form action="" method="" class="input-group">
-                                        <input class="form-control search-bar-2" placeholder="Rechercher dans les résultats" type="text" />
-                                            <span class="input-group-btn">
-                                                <button class="btn-u bg-color-grey-eti search-btn" type="submit"><i class="glyphicon glyphicon-search"></i></button>
-                                            </span>
-                                    </form>
-                                </div>
+                            <li class="col-md-4 recherche-inside">
+                                <input class="col-sm-8 col-md-8 form-control" placeholder="Rechercher dans les résultats" type="text" />
+                                <span class="col-sm-4 col-md-4 input-group-btn no-padding">
+                                    <button class="btn-u bg-color-grey-eti search-btn btn-search-inside" type="submit"><span></span></button>
+                                </span>
                             </li>
                         </ul>
 
                         <!-- Begin Inner Results -->
-                        <div class="inner-results row">
-                            <div class="col-md-2">
-                                <div class="checkbox">
-                                    <input class="actions-select" type="checkbox" value="{Encyclopedia}p3760">
+                        <div class="inner-results archive">
+                            <div class="col-xs-12 col-sm-12 col-md-12 no-padding">
+                                <div class="col-xs-1 col-sm-1 col-md-1 checkbox padding-left-10 no-margin">
+                                    <input class="actions-select" type="checkbox" value="{Encyclopedia}p3760" />
+                                    <span class="ico-search"></span>
                                 </div>
-                                image à rajouter
-                            </div>
-                            <div class="col-md-10">
-                                <ul class="list-inline">
-                                    <li>Archive</li>|
+                                <ul class="col-xs-11 col-sm-11 col-md-11 list-inline">
+                                    <li class="padding-left-10">Archive</li>|
                                     <li><a href="#">10 sept 2012</a></li>|
                                     <li><a href="#">Réf : J3256</a></li>
                                 </ul>
-                                <h3><a href="#" class="font-family-myriadpro-semibold text-red font-size-13">Réactions de synthèse organique en liquides ioniques</a></h3>
-                                <p class="font-size-13 dark-grey-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut orci urna. Morbi blandit enim eget risus posuere dapibus. Vestibulum velit nisi, tempus in placerat non, auctor eu purus. Morbi suscipit porta libero, ac tempus tellus consectetur non. Praesent eget consectetur nunc. Aliquam erat volutpat. Suspendisse ultrices eros eros, consectetur facilisis urna posuere id.</p>
-                                <ul class="list-inline up-ul">
-                                    <li><a href="#">Environnement - Sécurité</a></li>
-                                    <li></li><a href="#">> Sécurité et gestion des risques</a></li>
-                                    <li></li><a href="#">> Maîtriser le risque chimique - management, santé et sécurité dans l'entreprise</a></li>
-                                </ul>
-                                <ul class="list-inline up-ul">
-                                    <li>> Dans : <span>Production de froid mécanique</span></li>|
-                                    <li>Réf : J2365</li>
-                                </ul>
-                                <p>Un panorama complet des machines frigorifiques industrielles</p>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12">
+                                <div class="col-md-offset-1 col-md-11 padding-left-5">
+                                    <h3><a href="#" class="font-family-myriadpro-semibold text-red font-size-13">Réactions de synthèse organique en liquides ioniques</a></h3>
+                                    <p class="font-size-13 dark-grey-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut orci urna. Morbi blandit enim eget risus posuere dapibus. Vestibulum velit nisi, tempus in placerat non, auctor eu purus. Morbi suscipit porta libero, ac tempus tellus consectetur non. Praesent eget consectetur nunc. Aliquam erat volutpat. Suspendisse ultrices eros eros, consectetur facilisis urna posuere id.</p>
+                                    <ul class="list-inline up-ul">
+                                        <li><a href="#">Environnement - Sécurité</a></li>
+                                        <li><a href="#">> Sécurité et gestion des risques</a></li>
+                                        <li><a href="#">> Maîtriser le risque chimique - management, santé et sécurité dans l'entreprise</a></li>
+                                    </ul>
+                                    <ul class="list-inline up-ul">
+                                        <li>> Dans : <span>Production de froid mécanique</span></li>|
+                                        <li>Réf : J2365</li>
+                                    </ul>
+                                    <p>Un panorama complet des machines frigorifiques industrielles</p>
+                                </div>
                             </div>
                         </div>
                         <!-- Begin Inner Results -->
 
-                        <hr>
+                        <hr class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
                         <!-- Begin Inner Results -->
-                        <div class="inner-results row">
-                            <div class="col-md-2">
-                                <div class="checkbox">
-                                    <input class="actions-select" type="checkbox" value="{Encyclopedia}p3760">
+                        <div class="inner-results archive">
+                            <div class="col-xs-12 col-sm-12 col-md-12 no-padding">
+                                <div class="col-xs-1 col-sm-1 col-md-1 checkbox padding-left-10 no-margin">
+                                    <input class="actions-select" type="checkbox" value="{Encyclopedia}p3760" />
+                                    <span class="ico-search"></span>
                                 </div>
-                                image à rajouter
-                            </div>
-                            <div class="col-md-10">
-                                <ul class="list-inline">
-                                    <li>Archive</li>|
+                                <ul class="col-xs-11 col-sm-11 col-md-11 list-inline">
+                                    <li class="padding-left-10">Archive</li>|
                                     <li><a href="#">10 sept 2012</a></li>|
                                     <li><a href="#">Réf : J3256</a></li>
                                 </ul>
-                                <h3><a href="#" class="font-family-myriadpro-semibold text-red font-size-13">Réactions de synthèse organique en liquides ioniques</a></h3>
-                                <p class="font-size-13 dark-grey-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut orci urna. Morbi blandit enim eget risus posuere dapibus. Vestibulum velit nisi, tempus in placerat non, auctor eu purus. Morbi suscipit porta libero, ac tempus tellus consectetur non. Praesent eget consectetur nunc. Aliquam erat volutpat. Suspendisse ultrices eros eros, consectetur facilisis urna posuere id.</p>
-                                <ul class="list-inline up-ul">
-                                    <li><a href="#">Environnement - Sécurité</a></li>
-                                    <li></li><a href="#">> Sécurité et gestion des risques</a></li>
-                                    <li></li><a href="#">> Maîtriser le risque chimique - management, santé et sécurité dans l'entreprise</a></li>
-                                </ul>
-                                <ul class="list-inline up-ul">
-                                    <li>> Dans : <span>Production de froid mécanique</span></li>|
-                                    <li>Réf : J2365</li>
-                                </ul>
-                                <p>Un panorama complet des machines frigorifiques industrielles</p>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12">
+                                <div class="col-md-offset-1 col-md-11 padding-left-5">
+                                    <h3><a href="#" class="font-family-myriadpro-semibold text-red font-size-13">Réactions de synthèse organique en liquides ioniques</a></h3>
+                                    <p class="font-size-13 dark-grey-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut orci urna. Morbi blandit enim eget risus posuere dapibus. Vestibulum velit nisi, tempus in placerat non, auctor eu purus. Morbi suscipit porta libero, ac tempus tellus consectetur non. Praesent eget consectetur nunc. Aliquam erat volutpat. Suspendisse ultrices eros eros, consectetur facilisis urna posuere id.</p>
+                                    <ul class="list-inline up-ul">
+                                        <li><a href="#">Environnement - Sécurité</a></li>
+                                        <li><a href="#">> Sécurité et gestion des risques</a></li>
+                                        <li><a href="#">> Maîtriser le risque chimique - management, santé et sécurité dans l'entreprise</a></li>
+                                    </ul>
+                                    <ul class="list-inline up-ul">
+                                        <li>> Dans : <span>Production de froid mécanique</span></li>|
+                                        <li>Réf : J2365</li>
+                                    </ul>
+                                    <p>Un panorama complet des machines frigorifiques industrielles</p>
+                                </div>
                             </div>
                         </div>
                         <!-- Begin Inner Results -->
 
-                        <hr>
+                        <hr class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
                         <!-- Begin Inner Results -->
-                        <div class="inner-results row">
-                            <div class="col-md-2">
-                                <div class="checkbox">
-                                    <input class="actions-select" type="checkbox" value="{Encyclopedia}p3760">
+                        <div class="inner-results archive">
+                            <div class="col-xs-12 col-sm-12 col-md-12 no-padding">
+                                <div class="col-xs-1 col-sm-1 col-md-1 checkbox padding-left-10 no-margin">
+                                    <input class="actions-select" type="checkbox" value="{Encyclopedia}p3760" />
+                                    <span class="ico-search"></span>
                                 </div>
-                                image à rajouter
-                            </div>
-                            <div class="col-md-10">
-                                <ul class="list-inline">
-                                    <li>Archive</li>|
+                                <ul class="col-xs-11 col-sm-11 col-md-11 list-inline">
+                                    <li class="padding-left-10">Archive</li>|
                                     <li><a href="#">10 sept 2012</a></li>|
                                     <li><a href="#">Réf : J3256</a></li>
                                 </ul>
-                                <h3><a href="#" class="font-family-myriadpro-semibold text-red font-size-13">Réactions de synthèse organique en liquides ioniques</a></h3>
-                                <p class="font-size-13 dark-grey-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut orci urna. Morbi blandit enim eget risus posuere dapibus. Vestibulum velit nisi, tempus in placerat non, auctor eu purus. Morbi suscipit porta libero, ac tempus tellus consectetur non. Praesent eget consectetur nunc. Aliquam erat volutpat. Suspendisse ultrices eros eros, consectetur facilisis urna posuere id.</p>
-                                <ul class="list-inline up-ul">
-                                    <li><a href="#">Environnement - Sécurité</a></li>
-                                    <li></li><a href="#">> Sécurité et gestion des risques</a></li>
-                                    <li></li><a href="#">> Maîtriser le risque chimique - management, santé et sécurité dans l'entreprise</a></li>
-                                </ul>
-                                <ul class="list-inline up-ul">
-                                    <li>> Dans : <span>Production de froid mécanique</span></li>|
-                                    <li>Réf : J2365</li>
-                                </ul>
-                                <p>Un panorama complet des machines frigorifiques industrielles</p>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12">
+                                <div class="col-md-offset-1 col-md-11 padding-left-5">
+                                    <h3><a href="#" class="font-family-myriadpro-semibold text-red font-size-13">Réactions de synthèse organique en liquides ioniques</a></h3>
+                                    <p class="font-size-13 dark-grey-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut orci urna. Morbi blandit enim eget risus posuere dapibus. Vestibulum velit nisi, tempus in placerat non, auctor eu purus. Morbi suscipit porta libero, ac tempus tellus consectetur non. Praesent eget consectetur nunc. Aliquam erat volutpat. Suspendisse ultrices eros eros, consectetur facilisis urna posuere id.</p>
+                                    <ul class="list-inline up-ul">
+                                        <li><a href="#">Environnement - Sécurité</a></li>
+                                        <li><a href="#">> Sécurité et gestion des risques</a></li>
+                                        <li><a href="#">> Maîtriser le risque chimique - management, santé et sécurité dans l'entreprise</a></li>
+                                    </ul>
+                                    <ul class="list-inline up-ul">
+                                        <li>> Dans : <span>Production de froid mécanique</span></li>|
+                                        <li>Réf : J2365</li>
+                                    </ul>
+                                    <p>Un panorama complet des machines frigorifiques industrielles</p>
+                                </div>
                             </div>
                         </div>
                         <!-- Begin Inner Results -->
 
-                        <hr>
+                        <hr class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
                         <!-- Begin Inner Results -->
-                        <div class="inner-results row">
-                            <div class="col-md-2">
-                                <div class="checkbox">
-                                    <input class="actions-select" type="checkbox" value="{Encyclopedia}p3760">
+                        <div class="inner-results archive">
+                            <div class="col-xs-12 col-sm-12 col-md-12 no-padding">
+                                <div class="col-xs-1 col-sm-1 col-md-1 checkbox padding-left-10 no-margin">
+                                    <input class="actions-select" type="checkbox" value="{Encyclopedia}p3760" />
+                                    <span class="ico-search"></span>
                                 </div>
-                                image à rajouter
-                            </div>
-                            <div class="col-md-10">
-                                <ul class="list-inline">
-                                    <li>Archive</li>|
+                                <ul class="col-xs-11 col-sm-11 col-md-11 list-inline">
+                                    <li class="padding-left-10">Archive</li>|
                                     <li><a href="#">10 sept 2012</a></li>|
                                     <li><a href="#">Réf : J3256</a></li>
                                 </ul>
-                                <h3><a href="#" class="font-family-myriadpro-semibold text-red font-size-13">Réactions de synthèse organique en liquides ioniques</a></h3>
-                                <p class="font-size-13 dark-grey-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut orci urna. Morbi blandit enim eget risus posuere dapibus. Vestibulum velit nisi, tempus in placerat non, auctor eu purus. Morbi suscipit porta libero, ac tempus tellus consectetur non. Praesent eget consectetur nunc. Aliquam erat volutpat. Suspendisse ultrices eros eros, consectetur facilisis urna posuere id.</p>
-                                <ul class="list-inline up-ul">
-                                    <li><a href="#">Environnement - Sécurité</a></li>
-                                    <li></li><a href="#">> Sécurité et gestion des risques</a></li>
-                                    <li></li><a href="#">> Maîtriser le risque chimique - management, santé et sécurité dans l'entreprise</a></li>
-                                </ul>
-                                <ul class="list-inline up-ul">
-                                    <li>> Dans : <span>Production de froid mécanique</span></li>|
-                                    <li>Réf : J2365</li>
-                                </ul>
-                                <p>Un panorama complet des machines frigorifiques industrielles</p>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12">
+                                <div class="col-md-offset-1 col-md-11 padding-left-5">
+                                    <h3><a href="#" class="font-family-myriadpro-semibold text-red font-size-13">Réactions de synthèse organique en liquides ioniques</a></h3>
+                                    <p class="font-size-13 dark-grey-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut orci urna. Morbi blandit enim eget risus posuere dapibus. Vestibulum velit nisi, tempus in placerat non, auctor eu purus. Morbi suscipit porta libero, ac tempus tellus consectetur non. Praesent eget consectetur nunc. Aliquam erat volutpat. Suspendisse ultrices eros eros, consectetur facilisis urna posuere id.</p>
+                                    <ul class="list-inline up-ul">
+                                        <li><a href="#">Environnement - Sécurité</a></li>
+                                        <li><a href="#">> Sécurité et gestion des risques</a></li>
+                                        <li><a href="#">> Maîtriser le risque chimique - management, santé et sécurité dans l'entreprise</a></li>
+                                    </ul>
+                                    <ul class="list-inline up-ul">
+                                        <li>> Dans : <span>Production de froid mécanique</span></li>|
+                                        <li>Réf : J2365</li>
+                                    </ul>
+                                    <p>Un panorama complet des machines frigorifiques industrielles</p>
+                                </div>
                             </div>
                         </div>
                         <!-- Begin Inner Results -->
@@ -243,15 +248,15 @@
                         <div class="margin-bottom-30"></div>
 
                         <div class="text-left">
-                            <ul class="pagination">
-                                <li><a href="#">«</a></li>
+                            <ul class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pagination">
+                                <li><a href="#"><img src="images/arrow-red-left-v3.png" alt="#" width="12" height="12" /></a></li>
                                 <li class="active"><a href="#">1</a></li>
                                 <li><a href="#">2</a></li>
                                 <li><a href="#">3</a></li>
                                 <li><a href="#">...</a></li>
                                 <li><a href="#">157</a></li>
                                 <li><a href="#">158</a></li>
-                                <li><a href="#">»</a></li>
+                                <li><a href="#"><img src="images/arrow-red-right-v3.png" alt="#" width="12" height="12" /></a></li>
                             </ul>
                         </div>
                     </div>
@@ -259,7 +264,6 @@
                 </form>
             </div>
         </div>
-
 
         <div id="menu-smint" class="tab-v1 tab-domaines">
             <div id="sub-menu" class="subMenu margin-bottom-20" style="position: fixed; margin-top: 0px; top: 0px; left: 0px;">
@@ -282,7 +286,7 @@
             </div>
 
             <div class="bottom-bloc">
-                <hr id="hr-separator" class=" hidden-md hidden-lg ">
+                <hr id="hr-separator" class="hidden-xs hidden-sm hidden-md hidden-lg">
                 <!--=== 3 blocs ===-->
                 {{ module ("reassurance/reassurance2") }}
                 <!--=== End 3 blocs ===-->
