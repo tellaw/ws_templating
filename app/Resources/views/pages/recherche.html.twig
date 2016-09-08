@@ -9,8 +9,8 @@
         <!--FAVORIS ET IMPRIMER-->
         <div class="row fp pull-right">
             <ul class="col-xs-12 col-sm-12 col-md-12 col-lg-12 list-inline">
-                <li class="col-sm-offset-10 col-sm-1 col-md-offset-10 col-md-1 col-lg-offset-10 col-lg-1 favoris"><a class="act margin-right-20" href="javascript:alert('Pour ajouter cette recherche à vos favoris, vous devez être identifié');" title="Pour ajouter cette recherche à vos favoris, vous devez être identifié"><img src="images/favoris-picto.png" alt="Ajouter aux favoris" width="16" height="16" /></a></li>
-                <li class="col-md-1 col-lg-1 print"><a href="javascript:window.print()"><img src="images/print-picto.png" alt="Imprimer" width="16" height="16" /></a></li>
+                <li class="col-xs-offset-8 col-xs-2 col-sm-offset-10 col-sm-1 col-md-offset-10 col-md-1 col-lg-offset-10 col-lg-1 favoris"><a class="act margin-right-20" href="javascript:alert('Pour ajouter cette recherche à vos favoris, vous devez être identifié');" title="Pour ajouter cette recherche à vos favoris, vous devez être identifié"><img src="images/favoris-picto.png" alt="Ajouter aux favoris" width="16" height="16" /></a></li>
+                <li class="col-xs-2 col-sm-1 col-md-1 col-lg-1 print"><a href="javascript:window.print()"><img src="images/print-picto.png" alt="Imprimer" width="16" height="16" /></a></li>
             </ul>
         </div>
 
@@ -37,11 +37,11 @@
 
                 <!--COLUMN RIGHT-->
                 <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 margin-top-20">
-                    <ul class="list-inline color-f4f3f3 padding-10 clear-both tab-search">
-                        <li class="col-sm-3 col-md-3 col-lg-3">
+                    <ul class="hidden-xs list-inline color-f4f3f3 padding-10 clear-both tab-search">
+                        <li class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                             <a href="#">> Voir mes favoris</a>
                         </li>
-                        <li class="col-sm-3 col-md-3 col-lg-3" id="wrap-history">
+                        <li class="col-xs-12 col-sm-3 col-md-3 col-lg-3" id="wrap-history">
                             <a href="#">> Voir mon historique</a>
                             <div class="alert fade in alert-dismissable boxHistory">
                                 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
@@ -52,7 +52,7 @@
                                 Risque chimique
                             </div>
                         </li>
-                        <li class="col-sm-4 col-md-4 col-lg-4 center">
+                        <li class="col-xs-12 col-sm-4 col-md-4 col-lg-4 center">
                             Trier par :
                             <select class="pertinence" onchange="window.location.href=this.value;">
                                 <option value="/search.html?advancedSearch=true&amp;limit=10&amp;sort=score+desc">Pertinence</option>
@@ -62,7 +62,7 @@
                                 <option value="/search.html?advancedSearch=true&amp;sort=g_title_sort+desc&amp;limit=10">Titre : Décroissant</option>
                             </select>
                         </li>
-                        <li class="col-sm-2 col-md-2 col-lg-2">
+                        <li class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                             Afficher :
                             <select onchange="window.location.href=this.value;">
                                 <option value="/search.html?advancedSearch=true&amp;limit=10" selected="selected">10</option>
@@ -71,7 +71,7 @@
                             </select>
                         </li>
                     </ul>
-                    <ul class="col-md-12 list-inline padding-10 margin-top-30 tab-search">
+                    <ul class="hidden-xs col-md-12 list-inline padding-10 margin-top-30 tab-search">
                         <li class="col-sm-3 col-md-3 col-lg-3">
                             <div class="checkbox margin-0 actions-select-all">
                                 <label for="actions-select-all">
@@ -80,14 +80,14 @@
                                 </label>
                             </div>
                         </li>
-                        <li class="col-sm-5 col-md-5 col-lg-5">
+                        <li class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
                             <div>
                                 <a onclick="exportSelection();" style="text-decoration:underline;">> Exporter la(les) référence(s) sélectionnée(s)</a>
                             </div>
                         </li>
-                        <li class="col-sm-4 col-md-4 col-lg-4 recherche-inside">
-                            <input class="col-sm-8 col-md-8 form-control" placeholder="Rechercher dans les résultats" type="text" />
-                            <span class="col-sm-4 col-md-4 input-group-btn no-padding">
+                        <li class="col-xs-12 col-sm-4 col-md-4 col-lg-4 recherche-inside">
+                            <input class="col-xs-8 col-sm-8 col-md-8 form-control" placeholder="Rechercher dans les résultats" type="text" />
+                            <span class="col-xs-4 col-sm-4 col-md-4 input-group-btn no-padding">
                                 <button class="btn-u bg-color-grey-eti search-btn btn-search-inside" type="submit"><span></span></button>
                             </span>
                         </li>
@@ -96,11 +96,11 @@
                     <!-- Begin Inner Results -->
                     <div class="inner-results archive">
                         <div class="col-xs-12 col-sm-12 col-md-12 no-padding">
-                            <div class="col-xs-1 col-sm-1 col-md-1 checkbox padding-left-10 no-margin">
+                            <div class="col-xs-2 col-sm-1 col-md-1 checkbox padding-left-10 no-margin">
                                 <input class="actions-select" type="checkbox" value="{Encyclopedia}p3760" />
                                 <span class="ico-search"></span>
                             </div>
-                            <ul class="col-xs-11 col-sm-11 col-md-11 list-inline">
+                            <ul class="col-xs-10 col-sm-11 col-md-11 list-inline">
                                 <li class="padding-left-10">Archive</li>|
                                 <li><a href="#">10 sept 2012</a></li>|
                                 <li><a href="#">Réf : J3256</a></li>
@@ -130,11 +130,11 @@
                     <!-- Begin Inner Results -->
                     <div class="inner-results archive">
                         <div class="col-xs-12 col-sm-12 col-md-12 no-padding">
-                            <div class="col-xs-1 col-sm-1 col-md-1 checkbox padding-left-10 no-margin">
+                            <div class="col-xs-2 col-sm-1 col-md-1 checkbox padding-left-10 no-margin">
                                 <input class="actions-select" type="checkbox" value="{Encyclopedia}p3760" />
                                 <span class="ico-search"></span>
                             </div>
-                            <ul class="col-xs-11 col-sm-11 col-md-11 list-inline">
+                            <ul class="col-xs-10 col-sm-11 col-md-11 list-inline">
                                 <li class="padding-left-10">Archive</li>|
                                 <li><a href="#">10 sept 2012</a></li>|
                                 <li><a href="#">Réf : J3256</a></li>
@@ -164,11 +164,11 @@
                     <!-- Begin Inner Results -->
                     <div class="inner-results archive">
                         <div class="col-xs-12 col-sm-12 col-md-12 no-padding">
-                            <div class="col-xs-1 col-sm-1 col-md-1 checkbox padding-left-10 no-margin">
+                            <div class="col-xs-2 col-sm-1 col-md-1 checkbox padding-left-10 no-margin">
                                 <input class="actions-select" type="checkbox" value="{Encyclopedia}p3760" />
                                 <span class="ico-search"></span>
                             </div>
-                            <ul class="col-xs-11 col-sm-11 col-md-11 list-inline">
+                            <ul class="col-xs-10 col-sm-11 col-md-11 list-inline">
                                 <li class="padding-left-10">Archive</li>|
                                 <li><a href="#">10 sept 2012</a></li>|
                                 <li><a href="#">Réf : J3256</a></li>
@@ -198,11 +198,11 @@
                     <!-- Begin Inner Results -->
                     <div class="inner-results archive">
                         <div class="col-xs-12 col-sm-12 col-md-12 no-padding">
-                            <div class="col-xs-1 col-sm-1 col-md-1 checkbox padding-left-10 no-margin">
+                            <div class="col-xs-2 col-sm-1 col-md-1 checkbox padding-left-10 no-margin">
                                 <input class="actions-select" type="checkbox" value="{Encyclopedia}p3760" />
                                 <span class="ico-search"></span>
                             </div>
-                            <ul class="col-xs-11 col-sm-11 col-md-11 list-inline">
+                            <ul class="col-xs-10 col-sm-11 col-md-11 list-inline">
                                 <li class="padding-left-10">Archive</li>|
                                 <li><a href="#">10 sept 2012</a></li>|
                                 <li><a href="#">Réf : J3256</a></li>
