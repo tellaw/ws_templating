@@ -1515,7 +1515,7 @@ p.cellule-list {
 .tab-v1 .nav-tabs {
 	border-bottom: solid 2px #697277;
 	position: relative;
-	z-index: 2;
+	z-index: 3;
 }
 
 .tab-v1 .nav-tabs a {
