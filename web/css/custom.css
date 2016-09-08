@@ -704,7 +704,6 @@ dt {
 	background-color: #fff !important;
 	color: #1b8bbb !important;
 }
-
 #cat-btn:focus {
 	background-color: #EC1625 !important;
 	color: #fff !important;
@@ -1420,6 +1419,11 @@ p.cellule-list {
 	line-height:12px;
 	letter-spacing: 1px;
 }
+#newsletter-form .btn-u {
+	height:34px;
+	padding-top: 9px !important;
+	padding-bottom: 9px !important;
+}
 .conf-title {
 	left: 0px;
 	bottom: 0px ;
@@ -1454,6 +1458,9 @@ p.cellule-list {
 }
 .height-21 {
 	height: 21px;
+}
+.height-34 {
+	height: 34px;
 }
 .tab-bg {
 	background-color: #fff !important;
