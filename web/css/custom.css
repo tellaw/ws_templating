@@ -320,7 +320,7 @@ dt {
 .line-height-14 { line-height: 14px;}
 .line-height-16 { line-height: 16px;}
 .line-height-18 { line-height: 18px;}
-.line-height-20 { line-height: 20px;}
+.line-height-20, .line-height-1v2 { line-height: 20px;}
 .line-height-22 { line-height: 22px;}
 .line-height-35 { line-height: 35px;}
 
