@@ -6,7 +6,8 @@
   border: 1px solid #178BB7; }
 
 .skin-th1 .text-color {
-  color: #178BB7; }
+  /*color: nth($domaines_secteurs_colors, $i);*/
+  font-family: 'myriad-pro-semi-bold'; }
 
 /* procedes chimie bio agro */
 .skin-th2 .background-encart {
@@ -16,7 +17,8 @@
   border: 1px solid #1EAA74; }
 
 .skin-th2 .text-color {
-  color: #1EAA74; }
+  /*color: nth($domaines_secteurs_colors, $i);*/
+  font-family: 'myriad-pro-semi-bold'; }
 
 /* construction */
 .skin-th3 .background-encart {
@@ -26,7 +28,8 @@
   border: 1px solid #E0760C; }
 
 .skin-th3 .text-color {
-  color: #E0760C; }
+  /*color: nth($domaines_secteurs_colors, $i);*/
+  font-family: 'myriad-pro-semi-bold'; }
 
 /* energie */
 .skin-th4 .background-encart {
@@ -36,7 +39,8 @@
   border: 1px solid #FABD11; }
 
 .skin-th4 .text-color {
-  color: #FABD11; }
+  /*color: nth($domaines_secteurs_colors, $i);*/
+  font-family: 'myriad-pro-semi-bold'; }
 
 /* environement */
 .skin-th5 .background-encart {
@@ -46,7 +50,8 @@
   border: 1px solid #9DB51D; }
 
 .skin-th5 .text-color {
-  color: #9DB51D; }
+  /*color: nth($domaines_secteurs_colors, $i);*/
+  font-family: 'myriad-pro-semi-bold'; }
 
 /* genie industriel */
 .skin-th6 .background-encart {
@@ -56,7 +61,8 @@
   border: 1px solid #1C8CBB; }
 
 .skin-th6 .text-color {
-  color: #1C8CBB; }
+  /*color: nth($domaines_secteurs_colors, $i);*/
+  font-family: 'myriad-pro-semi-bold'; }
 
 /* mecanique */
 .skin-th7 .background-encart {
@@ -66,7 +72,8 @@
   border: 1px solid #D31E2C; }
 
 .skin-th7 .text-color {
-  color: #D31E2C; }
+  /*color: nth($domaines_secteurs_colors, $i);*/
+  font-family: 'myriad-pro-semi-bold'; }
 
 /* sciences fondamentales */
 .skin-th8 .background-encart {
@@ -76,7 +83,8 @@
   border: 1px solid #1F9A99; }
 
 .skin-th8 .text-color {
-  color: #1F9A99; }
+  /*color: nth($domaines_secteurs_colors, $i);*/
+  font-family: 'myriad-pro-semi-bold'; }
 
 /* technologie de l information */
 .skin-th9 .background-encart {
@@ -86,7 +94,8 @@
   border: 1px solid #C2A681; }
 
 .skin-th9 .text-color {
-  color: #C2A681; }
+  /*color: nth($domaines_secteurs_colors, $i);*/
+  font-family: 'myriad-pro-semi-bold'; }
 
 /* nanotechnologies */
 .skin-th10 .background-encart {
@@ -96,7 +105,8 @@
   border: 1px solid #A41979; }
 
 .skin-th10 .text-color {
-  color: #A41979; }
+  /*color: nth($domaines_secteurs_colors, $i);*/
+  font-family: 'myriad-pro-semi-bold'; }
 
 /* materiaux */
 .skin-th11 .background-encart {
@@ -106,7 +116,8 @@
   border: 1px solid #642F85; }
 
 .skin-th11 .text-color {
-  color: #642F85; }
+  /*color: nth($domaines_secteurs_colors, $i);*/
+  font-family: 'myriad-pro-semi-bold'; }
 
 /* archives */
 .skin-th12 .background-encart {
@@ -116,7 +127,8 @@
   border: 1px solid #6f6f6f; }
 
 .skin-th12 .text-color {
-  color: #6f6f6f; }
+  /*color: nth($domaines_secteurs_colors, $i);*/
+  font-family: 'myriad-pro-semi-bold'; }
 
 /* electronique photonique */
 .skin-th13 .background-encart {
@@ -126,7 +138,8 @@
   border: 1px solid #E4054F; }
 
 .skin-th13 .text-color {
-  color: #E4054F; }
+  /*color: nth($domaines_secteurs_colors, $i);*/
+  font-family: 'myriad-pro-semi-bold'; }
 
 /* transports */
 .skin-th14 .background-encart {
@@ -136,7 +149,8 @@
   border: 1px solid #25445C; }
 
 .skin-th14 .text-color {
-  color: #25445C; }
+  /*color: nth($domaines_secteurs_colors, $i);*/
+  font-family: 'myriad-pro-semi-bold'; }
 
 /* biomediacl pharma */
 .skin-th15 .background-encart {
@@ -146,7 +160,8 @@
   border: 1px solid #233267; }
 
 .skin-th15 .text-color {
-  color: #233267; }
+  /*color: nth($domaines_secteurs_colors, $i);*/
+  font-family: 'myriad-pro-semi-bold'; }
 
 /* automatique robotique */
 .skin-th16 .background-encart {
@@ -156,7 +171,8 @@
   border: 1px solid #959594; }
 
 .skin-th16 .text-color {
-  color: #959594; }
+  /*color: nth($domaines_secteurs_colors, $i);*/
+  font-family: 'myriad-pro-semi-bold'; }
 
 /* aerospatial */
 .skin-sc1 .background-encart {
@@ -166,7 +182,8 @@
   border: 1px solid #25445C; }
 
 .skin-sc1 .text-color {
-  color: #25445C; }
+  /*color: nth($domaines_secteurs_colors, $i);*/
+  font-family: 'myriad-pro-semi-bold'; }
 
 /* agroalimentaire */
 .skin-sc2 .background-encart {
@@ -176,7 +193,8 @@
   border: 1px solid #23AB75; }
 
 .skin-sc2 .text-color {
-  color: #23AB75; }
+  /*color: nth($domaines_secteurs_colors, $i);*/
+  font-family: 'myriad-pro-semi-bold'; }
 
 /* automobile */
 .skin-sc3 .background-encart {
@@ -186,7 +204,8 @@
   border: 1px solid #222221; }
 
 .skin-sc3 .text-color {
-  color: #222221; }
+  /*color: nth($domaines_secteurs_colors, $i);*/
+  font-family: 'myriad-pro-semi-bold'; }
 
 /* eco-indiustrie */
 .skin-sc4 .background-encart {
@@ -196,7 +215,8 @@
   border: 1px solid #9DB51D; }
 
 .skin-sc4 .text-color {
-  color: #9DB51D; }
+  /*color: nth($domaines_secteurs_colors, $i);*/
+  font-family: 'myriad-pro-semi-bold'; }
 
 /* equipement-industriel */
 .skin-sc5 .background-encart {
@@ -206,7 +226,8 @@
   border: 1px solid #D31E2C; }
 
 .skin-sc5 .text-color {
-  color: #D31E2C; }
+  /*color: nth($domaines_secteurs_colors, $i);*/
+  font-family: 'myriad-pro-semi-bold'; }
 
 /* plasturgie */
 .skin-sc6 .background-encart {
@@ -216,7 +237,8 @@
   border: 1px solid #642F85; }
 
 .skin-sc6 .text-color {
-  color: #642F85; }
+  /*color: nth($domaines_secteurs_colors, $i);*/
+  font-family: 'myriad-pro-semi-bold'; }
 
 /* mesures analyse */
 .zone-th1 {

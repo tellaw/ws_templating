@@ -34,7 +34,8 @@ $i: 1;
       border:1px solid nth($domaines_secteurs_colors, $i);
     }
     .text-color {
-      color: nth($domaines_secteurs_colors, $i);
+      /*color: nth($domaines_secteurs_colors, $i);*/
+      font-family: 'myriad-pro-semi-bold';
     }
   }
   $i: $i + 1;
