@@ -1418,6 +1418,7 @@ p.cellule-list {
 	padding-bottom: 13px !important;
 	line-height:12px;
 	letter-spacing: 1px;
+	font-size: 13px;
 }
 #newsletter-form .btn-u {
 	height:34px;
@@ -2159,12 +2160,13 @@ div.play-button {
 }
 .btn-devis--details {
 	width: 175px;
-	font-size: 11px;
+	font-size: 13px;
 	letter-spacing: 1px;
 	padding-bottom: 11.5px;
 	padding-top: 11.5px;
-	font-family: 'myriad-pro-semi-bold';
 	border:1px solid #697277;
+	padding-left: 0;
+	padding-right: 0;
 }
 .btn-devis--details:hover {
 	background-color: #fff;
@@ -2172,14 +2174,15 @@ div.play-button {
 }
 
 .btn-offers--details {
-	width: 172px;
-	font-size: 11px;
+	width: 175px;
+	font-size: 13px;
 	letter-spacing: 1px;
 	padding-bottom: 11.5px;
 	padding-top: 11.5px;
 	margin-left: 5px;
-	font-family: 'myriad-pro-semi-bold';
 	border:1px solid #74b504;
+	padding-left: 0;
+	padding-right: 0;
 }
 
 .btn-offers--details:hover {
@@ -2187,10 +2190,6 @@ div.play-button {
 	color: #74b504;
 }
 .btn-offers--details i {
-	font-size: 16px;
-}
-
-.btn-devis--details i {
 	font-size: 16px;
 }
 .bg-color-9eb504 {
