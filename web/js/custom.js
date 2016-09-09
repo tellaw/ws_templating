@@ -302,7 +302,7 @@ jQuery(document).ready(function() {
         });
     });
 
-    // gestion des popins
+    // gestion des popins services
     jQuery("a.services-popin").click(function() {
         if (!jQuery("#services-popin").html()) {
             var ui = '<div id="services-popin" role="dialog" style="display:none;z-index:1001;">' + '<iframe frameborder="0" style="width:100%;height:98%;" src=""></iframe>' + '</div>';
@@ -334,6 +334,41 @@ jQuery(document).ready(function() {
 
         jQuery("#design-services-popin").css("left", ((jQuery(window).width()-jQuery("#design-services-popin").width())/2));
         jQuery("#design-services-popin").css("height", "295px");
+        return false;
+    });
+
+    // gestion de popin switch
+    jQuery("a.switch-popin").click(function() {
+        if (!jQuery("#switch-popin").html()) {
+            var ui = '<div id="switch-popin" role="dialog" style="display:none;z-index:1001;">' + '<iframe frameborder="0" style="width:100%;height:98%;" src=""></iframe>' + '</div>';
+            jQuery("body").append(ui);
+        }
+        var top = jQuery(this).offset().top;
+        jQuery("#switch-popin").dialog({
+            modal: true,
+            title: jQuery(this).attr("title"),
+            width: 600,
+            closeText: "Fermer X",
+            open: function() {
+                window.scrollTo(0, top - jQuery(window).height() / 2);
+                return false;
+            },
+            close: function() {
+                jQuery("#switch-popin").remove();
+                return false;
+            }
+        });
+        jQuery("#switch-popin").dialog("widget").attr("id", "design-switch-popin").css("position", "absolute");
+        jQuery("#switch-popin iframe").attr("src", jQuery(this).attr("href"));
+        if(top > "420"){
+            jQuery("#switch-popin").dialog("widget").css("top", top - jQuery(window).height() / 3);
+        }
+        else {
+            jQuery("#switch-popin").dialog("widget").css("top", "150px");
+        }
+
+        jQuery("#design-switch-popin").css("left", ((jQuery(window).width()-jQuery("#design-switch-popin").width())/2));
+        jQuery("#design-switch-popin").css("height", "295px");
         return false;
     });
 
