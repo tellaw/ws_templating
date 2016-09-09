@@ -245,7 +245,7 @@ jQuery(document).ready(function() {
     });
 
     if (jQuery(window).width() >= 1024) {
-        jQuery('#sticky-menu-phone').wrap('<a class="services-popin" href="/switch.html"></a>');
+        jQuery('#sticky-menu-phone').wrap('<a class="switch-popin" href="/switch.html"></a>');
     };
 
     // !!!! ATTENTION / À MODIFIER LORS DU CHANGEMENT DE HEADER !!!!!
