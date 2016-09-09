@@ -312,7 +312,6 @@ jQuery(document).ready(function() {
         jQuery("#services-popin").dialog({
             modal: true,
             title: jQuery(this).attr("title"),
-            width: auto,
             closeText: "Fermer X",
             open: function() {
                 window.scrollTo(0, top - jQuery(window).height() / 2);
