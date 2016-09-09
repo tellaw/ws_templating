@@ -1925,11 +1925,6 @@ div.play-button {
 	float: none;
 }
 
-
-#design-services-popin {
-	background: url(../images/fond_hachure.png) repeat-y left top #fff;
-}
-
 .offer-devider {
 	width: 30px;
 	margin-left: auto;
@@ -2845,7 +2840,7 @@ div.play-button {
 	margin-bottom: 70px;
 }
 #bande {
-	background: #F4F2F3;
+	background: #E2E1E1;
 	height: 100%;
 	padding-top: 30px;
 	padding-bottom: 30px;
