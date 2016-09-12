@@ -531,7 +531,7 @@
     width: 100% !important;
     padding-left: 0px;
     padding-right: 0px; }
-  #switch .img-choix {
+  #switch > div.clearfix {
     display: none; }
   #switch .actions {
     margin: 0 8% !important; }
