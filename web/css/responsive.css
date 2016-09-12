@@ -586,9 +586,16 @@
     width: 250px; }
   .abonnement-text {
     text-align: center; }
-  #design-services-popin {
+  #design-services-popin,
+  #design-switch-popin {
     width: 90% !important;
     height: 370px !important; }
+  #switch .img-choix {
+    display: none; }
+  #switch a {
+    float: none !important; }
+  #switch a:first-child {
+    margin-bottom: 20px; }
   #design-di-conf-popin {
     width: 90% !important; }
   #design-di-conf-popin #form-container {
