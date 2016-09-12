@@ -821,9 +821,13 @@ $color-red : #ea2336 ;
   #switch .img-choix {
     display:none;
   }
-  #switch a {
+  #switch .actions {
+    margin: 0 8% !important;
+  }
+  #switch .actions a {
     float:none!important;
   }
+
   #switch a:first-child {
     margin-bottom:20px
   }
