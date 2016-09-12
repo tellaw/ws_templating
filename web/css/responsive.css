@@ -530,7 +530,15 @@
   .devis, .tag-box--middle {
     width: 100% !important;
     padding-left: 0px;
-    padding-right: 0px; } }
+    padding-right: 0px; }
+  #switch .img-choix {
+    display: none; }
+  #switch .actions {
+    margin: 0 8% !important; }
+  #switch .actions a {
+    float: none !important; }
+  #switch a:first-child {
+    margin-bottom: 20px; } }
 
 @media screen and (max-width: 646px) {
   .header-last-title {
@@ -590,14 +598,6 @@
   #design-switch-popin {
     width: 90% !important;
     height: 370px !important; }
-  #switch .img-choix {
-    display: none; }
-  #switch .actions {
-    margin: 0 8% !important; }
-  #switch .actions a {
-    float: none !important; }
-  #switch a:first-child {
-    margin-bottom: 20px; }
   #design-di-conf-popin {
     width: 90% !important; }
   #design-di-conf-popin #form-container {
