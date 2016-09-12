@@ -736,11 +736,12 @@ $color-red : #ea2336 ;
     padding-right: 0px;
   }
   #switch {
-    >div.clearfix {
+    div.clearfix {
       display:none;
     }
   }
-  #switch .actions {
+  #switch div.actions {
+    display: block;
     margin: 0 8% !important;
   }
   #switch .actions a {

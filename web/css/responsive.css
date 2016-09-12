@@ -531,9 +531,10 @@
     width: 100% !important;
     padding-left: 0px;
     padding-right: 0px; }
-  #switch > div.clearfix {
+  #switch div.clearfix {
     display: none; }
-  #switch .actions {
+  #switch div.actions {
+    display: block;
     margin: 0 8% !important; }
   #switch .actions a {
     float: none !important; }
