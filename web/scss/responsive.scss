@@ -428,12 +428,25 @@ $color-red : #ea2336 ;
       display:none;
     }
   }
-  form select,
-  form input,
-  form textarea,
-  form label,
-  form .client > span {
-    width:100%;
+  form {
+    select, input, label {
+      width:100%;
+    }
+    .client {
+      > span {
+        width:100%;
+      }
+    }
+    input[type="checkbox"] {
+      + label {
+        display:inline;
+      }
+    }
+  }
+  .formulaire-di {
+    .intro {
+      margin: 30px 0;
+    }
   }
 }
 
@@ -464,17 +477,33 @@ $color-red : #ea2336 ;
       line-height: 1.5;
     }
   }
-  form .note::before {
-    display:none;
+  form {
+    .note {
+      &::before {
+        display:none;
+      }
+    }
+    select, input {
+      width:79%;
+    }
+    label {
+      width:20%;
+    }
+    .client {
+      > span {
+        width:20%;
+      }
+    }
+    input[type="checkbox"] {
+      + label {
+        display:inline;
+      }
+    }
   }
-  form select,
-  form input,
-  form textarea {
-    width:79%;
-  }
-  form label,
-  form .client > span {
-    width:20%;
+  .formulaire-di {
+    .intro {
+      margin: 30px 0;
+    }
   }
 }
 
