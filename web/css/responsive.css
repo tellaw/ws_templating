@@ -332,7 +332,16 @@
     font-weight: 600;
     display: inline-block; }
   .domaine-secteur-box h5 {
-    line-height: 1.5; } }
+    line-height: 1.5; }
+  form .note::before {
+    display: none; }
+  form select,
+  form input,
+  form textarea {
+    width: 79%; }
+  form label,
+  form .client > span {
+    width: 20%; } }
 
 @media screen and (min-width: 426px) {
   .xs-padding-left {

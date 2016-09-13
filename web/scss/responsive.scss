@@ -464,6 +464,18 @@ $color-red : #ea2336 ;
       line-height: 1.5;
     }
   }
+  form .note::before {
+    display:none;
+  }
+  form select,
+  form input,
+  form textarea {
+    width:79%;
+  }
+  form label,
+  form .client > span {
+    width:20%;
+  }
 }
 
 @media screen and (min-width: 426px) {
