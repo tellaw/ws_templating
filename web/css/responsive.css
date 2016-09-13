@@ -299,7 +299,20 @@
   .xs-margin-bottom-20 {
     margin-bottom: 20px !important; }
   .xs-margin-top-25 {
-    margin-top: 25px !important; } }
+    margin-top: 25px !important; }
+  .formulaire-di h1 {
+    background: none;
+    padding: 20px 0; }
+  .formulaire-di .intro {
+    margin: 20px 0; }
+  form .note::before {
+    display: none; }
+  form select,
+  form input,
+  form textarea,
+  form label,
+  form .client > span {
+    width: 100%; } }
 
 @media screen and (min-width: 425px) and (max-width: 991px) {
   .col-mod-tags {
