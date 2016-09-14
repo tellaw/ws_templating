@@ -127,6 +127,14 @@ div.border-red {
   padding: 10px;
   font-size: 14px; }
 
+.recherche-avancee .section-title,
+.filtre .section-title {
+  text-transform: uppercase;
+  color: #ec1625;
+  font-size: 13px;
+  font-weight: bold;
+  margin: 20px 0 0 0; }
+
 .recherche-avancee .title-element,
 .filtre .title-element {
   background: #717984;
@@ -207,19 +215,19 @@ div.border-red {
         margin: 0;
         padding: 0;
         background: none; }
-
-.sidebar-nav-v1 .filtre .section-title {
-  color: #ec1625; }
-  .sidebar-nav-v1 .filtre .section-title a {
-    text-transform: uppercase;
+  .sidebar-nav-v1 .filtre ul .section-title {
     color: #ec1625;
-    font-size: 13px;
-    font-weight: bold;
     margin: 0; }
-  .sidebar-nav-v1 .filtre .section-title li:hover {
-    color: #ec1625; }
-  .sidebar-nav-v1 .filtre .section-title a {
-    color: #ec1625; }
+    .sidebar-nav-v1 .filtre ul .section-title a {
+      text-transform: uppercase;
+      color: #ec1625;
+      font-size: 13px;
+      font-weight: bold;
+      margin: 0; }
+    .sidebar-nav-v1 .filtre ul .section-title li:hover {
+      color: #ec1625; }
+    .sidebar-nav-v1 .filtre ul .section-title a {
+      color: #ec1625; }
 
 .sidebar-nav-v1 .filtre .form-group {
   margin: 0;
@@ -239,6 +247,8 @@ div.border-red {
   display: inline-block; }
   .inner-results .inner-results .checkbox input {
     margin: 6px 8px 0 0; }
+  .inner-results .ez_content h2 {
+    font-size: 12px; }
 
 .inner-results.article {
   text-align: left; }
@@ -248,7 +258,8 @@ hr {
 
 .recherche-inside .form-control {
   width: 87%;
-  height: 25px; }
+  height: 25px;
+  border: none; }
 
 .recherche-inside .btn-search-inside {
   height: 25px;
@@ -271,49 +282,74 @@ hr {
 .ico-search {
   background: url("../images/icone-recherche.png") no-repeat 0 0;
   width: 35px;
-  height: 31px;
+  height: 29px;
   margin: 0 0 0 30px;
   padding: 0;
   display: inline-block; }
 
+.visu_real .ico-search {
+  background: none;
+  margin: -3px 0 0 20px; }
+
 .archive .ico-search {
   background-position: 0 0; }
+
+.archive .ico-search:hover {
+  background-position: -39px 0px; }
 
 .article .ico-search {
   background-position: 0 -31px; }
 
+.article .ico-search:hover {
+  background-position: -39px -31px; }
+
 .fiche .ico-search {
-  background-position: 0 -62px; }
+  background-position: 0 -59px; }
+
+.fiche .ico-search:hover {
+  background-position: -39px -59px; }
 
 .actu .ico-search {
-  background-position: 0 -88px; }
+  background-position: 0 -91px; }
 
-.outil .ico-search {
-  background-position: 0 -124px; }
-
-.ref_biblio .ico-search {
-  background-position: 0 0; }
-
-.pesp .ico-search {
-  background-position: 0 0; }
+.actu .ico-search:hover {
+  background-position: -39px -91px; }
 
 .wp .ico-search {
-  background-position: 0 0; }
+  background-position: 0 -121px; }
 
-.formation .ico-search {
-  background-position: 0 0; }
-
-.conference .ico-search {
-  background-position: 0 0; }
+.wp .ico-search:hover {
+  background-position: -39px -121px; }
 
 .dossier .ico-search {
+  background-position: 0 -150px; }
+
+.dossier .ico-search:hover {
+  background-position: -39px -150px; }
+
+.riskev .ico-search {
+  background-position: 0 -178px; }
+
+.riskev .ico-search:hover {
+  background-position: -39px -178px; }
+
+.formation .ico-search {
+  background-position: 0 -200px; }
+
+.formation .ico-search:hover {
+  background-position: -39px -200px; }
+
+.conference .ico-search {
+  background-position: 0 -207px; }
+
+.conference .ico-search:hover {
+  background-position: -39px -207px; }
+
+.outil .ico-search {
   background-position: 0 0; }
 
-.basedoc .ico-search {
-  background-position: 0 0; }
-
-.lexique .ico-search {
-  background-position: 0 0; }
+.outil .ico-search:hover {
+  background-position: -39px 0; }
 
 .actions-select-all input#actions-select-all {
   margin-left: -20px; }
