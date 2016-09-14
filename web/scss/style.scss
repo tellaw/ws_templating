@@ -150,6 +150,14 @@ div.border-red {
       font-size:14px;
     }
   }
+  .section-title {
+    text-transform: uppercase;
+    color: #ec1625;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 10px 0 0 0;
+  }
+}
   .title-element {
     background:#717984;
     color:#FFF!important;
@@ -268,6 +276,10 @@ div.border-red {
   .inner-results .checkbox input {
     margin: 6px 8px 0 0;
   }
+  .ez_content {
+    h2 {
+      font-size:12px;
+    }
 }
 .inner-results.article {
   text-align:left;
@@ -279,6 +291,7 @@ hr {
   .form-control {
     width:87%;
     height:25px;
+    border:none;
   }
   .btn-search-inside {
     height:25px;
@@ -452,6 +465,10 @@ hr {
 .tab-search {
   height:45px;
   margin:0;
+  label,
+  a{
+    font-size:12px;
+  }
   select {
     width:50%;
   }

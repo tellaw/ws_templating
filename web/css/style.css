@@ -390,5 +390,8 @@ hr {
 .tab-search {
   height: 45px;
   margin: 0; }
+  .tab-search label,
+  .tab-search a {
+    font-size: 12px; }
   .tab-search select {
     width: 50%; }
