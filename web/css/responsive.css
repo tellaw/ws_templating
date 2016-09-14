@@ -299,7 +299,22 @@
   .xs-margin-bottom-20 {
     margin-bottom: 20px !important; }
   .xs-margin-top-25 {
-    margin-top: 25px !important; } }
+    margin-top: 25px !important; }
+  .formulaire-di h1 {
+    background: none;
+    padding: 20px 0; }
+  .formulaire-di .intro {
+    margin: 20px 0; }
+  form .note::before {
+    display: none; }
+  form select, form input, form label {
+    width: 100%; }
+  form .client > span {
+    width: 100%; }
+  form input[type="checkbox"] + label {
+    display: inline; }
+  .formulaire-di .intro {
+    margin: 30px 0; } }
 
 @media screen and (min-width: 425px) and (max-width: 991px) {
   .col-mod-tags {
@@ -319,7 +334,19 @@
     font-weight: 600;
     display: inline-block; }
   .domaine-secteur-box h5 {
-    line-height: 1.5; } }
+    line-height: 1.5; }
+  form .note::before {
+    display: none; }
+  form select, form input {
+    width: 79%; }
+  form label {
+    width: 20%; }
+  form .client > span {
+    width: 20%; }
+  form input[type="checkbox"] + label {
+    display: inline; }
+  .formulaire-di .intro {
+    margin: 30px 0; } }
 
 @media screen and (min-width: 426px) {
   .xs-padding-left {
