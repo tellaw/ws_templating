@@ -137,15 +137,8 @@ div.border-red {
 .recherche-avancee label,
 .filtre label {
   font-size: 12px;
-  color: #4d5356; }
-
-.recherche-avancee .section-title,
-.filtre .section-title {
-  text-transform: uppercase;
-  color: #ec1625;
-  font-size: 13px;
-  font-weight: bold;
-  margin: 10px 0 0 0; }
+  color: #4d5356;
+  width: 100%; }
 
 .recherche-avancee .form-group-fieldset,
 .filtre .form-group-fieldset {
@@ -197,25 +190,42 @@ div.border-red {
   .filtre .but-recherche p {
     float: left; }
 
-.filtre ul {
+.sidebar-nav-v1 .filtre ul {
   margin: 0;
   padding: 0 0 0 10px;
   background: #FFF; }
-  .filtre ul ul {
+  .sidebar-nav-v1 .filtre ul ul {
     margin: 0;
     padding: 0 0 0 20px;
     background: #FFF; }
-    .filtre ul ul li {
+    .sidebar-nav-v1 .filtre ul ul li {
       background: #FFF; }
+      .sidebar-nav-v1 .filtre ul ul li a {
+        border: none;
+        color: #4d5356;
+        font-size: 12px;
+        margin: 0;
+        padding: 0;
+        background: none; }
 
-.filtre .section-title {
-  margin: 0; }
+.sidebar-nav-v1 .filtre .section-title {
+  color: #ec1625; }
+  .sidebar-nav-v1 .filtre .section-title a {
+    text-transform: uppercase;
+    color: #ec1625;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 0; }
+  .sidebar-nav-v1 .filtre .section-title li:hover {
+    color: #ec1625; }
+  .sidebar-nav-v1 .filtre .section-title a {
+    color: #ec1625; }
 
-.filtre .form-group {
+.sidebar-nav-v1 .filtre .form-group {
   margin: 0;
   padding: 0; }
 
-.filtre hr {
+.sidebar-nav-v1 .filtre hr {
   margin: 15px 0; }
 
 .border-grey {
@@ -308,10 +318,16 @@ hr {
 .actions-select-all input#actions-select-all {
   margin-left: -20px; }
 
-.pagination li:first-child a,
-.pagination li:last-child a {
+.pagination li.pagination-left a,
+.pagination li.pagination-right a {
   border: none;
   background: none; }
+
+.pagination li:first-child a {
+  border-right: 1px solid #ddd; }
+
+.pagination li:last-child a {
+  border-left: 1px solid #ddd; }
 
 .pagination .active a,
 .pagination a:hover a {
@@ -359,9 +375,6 @@ hr {
   color: #FFF;
   position: relative; }
 
-.s-results .related-search a:hover {
-  color: #FFF !important; }
-
 .list-toggle:after {
   color: #fff;
   content: "\f107";
@@ -377,3 +390,5 @@ hr {
 .tab-search {
   height: 45px;
   margin: 0; }
+  .tab-search select {
+    width: 50%; }

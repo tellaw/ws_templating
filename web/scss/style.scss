@@ -159,13 +159,7 @@ div.border-red {
   label {
     font-size:12px;
     color:#4d5356;
-  }
-  .section-title {
-    text-transform:uppercase;
-    color:#ec1625;
-    font-size:13px;
-    font-weight:bold;
-    margin:10px 0 0 0;
+    width:100%;
   }
   .form-group-fieldset {
     margin:0;
@@ -214,32 +208,54 @@ div.border-red {
   }
 }
 
-.filtre {
-  ul {
-    margin:0;
-    padding:0 0 0 10px;
-    background:#FFF;
+.sidebar-nav-v1 {
+  .filtre {
     ul {
       margin:0;
-      padding:0 0 0 20px;
+      padding:0 0 0 10px;
       background:#FFF;
-      li {
+      ul {
+        margin:0;
+        padding:0 0 0 20px;
         background:#FFF;
+        li {
+          background:#FFF;
+          a {
+            border:none;
+            color:#4d5356;
+            font-size:12px;
+            margin:0;
+            padding:0;
+            background:none;
+          }
+        }
       }
     }
-  }
-  .section-title {
-    margin:0;
-  }
-  .form-group {
-    margin:0;
-    padding:0;
-  }
-  hr {
-    margin:15px 0;
+    .section-title {
+      color:#ec1625;
+      a {
+      text-transform:uppercase;
+      color:#ec1625;
+      font-size:13px;
+      font-weight:bold;
+      margin:0;
+      }
+      li:hover {
+        color:#ec1625;
+      }
+      a {
+        color:#ec1625;
+      }
+    }
+    .form-group {
+      margin:0;
+      padding:0;
+    }
+    hr {
+      margin:15px 0;
+    }
   }
 }
-
 .border-grey {
   border:1px solid #697277;
 }
@@ -341,11 +357,21 @@ hr {
   }
 }
 .pagination {
-  li:first-child,
-  li:last-child {
+  li.pagination-left,
+  li.pagination-right {
     a {
       border:none;
       background:none;
+    }
+  }
+  li:first-child {
+    a {
+      border-right:1px solid #ddd;
+    }
+  }
+  li:last-child {
+    a {
+      border-left:1px solid #ddd;
     }
   }
   .active,
@@ -411,13 +437,6 @@ hr {
   color:#FFF;
   position:relative;
 }
-.s-results {
-  .related-search {
-    a:hover {
-      color:#FFF!important;
-    }
-  }
-}
 .list-toggle:after {
   color: #fff;
   content: "\f107";
@@ -433,4 +452,7 @@ hr {
 .tab-search {
   height:45px;
   margin:0;
+  select {
+    width:50%;
+  }
 }
