@@ -161,13 +161,6 @@ div.border-red {
     color:#4d5356;
     width:100%;
   }
-  .section-title {
-    text-transform:uppercase;
-    color:#ec1625;
-    font-size:13px;
-    font-weight:bold;
-    margin:10px 0 0 0;
-  }
   .form-group-fieldset {
     margin:0;
     padding:0;
@@ -236,15 +229,23 @@ div.border-red {
             background:none;
           }
         }
-        li:hover {
-          a {
-            color:#4d5356;
-          }
-        }
       }
     }
     .section-title {
+      color:#ec1625;
+      a {
+      text-transform:uppercase;
+      color:#ec1625;
+      font-size:13px;
+      font-weight:bold;
       margin:0;
+      }
+      li:hover {
+        color:#ec1625;
+      }
+      a {
+        color:#ec1625;
+      }
     }
     .form-group {
       margin:0;
@@ -356,8 +357,8 @@ hr {
   }
 }
 .pagination {
-  li:first-child,
-  li:last-child {
+  li.pagination-left,
+  li.pagination-right {
     a {
       border:none;
       background:none;

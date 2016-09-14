@@ -140,14 +140,6 @@ div.border-red {
   color: #4d5356;
   width: 100%; }
 
-.recherche-avancee .section-title,
-.filtre .section-title {
-  text-transform: uppercase;
-  color: #ec1625;
-  font-size: 13px;
-  font-weight: bold;
-  margin: 10px 0 0 0; }
-
 .recherche-avancee .form-group-fieldset,
 .filtre .form-group-fieldset {
   margin: 0;
@@ -215,11 +207,19 @@ div.border-red {
         margin: 0;
         padding: 0;
         background: none; }
-    .sidebar-nav-v1 .filtre ul ul li:hover a {
-      color: #4d5356; }
 
 .sidebar-nav-v1 .filtre .section-title {
-  margin: 0; }
+  color: #ec1625; }
+  .sidebar-nav-v1 .filtre .section-title a {
+    text-transform: uppercase;
+    color: #ec1625;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 0; }
+  .sidebar-nav-v1 .filtre .section-title li:hover {
+    color: #ec1625; }
+  .sidebar-nav-v1 .filtre .section-title a {
+    color: #ec1625; }
 
 .sidebar-nav-v1 .filtre .form-group {
   margin: 0;
@@ -318,8 +318,8 @@ hr {
 .actions-select-all input#actions-select-all {
   margin-left: -20px; }
 
-.pagination li:first-child a,
-.pagination li:last-child a {
+.pagination li.pagination-left a,
+.pagination li.pagination-right a {
   border: none;
   background: none; }
 
