@@ -233,6 +233,7 @@ div.border-red {
             font-size:12px;
             margin:0;
             padding:0;
+            background:none;
           }
         }
         li:hover {
@@ -362,6 +363,16 @@ hr {
       background:none;
     }
   }
+  li:first-child {
+    a {
+      border-right:1px solid #ddd;
+    }
+  }
+  li:last-child {
+    a {
+      border-left:1px solid #ddd;
+    }
+  }
   .active,
   a:hover {
     a {
@@ -441,6 +452,6 @@ hr {
   height:45px;
   margin:0;
   select {
-    width:auto;
+    width:50%;
   }
 }

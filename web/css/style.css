@@ -213,7 +213,8 @@ div.border-red {
         color: #4d5356;
         font-size: 12px;
         margin: 0;
-        padding: 0; }
+        padding: 0;
+        background: none; }
     .sidebar-nav-v1 .filtre ul ul li:hover a {
       color: #4d5356; }
 
@@ -322,6 +323,12 @@ hr {
   border: none;
   background: none; }
 
+.pagination li:first-child a {
+  border-right: 1px solid #ddd; }
+
+.pagination li:last-child a {
+  border-left: 1px solid #ddd; }
+
 .pagination .active a,
 .pagination a:hover a {
   background: #ec1625;
@@ -384,4 +391,4 @@ hr {
   height: 45px;
   margin: 0; }
   .tab-search select {
-    width: auto; }
+    width: 50%; }
