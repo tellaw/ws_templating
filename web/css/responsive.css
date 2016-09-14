@@ -309,8 +309,13 @@
     display: none; }
   form select, form input, form label {
     width: 100%; }
+  form .formError {
+    left: 0 !important; }
   form .client > span {
     width: 100%; }
+  form p {
+    margin: 0 0 10px 0;
+    min-height: 50px !important; }
   form input[type="checkbox"] + label {
     display: inline; }
   .formulaire-di .intro {
@@ -341,6 +346,8 @@
     width: 79%; }
   form label {
     width: 20%; }
+  form .formError {
+    left: 21% !important; }
   form .client > span {
     width: 20%; }
   form input[type="checkbox"] + label {
@@ -622,10 +629,6 @@
     width: 250px; }
   .abonnement-text {
     text-align: center; }
-  #design-services-popin,
-  #design-switch-popin {
-    width: 90% !important;
-    height: 370px !important; }
   #design-di-conf-popin {
     width: 90% !important; }
   #design-di-conf-popin #form-container {
@@ -980,6 +983,10 @@
 
 /* Medium and down */
 @media screen and (max-width: 991px) {
+  #design-services-popin,
+  #design-switch-popin {
+    width: 90% !important;
+    height: 370px !important; }
   .navbar-mods {
     padding-right: 0px !important;
     padding-left: 0px !important; }
