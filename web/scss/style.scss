@@ -234,6 +234,7 @@ div.border-red {
             margin:0;
             padding:0;
             background:none;
+            display:inline;
           }
         }
       }
@@ -331,7 +332,14 @@ hr {
 .visu_real {
   .ico-search {
     background:none;
-    margin:-3px 0 0 20px;
+    margin:-17px 0 0 20px;
+    width:65px;
+    height:62px;
+  }
+  list-inline {
+    .ref {
+      margin:0 0 0 30px;
+    }
   }
 }
 
