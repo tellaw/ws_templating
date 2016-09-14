@@ -1896,11 +1896,12 @@ div.play-button {
 }
 
 .form-control:focus{
-	-moz-box-shadow: 0px 0px 10px 0px #EC1625;
+	/*-moz-box-shadow: 0px 0px 10px 0px #EC1625;
 	-webkit-box-shadow: 0px 0px 10px 0px #EC1625;
 	-o-box-shadow: 0px 0px 10px 0px #EC1625;
 	box-shadow: 0px 0px 10px 0px #EC1625;
-	filter:progid:DXImageTransform.Microsoft.Shadow(color=#EC1625, Direction=NaN, Strength=10);
+	filter:progid:DXImageTransform.Microsoft.Shadow(color=#EC1625, Direction=NaN, Strength=10);*/
+	border:1px solid #697277;
 	background-color: #fff;
 }
 .has-error .form-control:focus{

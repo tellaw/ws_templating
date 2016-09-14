@@ -242,88 +242,198 @@
 
 /* mesures analyse */
 .zone-th1 {
-  background-color: #178BB7; }
+  background-color: #178BB7;
+  border: 1px solid #178BB7; }
+  .zone-th1:hover {
+    background-color: #fff;
+    color: #178BB7;
+    transition: all 0.3s ease-in-out; }
 
 /* procedes chimie bio agro */
 .zone-th2 {
-  background-color: #1EAA74; }
+  background-color: #1EAA74;
+  border: 1px solid #1EAA74; }
+  .zone-th2:hover {
+    background-color: #fff;
+    color: #1EAA74;
+    transition: all 0.3s ease-in-out; }
 
 /* construction */
 .zone-th3 {
-  background-color: #E0760C; }
+  background-color: #E0760C;
+  border: 1px solid #E0760C; }
+  .zone-th3:hover {
+    background-color: #fff;
+    color: #E0760C;
+    transition: all 0.3s ease-in-out; }
 
 /* energie */
 .zone-th4 {
-  background-color: #FABD11; }
+  background-color: #FABD11;
+  border: 1px solid #FABD11; }
+  .zone-th4:hover {
+    background-color: #fff;
+    color: #FABD11;
+    transition: all 0.3s ease-in-out; }
 
 /* environement */
 .zone-th5 {
-  background-color: #9DB51D; }
+  background-color: #9DB51D;
+  border: 1px solid #9DB51D; }
+  .zone-th5:hover {
+    background-color: #fff;
+    color: #9DB51D;
+    transition: all 0.3s ease-in-out; }
 
 /* genie industriel */
 .zone-th6 {
-  background-color: #1C8CBB; }
+  background-color: #1C8CBB;
+  border: 1px solid #1C8CBB; }
+  .zone-th6:hover {
+    background-color: #fff;
+    color: #1C8CBB;
+    transition: all 0.3s ease-in-out; }
 
 /* mecanique */
 .zone-th7 {
-  background-color: #D31E2C; }
+  background-color: #D31E2C;
+  border: 1px solid #D31E2C; }
+  .zone-th7:hover {
+    background-color: #fff;
+    color: #D31E2C;
+    transition: all 0.3s ease-in-out; }
 
 /* sciences fondamentales */
 .zone-th8 {
-  background-color: #1F9A99; }
+  background-color: #1F9A99;
+  border: 1px solid #1F9A99; }
+  .zone-th8:hover {
+    background-color: #fff;
+    color: #1F9A99;
+    transition: all 0.3s ease-in-out; }
 
 /* technologie de l information */
 .zone-th9 {
-  background-color: #C2A681; }
+  background-color: #C2A681;
+  border: 1px solid #C2A681; }
+  .zone-th9:hover {
+    background-color: #fff;
+    color: #C2A681;
+    transition: all 0.3s ease-in-out; }
 
 /* nanotechnologies */
 .zone-th10 {
-  background-color: #A41979; }
+  background-color: #A41979;
+  border: 1px solid #A41979; }
+  .zone-th10:hover {
+    background-color: #fff;
+    color: #A41979;
+    transition: all 0.3s ease-in-out; }
 
 /* materiaux */
 .zone-th11 {
-  background-color: #642F85; }
+  background-color: #642F85;
+  border: 1px solid #642F85; }
+  .zone-th11:hover {
+    background-color: #fff;
+    color: #642F85;
+    transition: all 0.3s ease-in-out; }
 
 /* archives */
 .zone-th12 {
-  background-color: #6f6f6f; }
+  background-color: #6f6f6f;
+  border: 1px solid #6f6f6f; }
+  .zone-th12:hover {
+    background-color: #fff;
+    color: #6f6f6f;
+    transition: all 0.3s ease-in-out; }
 
 /* electronique photonique */
 .zone-th13 {
-  background-color: #E4054F; }
+  background-color: #E4054F;
+  border: 1px solid #E4054F; }
+  .zone-th13:hover {
+    background-color: #fff;
+    color: #E4054F;
+    transition: all 0.3s ease-in-out; }
 
 /* transports */
 .zone-th14 {
-  background-color: #25445C; }
+  background-color: #25445C;
+  border: 1px solid #25445C; }
+  .zone-th14:hover {
+    background-color: #fff;
+    color: #25445C;
+    transition: all 0.3s ease-in-out; }
 
 /* biomediacl pharma */
 .zone-th15 {
-  background-color: #233267; }
+  background-color: #233267;
+  border: 1px solid #233267; }
+  .zone-th15:hover {
+    background-color: #fff;
+    color: #233267;
+    transition: all 0.3s ease-in-out; }
 
 /* automatique robotique */
 .zone-th16 {
-  background-color: #959594; }
+  background-color: #959594;
+  border: 1px solid #959594; }
+  .zone-th16:hover {
+    background-color: #fff;
+    color: #959594;
+    transition: all 0.3s ease-in-out; }
 
 /* aerospatial */
 .zone-sc1 {
-  background-color: #25445C; }
+  background-color: #25445C;
+  border: 1px solid #25445C; }
+  .zone-sc1:hover {
+    background-color: #fff;
+    color: #25445C;
+    transition: all 0.3s ease-in-out; }
 
 /* agroalimentaire */
 .zone-sc2 {
-  background-color: #23AB75; }
+  background-color: #23AB75;
+  border: 1px solid #23AB75; }
+  .zone-sc2:hover {
+    background-color: #fff;
+    color: #23AB75;
+    transition: all 0.3s ease-in-out; }
 
 /* automobile */
 .zone-sc3 {
-  background-color: #222221; }
+  background-color: #222221;
+  border: 1px solid #222221; }
+  .zone-sc3:hover {
+    background-color: #fff;
+    color: #222221;
+    transition: all 0.3s ease-in-out; }
 
 /* eco-indiustrie */
 .zone-sc4 {
-  background-color: #9DB51D; }
+  background-color: #9DB51D;
+  border: 1px solid #9DB51D; }
+  .zone-sc4:hover {
+    background-color: #fff;
+    color: #9DB51D;
+    transition: all 0.3s ease-in-out; }
 
 /* equipement-industriel */
 .zone-sc5 {
-  background-color: #D31E2C; }
+  background-color: #D31E2C;
+  border: 1px solid #D31E2C; }
+  .zone-sc5:hover {
+    background-color: #fff;
+    color: #D31E2C;
+    transition: all 0.3s ease-in-out; }
 
 /* plasturgie */
 .zone-sc6 {
-  background-color: #642F85; }
+  background-color: #642F85;
+  border: 1px solid #642F85; }
+  .zone-sc6:hover {
+    background-color: #fff;
+    color: #642F85;
+    transition: all 0.3s ease-in-out; }

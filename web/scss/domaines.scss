@@ -46,6 +46,12 @@ $i: 1;
   /* #{nth($domaines_secteurs_name, $i)} */
   .zone-#{$class} {
     background-color: nth($domaines_secteurs_colors, $i);
+    border: 1px solid nth($domaines_secteurs_colors, $i);
+    &:hover {
+      background-color: #fff;
+      color : nth($domaines_secteurs_colors, $i);
+      transition: all 0.3s ease-in-out;
+    }
   }
   $i: $i + 1;
 }
