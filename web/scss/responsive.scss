@@ -463,8 +463,18 @@ $color-red : #ea2336 ;
       }
     }
   }
-  .filtre input {
-    display:inline-block;
+  .sidebar-nav-1 {
+    .filtre {
+      ul {
+        ul {
+          li {
+            a {
+              line-height:20px;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -525,6 +535,19 @@ $color-red : #ea2336 ;
     .intro {
       margin: 30px 0;
     }
+  }
+  form {
+    .actions-select-all {
+      label {
+        width:100%;
+      }
+    }
+  }
+  .list-toggle:after {
+    top:-3px;
+  }
+  .list-toggle.active:after {
+    top:-3px;
   }
 }
 
