@@ -299,6 +299,11 @@ hr {
   width: 60px;
   height: 55px; }
 
+.visu_real_bd .ico-search {
+  margin: -10px 0 0 20px; }
+  .visu_real_bd .ico-search .decalage_visu_real_bd li {
+    margin: 0 0 0 30px; }
+
 .visu_real_formation .ico-search {
   background: none;
   position: relative;
