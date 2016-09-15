@@ -476,11 +476,6 @@ $color-red : #ea2336 ;
       }
     }
   }
-  .checkbox.actions-select-all {
-      label {
-        width:100%!important;
-      }
-  }
 }
 
 @media screen and (min-width: 425px) and (max-width: 991px) {
@@ -540,6 +535,19 @@ $color-red : #ea2336 ;
     .intro {
       margin: 30px 0;
     }
+  }
+  form {
+    .actions-select-all {
+      label {
+        width:100%;
+      }
+    }
+  }
+  .list-toggle:after {
+    top:-3px;
+  }
+  .list-toggle.active:after {
+    top:-3px;
   }
 }
 
