@@ -3378,7 +3378,7 @@ form textarea {
 	padding-left: 10px;
 }
 form select,
-form input {
+form input[type="text"] {
 	height: 26px;
 }
 form select:focus,
