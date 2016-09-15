@@ -248,8 +248,12 @@ div.border-red {
   display: inline-block; }
   .inner-results .inner-results .checkbox input {
     margin: 6px 8px 0 0; }
+  .inner-results p {
+    font-size: 13px;
+    font-family: 'Myriad Pro', Arial, serif; }
   .inner-results .ez_content h2 {
-    font-size: 12px; }
+    font-size: 13px;
+    font-family: 'Myriad Pro', Arial, serif; }
 
 .inner-results.article {
   text-align: left; }
