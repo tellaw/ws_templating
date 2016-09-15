@@ -471,21 +471,21 @@ jQuery(document).ready(function() {
     // gérer les warning dans les listing rubrique
     jQuery( ".zoning.warning" ).parents('.panel-default').find(".my-warning-to-display").css("display", "inline");
 
-
+    // gestion datepicker
     // Date range
     jQuery('#avant').datepicker({
-        dateFormat: 'dd.mm.yy',
-        prevText: '<i class="fa fa-angle-left ingrid"></i>',
-        nextText: '<i class="fa fa-angle-right"></i>',
+        dateFormat: 'dd/mm/yy',
+        prevText: "<i class='fa fa-angle-left'></i>",
+        nextText: "<i class='fa fa-angle-right'></i>",
         onSelect: function( selectedDate )
         {
             jQuery('#apres').datepicker('option', 'minDate', selectedDate);
         }
     });
     jQuery('#apres').datepicker({
-        dateFormat: 'dd.mm.yy',
-        prevText: '<i class="fa fa-angle-left"></i>',
-        nextText: '<i class="fa fa-angle-right"></i>',
+        dateFormat: 'dd/mm/yy',
+        prevText: "<i class='fa fa-angle-left'></i>",
+        nextText: "<i class='fa fa-angle-right'></i>",
         onSelect: function( selectedDate )
         {
             jQuery('#avant').datepicker('option', 'maxDate', selectedDate);
