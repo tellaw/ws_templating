@@ -463,8 +463,23 @@ $color-red : #ea2336 ;
       }
     }
   }
-  .filtre input {
-    display:inline-block;
+  .sidebar-nav-1 {
+    .filtre {
+      ul {
+        ul {
+          li {
+            a {
+              line-height:20px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .checkbox.actions-select-all {
+      label {
+        width:100%!important;
+      }
   }
 }
 

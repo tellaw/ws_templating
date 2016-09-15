@@ -324,8 +324,10 @@
     padding: 10px 25px; }
     .recherche-avancee .but-recherche span {
       margin: 2px 0 0 0; }
-  .filtre input {
-    display: inline-block; } }
+  .sidebar-nav-1 .filtre ul ul li a {
+    line-height: 20px; }
+  .checkbox.actions-select-all label {
+    width: 100% !important; } }
 
 @media screen and (min-width: 425px) and (max-width: 991px) {
   .col-mod-tags {
