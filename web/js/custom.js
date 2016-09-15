@@ -475,8 +475,8 @@ jQuery(document).ready(function() {
     // Date range
     jQuery('#avant').datepicker({
         dateFormat: 'dd/mm/yy',
-        prevText: "<i class='fa fa-angle-left'></i>",
-        nextText: "<i class='fa fa-angle-right'></i>",
+        prevText: "<i class='fa fa-angle-left font-size-25'></i>",
+        nextText: "<i class='fa fa-angle-right font-size-25'></i>",
         onSelect: function( selectedDate )
         {
             jQuery('#apres').datepicker('option', 'minDate', selectedDate);
@@ -484,8 +484,8 @@ jQuery(document).ready(function() {
     });
     jQuery('#apres').datepicker({
         dateFormat: 'dd/mm/yy',
-        prevText: "<i class='fa fa-angle-left'></i>",
-        nextText: "<i class='fa fa-angle-right'></i>",
+        prevText: "<i class='fa fa-angle-left font-size-25'></i>",
+        nextText: "<i class='fa fa-angle-right font-size-25'></i>",
         onSelect: function( selectedDate )
         {
             jQuery('#avant').datepicker('option', 'maxDate', selectedDate);
