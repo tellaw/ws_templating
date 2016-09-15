@@ -319,7 +319,13 @@
   form input[type="checkbox"] + label {
     display: inline; }
   .formulaire-di .intro {
-    margin: 30px 0; } }
+    margin: 30px 0; }
+  .recherche-avancee .but-recherche {
+    padding: 10px 25px; }
+    .recherche-avancee .but-recherche span {
+      margin: 2px 0 0 0; }
+  .filtre input {
+    display: inline-block; } }
 
 @media screen and (min-width: 425px) and (max-width: 991px) {
   .col-mod-tags {
