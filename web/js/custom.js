@@ -471,6 +471,7 @@ jQuery(document).ready(function() {
     // gérer les warning dans les listing rubrique
     jQuery( ".zoning.warning" ).parents('.panel-default').find(".my-warning-to-display").css("display", "inline");
 
+    // gestion datepicker
     jQuery(".datepicker").datepicker({
         dateFormat: 'dd/mm/yy',
         prevText: '<i class="fa fa-angle-left"></i>',
