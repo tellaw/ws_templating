@@ -1979,6 +1979,11 @@ $color-red : #ea2336 ;
   .last-tab {
     width: 236px !important;
   }
+  form {
+    .note::before {
+      left: -8%;
+    }
+  }
 }
 
 /* Mobile portrait à petit desktop */

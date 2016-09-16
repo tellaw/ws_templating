@@ -1309,7 +1309,9 @@
   .md-smint li a {
     width: 234.9px; }
   .last-tab {
-    width: 236px !important; } }
+    width: 236px !important; }
+  form .note::before {
+    left: -8%; } }
 
 /* Mobile portrait à petit desktop */
 @media screen and (min-width: 426px) and (max-width: 1023px) {

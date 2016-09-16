@@ -3402,6 +3402,9 @@ form input[type="radio"],
 form .client > label {
 	width:auto;
 }
+form input[type="checkbox"] {
+	margin-right: 7px;
+}
 form input[type="radio"] {
 	margin:0 15px 0 5px;
 }
@@ -3422,7 +3425,7 @@ form .condition {
 form .note::before {
 	content:"<";
 	position: absolute;
-	left: -35px;
+	left: -4%px;
 	top: 5px;
 }
 .formError {
