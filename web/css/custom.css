@@ -25,6 +25,7 @@
 body {
 	font-family: "myriad-pro", sans-serif;
 	color:#4d5356;
+	overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
