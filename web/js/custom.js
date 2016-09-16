@@ -313,7 +313,7 @@ jQuery(document).ready(function() {
             modal: true,
             title: jQuery(this).attr("title"),
             width: 920,
-            closeText: "Fermer X",
+            closeText: "X",
             open: function() {
                 window.scrollTo(0, top - jQuery(window).height() / 2);
                 return false;
