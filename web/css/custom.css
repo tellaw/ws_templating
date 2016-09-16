@@ -3353,6 +3353,7 @@ td, th, tr{
 form p {
 	margin:0;
 	min-height:50px!important;
+	position: relative;
 }
 form .col-lg-12 p,
 form .btn-u {
@@ -3427,6 +3428,17 @@ form .note::before {
 	position: absolute;
 	left: -4%;
 	top: 5px;
+}
+form label[for="phone"] + input::before {
+	content:"+33";
+}
+form #phone-prefix {
+	position: absolute;
+	top: 2px;
+	left: 110px;
+}
+form #di-link {
+	cursor:pointer;
 }
 .formError {
 	left: 140px!important;

@@ -302,7 +302,10 @@
     margin-top: 25px !important; }
   .formulaire-di h1 {
     background: none;
-    padding: 20px 0; }
+    padding: 20px 0;
+    border-bottom: 1px solid #C6C6C6; }
+    .formulaire-di h1 span {
+      padding: 0; }
   .formulaire-di .intro {
     margin: 20px 0; }
   form .note::before {
@@ -318,6 +321,15 @@
     min-height: 50px !important; }
   form input[type="checkbox"] + label {
     display: inline; }
+  form #phone-prefix {
+    position: absolute;
+    top: 26px !important;
+    left: 0;
+    width: 8%;
+    display: inline-block; }
+  form input[id="lffield[phone]"] {
+    width: 90%;
+    float: right; }
   .formulaire-di .intro {
     margin: 30px 0; }
   .recherche-avancee .but-recherche {
@@ -358,6 +370,8 @@
     width: 20%; }
   form input[type="checkbox"] + label {
     display: inline; }
+  form #phone-prefix {
+    left: 16%; }
   .formulaire-di .intro {
     margin: 30px 0; }
   form .actions-select-all label {
@@ -1554,7 +1568,9 @@
     line-height: 13px; }
   #menu-footer-generique li.ressdoc > a {
     padding: 0 0 7px 45px !important;
-    line-height: 13px; } }
+    line-height: 13px; }
+  form #phone-prefix {
+    top: 5px; } }
 
 @media only screen and (min-width: 1024px) {
   a.pub-style img, a.large-img img, a.haute-img img {

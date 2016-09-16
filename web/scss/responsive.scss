@@ -416,6 +416,10 @@ $color-red : #ea2336 ;
     h1 {
       background:none;
       padding:20px 0;
+      border-bottom: 1px solid #C6C6C6;
+      span {
+        padding:0;
+      }
     }
   }
   .formulaire-di {
@@ -448,6 +452,17 @@ $color-red : #ea2336 ;
       + label {
         display:inline;
       }
+    }
+    #phone-prefix {
+      position: absolute;
+      top: 26px!important;
+      left: 0;
+      width: 8%;
+      display: inline-block;
+    }
+    input[id="lffield[phone]"] {
+      width: 90%;
+      float: right;
     }
   }
   .formulaire-di {
@@ -530,7 +545,11 @@ $color-red : #ea2336 ;
         display:inline;
       }
     }
+    #phone-prefix {
+      left:16%;
+    }
   }
+
   .formulaire-di {
     .intro {
       margin: 30px 0;
@@ -2353,6 +2372,11 @@ $color-red : #ea2336 ;
         padding:0 0 7px 45px !important;
         line-height: 13px;
       }
+    }
+  }
+  form {
+    #phone-prefix {
+      top: 5px;
     }
   }
 }
