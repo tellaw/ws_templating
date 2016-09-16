@@ -3023,6 +3023,8 @@ a.abonnement-text:hover {
 	margin-right: 0px !important;
 	margin-bottom: 8px;
 	font-size: 11px;
+	width: 100%;
+	padding: 0px 10px;
 }
 #offres .text {
 	background-color: #e2e1e1;
