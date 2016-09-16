@@ -302,7 +302,8 @@
     margin-top: 25px !important; }
   .formulaire-di h1 {
     background: none;
-    padding: 20px 0; }
+    padding: 20px 0;
+    border-bottom: 1px solid #C6C6C6; }
     .formulaire-di h1 span {
       padding: 0; }
   .formulaire-di .intro {
