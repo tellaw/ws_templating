@@ -409,65 +409,85 @@ div.border-red {
   }
 }
 
-.archive .ico-search {
-  background-position:0 0;
+.archive {
+  .ico-search {
+    background-position:0 0;
+  }
+  .ico-search:hover {
+    background-position:-39px 0px;
+  }
 }
-.archive .ico-search:hover {
-  background-position:-39px 0px;
+.article {
+  .ico-search {
+    background-position:0 -31px;
+  }
+  .ico-search:hover {
+    background-position:-39px -31px;
+  }
 }
-.article .ico-search {
-  background-position:0 -31px;
+.fiche {
+  .ico-search {
+    background-position:0 -59px;
+  }
+  .ico-search:hover {
+    background-position:-39px -59px;
+  }
 }
-.article .ico-search:hover {
-  background-position:-39px -31px;
+.actu {
+  .ico-search {
+    background-position:0 -91px;
+  }
+  .ico-search:hover {
+    background-position:-39px -91px;
+  }
 }
-.fiche .ico-search {
-  background-position:0 -59px;
+.wp {
+  .ico-search {
+    background-position:0 -121px;
+  }
+  .ico-search:hover {
+    background-position:-39px -121px;
+  }
 }
-.fiche .ico-search:hover {
-  background-position:-39px -59px;
+.dossier {
+  .ico-search {
+    background-position:0 -150px;
+  }
+  .ico-search:hover {
+    background-position:-39px -150px;
+  }
 }
-.actu .ico-search {
-  background-position:0 -91px;
+.riskev {
+  .ico-search {
+    background-position:0 -178px;
+  }
+  .ico-search:hover {
+    background-position:-39px -178px;
+  }
 }
-.actu .ico-search:hover {
-  background-position:-39px -91px;
+.formation {
+  .ico-search {
+    background-position:0 -200px;
+  }
+  .ico-search:hover {
+    background-position:-39px -200px;
+  }
 }
-.wp .ico-search {
-  background-position:0 -121px;
+.conference {
+  .ico-search {
+    background-position:0 -207px;
+  }
+  .ico-search:hover {
+    background-position:-39px -207px;
+  }
 }
-.wp .ico-search:hover {
-  background-position:-39px -121px;
-}
-.dossier .ico-search {
-  background-position:0 -150px;
-}
-.dossier .ico-search:hover {
-  background-position:-39px -150px;
-}
-.riskev .ico-search {
-  background-position:0 -178px;
-}
-.riskev .ico-search:hover {
-  background-position:-39px -178px;
-}
-.formation .ico-search {
-  background-position:0 -200px;
-}
-.formation .ico-search:hover {
-  background-position:-39px -200px;
-}
-.conference .ico-search {
-  background-position:0 -207px;
-}
-.conference .ico-search:hover {
-  background-position:-39px -207px;
-}
-.outil .ico-search {
-  background-position:0 0;
-}
-.outil .ico-search:hover {
-  background-position:-39px 0;
+.outil {
+  .ico-search {
+    background-position:0 0;
+  }
+  .ico-search:hover {
+    background-position:-39px 0;
+  }
 }
 
 .actions-select-all {
