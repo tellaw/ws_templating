@@ -20,12 +20,13 @@
             <fieldset class="form-group input-style">
                 <label>Recherche avec opérateurs :</label>
                 <input type="text" class="form-control" id="operateur" name="query" value="" />
-                <span class="pull-right syntaxe">Syntaxe des opérateurs</span>
-                <div id="operateurs" class="syntaxe-or" style="display:none;">
-                    <span><b>Phrases exactes</b> - ex&nbsp;: "mécanique quantique"</span>
-                    <span><b>Termes exacts</b> - ex&nbsp;: "quantique"</span>
-                    <span><b>Exclure des termes</b> - ex&nbsp;: mécanique -quantique</span>
-                    <span><b>Recherche par préfixe</b> - ex&nbsp;: méca*</span>
+                <div class="pull-right syntaxe">Syntaxe des opérateurs
+                    <div id="operateurs" class="syntaxe-or">
+                        <span><b>Phrases exactes</b> - ex&nbsp;: "mécanique quantique"</span>
+                        <span><b>Termes exacts</b> - ex&nbsp;: "quantique"</span>
+                        <span><b>Exclure des termes</b> - ex&nbsp;: mécanique -quantique</span>
+                        <span><b>Recherche par préfixe</b> - ex&nbsp;: méca*</span>
+                    </div>
                 </div>
             </fieldset>
 
@@ -37,12 +38,13 @@
             <fieldset class="form-group input-style">
                 <label>Recherche par référence :</label>
                 <input type="text" class="form-control" id="ref" name="ref" value="" />
-                <span class="pull-right syntaxe">Syntaxe des références</span>
-                <div id="references" class="syntaxe-or" style="display:none;">
-                    <span><b>Article de référence</b> - ex : p4220</span>
-                    <span><b>Fiche pratique</b> - ex : 0039</span>
-                    <span><b>Base documentaire</b> - ex : 42104210</span>
-                    <span><b>Pack</b> - ex : ti052</span>
+                <div class="pull-right syntaxe">Syntaxe des références
+                    <div id="references" class="syntaxe-or">
+                        <span><b>Article de référence</b> - ex : p4220</span>
+                        <span><b>Fiche pratique</b> - ex : 0039</span>
+                        <span><b>Base documentaire</b> - ex : 42104210</span>
+                        <span><b>Pack</b> - ex : ti052</span>
+                    </div>
                 </div>
             </fieldset>
 

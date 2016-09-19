@@ -203,7 +203,28 @@ div.border-red {
   color: #1b8bbb; }
   .recherche-avancee .abo img,
   .filtre .abo img {
-    padding: 0 0 0 5px; }
+    margin: 0 0 0 5px; }
+
+.recherche-avancee .syntaxe {
+  cursor: pointer;
+  position: relative;
+  display: block; }
+  .recherche-avancee .syntaxe .syntaxe-or {
+    display: none; }
+
+.recherche-avancee .syntaxe:hover .syntaxe-or {
+  text-decoration: none;
+  display: block;
+  position: absolute;
+  top: 15px;
+  left: 0;
+  font-size: 13px;
+  color: #666;
+  padding: 10px;
+  width: 250px;
+  z-index: 999999;
+  border: 1px solid #697277;
+  background-color: #fff; }
 
 .sidebar-nav-v1 .filtre ul {
   margin: 0;
@@ -255,14 +276,12 @@ div.border-red {
   display: inline-block; }
   .inner-results .inner-results .checkbox input {
     margin: 6px 8px 0 0; }
-  .inner-results p {
-    font-size: 12px;
-    font-family: 'Myriad Pro', Arial, serif;
-    color: #4d5356; }
+  .inner-results p,
   .inner-results div {
     font-size: 12px;
     font-family: 'Myriad Pro', Arial, serif;
-    color: #4d5356; }
+    color: #4d5356;
+    min-height: auto !important; }
   .inner-results .ez_content h2 {
     font-size: 12px;
     font-family: 'Myriad Pro', Arial, serif;
@@ -271,7 +290,7 @@ div.border-red {
 .inner-results.article {
   text-align: left; }
 
-hr {
+.results-search-sep {
   margin: 20px 0 30px 0; }
 
 .recherche-inside .form-control {
