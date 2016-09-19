@@ -318,7 +318,7 @@ div.border-red {
     margin: 6px 8px 0 0;
   }
   p {
-    font-size:14px;
+    font-size:14px!important;
     font-family: 'Myriad Pro', Arial, serif;
     color:#4d5356;
     min-height:auto!important;
@@ -658,7 +658,7 @@ div.border-red {
   a {
     font-size:13px;
     height:30px;
-    display:block;
+    display:inline-block;
   }
   li {
     font-size:13px;

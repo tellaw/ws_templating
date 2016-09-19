@@ -280,7 +280,7 @@ div.border-red {
   .inner-results .inner-results .checkbox input {
     margin: 6px 8px 0 0; }
   .inner-results p {
-    font-size: 14px;
+    font-size: 14px !important;
     font-family: 'Myriad Pro', Arial, serif;
     color: #4d5356;
     min-height: auto !important; }
@@ -536,7 +536,7 @@ div.border-red {
   .tab-search a {
     font-size: 13px;
     height: 30px;
-    display: block; }
+    display: inline-block; }
   .tab-search li {
     font-size: 13px; }
   .tab-search li select {
