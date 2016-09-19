@@ -430,11 +430,10 @@ div.border-red {
     border: 1px solid #ec1625; }
 
 .fp ul .favoris {
-  margin-right: 15px; }
+  margin: 15px 15px 0 0; }
 
 .fp ul .print {
-  margin-left: 10px;
-  margin-right: -40px; }
+  margin: 15px -40px 0 10px; }
 
 #wrap-favoris .boxFavoris {
   display: none; }
