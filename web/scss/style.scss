@@ -317,15 +317,22 @@ div.border-red {
   .inner-results .checkbox input {
     margin: 6px 8px 0 0;
   }
-  p,
-  div {
+  p {
     font-size:14px;
+    font-family: 'Myriad Pro', Arial, serif;
+    color:#4d5356;
+    min-height:auto!important;
+  }
+  div {
+    font-size:13px;
     font-family: 'Myriad Pro', Arial, serif;
     color:#4d5356;
     min-height:auto!important;
   }
   .description {
     font-size:14px;
+    margin:0 0 0 45px;
+    padding:0;
   }
   .ez_content {
     h2 {
@@ -394,6 +401,7 @@ div.border-red {
   .decalage_visu_real_bd {
     li {
       margin:0 0 0 5px;
+      font-size:13px;
     }
   }
 }
