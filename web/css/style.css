@@ -433,17 +433,17 @@ div.border-red {
 
 .pagination {
   display: block;
-  margin: 0 20%; }
+  margin: 0 15%; }
   .pagination li.pagination-left a,
   .pagination li.pagination-right a,
   .pagination li.pagination-left-first a,
   .pagination li.pagination-right-end a {
     border: none;
     background: none; }
-  .pagination li:first-child a {
-    border-right: 1px solid #ddd; }
+  .pagination li:first-child a,
   .pagination li:last-child a {
-    border-left: 1px solid #ddd; }
+    margin: 0;
+    padding: 5px 0; }
   .pagination .active a,
   .pagination a:hover a {
     background: #ec1625;

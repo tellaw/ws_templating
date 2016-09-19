@@ -519,7 +519,7 @@ div.border-red {
 
 .pagination {
   display:block;
-  margin:0 20%;
+  margin:0 15%;
   li.pagination-left,
   li.pagination-right,
   li.pagination-left-first,
@@ -529,14 +529,11 @@ div.border-red {
       background:none;
     }
   }
-  li:first-child {
-    a {
-      border-right:1px solid #ddd;
-    }
-  }
+  li:first-child,
   li:last-child {
     a {
-      border-left:1px solid #ddd;
+      margin:0;
+      padding:5px 0;
     }
   }
   .active,
