@@ -144,7 +144,7 @@ div.border-red {
 
 .recherche-avancee label,
 .filtre label {
-  font-size: 12px;
+  font-size: 13px;
   color: #4d5356;
   width: 100%; }
 
@@ -205,6 +205,9 @@ div.border-red {
   .filtre .abo img {
     margin: 0 0 0 5px; }
 
+.results-number h2 {
+  font-size: 20px; }
+
 .recherche-avancee .syntaxe {
   cursor: pointer;
   position: relative;
@@ -239,7 +242,7 @@ div.border-red {
       .sidebar-nav-v1 .filtre ul ul li a {
         border: none;
         color: #4d5356;
-        font-size: 12px;
+        font-size: 13px;
         margin: 0;
         padding: 0;
         background: none;
@@ -278,7 +281,7 @@ div.border-red {
     margin: 6px 8px 0 0; }
   .inner-results p,
   .inner-results div {
-    font-size: 12px;
+    font-size: 14px;
     font-family: 'Myriad Pro', Arial, serif;
     color: #4d5356;
     min-height: auto !important; }
@@ -286,6 +289,10 @@ div.border-red {
     font-size: 12px;
     font-family: 'Myriad Pro', Arial, serif;
     color: #4d5356; }
+  .inner-results h3 {
+    font-size: 15px;
+    margin: 0;
+    padding: 0; }
 
 .inner-results.article {
   text-align: left; }
@@ -517,10 +524,13 @@ div.border-red {
   margin: 0; }
   .tab-search label,
   .tab-search a {
-    font-size: 12px;
+    font-size: 13px;
     height: 30px;
     display: block; }
-  .tab-search select {
+  .tab-search li {
+    font-size: 13px; }
+  .tab-search li select {
+    font-size: 13px;
     width: 50%; }
 
 .header-v1 .form-control {
