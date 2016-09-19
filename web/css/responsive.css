@@ -332,6 +332,8 @@
     float: right; }
   .formulaire-di .intro {
     margin: 30px 0; }
+  #ti-classic-form input[id="lffield[phone]"] {
+    width: 100%; }
   .recherche-avancee .but-recherche {
     padding: 10px 25px; }
     .recherche-avancee .but-recherche span {
