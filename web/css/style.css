@@ -187,11 +187,11 @@ div.border-red {
   width: 83%; }
   .recherche-avancee .but-recherche span,
   .filtre .but-recherche span {
-    background: url("../images/arrow-red-right-v2.png") no-repeat 0 0;
+    background: url("../images/arrow-red-right-v4.png") no-repeat 0 0;
     display: inline-block;
-    width: 7px;
-    height: 12px;
-    margin: 5px 0 0 0;
+    width: 15px;
+    height: 15px;
+    margin: 2px 0 0 0;
     padding: 0;
     float: left; }
   .recherche-avancee .but-recherche p,
@@ -302,6 +302,9 @@ div.border-red {
     padding: 0; }
     .inner-results h3 a {
       font-size: 15px !important; }
+    .inner-results h3 a:hover {
+      color: #EC1625 !important;
+      text-decoration: underline; }
 
 .inner-results.article {
   text-align: left; }
@@ -467,7 +470,7 @@ div.border-red {
   font-size: 13px;
   color: #666;
   padding: 10px;
-  width: 250px;
+  width: 310px;
   z-index: 999999;
   border: 1px solid #697277;
   background-color: #fff; }
@@ -482,6 +485,11 @@ div.border-red {
     width: 90%;
     margin: 0;
     padding: 0 0 0 25px; }
+  #wrap-favoris:hover .boxFavoris span:hover {
+    background: url("../images/favoris-picto-hover.png") no-repeat 0 0;
+    color: #ec1625;
+    text-decoration: underline;
+    cursor: pointer; }
 
 #wrap-history:hover .boxHistory {
   text-decoration: none;
@@ -502,6 +510,14 @@ div.border-red {
     color: #646d72;
     background: none;
     opacity: 1; }
+  #wrap-history:hover .boxHistory a {
+    height: auto;
+    color: #4d5356;
+    font-size: 13px; }
+  #wrap-history:hover .boxHistory a:hover {
+    color: #ec1625;
+    text-decoration: underline;
+    cursor: pointer; }
 
 .up-ul li {
   color: #4d5356;
