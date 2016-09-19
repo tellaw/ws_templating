@@ -415,7 +415,7 @@ div.border-red {
 
 .pagination {
   display: block;
-  margin: 0 25%; }
+  margin: 0 20%; }
   .pagination li.pagination-left a,
   .pagination li.pagination-right a {
     border: none;
@@ -523,3 +523,6 @@ div.border-red {
     display: block; }
   .tab-search select {
     width: 50%; }
+
+.header-v1 .form-control {
+  height: 40px; }

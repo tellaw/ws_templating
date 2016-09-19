@@ -1,11 +1,21 @@
+.header,
 .navbar-fixed-top,
 #sticky,
 .fp,
 .related-search,
 .tab-search,
+.actions-select,
 .pagination,
 #menu-smint,
-#footer
- {
+#footer {
   display:none;
+}
+.inner-results {
+  .checbox {
+    display:none;
+  }
+  .list-inline {
+    margin:0;
+    padding:0;
+  }
 }

@@ -478,7 +478,7 @@ div.border-red {
 
 .pagination {
   display:block;
-  margin:0 25%;
+  margin:0 20%;
   li.pagination-left,
   li.pagination-right {
     a {
@@ -624,5 +624,10 @@ div.border-red {
   }
   select {
     width:50%;
+  }
+}
+.header-v1 {
+  .form-control {
+    height:40px;
   }
 }
