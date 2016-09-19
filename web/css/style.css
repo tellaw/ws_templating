@@ -417,7 +417,9 @@ div.border-red {
   display: block;
   margin: 0 20%; }
   .pagination li.pagination-left a,
-  .pagination li.pagination-right a {
+  .pagination li.pagination-right a,
+  .pagination li.pagination-left-first a,
+  .pagination li.pagination-right-end a {
     border: none;
     background: none; }
   .pagination li:first-child a {

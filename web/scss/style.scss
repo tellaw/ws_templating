@@ -500,7 +500,9 @@ div.border-red {
   display:block;
   margin:0 20%;
   li.pagination-left,
-  li.pagination-right {
+  li.pagination-right,
+  li.pagination-left-first,
+  li.pagination-right-end {
     a {
       border:none;
       background:none;
