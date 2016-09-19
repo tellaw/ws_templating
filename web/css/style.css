@@ -285,6 +285,8 @@ div.border-red {
     font-family: 'Myriad Pro', Arial, serif;
     color: #4d5356;
     min-height: auto !important; }
+  .inner-results .description {
+    font-size: 14px; }
   .inner-results .ez_content h2 {
     font-size: 12px;
     font-family: 'Myriad Pro', Arial, serif;
@@ -495,9 +497,9 @@ div.border-red {
 
 .up-ul li {
   color: #4d5356;
-  font-size: 12px; }
+  font-size: 13px; }
   .up-ul li span {
-    font-size: 12px;
+    font-size: 13px;
     color: #ec1625;
     font-weight: bold; }
 
