@@ -213,6 +213,12 @@ div.border-red {
       float:left;
     }
   }
+  .abo {
+    color:#1b8bbb;
+    img {
+      padding:0 0 0 5px;
+    }
+  }
 }
 
 .sidebar-nav-v1 {
@@ -281,13 +287,20 @@ div.border-red {
     margin: 6px 8px 0 0;
   }
   p {
-    font-size:13px;
+    font-size:12px;
     font-family: 'Myriad Pro', Arial, serif;
+    color:#4d5356;
+  }
+  div {
+    font-size:12px;
+    font-family: 'Myriad Pro', Arial, serif;
+    color:#4d5356;
   }
   .ez_content {
     h2 {
-      font-size:13px;
+      font-size:12px;
       font-family: 'Myriad Pro', Arial, serif;
+      color:#4d5356;
     }
   }
 }
@@ -440,6 +453,8 @@ hr {
 }
 
 .pagination {
+  display:block;
+  margin:0 25%;
   li.pagination-left,
   li.pagination-right {
     a {
@@ -478,42 +493,77 @@ hr {
   }
 }
 
+#wrap-favoris {
+  .boxFavoris {
+    display:none;
+  }
+}
 #wrap-history {
   .boxHistory {
     display:none;
   }
 }
-#wrap-history:hover {
-  .boxHistory {
+#wrap-favoris:hover {
+  .boxFavoris {
     text-decoration:none;
     display:block;
-    position:relative;
-    top:0;
+    position:absolute;
+    top:30px;
     left:0;
+    font-size:13px;
     color:#666;
     padding:10px;
-    width:150%;
+    width:250px;
     z-index:999999;
     border:1px solid #697277;
     background-color:#fff;
     .close {
       top:-2px;
       right:0;
+      color:#646d72;
+      background:none;
+      opacity:1;
     }
     span {
-      font-family:Verdana;
-      color:#012b43;
-      text-decoration:none;
-      padding:2px 0;
+      background:url("../images/favoris-picto.png") no-repeat 0 0;
+      width:90%;
+      margin:0;
+      padding:0 0 0 25px;
+    }
+  }
+}
+#wrap-history:hover {
+  .boxHistory {
+    text-decoration:none;
+    display:block;
+    position:absolute;
+    top:30px;
+    left:0;
+    font-size:13px;
+    color:#666;
+    padding:10px;
+    width:250px;
+    z-index:999999;
+    border:1px solid #697277;
+    background-color:#fff;
+    .close {
+      top:-2px;
+      right:0;
+      color:#646d72;
+      background:none;
+      opacity:1;
     }
   }
 }
 
 .up-ul {
   li {
-    a {
-      font-size:11px;
-      color:#4d5356;
+    color:#4d5356;
+    font-size:12px;
+    span {
+      font-size:12px;
+      color:#ec1625;
+      font-weight:bold;
     }
   }
 }
@@ -525,14 +575,14 @@ hr {
   position:relative;
 }
 
-.list-toggle:after {
+.list-toggle a:after {
   color: #fff;
   content: "\f107";
   font-size:2.5em;
   top:-9px;
 }
 
-.list-toggle.active:after {
+.list-toggle.active a:after {
   color: #fff;
   content: "\f106";
   font-size:2.5em;
@@ -545,6 +595,8 @@ hr {
   label,
   a {
     font-size:12px;
+    height:30px;
+    display:block;
   }
   select {
     width:50%;

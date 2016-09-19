@@ -5901,7 +5901,7 @@
 	border-radius: 0;
 }
 
-.list-toggle:after {
+.list-toggle a:after {
 	top: 7px;
 	right: 10px;
 	color: #777;
@@ -5913,7 +5913,7 @@
 	font-family: FontAwesome;
 }
 
-.list-toggle.active:after {
+.list-toggle.active a:after {
 	color: #fff;
 	content: "\f107";
 }
