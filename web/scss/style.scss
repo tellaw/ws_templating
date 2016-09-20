@@ -433,6 +433,9 @@ div.border-red {
 .archive {
   .ico-search {
     background-position:0 0;
+    &.red {
+      background-position:-39px 0px;
+    }
   }
   .ico-search:hover {
     background-position:-39px 0px;
@@ -441,6 +444,9 @@ div.border-red {
 .article {
   .ico-search {
     background-position:0 -31px;
+    &.red {
+      background-position:-39px -31px;
+    }
   }
   .ico-search:hover {
     background-position:-39px -31px;
@@ -449,6 +455,9 @@ div.border-red {
 .fiche {
   .ico-search {
     background-position:0 -59px;
+    &.red {
+      background-position:-39px -59px;
+    }
   }
   .ico-search:hover {
     background-position:-39px -59px;

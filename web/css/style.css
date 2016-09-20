@@ -370,18 +370,24 @@ div.border-red {
 
 .archive .ico-search {
   background-position: 0 0; }
+  .archive .ico-search.red {
+    background-position: -39px 0px; }
 
 .archive .ico-search:hover {
   background-position: -39px 0px; }
 
 .article .ico-search {
   background-position: 0 -31px; }
+  .article .ico-search.red {
+    background-position: -39px -31px; }
 
 .article .ico-search:hover {
   background-position: -39px -31px; }
 
 .fiche .ico-search {
   background-position: 0 -59px; }
+  .fiche .ico-search.red {
+    background-position: -39px -59px; }
 
 .fiche .ico-search:hover {
   background-position: -39px -59px; }
