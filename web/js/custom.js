@@ -265,7 +265,7 @@ jQuery(document).ready(function() {
             jQuery(".col-droite-2").hide();
         }
     }
-    jQuery(".nav-tabs a").on("click", function(){
+    jQuery("#menu-smint > .nav-tabs a").on("click", function(){
         var link = window.location.href;
         var anchor = jQuery(this).attr("href");
 
@@ -285,8 +285,11 @@ jQuery(document).ready(function() {
         window.location.href= link + anchor;
     });
 
-    var nbOnglets = jQuery(".nav-tabs li").length;
-    jQuery(".nav-tabs li").css("width", ((jQuery(".nav-tabs").width()/jQuery(".nav-tabs li").length)*100)/jQuery(".nav-tabs").width()+"%");
+    var nbOnglets = jQuery("#menu-smint > .nav-tabs li").length;
+    jQuery("#menu-smint > .nav-tabs li").css("width", ((jQuery("#menu-smint > .nav-tabs").width()/jQuery("#menu-smint > .nav-tabs li").length)*100)/jQuery("#menu-smint > .nav-tabs").width()+"%");
+
+    var nbOnglets = jQuery(".sommaire-col-dim .nav-tabs li").length;
+    jQuery(".sommaire-col-dim .nav-tabs li").css("width", ((jQuery(".sommaire-col-dim .nav-tabs").width()/jQuery(".sommaire-col-dim .nav-tabs li").length)*100)/jQuery(".sommaire-col-dim .nav-tabs").width()+"%");
 
     // gestion erreur formulaire
     jQuery('#newsletter-form').ready(function(jQuery){
@@ -534,3 +537,31 @@ function simulationOnglets(lien){
     }
     jQuery(anchor+"_link").click();
 }
+
+<!--  Toggle DIV JS -->
+function toggle_div(bouton, id) {
+    var div = document.getElementById(id);
+    if(div.style.display=="none") {
+        div.style.display = "block";
+    } else {
+        div.style.display = "none";
+    }
+}
+
+$(function() {
+    $( "#datepicker" ).datepicker({
+        altField: "#datepicker",
+        closeText: 'Fermer',
+        prevText: 'Précédent',
+        nextText: 'Suivant',
+        currentText: 'Aujourd\'hui',
+        monthNames: ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'],
+        monthNamesShort: ['Janv.', 'Févr.', 'Mars', 'Avril', 'Mai', 'Juin', 'Juil.', 'Août', 'Sept.', 'Oct.', 'Nov.', 'Déc.'],
+        dayNames: ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi'],
+        dayNamesShort: ['Dim.', 'Lun.', 'Mar.', 'Mer.', 'Jeu.', 'Ven.', 'Sam.'],
+        dayNamesMin: ['D', 'L', 'M', 'M', 'J', 'V', 'S'],
+        weekHeader: 'Sem.',
+        firstDay: 1 ,
+        dateFormat: 'yy-mm-dd'
+    });
+});
