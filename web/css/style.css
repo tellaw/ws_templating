@@ -443,7 +443,7 @@ div.border-red {
   .pagination li:first-child a,
   .pagination li:last-child a {
     margin: 0;
-    padding: 5px 0; }
+    padding: 5px 15px; }
   .pagination .active a,
   .pagination a:hover a {
     background: #ec1625;
@@ -482,14 +482,12 @@ div.border-red {
     opacity: 1; }
   #wrap-favoris:hover .boxFavoris span {
     background: url("../images/favoris-picto.png") no-repeat 0 0;
-    width: 90%;
+    width: 100%;
     margin: 0;
     padding: 0 0 0 25px; }
-  #wrap-favoris:hover .boxFavoris span:hover {
-    background: url("../images/favoris-picto-hover.png") no-repeat 0 0;
-    color: #ec1625;
-    text-decoration: underline;
-    cursor: pointer; }
+    #wrap-favoris:hover .boxFavoris span a:hover {
+      color: #ec1625;
+      text-decoration: underline; }
 
 #wrap-history:hover .boxHistory {
   text-decoration: none;

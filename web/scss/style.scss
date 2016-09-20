@@ -533,7 +533,7 @@ div.border-red {
   li:last-child {
     a {
       margin:0;
-      padding:5px 0;
+      padding:5px 15px;
     }
   }
   .active,
@@ -589,15 +589,13 @@ div.border-red {
     }
     span {
       background:url("../images/favoris-picto.png") no-repeat 0 0;
-      width:90%;
+      width:100%;
       margin:0;
       padding:0 0 0 25px;
-    }
-    span:hover {
-      background:url("../images/favoris-picto-hover.png") no-repeat 0 0;
-      color:#ec1625;
-      text-decoration:underline;
-      cursor:pointer;
+      a:hover {
+        color:#ec1625;
+        text-decoration:underline;
+      }
     }
   }
 }
