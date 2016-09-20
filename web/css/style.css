@@ -200,10 +200,11 @@ div.border-red {
 
 .recherche-avancee .abo,
 .filtre .abo {
-  color: #1b8bbb; }
-  .recherche-avancee .abo img,
-  .filtre .abo img {
-    margin: 0 0 0 5px; }
+  color: #1b8bbb;
+  margin: -2px 0 0 0; }
+  .recherche-avancee .abo span,
+  .filtre .abo span {
+    margin: 1px 0 0 5px; }
 
 .results-number h2 {
   font-size: 20px !important; }
@@ -283,22 +284,23 @@ div.border-red {
     font-size: 14px !important;
     font-family: 'Myriad Pro', Arial, serif;
     color: #4d5356;
-    min-height: auto !important; }
+    min-height: auto !important;
+    margin: 0 0 5px 0; }
   .inner-results div {
     font-size: 13px;
     font-family: 'Myriad Pro', Arial, serif;
     color: #4d5356;
     min-height: auto !important; }
   .inner-results .description {
-    font-size: 14px;
-    margin: 0 0 0 45px;
+    font-size: 13px !important;
+    margin: -10px 0 0 45px;
     padding: 0; }
   .inner-results .ez_content h2 {
     font-size: 12px;
     font-family: 'Myriad Pro', Arial, serif;
     color: #4d5356; }
   .inner-results h3 {
-    margin: 0;
+    margin: -5px 0 5px 0;
     padding: 0; }
     .inner-results h3 a {
       font-size: 15px !important; }
@@ -449,7 +451,7 @@ div.border-red {
   .pagination li:first-child a,
   .pagination li:last-child a {
     margin: 0;
-    padding: 5px 0; }
+    padding: 5px 15px; }
   .pagination .active a,
   .pagination a:hover a {
     background: #ec1625;
@@ -476,7 +478,7 @@ div.border-red {
   font-size: 13px;
   color: #666;
   padding: 10px;
-  width: 310px;
+  width: 330px;
   z-index: 999999;
   border: 1px solid #697277;
   background-color: #fff; }
@@ -488,14 +490,18 @@ div.border-red {
     opacity: 1; }
   #wrap-favoris:hover .boxFavoris span {
     background: url("../images/favoris-picto.png") no-repeat 0 0;
-    width: 90%;
+    width: 100%;
     margin: 0;
     padding: 0 0 0 25px; }
+    #wrap-favoris:hover .boxFavoris span a:hover {
+      color: #ec1625;
+      text-decoration: underline; }
   #wrap-favoris:hover .boxFavoris span:hover {
-    background: url("../images/favoris-picto-hover.png") no-repeat 0 0;
-    color: #ec1625;
-    text-decoration: underline;
-    cursor: pointer; }
+    background: url("../images/favoris-picto-hover.png") no-repeat 0 0; }
+  #wrap-favoris:hover .boxFavoris .title-favoris {
+    background: none; }
+  #wrap-favoris:hover .boxFavoris .title-favoris:hover {
+    background: none; }
 
 #wrap-history:hover .boxHistory {
   text-decoration: none;
