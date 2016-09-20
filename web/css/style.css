@@ -200,10 +200,11 @@ div.border-red {
 
 .recherche-avancee .abo,
 .filtre .abo {
-  color: #1b8bbb; }
-  .recherche-avancee .abo img,
-  .filtre .abo img {
-    margin: 0 0 0 5px; }
+  color: #1b8bbb;
+  margin: -2px 0 0 0; }
+  .recherche-avancee .abo span,
+  .filtre .abo span {
+    margin: 1px 0 0 5px; }
 
 .results-number h2 {
   font-size: 20px !important; }
