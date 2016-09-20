@@ -144,7 +144,7 @@ div.border-red {
 
 .recherche-avancee label,
 .filtre label {
-  font-size: 12px;
+  font-size: 13px;
   color: #4d5356;
   width: 100%; }
 
@@ -187,11 +187,11 @@ div.border-red {
   width: 83%; }
   .recherche-avancee .but-recherche span,
   .filtre .but-recherche span {
-    background: url("../images/arrow-red-right-v2.png") no-repeat 0 0;
+    background: url("../images/arrow-red-right-v4.png") no-repeat 0 0;
     display: inline-block;
-    width: 7px;
-    height: 12px;
-    margin: 5px 0 0 0;
+    width: 15px;
+    height: 15px;
+    margin: 2px 0 0 0;
     padding: 0;
     float: left; }
   .recherche-avancee .but-recherche p,
@@ -204,6 +204,9 @@ div.border-red {
   .recherche-avancee .abo img,
   .filtre .abo img {
     margin: 0 0 0 5px; }
+
+.results-number h2 {
+  font-size: 20px !important; }
 
 .recherche-avancee .syntaxe {
   cursor: pointer;
@@ -239,7 +242,7 @@ div.border-red {
       .sidebar-nav-v1 .filtre ul ul li a {
         border: none;
         color: #4d5356;
-        font-size: 12px;
+        font-size: 13px;
         margin: 0;
         padding: 0;
         background: none;
@@ -276,16 +279,32 @@ div.border-red {
   display: inline-block; }
   .inner-results .inner-results .checkbox input {
     margin: 6px 8px 0 0; }
-  .inner-results p,
-  .inner-results div {
-    font-size: 12px;
+  .inner-results p {
+    font-size: 14px !important;
     font-family: 'Myriad Pro', Arial, serif;
     color: #4d5356;
     min-height: auto !important; }
+  .inner-results div {
+    font-size: 13px;
+    font-family: 'Myriad Pro', Arial, serif;
+    color: #4d5356;
+    min-height: auto !important; }
+  .inner-results .description {
+    font-size: 14px;
+    margin: 0 0 0 45px;
+    padding: 0; }
   .inner-results .ez_content h2 {
     font-size: 12px;
     font-family: 'Myriad Pro', Arial, serif;
     color: #4d5356; }
+  .inner-results h3 {
+    margin: 0;
+    padding: 0; }
+    .inner-results h3 a {
+      font-size: 15px !important; }
+    .inner-results h3 a:hover {
+      color: #EC1625 !important;
+      text-decoration: underline; }
 
 .inner-results.article {
   text-align: left; }
@@ -319,7 +338,7 @@ div.border-red {
 .ico-search {
   background: url("../images/icone-recherche.png") no-repeat 0 0;
   width: 35px;
-  height: 29px;
+  height: 23px;
   margin: 0 0 0 30px;
   padding: 0;
   display: inline-block; }
@@ -331,10 +350,9 @@ div.border-red {
   width: 60px;
   height: 55px; }
 
-.visu_real_bd .ico-search {
-  margin: -10px 0 0 20px; }
-  .visu_real_bd .ico-search .decalage_visu_real_bd li {
-    margin: 0 0 0 30px; }
+.visu_real_bd .decalage_visu_real_bd li {
+  margin: 0 0 0 5px;
+  font-size: 13px; }
 
 .visu_real_formation .ico-search {
   background: none;
@@ -415,15 +433,17 @@ div.border-red {
 
 .pagination {
   display: block;
-  margin: 0 20%; }
+  margin: 0 15%; }
   .pagination li.pagination-left a,
-  .pagination li.pagination-right a {
+  .pagination li.pagination-right a,
+  .pagination li.pagination-left-first a,
+  .pagination li.pagination-right-end a {
     border: none;
     background: none; }
-  .pagination li:first-child a {
-    border-right: 1px solid #ddd; }
+  .pagination li:first-child a,
   .pagination li:last-child a {
-    border-left: 1px solid #ddd; }
+    margin: 0;
+    padding: 5px 0; }
   .pagination .active a,
   .pagination a:hover a {
     background: #ec1625;
@@ -450,7 +470,7 @@ div.border-red {
   font-size: 13px;
   color: #666;
   padding: 10px;
-  width: 250px;
+  width: 310px;
   z-index: 999999;
   border: 1px solid #697277;
   background-color: #fff; }
@@ -465,6 +485,11 @@ div.border-red {
     width: 90%;
     margin: 0;
     padding: 0 0 0 25px; }
+  #wrap-favoris:hover .boxFavoris span:hover {
+    background: url("../images/favoris-picto-hover.png") no-repeat 0 0;
+    color: #ec1625;
+    text-decoration: underline;
+    cursor: pointer; }
 
 #wrap-history:hover .boxHistory {
   text-decoration: none;
@@ -485,12 +510,20 @@ div.border-red {
     color: #646d72;
     background: none;
     opacity: 1; }
+  #wrap-history:hover .boxHistory a {
+    height: auto;
+    color: #4d5356;
+    font-size: 13px; }
+  #wrap-history:hover .boxHistory a:hover {
+    color: #ec1625;
+    text-decoration: underline;
+    cursor: pointer; }
 
 .up-ul li {
   color: #4d5356;
-  font-size: 12px; }
+  font-size: 13px; }
   .up-ul li span {
-    font-size: 12px;
+    font-size: 13px;
     color: #ec1625;
     font-weight: bold; }
 
@@ -517,10 +550,13 @@ div.border-red {
   margin: 0; }
   .tab-search label,
   .tab-search a {
-    font-size: 12px;
+    font-size: 13px;
     height: 30px;
-    display: block; }
-  .tab-search select {
+    display: inline-block; }
+  .tab-search li {
+    font-size: 13px; }
+  .tab-search li select {
+    font-size: 13px;
     width: 50%; }
 
 .header-v1 .form-control {
