@@ -597,6 +597,12 @@ div.border-red {
         text-decoration:underline;
       }
     }
+    span:hover {
+      background:url("../images/favoris-picto-hover.png") no-repeat 0 0;
+    }
+    .title-favoris {
+      background:none;
+    }
   }
 }
 #wrap-history:hover {

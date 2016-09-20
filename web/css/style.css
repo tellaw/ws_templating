@@ -488,6 +488,10 @@ div.border-red {
     #wrap-favoris:hover .boxFavoris span a:hover {
       color: #ec1625;
       text-decoration: underline; }
+  #wrap-favoris:hover .boxFavoris span:hover {
+    background: url("../images/favoris-picto-hover.png") no-repeat 0 0; }
+  #wrap-favoris:hover .boxFavoris .title-favoris {
+    background: none; }
 
 #wrap-history:hover .boxHistory {
   text-decoration: none;
