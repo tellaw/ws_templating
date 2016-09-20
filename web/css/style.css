@@ -471,7 +471,7 @@ div.border-red {
   font-size: 13px;
   color: #666;
   padding: 10px;
-  width: 310px;
+  width: 330px;
   z-index: 999999;
   border: 1px solid #697277;
   background-color: #fff; }
@@ -492,6 +492,8 @@ div.border-red {
   #wrap-favoris:hover .boxFavoris span:hover {
     background: url("../images/favoris-picto-hover.png") no-repeat 0 0; }
   #wrap-favoris:hover .boxFavoris .title-favoris {
+    background: none; }
+  #wrap-favoris:hover .boxFavoris .title-favoris:hover {
     background: none; }
 
 #wrap-history:hover .boxHistory {
