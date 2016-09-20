@@ -284,7 +284,8 @@ div.border-red {
     font-size: 14px !important;
     font-family: 'Myriad Pro', Arial, serif;
     color: #4d5356;
-    min-height: auto !important; }
+    min-height: auto !important;
+    margin: 0 0 5px 0; }
   .inner-results div {
     font-size: 13px;
     font-family: 'Myriad Pro', Arial, serif;
