@@ -59,6 +59,7 @@ ul.inline li.last {
 
 #footer a {
     color: #565c60;
+    font-weight: normal;
 }
 #footer a:hover {
     color:#565c60;
