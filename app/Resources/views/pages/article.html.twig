@@ -9,32 +9,9 @@
         {{ module("navigation/breadcrumb") }}
         <!--=== End Breadcrumbs ===-->
 
-        <div id="header-rubrique" class="row margin-top-50 margin-bottom-50 article">
-            <div class="text-center col-xs-2 col-sm-3 col-md-3 col-lg-3 zoning nav-rubrique no-gutters-left">
-                <p class="hidden-xs"> Article précédent</p>
-                <i class="fa fa-long-arrow-left display-block font-size-40"></i>
-                <a class="text-uppercase" href="/base-documentaire/automatique-robotique-th16/regulation-et-commande-des-systemes-asservis-42394210/"><span class="hidden-xs">Régulation et commande des systèmes asservis</span></a>
-            </div>
-
-            <div class="text-center col-xs-8 col-sm-6 col-md-6 col-lg-6 no-gutters">
-                <p class="text-uppercase">
-                    <span class="ico-search vertical-align-center red"></span> <span>Article / Réf : TIP112WEB</span></p>
-                <h1 class="font-family-myriadpro-semibold text-uppercase color-red-eti font-size-20 letter-spacing-7520">Chimie et développement durable -  Vers une chimie organique écocompatible</h1>
-                <div class="letter-spacing-75">
-                    <p class="line-height-16"><span class="font-family-myriadpro-semibold">Auteurs</span> : Max MALACRIA, Jean-Philippe GODDARD, Cyril OLLIVIER, Jean-Philippe GODDARD, Max MALACRIA</p>
-                    <p class="line-height-16">
-                        <span class="font-family-myriadpro-semibold padding-left-25">Date de publication</span> : 10 juil. 2009
-                        <span class="font-family-myriadpro-semibold padding-left-25">Relu et validé</span> le 21 nov. 2014
-                    </p>
-                </div>
-            </div>
-
-            <div class="text-center col-xs-2 col-sm-3 col-md-3 col-lg-3 zoning nav-rubrique no-gutters-right">
-                <p class="hidden-xs"> Article suivant</p>
-                <i class="fa fa-long-arrow-right display-block font-size-40"></i>
-                <a class="text-uppercase" href="/base-documentaire/automatique-robotique-th16/regulation-et-commande-des-systemes-asservis-42394210/"><span class="hidden-xs">Régulation et commande des systèmes asservis</span></a>
-            </div>
-        </div>
+        <!--=== Header Article ===-->
+        {{ module("header/header-article") }}
+        <!--=== Fin Header Article ===-->
 
         <div id="menu-smint" class="tab-v1 tab-domaines">
             <div id="sub-menu" class="subMenu smint" style="position: relative; margin-top: 0px; top: 0px; left: 0px;">
@@ -62,85 +39,18 @@
                 </div>
             </div>
 
-            <div class="row row-3-blocks margin-bottom-20">
-                <div class="col-xs-12 col-sm-12 col-md-10 no-gutters-left">
-                    <p class="text-center color-red-eti text-uppercase font-family-myriadpro font-size-17 letter-spacing-75 margin-bottom-30">
+            <!--=== Reassurance Article ===-->
+            {{ module("reassurance/reassurance-article") }}
+            <!--=== Fin Onglet Article ===-->
 
-                        Cette article fait partie de l’offre
-                        <span class="font-family-myriadpro-semibold"><a class="color-red-eti font-size-16 text-uppercase font-family-myriadpro-bold" href="/base-documentaire/automatique-robotique-th16/automatique-et-ingenierie-systeme-ti660/">Automatique et ingénierie système</a></span>
-
-                    </p>
-                    <div class="col-xs-12 col-sm-4 col-md-5 col-lg-5 xs-padding-left-60 md-padding-left-60 xs-margin-bottom-15">
-                        <div class="row sm-padding-left-30">
-                            <div class="col-xs-2 col-sm-3 col-md-2">
-                                <p class="margin-bottom-20 box-icon"><i class="fa fa-list-ul font-size-24 icon-color" aria-hidden="true"></i></p>
-                            </div>
-                            <div class="col-xs-10 col-sm-9 col-md-10">
-                                <p class="bande-cols">L'accès à une base complète d'articles<br>actualisée et mise à jour en permanence</p>
-                                <p class="bande-cols petit-text"> <i class="fa fa-angle-right padding-right-5"></i> En ce moment 129 articles</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 xs-padding-left-60">
-                        <div class="row sm-padding-left-30">
-
-                            <div class="col-xs-2 col-sm-3 col-md-2">
-                                <p class="margin-bottom-20 box-icon"><i class="fa fa-plus font-size-24 icon-color" aria-hidden="true"></i></p>
-                            </div>
-                            <div class="col-xs-10 col-sm-9 col-md-10 ">
-                                <p class="bande-cols">Des services <br>et outils pratiques</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 xs-padding-left-60">
-                        <div class="row">
-                            <div class="col-xs-2 col-sm-3 col-md-2">
-                                <p class="margin-bottom-20 box-icon"><i class="fa fa-desktop font-size-24 icon-color" aria-hidden="true"></i></p>
-                            </div>
-                            <div class="col-xs-10 col-sm-9 col-md-10">
-                                <p class="bande-cols">100 % web consultable<br> sur tous les supports numériques</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hidden-xs hidden-sm col-md-2 col-lg-2">
-                    <img itemprop="image" class="img-x margin-bottom-0" src="http://preprod.techniques-ingenieur.fr/boutique/media/catalog/product/cache/4/image/130x134/9df78eab33525d08d6e5fb8d27136e95/t/i/ti660.png" alt="">
-                    <a href="/base-documentaire/automatique-robotique-th16/automatique-et-ingenierie-systeme-ti660/" class="btn-u btn-block btn-x btn-u-red letter-spacing-7520" type="button" title="Automatique et ingénierie système"><i class="fa fa-arrow-right margin-right-5"></i>ACCÉDER À L'OFFRE</a>
-                </div>
-            </div>
-
-            <ul class="nav nav-tabs">
-                <li class="active">
-                    <a id="presentation_link" class="letter-spacing-50" href="#presentation" data-toggle="tab" aria-expanded="true">Présentation</a>
-                    <div id="triangle-down" style=""></div>
-                </li>
-                <li>
-                    <a id="corps-article_link" class="letter-spacing-50" href="#corps-article" data-toggle="tab" aria-expanded="false">Corps de l'article</a>
-                    <div id="triangle-down"></div>
-                </li>
-                <li>
-                    <a id="auteurs_link" class="letter-spacing-50" href="#auteurs" data-toggle="tab" aria-expanded="false">Auteurs</a>
-                    <div id="triangle-down"></div>
-                </li>
-                <li>
-                    <a id="biblio_link" class="letter-spacing-50" href="#biblio" data-toggle="tab" aria-expanded="false">Bibliographie &amp; annexes</a>
-                    <div id="triangle-down"></div>
-                </li>
-                <li>
-                    <a id="outils_link" class="letter-spacing-50" href="#outils" data-toggle="tab" aria-expanded="false">Boite à outils</a>
-                    <div id="triangle-down"></div>
-                </li>
-                <li>
-                    <a id="meme-sujet_link" class="letter-spacing-50" href="#meme-sujet" data-toggle="tab" aria-expanded="false">Sur le même sujet</a>
-                    <div id="triangle-down"></div>
-                </li>
-                <li>
-                    <a id="offre-commerciale_link" class="letter-spacing-50" href="#offre-commerciale" data-toggle="tab" aria-expanded="false">Notre offre commerciale</a>
-                    <div id="triangle-down"></div>
-                </li>
-            </ul>
+            <!--=== Reassurance Article ===-->
+            {{ module("navigation/onglets-article") }}
+            <!--=== Fin Onglet Article ===-->
 
             <div class="clearfix tab-content tab-content-article">
+                <!--=== Sticky Article ===-->
+                {{ module("sticky/sticky-article") }}
+                <!--=== Fin Sticky Article ===-->
                 <section id="presentation" class="tab-pane fade in tab-bg active presentation-smint">
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 content-article">
@@ -260,274 +170,10 @@
                                 <p class=" letter-spacing-75 line-height-20 margin-top-30 margin-bottom-30 letter-spacing-75 article-body-color"><a id="link_exp" class="" href="#"><i class="fa fa-angle-right margin-right-10  color-red-eti"></i>Accueil &gt;  Ressources documentaires &gt;  Environnement - Sécurité &gt;  Environnement &gt;  Développement durable &gt;   <span class="padding-left-17">Chimie et développement durable - Vers une chimie organique écocompatible</span></a></p>
                             </div>
                             <hr id="hr-separator">
-                            <div class="row">
-                                <h3 class="text-center color-red-eti margin-bottom-25 font-size-15 letter-spacing-75 col-lg-12">La lecture <span class="hilighted-word">complète</span>  de cet article et le téléchargement du <span class="hilighted-word">PDF</span> sont réservés aux abonnés</h3>
-                                <div class="col-sm-12 col-md-6 col-lg-6 padding-right-30 xs-padding-right-15" style="border-right:1px solid #C6C6C6">
-                                    <form class="reg-page">
-                                        <div class="clearfix">
-                                            <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2 no-gutters text-right">
-                                                <p class="user-btn margin-top-10 xs-margin-top-2 xs-font-size-20 no-gutters-left"><i class="fa fa-user header-btn-size"></i><span class="badge badge-orange rounded-x badge-x badge-xx" style="padding-right: 4px;width: 20px;"><i class="fa fa-check"></i></span></p>
-                                            </div>
-                                            <div class="col-md-10 col-lg-10 col-sm-10 col-xs-10 no-gutters-left">
-                                                <p class="letter-spacing-75 font-size-15 text-center color-blue-eti">Vous êtes <span class="font-family-myriadpro-semibold">abonnés</span> à cette offre&nbsp;? <br />Connectez-vous !</p>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <span class="col-lg-12 letter-spacing-75 article-body-color font-size-11 margin-bottom-23 text-center margin-bottom-5">Pour accéder à l'intégralité du contenu inscrivez-vous :</span>
-                                        </div>
-                                        <div>
-                                            <div class="input-group margin-bottom-20 input-grp-adjust col-xs-8 col-sm-8 col-lg-8 col-xs-offset-2 col-sm-offset-2 col-lg-offset-2">
-                                                <span class="input-group-addon"><i class="fa fa-user" style="color: #b3b3b3;padding-top: 0px; margin-top: 4px;"></i></span>
-                                                <input type="text" placeholder="Identifiant" class="form-control" style="height:34px">
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="input-group margin-bottom-20 input-grp-adjust col-xs-8 col-sm-8 col-lg-8 col-xs-offset-2 col-sm-offset-2 col-lg-offset-2">
-                                                <span class="input-group-addon"><i class="fa fa-unlock-alt" style="padding-top: 0px; margin-top: 4px;"></i></span>
-                                                <input type="password" placeholder="Mot de passe" class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="clearfix">
-                                            <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-                                                <button style="display: inline-block;width: auto;" type="submit" class="btn-u btn-block btn-x btn-u-blue font-size-13 letter-spacing-7520 letter-spacing-75 btn-center"><i class="fa fa-arrow-right margin-right-5"></i>SE CONNECTER</button>
-                                            </div>
-                                        </div>
-                                        <div class="text-center">
-                                            <input class="input input-checkbox" type="checkbox" name="subscription" id="subscription">
-                                            <label class="checkbox pasword-remember article-body-color">Mémoriser votre mot de passe</label>
-                                        </div>
-                                        <div class="text-center">
-                                            <a class="letter-spacing-75 pasword-forgotten article-body-color" href="#"><u>Vous avez oublié votre mot de passe ?</u></a>
-                                        </div>
-                                    </form>
 
-                                    <hr id="hr-separator" class="hidden-lg">
-                                </div>
-
-                                <div class="col-sm-12 col-md-6 col-lg-6 padding-left-30 xs-padding-left-15">
-                                    <p class="text-center margin-bottom-19 letter-spacing-75 article-body-color font-size-15">Vous souhaitez <span class="font-family-myriadpro-semibold">découvrir</span> cette offre ? </p>
-                                    <div>
-                                        <div class="col-xs-12 col-sm-12 col-md-3 no-gutters-right">
-                                            <p class="text-right margin-0"><img itemprop="image" class="img-x margin-bottom-0" src="http://preprod.techniques-ingenieur.fr/boutique/media/catalog/product/cache/4/image/130x134/9df78eab33525d08d6e5fb8d27136e95/t/i/ti660.png" alt=""></p>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-12 col-md-9">
-                                            <div class="margin-top-25">
-                                                <p class="margin-bottom-0 letter-spacing-75 article-body-color text-center"> Cet article est inclus dans l'offre :</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                    <p class="text-center color-red-eti margin-top-15 margin-bottom-30 letter-spacing-75 font-family-myriadpro-semibold font-size-15">MÉDICAMENTS ET PRODUITS PHARMACEUTIQUES </p>
-
-                                    <div>
-                                        <p class="col-xs-12 col-sm-12 col-md-12 text-center letter-spacing-75">
-                                            <a href="" class="btn-u btn-u-red btn-center" type="button"><i class="fa fa-download margin-right-5"></i>EXTRAIT GRATUIT</a>
-                                        </p>
-                                    </div>
-
-                                    <div>
-                                        <p class="col-xs-12 col-sm-12 col-md-12 text-center letter-spacing-75">
-                                            <a href="" class="btn-u btn-u-red btn-center" type="button"><i class="fa fa-arrow-right margin-right-5"></i>ACCÉDER À L'OFFRE</a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 ">
-                            <div class="row search-bar-col hidden-xs margin-bottom-10">
-                                <div class="hidden-xs hidden-sm col-md-12 hdr-srch-col">
-                                    <div class="input-group input-grp">
-                                        <input class="form-control input-srch-col margin-top-25 search-bar" placeholder="Recherchez dans cet article" type="text" id="filter" onkeypress="if (event.keyCode == 13) toggle_div(this,'id-rechercher-div');">
-                                        <span class="input-group-btn">
-                                            <button class="btn-u bg-color-red-eti margin-top-25" type="button"><i class="glyphicon glyphicon-search"></i></button>
-                                        </span>
-                                    </div>
-                                    <div class="rechercher-border" id="id-rechercher-div" style="display: none">
-                                        <i class="fa fa-times fa-2x" aria-hidden="true" onclick="$(&quot;#id-rechercher-div&quot;).hide();"></i>
-                                        <div>
-                                            <h3 class="font-size-12">INTRO</h3>
-                                            <div class="jcorgFilterTextParent">
-                                                <h5 class="font-size-12">
-                                                    <a href=" ">1-CHIMIE ET DÉVELOPPEMENT DURABLE </a>
-                                                </h5>
-                                                <div class="jcorgFilterTextChild">
-                                                    Contenu du 1- chimie et developpement (test) Ces trois importantes failles ont été découvertes grâce à la vigilance d’un activiste émirati, visé par une attaque informatique sophistiquée.Ces trois
-                                                </div>
-                                            </div>
-                                            <div class="jcorgFilterTextParent">
-                                                <h5 class="font-size-12">
-                                                    <a href=" ">2- LES DOUZES PROPOSITIONS FONDATRICES  </a>
-                                                </h5>
-                                                <div class="jcorgFilterTextChild">
-                                                    contenu du 2- LES DOUZES PROPOSITIONS FONDATRICES (test) ( tester mot " chimie dans 2 sous titres")
-                                                    (test) Le leader mondial du secteur va payereuros plus cher les 1 000 litres. Le secteur, bouleversé par la fin des quotas laitiers, souffre
-                                                </div>
-                                            </div>
-                                            <div class="jcorgFilterTextParent">
-                                                <h6 class="font-size-12">
-                                                    <a href=" ">2.1 - Prévenir la pollution Acyclation de l'anisole </a>
-                                                </h6>
-                                                <div class="jcorgFilterTextChild">
-                                                    contenu du 2.1 - Prévenir la pollution Acyclation de l'anisole ( test)
-                                                </div>
-                                            </div>
-                                            <div class="jcorgFilterTextParent">
-                                                <h6 class="font-size-12">
-                                                    <a href=" ">2.1 - Prévenir la pollution Acyclation de l'anisole </a>
-                                                </h6>
-                                                <div class="jcorgFilterTextChild">
-                                                    contenu du 2.1 - Prévenir la pollution Acyclation de l'anisole ( test)
-                                                </div>
-                                            </div>
-                                            <div class="jcorgFilterTextParent">
-                                                <h6 class="font-size-12">
-                                                    <a href=" ">2.1 - Prévenir la pollution Acyclation de l'anisole </a>
-                                                </h6>
-                                                <div class="jcorgFilterTextChild">
-                                                    contenu du 2.1 - Prévenir la pollution Acyclation de l'anisole ( test)
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 hidden-xs hidden-sm sommaire-col-dim">
-                                    <div>
-                                        <div class="tab-v1">
-                                            <ul class="nav nav-tabs">
-                                                <li class="active tab1-sommaire">
-                                                    <a aria-expanded="true" href="#home" data-toggle="tab" class="sommaire-title">Sommaire</a>
-                                                </li>
-                                                <li class=" tab1-sommaire">
-                                                    <a aria-expanded="false" href="#profile" data-toggle="tab" class="sommaire-title-detail">Sommaire détaillé</a>
-                                                </li>
-                                            </ul>
-                                            <div class="tab-content">
-                                                <div class="tab-pane fade active in" id="home">
-                                                    <div class="sommaire-background-page">
-                                                        <div class="sommaire sommaire-background">
-                                                            <h3 class="font-size-12">INTRO</h3>
-                                                            <h5 class="font-size-12">
-                                                                <a href=" ">1-CHIMIE ET DÉVELOPPEMENT DURABLE </a>
-                                                            </h5>
-                                                            <h5 class="font-size-12">
-                                                                <a href=" ">2- LES DOUZES PROPOSITIONS FONDATRICES</a>
-                                                            </h5>
-                                                            <h6 class="font-size-12">
-                                                                <a href=" ">2.1 - Prévenir la pollution Acyclation de l'anisole </a>
-                                                            </h6>
-                                                            <h6 class="font-size-12">
-                                                                <a href=" ">2.2 - Économie d'atomes et d'étapes  </a>
-                                                            </h6>
-                                                            <h6 class="font-size-12">
-                                                                <a href=" ">2.3 - Concevoir des synthèses moins dangereuses</a>
-                                                            </h6>
-                                                            <h6 class="font-size-12">
-                                                                <a href=" ">2.4 - Concevoir des produits chimiques moins toxiques</a>
-                                                            </h6>
-                                                            <h6 class="font-size-12">
-                                                                <a href=" ">2.5 - Réduire l'utilisation des solvants organiques et d'auxiliaires de synthèse</a>
-                                                            </h6>
-                                                            <h6 class="font-size-12">
-                                                                <a href=" ">2.6 - Réduire la dépense énergétique et favoriser l'emploi d'énergies renouvelables </a>
-                                                            </h6>
-                                                            <h6 class="font-size-12">
-                                                                <a href=" ">2.7 - Mettre à profit les matières premières renouvelables </a>
-                                                            </h6>
-                                                            <h6 class="font-size-12">
-                                                                <a href=" ">2.8 - Réduire le nombre de dérivés qui peuvent engendrer des déchets</a>
-                                                            </h6>
-                                                            <h6 class="font-size-12">
-                                                                <a href=" ">2.9 - Privilégier les procédés catalytiques aux procédés stoechiométriques</a>
-                                                            </h6>
-                                                            <h6 class="font-size-12">
-                                                                <a href=" ">2.10 - Concevoir des produits non persistants dans l'environnement</a>
-                                                            </h6>
-                                                            <h6 class="font-size-12">
-                                                                <a href=" ">2.11 - Mettre au point des méthodes d'analyses en temps réel de lutte contre la pollution</a>
-                                                            </h6>
-                                                            <h6 class="font-size-12">
-                                                                <a href=" ">2.12 - Minimiser le risue d'accidents en pratiquant une chimie à sécurité maximale</a>
-                                                            </h6>
-                                                            <h5 class="font-size-12">
-                                                                <a href=" ">CONCLUSION</a>
-                                                            </h5>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="tab-pane fade" id="profile">
-                                                    <div class="sommaire-background-page">
-                                                        <div class="sommaire sommaire-background">
-                                                            <h3 class="font-size-12">INTRO</h3>
-                                                            <h5 class="font-size-12">
-                                                                <a href=" ">1-CHIMIE ET DÉVELOPPEMENT DURABLE </a>
-                                                            </h5>
-                                                            <h5 class="font-size-12">
-                                                                <a href=" ">2- LES DOUZES PROPOSITIONS FONDATRICES</a>
-                                                            </h5>
-                                                            <h6 class="font-size-12">
-                                                                <a href=" ">2.1 - Prévenir la pollution Acyclation de l'anisole </a>
-                                                                <div class="row margin-bottom-23 margin-top-10">
-                                                                    <div class="col-md-12 ">
-                                                                        <img src="assets/img/main/img_100x100.jpg" alt="">
-                                                                    </div>
-                                                                </div>
-
-                                                            </h6>
-                                                            <h6 class="font-size-12">
-                                                                <a href=" ">2.2 - Économie d'atomes et d'étapes  </a>
-                                                                <div class="row margin-bottom-23 margin-top-10">
-                                                                    <div class="col-md-6 ">
-                                                                        <img src="assets/img/main/img_100x100.jpg" alt="">
-                                                                    </div>
-                                                                    <div class="col-md-6 ">
-                                                                        <img src="assets/img/main/img_100x100.jpg" alt="">
-                                                                    </div>
-                                                                </div>
-                                                            </h6>
-                                                            <h6 class="font-size-12">
-                                                                <a href=" ">2.3 - Concevoir des synthèses moins dangereuses</a>
-                                                                <div class="row margin-bottom-23 margin-top-10">
-                                                                    <div class="col-md-6 ">
-                                                                        <img src="assets/img/main/img_100x100.jpg" alt="">
-                                                                    </div>
-                                                                    <div class="col-md-6 ">
-                                                                        <img src="assets/img/main/img_100x100.jpg" alt="">
-                                                                    </div>
-                                                                </div>
-                                                                <div class="row margin-bottom-23 margin-top-10">
-                                                                    <div class="col-md-6 ">
-                                                                        <img src="assets/img/main/img_100x100.jpg" alt="">
-                                                                    </div>
-                                                                </div>
-                                                            </h6>
-                                                            <h6 class="font-size-12">
-                                                                <a href=" ">2.4 - Concevoir des produits chimiques moins toxiques</a>
-                                                                <div class="row margin-bottom-23 margin-top-10">
-                                                                    <div class="col-md-6 ">
-                                                                        <img src="assets/img/main/img_100x100.jpg" alt="">
-                                                                    </div>
-                                                                    <div class="col-md-6 ">
-                                                                        <img src="assets/img/main/img_100x100.jpg" alt="">
-                                                                    </div>
-                                                                </div>
-                                                            </h6>
-                                                            <h6 class="font-size-12">
-                                                                <a href=" ">2.5 - Réduire l'utilisation des solvants organiques et d'auxiliaires de synthèse</a>
-                                                            </h6>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-12 col-sm-6 col-lg-6 margin-top-25 hidden-xs hidden-sm">
-                                        <p class=" pull-right margin-bottom-0">Publicité</p>
-                                        <img class=" pub-style margin-bottom-10 pub-img-2 " style="margin-left: 0px !important;" src="assets/img/main/PUB.png" alt="">
-                                    </div>
-                                </div>
-                            </div>
+                            <!--=== Interseption Article ===-->
+                            {{ module("prospect/interseption") }}
+                            <!--=== Fin Interseption Article ===-->
                         </div>
                     </div>
                 </section>
@@ -563,7 +209,7 @@
                         </div>
                     </div>
 
-                    <p class="text-center margin-top-35 margin-bottom-40 color-red-eti margin-right-200 font-size-17 letter-spacing-75">Les <span class="font-family-myriadpro-semibold text-uppercase">avantages</span> et <span class="font-family-myriadpro-semibold text-uppercase">services</span> compris dans votre offre</p>
+                    <p class="text-center padding-top-35 margin-bottom-40 color-red-eti margin-right-200 font-size-17 letter-spacing-75">Les <span class="font-family-myriadpro-semibold text-uppercase">avantages</span> et <span class="font-family-myriadpro-semibold text-uppercase">services</span> compris dans votre offre</p>
 
                     <i class="fa fa-list title-icon-1 color-red-eti"></i>
                     <h3 class="best-sales color-red-eti font-weight-300 margin-bottom-12 downloads-title"><i class="fa fa-list margin-right-10 title-icon-2 color-red-eti"></i>accès</h3>
@@ -808,6 +454,9 @@
 
                 <hr id="hr-separator" class="hidden-md hidden-lg">
 
+                <!--=== Sommaire Article ===-->
+                {{ module("navigation/sommaire-article") }}
+                <!--=== Fin Sommaire Article ===-->
             </div>
         </div>
     </div>

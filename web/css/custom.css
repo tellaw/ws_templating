@@ -1528,6 +1528,9 @@ p.cellule-list {
 .tab-v1 .nav-tabs a {
 	padding: 5px 0;
 	border: 1px solid #697277 !important;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
 }
 .tab-v1 .nav-tabs > .active > a,
 .tab-v1 .nav-tabs > .active > a:hover,
@@ -3278,7 +3281,8 @@ td, th, tr{
 	color: #9FA1A2!important;
 }
  #details,
- #maj {
+ #maj,
+ #offre-commerciale {
 	 position:relative;
 	 z-index: 99;
  }
@@ -3492,4 +3496,70 @@ form #di-link {
 .content-article a:hover {
 	color:#ea2336;
 	text-decoration: underline;
+}
+.rechercher-border {
+	border: 1px solid #697277;
+	height: auto;
+	background-color: white !important;
+	display: none;
+	position: absolute;
+	padding-left: 20px;
+	padding-right: 20px;
+	top: 59px;
+	width:320px;
+	z-index:9
+}
+
+#sticky-menu-article {
+	position: absolute;
+	z-index: 100;
+	color: #fff;
+	top: 0px !important;
+	left: -50px;
+}
+
+#sticky-menu-slide-article {
+	position: absolute;
+	z-index: 99;
+	color: #fff;
+	top: 0px !important;
+	right: 0px;
+	left:1px;
+	width: 50%;
+}
+
+#sticky-menu-eye {
+	z-index: 100;
+	color: #fff;
+	right: 0px;
+}
+
+#sticky-menu-slide-eye {
+	position: absolute;
+	z-index: 50;
+}
+
+#sticky-menu-aplus {
+	z-index: 100;
+	color: #fff;
+	right: 0px;
+}
+
+#sticky-menu-slide-aplus {
+	position: absolute;
+	z-index: 50;
+}
+
+#sticky-menu-amoins {
+	z-index: 100;
+	color: #fff;
+	right: 0px;
+}
+
+#sticky-menu-slide-amoins {
+	position: absolute;
+	z-index: 50;
+}
+.sticky-grey {
+	background-color: #697277 !important;
 }

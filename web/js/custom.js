@@ -270,13 +270,20 @@ jQuery(document).ready(function() {
         var anchor = jQuery(this).attr("href");
 
         //affichage ou non de la freezone en col de droite
-        if (anchor != "#documents" && anchor != "#presentation" && anchor != "#expert") {
+        if (anchor == "#offre-commerciale" || anchor == "#details") {
+            jQuery(".col-droite-3").hide();
+            jQuery(".col-droite-4").hide();
+        }
+        else if (anchor != "#documents" && anchor != "#presentation" && anchor != "#expert") {
             jQuery(".col-droite div.pub-bloc div.freezone").hide();
             jQuery(".col-droite-2").hide();
+            jQuery(".col-droite-4").show();
         }
         else {
+            console.log("ici");
             jQuery(".col-droite div.pub-bloc div.freezone").show();
             jQuery(".col-droite-2").show();
+            jQuery(".col-droite-4").show();
         }
         //ajout de l'ancre dans l'url
         if (window.location.href.indexOf("#") > 0) {
@@ -517,6 +524,137 @@ jQuery(document).ready(function() {
         {
             jQuery('#avant').datepicker('option', 'maxDate', selectedDate);
         }
+    });
+
+    $('#sticky-menu-eye').hover( function() {
+        $('#sticky-menu-slide-eye').animate({
+            left: "42px"
+        }, 300);
+
+        var hiddenField = $('#sticky-menu-eye'),
+            val = hiddenField.val();
+        hiddenField.val(val === "true" ? "false" : "true");
+
+        if (hiddenField.val() == "true") {
+            $('#sticky-menu-slide-aplus').animate({
+                left: "-155px"
+            }, 300);
+            $('#sticky-menu-slide-amoins').animate({
+                left: "-155px"
+            }, 300);
+
+            var hiddenFieldd = $('#sticky-menu-aplus'),
+                val = hiddenFieldd.val();
+            hiddenFieldd.val("false");
+
+            var hiddenFielddd = $('#sticky-menu-amoins'),
+                val = hiddenFielddd.val();
+            hiddenFielddd.val("false");
+
+        } else if (hiddenField.val() == "false") {
+            $('#sticky-menu-slide-eye').animate({
+                left: "-155px"
+            }, 300);
+        }
+    });
+
+    $('#sticky-menu-aplus').hover(function() {
+        $('#sticky-menu-slide-aplus').animate({
+            left: "42px"
+        }, 300);
+
+        var hiddenField = $('#sticky-menu-aplus'),
+            val = hiddenField.val();
+        hiddenField.val(val === "true" ? "false" : "true");
+
+        if (hiddenField.val() == "true") {
+            $('#sticky-menu-slide-eye').animate({
+                left: "-155px"
+            }, 300);
+            $('#sticky-menu-slide-amoins').animate({
+                left: "-155px"
+            }, 300);
+
+            var hiddenFieldd = $('#sticky-menu-eye'),
+                val = hiddenFieldd.val();
+            hiddenFieldd.val("false");
+
+            var hiddenFielddd = $('#sticky-menu-amoins'),
+                val = hiddenFielddd.val();
+            hiddenFielddd.val("false");
+
+
+        } else if (hiddenField.val() == "false") {
+            $('#sticky-menu-slide-aplus').animate({
+                left: "-155px"
+            }, 300);
+        }
+    });
+
+    $('#sticky-menu-amoins').hover( function() {
+        $('#sticky-menu-slide-amoins').animate({
+            left: "42px"
+        }, 300);
+
+        var hiddenField = $('#sticky-menu-amoins'),
+            val = hiddenField.val();
+        hiddenField.val(val === "true" ? "false" : "true");
+
+        if (hiddenField.val() == "true") {
+            $('#sticky-menu-slide-eye').animate({
+                left: "-155px"
+            }, 300);
+            $('#sticky-menu-slide-aplus').animate({
+                left: "-155px"
+            }, 300);
+
+            var hiddenFieldd = $('#sticky-menu-eye'),
+                val = hiddenFieldd.val();
+            hiddenFieldd.val("false");
+
+            var hiddenFielddd = $('#sticky-menu-aplus'),
+                val = hiddenFielddd.val();
+            hiddenFielddd.val("false");
+
+
+        } else if (hiddenField.val() == "false") {
+            $('#sticky-menu-slide-amoins').animate({
+                left: "-155px"
+            }, 300);
+        }
+    });
+
+    $('#sticky-menu-eye').on('click', function() {
+        window.open("http://preprod.techniques-ingenieur.fr");
+    });
+
+    $('#sticky-menu-slide-eye').on('click', function() {
+        window.open("http://preprod.techniques-ingenieur.fr");
+    });
+    var currentZoom = 1;
+    $('#sticky-menu-amoins').on('click', function() {  currentZoom -= 0.1;
+        $('body').css({
+            zoom: currentZoom,
+            '-moz-transform': 'scale(' + currentZoom + ')'
+        });
+    });
+    $('#sticky-menu-aplus').on('click', function() {  currentZoom += 0.1;
+        $('body').css({
+            zoom: currentZoom,
+            '-moz-transform': 'scale(' + currentZoom + ')'
+        });
+    });
+    $('#sticky-menu-slide-amoins').on('click', function() {  currentZoom += 0.1;
+        $('body').css({
+            zoom: currentZoom,
+            '-moz-transform': 'scale(' + currentZoom + ')'
+        });
+    });
+    $('#sticky-menu-slide-aplus').on('click', function() {  currentZoom -= 0.1;
+        $('body').css({
+            zoom: currentZoom,
+            '-moz-transform': 'scale(' + currentZoom + ')'
+        });
     });
 });
 
