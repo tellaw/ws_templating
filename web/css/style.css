@@ -338,7 +338,7 @@ div.border-red {
   margin-left: 0; }
 
 .pertinence {
-  width: 50%; }
+  width: 80% !important; }
 
 .ico-search {
   background: url("../images/icone-recherche.png") no-repeat 0 0;
