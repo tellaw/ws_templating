@@ -389,12 +389,12 @@ div.border-red {
   background-position: -39px 0px; }
 
 .article .ico-search {
-  background-position: 0 -31px; }
+  background-position: 0 -29px; }
   .article .ico-search.red {
-    background-position: -39px -31px; }
+    background-position: -39px -29px; }
 
 .article .ico-search:hover {
-  background-position: -39px -31px; }
+  background-position: -39px -29px; }
 
 .fiche .ico-search {
   background-position: 0 -59px; }
