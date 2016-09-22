@@ -622,6 +622,10 @@ div.border-red {
       background:none;
       opacity:1;
     }
+    .title-favoris {
+      display:inline-block;
+      margin:0 0 10px 0;
+    }
     span {
       background:url("../images/favoris-picto.png") no-repeat 0 0;
       width:100%;
@@ -630,6 +634,9 @@ div.border-red {
       a:hover {
         color:#ec1625;
         text-decoration:underline;
+      }
+      a.supr {
+        float:right;
       }
     }
     span:hover {
