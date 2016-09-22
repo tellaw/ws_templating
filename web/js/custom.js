@@ -481,51 +481,6 @@ jQuery(document).ready(function() {
     // gérer les warning dans les listing rubrique
     jQuery( ".zoning.warning" ).parents('.panel-default').find(".my-warning-to-display").css("display", "inline");
 
-    // gestion datepicker
-    // Date range
-    jQuery('#avant').datepicker({
-        altField: "#datepicker",
-        closeText: 'Fermer',
-        prevText: 'Précédent',
-        nextText: 'Suivant',
-        currentText: 'Aujourd\'hui',
-        monthNames: ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'],
-        monthNamesShort: ['Janv.', 'Févr.', 'Mars', 'Avril', 'Mai', 'Juin', 'Juil.', 'Août', 'Sept.', 'Oct.', 'Nov.', 'Déc.'],
-        dayNames: ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi'],
-        dayNamesShort: ['Dim.', 'Lun.', 'Mar.', 'Mer.', 'Jeu.', 'Ven.', 'Sam.'],
-        dayNamesMin: ['D', 'L', 'M', 'M', 'J', 'V', 'S'],
-        weekHeader: 'Sem.',
-        firstDay: 1 ,
-        dateFormat: 'dd/mm/yy',
-        prevText: "<i class='fa fa-angle-left font-size-25'></i>",
-        nextText: "<i class='fa fa-angle-right font-size-25'></i>",
-        onSelect: function( selectedDate )
-        {
-            jQuery('#apres').datepicker('option', 'minDate', selectedDate);
-        }
-    });
-    jQuery('#apres').datepicker({
-        altField: "#datepicker",
-        closeText: 'Fermer',
-        prevText: 'Précédent',
-        nextText: 'Suivant',
-        currentText: 'Aujourd\'hui',
-        monthNames: ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'],
-        monthNamesShort: ['Janv.', 'Févr.', 'Mars', 'Avril', 'Mai', 'Juin', 'Juil.', 'Août', 'Sept.', 'Oct.', 'Nov.', 'Déc.'],
-        dayNames: ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi'],
-        dayNamesShort: ['Dim.', 'Lun.', 'Mar.', 'Mer.', 'Jeu.', 'Ven.', 'Sam.'],
-        dayNamesMin: ['D', 'L', 'M', 'M', 'J', 'V', 'S'],
-        weekHeader: 'Sem.',
-        firstDay: 1 ,
-        dateFormat: 'dd/mm/yy',
-        prevText: "<i class='fa fa-angle-left font-size-25'></i>",
-        nextText: "<i class='fa fa-angle-right font-size-25'></i>",
-        onSelect: function( selectedDate )
-        {
-            jQuery('#avant').datepicker('option', 'maxDate', selectedDate);
-        }
-    });
-
     $('#sticky-menu-eye').hover( function() {
         $('#sticky-menu-slide-eye').animate({
             left: "42px"
