@@ -318,7 +318,7 @@ div.border-red {
   margin: 20px 0 30px 0; }
 
 .recherche-inside .form-control {
-  width: 87%;
+  width: 87% !important;
   float: left;
   height: 25px; }
 
