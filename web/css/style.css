@@ -270,7 +270,7 @@ div.border-red {
   margin: 15px 0; }
 
 .sidebar-nav-v1 ul li span.badge {
-  margin: 3px 0 0 5px !important; }
+  margin: -4px 0 0 5px !important; }
 
 .border-grey {
   border: 1px solid #697277; }
