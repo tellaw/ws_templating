@@ -319,8 +319,8 @@ div.border-red {
 
 .recherche-inside .form-control {
   width: 87%;
-  height: 25px;
-  border: 1px solid #6a7378; }
+  float: left;
+  height: 25px; }
 
 .recherche-inside .btn-search-inside {
   height: 25px;
