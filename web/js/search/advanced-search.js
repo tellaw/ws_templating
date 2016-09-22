@@ -99,6 +99,7 @@ jQuery(document).ready(function ($) {
 					});
 				}
 			});
+			displayStateForFacetCheckbox(paramName);
 		});
 
 	});
