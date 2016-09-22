@@ -164,7 +164,7 @@ div.border-red {
 
 .recherche-avancee .form-control,
 .filtre .form-control {
-  height: 29px; }
+  height: 33px; }
 
 .recherche-avancee .syntaxe,
 .filtre .syntaxe {
@@ -269,6 +269,9 @@ div.border-red {
 .sidebar-nav-v1 .filtre hr {
   margin: 15px 0; }
 
+.sidebar-nav-v1 ul li span.badge {
+  margin: 3px 0 0 5px !important; }
+
 .border-grey {
   border: 1px solid #697277; }
 
@@ -340,8 +343,8 @@ div.border-red {
 .ico-search {
   background: url("../images/icone-recherche.png") no-repeat 0 0;
   width: 35px;
-  height: 23px;
-  margin: 0 0 0 30px;
+  height: 26px;
+  margin: -2px 0 0 30px;
   padding: 0;
   display: inline-block; }
 
@@ -462,6 +465,10 @@ div.border-red {
 
 .fp ul .print {
   margin: 15px -40px 0 10px; }
+
+#wrap-favoris a,
+#wrap-history a {
+  padding: 3px 0 0 0; }
 
 #wrap-favoris .boxFavoris {
   display: none; }

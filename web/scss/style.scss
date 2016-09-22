@@ -181,7 +181,7 @@ div.border-red {
     }
   }
   .form-control {
-    height:29px;
+    height:33px;
   }
   .syntaxe {
     font-size:10px;
@@ -304,6 +304,15 @@ div.border-red {
     }
   }
 }
+.sidebar-nav-v1 {
+  ul {
+    li {
+      span.badge {
+        margin:3px 0 0 5px!important;
+      }
+    }
+  }
+}
 
 .border-grey {
   border:1px solid #697277;
@@ -393,8 +402,8 @@ div.border-red {
 .ico-search {
   background:url("../images/icone-recherche.png") no-repeat 0 0;
   width:35px;
-  height:23px;
-  margin:0 0 0 30px;
+  height:26px;
+  margin:-2px 0 0 30px;
   padding:0;
   display:inline-block;
 }
@@ -567,6 +576,12 @@ div.border-red {
   }
 }
 
+#wrap-favoris,
+#wrap-history {
+  a {
+    padding:3px 0 0 0;
+  }
+}
 #wrap-favoris {
   .boxFavoris {
     display:none;
