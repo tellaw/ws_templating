@@ -1,3 +1,7 @@
+@media print {
+  a[href]:after {
+    content: none !important; } }
+
 .header,
 .navbar,
 .navbar-fixed-top,

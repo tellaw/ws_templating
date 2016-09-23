@@ -1,3 +1,9 @@
+@media print {
+  a[href]:after {
+    content: none !important;
+  }
+}
+
 .header,
 .navbar,
 .navbar-fixed-top,
@@ -28,3 +34,4 @@ h2 {
 .inner-results:first-child {
   margin:-50px 0 0 0;
 }
+
