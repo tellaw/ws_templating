@@ -254,6 +254,13 @@ div.border-red {
 }
 
 .sidebar-nav-v1 {
+  ul {
+    li {
+      span.badge {
+        margin:-4px 0 0 5px!important;
+      }
+    }
+  }
   .filtre {
     ul {
       margin:0;
@@ -304,14 +311,6 @@ div.border-red {
     .but-recherche {
       width:37%;
       margin:10px auto 20px;
-  }
-}
-.sidebar-nav-v1 {
-  ul {
-    li {
-      span.badge {
-        margin:-4px 0 0 5px!important;
-      }
     }
   }
 }

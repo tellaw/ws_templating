@@ -230,6 +230,9 @@ div.border-red {
   border: 1px solid #697277;
   background-color: #fff; }
 
+.sidebar-nav-v1 ul li span.badge {
+  margin: -4px 0 0 5px !important; }
+
 .sidebar-nav-v1 .filtre ul {
   margin: 0;
   padding: 0 0 0 10px;
@@ -269,8 +272,9 @@ div.border-red {
 .sidebar-nav-v1 .filtre hr {
   margin: 15px 0; }
 
-.sidebar-nav-v1 ul li span.badge {
-  margin: -4px 0 0 5px !important; }
+.sidebar-nav-v1 .filtre .but-recherche {
+  width: 37%;
+  margin: 10px auto 20px; }
 
 .border-grey {
   border: 1px solid #697277; }
