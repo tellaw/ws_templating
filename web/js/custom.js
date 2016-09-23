@@ -598,33 +598,24 @@ function verticalToolbarPosition(connected) {
     });
 }
 
-var min=12;
-var max=18;
+var taille = 14;
+var augmentation = 1;
+var tailleMax = 18;
+var tailleMin= 10;
 function increaseFontSize() {
-    var p = $$('.article_box *');
-    for(i=0;i<p.length;i++) {
-        if(p[i].style.fontSize) {
-            var s = parseInt(p[i].style.fontSize.replace("px",""));
-        } else {
-            var s = 12;
-        }
-        if(s!=max) {
-            s += 1;
-        }
-        p[i].style.fontSize = s+"px"
+    taille +=1;
+    if (taille >= tailleMax)
+    {
+        taille = tailleMax;
     }
+    $('.tab-content-article section *').stop().animate({fontSize: taille+"px"},300);
 }
+
 function decreaseFontSize() {
-    var p = $$('.article_box *');
-    for(i=0;i<p.length;i++) {
-        if(p[i].style.fontSize) {
-            var s = parseInt(p[i].style.fontSize.replace("px",""));
-        } else {
-            var s = 12;
-        }
-        if(s!=min) {
-            s -= 1;
-        }
-        p[i].style.fontSize = s+"px"
+    taille -=1;
+    if (taille <= tailleMin)
+    {
+        taille = tailleMin;
     }
+    $('.tab-content-article section *').stop().animate({fontSize: taille+"px"},300);
 }
