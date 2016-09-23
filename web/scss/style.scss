@@ -220,6 +220,13 @@ div.border-red {
       margin:1px 0 0 5px;
     }
   }
+  #search_form_submit_ref,
+  #search_form_submit_filter {
+    background:none;
+    border:none;
+    display:block;
+    margin:20px auto;
+  }
 }
 .results-number {
   h2 {
