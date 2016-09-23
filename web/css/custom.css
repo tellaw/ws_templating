@@ -2567,11 +2567,35 @@ div.play-button {
 	margin-right: auto;
 	margin-bottom: 14px;
 }
-
 .sommaire-background {
-	padding: 40px 20px 20px 20px;
+	padding: 15px 12px;
 	line-height: 15px;
 	border-left-width: 5px;
+}
+.sommaire-background .holder {
+	margin: 0 0 5px 0;
+}
+.sommaire-background .list-unstyled {
+	margin: 0 0 10px 9px;
+}
+.sommaire-background .sous-menu{
+	margin: 0 0 3px 0;
+}
+.sommaire-background .displayDetailledSummary {
+	height: 107px;
+	overflow: auto;
+	clear: both;
+}
+.sommaire-background .displayDetailledSummary a img {
+	margin:1px 1px 5px 1px;
+}
+.sommaire-background a:hover{
+	color:#ea2336;
+	text-decoration: underline;
+}
+
+.sommaire-background .displayDetailledSummary a:hover img {
+	outline: 1px solid #ea2336;
 }
 .mot-editrice-img {
 	width: 50px !important;
