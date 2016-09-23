@@ -423,7 +423,8 @@ div.border-red {
   background-position: -39px -150px; }
 
 .riskev .ico-search {
-  background-position: 0 -178px; }
+  background-position: 0 -178px;
+  margin: -2px 0 0 0; }
 
 .riskev .ico-search:hover {
   background-position: -39px -178px; }
