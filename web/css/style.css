@@ -206,6 +206,13 @@ div.border-red {
   .filtre .abo span {
     margin: 1px 0 0 5px; }
 
+.recherche-avancee .btn-search,
+.filtre .btn-search {
+  background: none;
+  border: none;
+  display: block;
+  margin: 20px auto; }
+
 .results-number h2 {
   font-size: 20px !important; }
 
