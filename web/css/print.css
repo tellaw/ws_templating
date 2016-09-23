@@ -29,5 +29,8 @@ h2 {
 .inner-results:first-child {
   margin: -50px 0 0 0; }
 
+.inner-results h3 {
+  margin: 10px 0 0 0; }
+
 .inner-results .description {
-  margin: 20px 0 0 0; }
+  margin: 10px 0 0 5px; }
