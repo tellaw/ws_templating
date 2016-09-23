@@ -17,3 +17,8 @@
 .inner-results .list-inline {
   margin: 0;
   padding: 0; }
+
+h2 {
+  margin: 0;
+  padding: 0;
+  border: 1px solid red; }
