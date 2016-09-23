@@ -378,9 +378,9 @@
     margin: 30px 0; }
   form .actions-select-all label {
     width: 100%; }
-  .list-toggle:after {
+  .list-toggle a:after {
     top: -3px; }
-  .list-toggle.active:after {
+  .list-toggle.active a:after {
     top: -3px; } }
 
 @media screen and (min-width: 426px) {
