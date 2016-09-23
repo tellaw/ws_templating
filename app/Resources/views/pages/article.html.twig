@@ -14,6 +14,10 @@
         <!--=== Fin Header Article ===-->
 
         <div id="menu-smint" class="tab-v1 tab-domaines">
+            <!--=== Reassurance Article ===-->
+            {{ module("reassurance/reassurance-article") }}
+            <!--=== Fin Onglet Article ===-->
+
             <div id="sub-menu" class="subMenu smint" style="position: relative; margin-top: 0px; top: 0px; left: 0px;">
                 <div class="inner">
                     <a href="#presentation-smint" id="presentation-smint" class="subNavBtn pull-left">Présentation</a>
@@ -38,10 +42,6 @@
                     </ul>
                 </div>
             </div>
-
-            <!--=== Reassurance Article ===-->
-            {{ module("reassurance/reassurance-article") }}
-            <!--=== Fin Onglet Article ===-->
 
             <!--=== Reassurance Article ===-->
             {{ module("navigation/onglets-article") }}
@@ -182,15 +182,241 @@
                 </section>
 
                 <section id="auteurs" class="tab-pane fade tab-bg auteurs-smint">
+                    <div class="mint margin-top-20 margin-bottom-20">
+                        <div class="menu">
+                            <p class="menuBtn">Auteurs</p>
+                            <a href="javascript:void(0);" class="btn menu-button dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-angle-down menu-icon"></i>
+                            </a>
+                            <ul class="dropdown-menu pull-right pop-up-menu list-unstyled link-list-cstm padding-bottom-0 padding-top-0">
+                                <li onclick="jQuery('.presentation-smint').ScrollTo();"><p id="d-documents" class="pop-up-style margin-top-5 margin-bottom-5">Présentation</p></li>
+                                <li onclick="jQuery('.corps-article-smint').ScrollTo();"><p id="d-corps-article" class="pop-up-style margin-top-5 margin-bottom-5">Corps de l'article</p></li>
+                                <li onclick="jQuery('.auteurs-smint').ScrollTo();"><p id="d-auteurs" class="pop-up-style margin-top-5 margin-bottom-5">Auteurs</p></li>
+                                <li onclick="jQuery('.biblio-smint').ScrollTo();"><p id="d-biblio" class="pop-up-style margin-top-5 margin-bottom-5">Bibliographie &amp; annexes</p></li>
+                                <li onclick="jQuery('.outils-smint').ScrollTo();"><p id="d-outils" class="pop-up-style margin-top-5 margin-bottom-5">Boite à outils</p></li>
+                                <li onclick="jQuery('.meme-sujet-smint').ScrollTo();"><p id="d-meme-sujet" class="pop-up-style margin-top-5 margin-bottom-5">Sur le même sujet</p></li>
+                                <li onclick="jQuery('.offre-commerciale-smint').ScrollTo();"><p id="d-offre-commerciale" class="pop-up-style margin-top-5 margin-bottom-5">Notre offre commerciale</p></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 margin-top-30">
+                            <h3 class="best-articles color-red-eti font-weight-300 downloads-title font-size-17 letter-spacing-75 margin-bottom-12 line-height-15 font-family-myriadpro-semiboldx">
+                                <i class="fa fa-file-text" aria-hidden="true"></i>
+                                Auteurs
+                            </h3>
+                            <div class="eti-offers-devider hr-border-red margin-left-28 xs-margin-bottom-10"></div>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <p class=" letter-spacing-75 line-height-20 margin-top-12 letter-spacing-75 article-body-color"><i class="fa fa-angle-right margin-right-10  color-red-eti"></i>Max MALACRIA : Professeur à l'université Pierre et Marie Curie (Paris 06) et à l'IUF</p>
+                                </li>
+                                <li>
+                                    <p class=" letter-spacing-75 line-height-20 margin-top-12 letter-spacing-75 article-body-color"><i class="fa fa-angle-right margin-right-10  color-red-eti"></i>Cyril OLLIVIER : chargé de recherches au CNRS UPMC Univ. Paris 06, Institut de chimie moléculaire chargé de recherche (UMR CNRS 7201)</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </section>
 
                 <section id="biblio" class="tab-pane fade tab-bg biblio-smint">
+                    <div class="mint margin-top-20 margin-bottom-20">
+                        <div class="menu">
+                            <p class="menuBtn">Bibliographie & annexes</p>
+                            <a href="javascript:void(0);" class="btn menu-button dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-angle-down menu-icon"></i>
+                            </a>
+                            <ul class="dropdown-menu pull-right pop-up-menu list-unstyled link-list-cstm padding-bottom-0 padding-top-0">
+                                <li onclick="jQuery('.presentation-smint').ScrollTo();"><p id="d-documents" class="pop-up-style margin-top-5 margin-bottom-5">Présentation</p></li>
+                                <li onclick="jQuery('.corps-article-smint').ScrollTo();"><p id="d-corps-article" class="pop-up-style margin-top-5 margin-bottom-5">Corps de l'article</p></li>
+                                <li onclick="jQuery('.auteurs-smint').ScrollTo();"><p id="d-auteurs" class="pop-up-style margin-top-5 margin-bottom-5">Auteurs</p></li>
+                                <li onclick="jQuery('.biblio-smint').ScrollTo();"><p id="d-biblio" class="pop-up-style margin-top-5 margin-bottom-5">Bibliographie &amp; annexes</p></li>
+                                <li onclick="jQuery('.outils-smint').ScrollTo();"><p id="d-outils" class="pop-up-style margin-top-5 margin-bottom-5">Boite à outils</p></li>
+                                <li onclick="jQuery('.meme-sujet-smint').ScrollTo();"><p id="d-meme-sujet" class="pop-up-style margin-top-5 margin-bottom-5">Sur le même sujet</p></li>
+                                <li onclick="jQuery('.offre-commerciale-smint').ScrollTo();"><p id="d-offre-commerciale" class="pop-up-style margin-top-5 margin-bottom-5">Notre offre commerciale</p></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 margin-top-30">
+                            <div class="margin-bottom-30">
+                                <h3 class="best-articles color-red-eti font-weight-300 downloads-title font-size-17 letter-spacing-75 margin-bottom-12 line-height-15 font-family-myriadpro-semiboldx">
+                                    <i class="fa fa-book" aria-hidden="true"></i>
+                                    BIBLIOGRAPHIE
+                                </h3>
+                                <div class="eti-offers-devider hr-border-red margin-left-28 xs-margin-bottom-10"></div>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <p class=" letter-spacing-75 line-height-20 margin-top-12 letter-spacing-75 article-body-color"><i class="fa fa-angle-right margin-right-10  color-red-eti"></i>(1) - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tempus quam ut lectus scelerisque ultrices.</p>
+                                    </li>
+                                    <li>
+                                        <p class=" letter-spacing-75 line-height-20 margin-top-12 letter-spacing-75 article-body-color"><i class="fa fa-angle-right margin-right-10  color-red-eti"></i>(2) - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tempus quam ut lectus scelerisque ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tempus quam ut lectus scelerisque ultrices.</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="margin-bottom-30">
+                                <h3 class="best-articles color-red-eti font-weight-300 downloads-title font-size-17 letter-spacing-75 margin-bottom-12 line-height-15 font-family-myriadpro-semiboldx">
+                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                    ANNEXES
+                                </h3>
+                                <div class="eti-offers-devider hr-border-red margin-left-28 xs-margin-bottom-10"></div>
+                                <ol class="list-unstyled">
+                                    <li>
+                                        <p class=" letter-spacing-75 line-height-20 margin-top-12 letter-spacing-75 article-body-color">1 - Événements</p>
+                                        <ol class="list-unstyled padding-left-20">
+                                            <li>
+                                                1.1 - Nationaux
+                                            </li>
+                                            <li>
+                                                1.2 - Internationaux
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        <p class=" letter-spacing-75 line-height-20 margin-top-12 letter-spacing-75 article-body-color">2 - Annuaire</p>
+                                        <ol class="list-unstyled padding-left-20">
+                                            <li>
+                                                2.1 - Fabricants d'instruments (liste non exhausive)
+                                            </li>
+                                            <li>
+                                                2.2 - Fabricants d'instruments à vent (liste non exhausive)
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ol>
+                            </div>
+
+                            <hr id="hr-separator">
+                        </div>
+                    </div>
                 </section>
 
                 <section id="outils" class="tab-pane fade tab-bg outils-smint">
                 </section>
 
                 <section id="meme-sujet" class="tab-pane fade tab-bg meme-sujet-smint">
+                    <div class="mint margin-top-20 margin-bottom-20">
+                        <div class="menu">
+                            <p class="menuBtn">Sur le même sujet</p>
+                            <a href="javascript:void(0);" class="btn menu-button dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-angle-down menu-icon"></i>
+                            </a>
+                            <ul class="dropdown-menu pull-right pop-up-menu list-unstyled link-list-cstm padding-bottom-0 padding-top-0">
+                                <li onclick="jQuery('.presentation-smint').ScrollTo();"><p id="d-documents" class="pop-up-style margin-top-5 margin-bottom-5">Présentation</p></li>
+                                <li onclick="jQuery('.corps-article-smint').ScrollTo();"><p id="d-corps-article" class="pop-up-style margin-top-5 margin-bottom-5">Corps de l'article</p></li>
+                                <li onclick="jQuery('.auteurs-smint').ScrollTo();"><p id="d-auteurs" class="pop-up-style margin-top-5 margin-bottom-5">Auteurs</p></li>
+                                <li onclick="jQuery('.biblio-smint').ScrollTo();"><p id="d-biblio" class="pop-up-style margin-top-5 margin-bottom-5">Bibliographie &amp; annexes</p></li>
+                                <li onclick="jQuery('.outils-smint').ScrollTo();"><p id="d-outils" class="pop-up-style margin-top-5 margin-bottom-5">Boite à outils</p></li>
+                                <li onclick="jQuery('.meme-sujet-smint').ScrollTo();"><p id="d-meme-sujet" class="pop-up-style margin-top-5 margin-bottom-5">Sur le même sujet</p></li>
+                                <li onclick="jQuery('.offre-commerciale-smint').ScrollTo();"><p id="d-offre-commerciale" class="pop-up-style margin-top-5 margin-bottom-5">Notre offre commerciale</p></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 margin-top-30">
+                            <h3 class="best-articles color-red-eti font-weight-300 downloads-title font-size-17 letter-spacing-75 margin-bottom-12 line-height-15 font-family-myriadpro-semiboldx">
+                                <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+                                DANS LES RESSOURCES DOCUMENTAIRES
+                            </h3>
+                            <div class="eti-offers-devider hr-border-red margin-left-28 margin-bottom-12"></div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 no-gutters">
+                                <div class="article letter-spacing-75 margin-bottom-30">
+                                    <p>
+                                        <span class="ico-search vertical-align-center"></span>
+                                        <span class="padding-right-15 color-697277">Article</span>
+                                        <span class="padding-right-15 color-697277">S8650</span>
+                                        <span class="padding-right-15 color-697277"><a href="/base-documentaire/automatique-robotique-th16/systemes-d-information-et-de-communication-42397210/la-technologie-nfc-s8650/">La technologie NFC : principes de fonctionnement et applications</a></span>
+                                    </p>
+                                    <div class="letter-spacing-75 line-height-18 margin-left-30">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius sodales lectus ut pretium. Aliquam erat volutpat. Aenean in ultricies neque, sed tincidunt tellus. Proin nec magna vitae purus tincidunt lobortis at eget neque...
+                                    </div>
+                                </div>
+
+                                <div class="fiche letter-spacing-75 margin-bottom-30">
+                                    <p>
+                                        <span class="ico-search vertical-align-center"></span>
+                                        <span class="padding-right-15 color-697277">Article</span>
+                                        <span class="padding-right-15 color-697277">S8650</span>
+                                        <span class="padding-right-15 color-697277"><a href="/base-documentaire/automatique-robotique-th16/systemes-d-information-et-de-communication-42397210/la-technologie-nfc-s8650/">La technologie NFC : principes de fonctionnement et applications</a></span>
+                                    </p>
+                                    <div class="letter-spacing-75 line-height-18 margin-left-30">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius sodales lectus ut pretium. Aliquam erat volutpat. Aenean in ultricies neque, sed tincidunt tellus. Proin nec magna vitae purus tincidunt lobortis at eget neque...
+                                    </div>
+                                </div>
+
+                                <div class="archive letter-spacing-75 margin-bottom-30">
+                                    <p>
+                                        <span class="ico-search vertical-align-center"></span>
+                                        <span class="padding-right-15 color-697277">Article</span>
+                                        <span class="padding-right-15 color-697277">S8650</span>
+                                        <span class="padding-right-15 color-697277"><a href="/base-documentaire/automatique-robotique-th16/systemes-d-information-et-de-communication-42397210/la-technologie-nfc-s8650/">La technologie NFC : principes de fonctionnement et applications</a></span>
+                                    </p>
+                                    <div class="letter-spacing-75 line-height-18 margin-left-30">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius sodales lectus ut pretium. Aliquam erat volutpat. Aenean in ultricies neque, sed tincidunt tellus. Proin nec magna vitae purus tincidunt lobortis at eget neque...
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 margin-top-30">
+                            <h3 class="best-articles color-red-eti font-weight-300 downloads-title font-size-17 letter-spacing-75 margin-bottom-12 line-height-15 font-family-myriadpro-semiboldx">
+                                <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+                                DANS LE MAGASIN DE L'ACTUALITÉ
+                            </h3>
+                            <div class="eti-offers-devider hr-border-red margin-left-28 margin-bottom-12"></div>
+                            <div class="col-xs-12 col-sm-12 col-md-12">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-6 no-gutters">
+                                        {{ module('actualite/article-300x250') }}
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-6 no-gutters">
+                                        {{ module('actualite/article-300x250') }}
+                                    </div>
+                                </div>
+                                <div class="row margin-top-30">
+                                    <div class="col-xs-12 col-sm-12 col-md-6 no-gutters">
+                                        {{ module('actualite/article-300x250') }}
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-6 no-gutters">
+                                        {{ module('actualite/article-300x250') }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 margin-top-30">
+                            <h3 class="best-articles color-red-eti font-weight-300 downloads-title font-size-17 letter-spacing-75 margin-bottom-12 line-height-15 font-family-myriadpro-semiboldx">
+                                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                                DANS LES LIVRES BLANCS
+                            </h3>
+                            <div class="eti-offers-devider hr-border-red margin-left-28 margin-bottom-12"></div>
+                            <div class="col-xs-12 col-sm-12 col-md-12">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-6 no-gutters">
+                                        {{ module('livre-blanc/livre-blanc') }}
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-6 no-gutters">
+                                        {{ module('livre-blanc/livre-blanc') }}
+                                    </div>
+                                </div>
+                                <div class="row margin-top-30">
+                                    <div class="col-xs-12 col-sm-12 col-md-6 no-gutters">
+                                        {{ module('livre-blanc/livre-blanc') }}
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-6 no-gutters">
+                                        {{ module('livre-blanc/livre-blanc') }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </section>
 
                 <section id="offre-commerciale" class="tab-pane fade tab-bg offre-commerciale-smint">

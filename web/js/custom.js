@@ -458,6 +458,13 @@ jQuery(document).ready(function() {
 
         jQuery(".tab-content-rubrique .presentation-smint").css({"minHeight": jQuery(".tab-content .col-droite-3").height() + 60});
         jQuery(".tab-content-rubrique .expert-smint").css({"minHeight": jQuery(".tab-content .col-droite-3").height() + 60});
+
+        jQuery(".tab-content-article .presentation-smint").css({"minHeight": jQuery(".tab-content .col-droite-4").height() + 60});
+        jQuery(".tab-content-article .corps-article-smint").css({"minHeight": jQuery(".tab-content .col-droite-4").height() + 60});
+        jQuery(".tab-content-article .auteurs-smint").css({"minHeight": jQuery(".tab-content .col-droite-4").height() + 60});
+        jQuery(".tab-content-article .biblio-smint").css({"minHeight": jQuery(".tab-content .col-droite-4").height() + 60});
+        jQuery(".tab-content-article .outils-smint").css({"minHeight": jQuery(".tab-content .col-droite-4").height() + 60});
+        jQuery(".tab-content-article .meme-sujet-smint").css({"minHeight": jQuery(".tab-content .col-droite-4").height() + 60});
     }
 
     /* Correction des ancres */
@@ -532,4 +539,83 @@ function toggle_div(bouton, id) {
     } else {
         div.style.display = "none";
     }
+}
+
+function verticalToolbarPosition(connected) {
+    var topMenuVertical = jQuery(".base_docu #breadcrumb").outerHeight() + jQuery(".base_docu div.univers").outerHeight() + jQuery(".base_docu div.pack").outerHeight() + jQuery(".base_docu div.base-documentaire").outerHeight() + jQuery(".base_docu div.topshop").outerHeight() + jQuery(".base_docu div.docbase-menutop").outerHeight() + jQuery(".dt #top-content").outerHeight();
+
+    if (connected == "connect"){
+        jQuery("#sticky-menu-article").css("top",topMenuVertical + 8).show();
+        jQuery(".dt #sticky-menu-article").css("top",topMenuVertical).show();
+    }
+    else {
+        jQuery(".article-lp #sticky-menu-article").css("top",topMenuVertical + 8).show();
+        jQuery(".article-dt #sticky-menu-article").css("top",topMenuVertical).show();
+        jQuery("#sticky-menu-article").show();
+    }
+
+    var menu = jQuery("#sticky-menu-article");
+    var fixedLimit = menu.offset().top;
+    var posLeft = (jQuery(window).width() - 960)/2 - 85;
+    if(jQuery("body").hasClass("home")){
+        var posLeft = (jQuery(window).width() - 1024)/2 - 66;
+    }
+    var posHide = jQuery(document).height() - topMenuVertical - jQuery('.slide_services').outerHeight() - jQuery('#footer').outerHeight();
+
+    if(jQuery("body").hasClass("home")){
+        var leftMenu = "-66px";
+        var topMenu = "110px";
+    }
+    else {
+        var leftMenu = "-85px";
+        var topMenu = "36px";
+    }
+
+    jQuery(window).scroll(function(event) {
+        // Valeur de défilement lors du chargement de la page
+        windowScroll = jQuery(window).scrollTop();
+
+        // Mise à jour du positionnement en fonction du scroll
+        if( windowScroll >= fixedLimit ) {
+            menu.css({position: 'fixed', top: "146px", left: posLeft});
+        } else {
+            if (connected == "connect"){
+                jQuery("#sticky-menu-article").css({position: "absolute", top: topMenuVertical + 8, left: leftMenu});
+                jQuery(".dt #sticky-menu-article").css({position: "absolute", top: topMenuVertical, left: leftMenu});
+            }
+            else {
+                jQuery("#sticky-menu-article").css({position: "absolute", top: topMenu, left: leftMenu});
+                jQuery(".article-lp #sticky-menu-article").css({position: "absolute", top: topMenuVertical + 8, left: leftMenu});
+                jQuery(".article-dt #sticky-menu-article").css({position: "absolute", top: topMenuVertical, left: leftMenu});
+            };
+        }
+
+        if (windowScroll < posHide) {
+            menu.show();
+        } else {
+            menu.hide();
+        }
+    });
+}
+
+var taille = 14;
+var augmentation = 1;
+var tailleMax = 18;
+var tailleMin= 10;
+function increaseFontSize() {
+    taille +=1;
+    if (taille >= tailleMax)
+    {
+        taille = tailleMax;
+    }
+    jQuery('.tab-content-article section *').stop().animate({fontSize: taille+"px"},300);
+}
+
+function decreaseFontSize() {
+    taille -=1;
+    if (taille <= tailleMin)
+    {
+        taille = tailleMin;
+    }
+    jQuery('.tab-content-article section *').stop().animate({fontSize: taille+"px"},300);
 }
