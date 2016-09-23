@@ -442,10 +442,10 @@ div.border-red {
   background-position: -39px -207px; }
 
 .outil .ico-search {
-  background-position: 0 0; }
+  background-position: 0 -232px; }
 
 .outil .ico-search:hover {
-  background-position: -39px 0; }
+  background-position: -39px -232px; }
 
 .actions-select-all input#actions-select-all {
   margin-left: -20px; }
