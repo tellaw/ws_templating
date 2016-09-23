@@ -608,7 +608,7 @@ function increaseFontSize() {
     {
         taille = tailleMax;
     }
-    $('.tab-content-article section *').stop().animate({fontSize: taille+"px"},300);
+    jQuery('.tab-content-article section *').stop().animate({fontSize: taille+"px"},300);
 }
 
 function decreaseFontSize() {
@@ -617,5 +617,5 @@ function decreaseFontSize() {
     {
         taille = tailleMin;
     }
-    $('.tab-content-article section *').stop().animate({fontSize: taille+"px"},300);
+    jQuery('.tab-content-article section *').stop().animate({fontSize: taille+"px"},300);
 }
