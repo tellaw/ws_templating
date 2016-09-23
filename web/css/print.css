@@ -1,3 +1,7 @@
+@media print {
+  a[href]:after {
+    content: none !important; } }
+
 .header,
 .navbar,
 .navbar-fixed-top,
@@ -8,6 +12,7 @@
 .actions-select,
 .pagination,
 #menu-smint,
+.bottom-bloc,
 #footer {
   display: none; }
 
@@ -17,3 +22,17 @@
 .inner-results .list-inline {
   margin: 0;
   padding: 0; }
+
+h2 {
+  margin: -100px 0 0 0;
+  padding: 0; }
+
+.inner-results:first-child {
+  margin: -50px 0 0 0; }
+
+.inner-results h3,
+.inner-results .description {
+  margin: 10px 0 0 5px; }
+
+.inner-results .dark-grey-title {
+  margin: 0 0 0 5px; }

@@ -254,6 +254,13 @@ div.border-red {
 }
 
 .sidebar-nav-v1 {
+  ul {
+    li {
+      span.badge {
+        margin:-4px 0 0 5px!important;
+      }
+    }
+  }
   .filtre {
     ul {
       margin:0;
@@ -294,7 +301,6 @@ div.border-red {
         }
       }
     }
-
     .form-group {
       margin:0;
       padding:0;
@@ -302,14 +308,9 @@ div.border-red {
     hr {
       margin:15px 0;
     }
-  }
-}
-.sidebar-nav-v1 {
-  ul {
-    li {
-      span.badge {
-        margin:-4px 0 0 5px!important;
-      }
+    .but-recherche {
+      width:37%;
+      margin:10px auto 20px;
     }
   }
 }
@@ -510,6 +511,7 @@ div.border-red {
 .riskev {
   .ico-search {
     background-position:0 -178px;
+    margin:-2px 0 0 0;
   }
   .ico-search:hover {
     background-position:-39px -178px;
@@ -533,10 +535,10 @@ div.border-red {
 }
 .outil {
   .ico-search {
-    background-position:0 0;
+    background-position:0 -232px;
   }
   .ico-search:hover {
-    background-position:-39px 0;
+    background-position:-39px -232px;
   }
 }
 
