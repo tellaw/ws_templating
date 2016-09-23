@@ -99,6 +99,7 @@ jQuery(document).ready(function ($) {
 					});
 				}
 			});
+			displayStateForFacetCheckbox(paramName);
 		});
 
 	});
@@ -130,8 +131,8 @@ jQuery(document).ready(function ($) {
     $('#apres-picker').datepicker({
         altField: "#apres",
         altFormat: 'dd/mm/yy',
-        //prevText: '<i class="fa fa-angle-left font-size-25"></i>',
-        //nextText: '<i class="fa fa-angle-right font-size-25"></i>',
+        prevText: "<i class='fa fa-angle-left font-size-25'></i>",
+        nextText: "<i class='fa fa-angle-right font-size-25'></i>",
         changeYear: true,
         onSelect: function( selectedDate ) {
             $('#avant-picker').datepicker('option', 'maxDate', selectedDate);
