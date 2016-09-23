@@ -2003,7 +2003,7 @@ $color-red : #ea2336 ;
 }
 
 /* Mobile portrait à petit desktop */
-@media  screen and (min-width: 426px) and (max-width: 1023px) {
+@media  screen and (min-width: 426px) and (max-width: 1024px) {
   .element-wrapper-1 {
     padding-left: 40px;
     padding-right: 40px;
@@ -2027,11 +2027,16 @@ $color-red : #ea2336 ;
     padding-left: 150px;
     padding-right: 50px;
   }
-
   .element-wrapper-2 {
     padding-left: 50px;
     padding-right: 150px;
   }
+  #collapse-typography,
+  #collapse-buttons {
+    position:absolute;
+    width:100%;
+    border:1px solid #717984;
+    border-top:none;
 }
 
 /* Large and up */
