@@ -458,22 +458,34 @@ jQuery(document).ready(function() {
         jQuery(".tab-content-rubrique .presentation-smint").css({"minHeight": jQuery(".tab-content .col-droite-3").height() + 60});
         jQuery(".tab-content-rubrique .expert-smint").css({"minHeight": jQuery(".tab-content .col-droite-3").height() + 60});
 
-        /*jQuery(".tab-content-article .presentation-smint").css({"minHeight": jQuery(".tab-content .col-droite-4").height() + 60});
-        jQuery(".tab-content-article .corps-article-smint").css({"minHeight": jQuery(".tab-content .col-droite-4").height() + 60});
-        jQuery(".tab-content-article .auteurs-smint").css({"minHeight": jQuery(".tab-content .col-droite-4").height() + 60});
-        jQuery(".tab-content-article .biblio-smint").css({"minHeight": jQuery(".tab-content .col-droite-4").height() + 60});
-        jQuery(".tab-content-article .outils-smint").css({"minHeight": jQuery(".tab-content .col-droite-4").height() + 60});
-        jQuery(".tab-content-article .meme-sujet-smint").css({"minHeight": jQuery(".tab-content .col-droite-4").height() + 60});*/
-    }
-
-    jQuery(".tab1-sommaire-detaille").live("click",function() {
-        console.log(jQuery(".tab-content .col-droite-4").height() + jQuery(".tab-pane.fade .displayDetailledSummary").length() * 107 + 60);
-        jQuery(".tab-content-article .presentation-smint").css({"minHeight": jQuery(".tab-content .col-droite-4").height() + jQuery(".tab-pane.fade .displayDetailledSummary").length() * 107 + 60});
+        jQuery(".tab-content-article .presentation-smint").css({"minHeight": jQuery(".tab-content .col-droite-4").height() + 60});
         jQuery(".tab-content-article .corps-article-smint").css({"minHeight": jQuery(".tab-content .col-droite-4").height() + 60});
         jQuery(".tab-content-article .auteurs-smint").css({"minHeight": jQuery(".tab-content .col-droite-4").height() + 60});
         jQuery(".tab-content-article .biblio-smint").css({"minHeight": jQuery(".tab-content .col-droite-4").height() + 60});
         jQuery(".tab-content-article .outils-smint").css({"minHeight": jQuery(".tab-content .col-droite-4").height() + 60});
         jQuery(".tab-content-article .meme-sujet-smint").css({"minHeight": jQuery(".tab-content .col-droite-4").height() + 60});
+    }
+
+    jQuery(".tab1-sommaire").live("click",function() {
+        var minheightcol = jQuery(".tab-content .col-droite-4").height() + 60;
+
+        jQuery(".tab-content-article .presentation-smint").css({"minHeight": minheightcol});
+        jQuery(".tab-content-article .corps-article-smint").css({"minHeight": minheightcol});
+        jQuery(".tab-content-article .auteurs-smint").css({"minHeight": minheightcol});
+        jQuery(".tab-content-article .biblio-smint").css({"minHeight": minheightcol});
+        jQuery(".tab-content-article .outils-smint").css({"minHeight": minheightcol});
+        jQuery(".tab-content-article .meme-sujet-smint").css({"minHeight": minheightcol});
+    });
+
+    jQuery(".tab1-sommaire-detaille").live("click",function() {
+        var minheightcol = jQuery(".tab-content .col-droite-4").height() + jQuery(".tab-pane.fade .displayDetailledSummary").length * 107 + 60;
+
+        jQuery(".tab-content-article .presentation-smint").css({"minHeight": minheightcol});
+        jQuery(".tab-content-article .corps-article-smint").css({"minHeight": minheightcol});
+        jQuery(".tab-content-article .auteurs-smint").css({"minHeight": minheightcol});
+        jQuery(".tab-content-article .biblio-smint").css({"minHeight": minheightcol});
+        jQuery(".tab-content-article .outils-smint").css({"minHeight": minheightcol});
+        jQuery(".tab-content-article .meme-sujet-smint").css({"minHeight": minheightcol});
     });
 
     /* Correction des ancres */
