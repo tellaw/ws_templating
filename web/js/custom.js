@@ -438,7 +438,7 @@ jQuery(document).ready(function() {
                 scrollTop: jQuery(offset).offset().top -180
             }, 500);
         }
-        if (active) $('#accordion .in').collapse('hide');
+        if (active) jQuery('#accordion .in').collapse('hide');
     });*/
 
     jQuery(".zoning")
@@ -489,9 +489,9 @@ jQuery(document).ready(function() {
     jQuery( ".zoning.warning" ).parents('.panel-default').find(".my-warning-to-display").css("display", "inline");
 
     // lecture facile
-    $('.lecture-facile').live("click",function()
+    jQuery('.lecture-facile').live("click",function()
     {
-        if ($('body').hasClass('lecture_facile')) {
+        if (jQuery('body').hasClass('lecture_facile')) {
             /*jQuery('ul.nav_article a').each(function () {
              if (this.href.indexOf('javascript:') == 0) {
              return;
@@ -501,7 +501,7 @@ jQuery(document).ready(function() {
              });*/
             window.location.href = window.location.href.replace('?lectureFacile=true', '').replace('&lectureFacile=true', '').replace('&sommaireDetaille=true', '?sommaireDetaille=true');
         } else {
-            $('body').addClass("lecture_facile");
+            jQuery('body').addClass("lecture_facile");
             lectureFacileEnableLinks();
             window.scrollTo(0, 0);
         }
@@ -509,7 +509,7 @@ jQuery(document).ready(function() {
         return false;
     });
 
-    if ($('body').hasClass('lecture_facile')) {
+    if (jQuery('body').hasClass('lecture_facile')) {
         lectureFacileEnableLinks();
     }
 });
@@ -585,12 +585,6 @@ function verticalToolbarPosition() {
             menu.css({position: 'fixed', top: topMenuVertical, left: posLeft});
         } else {
             jQuery("#sticky-menu-document").css({position: "absolute", top: "65px", left: "-50px"});
-        }
-
-        if (windowScroll < posHide) {
-            menu.show();
-        } else {
-            menu.hide();
         }
     });
 }
