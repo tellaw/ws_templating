@@ -478,14 +478,14 @@ jQuery(document).ready(function() {
     });
 
     jQuery(".tab1-sommaire-detaille").live("click",function() {
-        var minheightcol = jQuery(".tab-content .col-droite-4").height() + jQuery(".tab-pane.fade .displayDetailledSummary").length * 107 + 60;
+        var minheightcoldetaille = jQuery(".tab-content .col-droite-4").height() + jQuery(".tab-pane.fade .displayDetailledSummary").length * 107 + 60;
 
-        jQuery(".tab-content-article .presentation-smint").css({"minHeight": minheightcol});
-        jQuery(".tab-content-article .corps-article-smint").css({"minHeight": minheightcol});
-        jQuery(".tab-content-article .auteurs-smint").css({"minHeight": minheightcol});
-        jQuery(".tab-content-article .biblio-smint").css({"minHeight": minheightcol});
-        jQuery(".tab-content-article .outils-smint").css({"minHeight": minheightcol});
-        jQuery(".tab-content-article .meme-sujet-smint").css({"minHeight": minheightcol});
+        jQuery(".tab-content-article .presentation-smint").css({"minHeight": minheightcoldetaille});
+        jQuery(".tab-content-article .corps-article-smint").css({"minHeight": minheightcoldetaille});
+        jQuery(".tab-content-article .auteurs-smint").css({"minHeight": minheightcoldetaille});
+        jQuery(".tab-content-article .biblio-smint").css({"minHeight": minheightcoldetaille});
+        jQuery(".tab-content-article .outils-smint").css({"minHeight": minheightcoldetaille});
+        jQuery(".tab-content-article .meme-sujet-smint").css({"minHeight": minheightcoldetaille});
     });
 
     /* Correction des ancres */
