@@ -175,29 +175,6 @@ div.border-red {
 .filtre .syntaxe-or span {
   display: block; }
 
-.recherche-avancee .btn-u,
-.filtre .btn-u {
-  margin: 20px 0 0 10px; }
-
-.recherche-avancee .but-recherche,
-.filtre .but-recherche {
-  display: block;
-  margin: 30px auto 20px;
-  padding: 5px 25px;
-  width: 83%; }
-  .recherche-avancee .but-recherche span,
-  .filtre .but-recherche span {
-    background: url("../images/arrow-red-right-v4.png") no-repeat 0 0;
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    margin: 2px 0 0 0;
-    padding: 0;
-    float: left; }
-  .recherche-avancee .but-recherche p,
-  .filtre .but-recherche p {
-    float: left; }
-
 .recherche-avancee .abo,
 .filtre .abo {
   color: #1b8bbb;
@@ -205,6 +182,13 @@ div.border-red {
   .recherche-avancee .abo span,
   .filtre .abo span {
     margin: 1px 0 0 5px; }
+
+.recherche-avancee .btn-search,
+.filtre .btn-search {
+  background: none;
+  border: none;
+  display: block;
+  margin: 20px auto; }
 
 .results-number h2 {
   font-size: 20px !important; }
@@ -340,9 +324,6 @@ div.border-red {
 
 .checkbox input[type="checkbox"] {
   margin-left: 0; }
-
-.pertinence {
-  width: 80% !important; }
 
 .ico-search {
   background: url("../images/icone-recherche.png") no-repeat 0 0;
@@ -593,7 +574,7 @@ div.border-red {
     font-size: 13px; }
   .tab-search li select {
     font-size: 13px;
-    width: 50%; }
+    width: 70%; }
 
 .header-v1 .form-control {
   height: 40px; }
