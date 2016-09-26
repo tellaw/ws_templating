@@ -568,7 +568,7 @@ function toggle_div(bouton, id) {
 function verticalToolbarPosition() {
     var topMenuVertical = jQuery("#masthead").height();
     var menu = jQuery("#sticky-menu-document");
-    var fixedLimit = menu.offset().top;
+    var fixedLimit = menu.offset().top - 122;
     var posHide = jQuery(document).height() - topMenuVertical;
     var posLeft = (jQuery(window).width() - jQuery(".container").width())/2 - 50;
 
