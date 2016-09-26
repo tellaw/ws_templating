@@ -280,7 +280,6 @@ jQuery(document).ready(function() {
             jQuery(".col-droite-4").show();
         }
         else {
-            console.log("ici");
             jQuery(".col-droite div.pub-bloc div.freezone").show();
             jQuery(".col-droite-2").show();
             jQuery(".col-droite-4").show();
@@ -567,8 +566,7 @@ function toggle_div(bouton, id) {
 }
 
 function verticalToolbarPosition() {
-    var topMenuVertical = jQuery("#masthead").outerHeight();
-
+    var topMenuVertical = jQuery("#masthead").height();
     var menu = jQuery("#sticky-menu-document");
     var fixedLimit = menu.offset().top;
     var posHide = jQuery(document).height() - topMenuVertical;
@@ -577,8 +575,6 @@ function verticalToolbarPosition() {
     jQuery(window).scroll(function(event) {
         // Valeur de défilement lors du chargement de la page
         windowScroll = jQuery(window).scrollTop();
-        console.log(windowScroll);
-        console.log(fixedLimit);
 
         // Mise à jour du positionnement en fonction du scroll
         if( windowScroll >= fixedLimit ) {

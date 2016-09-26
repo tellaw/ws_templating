@@ -45,9 +45,9 @@ ul.inline li.last {
 
 #footer {
     padding-bottom: 20px;
-    background: url('../images/fond_footer.png') 0 0 transparent repeat-x;
+    background: url('../images/fond_footer.png') 0 0 #ffffff repeat-x;
     position: relative;
-    z-index: 1;
+    z-index: 101;
 }
 #footer .container_24 {
     width:960px;
