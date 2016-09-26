@@ -488,7 +488,7 @@ jQuery(document).ready(function() {
     jQuery( ".zoning.warning" ).parents('.panel-default').find(".my-warning-to-display").css("display", "inline");
 
     // lecture facile
-    jQuery('.lecture-facile').live("click",function()
+    jQuery('.lecture-facile, .bt-lf').live("click",function()
     {
         if (jQuery('body').hasClass('lecture_facile')) {
             /*jQuery('ul.nav_article a').each(function () {
@@ -608,7 +608,7 @@ function decreaseFontSize() {
 }
 
 function lectureFacileEnableLinks() {
-    jQuery('#box-article-content a').each(function () {
+    jQuery('.tab-content-article a').each(function () {
         if (this.href.indexOf('javascript:') == 0) {
             return;
         }

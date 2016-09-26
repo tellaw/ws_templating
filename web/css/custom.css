@@ -3367,6 +3367,9 @@ td, th, tr{
 	display:block!important;
 	color:#697277!important;
 }
+#header-rubrique .ico-search {
+	margin:0;
+}
 
 .liste-articles-rubrique {
 	border-top: 2px solid #ec1625;
@@ -3379,7 +3382,7 @@ td, th, tr{
 	position:relative
 }
 .formulaire-di h1 {
-	background:url(//cdn.techniques-ingenieur.fr/lucy/ti/latest/images/bandeau-DI.png) no-repeat center center transparent;
+	background:url(../images/bandeau-DI.png) no-repeat center center transparent;
 	padding:98px 0;
 }
 .formulaire-di h1 > span {
@@ -3538,12 +3541,17 @@ form #di-link {
 	color: #fff;
 	top: 65px;
 	left: -50px;
+	font-size: 20px;
+	margin: 0px;
+	height: 40px;
+	width: 40px;
 }
 
 #sticky-menu-eye {
 	z-index: 100;
 	color: #fff;
 	right: 0px;
+	cursor: pointer;
 }
 
 #sticky-menu-aplus {
@@ -3564,22 +3572,53 @@ form #di-link {
 }
 .sticky-grey {
 	background-color: #697277 !important;
+	height: 40px;
 }
-.bt-lf {
-	display: none;
+.sticky-grey a,
+.sticky-grey i.fa-eye {
+	padding:10px 5px 10px 10px;
 }
-.lecture_facile .bt-lf {
+.sticky-grey a {
+	display: inline-block;
+	padding:4px 5px 4px 10px;
+}
+
+/* lecture facile */
+.bt-lf{display: none;}
+.lecture_facile {
+	margin-top:40px !important;
+}
+.lecture_facile .row-3-blocks,
+.lecture_facile #masthead,
+.lecture_facile #header-rubrique .text-center div.margin-top-25,
+.lecture_facile .breadcrumb,
+.lecture_facile .col-droite-4,
+.lecture_facile .bottom-bloc,
+.lecture_facile #footer,
+.lecture_facile #sticky-menu-document {
+	display: none !important;
+}
+
+.lecture_facile .content-article
+{
+	width:100%;
+	margin: 0;
+	border:0;
+}
+.lecture_facile .bt-lf
+{
 	display: block;
 	position: fixed;
-	top: 0;
-	left: 0;
+	top:0;
+	left:0;
 	width: 100%;
-	height: 20px;
-	text-align: right;
 	background-color: #000000;
 	color: #ffffff;
 	font-weight: bold;
 	padding: 10px 20px 5px;
 	z-index: 9999;
-	box-shadow: -1px 3px 3px rgba(11,17,23,.3);
+}
+.lecture_facile .bt-lf span {
+	padding: 0 10px 0 0;
+	cursor:pointer;
 }
