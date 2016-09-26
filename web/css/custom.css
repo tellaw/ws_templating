@@ -3532,22 +3532,12 @@ form #di-link {
 	z-index:9
 }
 
-#sticky-menu-article {
+#sticky-menu-document {
 	position: absolute;
 	z-index: 100;
 	color: #fff;
-	top: 0px !important;
+	top: 65px;
 	left: -50px;
-}
-
-#sticky-menu-slide-article {
-	position: absolute;
-	z-index: 99;
-	color: #fff;
-	top: 0px !important;
-	right: 0px;
-	left:1px;
-	width: 50%;
 }
 
 #sticky-menu-eye {
@@ -3556,20 +3546,10 @@ form #di-link {
 	right: 0px;
 }
 
-#sticky-menu-slide-eye {
-	position: absolute;
-	z-index: 50;
-}
-
 #sticky-menu-aplus {
 	z-index: 100;
 	color: #fff;
 	right: 0px;
-}
-
-#sticky-menu-slide-aplus {
-	position: absolute;
-	z-index: 50;
 }
 
 #sticky-menu-amoins {
@@ -3578,10 +3558,28 @@ form #di-link {
 	right: 0px;
 }
 
-#sticky-menu-slide-amoins {
-	position: absolute;
-	z-index: 50;
+#sticky-menu-aplus a,
+#sticky-menu-amoins a {
+	color:#fff;
 }
 .sticky-grey {
 	background-color: #697277 !important;
+}
+.bt-lf {
+	display: none;
+}
+.lecture_facile .bt-lf {
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 20px;
+	text-align: right;
+	background-color: #000000;
+	color: #ffffff;
+	font-weight: bold;
+	padding: 10px 20px 5px;
+	z-index: 9999;
+	box-shadow: -1px 3px 3px rgba(11,17,23,.3);
 }

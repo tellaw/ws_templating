@@ -14,6 +14,10 @@
         <!--=== Fin Header Article ===-->
 
         <div id="menu-smint" class="tab-v1 tab-domaines">
+            <!--=== Barre top lecture facile Article ===-->
+            <div class="bt-lf"><div class="logo"></div><span>Quitter la lecture facile</span></div>
+            <!--=== Fin Barre top lecture facile Article ===-->
+
             <!--=== Reassurance Article ===-->
             {{ module("reassurance/reassurance-article") }}
             <!--=== Fin Onglet Article ===-->
@@ -48,6 +52,11 @@
             <!--=== Fin Onglet Article ===-->
 
             <div class="clearfix tab-content tab-content-article">
+                <script type="text/javascript">
+                    jQuery(document).ready(function($) {
+                        verticalToolbarPosition();
+                    });
+                </script>
                 <!--=== Sticky Article ===-->
                 {{ module("sticky/sticky-article") }}
                 <!--=== Fin Sticky Article ===-->

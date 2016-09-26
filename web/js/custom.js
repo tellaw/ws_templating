@@ -487,6 +487,31 @@ jQuery(document).ready(function() {
 
     // gérer les warning dans les listing rubrique
     jQuery( ".zoning.warning" ).parents('.panel-default').find(".my-warning-to-display").css("display", "inline");
+
+    // lecture facile
+    $('.lecture-facile').live("click",function()
+    {
+        if ($('body').hasClass('lecture_facile')) {
+            /*jQuery('ul.nav_article a').each(function () {
+             if (this.href.indexOf('javascript:') == 0) {
+             return;
+             }
+
+             this.href = this.href.replace('?lectureFacile=true', '');
+             });*/
+            window.location.href = window.location.href.replace('?lectureFacile=true', '').replace('&lectureFacile=true', '').replace('&sommaireDetaille=true', '?sommaireDetaille=true');
+        } else {
+            $('body').addClass("lecture_facile");
+            lectureFacileEnableLinks();
+            window.scrollTo(0, 0);
+        }
+
+        return false;
+    });
+
+    if ($('body').hasClass('lecture_facile')) {
+        lectureFacileEnableLinks();
+    }
 });
 
 (function() {
@@ -541,53 +566,25 @@ function toggle_div(bouton, id) {
     }
 }
 
-function verticalToolbarPosition(connected) {
-    var topMenuVertical = jQuery(".base_docu #breadcrumb").outerHeight() + jQuery(".base_docu div.univers").outerHeight() + jQuery(".base_docu div.pack").outerHeight() + jQuery(".base_docu div.base-documentaire").outerHeight() + jQuery(".base_docu div.topshop").outerHeight() + jQuery(".base_docu div.docbase-menutop").outerHeight() + jQuery(".dt #top-content").outerHeight();
+function verticalToolbarPosition() {
+    var topMenuVertical = jQuery("#masthead").outerHeight();
 
-    if (connected == "connect"){
-        jQuery("#sticky-menu-article").css("top",topMenuVertical + 8).show();
-        jQuery(".dt #sticky-menu-article").css("top",topMenuVertical).show();
-    }
-    else {
-        jQuery(".article-lp #sticky-menu-article").css("top",topMenuVertical + 8).show();
-        jQuery(".article-dt #sticky-menu-article").css("top",topMenuVertical).show();
-        jQuery("#sticky-menu-article").show();
-    }
-
-    var menu = jQuery("#sticky-menu-article");
+    var menu = jQuery("#sticky-menu-document");
     var fixedLimit = menu.offset().top;
-    var posLeft = (jQuery(window).width() - 960)/2 - 85;
-    if(jQuery("body").hasClass("home")){
-        var posLeft = (jQuery(window).width() - 1024)/2 - 66;
-    }
-    var posHide = jQuery(document).height() - topMenuVertical - jQuery('.slide_services').outerHeight() - jQuery('#footer').outerHeight();
-
-    if(jQuery("body").hasClass("home")){
-        var leftMenu = "-66px";
-        var topMenu = "110px";
-    }
-    else {
-        var leftMenu = "-85px";
-        var topMenu = "36px";
-    }
+    var posHide = jQuery(document).height() - topMenuVertical;
+    var posLeft = (jQuery(window).width() - jQuery(".container").width())/2 - 50;
 
     jQuery(window).scroll(function(event) {
         // Valeur de défilement lors du chargement de la page
         windowScroll = jQuery(window).scrollTop();
+        console.log(windowScroll);
+        console.log(fixedLimit);
 
         // Mise à jour du positionnement en fonction du scroll
         if( windowScroll >= fixedLimit ) {
-            menu.css({position: 'fixed', top: "146px", left: posLeft});
+            menu.css({position: 'fixed', top: topMenuVertical, left: posLeft});
         } else {
-            if (connected == "connect"){
-                jQuery("#sticky-menu-article").css({position: "absolute", top: topMenuVertical + 8, left: leftMenu});
-                jQuery(".dt #sticky-menu-article").css({position: "absolute", top: topMenuVertical, left: leftMenu});
-            }
-            else {
-                jQuery("#sticky-menu-article").css({position: "absolute", top: topMenu, left: leftMenu});
-                jQuery(".article-lp #sticky-menu-article").css({position: "absolute", top: topMenuVertical + 8, left: leftMenu});
-                jQuery(".article-dt #sticky-menu-article").css({position: "absolute", top: topMenuVertical, left: leftMenu});
-            };
+            jQuery("#sticky-menu-document").css({position: "absolute", top: "65px", left: "-50px"});
         }
 
         if (windowScroll < posHide) {
@@ -618,4 +615,18 @@ function decreaseFontSize() {
         taille = tailleMin;
     }
     jQuery('.tab-content-article section *').stop().animate({fontSize: taille+"px"},300);
+}
+
+function lectureFacileEnableLinks() {
+    jQuery('#box-article-content a').each(function () {
+        if (this.href.indexOf('javascript:') == 0) {
+            return;
+        }
+
+        if (this.href.indexOf('#biblio') >= 0) {
+            return;
+        }
+
+        this.href = addParamToLink(this.href, 'lectureFacile', 'true');
+    });
 }
