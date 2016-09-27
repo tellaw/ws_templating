@@ -667,3 +667,67 @@ function lectureFacileEnableLinks() {
         this.href = addParamToLink(this.href, 'lectureFacile', 'true');
     });
 }
+
+// Ajoute un paramètre (param) avec sa valeur (value) dans une url (link)
+// Tient compte de la query string et de l'ancre si elles existent.
+function addParamToLink(link, param, value) {
+    var anchor;
+    var queryString;
+    var newQueryString = '?';
+    var paramInQueryString = false;
+
+    var parts = link.split('#');
+
+    if (parts.length > 1) {
+        anchor = parts[1];
+        //console.log('Anchor found : ' + anchor);
+    }
+
+    var _parts = parts[0].split('?');
+
+    if (_parts.length > 1) {
+        queryString = _parts[1];
+        //console.log('Query String found : ' + queryString);
+    }
+
+    if (typeof queryString === 'undefined') {
+        newQueryString += encodeURIComponent(param) + '=' + encodeURIComponent(value);
+    } else {
+        var __parts = queryString.split('&');
+
+        for (var i = 0; i < __parts.length; ++i) {
+            var paramValue = __parts[i];
+
+            if (i > 0) {
+                newQueryString += '&';
+            }
+
+            if (paramValue.indexOf('=') === -1) {
+                newQueryString += paramValue;
+            } else {
+                var _paramValue = paramValue.split('=');
+
+                if (_paramValue[0] === param) {
+                    newQueryString += encodeURIComponent(param) + '=' + encodeURIComponent(value);
+                    paramInQueryString = true;
+                } else {
+                    newQueryString += paramValue;
+                }
+            }
+        }
+
+        if (!paramInQueryString) {
+            if (newQueryString !== '?') {
+                newQueryString += '&';
+            }
+
+            newQueryString += encodeURIComponent(param) + '=' + encodeURIComponent(value);
+        }
+    }
+
+    if (typeof anchor === 'undefined') {
+        return _parts[0] + newQueryString;
+    }
+
+    return _parts[0] + newQueryString + '#' + anchor;
+}
