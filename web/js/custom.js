@@ -720,7 +720,6 @@ function addParamToLink(link, param, value) {
             if (newQueryString !== '?') {
                 newQueryString += '&';
             }
-
             newQueryString += encodeURIComponent(param) + '=' + encodeURIComponent(value);
         }
     }
