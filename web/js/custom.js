@@ -466,6 +466,53 @@ jQuery(document).ready(function() {
         jQuery(".tab-content-article .meme-sujet-smint").css({"minHeight": jQuery(".tab-content .col-droite-4").height() + 60});
     }
 
+    // gestion du sommaire
+    $('#detailledSummaryLink').live("click",function()
+    {
+        $(".menu-link img[data-url]").filter(function (e) {
+            return $(e).data("url") !== "#";
+        }).each(function(i,e) {
+            var img = $(e);
+            var imgSrc = img.data("url");
+            if ( imgSrc !== "#" ) {
+                img.attr("src", imgSrc);
+                img.removeAttr("data-url")
+            }
+        });
+
+        $('.displayDetailledSummary').css('display','block');
+        $('body').addClass("summary_detailled");
+        $('.sommaire-light').removeClass("active");
+        $('.sommaire-media').addClass("active");
+
+        var minheightcol = $(".tab-content .col-droite-4").height() + 60;
+        $(".tab-content-article .presentation-smint").css({"minHeight": minheightcol});
+        $(".tab-content-article .corps-article-smint").css({"minHeight": minheightcol});
+        $(".tab-content-article .auteurs-smint").css({"minHeight": minheightcol});
+        $(".tab-content-article .biblio-smint").css({"minHeight": minheightcol});
+        $(".tab-content-article .outils-smint").css({"minHeight": minheightcol});
+        $(".tab-content-article .meme-sujet-smint").css({"minHeight": minheightcol});
+
+        return false;
+    });
+
+    $('#normalSummaryLink').live("click",function()
+    {
+        $('.displayDetailledSummary').css('display','none');
+        $('body').removeClass("summary_detailled");
+        $('.sommaire-light').addClass("active");
+        $('.sommaire-media').removeClass("active");
+
+        var minheightcol = $(".tab-content .col-droite-4").height() + 60;
+        $(".tab-content-article .presentation-smint").css({"minHeight": minheightcol});
+        $(".tab-content-article .corps-article-smint").css({"minHeight": minheightcol});
+        $(".tab-content-article .auteurs-smint").css({"minHeight": minheightcol});
+        $(".tab-content-article .biblio-smint").css({"minHeight": minheightcol});
+        $(".tab-content-article .outils-smint").css({"minHeight": minheightcol});
+        $(".tab-content-article .meme-sujet-smint").css({"minHeight": minheightcol});
+        return false;
+    });
+
     /* Correction des ancres */
     var anchor = location.hash.substring(1);
     if (anchor.length > 0) {
