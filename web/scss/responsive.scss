@@ -2022,7 +2022,7 @@ $color-red : #ea2336 ;
 }
 
 /* Petit desktop à large */
-@media  screen and (min-width: 1024px) and (max-width: 1200px){
+@media  screen and (min-width: 1024px) and (max-width: 1200px) {
   .element-wrapper-1 {
     padding-left: 150px;
     padding-right: 50px;
@@ -2033,22 +2033,23 @@ $color-red : #ea2336 ;
   }
   #collapse-typography,
   #collapse-buttons {
-    position:absolute;
-    width:100%;
-    border:1px solid #717984;
-    border-top:none;
+    position: absolute;
+    width: 100%;
+    border: 1px solid #717984;
+    border-top: none;
+  }
 }
 
 /* Large and up */
 @media screen and (min-width: 1200px) {
-  .navbar-collapse{
+  .navbar-collapse {
     &.collapse {
       display: block;
     }
   }
   .lg-width {
-     width: 21% !important;
-   }
+    width: 21% !important;
+  }
   .txt2-padding-offre {
     margin-left: 0px;
     padding-left: 45px;
@@ -2114,7 +2115,7 @@ $color-red : #ea2336 ;
     height: 250px !important;
     margin-left: 45px !important;
     margin-right: 10px !important;
-    display:block;
+    display: block;
     overflow: hidden;
 
   }
@@ -2123,14 +2124,14 @@ $color-red : #ea2336 ;
     height: 250px !important;
     margin-left: 35px !important;
     margin-right: 200px !important;
-    display:block;
+    display: block;
     overflow: hidden;
   }
   .pub-img-3 {
     width: 300px !important;
     height: 250px !important;
     margin-left: 125px !important;
-    display:block;
+    display: block;
     overflow: hidden;
 
   }
@@ -2138,7 +2139,7 @@ $color-red : #ea2336 ;
     width: 610px !important;
     height: 250px !important;
     margin-left: 45px;
-    display:block;
+    display: block;
     overflow: hidden;
   }
 
@@ -2146,7 +2147,7 @@ $color-red : #ea2336 ;
     width: 300px !important;
     height: 510px !important;
     margin-left: 125px !important;
-    display:block;
+    display: block;
     overflow: hidden;
   }
 
@@ -2209,8 +2210,8 @@ $color-red : #ea2336 ;
     margin-right: 105px;
   }
   .margin-right-left-150 {
-    margin-right:150px;
-    margin-left:150px;
+    margin-right: 150px;
+    margin-left: 150px;
   }
   .lg-margin-left-30 {
     margin-left: 30px !important;
@@ -2321,17 +2322,16 @@ $color-red : #ea2336 ;
   .badge-xxx {
     left: 0px !important;
   }
-  .price-2{
+  .price-2 {
     &.abo {
-      margin-left:5px!important;
-      font-size:11px!important;
+      margin-left: 5px !important;
+      font-size: 11px !important;
     }
   }
 }
 
-
 /* FOOTER ANCIEN */
-@media  screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .slider-margin-top {
     margin-top: 51px;
   }
@@ -2339,39 +2339,39 @@ $color-red : #ea2336 ;
     padding: 7px 0 5px;
   }
   #footer {
-    width:100%
+    width: 100%
   }
 
   #footer {
     .container_24 {
-      width:100% !important
+      width: 100% !important
     }
   }
   #footer-cols {
     .col {
-      width:33% !important
+      width: 33% !important
     }
   }
   #footer {
     .quicklinks {
       .col-pad {
-        background:none !important;
+        background: none !important;
       }
     }
   }
   .footer-thematique {
-    background:none !important;
+    background: none !important;
   }
   #footer-cols {
     h4.ressdoc, p.ressdoc {
-      padding:0 0 7px 45px !important;
+      padding: 0 0 7px 45px !important;
       line-height: 13px;
     }
   }
   #menu-footer-generique {
-    li.ressdoc{
-      >a {
-        padding:0 0 7px 45px !important;
+    li.ressdoc {
+      > a {
+        padding: 0 0 7px 45px !important;
         line-height: 13px;
       }
     }
@@ -2420,9 +2420,9 @@ $color-red : #ea2336 ;
 }
 
 /* MOBILE PORTRAIT et PAYSAGE */
-@media all and (max-width:680px) {
+@media all and (max-width: 680px) {
   #footer {
-    padding:0 2%
+    padding: 0 2%
   }
   #footer {
     #shorcuts_nav {
@@ -2439,18 +2439,18 @@ $color-red : #ea2336 ;
   }
   #footer {
     .container_24 {
-      width:100% !important;
-      background:none !important;
+      width: 100% !important;
+      background: none !important;
     }
   }
   #footer-cols {
     .col {
-      width:100% !important
+      width: 100% !important
     }
   }
-  #menu-footer-generique{
-    >li {
-      width:100% !important
+  #menu-footer-generique {
+    > li {
+      width: 100% !important
     }
   }
 }

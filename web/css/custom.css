@@ -3522,12 +3522,13 @@ form #di-link {
 	color:#ea2336;
 	text-decoration: underline;
 }
-.tab-content-article> div:first-child {
-	position:relative;
-	width:100%;
-}
 .tab-content-article div:first-child .aplus-amoins {
 	display: none;
+}
+
+.lecture_facile  .tab-content-article> div:first-child {
+	position:relative;
+	width:100%;
 }
 .lecture_facile .tab-content-article div:first-child .aplus-amoins {
 	display: block;
