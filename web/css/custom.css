@@ -3684,7 +3684,11 @@ form #di-link {
 	position: absolute;
 	background: #FFF;
 	border: 2px #1B8BBB solid;
-	width: 344px;
+	width: auto;
 	z-index: 999;
 	text-align: left;
+}
+
+#choixCompteDecouverte ul {
+	margin-top: 10px !important;
 }
