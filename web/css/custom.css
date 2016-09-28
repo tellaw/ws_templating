@@ -1477,7 +1477,10 @@ p.cellule-list {
 	background-color: #fff !important;
 }
 .tab-content-article .tab-bg {
-	margin:75px 0 0 0;
+	margin:70px 0 0 0;
+}
+.tab-content-article #offre-commerciale.tab-bg {
+	margin:0;
 }
 .menu-links{
 	color: #000 !important;
@@ -3545,12 +3548,26 @@ form #di-link {
 	position: absolute;
 	top: 60px;
 }
-.annotation-child {
-	padding-left: 20px;
+.annotation-child p{
+	margin: 0px;
 }
-.annotation-child {
-	padding-left: 20px;
-	margin-bottom: 30px;
+.annotation-child .wd_tag {
+	background: #697277 !important;
+	margin: 2px 2px 2px 0;
+	padding: 5px 20px 5px 10px;
+	color: #ffffff;
+	position:relative;
+	display: inline-block;
+}
+.annotation-child .wd_tag a {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 0 5px;
+	color: #adadad;
+	text-decoration: none;
+	font-weight: bold;
+	transition: all 0.2s ease;
 }
 .content-article a:hover {
 	color:#ea2336;
