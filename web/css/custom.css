@@ -3675,3 +3675,16 @@ form #di-link {
 	padding: 0 10px 0 0;
 	cursor:pointer;
 }
+
+#choixCompteDecouverte {
+	top: 50px;
+	right: 0;
+	padding: 7px;
+	display: none;
+	position: absolute;
+	background: #FFF;
+	border: 2px #1B8BBB solid;
+	width: 344px;
+	z-index: 1000;
+	text-align: left;
+}

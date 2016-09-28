@@ -452,18 +452,18 @@ jQuery(document).ready(function() {
     if (jQuery(window).width() >= 1024) {
         jQuery(".tab-content .documents-smint").css({"minHeight": jQuery(".tab-content .col-droite").height() + 86});
 
-        jQuery(".tab-content-domaine .presentation-smint").css({"minHeight": jQuery(".tab-content .col-droite-2").height() + 60});
-        jQuery(".tab-content-domaine .expert-smint").css({"minHeight": jQuery(".tab-content .col-droite-2").height() + 60});
+        jQuery(".tab-content-domaine .presentation-smint").css({"minHeight": jQuery(".tab-content .col-droite-2").height() - 60});
+        jQuery(".tab-content-domaine .expert-smint").css({"minHeight": jQuery(".tab-content .col-droite-2").height() - 60});
 
-        jQuery(".tab-content-rubrique .presentation-smint").css({"minHeight": jQuery(".tab-content .col-droite-3").height() + 60});
-        jQuery(".tab-content-rubrique .expert-smint").css({"minHeight": jQuery(".tab-content .col-droite-3").height() + 60});
+        jQuery(".tab-content-rubrique .presentation-smint").css({"minHeight": jQuery(".tab-content .col-droite-3").height() - 60});
+        jQuery(".tab-content-rubrique .expert-smint").css({"minHeight": jQuery(".tab-content .col-droite-3").height() - 60});
 
-        jQuery(".tab-content-article .presentation-smint").css({"minHeight": jQuery(".tab-content .col-droite-4").height() + 60});
-        jQuery(".tab-content-article .corps-article-smint").css({"minHeight": jQuery(".tab-content .col-droite-4").height() + 60});
-        jQuery(".tab-content-article .auteurs-smint").css({"minHeight": jQuery(".tab-content .col-droite-4").height() + 60});
-        jQuery(".tab-content-article .biblio-smint").css({"minHeight": jQuery(".tab-content .col-droite-4").height() + 60});
-        jQuery(".tab-content-article .outils-smint").css({"minHeight": jQuery(".tab-content .col-droite-4").height() + 60});
-        jQuery(".tab-content-article .meme-sujet-smint").css({"minHeight": jQuery(".tab-content .col-droite-4").height() + 60});
+        jQuery(".tab-content-article .presentation-smint").css({"minHeight": jQuery(".tab-content .col-droite-4").height() - 60});
+        jQuery(".tab-content-article .corps-article-smint").css({"minHeight": jQuery(".tab-content .col-droite-4").height() - 60});
+        jQuery(".tab-content-article .auteurs-smint").css({"minHeight": jQuery(".tab-content .col-droite-4").height() - 60});
+        jQuery(".tab-content-article .biblio-smint").css({"minHeight": jQuery(".tab-content .col-droite-4").height() - 60});
+        jQuery(".tab-content-article .outils-smint").css({"minHeight": jQuery(".tab-content .col-droite-4").height() - 60});
+        jQuery(".tab-content-article .meme-sujet-smint").css({"minHeight": jQuery(".tab-content .col-droite-4").height() - 60});
     }
 
     // gestion du sommaire
@@ -485,7 +485,7 @@ jQuery(document).ready(function() {
         jQuery('.sommaire-light').removeClass("active");
         jQuery('.sommaire-media').addClass("active");
 
-        var minheightcol = jQuery(".tab-content .col-droite-4").height() + 60;
+        var minheightcol = jQuery(".tab-content .col-droite-4").height() - 60;
         jQuery(".tab-content-article .presentation-smint").css({"minHeight": minheightcol});
         jQuery(".tab-content-article .corps-article-smint").css({"minHeight": minheightcol});
         jQuery(".tab-content-article .auteurs-smint").css({"minHeight": minheightcol});
@@ -503,7 +503,7 @@ jQuery(document).ready(function() {
         jQuery('.sommaire-light').addClass("active");
         jQuery('.sommaire-media').removeClass("active");
 
-        var minheightcol = jQuery(".tab-content .col-droite-4").height() + 60;
+        var minheightcol = jQuery(".tab-content .col-droite-4").height() - 60;
         jQuery(".tab-content-article .presentation-smint").css({"minHeight": minheightcol});
         jQuery(".tab-content-article .corps-article-smint").css({"minHeight": minheightcol});
         jQuery(".tab-content-article .auteurs-smint").css({"minHeight": minheightcol});
@@ -723,4 +723,23 @@ function addParamToLink(link, param, value) {
     }
 
     return _parts[0] + newQueryString + '#' + anchor;
+}
+
+function switchBox(id_1, id_2, styles_default, styles_clicked) {
+    // id_1 : ID de l'élément qui est cliqué pour ouvrir/fermer la box
+    // id_2 : ID de l'élément qui se cache/s'affiche
+    // styles_default : styles de id_1 quand id_2 est caché
+    // styles_clicked : styles de id_1 quand id_2 est affiché
+    if(id_1) {var ar = document.getElementById(id_1);}
+    var arf = document.getElementById(id_2);
+    if( arf.style.display == 'block' )
+    {
+        arf.style.display = 'none';
+        if(ar && styles_default) {ar.className = styles_default;}
+    }
+    else
+    {
+        arf.style.display = 'block';
+        if(ar && styles_default) {ar.className = styles_clicked;}
+    }
 }
