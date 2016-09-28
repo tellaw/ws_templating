@@ -3685,6 +3685,6 @@ form #di-link {
 	background: #FFF;
 	border: 2px #1B8BBB solid;
 	width: 344px;
-	z-index: 1000;
+	z-index: 999;
 	text-align: left;
 }

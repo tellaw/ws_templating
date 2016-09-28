@@ -1577,7 +1577,9 @@
     padding: 0 0 7px 45px !important;
     line-height: 13px; }
   form #phone-prefix {
-    top: 5px; } }
+    top: 5px; }
+  #sticky-menu-document {
+    display: none; } }
 
 @media only screen and (min-width: 1024px) {
   a.pub-style img, a.large-img img, a.haute-img img {
@@ -1597,9 +1599,7 @@
   a.pub-style:hover .acceuil-title h3, a.pub-style:hover .acceuil-title span, a.large-img:hover .acceuil-title h3, a.large-img:hover .acceuil-title span, a.haute-img:hover .acceuil-title h3, a.haute-img:hover .acceuil-title span {
     display: none; }
   a.pub-style:hover .overlay, a.large-img:hover .overlay, a.haute-img:hover .overlay {
-    display: block; }
-  #sticky-menu-document {
-    display: none; } }
+    display: block; } }
 
 /* MOBILE PORTRAIT et PAYSAGE */
 @media all and (max-width: 680px) {
