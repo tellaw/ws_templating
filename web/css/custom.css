@@ -3569,7 +3569,20 @@ form #di-link {
 	font-weight: bold;
 	transition: all 0.2s ease;
 }
-.content-article a:hover {
+.annotation-child .note {
+	background: #e2e1e1;
+	padding:5px;
+	margin-bottom:5px;
+}
+.annotation-child .note a {
+	font-size:12px;
+}
+.annotation-child .note a:hover {
+	color: #ea2336;
+	text-decoration: underline;
+}
+.content-article a:hover,
+.barre-top a:hover {
 	color:#ea2336;
 	text-decoration: underline;
 }
