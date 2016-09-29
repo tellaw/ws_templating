@@ -2003,7 +2003,7 @@ $color-red : #ea2336 ;
 }
 
 /* Mobile portrait à petit desktop */
-@media  screen and (min-width: 426px) and (max-width: 1023px) {
+@media  screen and (min-width: 426px) and (max-width: 1024px) {
   .element-wrapper-1 {
     padding-left: 40px;
     padding-right: 40px;
@@ -2021,12 +2021,12 @@ $color-red : #ea2336 ;
   }
   .list-toggle {
     a:after {
-      top:-9px;
+      top:-3px;
     }
   }
   .list-toggle.active {
     a:after {
-      top:-9px;
+      top:-3px;
     }
   }
 }

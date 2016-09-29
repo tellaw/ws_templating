@@ -1333,7 +1333,7 @@
     left: -8%; } }
 
 /* Mobile portrait à petit desktop */
-@media screen and (min-width: 426px) and (max-width: 1023px) {
+@media screen and (min-width: 426px) and (max-width: 1024px) {
   .element-wrapper-1 {
     padding-left: 40px;
     padding-right: 40px; }
@@ -1347,9 +1347,9 @@
     border: 1px solid #717984;
     border-top: none; }
   .list-toggle a:after {
-    top: -9px; }
+    top: -3px; }
   .list-toggle.active a:after {
-    top: -9px; } }
+    top: -3px; } }
 
 /* Petit desktop à large */
 @media screen and (min-width: 1024px) and (max-width: 1200px) {
