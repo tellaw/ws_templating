@@ -360,11 +360,11 @@ div.border-red {
   margin:20px 0 30px 0;
 }
 .recherche-inside {
-  margin:-4px 0 0 0;
   .form-control {
     width:87%!important;
     float:left;
     height:25px;
+    padding:4px 10px;
   }
   .btn-search-inside {
     height:25px;
