@@ -610,11 +610,11 @@ div.border-red {
   #design-webcallback-popin .ui-dialog-content {
     overflow: hidden !important; }
 
-.no-background .btn-search {
+#webcallback-popin button.btn-search {
   background: none;
   border: none;
   display: block;
   margin: 20px auto; }
-  .no-background .btn-search .btn-u.btn-u-red {
+  #webcallback-popin button.btn-search .btn-u.btn-u-red {
     background: #ec1625;
     border: 1px solid #EC1625; }
