@@ -586,4 +586,5 @@ div.border-red {
   margin: 20px 0 0 0;
   padding: 20px 0 20px 120px; }
   #no-result p {
-    margin: 10px 0 0 0; }
+    margin: 10px 0 0 0;
+    min-height: auto !important; }
