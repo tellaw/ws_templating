@@ -555,6 +555,10 @@ jQuery(document).ready(function() {
     if (jQuery('body').hasClass('lecture_facile')) {
         lectureFacileEnableLinks();
     }
+
+    if(jQuery(".sommaire .displayDetailledSummary").length() == 0) {
+        jQuery(".tab1-sommaire-detaille").hide();
+    }
 });
 
 (function() {
