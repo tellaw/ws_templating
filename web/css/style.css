@@ -574,7 +574,9 @@ div.border-red {
     font-size: 13px; }
   .tab-search li select {
     font-size: 13px;
-    width: 70%; }
+    width: 50%; }
+  .tab-search li select.pertinence {
+    width: 80%; }
 
 .header-v1 .form-control {
   height: 40px; }
@@ -591,3 +593,6 @@ div.border-red {
   #no-result ul {
     margin: 0;
     padding: 0 0 0 25px; }
+
+.tab-search-top {
+  background: #E2E1E1; }
