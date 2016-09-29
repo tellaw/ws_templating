@@ -2019,15 +2019,14 @@ $color-red : #ea2336 ;
     border:1px solid #717984;
     border-top:none;
   }
-  .list-toggle:after {
-    top:-3px;
-  }
-  .list-toggle.active:after {
-    top:-3px;
-  }
   .list-toggle {
     a:after {
-      top-3px;
+      top:-9px;
+    }
+  }
+  .list-toggle.active {
+    a:after {
+      top:-9px;
     }
   }
 }

@@ -1346,10 +1346,10 @@
     width: 100%;
     border: 1px solid #717984;
     border-top: none; }
-  .list-toggle:after {
-    top: -3px; }
-  .list-toggle.active:after {
-    top: -3px; } }
+  .list-toggle a:after {
+    top: -9px; }
+  .list-toggle.active a:after {
+    top: -9px; } }
 
 /* Petit desktop à large */
 @media screen and (min-width: 1024px) and (max-width: 1200px) {
