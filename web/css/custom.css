@@ -1259,6 +1259,8 @@ div[class^="element-wrapper-"] img {
 	font-size: 12px;
 	padding-top:7px;
 	padding-bottom: 7px;
+	padding-left: 0;
+	padding-right: 0;
 }
 
 .btn-x.btn-u-blue:hover {
@@ -1272,6 +1274,8 @@ div[class^="element-wrapper-"] img {
 	font-size: 12px;
 	padding-top: 7px;
 	padding-bottom: 7px;
+	padding-left: 0;
+	padding-right: 0;
 }
 
 .btn-x.btn-u-red:hover {
@@ -1471,6 +1475,12 @@ p.cellule-list {
 }
 .tab-bg {
 	background-color: #fff !important;
+}
+.tab-content-article .tab-bg {
+	margin:70px 0 0 0;
+}
+.tab-content-article #offre-commerciale.tab-bg {
+	margin:0;
 }
 .menu-links{
 	color: #000 !important;
@@ -3367,7 +3377,37 @@ td, th, tr{
 	display:block!important;
 	color:#697277!important;
 }
-
+#header-rubrique .ico-search {
+	margin:0;
+}
+#header-rubrique .pdf-added {
+	position: absolute;
+	width: 100%;
+	left: 0px;
+	background: #1B8BBB;
+	padding: 7px;
+	margin: 5px 0 0 0px;
+	color: #fff;
+}
+#header-rubrique .pdf-added * {
+	color: #fff;
+}
+#header-rubrique .pdf-added a {
+	text-decoration: underline;
+}
+#header-rubrique .pdf-added .badge-x {
+	background:#fff!important;
+	padding: 3px 0px;
+}
+#header-rubrique .pdf-added .badge-x i {
+	color:#1B8BBB;
+}
+#header-rubrique .rela-client {
+	border: 1px solid #697277 !important;
+	padding:9px 10px;
+	display: inline-block;
+	margin:0;
+}
 .liste-articles-rubrique {
 	border-top: 2px solid #ec1625;
 }
@@ -3379,7 +3419,7 @@ td, th, tr{
 	position:relative
 }
 .formulaire-di h1 {
-	background:url(//cdn.techniques-ingenieur.fr/lucy/ti/latest/images/bandeau-DI.png) no-repeat center center transparent;
+	background:url(../images/bandeau-DI.png) no-repeat center center transparent;
 	padding:98px 0;
 }
 .formulaire-di h1 > span {
@@ -3508,16 +3548,57 @@ form #di-link {
 	position: absolute;
 	top: 60px;
 }
-.annotation-child {
-	padding-left: 20px;
+.annotation-child p{
+	margin: 0px;
 }
-.annotation-child {
-	padding-left: 20px;
-	margin-bottom: 30px;
+.annotation-child .wd_tag {
+	background: #697277 !important;
+	margin: 2px 2px 2px 0;
+	padding: 5px 20px 5px 10px;
+	color: #ffffff;
+	position:relative;
+	display: inline-block;
 }
-.content-article a:hover {
+.annotation-child .wd_tag a {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 0 5px;
+	color: #adadad;
+	text-decoration: none;
+	font-weight: bold;
+	transition: all 0.2s ease;
+}
+.annotation-child .note {
+	background: #e2e1e1;
+	padding:5px;
+	margin-bottom:5px;
+}
+.annotation-child .note a {
+	font-size:12px;
+}
+.annotation-child .note a:hover {
+	color: #ea2336;
+	text-decoration: underline;
+}
+.content-article a:hover,
+.barre-top a:hover {
 	color:#ea2336;
 	text-decoration: underline;
+}
+.tab-content-article div:first-child .aplus-amoins {
+	display: none;
+}
+
+.lecture_facile  .tab-content-article> div:first-child {
+	position:relative;
+	width:100%;
+}
+.lecture_facile .tab-content-article div:first-child .aplus-amoins {
+	display: block;
+	position:absolute;
+	top:0px;
+	left:48%;
 }
 .rechercher-border {
 	border: 1px solid #697277;
@@ -3532,33 +3613,23 @@ form #di-link {
 	z-index:9
 }
 
-#sticky-menu-article {
+#sticky-menu-document {
 	position: absolute;
 	z-index: 100;
 	color: #fff;
-	top: 0px !important;
+	top: 65px;
 	left: -50px;
-}
-
-#sticky-menu-slide-article {
-	position: absolute;
-	z-index: 99;
-	color: #fff;
-	top: 0px !important;
-	right: 0px;
-	left:1px;
-	width: 50%;
+	font-size: 20px;
+	margin: 0px;
+	height: 40px;
+	width: 40px;
 }
 
 #sticky-menu-eye {
 	z-index: 100;
 	color: #fff;
 	right: 0px;
-}
-
-#sticky-menu-slide-eye {
-	position: absolute;
-	z-index: 50;
+	cursor: pointer;
 }
 
 #sticky-menu-aplus {
@@ -3567,21 +3638,87 @@ form #di-link {
 	right: 0px;
 }
 
-#sticky-menu-slide-aplus {
-	position: absolute;
-	z-index: 50;
-}
-
 #sticky-menu-amoins {
 	z-index: 100;
 	color: #fff;
 	right: 0px;
 }
 
-#sticky-menu-slide-amoins {
-	position: absolute;
-	z-index: 50;
+#sticky-menu-aplus a,
+#sticky-menu-amoins a {
+	color:#fff;
 }
 .sticky-grey {
 	background-color: #697277 !important;
+	height: 40px;
+}
+.sticky-grey a,
+.sticky-grey i.fa-eye {
+	padding:10px 5px 10px 10px;
+}
+.sticky-grey a {
+	display: inline-block;
+	padding:4px 5px 4px 10px;
+}
+
+/* lecture facile */
+.bt-lf{display: none;}
+.lecture_facile {
+	margin-top:40px !important;
+}
+
+.lecture_facile #header-rubrique {
+	margin-bottom: 0px !important;
+}
+.lecture_facile .row-3-blocks,
+.lecture_facile .nav-tabs,
+.lecture_facile #masthead,
+.lecture_facile #header-rubrique .text-center div.margin-top-25,
+.lecture_facile .breadcrumb,
+.lecture_facile .col-droite-4,
+.lecture_facile .bottom-bloc,
+.lecture_facile #footer,
+.lecture_facile #sticky-menu-document {
+	display: none !important;
+}
+
+.lecture_facile .content-article
+{
+	width:100%;
+	margin: 0;
+	border:0;
+}
+.lecture_facile .bt-lf
+{
+	display: block;
+	position: fixed;
+	top:0;
+	left:0;
+	width: 100%;
+	background-color: #000000;
+	color: #ffffff;
+	font-weight: bold;
+	padding: 10px 20px 5px;
+	z-index: 9999;
+}
+.lecture_facile .bt-lf span {
+	padding: 0 10px 0 0;
+	cursor:pointer;
+}
+
+#choixCompteDecouverte {
+	top: 50px;
+	right: 0;
+	padding: 7px;
+	display: none;
+	position: absolute;
+	background: #FFF;
+	border: 2px #1B8BBB solid;
+	width: auto;
+	z-index: 999;
+	text-align: left;
+}
+
+#choixCompteDecouverte ul {
+	margin-top: 10px !important;
 }

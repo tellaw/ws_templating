@@ -117,26 +117,34 @@ jQuery(document).ready(function ($) {
 	// gestion datepicker
     // Date range
 	$.datepicker.setDefaults( $.datepicker.regional[ "fr" ] );	
-    $('#avant-picker').datepicker({
-        altField: "#avant",
-        altFormat: 'dd/mm/yy',
-        prevText: "<i class='fa fa-angle-left font-size-25'></i>",
-        nextText: "<i class='fa fa-angle-right font-size-25'></i>",
+    $('#avant').datepicker({
+        prevText: "<",
+        nextText: ">",
         changeYear: true,
+        changeMonth: true,
         onSelect: function( selectedDate ) {
-            $('#apres-picker').datepicker('option', 'minDate', selectedDate);
-            $("#avant").change(); // to have input name set
+            $('#apres').datepicker('option', 'maxDate', selectedDate);
         }
     });
-    $('#apres-picker').datepicker({
-        altField: "#apres",
-        altFormat: 'dd/mm/yy',
-        prevText: "<i class='fa fa-angle-left font-size-25'></i>",
-        nextText: "<i class='fa fa-angle-right font-size-25'></i>",
+    $('#apres').datepicker({
+        prevText: "<",
+        nextText: ">",
         changeYear: true,
+        changeMonth: true,
         onSelect: function( selectedDate ) {
-            $('#avant-picker').datepicker('option', 'maxDate', selectedDate);
-            $("#apres").change(); // to have input name set
+            $('#avant').datepicker('option', 'minDate', selectedDate);
+        },
+    });
+    $("#searchCommandOperateur").on("submit", function(event) {
+    	if ($('#apres').val() !== "") {
+        	$('#apres').attr("name", $('#apres').data("field-name"));
+        } else {
+        	$('#apres').removeAttr("name");
+        }
+        if ($('#avant').val() !== "") {
+        	$('#avant').attr("name", $('#avant').data("field-name"));
+        } else {
+        	$('#avant').removeAttr("name");
         }
     });
 })

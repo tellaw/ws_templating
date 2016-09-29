@@ -1537,8 +1537,6 @@
   .input-srch-col {
     padding-left: 6px !important;
     padding-right: 3px !important; }
-  .input-grp {
-    width: 215px !important; }
   .title-font-size {
     font-size: 12px !important; }
   .advanced-search {
@@ -1546,8 +1544,6 @@
   .input-srch-col {
     padding-left: 6px !important;
     padding-right: 3px !important; }
-  .input-grp {
-    width: 215px !important; }
   .title-font-size {
     font-size: 12px !important; }
   .advanced-search {
@@ -1581,7 +1577,9 @@
     padding: 0 0 7px 45px !important;
     line-height: 13px; }
   form #phone-prefix {
-    top: 5px; } }
+    top: 5px; }
+  #sticky-menu-document {
+    display: none; } }
 
 @media only screen and (min-width: 1024px) {
   a.pub-style img, a.large-img img, a.haute-img img {
