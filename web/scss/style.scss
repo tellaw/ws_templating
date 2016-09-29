@@ -426,7 +426,7 @@ div.border-red {
   .ico-search {
     background:none;
     position:relative;
-    margin:-26px 0 0 0;
+    margin:-10px 0 0 0;
     width:65px;
     height:65px;
   }
@@ -718,9 +718,33 @@ div.border-red {
       width:70%;
     }
   }
+  .afficher {
+    select {
+      width:50%;
+    }
+  }
 }
 .header-v1 {
   .form-control {
     height:40px;
   }
+}
+
+#no-result {
+  width:100%;
+  background:#CCCCCC;
+  display:inline-block;
+  margin:20px 0 0 0;
+  padding:20px 0 20px 120px;
+  p {
+    margin:10px 0 0 0;
+    min-height:auto!important;
+  }
+  ul {
+    margin:0;
+    padding:0 0 0 25px;
+  }
+}
+.tab-search-top {
+  background:#E2E1E1;
 }
