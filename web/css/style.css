@@ -609,13 +609,12 @@ div.border-red {
   #design-webcallback-popin .ui-dialog,
   #design-webcallback-popin .ui-dialog-content {
     overflow: hidden !important; }
-    #design-webcallback-popin .ui-dialog .btn-search,
-    #design-webcallback-popin .ui-dialog-content .btn-search {
-      background: none;
-      border: none;
-      display: block;
-      margin: 20px auto; }
-      #design-webcallback-popin .ui-dialog .btn-search .btn-u.btn-u-red,
-      #design-webcallback-popin .ui-dialog-content .btn-search .btn-u.btn-u-red {
-        background: #ec1625;
-        border: 1px solid #EC1625; }
+
+.no-background .btn-search {
+  background: none;
+  border: none;
+  display: block;
+  margin: 20px auto; }
+  .no-background .btn-search .btn-u.btn-u-red {
+    background: #ec1625;
+    border: 1px solid #EC1625; }

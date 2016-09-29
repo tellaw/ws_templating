@@ -752,15 +752,18 @@ div.border-red {
   .ui-dialog,
   .ui-dialog-content {
     overflow:hidden!important;
-    .btn-search {
-      background:none;
-      border:none;
-      display:block;
-      margin:20px auto;
-      .btn-u.btn-u-red {
-        background: #ec1625;
-        border: 1px solid #EC1625;
-      }
+  }
+}
+
+.no-background {
+  .btn-search {
+    background:none;
+    border:none;
+    display:block;
+    margin:20px auto;
+    .btn-u.btn-u-red {
+      background: #ec1625;
+      border: 1px solid #EC1625;
     }
   }
 }
