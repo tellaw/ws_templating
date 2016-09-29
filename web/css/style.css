@@ -309,23 +309,24 @@ div.border-red {
 .results-search-sep {
   margin: 20px 0 30px 0; }
 
-.recherche-inside .form-control {
-  width: 87% !important;
-  float: left;
-  height: 25px;
-  font-size: 13px; }
-
-.recherche-inside .btn-search-inside {
-  height: 25px;
-  width: 25px;
-  padding-bottom: 2px; }
-  .recherche-inside .btn-search-inside span {
-    background: url("../images/search-picto-v2.png") no-repeat 0 0;
-    width: 25px;
+.recherche-inside {
+  margin: -3px 0 0 0; }
+  .recherche-inside .form-control {
+    width: 87% !important;
+    float: left;
     height: 25px;
-    display: inline-block;
-    margin: -6px 0 0 -13px;
-    padding: 0; }
+    font-size: 13px; }
+  .recherche-inside .btn-search-inside {
+    height: 25px;
+    width: 25px;
+    padding-bottom: 2px; }
+    .recherche-inside .btn-search-inside span {
+      background: url("../images/search-picto-v2.png") no-repeat 0 0;
+      width: 25px;
+      height: 25px;
+      display: inline-block;
+      margin: -6px 0 0 -13px;
+      padding: 0; }
 
 .checkbox input[type="checkbox"] {
   margin-left: 0; }
