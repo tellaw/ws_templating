@@ -538,7 +538,7 @@ jQuery(document).ready(function() {
     jQuery('.lecture-facile, .bt-lf').live("click",function()
     {
         if (jQuery('body').hasClass('lecture_facile')) {
-            console.log(window.location.href);
+            var link = window.location.href;
             if (window.location.href.indexOf("#") > 0) {
                 link = window.location.href.substring(0, window.location.href.indexOf("#"));
             }
