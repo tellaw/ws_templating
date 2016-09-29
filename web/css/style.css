@@ -183,13 +183,6 @@ div.border-red {
   .filtre .abo span {
     margin: 1px 0 0 5px; }
 
-.recherche-avancee .btn-search,
-.filtre .btn-search {
-  background: none;
-  border: none;
-  display: block;
-  margin: 20px auto; }
-
 .results-number h2 {
   font-size: 20px !important; }
 
@@ -602,3 +595,15 @@ div.border-red {
   background: #f0f0f2;
   border: 11px #6b7678 solid;
   text-align: left; }
+  #design-webcallback-popin .ui-dialog,
+  #design-webcallback-popin .ui-dialog-content {
+    overflow: hidden !important; }
+
+.btn-search {
+  background: none;
+  border: none;
+  display: block;
+  margin: 20px auto; }
+  .btn-search .btn-u.btn-u-red {
+    background: #ec1625;
+    border: 1px solid #EC1625; }
