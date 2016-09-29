@@ -204,6 +204,10 @@ div.border-red {
     border:none;
     display:block;
     margin:20px auto;
+    .btn-u.btn-u-red {
+      background: #ec1625;
+      border: 1px solid #EC1625;
+    }
   }
 }
 .results-number {
@@ -356,6 +360,7 @@ div.border-red {
   margin:20px 0 30px 0;
 }
 .recherche-inside {
+  margin:-4px 0 0 0;
   .form-control {
     width:87%!important;
     float:left;
@@ -380,7 +385,6 @@ div.border-red {
     margin-left:0;
   }
 }
-
 .ico-search {
   background:url("../images/icone-recherche.png") no-repeat 0 0;
   width:35px;
@@ -528,7 +532,6 @@ div.border-red {
     margin-left:-20px;
   }
 }
-
 .pagination {
   display:block;
   margin:0 15%;
@@ -556,7 +559,6 @@ div.border-red {
     }
   }
 }
-
 .fp {
   ul {
     .favoris {
@@ -567,7 +569,6 @@ div.border-red {
     }
   }
 }
-
 #wrap-favoris,
 #wrap-history {
   a {
@@ -666,7 +667,6 @@ div.border-red {
     }
   }
 }
-
 .up-ul {
   li {
     color:#4d5356;
@@ -678,28 +678,28 @@ div.border-red {
     }
   }
 }
-
 .list-group-item:first-child,
 .list-group-item:last-child {
   background:#697277;
   color:#FFF;
   position:relative;
 }
-
-.list-toggle a:after {
-  color: #fff;
-  content: "\f107";
-  font-size:2.5em;
-  top:-9px;
+.list-toggle {
+  a:after {
+    color: #fff;
+    content: "\f107";
+    font-size:2.5em;
+    top:-9px;
+  }
 }
-
-.list-toggle.active a:after {
-  color: #fff;
-  content: "\f106";
-  font-size:2.5em;
-  top:-9px;
+.list-toggle.active {
+  a:after {
+    color: #fff;
+    content: "\f106";
+    font-size:2.5em;
+    top:-9px;
+  }
 }
-
 .tab-search {
   height:45px;
   margin:0;
@@ -715,12 +715,10 @@ div.border-red {
   li {
     select {
       font-size:13px;
-      width:70%;
-    }
-  }
-  .afficher {
-    select {
       width:50%;
+    }
+    select.pertinence {
+      width:80%;
     }
   }
 }
@@ -729,10 +727,9 @@ div.border-red {
     height:40px;
   }
 }
-
 #no-result {
   width:100%;
-  background:#CCCCCC;
+  background:#e2e1e1;
   display:inline-block;
   margin:20px 0 0 0;
   padding:20px 0 20px 120px;
@@ -747,4 +744,26 @@ div.border-red {
 }
 .tab-search-top {
   background:#E2E1E1;
+}
+#design-webcallback-popin {
+  background: #f0f0f2;
+  border: 11px #6b7678 solid;
+  text-align: left;
+  .ui-dialog,
+  .ui-dialog-content {
+    overflow:hidden!important;
+  }
+}
+
+.no-background {
+  .btn-search {
+    background:none;
+    border:none;
+    display:block;
+    margin:20px auto;
+    .btn-u.btn-u-red {
+      background: #ec1625;
+      border: 1px solid #EC1625;
+    }
+  }
 }

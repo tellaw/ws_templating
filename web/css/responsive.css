@@ -1345,7 +1345,11 @@
     position: absolute;
     width: 100%;
     border: 1px solid #717984;
-    border-top: none; } }
+    border-top: none; }
+  .list-toggle a:after {
+    top: -3px; }
+  .list-toggle.active a:after {
+    top: -3px; } }
 
 /* Petit desktop à large */
 @media screen and (min-width: 1024px) and (max-width: 1200px) {

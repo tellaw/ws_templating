@@ -2019,6 +2019,16 @@ $color-red : #ea2336 ;
     border:1px solid #717984;
     border-top:none;
   }
+  .list-toggle {
+    a:after {
+      top:-3px;
+    }
+  }
+  .list-toggle.active {
+    a:after {
+      top:-3px;
+    }
+  }
 }
 
 /* Petit desktop à large */

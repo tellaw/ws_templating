@@ -189,6 +189,10 @@ div.border-red {
   border: none;
   display: block;
   margin: 20px auto; }
+  .recherche-avancee .btn-search .btn-u.btn-u-red,
+  .filtre .btn-search .btn-u.btn-u-red {
+    background: #ec1625;
+    border: 1px solid #EC1625; }
 
 .results-number h2 {
   font-size: 20px !important; }
@@ -305,22 +309,23 @@ div.border-red {
 .results-search-sep {
   margin: 20px 0 30px 0; }
 
-.recherche-inside .form-control {
-  width: 87% !important;
-  float: left;
-  height: 25px; }
-
-.recherche-inside .btn-search-inside {
-  height: 25px;
-  width: 25px;
-  padding-bottom: 2px; }
-  .recherche-inside .btn-search-inside span {
-    background: url("../images/search-picto-v2.png") no-repeat 0 0;
-    width: 25px;
+.recherche-inside {
+  margin: -4px 0 0 0; }
+  .recherche-inside .form-control {
+    width: 87% !important;
+    float: left;
+    height: 25px; }
+  .recherche-inside .btn-search-inside {
     height: 25px;
-    display: inline-block;
-    margin: -6px 0 0 -13px;
-    padding: 0; }
+    width: 25px;
+    padding-bottom: 2px; }
+    .recherche-inside .btn-search-inside span {
+      background: url("../images/search-picto-v2.png") no-repeat 0 0;
+      width: 25px;
+      height: 25px;
+      display: inline-block;
+      margin: -6px 0 0 -13px;
+      padding: 0; }
 
 .checkbox input[type="checkbox"] {
   margin-left: 0; }
@@ -574,14 +579,16 @@ div.border-red {
     font-size: 13px; }
   .tab-search li select {
     font-size: 13px;
-    width: 70%; }
+    width: 50%; }
+  .tab-search li select.pertinence {
+    width: 80%; }
 
 .header-v1 .form-control {
   height: 40px; }
 
 #no-result {
   width: 100%;
-  background: #CCCCCC;
+  background: #e2e1e1;
   display: inline-block;
   margin: 20px 0 0 0;
   padding: 20px 0 20px 120px; }
@@ -591,3 +598,23 @@ div.border-red {
   #no-result ul {
     margin: 0;
     padding: 0 0 0 25px; }
+
+.tab-search-top {
+  background: #E2E1E1; }
+
+#design-webcallback-popin {
+  background: #f0f0f2;
+  border: 11px #6b7678 solid;
+  text-align: left; }
+  #design-webcallback-popin .ui-dialog,
+  #design-webcallback-popin .ui-dialog-content {
+    overflow: hidden !important; }
+
+.no-background .btn-search {
+  background: none;
+  border: none;
+  display: block;
+  margin: 20px auto; }
+  .no-background .btn-search .btn-u.btn-u-red {
+    background: #ec1625;
+    border: 1px solid #EC1625; }
