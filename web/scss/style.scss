@@ -199,12 +199,6 @@ div.border-red {
       margin:1px 0 0 5px;
     }
   }
-  .btn-search {
-    background:none;
-    border:none;
-    display:block;
-    margin:20px auto;
-  }
 }
 .results-number {
   h2 {
@@ -381,7 +375,6 @@ div.border-red {
     margin-left:0;
   }
 }
-
 .ico-search {
   background:url("../images/icone-recherche.png") no-repeat 0 0;
   width:35px;
@@ -529,7 +522,6 @@ div.border-red {
     margin-left:-20px;
   }
 }
-
 .pagination {
   display:block;
   margin:0 15%;
@@ -557,7 +549,6 @@ div.border-red {
     }
   }
 }
-
 .fp {
   ul {
     .favoris {
@@ -568,7 +559,6 @@ div.border-red {
     }
   }
 }
-
 #wrap-favoris,
 #wrap-history {
   a {
@@ -667,7 +657,6 @@ div.border-red {
     }
   }
 }
-
 .up-ul {
   li {
     color:#4d5356;
@@ -679,14 +668,12 @@ div.border-red {
     }
   }
 }
-
 .list-group-item:first-child,
 .list-group-item:last-child {
   background:#697277;
   color:#FFF;
   position:relative;
 }
-
 .list-toggle {
   a:after {
     color: #fff;
@@ -695,7 +682,6 @@ div.border-red {
     top:-9px;
   }
 }
-
 .list-toggle.active {
   a:after {
     color: #fff;
@@ -704,7 +690,6 @@ div.border-red {
     top:-9px;
   }
 }
-
 .tab-search {
   height:45px;
   margin:0;
@@ -732,7 +717,6 @@ div.border-red {
     height:40px;
   }
 }
-
 #no-result {
   width:100%;
   background:#CCCCCC;
@@ -756,17 +740,18 @@ div.border-red {
   background: #f0f0f2;
   border: 11px #6b7678 solid;
   text-align: left;
+  .ui-dialog,
   .ui-dialog-content {
-    overflow:hidden;
-    .btn-search {
-      background:none;
-      border:none;
-      display:block;
-      margin:20px auto;
-      .btn-u.btn-u-red {
-        background: #ec1625;
-        border: 1px solid #EC1625;
-      }
-    }
+    overflow:hidden!important;
+  }
+}
+.btn-search {
+  background:none;
+  border:none;
+  display:block;
+  margin:20px auto;
+  .btn-u.btn-u-red {
+    background: #ec1625;
+    border: 1px solid #EC1625;
   }
 }
