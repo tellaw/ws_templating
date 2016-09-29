@@ -724,3 +724,14 @@ div.border-red {
     height:40px;
   }
 }
+
+.no-results {
+  width:100%;
+  background:#CCCCCC;
+  display:inline-block;
+  margin:20px 0 0 0;
+  padding:20px 0 20px 120px;
+  p {
+    margin:10px 0 0 0;
+  }
+}
