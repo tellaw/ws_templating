@@ -538,7 +538,7 @@ jQuery(document).ready(function() {
     jQuery('.lecture-facile, .bt-lf').live("click",function()
     {
         if (jQuery('body').hasClass('lecture_facile')) {
-            console.log("j'y passe");
+            console.log(window.location.href);
             window.location.href = window.location.href.replace('?lectureFacile=true', '').replace('&lectureFacile=true', '').replace('&sommaireDetaille=true', '?sommaireDetaille=true');
         } else {
             jQuery('body').addClass("lecture_facile");

@@ -704,6 +704,7 @@ dt {
 .btn-u-red:focus {
 	background-color: #fff !important;
 	color: #ec1625 !important;
+	text-decoration:none!important;
 }
 .btn-u-blue:hover,
 .btn-u-blue:focus {
@@ -3282,7 +3283,7 @@ td, th, tr{
 	font-size: 19px;
 	font-weight: 600;
 	margin-top: -7px;
-	letter-spacing: 2px;
+	letter-spacing: 1px;
 }
 .timeline-v2 > li .cbp_tmlabel{
 	background: none;
