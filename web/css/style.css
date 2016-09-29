@@ -315,7 +315,8 @@ div.border-red {
     width: 87% !important;
     float: left;
     height: 25px;
-    font-size: 13px; }
+    font-size: 13px;
+    padding: 4px 10px; }
   .recherche-inside .btn-search-inside {
     height: 25px;
     width: 25px;
