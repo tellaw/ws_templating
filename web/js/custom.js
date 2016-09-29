@@ -556,7 +556,7 @@ jQuery(document).ready(function() {
         lectureFacileEnableLinks();
     }
 
-    if(jQuery(".sommaire .displayDetailledSummary").length() == 0) {
+    if(jQuery(".sommaire .displayDetailledSummary").length == 0) {
         jQuery(".tab1-sommaire-detaille").hide();
     }
 });
