@@ -715,12 +715,10 @@ div.border-red {
   li {
     select {
       font-size:13px;
-      width:70%;
-    }
-  }
-  .afficher {
-    select {
       width:50%;
+    }
+    select.pertinence {
+      width:80%;
     }
   }
 }
