@@ -539,7 +539,10 @@ jQuery(document).ready(function() {
     {
         if (jQuery('body').hasClass('lecture_facile')) {
             console.log(window.location.href);
-            window.location.href = window.location.href.replace('?lectureFacile=true', '').replace('&lectureFacile=true', '').replace('&sommaireDetaille=true', '?sommaireDetaille=true');
+            if (window.location.href.indexOf("#") > 0) {
+                link = window.location.href.substring(0, window.location.href.indexOf("#"));
+            }
+            window.location.href = link.replace('?lectureFacile=true', '').replace('&lectureFacile=true', '').replace('&sommaireDetaille=true', '?sommaireDetaille=true');
         } else {
             jQuery('body').addClass("lecture_facile");
             lectureFacileEnableLinks();
