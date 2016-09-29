@@ -183,6 +183,17 @@ div.border-red {
   .filtre .abo span {
     margin: 1px 0 0 5px; }
 
+.recherche-avancee .btn-search,
+.filtre .btn-search {
+  background: none;
+  border: none;
+  display: block;
+  margin: 20px auto; }
+  .recherche-avancee .btn-search .btn-u.btn-u-red,
+  .filtre .btn-search .btn-u.btn-u-red {
+    background: #ec1625;
+    border: 1px solid #EC1625; }
+
 .results-number h2 {
   font-size: 20px !important; }
 
@@ -598,12 +609,13 @@ div.border-red {
   #design-webcallback-popin .ui-dialog,
   #design-webcallback-popin .ui-dialog-content {
     overflow: hidden !important; }
-
-.btn-search {
-  background: none;
-  border: none;
-  display: block;
-  margin: 20px auto; }
-  .btn-search .btn-u.btn-u-red {
-    background: #ec1625;
-    border: 1px solid #EC1625; }
+    #design-webcallback-popin .ui-dialog .btn-search,
+    #design-webcallback-popin .ui-dialog-content .btn-search {
+      background: none;
+      border: none;
+      display: block;
+      margin: 20px auto; }
+      #design-webcallback-popin .ui-dialog .btn-search .btn-u.btn-u-red,
+      #design-webcallback-popin .ui-dialog-content .btn-search .btn-u.btn-u-red {
+        background: #ec1625;
+        border: 1px solid #EC1625; }

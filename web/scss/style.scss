@@ -199,6 +199,16 @@ div.border-red {
       margin:1px 0 0 5px;
     }
   }
+  .btn-search {
+    background:none;
+    border:none;
+    display:block;
+    margin:20px auto;
+    .btn-u.btn-u-red {
+      background: #ec1625;
+      border: 1px solid #EC1625;
+    }
+  }
 }
 .results-number {
   h2 {
@@ -742,16 +752,15 @@ div.border-red {
   .ui-dialog,
   .ui-dialog-content {
     overflow:hidden!important;
+    .btn-search {
+      background:none;
+      border:none;
+      display:block;
+      margin:20px auto;
+      .btn-u.btn-u-red {
+        background: #ec1625;
+        border: 1px solid #EC1625;
+      }
+    }
   }
 }
-.btn-search {
-  background:none;
-  border:none;
-  display:block;
-  margin:20px auto;
-  .btn-u.btn-u-red {
-    background: #ec1625;
-    border: 1px solid #EC1625;
-  }
-}
-
