@@ -579,11 +579,11 @@ div.border-red {
 .header-v1 .form-control {
   height: 40px; }
 
-.no-results {
+#no-results {
   width: 100%;
   background: #CCCCCC;
   display: inline-block;
   margin: 20px 0 0 0;
   padding: 20px 0 20px 120px; }
-  .no-results p {
+  #no-results p {
     margin: 10px 0 0 0; }
