@@ -1010,9 +1010,14 @@
 /* Medium and down */
 @media screen and (max-width: 991px) {
   #design-services-popin,
+  #design-switch-popin,
+  #design-export-biblio-popin {
+    width: 90% !important; }
+  #design-services-popin,
   #design-switch-popin {
-    width: 90% !important;
     height: 370px !important; }
+  #design-export-biblio-popin {
+    height: 430px !important; }
   .navbar-mods {
     padding-right: 0px !important;
     padding-left: 0px !important; }
