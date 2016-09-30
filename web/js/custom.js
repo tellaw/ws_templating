@@ -559,6 +559,13 @@ jQuery(document).ready(function() {
     if(jQuery(".sommaire .displayDetailledSummary").length == 0) {
         jQuery(".tab1-sommaire-detaille").hide();
     }
+
+    //recherche responsive
+    if (jQuery(window).width() < 1201) {
+        jQuery(".related-search ul li").each( function() {
+            jQuery(this).find(".collapse").removeClass("in");
+        });
+    }
 });
 
 (function() {
