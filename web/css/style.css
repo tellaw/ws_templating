@@ -644,13 +644,9 @@ div.border-red {
 .tab-search-top {
   background: #E2E1E1; }
 
-#design-webcallback-popin {
-  background: #f0f0f2;
-  border: 11px #6b7678 solid;
-  text-align: left; }
-  #design-webcallback-popin .ui-dialog,
-  #design-webcallback-popin .ui-dialog-content {
-    overflow: hidden !important; }
+#design-webcallback-popin .ui-dialog,
+#design-webcallback-popin .ui-dialog-content {
+  overflow: hidden !important; }
 
 #webcallback-popin button.btn-search {
   background: none;
