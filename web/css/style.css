@@ -263,6 +263,27 @@ div.border-red {
   width: 37%;
   margin: 10px auto 20px; }
 
+.sidebar-nav-v1 .panel {
+  border: none;
+  margin: 0;
+  padding: 0; }
+  .sidebar-nav-v1 .panel .panel-title {
+    background: #717984;
+    color: #FFF !important;
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    position: relative; }
+    .sidebar-nav-v1 .panel .panel-title a {
+      color: #FFF; }
+    .sidebar-nav-v1 .panel .panel-title a:hover {
+      color: #FFF; }
+    .sidebar-nav-v1 .panel .panel-title #fleche-search {
+      position: absolute;
+      top: 5px;
+      right: 10px;
+      font-size: 30px; }
+
 .border-grey {
   border: 1px solid #697277; }
 
@@ -556,18 +577,38 @@ div.border-red {
   color: #FFF;
   position: relative; }
 
-.list-toggle a:after {
-  color: #fff;
-  content: "\f107";
-  font-size: 2.5em;
-  top: -9px; }
-
-.list-toggle.active a:after {
-  color: #fff;
-  content: "\f106";
-  font-size: 2.5em;
-  top: -9px; }
-
+/*
+.list-toggle {
+  a:after {
+    color: #fff;
+    content: "\f107";
+    font-size:2.5em;
+    top:-9px;
+  }
+}
+.list-toggle.active {
+  a:after {
+    color: #fff;
+    content: "\f106";
+    font-size:2.5em;
+    top:-9px;
+  }
+}
+*/
+/*
+.list-toggle {
+  a:after {
+    color: #fff;
+    content: "\f107";
+  }
+}
+.list-toggle.active {
+  a:after {
+    color: #fff;
+    content: "\f106";
+  }
+}
+*/
 .tab-search {
   height: 45px;
   margin: 0; }

@@ -300,6 +300,31 @@ div.border-red {
       margin:10px auto 20px;
     }
   }
+  .panel {
+    border:none;
+    margin:0;
+    padding:0;
+    .panel-title {
+      background: #717984;
+      color: #FFF !important;
+      margin: 0;
+      padding:0;
+      height:40px;
+      position:relative;
+      a {
+        color:#FFF;
+      }
+      a:hover {
+        color:#FFF;
+      }
+      #fleche-search {
+        position:absolute;
+        top:5px;
+        right:10px;
+        font-size:30px;
+      }
+    }
+  }
 }
 
 .border-grey {
@@ -685,6 +710,7 @@ div.border-red {
   color:#FFF;
   position:relative;
 }
+/*
 .list-toggle {
   a:after {
     color: #fff;
@@ -701,6 +727,21 @@ div.border-red {
     top:-9px;
   }
 }
+*/
+/*
+.list-toggle {
+  a:after {
+    color: #fff;
+    content: "\f107";
+  }
+}
+.list-toggle.active {
+  a:after {
+    color: #fff;
+    content: "\f106";
+  }
+}
+*/
 .tab-search {
   height:45px;
   margin:0;

@@ -1,5 +1,15 @@
 jQuery(document).ready(function ($) {
-	
+
+    /*toogle recherche avancee*/
+    $(function (){
+        $('#menuSearch').on('shown.bs.collapse', function () {
+            $('#fleche-search').removeClass('fa-angle-down').addClass('fa-angle-up');
+        })
+        $('#menuSearch').on('hidden.bs.collapse', function () {
+            $('#fleche-search').removeClass('fa-angle-up').addClass('fa-angle-down');
+        })
+    });
+
 	/*affichage box favoris en hover sur "favoris de recherche" dans la page de recherche"*/
 	$("#wrap-favoris").hover(function() {
 		$("#boxFavoris").show();
