@@ -438,6 +438,14 @@ jQuery(document).ready(function() {
             $('#fleche-search').removeClass('fa-angle-up').addClass('fa-angle-down');
         })
     });
+    $(function (){
+        $('#menuFiltre').on('shown.bs.collapse', function () {
+            $('#fleche-search').removeClass('fa-angle-down').addClass('fa-angle-up');
+        })
+        $('#menuFiltre').on('hidden.bs.collapse', function () {
+            $('#fleche-search').removeClass('fa-angle-up').addClass('fa-angle-down');
+        })
+    });
 
     /*jQuery('#accordion-1').on('shown.bs.collapse', function (e) {
         var offset = jQuery(this).find('.collapse.in').prev('.panel-heading');
