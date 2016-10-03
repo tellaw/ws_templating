@@ -216,6 +216,20 @@ div.border-red {
   }
 }
 .recherche-avancee {
+  .input-group {
+    width: 100%;
+    input {
+      background: none;
+    }
+    span {
+      position: absolute;
+      top: 0;
+      right: 12px;
+      height: 33px;
+      border-left: 1px solid #ccc;
+      border-right: 0;
+    }
+  }
   .syntaxe {
     cursor:pointer;
     position:relative;

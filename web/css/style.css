@@ -197,6 +197,18 @@ div.border-red {
 .results-number h2 {
   font-size: 20px !important; }
 
+.recherche-avancee .input-group {
+  width: 100%; }
+  .recherche-avancee .input-group input {
+    background: none; }
+  .recherche-avancee .input-group span {
+    position: absolute;
+    top: 0;
+    right: 12px;
+    height: 33px;
+    border-left: 1px solid #ccc;
+    border-right: 0; }
+
 .recherche-avancee .syntaxe {
   cursor: pointer;
   position: relative;

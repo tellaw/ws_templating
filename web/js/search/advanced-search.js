@@ -1,25 +1,7 @@
 jQuery(document).ready(function ($) {
 
-    /*toogle recherche avancee
-    $(function (){
-        jQuery('#menuSearch').on('shown.bs.collapse', function () {
-            jQuery('#fleche-search').removeClass('fa-angle-down').addClass('fa-angle-up');
-        })
-        jQuery('#menuSearch').on('hidden.bs.collapse', function () {
-            jQuery('#fleche-search').removeClass('fa-angle-up').addClass('fa-angle-down');
-        })
-    });
-    $(function (){
-        jQuery('#menuFiltre').on('shown.bs.collapse', function () {
-            jQuery('#fleche-search').removeClass('fa-angle-down').addClass('fa-angle-up');
-        })
-        jQuery('#menuFiltre').on('hidden.bs.collapse', function () {
-            jQuery('#fleche-search').removeClass('fa-angle-up').addClass('fa-angle-down');
-        })
-    });*/
-
-
-	jQuery('.panel-title').on('click', function () {
+    /*toogle recherche avancee*/
+  	jQuery('.panel-title').on('click', function () {
 		jQuery(this).find("i[id^='fleche']").toggleClass('fa-angle-down fa-angle-up');
 	});
 
