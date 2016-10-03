@@ -430,20 +430,20 @@ jQuery(document).ready(function() {
         }
     });
 
-    $(function (){
-        $('#menuSearch').on('shown.bs.collapse', function () {
-            $('#fleche-search').removeClass('fa-angle-down').addClass('fa-angle-up');
+    jQuery(function (){
+        jQuery('#menuSearch').on('shown.bs.collapse', function () {
+            jQuery('#fleche-search').removeClass('fa-angle-down').addClass('fa-angle-up');
         })
-        $('#menuSearch').on('hidden.bs.collapse', function () {
-            $('#fleche-search').removeClass('fa-angle-up').addClass('fa-angle-down');
+        jQuery('#menuSearch').on('hidden.bs.collapse', function () {
+            jQuery('#fleche-search').removeClass('fa-angle-up').addClass('fa-angle-down');
         })
     });
-    $(function (){
-        $('#menuFiltre').on('shown.bs.collapse', function () {
-            $('#fleche-search').removeClass('fa-angle-down').addClass('fa-angle-up');
+    jQuery(function (){
+        jQuery('#menuFiltre').on('shown.bs.collapse', function () {
+            jQuery('#fleche-search').removeClass('fa-angle-down').addClass('fa-angle-up');
         })
-        $('#menuFiltre').on('hidden.bs.collapse', function () {
-            $('#fleche-search').removeClass('fa-angle-up').addClass('fa-angle-down');
+        jQuery('#menuFiltre').on('hidden.bs.collapse', function () {
+            jQuery('#fleche-search').removeClass('fa-angle-up').addClass('fa-angle-down');
         })
     });
 
