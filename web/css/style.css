@@ -631,4 +631,4 @@ div.border-red {
     border: 1px solid #EC1625; }
 
 .list-toggle.active a:after {
-  display: none; }
+  display: none !important; }

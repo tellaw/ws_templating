@@ -781,6 +781,6 @@ div.border-red {
 }
 .list-toggle.active {
   a:after {
-    display:none;
+    display:none!important;
   }
 }
