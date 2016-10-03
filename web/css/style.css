@@ -577,38 +577,6 @@ div.border-red {
   color: #FFF;
   position: relative; }
 
-/*
-.list-toggle {
-  a:after {
-    color: #fff;
-    content: "\f107";
-    font-size:2.5em;
-    top:-9px;
-  }
-}
-.list-toggle.active {
-  a:after {
-    color: #fff;
-    content: "\f106";
-    font-size:2.5em;
-    top:-9px;
-  }
-}
-*/
-/*
-.list-toggle {
-  a:after {
-    color: #fff;
-    content: "\f107";
-  }
-}
-.list-toggle.active {
-  a:after {
-    color: #fff;
-    content: "\f106";
-  }
-}
-*/
 .tab-search {
   height: 45px;
   margin: 0; }

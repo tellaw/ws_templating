@@ -315,7 +315,8 @@
   form .formError {
     left: 0 !important; }
   form .client > span {
-    width: 100%; }
+    width: 100%;
+    margin-bottom: 5px; }
   form p {
     margin: 0 0 10px 0;
     min-height: 50px !important; }
