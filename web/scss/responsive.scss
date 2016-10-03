@@ -2021,12 +2021,14 @@ $color-red : #ea2336 ;
     padding-right: 40px;
   }
   #collapse-typography,
-  #collapse-buttons {
+  #menuSearch,
+  #menuFiltre {
     position:absolute;
     width:100%;
     border:1px solid #717984;
     border-top:none;
     z-index: 9;
+    background: #fff;
   }
   .list-toggle {
     a:after {
@@ -2051,11 +2053,14 @@ $color-red : #ea2336 ;
     padding-right: 150px;
   }
   #collapse-typography,
-  #collapse-buttons {
+  #menuSearch,
+  #menuFiltre {
     position:absolute;
     width:100%;
     border:1px solid #717984;
     border-top:none;
+    z-index: 9;
+    background: #fff;
   }
 }
 

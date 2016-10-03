@@ -1347,12 +1347,14 @@
     padding-left: 40px;
     padding-right: 40px; }
   #collapse-typography,
-  #collapse-buttons {
+  #menuSearch,
+  #menuFiltre {
     position: absolute;
     width: 100%;
     border: 1px solid #717984;
     border-top: none;
-    z-index: 9; }
+    z-index: 9;
+    background: #fff; }
   .list-toggle a:after {
     top: -3px; }
   .list-toggle.active a:after {
@@ -1367,11 +1369,14 @@
     padding-left: 50px;
     padding-right: 150px; }
   #collapse-typography,
-  #collapse-buttons {
+  #menuSearch,
+  #menuFiltre {
     position: absolute;
     width: 100%;
     border: 1px solid #717984;
-    border-top: none; } }
+    border-top: none;
+    z-index: 9;
+    background: #fff; } }
 
 /* Large and up */
 @media screen and (min-width: 1200px) {
