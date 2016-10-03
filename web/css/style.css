@@ -467,7 +467,7 @@ div.border-red {
 
 .actions-select-all input#actions-select-all {
   margin-left: -20px;
-  margin-top: 0px; }
+  margin-top: 1px; }
 
 .pagination {
   display: block;
