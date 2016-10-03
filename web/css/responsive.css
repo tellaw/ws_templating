@@ -1354,7 +1354,8 @@
     border: 1px solid #717984;
     border-top: none;
     z-index: 3;
-    background: #fff; }
+    background: #fff;
+    top: 44px; }
   .list-toggle a:after {
     top: -3px; }
   .list-toggle.active a:after {
@@ -1376,7 +1377,8 @@
     border: 1px solid #717984;
     border-top: none;
     z-index: 3;
-    background: #fff; } }
+    background: #fff;
+    top: 44px; } }
 
 /* Large and up */
 @media screen and (min-width: 1200px) {

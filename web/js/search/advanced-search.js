@@ -20,7 +20,7 @@ jQuery(document).ready(function ($) {
 
 
 	jQuery('.panel-title').on('click', function () {
-		jQuery(this).find('#fleche-search').toggleClass('fa-angle-down fa-angle-up');
+		jQuery(this).find("i[id^='fleche']").toggleClass('fa-angle-down fa-angle-up');
 	});
 
 	/*affichage box favoris en hover sur "favoris de recherche" dans la page de recherche"*/
