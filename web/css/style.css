@@ -629,3 +629,6 @@ div.border-red {
   #webcallback-popin button.btn-search .btn-u.btn-u-red {
     background: #ec1625;
     border: 1px solid #EC1625; }
+
+.list-toggle.active a:after {
+  display: none; }

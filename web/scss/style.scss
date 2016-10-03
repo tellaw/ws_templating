@@ -767,7 +767,6 @@ div.border-red {
     overflow:hidden!important;
   }
 }
-
 #webcallback-popin {
   button.btn-search {
     background:none;
@@ -778,5 +777,10 @@ div.border-red {
       background: #ec1625;
       border: 1px solid #EC1625;
     }
+  }
+}
+.list-toggle.active {
+  a:after {
+    display:none;
   }
 }
