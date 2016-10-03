@@ -3,7 +3,7 @@
     <div class="panel">
         <div class="panel-title">
             <a data-toggle="collapse" href="#menuFiltre" class="font-family-myriadpro-semibold title-element uppercase-text">Filtrer par</a>
-            <i id="fleche-search" class="fa fa-angle-up pull-right"></i>
+            <i id="flecheFiltre" class="fa fa-angle-up pull-right"></i>
         </div>
         <div id="menuFiltre" class="list-group collapse in">
             <ul>
@@ -204,14 +204,14 @@
             </ul>
         </div>
     </div>
+    <script type="text/javascript">
+        jQuery(function (){
+            jQuery('#menuFiltre').on('shown.bs.collapse', function () {
+                jQuery('#flecheFiltre').removeClass('fa-angle-down').addClass('fa-angle-up');
+            })
+            jQuery('#menuFiltre').on('hidden.bs.collapse', function () {
+                jQuery('#flecheFiltre').removeClass('fa-angle-up').addClass('fa-angle-down');
+            })
+        });
+    </script>
 </li>
-<script type="text/javascript">
-    $(function (){
-        $('#menuFiltre').on('shown.bs.collapse', function () {
-            $('#fleche-search').removeClass('fa-angle-down').addClass('fa-angle-up');
-        })
-        $('#menuFiltre').on('hidden.bs.collapse', function () {
-            $('#fleche-search').removeClass('fa-angle-up').addClass('fa-angle-down');
-        })
-    });
-</script>

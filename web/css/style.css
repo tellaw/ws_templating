@@ -278,7 +278,12 @@ div.border-red {
       color: #FFF; }
     .sidebar-nav-v1 .panel .panel-title a:hover {
       color: #FFF; }
-    .sidebar-nav-v1 .panel .panel-title #fleche-search {
+    .sidebar-nav-v1 .panel .panel-title #flecheSearch {
+      position: absolute;
+      top: 5px;
+      right: 10px;
+      font-size: 30px; }
+    .sidebar-nav-v1 .panel .panel-title #flecheFiltre {
       position: absolute;
       top: 5px;
       right: 10px;
@@ -624,3 +629,9 @@ div.border-red {
   #webcallback-popin button.btn-search .btn-u.btn-u-red {
     background: #ec1625;
     border: 1px solid #EC1625; }
+
+.list-toggle.active a:after {
+  display: none !important; }
+
+.list-toggle a::after {
+  display: none !important; }

@@ -317,7 +317,13 @@ div.border-red {
       a:hover {
         color:#FFF;
       }
-      #fleche-search {
+      #flecheSearch {
+        position:absolute;
+        top:5px;
+        right:10px;
+        font-size:30px;
+      }
+      #flecheFiltre {
         position:absolute;
         top:5px;
         right:10px;
@@ -761,7 +767,6 @@ div.border-red {
     overflow:hidden!important;
   }
 }
-
 #webcallback-popin {
   button.btn-search {
     background:none;
@@ -772,5 +777,15 @@ div.border-red {
       background: #ec1625;
       border: 1px solid #EC1625;
     }
+  }
+}
+.list-toggle.active {
+  a:after {
+    display:none!important;
+  }
+}
+.list-toggle {
+  a::after {
+    display:none!important;
   }
 }
