@@ -278,7 +278,12 @@ div.border-red {
       color: #FFF; }
     .sidebar-nav-v1 .panel .panel-title a:hover {
       color: #FFF; }
-    .sidebar-nav-v1 .panel .panel-title #fleche-search {
+    .sidebar-nav-v1 .panel .panel-title #flecheSearch {
+      position: absolute;
+      top: 5px;
+      right: 10px;
+      font-size: 30px; }
+    .sidebar-nav-v1 .panel .panel-title #flecheFiltre {
       position: absolute;
       top: 5px;
       right: 10px;

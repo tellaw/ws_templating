@@ -317,7 +317,13 @@ div.border-red {
       a:hover {
         color:#FFF;
       }
-      #fleche-search {
+      #flecheSearch {
+        position:absolute;
+        top:5px;
+        right:10px;
+        font-size:30px;
+      }
+      #flecheFiltre {
         position:absolute;
         top:5px;
         right:10px;
