@@ -276,7 +276,7 @@ div.border-red {
     height: 40px;
     position: relative; }
     .sidebar-nav-v1 .panel .panel-title a {
-      color: #FFF; }
+      padding: 13px 30px 9px 10px; }
     .sidebar-nav-v1 .panel .panel-title a:hover {
       color: #FFF; }
     .sidebar-nav-v1 .panel .panel-title #flecheSearch {
@@ -466,7 +466,7 @@ div.border-red {
   background-position: -39px -232px; }
 
 .actions-select-all input#actions-select-all {
-  margin-left: -20px; }
+  margin-top: 0px; }
 
 .pagination {
   display: block;

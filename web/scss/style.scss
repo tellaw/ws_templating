@@ -313,7 +313,7 @@ div.border-red {
       height:40px;
       position:relative;
       a {
-        color:#FFF;
+        padding : 13px 30px 9px 10px;
       }
       a:hover {
         color:#FFF;
@@ -562,7 +562,7 @@ div.border-red {
 
 .actions-select-all {
   input#actions-select-all {
-    margin-left:-20px;
+    margin-top:0px;
   }
 }
 .pagination {
