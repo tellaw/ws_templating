@@ -1,6 +1,6 @@
 jQuery(document).ready(function ($) {
 
-    /*toogle recherche avancee*/
+    /*toogle recherche avancee
     $(function (){
         jQuery('#menuSearch').on('shown.bs.collapse', function () {
             jQuery('#fleche-search').removeClass('fa-angle-down').addClass('fa-angle-up');
@@ -16,7 +16,12 @@ jQuery(document).ready(function ($) {
         jQuery('#menuFiltre').on('hidden.bs.collapse', function () {
             jQuery('#fleche-search').removeClass('fa-angle-up').addClass('fa-angle-down');
         })
-    });
+    });*/
+
+
+	jQuery('.panel-title').on('click', function () {
+		jQuery(this).find('#fleche-search').toggleClass('fa-angle-down fa-angle-up');
+	});
 
 	/*affichage box favoris en hover sur "favoris de recherche" dans la page de recherche"*/
 	$("#wrap-favoris").hover(function() {
