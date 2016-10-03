@@ -336,7 +336,7 @@ div.border-red {
   margin: 20px 0 30px 0; }
 
 .recherche-inside {
-  margin: -3px 0 0 0; }
+  margin: 0; }
   .recherche-inside .form-control {
     width: 87% !important;
     float: left;
@@ -467,7 +467,7 @@ div.border-red {
 
 .actions-select-all input#actions-select-all {
   margin-left: -20px;
-  margin-top: 1px; }
+  margin-top: 3px; }
 
 .pagination {
   display: block;
@@ -591,7 +591,9 @@ div.border-red {
   .tab-search a {
     font-size: 13px;
     height: 30px;
-    display: inline-block; }
+    display: inline-block;
+    margin-top: 2px;
+    line-height: 21px; }
   .tab-search li {
     font-size: 13px; }
   .tab-search li select {
@@ -599,6 +601,9 @@ div.border-red {
     width: 50%; }
   .tab-search li select.pertinence {
     width: 80%; }
+
+.tab-search-top label, .tab-search-top a {
+  margin-top: 0; }
 
 .header-v1 .form-control {
   height: 40px; }
