@@ -1597,10 +1597,7 @@
     padding: 0 0 7px 45px !important;
     line-height: 13px; }
   form #phone-prefix {
-    top: 5px; }
-  #wrap-favoris a,
-  #wrap-history a {
-    padding: 5px 0 0 0; } }
+    top: 5px; } }
 
 @media only screen and (min-width: 1024px) {
   a.pub-style img, a.large-img img, a.haute-img img {
