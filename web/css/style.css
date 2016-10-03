@@ -466,6 +466,7 @@ div.border-red {
   background-position: -39px -232px; }
 
 .actions-select-all input#actions-select-all {
+  margin-left: -20px;
   margin-top: 0px; }
 
 .pagination {
