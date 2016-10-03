@@ -1,7 +1,7 @@
 jQuery(document).ready(function ($) {
 
 	/*recherche responsive*/
-	if ($(window).width() < 1201 && (window.location.href.indexOf("advancedSearch=true") == -1 || window.location.href.indexOf("query") >= -1)) {
+	if ($(window).width() < 1201 && (window.location.href.indexOf("advancedSearch=true") == -1 || window.location.href.indexOf("query") > 0)) {
 		$(".related-search ul li").each( function() {
 			$(this).find(".collapse").removeClass("in");
 			$(this).find("i[id^='fleche']").toggleClass("fa-angle-up fa-angle-down");
