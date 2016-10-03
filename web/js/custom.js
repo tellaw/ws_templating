@@ -581,6 +581,7 @@ jQuery(document).ready(function() {
     if (jQuery(window).width() < 1201 && window.location.href.indexOf("advancedSearch=true") == -1) {
         jQuery(".related-search ul li").each( function() {
             jQuery(this).find(".collapse").removeClass("in");
+            jQuery(this).find("i[id^='fleche']").toggleClass("fa-angle-up fa-angle-down");
         });
     }
 });
