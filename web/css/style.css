@@ -632,3 +632,6 @@ div.border-red {
 
 .list-toggle.active a:after {
   display: none !important; }
+
+.list-toggle a::after {
+  display: none !important; }

@@ -784,3 +784,8 @@ div.border-red {
     display:none!important;
   }
 }
+.list-toggle {
+  a::after {
+    display:none!important;
+  }
+}
