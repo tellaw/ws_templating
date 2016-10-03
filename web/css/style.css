@@ -139,7 +139,8 @@ div.border-red {
 .filtre .title-element {
   background: #717984;
   color: #FFF !important;
-  margin: 0; }
+  margin: 0;
+  font-size: 14px; }
 
 .recherche-avancee label,
 .filtre label {
