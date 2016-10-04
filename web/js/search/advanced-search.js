@@ -129,25 +129,32 @@ jQuery(document).ready(function ($) {
 	
 	// gestion datepicker
     // Date range
-	$.datepicker.setDefaults( $.datepicker.regional[ "fr" ] );	
-    $('#avant').datepicker({
-        prevText: "<",
-        nextText: ">",
-        changeYear: true,
-        changeMonth: true,
-        onSelect: function( selectedDate ) {
-            $('#apres').datepicker('option', 'maxDate', selectedDate);
-        }
-    });
-    $('#apres').datepicker({
-        prevText: "<",
-        nextText: ">",
-        changeYear: true,
-        changeMonth: true,
-        onSelect: function( selectedDate ) {
-            $('#avant').datepicker('option', 'minDate', selectedDate);
-        },
-    });
+	$.datepicker.setDefaults( $.datepicker.regional[ "fr" ] );
+
+	if ( $('#avant').prop('type') != 'date' ) {
+		$('#avant').datepicker({
+			prevText: "<",
+			nextText: ">",
+			changeYear: true,
+			changeMonth: true,
+			onSelect: function( selectedDate ) {
+				$('#apres').datepicker('option', 'maxDate', selectedDate);
+			}
+		});
+	}
+
+	if ( $('#avant').prop('type') != 'date' ) {
+		$('#apres').datepicker({
+			prevText: "<",
+			nextText: ">",
+			changeYear: true,
+			changeMonth: true,
+			onSelect: function (selectedDate) {
+				$('#avant').datepicker('option', 'minDate', selectedDate);
+			},
+		});
+	}
+
     $("#searchCommandOperateur").on("submit", function(event) {
     	if ($('#apres').val() !== "") {
         	$('#apres').attr("name", $('#apres').data("field-name"));
