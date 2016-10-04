@@ -160,4 +160,12 @@ jQuery(document).ready(function ($) {
         	$('#avant').removeAttr("name");
         }
     });
+
+	$("#apres").focus(function() {
+		$(this).blur()
+	});
+
+	$("#avant").focus(function() {
+		$(this).blur()
+	});
 })
