@@ -59,12 +59,12 @@ jQuery(document).ready(function ($) {
 		var paramName = $(this).data("filter-all");
 		$(this).prop("checked", function (i, old) {
 			if (!old) {
-				$("input[data-"+paramName+"-filter-group").click();
+				$("input[data-"+paramName+"-filter-group]").click();
 				$(this).closest("li").find("input[data-"+paramName+"-filter]:checked").each(function (i, box) {
 					$(box).click();
 				});
 			} else {
-				$("input[data-"+paramName+"-filter-group").each(function (i, box) {
+				$("input[data-"+paramName+"-filter-group]").each(function (i, box) {
 					if (!$(box).prop("checked")) {
 						$(box).click();
 					}
@@ -98,7 +98,7 @@ jQuery(document).ready(function ($) {
 			});
 		});
 		
-		$("input[data-"+paramName+"-filter-group").on("click", function() {
+		$("input[data-"+paramName+"-filter-group]").on("click", function() {
 			$(this).prop("checked", function (i, old) {
 				if (!old) {
 					$(this).parent("li").find("input[data-"+paramName+"-filter]:checked").each(function (i, box) {
