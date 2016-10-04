@@ -234,6 +234,7 @@ div.border-red {
     cursor:pointer;
     position:relative;
     display: block;
+    color: #697277;
     .syntaxe-or {
       display:none;
     }
@@ -263,14 +264,19 @@ div.border-red {
       }
     }
   }
+  .checkbox {
+    label {
+      padding-left: 30px;
+    }
+  }
   .filtre {
     ul {
       margin:0;
-      padding:0 0 0 10px;
+      padding:0;
       background:#FFF;
       ul {
         margin:0;
-        padding:0 0 0 20px;
+        padding:0 0 0 10px;
         background:#FFF;
         li {
           background:#FFF;
@@ -283,6 +289,9 @@ div.border-red {
             background:none;
             display:inline;
           }
+        }
+        ul {
+          padding:0 0 0 30px
         }
       }
       .section-title {
@@ -719,6 +728,7 @@ div.border-red {
   li {
     color:#4d5356;
     font-size:13px;
+    display: inline;
     span {
       font-size:13px;
       color:#ec1625;

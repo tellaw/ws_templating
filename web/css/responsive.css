@@ -638,6 +638,8 @@
     padding-left: 60px !important; }
   .xs-padding-left-15 {
     padding-left: 15px !important; }
+  .xs-padding-left-25 {
+    padding-left: 25px !important; }
   .xs-padding-right-15 {
     padding-right: 15px !important; }
   #offres {
@@ -647,6 +649,10 @@
   .margins-btns {
     margin-top: 5px;
     margin-left: 0px; }
+  .pagination {
+    margin: 0; }
+    .pagination li:first-child a, .pagination li:last-child a {
+      padding: 5px 5px; }
   .article-decouverte,
   .dictionnaire,
   .questions,
@@ -662,6 +668,8 @@
     margin: 0 0 0 95px; }
   .xs-margin-left-46 {
     margin-left: 46px; }
+  .xs-margin-left-10 {
+    margin-left: 10px; }
   .xs-table-margin-left {
     margin-left: 12px !important; }
   .tb-cstm {
@@ -800,7 +808,9 @@
   .row-acces-margin-bottom {
     margin-bottom: 30px; }
   .margin-top-1stblock {
-    margin-top: 77px; } }
+    margin-top: 77px; }
+  .tab-search {
+    height: auto; } }
 
 /* Tablette portrait and up */
 @media screen and (min-width: 768px) {
@@ -1599,7 +1609,10 @@
     padding: 0 0 7px 45px !important;
     line-height: 13px; }
   form #phone-prefix {
-    top: 5px; } }
+    top: 5px; }
+  #pub_mega_skyscraper,
+  #pub_fixed_footer {
+    display: none; } }
 
 @media only screen and (min-width: 1024px) {
   a.pub-style img, a.large-img img, a.haute-img img {

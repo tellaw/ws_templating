@@ -212,7 +212,8 @@ div.border-red {
 .recherche-avancee .syntaxe {
   cursor: pointer;
   position: relative;
-  display: block; }
+  display: block;
+  color: #697277; }
   .recherche-avancee .syntaxe .syntaxe-or {
     display: none; }
 
@@ -233,13 +234,16 @@ div.border-red {
 .sidebar-nav-v1 ul li span.badge {
   margin: -4px 0 0 5px !important; }
 
+.sidebar-nav-v1 .checkbox label {
+  padding-left: 30px; }
+
 .sidebar-nav-v1 .filtre ul {
   margin: 0;
-  padding: 0 0 0 10px;
+  padding: 0;
   background: #FFF; }
   .sidebar-nav-v1 .filtre ul ul {
     margin: 0;
-    padding: 0 0 0 20px;
+    padding: 0 0 0 10px;
     background: #FFF; }
     .sidebar-nav-v1 .filtre ul ul li {
       background: #FFF; }
@@ -251,6 +255,8 @@ div.border-red {
         padding: 0;
         background: none;
         display: inline; }
+    .sidebar-nav-v1 .filtre ul ul ul {
+      padding: 0 0 0 30px; }
   .sidebar-nav-v1 .filtre ul .section-title {
     color: #ec1625;
     margin: 0; }
@@ -584,7 +590,8 @@ div.border-red {
 
 .up-ul li {
   color: #4d5356;
-  font-size: 13px; }
+  font-size: 13px;
+  display: inline; }
   .up-ul li span {
     font-size: 13px;
     color: #ec1625;
