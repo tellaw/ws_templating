@@ -124,6 +124,10 @@ jQuery(document).ready(function ($) {
 			$(this).attr("name", $(this).data("field-name"));
 		}
 	});
+
+	$("input.datepicker").on("click", function() {
+		$(this).val('');
+	});
 	
 	// Date range
 	

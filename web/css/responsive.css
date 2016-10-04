@@ -1367,7 +1367,7 @@
     border-top: none;
     z-index: 3;
     background: #fff;
-    top: 44px; }
+    top: 40px; }
   .list-toggle a:after {
     top: -3px; }
   .list-toggle.active a:after {
@@ -1390,7 +1390,7 @@
     border-top: none;
     z-index: 3;
     background: #fff;
-    top: 44px; } }
+    top: 40px; } }
 
 /* Large and up */
 @media screen and (min-width: 1200px) {
