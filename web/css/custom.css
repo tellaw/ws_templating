@@ -3723,3 +3723,12 @@ form #di-link {
 #choixCompteDecouverte ul {
 	margin-top: 10px !important;
 }
+
+#popin .btn-block {
+	width: auto;
+}
+#popin .logo-top {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
