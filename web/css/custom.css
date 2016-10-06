@@ -3724,11 +3724,14 @@ form #di-link {
 	margin-top: 10px !important;
 }
 
+#popin {
+	margin-top:30px;
+}
 #popin .btn-block {
 	width: auto;
 }
 #popin .logo-top {
 	position: absolute;
-	top: 0;
+	top: -10px;
 	left: 0;
 }
