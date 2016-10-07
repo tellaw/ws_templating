@@ -269,26 +269,29 @@ jQuery(document).ready(function() {
         var link = window.location.href;
         var anchor = jQuery(this).attr("href");
 
-        //affichage ou non de la freezone en col de droite
-        if (anchor == "#offre-commerciale" || anchor == "#details") {
-            jQuery(".col-droite-3").hide();
-            jQuery(".col-droite-4").hide();
+        if (anchor.indexOf("#") > 0) {
+            //affichage ou non de la freezone en col de droite
+            if (anchor == "#offre-commerciale" || anchor == "#details") {
+                jQuery(".col-droite-3").hide();
+                jQuery(".col-droite-4").hide();
+            }
+            else if (anchor != "#documents" && anchor != "#presentation" && anchor != "#expert") {
+                jQuery(".col-droite div.pub-bloc div.freezone").hide();
+                jQuery(".col-droite-2").hide();
+                jQuery(".col-droite-4").show();
+            }
+            else {
+                jQuery(".col-droite div.pub-bloc div.freezone").show();
+                jQuery(".col-droite-2").show();
+                jQuery(".col-droite-4").show();
+            }
+            //ajout de l'ancre dans l'url
+            if (window.location.href.indexOf("#") > 0) {
+                link = window.location.href.substring(0, window.location.href.indexOf("#"));
+            }
+
+            window.location.href = link + anchor;
         }
-        else if (anchor != "#documents" && anchor != "#presentation" && anchor != "#expert") {
-            jQuery(".col-droite div.pub-bloc div.freezone").hide();
-            jQuery(".col-droite-2").hide();
-            jQuery(".col-droite-4").show();
-        }
-        else {
-            jQuery(".col-droite div.pub-bloc div.freezone").show();
-            jQuery(".col-droite-2").show();
-            jQuery(".col-droite-4").show();
-        }
-        //ajout de l'ancre dans l'url
-        if (window.location.href.indexOf("#") > 0) {
-            link = window.location.href.substring(0, window.location.href.indexOf("#"));
-        }
-        window.location.href= link + anchor;
     });
 
     var nbOnglets = jQuery("#menu-smint > .nav-tabs li").length;
