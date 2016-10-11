@@ -63,6 +63,13 @@ jQuery(document).ready(function ($) {
 				});
 			}
 		});
+		$("#"+paramName+"-toggle").on("click", function() {
+			$(this).prop("checked", function (i, old) {
+				var tv = $(this).data("toggle-value");
+				$(this).data("toggle-value", $(this).val());
+				$(this).val(tv);
+			})
+		});
 		
 	});
 	
