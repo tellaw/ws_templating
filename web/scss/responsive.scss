@@ -442,6 +442,7 @@ $color-red : #ea2336 ;
     .client {
       > span {
         width:100%;
+        margin-bottom: 5px;
       }
     }
     p {
@@ -922,6 +923,9 @@ $color-red : #ea2336 ;
   .xs-padding-left-15 {
     padding-left:15px !important;
   }
+  .xs-padding-left-25 {
+    padding-left:25px !important;
+  }
   .xs-padding-right-15 {
     padding-right:15px !important;
   }
@@ -934,6 +938,16 @@ $color-red : #ea2336 ;
   .margins-btns {
     margin-top: 5px;
     margin-left: 0px;
+  }
+  .pagination {
+    margin:0;
+    li {
+      &:first-child, &:last-child {
+        a {
+          padding:5px 5px;
+        }
+      }
+    }
   }
   .article-decouverte,
   .dictionnaire,
@@ -956,6 +970,13 @@ $color-red : #ea2336 ;
   }
   .xs-margin-left-46 {
     margin-left: 46px;
+  }
+  .xs-margin-left-10 {
+    margin-left: 10px;
+  }
+
+  .ico-search {
+    margin-left: 20px!important;
   }
   .xs-table-margin-left {
     margin-left: 12px !important;
@@ -1183,7 +1204,9 @@ $color-red : #ea2336 ;
   .margin-top-1stblock {
     margin-top: 77px;
   }
-
+  .tab-search {
+    height:auto;
+  }
 }
 
 /* Tablette portrait and up */
@@ -1519,9 +1542,16 @@ $color-red : #ea2336 ;
 /* Medium and down */
 @media screen and (max-width: 991px) {
   #design-services-popin,
-  #design-switch-popin {
+  #design-switch-popin,
+  #design-export-biblio-popin{
     width:90% !important;
+  }
+  #design-services-popin,
+  #design-switch-popin{
     height: 370px!important;
+  }
+  #design-export-biblio-popin{
+    height: 430px!important;
   }
   .navbar-mods {
     padding-right: 0px !important;
@@ -2013,11 +2043,25 @@ $color-red : #ea2336 ;
     padding-right: 40px;
   }
   #collapse-typography,
-  #collapse-buttons {
+  #menuSearch,
+  #menuFiltre {
     position:absolute;
     width:100%;
     border:1px solid #717984;
     border-top:none;
+    z-index: 3;
+    background: #fff;
+    top: 40px;
+  }
+  .list-toggle {
+    a:after {
+      top:-3px;
+    }
+  }
+  .list-toggle.active {
+    a:after {
+      top:-3px;
+    }
   }
 }
 
@@ -2032,11 +2076,16 @@ $color-red : #ea2336 ;
     padding-right: 150px;
   }
   #collapse-typography,
-  #collapse-buttons {
+  #menuSearch,
+  #menuFiltre {
     position:absolute;
     width:100%;
     border:1px solid #717984;
     border-top:none;
+    z-index: 3;
+    background: #fff;
+    top: 40px;
+  }
 }
 
 /* Large and up */
@@ -2380,6 +2429,10 @@ $color-red : #ea2336 ;
     #phone-prefix {
       top: 5px;
     }
+  }
+  #pub_mega_skyscraper,
+  #pub_fixed_footer {
+    display: none;
   }
 }
 

@@ -1,5 +1,18 @@
 jQuery(document).ready(function ($) {
-	
+
+	/*recherche responsive*/
+	if ($(window).width() < 1201 && (window.location.href.indexOf("advancedSearch=true") == -1 || window.location.href.indexOf("query") > 0)) {
+		$(".related-search ul li").each( function() {
+			$(this).find(".collapse").removeClass("in");
+			$(this).find("i[id^='fleche']").toggleClass("fa-angle-up fa-angle-down");
+		});
+	}
+
+    /*toogle recherche avancee*/
+	$('.panel-title').on('click', function () {
+		$(this).find("i[id^='fleche']").toggleClass('fa-angle-down fa-angle-up');
+	});
+
 	/*affichage box favoris en hover sur "favoris de recherche" dans la page de recherche"*/
 	$("#wrap-favoris").hover(function() {
 		$("#boxFavoris").show();
@@ -46,12 +59,12 @@ jQuery(document).ready(function ($) {
 		var paramName = $(this).data("filter-all");
 		$(this).prop("checked", function (i, old) {
 			if (!old) {
-				$("input[data-"+paramName+"-filter-group").click();
+				$("input[data-"+paramName+"-filter-group]").click();
 				$(this).closest("li").find("input[data-"+paramName+"-filter]:checked").each(function (i, box) {
 					$(box).click();
 				});
 			} else {
-				$("input[data-"+paramName+"-filter-group").each(function (i, box) {
+				$("input[data-"+paramName+"-filter-group]").each(function (i, box) {
 					if (!$(box).prop("checked")) {
 						$(box).click();
 					}
@@ -92,7 +105,7 @@ jQuery(document).ready(function ($) {
 			});
 		});
 		
-		$("input[data-"+paramName+"-filter-group").on("click", function() {
+		$("input[data-"+paramName+"-filter-group]").on("click", function() {
 			$(this).prop("checked", function (i, old) {
 				if (!old) {
 					$(this).parent("li").find("input[data-"+paramName+"-filter]:checked").each(function (i, box) {
@@ -118,12 +131,16 @@ jQuery(document).ready(function ($) {
 			$(this).attr("name", $(this).data("field-name"));
 		}
 	});
+
+	$("input.datepicker").on("click", function() {
+		$(this).val('');
+	});
 	
 	// Date range
 	
 	// gestion datepicker
     // Date range
-	$.datepicker.setDefaults( $.datepicker.regional[ "fr" ] );	
+	$.datepicker.setDefaults( $.datepicker.regional[ "fr" ] );
     $('#avant').datepicker({
         prevText: "<",
         nextText: ">",
@@ -154,4 +171,12 @@ jQuery(document).ready(function ($) {
         	$('#avant').removeAttr("name");
         }
     });
+
+	$("#apres").focus(function() {
+		$(this).blur()
+	});
+
+	$("#avant").focus(function() {
+		$(this).blur()
+	});
 })
