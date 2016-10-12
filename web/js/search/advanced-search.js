@@ -79,9 +79,10 @@ jQuery(document).ready(function ($) {
 		
 	});
 	$("input[data-toggle-value]").on("click", function() {
-		var tv = $(this).data("toggle-value");
-		$(this).data("toggle-value", $(this).val());
-		$(this).val(tv);
+		var filterName = $(this).data("filter-name");
+		var tv = $("#"+filterName+"-hidden").data("toggle-value");
+		$("#"+filterName+"-hidden").data("toggle-value", $(this).val());
+		$("#"+filterName+"-hidden").val(tv);
 	});
 	
 	$("input[data-filter-all]").each(function (i, box) {
