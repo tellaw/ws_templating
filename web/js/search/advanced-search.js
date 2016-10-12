@@ -78,6 +78,11 @@ jQuery(document).ready(function ($) {
 		});
 		
 	});
+	$("input[data-toggle-value]").on("click", function() {
+		var tv = $(this).data("toggle-value");
+		$(this).data("toggle-value", $(this).val());
+		$(this).val(tv);
+	});
 	
 	$("input[data-filter-all]").each(function (i, box) {
 		var paramName = $(box).data("filter-all");
