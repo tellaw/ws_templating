@@ -2397,6 +2397,10 @@ $color-red : #ea2336 ;
       top: 5px;
     }
   }
+  #pub_mega_skyscraper,
+  #pub_fixed_footer {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
