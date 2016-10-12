@@ -379,7 +379,6 @@ div.border-red {
 .ico-search {
   background: url("../images/icone-recherche.png") no-repeat 0 0;
   width: 35px;
-  height: 26px;
   margin: -2px 0 0 30px;
   padding: 0;
   display: inline-block; }
@@ -387,13 +386,12 @@ div.border-red {
 .visu_real_bd .ico-search {
   background: none;
   position: relative;
-  margin: -10px 0 0 -7px;
-  width: 60px;
-  height: 55px; }
+  margin: -10px 0 0 20px;
+  width: 40px; }
 
-.visu_real_bd .decalage_visu_real_bd li {
-  margin: 0 0 0 5px;
-  font-size: 13px; }
+.visu_real_bd .decalage_visu_real_bd {
+  padding-left: 0;
+  margin-left: 25px; }
 
 .visu_real_formation .ico-search {
   background: none;
@@ -511,8 +509,8 @@ div.border-red {
 .fp ul .print {
   margin: 15px -40px 0 10px; }
 
-#wrap-favoris a,
-#wrap-history a {
+#wrap-favoris > a,
+#wrap-history > a {
   padding: 3px 0 0 0; }
 
 #wrap-favoris .boxFavoris {
@@ -529,7 +527,7 @@ div.border-red {
   left: 0;
   font-size: 13px;
   color: #666;
-  padding: 10px;
+  padding: 15px 10px;
   width: 330px;
   z-index: 999999;
   border: 1px solid #697277;
@@ -543,18 +541,19 @@ div.border-red {
   #wrap-favoris:hover .boxFavoris .title-favoris {
     display: inline-block;
     margin: 0 0 10px 0; }
-  #wrap-favoris:hover .boxFavoris span {
+  #wrap-favoris:hover .boxFavoris ul span:first-child {
     background: url("../images/favoris-picto.png") no-repeat 0 0;
-    width: 100%;
     margin: 0;
     padding: 0 0 0 25px; }
-    #wrap-favoris:hover .boxFavoris span a:hover {
-      color: #ec1625;
-      text-decoration: underline; }
-    #wrap-favoris:hover .boxFavoris span a.supr {
-      float: right; }
-  #wrap-favoris:hover .boxFavoris span:hover {
-    background: url("../images/favoris-picto-hover.png") no-repeat 0 0; }
+    #wrap-favoris:hover .boxFavoris ul span:first-child:hover {
+      background: url("../images/favoris-picto-hover.png") no-repeat 0 0; }
+  #wrap-favoris:hover .boxFavoris ul span a {
+    height: auto; }
+  #wrap-favoris:hover .boxFavoris ul span a:hover {
+    color: #ec1625;
+    text-decoration: underline; }
+  #wrap-favoris:hover .boxFavoris ul span a.supr {
+    float: right; }
   #wrap-favoris:hover .boxFavoris .title-favoris {
     background: none; }
   #wrap-favoris:hover .boxFavoris .title-favoris:hover {
@@ -661,3 +660,6 @@ div.border-red {
 
 .list-toggle a::after {
   display: none !important; }
+
+.loading-leads {
+  text-align: center; }

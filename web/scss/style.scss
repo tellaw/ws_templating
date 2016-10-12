@@ -444,7 +444,6 @@ div.border-red {
 .ico-search {
   background:url("../images/icone-recherche.png") no-repeat 0 0;
   width:35px;
-  height:26px;
   margin:-2px 0 0 30px;
   padding:0;
   display:inline-block;
@@ -453,15 +452,12 @@ div.border-red {
   .ico-search {
     background:none;
     position:relative;
-    margin:-10px 0 0 -7px;
-    width:60px;
-    height:55px;
+    margin:-10px 0 0 20px;
+    width:40px;
   }
   .decalage_visu_real_bd {
-    li {
-      margin:0 0 0 5px;
-      font-size:13px;
-    }
+    padding-left: 0;
+    margin-left: 25px;
   }
 }
 .visu_real_formation {
@@ -628,7 +624,7 @@ div.border-red {
 }
 #wrap-favoris,
 #wrap-history {
-  a {
+  > a {
     padding:3px 0 0 0;
   }
 }
@@ -651,7 +647,7 @@ div.border-red {
     left:0;
     font-size:13px;
     color:#666;
-    padding:10px;
+    padding:15px 10px;
     width:330px;
     z-index:999999;
     border:1px solid #697277;
@@ -667,21 +663,27 @@ div.border-red {
       display:inline-block;
       margin:0 0 10px 0;
     }
-    span {
-      background:url("../images/favoris-picto.png") no-repeat 0 0;
-      width:100%;
-      margin:0;
-      padding:0 0 0 25px;
-      a:hover {
-        color:#ec1625;
-        text-decoration:underline;
+    ul {
+      span {
+        &:first-child {
+          background: url("../images/favoris-picto.png") no-repeat 0 0;
+          margin: 0;
+          padding: 0 0 0 25px;
+          &:hover {
+            background:url("../images/favoris-picto-hover.png") no-repeat 0 0;
+          }
+        }
+        a {
+          height:auto;
+        }
+        a:hover {
+          color:#ec1625;
+          text-decoration:underline;
+        }
+        a.supr {
+          float:right;
+        }
       }
-      a.supr {
-        float:right;
-      }
-    }
-    span:hover {
-      background:url("../images/favoris-picto-hover.png") no-repeat 0 0;
     }
     .title-favoris {
       background:none;
@@ -821,4 +823,7 @@ div.border-red {
   a::after {
     display:none!important;
   }
+}
+.loading-leads {
+  text-align: center;
 }
