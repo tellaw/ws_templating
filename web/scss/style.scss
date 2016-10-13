@@ -439,7 +439,20 @@ div.border-red {
 .checkbox {
   input[type="checkbox"] {
     margin-left:0;
+    height: 12px;
+    width: 12px;
   }
+}
+.search-results {
+  z-index: 2;
+  background: #fff;
+}
+.resetSearch {
+  text-align: center;
+  font-size: 12px;
+  background: #fff;
+  border: 0;
+  padding: 8px 10px !important;
 }
 .ico-search {
   background:url("../images/icone-recherche.png") no-repeat 0 0;

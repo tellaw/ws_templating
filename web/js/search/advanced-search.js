@@ -7,6 +7,9 @@ jQuery(document).ready(function ($) {
 			$(this).find("i[id^='fleche']").toggleClass("fa-angle-up fa-angle-down");
 		});
 	}
+	else {
+		$(".related-search > ul li").css("zIndex" , "3");
+	}
 
     /*toogle recherche avancee*/
 	$('.panel-title').on('click', function () {

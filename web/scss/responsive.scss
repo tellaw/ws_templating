@@ -2042,9 +2042,7 @@ $color-red : #ea2336 ;
     padding-left: 40px;
     padding-right: 40px;
   }
-  #collapse-typography,
-  #menuSearch,
-  #menuFiltre {
+  #collapse-typography {
     position:absolute;
     width:100%;
     border:1px solid #717984;
@@ -2052,6 +2050,21 @@ $color-red : #ea2336 ;
     z-index: 3;
     background: #fff;
     top: 40px;
+  }
+  #menuSearch,
+  #menuFiltre {
+    position:absolute;
+    width:100%;
+    border:1px solid #717984;
+    border-top:none;
+    background: #fff;
+    top: 40px;
+  }
+  .recherche-avancee {
+    margin: 0!important;
+  }
+  .search-results {
+    padding-top: 30px;
   }
   .list-toggle {
     a:after {
