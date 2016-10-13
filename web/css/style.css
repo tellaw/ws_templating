@@ -616,6 +616,11 @@ div.border-red {
     font-size: 13px;
     color: #ec1625;
     font-weight: bold; }
+  .up-ul li:first-child {
+    padding-left: 0; }
+
+.up-ul.list-inline {
+  margin-left: 0; }
 
 .list-group-item:first-child,
 .list-group-item:last-child {

@@ -763,6 +763,12 @@ div.border-red {
       color:#ec1625;
       font-weight:bold;
     }
+    &:first-child {
+      padding-left: 0;
+    }
+  }
+  &.list-inline {
+    margin-left:0;
   }
 }
 .list-group-item:first-child,
