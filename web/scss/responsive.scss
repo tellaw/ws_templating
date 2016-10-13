@@ -1613,13 +1613,13 @@ $color-red : #ea2336 ;
     right: 0;
     float: none;
   }
-}
-/* Medium and up */
-@media screen and (min-width: 992px) {
   .no-gutters-md {
     padding-left: 0;
     padding-right: 0;
   }
+}
+/* Medium and up */
+@media screen and (min-width: 992px) {
   .br_tablet {
     display: none;
   }
