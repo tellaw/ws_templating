@@ -397,7 +397,7 @@ div.border-red {
 
 .ico-search {
   background: url("../images/icone-recherche.png") no-repeat 0 0;
-  width: 30px;
+  width: 35px;
   height: 25px;
   margin: 0 11px 0 0;
   padding: 0;
@@ -418,7 +418,7 @@ div.border-red {
 .visu_real_formation .ico-search {
   background: none;
   position: relative;
-  margin: 0 0 0 -7px;
+  margin: 0;
   width: 60px;
   height: 50px; }
 
