@@ -59,13 +59,26 @@ jQuery(document).ready(function ($) {
 		}
 	}
 
+	function displayStateForFilterGroupCheckbox(filter_group_id_name, filter_group_id) {
+		var isOneChecked=false;
+		var isAllChecked=true;
+
+		$('input['+filter_group_id_name+'="'+filter_group_id+'"]').each(function(index) {
+			isOneChecked |= $(this).prop("checked");
+			isAllChecked &= $(this).prop("checked");
+		});
+
+		if (isOneChecked) {
+			$("#" +filter_group_id).prop('checked', true);
+		} else {
+			$("#" +filter_group_id).prop('checked', false);
+		}
+	}
+
 	$("input[data-filter-all]").on("click", function() {
 		var paramName = $(this).data("filter-all");
 
-		console.log("paramName " +paramName);
 		$(this).prop("checked", function (i, old) {
-			console.log("i " +i);
-			console.log("old " +old);
 			if (!old) {
 				$("input[data-"+paramName+"-filter-group]").click();
 				$(this).closest("li").find("input[data-"+paramName+"-filter]:checked").each(function (i, box) {
@@ -110,6 +123,12 @@ jQuery(document).ready(function ($) {
 				}
 				tt.val((ttMask).toString(16));
 			});
+
+			displayStateForFacetCheckbox(paramName);
+
+			if ($(this).hasAttr("data-"+paramName+"-filter-group-id")) {
+				displayStateForFilterGroupCheckbox("data-"+paramName+"-filter-group-id", $(this).attr("data-"+paramName+"-filter-group-id"));
+			}
 		});
 
 		$("input[data-"+paramName+"-filter-group]").on("click", function() {
