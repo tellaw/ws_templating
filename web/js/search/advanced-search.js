@@ -12,7 +12,7 @@ jQuery(document).ready(function ($) {
 		$(".related-search > ul li").css("zIndex" , "3");
 	}
 
-    /*toogle recherche avancee*/
+	/*toogle recherche avancee*/
 	$('.panel-title').on('click', function () {
 		$(this).find("i[id^='fleche']").toggleClass('fa-angle-down fa-angle-up');
 	});
@@ -20,29 +20,29 @@ jQuery(document).ready(function ($) {
 	/*affichage box favoris en hover sur "favoris de recherche" dans la page de recherche"*/
 	$("#wrap-favoris").hover(function() {
 		$("#boxFavoris").show();
-	},function(){ 
+	},function(){
 		$("#boxFavoris").hide();
 	});
-	
+
 	$("#boxFavoris").hover(function() {
 		$(this).show();
-	},function(){ 
+	},function(){
 		$(this).hide();
 	});
 
 	/*affichage box historique en hover sur "historique récente" dans la page de recherche"*/
 	$("#wrap-history").hover(function() {
 		$("#boxHistory").show();
-	},function(){ 
+	},function(){
 		$("#boxHistory").hide();
 	});
-	
+
 	$("#boxHistory").hover(function() {
 		$(this).show();
-	},function(){ 
+	},function(){
 		$(this).hide();
 	});
-	
+
 	function displayStateForFacetCheckbox(facetName) {
 		var isOneChecked=false;
 		var isAllChecked=true;
@@ -51,17 +51,21 @@ jQuery(document).ready(function ($) {
 			isOneChecked |= $(this).prop("checked");
 			isAllChecked &= $(this).prop("checked");
 		});
-		
+
 		if (isOneChecked) {
 			$( "#" + facetName + "-all").prop('checked', true);
 		} else {
-			$( "#" + facetName + "-all").prop('unchecked', true);
+			$( "#" + facetName + "-all").prop('checked', false);
 		}
 	}
-	
+
 	$("input[data-filter-all]").on("click", function() {
 		var paramName = $(this).data("filter-all");
+
+		console.log("paramName " +paramName);
 		$(this).prop("checked", function (i, old) {
+			console.log("i " +i);
+			console.log("old " +old);
 			if (!old) {
 				$("input[data-"+paramName+"-filter-group]").click();
 				$(this).closest("li").find("input[data-"+paramName+"-filter]:checked").each(function (i, box) {
@@ -80,7 +84,7 @@ jQuery(document).ready(function ($) {
 				});
 			}
 		});
-		
+		displayStateForFacetCheckbox(paramName);
 	});
 	$("input[data-filter-name]").on("click", function() {
 		var filterName = $(this).data("filter-name");
@@ -88,7 +92,7 @@ jQuery(document).ready(function ($) {
 		$("#"+filterName+"-hidden").data("toggle-value", $(this).val());
 		$("#"+filterName+"-hidden").val(tv);
 	});
-	
+
 	$("input[data-filter-all]").each(function (i, box) {
 		var paramName = $(box).data("filter-all");
 		displayStateForFacetCheckbox(paramName);
@@ -98,7 +102,7 @@ jQuery(document).ready(function ($) {
 				var tt = $("#"+paramName+"-total");
 				var ttMask = parseInt(tt.val(), 16);
 				var m = parseInt(mask, 16);
-				
+
 				if ((ttMask & m) > 0) {
 					ttMask &= ~m ;
 				} else {
@@ -107,7 +111,7 @@ jQuery(document).ready(function ($) {
 				tt.val((ttMask).toString(16));
 			});
 		});
-		
+
 		$("input[data-"+paramName+"-filter-group]").on("click", function() {
 			$(this).prop("checked", function (i, old) {
 				if (!old) {
@@ -126,7 +130,7 @@ jQuery(document).ready(function ($) {
 		});
 
 	});
-	
+
 	$("input[data-ignore-if-empty]").on("change", function() {
 		if ($(this).val().trim() === "") {
 			$(this).removeAttr("name");
@@ -138,42 +142,42 @@ jQuery(document).ready(function ($) {
 	$("input.datepicker").on("click", function() {
 		$(this).val('');
 	});
-	
+
 	// Date range
-	
+
 	// gestion datepicker
-    // Date range
+	// Date range
 	$.datepicker.setDefaults( $.datepicker.regional[ "fr" ] );
-    $('#avant').datepicker({
-        prevText: "<",
-        nextText: ">",
-        changeYear: true,
-        changeMonth: true,
-        onSelect: function( selectedDate ) {
-            $('#apres').datepicker('option', 'maxDate', selectedDate);
-        }
-    });
-    $('#apres').datepicker({
-        prevText: "<",
-        nextText: ">",
-        changeYear: true,
-        changeMonth: true,
-        onSelect: function( selectedDate ) {
-            $('#avant').datepicker('option', 'minDate', selectedDate);
-        },
-    });
-    $("#searchCommandOperateur").on("submit", function(event) {
-    	if ($('#apres').val() !== "") {
-        	$('#apres').attr("name", $('#apres').data("field-name"));
-        } else {
-        	$('#apres').removeAttr("name");
-        }
-        if ($('#avant').val() !== "") {
-        	$('#avant').attr("name", $('#avant').data("field-name"));
-        } else {
-        	$('#avant').removeAttr("name");
-        }
-    });
+	$('#avant').datepicker({
+		prevText: "<",
+		nextText: ">",
+		changeYear: true,
+		changeMonth: true,
+		onSelect: function( selectedDate ) {
+			$('#apres').datepicker('option', 'maxDate', selectedDate);
+		}
+	});
+	$('#apres').datepicker({
+		prevText: "<",
+		nextText: ">",
+		changeYear: true,
+		changeMonth: true,
+		onSelect: function( selectedDate ) {
+			$('#avant').datepicker('option', 'minDate', selectedDate);
+		},
+	});
+	$("#searchCommandOperateur").on("submit", function(event) {
+		if ($('#apres').val() !== "") {
+			$('#apres').attr("name", $('#apres').data("field-name"));
+		} else {
+			$('#apres').removeAttr("name");
+		}
+		if ($('#avant').val() !== "") {
+			$('#avant').attr("name", $('#avant').data("field-name"));
+		} else {
+			$('#avant').removeAttr("name");
+		}
+	});
 
 	$("#apres").focus(function() {
 		$(this).blur()
