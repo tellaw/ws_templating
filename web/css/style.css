@@ -242,7 +242,7 @@ div.border-red {
   margin: -4px 0 0 5px !important; }
 
 .sidebar-nav-v1 .checkbox label {
-  padding-left: 30px; }
+  padding-left: 0; }
 
 .sidebar-nav-v1 .filtre ul {
   margin: 0;
@@ -380,9 +380,10 @@ div.border-red {
       padding: 0; }
 
 .checkbox input[type="checkbox"] {
-  margin-left: 0;
+  margin: 0;
   height: 12px;
-  width: 12px; }
+  width: 12px;
+  position: relative; }
 
 .search-results {
   z-index: 2;
