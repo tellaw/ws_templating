@@ -379,6 +379,7 @@ div.border-red {
 .ico-search {
   background: url("../images/icone-recherche.png") no-repeat 0 0;
   width: 35px;
+  height: 25px;
   margin: -2px 0 0 30px;
   padding: 0;
   display: inline-block; }

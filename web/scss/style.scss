@@ -444,6 +444,7 @@ div.border-red {
 .ico-search {
   background:url("../images/icone-recherche.png") no-repeat 0 0;
   width:35px;
+  height: 25px;
   margin:-2px 0 0 30px;
   padding:0;
   display:inline-block;
@@ -693,36 +694,38 @@ div.border-red {
     }
   }
 }
-#wrap-history:hover {
-  .boxHistory {
-    text-decoration:none;
-    display:block;
-    position:absolute;
-    top:30px;
-    left:0;
-    font-size:13px;
-    color:#666;
-    padding:10px;
-    width:250px;
-    z-index:999999;
-    border:1px solid #697277;
-    background-color:#fff;
-    .close {
-      top:-2px;
-      right:0;
-      color:#646d72;
-      background:none;
-      opacity:1;
-    }
-    a {
-      height:auto;
-      color:#4d5356;
-      font-size:13px;
-    }
-    a:hover {
-      color:#ec1625;
-      text-decoration:underline;
-      cursor:pointer;
+#wrap-history {
+  &:hover {
+    .boxHistory {
+      text-decoration: none;
+      display: block;
+      position: absolute;
+      top: 30px;
+      left: 0;
+      font-size: 13px;
+      color: #666;
+      padding: 10px;
+      width: 250px;
+      z-index: 999999;
+      border: 1px solid #697277;
+      background-color: #fff;
+      .close {
+        top: -2px;
+        right: 0;
+        color: #646d72;
+        background: none;
+        opacity: 1;
+      }
+      a {
+        height: auto;
+        color: #4d5356;
+        font-size: 13px;
+      }
+      a:hover {
+        color: #ec1625;
+        text-decoration: underline;
+        cursor: pointer;
+      }
     }
   }
 }
