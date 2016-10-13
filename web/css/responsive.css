@@ -670,8 +670,6 @@
     margin-left: 46px; }
   .xs-margin-left-10 {
     margin-left: 10px; }
-  .ico-search {
-    margin-left: 20px !important; }
   .xs-table-margin-left {
     margin-left: 12px !important; }
   .tb-cstm {
@@ -779,6 +777,9 @@
     margin-bottom: 25px; }
   .xs-text-center {
     text-align: center; }
+  .no-gutters-xs {
+    padding-left: 0;
+    padding-right: 0; }
   .subscription-btn {
     font-size: 10px;
     display: block;

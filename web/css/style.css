@@ -323,9 +323,8 @@ div.border-red {
 
 .inner-results {
   clear: both;
-  display: inline-block; }
-  .inner-results .inner-results .checkbox input {
-    margin: 6px 8px 0 0; }
+  display: inline-block;
+  padding-left: 10px; }
   .inner-results p {
     font-size: 14px !important;
     font-family: 'Myriad Pro', Arial, serif;
@@ -400,19 +399,21 @@ div.border-red {
   background: url("../images/icone-recherche.png") no-repeat 0 0;
   width: 35px;
   height: 25px;
-  margin: -2px 0 0 30px;
+  margin: 0 12px 0 13px;
   padding: 0;
-  display: inline-block; }
+  display: inline-block;
+  top: 4px;
+  position: relative; }
 
 .visu_real_bd .ico-search {
   background: none;
   position: relative;
-  margin: -10px 0 0 20px;
-  width: 40px; }
+  width: 46px;
+  height: auto;
+  margin: 0 9px; }
 
 .visu_real_bd .decalage_visu_real_bd {
-  padding-left: 0;
-  margin-left: 25px; }
+  padding-left: 0; }
 
 .visu_real_formation .ico-search {
   background: none;
