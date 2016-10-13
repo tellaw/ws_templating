@@ -208,6 +208,9 @@ div.border-red {
     height: 33px;
     border-left: 1px solid #ccc;
     border-right: 0; }
+    .recherche-avancee .input-group span i {
+      top: 3px;
+      position: relative; }
 
 .recherche-avancee .syntaxe {
   cursor: pointer;

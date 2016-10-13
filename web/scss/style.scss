@@ -228,6 +228,10 @@ div.border-red {
       height: 33px;
       border-left: 1px solid #ccc;
       border-right: 0;
+      i {
+        top: 3px;
+        position: relative;
+      }
     }
   }
   .syntaxe {
