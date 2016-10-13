@@ -82,7 +82,7 @@ jQuery(document).ready(function ($) {
 		});
 		
 	});
-	$("input[data-toggle-value]").on("click", function() {
+	$("input[data-filter-name]").on("click", function() {
 		var filterName = $(this).data("filter-name");
 		var tv = $("#"+filterName+"-hidden").data("toggle-value");
 		$("#"+filterName+"-hidden").data("toggle-value", $(this).val());
