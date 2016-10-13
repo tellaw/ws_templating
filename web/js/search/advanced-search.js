@@ -1,3 +1,7 @@
+document.ontouchmove = function(event){
+	event.preventDefault();
+}
+
 jQuery(document).ready(function ($) {
 
 	/*recherche responsive*/
