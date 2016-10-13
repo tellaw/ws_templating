@@ -5,6 +5,7 @@ jQuery(document).ready(function ($) {
 		$(".related-search ul li").each( function() {
 			$(this).find(".collapse").removeClass("in");
 			$(this).find("i[id^='fleche']").toggleClass("fa-angle-up fa-angle-down");
+			$(this).css("zIndex" , "3");
 		});
 	}
 	else {
