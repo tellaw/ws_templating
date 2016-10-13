@@ -500,8 +500,7 @@ div.border-red {
   margin-top: 3px; }
 
 .pagination {
-  display: block;
-  margin: 0 15%; }
+  margin: 0; }
   .pagination li.pagination-left a,
   .pagination li.pagination-right a,
   .pagination li.pagination-left-first a,
