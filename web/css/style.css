@@ -234,9 +234,12 @@ div.border-red {
   border: 1px solid #697277;
   background-color: #fff; }
 
-.suggest-word a:hover {
-  text-decoration: underline;
-  color: #ea2336; }
+.suggest-word {
+  margin-top: 20px;
+  margin-bottom: 10px; }
+  .suggest-word a:hover {
+    text-decoration: underline;
+    color: #ea2336; }
 
 .sidebar-nav-v1 ul li span.badge {
   margin: -4px 0 0 5px !important; }
