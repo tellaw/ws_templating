@@ -588,14 +588,14 @@
     width: 100% !important;
     padding-left: 0px;
     padding-right: 0px; }
-  #switch div.clearfix {
+  #popin div.clearfix {
     display: none; }
-  #switch div.actions {
+  #popin div.actions {
     display: block;
     margin: 0 8% !important; }
-  #switch .actions a {
+  #popin .actions a {
     float: none !important; }
-  #switch a:first-child {
+  #popin a:first-child {
     margin-bottom: 20px; } }
 
 @media screen and (max-width: 646px) {
