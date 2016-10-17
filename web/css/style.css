@@ -661,7 +661,7 @@ input#actions-select-all {
   background: #e2e1e1;
   display: inline-block;
   margin: 20px 0 0 0;
-  padding: 20px 0 20px 120px; }
+  padding: 20px 15px; }
   #no-result p {
     margin: 10px 0 0 0;
     min-height: auto !important; }
