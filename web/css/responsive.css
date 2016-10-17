@@ -1025,7 +1025,8 @@
 @media screen and (max-width: 991px) {
   #design-services-popin,
   #design-switch-popin,
-  #design-export-biblio-popin {
+  #design-export-biblio-popin,
+  #design-media-popin {
     width: 90% !important; }
   #design-services-popin,
   #design-switch-popin {
