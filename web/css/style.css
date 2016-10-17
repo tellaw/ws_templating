@@ -506,8 +506,7 @@ div.border-red {
 .outil .ico-search:hover {
   background-position: -39px -232px; }
 
-.actions-select-all input#actions-select-all {
-  margin-left: -20px;
+input#actions-select-all {
   margin-top: 3px; }
 
 .pagination {
@@ -648,6 +647,8 @@ div.border-red {
     width: 50%; }
   .tab-search li select.pertinence {
     width: 80%; }
+  .tab-search .checkbox label {
+    padding-left: 10px; }
 
 .tab-search-top label, .tab-search-top a {
   margin-top: 0; }

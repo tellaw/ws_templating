@@ -607,11 +607,8 @@ div.border-red {
   }
 }
 
-.actions-select-all {
-  input#actions-select-all {
-    margin-left:-20px;
-    margin-top:3px;
-  }
+input#actions-select-all {
+  margin-top:3px;
 }
 .pagination {
   margin:0;
@@ -800,6 +797,11 @@ div.border-red {
     }
     select.pertinence {
       width:80%;
+    }
+  }
+  .checkbox {
+    label {
+      padding-left: 10px;
     }
   }
 }
