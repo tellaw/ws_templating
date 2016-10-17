@@ -263,10 +263,8 @@ div.border-red {
 .suggest-word {
   margin-top:20px;
   a{
-    &:hover {
-      text-decoration: underline;
-      color: #ea2336;
-    }
+    text-decoration: underline!important;
+    color: #ea2336;
   }
 }
 .sidebar-nav-v1 {

@@ -236,8 +236,8 @@ div.border-red {
 
 .suggest-word {
   margin-top: 20px; }
-  .suggest-word a:hover {
-    text-decoration: underline;
+  .suggest-word a {
+    text-decoration: underline !important;
     color: #ea2336; }
 
 .sidebar-nav-v1 ul li span.badge {
