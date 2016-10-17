@@ -3608,6 +3608,7 @@ form #di-link {
 	position: absolute;
 	top: 59px;
 	z-index:9;
+	padding: 0 15px;
 }
 #sticky-menu-document {
 	position: absolute;
