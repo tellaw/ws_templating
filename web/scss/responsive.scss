@@ -2359,6 +2359,9 @@ $color-red : #ea2336 ;
   .calage-menu-abonnees {
     margin-right: -50px;
   }
+  .rechercher-border {
+    width:350px;
+  }
 }
 
 /* Large and down */
@@ -2370,8 +2373,11 @@ $color-red : #ea2336 ;
     padding-left: 6px !important;
     padding-right: 3px !important;
   }
-  .input-grp {
+  /*.input-grp {
     width: 215px !important;
+  }*/
+  .rechercher-border {
+    width:283px;
   }
   .title-font-size {
     font-size: 12px !important;
@@ -2382,9 +2388,6 @@ $color-red : #ea2336 ;
   .input-srch-col {
     padding-left: 6px !important;
     padding-right: 3px !important;
-  }
-  .input-grp {
-    width: 215px !important;
   }
   .title-font-size {
     font-size: 12px !important;

@@ -1579,7 +1579,9 @@
   .article-decouverte a, .dictionnaire a, .questions a, .complement a {
     display: inline-block; }
   .calage-menu-abonnees {
-    margin-right: -50px; } }
+    margin-right: -50px; }
+  .rechercher-border {
+    width: 350px; } }
 
 /* Large and down */
 @media screen and (max-width: 1200px) {
@@ -1588,8 +1590,11 @@
   .input-srch-col {
     padding-left: 6px !important;
     padding-right: 3px !important; }
-  .input-grp {
-    width: 215px !important; }
+  /*.input-grp {
+    width: 215px !important;
+  }*/
+  .rechercher-border {
+    width: 283px; }
   .title-font-size {
     font-size: 12px !important; }
   .advanced-search {
@@ -1597,8 +1602,6 @@
   .input-srch-col {
     padding-left: 6px !important;
     padding-right: 3px !important; }
-  .input-grp {
-    width: 215px !important; }
   .title-font-size {
     font-size: 12px !important; }
   .advanced-search {

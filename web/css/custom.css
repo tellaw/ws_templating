@@ -3606,13 +3606,9 @@ form #di-link {
 	height: auto;
 	background-color: white !important;
 	position: absolute;
-	padding-left: 20px;
-	padding-right: 20px;
 	top: 59px;
-	width:320px;
-	z-index:9
+	z-index:9;
 }
-
 #sticky-menu-document {
 	position: absolute;
 	z-index: 100;
