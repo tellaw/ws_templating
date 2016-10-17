@@ -3754,6 +3754,8 @@ div.tableDiv {
 	font-family: Arial;
 	overflow:auto;
 	margin-bottom:10px;
+	border: 1px solid #ddd;
+	margin: 0 55px;
 }
 div.tableDiv p {
 	margin:2px 0;
@@ -3840,39 +3842,38 @@ div.tableDiv .figure  {
 	width:100%;
 	text-align: center;
 }
-
+.opt-search {
+	text-align: right;
+	margin: 0 55px;
+}
+.opt-search input {
+	width: 150px;
+	font-size: 12px;
+	padding: 3px 5px;
+	background-color: #e2e1e1;
+	border: none;
+	color: #697277;
+}
 .medias-ops-choice {
-	margin:20px 0 0 !important;
+	margin: 0;
 	list-style: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 0;
 }
 
 .medias-ops-choice li {
 	display: block;
 	list-style: none;
-	float: right;
 	padding:0 !important;
 }
 #box-article-content .article .medias-ops-choice li a {
 	font-size:0px
 }
 .medias-ops-choice li a {
-	background:url('../images/icones.png') top left no-repeat transparent;
 	height: 32px;
 	display: inline-block;
-}
-.medias-ops-choice li .opt-zoom {
-	background-position:-112px -33px;
-	width:50px;
-}
-
-.medias-ops-choice li .opt-print {
-	background-position:-35px -35px;
-	width:50px;
-}
-
-.medias-ops-choice li .opt-excel {
-	background-position:-287px -33px;
-	width:50px;
 }
 
 .medias-ops-choice li .opt-image {
