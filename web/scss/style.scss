@@ -379,6 +379,7 @@ div.border-red {
   clear:both;
   display:inline-block;
   padding-left: 10px;
+  position: relative;
   p {
     font-size:14px!important;
     font-family: 'Myriad Pro', Arial, serif;
@@ -391,6 +392,17 @@ div.border-red {
     font-family: 'Myriad Pro', Arial, serif;
     color:#4d5356;
     min-height:auto!important;
+  }
+  .no-padding {
+    div {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    ul {
+      margin-left: 64px;
+      margin-top: 15px;
+    }
   }
   .description {
     font-size:13px!important;
@@ -468,7 +480,7 @@ div.border-red {
   background:url("../images/icone-recherche.png") no-repeat 0 0;
   width:35px;
   height: 26px;
-  margin:0 11px 0 0;
+  margin:0 11px 0 25px;
   padding:0;
   display:inline-block;
   top: 4px;
@@ -478,9 +490,8 @@ div.border-red {
   .ico-search {
     background:none;
     position:relative;
-    width: 46px;
     height: auto;
-    margin: 0 9px;
+    margin: 0 9px 0 25px;
   }
   .decalage_visu_real_bd {
     padding-left: 0;
@@ -490,8 +501,7 @@ div.border-red {
   .ico-search {
     background:none;
     position:relative;
-    margin:0;
-    width:46px;
+    margin:0 0 0 25px;
     height:auto;
   }
 }
@@ -605,9 +615,17 @@ div.border-red {
   }
 }
 
-input#actions-select-all {
-  margin-top:3px;
+input {
+  &#actions-select-all {
+    margin-top: 3px;
+  }
+  &.actions-select {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
 }
+
 .pagination {
   margin:0;
   li.pagination-left,
