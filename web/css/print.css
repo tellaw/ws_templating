@@ -13,7 +13,8 @@
 .pagination,
 #menu-smint,
 .bottom-bloc,
-#footer {
+#footer,
+.boxPub {
   display: none; }
 
 .inner-results .checkbox {
