@@ -3879,7 +3879,11 @@ div.tableDiv .figure  {
 	height: 32px;
 	display: inline-block;
 	font-size: 20px;
-	color:#4d5356;
+	color:#808080;
+}
+
+.medias-ops-choice li a:hover {
+	color:#EA2336;
 }
 
 .medias-ops-choice li .opt-image {
