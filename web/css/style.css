@@ -345,7 +345,8 @@ div.border-red {
     left: 0; }
   .inner-results .no-padding ul {
     margin-left: 64px;
-    margin-top: 15px; }
+    margin-top: 10px;
+    margin-bottom: 15px; }
   .inner-results .description {
     font-size: 13px !important;
     margin: -10px 0 0 45px;
@@ -517,7 +518,7 @@ input#actions-select-all {
 
 input.actions-select {
   position: absolute;
-  bottom: 0;
+  bottom: 7px;
   left: 0; }
 
 .pagination {
