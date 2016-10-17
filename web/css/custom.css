@@ -3748,7 +3748,10 @@ div.wrapperTable table.innerTable th {
 div.wrapperTable table.innerTable p {
 	margin: 0;
 }
-
+.bloc-media {
+	position: relative;
+	margin-bottom: 10px;
+}
 /* tables inline*/
 div.tableDiv {
 	font-family: Arial;
@@ -3858,9 +3861,10 @@ div.tableDiv .figure  {
 	margin: 0;
 	list-style: none;
 	position: absolute;
-	top: 0;
-	left: 0;
+	top: 25px;
+	left: 25px;
 	padding: 0;
+	background-color: #e2e1e1;
 }
 
 .medias-ops-choice li {
@@ -3874,16 +3878,18 @@ div.tableDiv .figure  {
 .medias-ops-choice li a {
 	height: 32px;
 	display: inline-block;
+	font-size: 20px;
+	color:#4d5356;
 }
 
 .medias-ops-choice li .opt-image {
 	background-position:-199px -33px;
-	width:50px;
+	width:30px;
 }
 
 .medias-ops-choice li .opt-image-petit {
 	background-position:-381px -35px;
-	width:50px;
+	width:30px;
 }
 
 .medias-ops-choice li.opt-search {
