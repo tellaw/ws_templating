@@ -3731,3 +3731,168 @@ form #di-link {
 	top: -10px;
 	left: 0;
 }
+
+.img-svg {
+	width: 92%;
+}
+
+div.wrapperTable table.innerTable {
+	width: inherit;
+}
+
+div.wrapperTable table.innerTable th {
+	font-weight: bold;
+	background-color: #F8F8F8;
+}
+
+div.wrapperTable table.innerTable p {
+	margin: 0;
+}
+
+/* tables inline*/
+div.tableDiv {
+	font-family: Arial;
+	overflow:auto;
+	margin-bottom:10px;
+}
+div.tableDiv p {
+	margin:2px 0;
+	font-size: 1.3em;
+	padding: 0;
+}
+div.tableDiv table p {
+	margin:2px 0;
+	font-size: 1.3em;
+	padding: 0 !important;
+}
+div.tableDiv table {
+	border-collapse:collapse;
+	margin: auto;
+	font-size: 0.7em;
+	border: 1px solid #000;
+	width: auto;
+}
+
+div.tableDiv table caption {
+	font-size: 1.3em;
+	font-weight: bolder;
+}
+
+div.tableDiv table tr:nth-child(odd){
+	background: #ffffff;
+	border-top:none;
+	padding: 0 3px;
+}
+
+div.tableDiv table tr:nth-child(even){
+	background: #f5f5f5;
+	border-top:none;
+	border-bottom:none;
+	padding: 0 3px;
+}
+
+div.tableDiv table tbody, div.tableDiv table thead, div.tableDiv table tfoot  { /* bordure pour le tbody complet (notamment pour
+								la première ligne dans le cas où il n'y a pas
+								de thead dans le tableau) */
+	border:1px solid #000;
+}
+div.tableDiv table tbody p, div.tableDiv table thead p, div.tableDiv table tfoot p { /* bordure pour le tbody complet (notamment pour
+								la première ligne dans le cas où il n'y a pas
+								de thead dans le tableau) */
+	text-align:inherit;
+	padding: 0 !important;
+}
+div.tableDiv table tbody td, div.tableDiv table thead th, div.tableDiv table tfoot td { /* pas de bordure-top - cela permet avec la
+																xsl de n'avoir que la bordure-bottom à
+																gérer */
+	border-bottom:1px solid black;
+	border-left:none;
+	border-right:1px solid black;
+	padding: 0 3px;
+}
+div.tableDiv table thead tr {
+	background-color:#e0e0e0 !important;
+	text-align: center;
+}
+div.tableDiv table th {
+	background-color:#e0e0e0 !important;
+	text-align: center;
+}
+.tabnote p {
+	margin-left: 20px;
+}
+
+.tableNumber {
+	font-weight: bold;
+}
+
+span.titlig {
+	font-weight: bold;
+	text-align: center;
+}
+
+div.tableDiv .contentConteneurB {
+
+	border:0px;
+}
+
+div.tableDiv .figure  {
+	width:100%;
+	text-align: center;
+}
+
+.medias-ops-choice {
+	margin:20px 0 0 !important;
+	list-style: none;
+}
+
+.medias-ops-choice li {
+	display: block;
+	list-style: none;
+	float: right;
+	padding:0 !important;
+}
+#box-article-content .article .medias-ops-choice li a {
+	font-size:0px
+}
+.medias-ops-choice li a {
+	background:url('../images/icones.png') top left no-repeat transparent;
+	height: 32px;
+	display: inline-block;
+}
+.medias-ops-choice li .opt-zoom {
+	background-position:-112px -33px;
+	width:50px;
+}
+
+.medias-ops-choice li .opt-print {
+	background-position:-35px -35px;
+	width:50px;
+}
+
+.medias-ops-choice li .opt-excel {
+	background-position:-287px -33px;
+	width:50px;
+}
+
+.medias-ops-choice li .opt-image {
+	background-position:-199px -33px;
+	width:50px;
+}
+
+.medias-ops-choice li .opt-image-petit {
+	background-position:-381px -35px;
+	width:50px;
+}
+
+.medias-ops-choice li.opt-search {
+	margin:7px 0 0 10px;
+}
+
+.medias-ops-choice input {
+	border: 2px solid #8c8c8c;
+	height:20px;
+	padding:0 5px;
+	border-radius:2px;
+	width: 152px;
+}
