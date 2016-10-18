@@ -10,7 +10,7 @@ jQuery(document).ready(function() {
             jQuery("body").append(ui);
         }
         var top = jQuery(this).offset().top;
-        var w = $(window).width() - 150;
+        var w = jQuery(window).width() - 150;
         jQuery("#media-popin").dialog({
             modal: true,
             title: jQuery(this).attr("title"),
