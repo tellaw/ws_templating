@@ -3903,3 +3903,28 @@ figure.contentConteneurB {
 	border: 1px solid #ddd;
 	margin: 0 55px;
 }
+figure.eqb {
+	margin: 10px 0 10px 0;
+	text-align: center;
+	vertical-align: middle;
+}
+figure.eqb img {
+	margin: 0;
+}
+div.encadre, div.ENCADRE {
+	border: 1px solid #ddd;
+	padding: 5px 15px;
+	margin: 15px 0;
+}
+a[data]:hover:after {
+	content: attr(data);
+	padding: 4px 8px;
+	color: rgba(0,0,0,0.5);
+	position: absolute;
+	left: 0;
+	top: 100%;
+	white-space: nowrap;
+	z-index: 2;
+	border-radius: 5px ;
+	background: rgba(0,0,0,0.5);
+}
