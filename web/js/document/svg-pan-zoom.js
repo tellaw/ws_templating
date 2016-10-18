@@ -1637,6 +1637,8 @@ module.exports = {
       element = elementOrSelector
     }
 
+    console.log(element);
+
     if (element.tagName.toLowerCase() === 'svg') {
       svg = element;
     } else {
