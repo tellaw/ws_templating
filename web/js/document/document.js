@@ -6,14 +6,14 @@ jQuery(document).ready(function() {
     // gestion des popins media
     jQuery("a.media-popin").click(function() {
         if (!jQuery("#media-popin").html()) {
-            var ui = '<div id="media-popin" role="dialog" style="display:none;z-index:1001;">' + '<iframe sandbox="allow-same-origin allow-scripts allow-popups allow-forms" frameborder="0" style="width:100%;height:98%;" src=""></iframe>' + '</div>';
+            var ui = '<div id="media-popin" role="dialog" style="display:none;z-index:1001;">' + '<iframe sandbox="allow-scripts" frameborder="0" style="width:100%;height:98%;" src=""></iframe>' + '</div>';
             jQuery("body").append(ui);
         }
         var top = jQuery(this).offset().top;
         jQuery("#media-popin").dialog({
             modal: true,
             title: jQuery(this).attr("title"),
-            width: 960,
+            width: 1000,
             closeText: "X",
             open: function() {
                 window.scrollTo(0, top - jQuery(window).height() / 2);
@@ -26,15 +26,16 @@ jQuery(document).ready(function() {
         });
         jQuery("#media-popin").dialog("widget").attr("id", "design-media-popin").css("position", "absolute");
         jQuery("#media-popin iframe").attr("src", jQuery(this).attr("href"));
+        var margeTop = jQuery(window).height() / 2.5;
         if(top > "420"){
-            jQuery("#media-popin").dialog("widget").css("top", top - jQuery(window).height() / 3);
+            jQuery("#media-popin").dialog("widget").css("top", top - margeTop);
         }
         else {
-            jQuery("#media-popin").dialog("widget").css("top", "150px");
+            jQuery("#media-popin").dialog("widget").css("top", "50px");
         }
 
         jQuery("#design-media-popin").css("left", ((jQuery(window).width()-jQuery("#design-media-popin").width())/2));
-        jQuery("#design-media-popin").css("height", "295px");
+        jQuery("#design-media-popin").css("height", (jQuery(window).height() - margeTop / 2));
         return false;
     });
 });
