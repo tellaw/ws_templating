@@ -713,3 +713,9 @@ input.actions-select {
 
 .ttre {
   margin: 0; }
+
+.download-page {
+  margin: auto 30%; }
+  .download-page img {
+    border: 1px solid #aaaeb1;
+    width: 255px; }
