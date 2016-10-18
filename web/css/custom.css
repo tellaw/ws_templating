@@ -3881,20 +3881,11 @@ div.tableDiv .figure  {
 	display: inline-block;
 	font-size: 20px;
 	color:#808080;
+	width: 30px;
 }
 
 .medias-ops-choice li a:hover {
 	color:#EA2336;
-}
-
-.medias-ops-choice li .opt-image {
-	background-position:-199px -33px;
-	width:30px;
-}
-
-.medias-ops-choice li .opt-image-petit {
-	background-position:-381px -35px;
-	width:30px;
 }
 
 .medias-ops-choice li.opt-search {
@@ -3907,4 +3898,8 @@ div.tableDiv .figure  {
 	padding:0 5px;
 	border-radius:2px;
 	width: 152px;
+}
+figure {
+	border: 1px solid #ddd;
+	margin: 0 55px;
 }
