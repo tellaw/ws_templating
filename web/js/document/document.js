@@ -10,10 +10,11 @@ jQuery(document).ready(function() {
             jQuery("body").append(ui);
         }
         var top = jQuery(this).offset().top;
+        var w = $(window).width() - 150;
         jQuery("#media-popin").dialog({
             modal: true,
             title: jQuery(this).attr("title"),
-            width: 1000,
+            width: w,
             closeText: "X",
             open: function() {
                 window.scrollTo(0, top - jQuery(window).height() / 2);
