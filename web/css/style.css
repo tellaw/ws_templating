@@ -719,3 +719,5 @@ input.actions-select {
   .download-page img {
     border: 1px solid #aaaeb1;
     width: 255px; }
+  .download-page ul a:hover {
+    text-decoration: underline; }
