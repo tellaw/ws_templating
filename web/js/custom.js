@@ -256,7 +256,7 @@ jQuery(document).ready(function() {
     };
 
     // gestion des ancres pour les onglets
-    if (window.location.href.indexOf("#") > 0) {
+    if (window.location.href.indexOf("#") > -1) {
         var anchor = window.location.href.substring(window.location.href.indexOf("#")+1, window.location.href.length);
         anchor = anchor.substring(anchor.indexOf("?"), anchor.length);
         jQuery("#"+anchor+"_link").click();
