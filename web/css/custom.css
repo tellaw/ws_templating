@@ -1480,6 +1480,9 @@ p.cellule-list {
 .tab-content-article .tab-bg {
 	margin:70px 0 0 0;
 }
+.tab-content-article .tab-bg#details {
+	margin:0;
+}
 .tab-content-article #offre-commerciale.tab-bg {
 	margin:0;
 }
