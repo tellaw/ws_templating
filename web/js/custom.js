@@ -280,11 +280,13 @@ jQuery(document).ready(function() {
                 jQuery(".col-droite div.pub-bloc div.freezone").hide();
                 jQuery(".col-droite-2").hide();
                 jQuery(".col-droite-4").show();
+                jQuery(".barre-top").show();
             }
             else {
                 jQuery(".col-droite div.pub-bloc div.freezone").show();
                 jQuery(".col-droite-2").show();
                 jQuery(".col-droite-4").show();
+                jQuery(".barre-top").show();
             }
             //ajout de l'ancre dans l'url
             if (window.location.href.indexOf("#") > 0) {
