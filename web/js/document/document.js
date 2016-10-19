@@ -39,6 +39,14 @@ jQuery(document).ready(function() {
         jQuery("#design-media-popin").css("height", (jQuery(window).height() - margeTop / 2));
         return false;
     });
+
+    // gestion tooltip ref bibli
+    jQuery('[data-title]').each(function() {
+        jQuery(this).attr('data-toggle', 'tooltip').attr('data-placement', 'bottom');
+    });
+    jQuery('[data-toggle="tooltip"]').tooltip({
+        delay: {show: 0, hide: 2000}
+    });
 });
 
 function highlightInTableau(area,word) {
