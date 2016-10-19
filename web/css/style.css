@@ -762,10 +762,24 @@ input.actions-select {
   .jcorgFilterTextParent .jcorgFilterTextChild {
     line-height: 17px; }
 
-.download-page {
-  margin: auto 30%; }
-  .download-page img {
-    border: 1px solid #aaaeb1;
-    width: 255px; }
-  .download-page ul a:hover {
-    text-decoration: underline; }
+.download-page form {
+  margin-top: 30px; }
+
+.download-page label {
+  width: 300px;
+  line-height: normal; }
+
+.download-page img {
+  border: 1px solid #aaaeb1;
+  width: 255px; }
+
+.download-page input {
+  width: 255px; }
+
+.download-page .form-error {
+  display: inline-block;
+  margin: 10px;
+  color: #EA2336; }
+
+.download-page ul a:hover {
+  text-decoration: underline; }

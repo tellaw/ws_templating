@@ -1078,6 +1078,8 @@
 
 /* Medium and up */
 @media screen and (min-width: 992px) {
+  .download-page {
+    margin: auto 20%; }
   .br_tablet {
     display: none; }
   .tag-box--right {
