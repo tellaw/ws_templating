@@ -274,6 +274,7 @@ jQuery(document).ready(function() {
             if (anchor == "#offre-commerciale" || anchor == "#details") {
                 jQuery(".col-droite-3").hide();
                 jQuery(".col-droite-4").hide();
+                jQuery(".barre-top").hide();
             }
             else if (anchor != "#documents" && anchor != "#presentation" && anchor != "#expert") {
                 jQuery(".col-droite div.pub-bloc div.freezone").hide();
