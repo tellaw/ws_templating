@@ -3916,15 +3916,24 @@ div.encadre, div.ENCADRE {
 	padding: 5px 15px;
 	margin: 15px 0;
 }
-a[data]:hover:after {
-	content: attr(data);
-	padding: 4px 8px;
-	color: rgba(0,0,0,0.5);
-	position: absolute;
-	left: 0;
-	top: 100%;
-	white-space: nowrap;
-	z-index: 2;
-	border-radius: 5px ;
-	background: rgba(0,0,0,0.5);
+.fa-external-link {
+	padding: 0 3px 0 5px;
+	font-weight: bold;
+}
+.tooltip {
+	border: 1px solid #000;
+	background: #FFF;
+	color:#000;
+}
+.tooltip-arrow {
+	display: none;
+}
+.tooltip-inner {
+	background: #FFF;
+	color:#000;
+	border-top: 1px solid #697277;
+	border-bottom: 1px solid #697277;
+	border-radius: 0;
+	padding:10px;
+	margin: 10px;
 }
