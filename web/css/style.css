@@ -495,14 +495,17 @@ div.border-red {
 .box .titre-contenu a {
   font-family: myriad-pro-semi-bold; }
 
-.bg-sommaire .marge-l_40 {
-  margin-left: 40px; }
-
-.bg-sommaire .gras {
-  padding-top: 5px;
-  display: inline-block; }
-  .bg-sommaire .gras:first-child {
-    padding-top: 0; }
+.bg-sommaire {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #c6c6c6; }
+  .bg-sommaire .marge-l_40 {
+    margin-left: 40px; }
+  .bg-sommaire .gras {
+    padding-top: 5px;
+    display: inline-block; }
+    .bg-sommaire .gras:first-child {
+      padding-top: 0; }
 
 .actu .ico-search {
   background-position: 0 -91px; }
