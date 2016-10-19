@@ -270,7 +270,7 @@ jQuery(document).ready(function() {
         var anchor = jQuery(this).attr("href");
 
         if (anchor.indexOf("#") > 0) {
-            console.log(anchor);
+            console.log(anchor.indexOf("#"));
             //affichage ou non de la freezone en col de droite
             if (anchor == "#offre-commerciale" || anchor == "#details") {
                 jQuery(".col-droite-3").hide();
