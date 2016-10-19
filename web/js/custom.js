@@ -263,6 +263,7 @@ jQuery(document).ready(function() {
         if (anchor != "documents" && anchor != "presentation" && anchor != "expert") {
             jQuery(".col-droite div.pub-bloc div.freezone").hide();
             jQuery(".col-droite-2").hide();
+            jQuery(".barre-top").hide();
         }
     }
     jQuery("#menu-smint > .nav-tabs a").on("click", function(){
