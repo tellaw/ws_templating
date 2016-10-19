@@ -268,9 +268,8 @@ jQuery(document).ready(function() {
     jQuery("#menu-smint > .nav-tabs a").on("click", function(){
         var link = window.location.href;
         var anchor = jQuery(this).attr("href");
-
+        console.log(anchor.indexOf("#"));
         if (anchor.indexOf("#") > 0) {
-            console.log(anchor.indexOf("#"));
             //affichage ou non de la freezone en col de droite
             if (anchor == "#offre-commerciale" || anchor == "#details") {
                 jQuery(".col-droite-3").hide();
