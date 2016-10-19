@@ -478,15 +478,31 @@ div.border-red {
   font-size: 17px;
   font-family: myriad-pro-semi-bold; }
 
+.box .align-r {
+  display: none; }
+
 .box .desc a:hover {
   color: #EA2336;
   text-decoration: underline; }
 
+.box .titre-contenu, .box .marge-l_20 {
+  margin-top: 20px;
+  margin-bottom: 5px; }
+  .box .titre-contenu a, .box .marge-l_20 a {
+    color: #EA2336;
+    font-size: 15px; }
+
 .box .titre-contenu a {
-  color: #EA2336;
-  margin-bottom: 12px;
-  font-size: 15px;
   font-family: myriad-pro-semi-bold; }
+
+.bg-sommaire .marge-l_40 {
+  margin-left: 40px; }
+
+.bg-sommaire .gras {
+  padding-top: 5px;
+  display: inline-block; }
+  .bg-sommaire .gras:first-child {
+    padding-top: 0; }
 
 .actu .ico-search {
   background-position: 0 -91px; }
@@ -725,9 +741,23 @@ input.actions-select {
   text-align: center; }
 
 .highlight {
-  background: #EA2336;
+  background: #697277;
   color: #fff;
-  padding: 2px; }
+  padding: 1px 2px 0; }
+
+.jcorgFilterTextParent {
+  margin: 0 0 15px 0;
+  font-size: 13px; }
+  .jcorgFilterTextParent p {
+    margin: 0;
+    line-height: 17px; }
+    .jcorgFilterTextParent p a {
+      text-transform: uppercase; }
+      .jcorgFilterTextParent p a:hover {
+        color: #ea2336;
+        text-decoration: underline; }
+  .jcorgFilterTextParent .jcorgFilterTextChild {
+    line-height: 17px; }
 
 .download-page {
   margin: auto 30%; }
