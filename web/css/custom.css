@@ -3937,3 +3937,6 @@ div.encadre, div.ENCADRE {
 	padding:10px;
 	margin: 10px;
 }
+.tooltip.in {
+	opacity:1;
+}

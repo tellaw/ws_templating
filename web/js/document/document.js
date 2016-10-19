@@ -61,14 +61,6 @@ function highlightInTableau(area,word) {
     }
 }
 
-function inlineSearch(word) {
-    jQuery("#corps-article").removeHighlight();
-    jQuery.get( "/lucy-recherche-inline-ajax.do?uid=${pageData.encyclopedia.uid}&ref=${pageData.encyclopedia.uid.id}&version=${pageData.encyclopedia.uid.version!0}&query="+encodeURIComponent(word), function( data ) {
-        jQuery( "#inlineResults" ).html( data );
-        jQuery( "#id-rechercher-div" ).show();
-    });
-}
-
 function highlightAndScroll(word) {
     if (word!="") {
         jQuery("#corps-article").highlight(word, true);

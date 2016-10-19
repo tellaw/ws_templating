@@ -470,6 +470,24 @@ div.border-red {
 .fiche .ico-search:hover {
   background-position: -39px -59px; }
 
+.box #top-toc .ttre {
+  margin: 0;
+  color: #EA2336;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  font-size: 17px;
+  font-family: myriad-pro-semi-bold; }
+
+.box .desc a:hover {
+  color: #EA2336;
+  text-decoration: underline; }
+
+.box .titre-contenu a {
+  color: #EA2336;
+  margin-bottom: 12px;
+  font-size: 15px;
+  font-family: myriad-pro-semi-bold; }
+
 .actu .ico-search {
   background-position: 0 -91px; }
 
@@ -710,9 +728,6 @@ input.actions-select {
   background: #EA2336;
   color: #fff;
   padding: 2px; }
-
-.ttre {
-  margin: 0; }
 
 .download-page {
   margin: auto 30%; }
