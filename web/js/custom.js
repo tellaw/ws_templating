@@ -256,7 +256,7 @@ jQuery(document).ready(function() {
     };
 
     // gestion des ancres pour les onglets
-    if (window.location.href.indexOf(".html") > -1){
+    /*if (window.location.href.indexOf(".html") > -1){
         if (window.location.href.indexOf("#") > -1) {
             var anchor = window.location.href.substring(window.location.href.indexOf("#")+1, window.location.href.length);
             anchor = anchor.substring(anchor.indexOf("?"), anchor.length);
@@ -273,7 +273,7 @@ jQuery(document).ready(function() {
     }
     else {
         jQuery("#corps-article").removeClass("active");
-    }
+    }*/
 
     jQuery("#menu-smint > .nav-tabs a").on("click", function(){
         var link = window.location.href;
