@@ -3917,10 +3917,20 @@ figure.eqb {
 figure.eqb img {
 	margin: 0;
 }
+.contentEncart {
+	margin: 25px 20px;
+	padding: 5px;
+}
 div.encadre, div.ENCADRE {
 	border: 1px solid #ddd;
-	padding: 5px 15px;
-	margin: 15px 0;
+}
+div.encadre p, div.ENCADRE p {
+	padding:15px 10px;
+}
+div.exemple p, div.EXEMPLE p {
+	border-left: 3px solid;
+	padding-left: 15px;
+	margin: 0;
 }
 .fa-external-link {
 	padding: 0 3px 0 5px;
