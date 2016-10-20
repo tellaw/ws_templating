@@ -259,10 +259,8 @@ jQuery(document).ready(function() {
     if (window.location.href.indexOf("#") > -1) {
         var anchor = window.location.href.substring(window.location.href.indexOf("#")+1, window.location.href.length);
         anchor = anchor.substring(anchor.indexOf("?"), anchor.length);
-        console.log(anchor);
         jQuery("#"+anchor+"_link").click();
-        if (anchor != "documents" && anchor != "presentation" && anchor != "expert" && anchor != "#meme-sujet" && anchor != "#auteurs" && anchor != "") {
-            console.log("ici");
+        if (anchor != "documents" && anchor != "presentation" && anchor != "expert" && anchor != "meme-sujet" && anchor != "auteurs" && anchor != "") {
             jQuery(".col-droite div.pub-bloc div.freezone").hide();
             jQuery(".col-droite-2").hide();
             jQuery(".barre-top").hide();
