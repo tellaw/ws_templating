@@ -256,25 +256,20 @@ jQuery(document).ready(function() {
     };
 
     // gestion des ancres pour les onglets
-    /*if (window.location.href.indexOf(".html") > -1){
-        if (window.location.href.indexOf("#") > -1) {
-            var anchor = window.location.href.substring(window.location.href.indexOf("#")+1, window.location.href.length);
-            anchor = anchor.substring(anchor.indexOf("?"), anchor.length);
-            jQuery("#"+anchor+"_link").click();
-            if (anchor != "documents" && anchor != "presentation" && anchor != "expert" && anchor != "biblio" && anchor != "meme-sujet" && anchor != "auteurs" && anchor != "") {
-                jQuery(".col-droite div.pub-bloc div.freezone").hide();
-                jQuery(".col-droite-2").hide();
-                jQuery(".barre-top").hide();
-            }
-            else {
-                jQuery("#corps-article").removeClass("active");
-            }
+    // gestion des ancres pour les onglets
+    if (window.location.href.indexOf("#") > -1) {
+        var anchor = window.location.href.substring(window.location.href.indexOf("#")+1, window.location.href.length);
+        anchor = anchor.substring(anchor.indexOf("?"), anchor.length);
+        jQuery("#"+anchor+"_link").click();
+        if (anchor != "documents" && anchor != "presentation" && anchor != "expert" && anchor != "biblio" && anchor != "meme-sujet" && anchor != "auteurs" && anchor != "") {
+            jQuery(".col-droite div.pub-bloc div.freezone").hide();
+            jQuery(".col-droite-2").hide();
+            jQuery(".barre-top").hide();
         }
     }
-    else {
+    else if (window.location.href.indexOf("#") == -1 && window.location.href.indexOf(".html") == -1) {
         jQuery("#corps-article").removeClass("active");
-    }*/
-
+    }
     jQuery("#menu-smint > .nav-tabs a").on("click", function(){
         var link = window.location.href;
         var anchor = jQuery(this).attr("href");
