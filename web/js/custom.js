@@ -261,7 +261,8 @@ jQuery(document).ready(function() {
         anchor = anchor.substring(anchor.indexOf("?"), anchor.length);
         console.log(anchor);
         jQuery("#"+anchor+"_link").click();
-        if (anchor != "documents" && anchor != "presentation" && anchor != "expert" && anchor != "#meme-sujet" && anchor != "#auteurs") {
+        if (anchor != "documents" && anchor != "presentation" && anchor != "expert" && anchor != "#meme-sujet" && anchor != "#auteurs" && anchor != "") {
+            console.log("ici");
             jQuery(".col-droite div.pub-bloc div.freezone").hide();
             jQuery(".col-droite-2").hide();
             jQuery(".barre-top").hide();
