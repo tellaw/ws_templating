@@ -266,9 +266,9 @@ jQuery(document).ready(function() {
                 jQuery(".col-droite-2").hide();
                 jQuery(".barre-top").hide();
             }
-        }
-        else {
-            jQuery("#corps-article").removeClass("active");
+            else {
+                jQuery("#corps-article").removeClass("active");
+            }
         }
     }
     else {
