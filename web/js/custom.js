@@ -335,7 +335,7 @@ jQuery(document).ready(function() {
             width: 780,
             closeText: "X",
             open: function() {
-                window.scrollTo(0, top - jQuery(window).height() / 2);
+                window.scrollTo(0, 0);
                 return false;
             },
             close: function() {

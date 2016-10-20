@@ -3527,6 +3527,9 @@ form #di-link {
 }
 .formError {
 	left: 140px!important;
+	width: 255px;
+	color: #EA2336;
+	font-size: 12px;
 }
 .back {
 	text-decoration: underline;
