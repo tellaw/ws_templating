@@ -269,6 +269,10 @@ jQuery(document).ready(function() {
             jQuery("#corps-article").removeClass("active");
         }
     }
+    else {
+        jQuery("#corps-article").removeClass("active");
+    }
+
     jQuery("#menu-smint > .nav-tabs a").on("click", function(){
         var link = window.location.href;
         var anchor = jQuery(this).attr("href");
