@@ -743,10 +743,63 @@ input.actions-select {
 .loading-leads {
   text-align: center; }
 
-.highlight {
+.highlight, .mark-translation {
   background: #697277;
   color: #fff;
   padding: 1px 2px 0; }
+
+.mark-translation {
+  font-weight: bold;
+  position: relative; }
+  .mark-translation .mark-traduction-hover {
+    display: none; }
+    .mark-translation .mark-traduction-hover p {
+      margin: 0; }
+      .mark-translation .mark-traduction-hover p a {
+        border: 1px solid #697277;
+        padding: 5px 6px;
+        display: inline-block;
+        margin: 5px 0 0 0;
+        letter-spacing: 1px;
+        font-size: 12px; }
+    .mark-translation .mark-traduction-hover ul {
+      border-top: 1px dotted #697277;
+      border-bottom: 1px dotted #697277;
+      padding-top: 5px;
+      padding-bottom: 5px; }
+      .mark-translation .mark-traduction-hover ul li span {
+        display: inline-block;
+        height: 25px;
+        font-size: 12px;
+        font-style: italic; }
+      .mark-translation .mark-traduction-hover ul li .french_flag {
+        background: url("/images/dictionary/flag_fr.png") no-repeat 0 0;
+        margin: 0;
+        padding: 0 0 0 35px; }
+      .mark-translation .mark-traduction-hover ul li .english_flag {
+        background: url("/images/dictionary/flag_uk.png") no-repeat 0 0;
+        margin: 0;
+        padding: 0 0 0 35px; }
+      .mark-translation .mark-traduction-hover ul li .german_flag {
+        background: url("/images/dictionary/flag_de.png") no-repeat 0 0;
+        margin: 0;
+        padding: 0 0 0 35px; }
+      .mark-translation .mark-traduction-hover ul li .spanish_flag {
+        background: url("/images/dictionary/flag_es.png") no-repeat 0 0;
+        margin: 0;
+        padding: 0 0 0 35px; }
+  .mark-translation:hover .mark-traduction-hover {
+    display: block;
+    background: #FFF;
+    border: 1px solid #ebebeb;
+    position: absolute;
+    top: 17px;
+    width: 260px;
+    z-index: 9999;
+    border: 1px solid #697277;
+    background: #FFF;
+    color: #000;
+    padding: 10px; }
 
 .jcorgFilterTextParent {
   margin: 0 0 15px 0;

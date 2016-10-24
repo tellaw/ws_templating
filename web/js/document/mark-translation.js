@@ -101,11 +101,11 @@
 	            .replace( re, '$1<' + defaultTagName + ' class="' + hClass + '">$2'+
 		            '<div class="mark-traduction-hover">' +
 	        		'<p>Traductions</p>' +
-	        		'<ul>' +
+	        		'<ul class="list-unstyled">' +
 	        		//'<li><span class="french_flag">$2</span></li>' +
 	        		translationText +
 	        		'</ul>' + 
-	        		'<p><a href="' + link + '">Dictionnaire technique multilingue</a></p></div></' + defaultTagName +'>$3' );
+	        		'<p><a href="' + link + '"><i class="fa fa-globe"></i> Dictionnaire technique multilingue</a></p></div></' + defaultTagName +'>$3' );
 	            if ( output !== this.nodeValue ) {
 	                $( this ).wrap( "<p></p>" ).parent()
 	                    .html( output ).contents().unwrap();
