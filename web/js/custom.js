@@ -268,6 +268,9 @@ jQuery(document).ready(function() {
                 jQuery("section#"+anchor).css({margin: "25px 0 0 0"});
             }*/
         }
+        else  if (anchor == "détails") {
+            jQuery(".col-droite-4").hide();
+        }
     }
     else if (window.location.href.indexOf("#") == -1 && window.location.href.indexOf(".html") == -1) {
         jQuery("#corps-article").removeClass("active");
