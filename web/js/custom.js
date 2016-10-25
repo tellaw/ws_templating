@@ -263,10 +263,10 @@ jQuery(document).ready(function() {
         if (anchor != "documents" && anchor != "presentation" && anchor != "expert" && anchor != "") {
             jQuery(".col-droite div.pub-bloc div.freezone").hide();
             jQuery(".col-droite-2").hide();
-            jQuery(".barre-top").hide();
-            if (anchor == "auteurs" || anchor == "meme-sujet") {
+            //jQuery(".barre-top").hide();
+            /*if (anchor == "auteurs" || anchor == "meme-sujet" || anchor == "biblio") {
                 jQuery("section#"+anchor).css({margin: "25px 0 0 0"});
-            }
+            }*/
         }
     }
     else if (window.location.href.indexOf("#") == -1 && window.location.href.indexOf(".html") == -1) {
@@ -281,24 +281,24 @@ jQuery(document).ready(function() {
             if (anchor == "#offre-commerciale" || anchor == "#details") {
                 jQuery(".col-droite-3").hide();
                 jQuery(".col-droite-4").hide();
-                jQuery(".barre-top").hide();
+                //jQuery(".barre-top").hide();
             }
-            else if (anchor == "#auteurs" || anchor == "#meme-sujet") {
+            else if (anchor == "#auteurs" || anchor == "#meme-sujet" || anchor == "#biblio") {
                 jQuery(".col-droite-4").show();
-                jQuery(".barre-top").hide();
-                jQuery("section"+anchor).css({margin: "25px 0 0 0"});
+                //jQuery(".barre-top").hide();
+                //jQuery("section"+anchor).css({margin: "25px 0 0 0"});
             }
             else if (anchor != "#documents" && anchor != "#presentation" && anchor != "#expert") {
                 jQuery(".col-droite div.pub-bloc div.freezone").hide();
                 jQuery(".col-droite-2").hide();
                 jQuery(".col-droite-4").show();
-                jQuery(".barre-top").show();
+                //jQuery(".barre-top").show();
             }
             else {
                 jQuery(".col-droite div.pub-bloc div.freezone").show();
                 jQuery(".col-droite-2").show();
                 jQuery(".col-droite-4").show();
-                jQuery(".barre-top").show();
+                //jQuery(".barre-top").show();
             }
             //ajout de l'ancre dans l'url
             if (window.location.href.indexOf("#") > 0) {
