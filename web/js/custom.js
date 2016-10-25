@@ -268,7 +268,7 @@ jQuery(document).ready(function() {
                 jQuery("section#"+anchor).css({margin: "25px 0 0 0"});
             }*/
         }
-        else  if (anchor == "détails") {
+        else if (anchor == "details") {
             jQuery(".col-droite-4").hide();
         }
     }
