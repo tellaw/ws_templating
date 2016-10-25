@@ -256,7 +256,6 @@ jQuery(document).ready(function() {
     };
 
     // gestion des ancres pour les onglets
-    // gestion des ancres pour les onglets
     if (window.location.href.indexOf("#") > -1) {
         var anchor = window.location.href.substring(window.location.href.indexOf("#")+1, window.location.href.length);
         anchor = anchor.substring(anchor.indexOf("?"), anchor.length);
@@ -284,7 +283,7 @@ jQuery(document).ready(function() {
             else if (anchor == "#auteurs" || anchor == "#meme-sujet") {
                 jQuery(".col-droite-4").show();
                 jQuery(".barre-top").hide();
-                jQuery(anchor).css({margin: "25px 0 0 0"});
+                jQuery(""+anchor+"").css({margin: "25px 0 0 0"});
             }
             else if (anchor != "#documents" && anchor != "#presentation" && anchor != "#expert") {
                 jQuery(".col-droite div.pub-bloc div.freezone").hide();
