@@ -546,6 +546,20 @@ div.border-red {
   .ico-search:hover {
     background-position:-39px -29px;
   }
+  &.zoning {
+    &:hover {
+      a {
+        p {
+          span {
+            color:#EA2336!important;
+            &.ico-search {
+              background-position: -39px -29px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 .fiche {
   .ico-search {

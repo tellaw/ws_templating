@@ -3592,7 +3592,8 @@ form #di-link {
 }
 .content-article a:hover,
 .barre-top a:hover,
-.pasword-forgotten:hover {
+.pasword-forgotten:hover,
+.tags a:hover {
 	color:#ea2336;
 	text-decoration: underline;
 }

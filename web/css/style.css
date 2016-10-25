@@ -462,6 +462,11 @@ div.border-red {
 .article .ico-search:hover {
   background-position: -39px -29px; }
 
+.article.zoning:hover a p span {
+  color: #EA2336 !important; }
+  .article.zoning:hover a p span.ico-search {
+    background-position: -39px -29px; }
+
 .fiche .ico-search {
   background-position: 0 -59px; }
   .fiche .ico-search.red {
