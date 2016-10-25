@@ -261,7 +261,7 @@ jQuery(document).ready(function() {
         var anchor = window.location.href.substring(window.location.href.indexOf("#")+1, window.location.href.length);
         anchor = anchor.substring(anchor.indexOf("?"), anchor.length);
         jQuery("#"+anchor+"_link").click();
-        if (anchor != "documents" && anchor != "presentation" && anchor != "expert" && anchor != "biblio" && anchor != "meme-sujet" && anchor != "auteurs" && anchor != "") {
+        if (anchor != "documents" && anchor != "presentation" && anchor != "expert" && anchor != "") {
             jQuery(".col-droite div.pub-bloc div.freezone").hide();
             jQuery(".col-droite-2").hide();
             jQuery(".barre-top").hide();
@@ -281,7 +281,7 @@ jQuery(document).ready(function() {
                 jQuery(".col-droite-4").hide();
                 jQuery(".barre-top").hide();
             }
-            else if (anchor == "auteurs" || anchor == "#meme-sujet" || anchor == "#details") {
+            else if (anchor == "#auteurs" || anchor == "#meme-sujet" || anchor == "#details") {
                 jQuery(".barre-top").hide();
             }
             else if (anchor != "#documents" && anchor != "#presentation" && anchor != "#expert") {
