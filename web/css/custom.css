@@ -1481,9 +1481,9 @@ p.cellule-list {
 .tab-content-article .tab-bg {
 	margin:70px 0 0 0;
 }
-.tab-content-article .tab-bg#details {
+/*.tab-content-article .tab-bg#details {
 	margin:0;
-}
+}*/
 .tab-content-article #offre-commerciale.tab-bg {
 	margin:0;
 }
@@ -3595,6 +3595,9 @@ form #di-link {
 .pasword-forgotten:hover {
 	color:#ea2336;
 	text-decoration: underline;
+}
+.content-article > div {
+	margin: 0 0 20px 0;
 }
 .tab-content-article div:first-child .aplus-amoins {
 	display: none;
