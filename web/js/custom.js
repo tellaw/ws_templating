@@ -260,7 +260,7 @@ jQuery(document).ready(function() {
         var anchor = window.location.href.substring(window.location.href.indexOf("#")+1, window.location.href.length);
         anchor = anchor.substring(anchor.indexOf("?"), anchor.length);
         jQuery("#"+anchor+"_link").click();
-        if (anchor != "documents" && anchor != "presentation" && anchor != "expert" && anchor != "") {
+        if (anchor != "documents" && anchor != "presentation" && anchor != "expert" && anchor != "" && anchor != "details") {
             jQuery(".col-droite div.pub-bloc div.freezone").hide();
             jQuery(".col-droite-2").hide();
             //jQuery(".barre-top").hide();
