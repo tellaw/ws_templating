@@ -284,7 +284,7 @@ jQuery(document).ready(function() {
             else if (anchor == "#auteurs" || anchor == "#meme-sujet") {
                 jQuery(".col-droite-4").show();
                 jQuery(".barre-top").hide();
-                jQuery("#"+anchor).css({margin: "25px 0 0 0"});
+                jQuery(anchor).css({margin: "25px 0 0 0"});
             }
             else if (anchor != "#documents" && anchor != "#presentation" && anchor != "#expert") {
                 jQuery(".col-droite div.pub-bloc div.freezone").hide();
