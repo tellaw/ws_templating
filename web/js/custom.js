@@ -281,6 +281,7 @@ jQuery(document).ready(function() {
                 jQuery(".barre-top").hide();
             }
             else if (anchor == "#auteurs" || anchor == "#meme-sujet") {
+                console.log("section"+anchor);
                 jQuery(".col-droite-4").show();
                 jQuery(".barre-top").hide();
                 jQuery("section"+anchor).css({margin: "25px 0 0 0"});
