@@ -264,9 +264,9 @@ jQuery(document).ready(function() {
             jQuery(".col-droite div.pub-bloc div.freezone").hide();
             jQuery(".col-droite-2").hide();
             jQuery(".barre-top").hide();
-        }
-        else if (anchor == "auteurs" || anchor == "meme-sujet") {
-            jQuery("section#"+anchor).css({margin: "25px 0 0 0"});
+            if (anchor == "auteurs" || anchor == "meme-sujet") {
+                jQuery("section#"+anchor).css({margin: "25px 0 0 0"});
+            }
         }
     }
     else if (window.location.href.indexOf("#") == -1 && window.location.href.indexOf(".html") == -1) {
