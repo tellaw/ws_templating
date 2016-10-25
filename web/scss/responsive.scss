@@ -1809,7 +1809,6 @@ $color-red : #ea2336 ;
       display: inline-block;
     }
   }
-
   .domaine-secteur-box {
     h5 {
       margin-left: 110px;
@@ -1828,6 +1827,9 @@ $color-red : #ea2336 ;
   }
   .padding-80 {
     padding-left: 150px !important ;
+  }
+  .module-interception .cas-login {
+    border-right:1px solid #C6C6C6;
   }
 }
 

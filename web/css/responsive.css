@@ -1219,7 +1219,9 @@
   .text-align {
     text-align: left !important; }
   .padding-80 {
-    padding-left: 150px !important; } }
+    padding-left: 150px !important; }
+  .module-interception .cas-login {
+    border-right: 1px solid #C6C6C6; } }
 
 /* Tablette portrait à petit desktop */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
