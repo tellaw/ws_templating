@@ -282,6 +282,7 @@ jQuery(document).ready(function() {
                 jQuery(".barre-top").hide();
             }
             else if (anchor == "#auteurs" || anchor == "#meme-sujet" || anchor == "#details") {
+                jQuery(".col-droite-4").show();
                 jQuery(".barre-top").hide();
             }
             else if (anchor != "#documents" && anchor != "#presentation" && anchor != "#expert") {
