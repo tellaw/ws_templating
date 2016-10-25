@@ -69,5 +69,6 @@ function highlightAndScroll(word) {
     if (word!="") {
         jQuery("#corps-article").highlight(word, true);
         jQuery("#sommaire").highlight(word, true);
+        jQuery("#presentation").highlight(word, true);
     }
 }
