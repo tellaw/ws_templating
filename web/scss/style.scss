@@ -994,8 +994,6 @@ input {
   &:hover {
     .mark-traduction-hover {
       display: block;
-      background: #FFF;
-      border: 1px solid #ebebeb;
       position: absolute;
       top: 17px;
       width: 260px;
@@ -1004,6 +1002,7 @@ input {
       background: #FFF;
       color:#000;
       padding:10px;
+      left: 0;
     }
   }
 }
