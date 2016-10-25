@@ -3482,6 +3482,7 @@ form textarea {
 }
 form input[type="checkbox"],
 form input[type="checkbox"] + label,
+form .pasword-remember,
 form input[type="radio"],
 form .client > label {
 	width:auto;
