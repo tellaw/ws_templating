@@ -2611,6 +2611,11 @@ div.play-button {
 .sommaire-background .displayDetailledSummary a:hover img {
 	outline: 1px solid #ea2336;
 }
+.sommaire-background .holder .active {
+	text-decoration: underline;
+	color: #EA2336!important;
+}
+
 .mot-editrice-img {
 	width: 50px !important;
 	height: 38px !important;
