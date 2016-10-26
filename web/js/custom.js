@@ -592,6 +592,9 @@ jQuery(document).ready(function() {
     if(jQuery(".sommaire .displayDetailledSummary").length == 0) {
         jQuery(".tab1-sommaire-detaille").hide();
     }
+
+    // shadow module interception
+    jQuery(".module-interception .fade-out").css({bottom : jQuery(".module-interception").height() + 61});
 });
 
 (function() {
