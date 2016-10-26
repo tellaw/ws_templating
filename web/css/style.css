@@ -467,6 +467,16 @@ div.border-red {
   .article.zoning:hover a p span.ico-search {
     background-position: -39px -29px; }
 
+.article.zoning a p span.titre {
+  text-overflow: ellipsis;
+  max-width: 555px;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  line-height: 16px;
+  top: 4px;
+  position: relative; }
+
 .fiche .ico-search {
   background-position: 0 -59px; }
   .fiche .ico-search.red {

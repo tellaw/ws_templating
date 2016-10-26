@@ -559,6 +559,22 @@ div.border-red {
         }
       }
     }
+    a {
+      p {
+        span {
+          &.titre {
+            text-overflow: ellipsis;
+            max-width: 555px;
+            display: inline-block;
+            white-space: nowrap;
+            overflow: hidden;
+            line-height: 16px;
+            top: 4px;
+            position: relative;
+          }
+        }
+      }
+    }
   }
 }
 .fiche {
