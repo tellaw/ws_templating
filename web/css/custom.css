@@ -3605,12 +3605,12 @@ form #di-link {
 .content-article > div {
 	margin: 0 0 30px 0;
 }
-.content-article ul li {
+.content-article .box ul li {
 	list-style-position: outside;
 	list-style-type: none;
 	list-style-image: url(../images/bullet_arrow_red_smll.png);
 }
-.content-article ul.tiret li {
+.content-article .box ul.tiret li {
 	list-style-image: url(../images/tiret.png);
 }
 .tab-content-article div.aplus-amoins {
