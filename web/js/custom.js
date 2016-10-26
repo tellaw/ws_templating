@@ -702,6 +702,18 @@ function lectureFacileEnableLinks() {
 
         this.href = addParamToLink(this.href, 'lectureFacile', 'true');
     });
+
+    jQuery('.nav-rubrique a').each(function() {
+        if (this.href.indexOf('javascript:') == 0) {
+            return;
+        }
+
+        if (this.href.indexOf('#biblio') >= 0) {
+            return;
+        }
+
+        this.href = addParamToLink(this.href, 'lectureFacile', 'true');
+    });
 }
 
 // Ajoute un paramètre (param) avec sa valeur (value) dans une url (link)
