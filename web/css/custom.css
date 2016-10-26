@@ -3604,7 +3604,7 @@ form #di-link {
 	display: none;
 }
 
-.lecture_facile  .tab-content-article> div:first-child {
+.lecture_facile  .tab-content-article div.barre-top {
 	position:relative;
 	width:100%;
 }
@@ -3688,7 +3688,8 @@ form #di-link {
 .lecture_facile .col-droite-4,
 .lecture_facile .bottom-bloc,
 .lecture_facile #footer,
-.lecture_facile #sticky-menu-document {
+.lecture_facile #sticky-menu-document,
+.lecture_facile #bande {
 	display: none !important;
 }
 
