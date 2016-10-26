@@ -3393,6 +3393,7 @@ td, th, tr{
 }
 #header-rubrique .ico-search {
 	margin:0;
+	top: -2px;
 }
 #header-rubrique .pdf-added {
 	position: absolute;
