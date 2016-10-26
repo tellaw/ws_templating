@@ -588,6 +588,11 @@ div.border-red {
     background-position:-39px -59px;
   }
 }
+
+.align-r {
+  display: none;
+}
+
 .box {
   #top-toc {
     .ttre {
@@ -598,9 +603,6 @@ div.border-red {
       font-size: 17px;
       font-family: myriad-pro-semi-bold;
     }
-  }
-  .align-r {
-    display: none;
   }
   .desc {
     a {
