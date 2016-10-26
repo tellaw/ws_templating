@@ -663,7 +663,7 @@ function verticalToolbarPosition() {
         if( windowScroll >= fixedLimit ) {
             menu.css({position: 'fixed', top: topMenuVertical, left: posLeft});
         } else {
-            jQuery("#sticky-menu-document").css({position: "absolute", top: "65px", left: "-50px"});
+            jQuery("#sticky-menu-document").css({position: "absolute", top: "65px", left: "-55px"});
         }
     });
 }
