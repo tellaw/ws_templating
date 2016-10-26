@@ -568,17 +568,13 @@ jQuery(document).ready(function() {
     jQuery( ".zoning.warning" ).parents('.panel-default').find(".my-warning-to-display").css("display", "inline");
 
     // lecture facile
-    jQuery('.lecture-facile, .bt-lf').on("click",function()
-    {
+    jQuery('.lecture-facile, .bt-lf').on("click",function() {
+        // quitter la lecture facile
         if (jQuery('body').hasClass('lecture_facile')) {
-            console.log("j'ai la class");
-            var link = window.location.href;
-            if (window.location.href.indexOf("#") > 0) {
-                link = window.location.href.substring(0, window.location.href.indexOf("#"));
-            }
-            window.location.href = link.replace('?lectureFacile=true', '').replace('&lectureFacile=true', '').replace('&sommaireDetaille=true', '?sommaireDetaille=true');
-        } else {
-            console.log("j'ai pas la class");
+            window.location.href = window.location.href.replace('?lectureFacile=true', '').replace('&lectureFacile=true', '').replace('&sommaireDetaille=true', '?sommaireDetaille=true');
+        }
+        // ouvrir la lecture facile
+        else {
             jQuery('body').addClass("lecture_facile");
             lectureFacileEnableLinks();
             window.scrollTo(0, 0);

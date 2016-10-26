@@ -3600,7 +3600,7 @@ form #di-link {
 .content-article > div {
 	margin: 0 0 30px 0;
 }
-.tab-content-article div:first-child .aplus-amoins {
+.tab-content-article div.aplus-amoins {
 	display: none;
 }
 
@@ -3611,7 +3611,7 @@ form #di-link {
 .lecture_facile .tab-content-article div:first-child .aplus-amoins {
 	display: block;
 	position:absolute;
-	top:0px;
+	top:-25px;
 	left:48%;
 }
 .rechercher-border {
