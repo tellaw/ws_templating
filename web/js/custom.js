@@ -500,7 +500,7 @@ jQuery(document).ready(function() {
     }
 
     // gestion du sommaire
-    jQuery('#detailledSummaryLink').live("click",function()
+    jQuery('#detailledSummaryLink').on("click",function()
     {
         jQuery(".menu-link img[data-url]").filter(function (e) {
             return jQuery(e).data("url") !== "#";
@@ -529,7 +529,7 @@ jQuery(document).ready(function() {
         return false;
     });
 
-    jQuery('#normalSummaryLink').live("click",function()
+    jQuery('#normalSummaryLink').on("click",function()
     {
         jQuery('.displayDetailledSummary').css('display','none');
         jQuery('body').removeClass("summary_detailled");
@@ -568,15 +568,17 @@ jQuery(document).ready(function() {
     jQuery( ".zoning.warning" ).parents('.panel-default').find(".my-warning-to-display").css("display", "inline");
 
     // lecture facile
-    jQuery('.lecture-facile, .bt-lf').live("click",function()
+    jQuery('.lecture-facile, .bt-lf').on("click",function()
     {
         if (jQuery('body').hasClass('lecture_facile')) {
+            console.log("j'ai la class");
             var link = window.location.href;
             if (window.location.href.indexOf("#") > 0) {
                 link = window.location.href.substring(0, window.location.href.indexOf("#"));
             }
             window.location.href = link.replace('?lectureFacile=true', '').replace('&lectureFacile=true', '').replace('&sommaireDetaille=true', '?sommaireDetaille=true');
         } else {
+            console.log("j'ai pas la class");
             jQuery('body').addClass("lecture_facile");
             lectureFacileEnableLinks();
             window.scrollTo(0, 0);
