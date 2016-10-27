@@ -3846,6 +3846,7 @@ div.tableDiv table tbody td, div.tableDiv table thead th, div.tableDiv table tfo
 	border-left:none;
 	border-right:1px solid black;
 	padding: 0 3px;
+	height:auto!important;
 }
 div.tableDiv table thead tr {
 	background-color:#e0e0e0 !important;
@@ -3854,6 +3855,25 @@ div.tableDiv table thead tr {
 div.tableDiv table th {
 	background-color:#e0e0e0 !important;
 	text-align: center;
+}
+div.article_box div.formlegende p {
+	margin:0
+}
+div.article_box div.formlegende dl {
+	padding:0 0 10px 0
+}
+div.article_box div.formlegende span.formleg-def {
+	display: table-row;
+}
+div.article_box div.formlegende span.formleg-def dt {
+	display: table-cell;
+	white-space: nowrap;
+}
+div.article_box div.formlegende dt {
+	padding: 0 0 0 15px;
+}
+div.article_box div.formlegende span.formleg-def dd {
+	display: table-cell;
 }
 .tabnote p {
 	margin-left: 20px;
@@ -3954,10 +3974,17 @@ div.encadre p, div.ENCADRE p {
 	padding: 0 10px;
 	margin: 0;
 }
+div.nota, div.NOTA {
+	margin:0 20px;
+	padding:0 5px;
+}
+div.exemple, div.EXEMPLE {
+	margin:0 20px;
+	padding:0 5px;
+}
 div.exemple p, div.EXEMPLE p {
 	border-left: 3px solid;
 	padding-left: 15px;
-	margin: 0;
 }
 .fa-external-link {
 	padding: 0 3px 0 5px;
