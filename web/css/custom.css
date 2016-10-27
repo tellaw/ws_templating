@@ -3805,7 +3805,7 @@ div.tableDiv table p {
 div.tableDiv table {
 	border-collapse:collapse;
 	margin: auto;
-	font-size: 0.7em;
+	font-size: 0.6em;
 	border: 1px solid #000;
 	width: auto;
 }
