@@ -492,7 +492,7 @@ jQuery(document).ready(function() {
      if (active) jQuery('#accordion .in').collapse('hide');
      });*/
 
-    if (navigator.userAgent.match(/(iPhone|Android|BlackBerry)/i) && (screen.width <= 1024)) {
+    if (screen.width <= 1024) {
         jQuery(".zoning").click(
             function (a) {
                 if (jQuery(this).find("a").attr("href") != undefined)
