@@ -779,14 +779,19 @@ input.actions-select {
 .loading-leads {
   text-align: center; }
 
-.highlight, .mark-translation {
+.highlight {
   background: #697277;
   color: #fff;
   padding: 1px 2px 0; }
 
 .mark-translation {
   font-weight: bold;
-  position: relative; }
+  position: relative;
+  background: #ebebeb;
+  color: #8ea14a; }
+  .mark-translation:hover {
+    background: #8ea14a;
+    color: #FFF; }
   .mark-translation .mark-traduction-hover {
     display: none; }
     .mark-translation .mark-traduction-hover p {

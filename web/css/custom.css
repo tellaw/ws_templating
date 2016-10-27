@@ -3618,6 +3618,9 @@ form #di-link {
 .content-article .box ul.tiret li {
 	list-style-image: url(../images/tiret.png);
 }
+.content-article .box .mark-traduction-hover ul li {
+	list-style-image:none;
+}
 .tab-content-article div.aplus-amoins {
 	display: none;
 }

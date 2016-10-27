@@ -1002,7 +1002,7 @@ input {
 .loading-leads {
   text-align: center;
 }
-.highlight, .mark-translation {
+.highlight {
   background: #697277;
   color: #fff;
   padding: 1px 2px 0;
@@ -1011,6 +1011,12 @@ input {
 .mark-translation {
   font-weight: bold;
   position: relative;
+  background: #ebebeb;
+  color: #8ea14a;
+  &:hover {
+    background: #8ea14a;
+    color: #FFF;
+  }
   .mark-traduction-hover {
     display: none;
     p {
