@@ -2472,6 +2472,9 @@ $color-red : #ea2336 ;
 }
 
 @media only screen and (min-width: 1024px) {
+  .corps-article-link-mobile {
+    display:none;
+  }
   a.pub-style, a.large-img, a.haute-img {
     img {
       transition: transform 4s cubic-bezier(.19, 1, .22, 1) 0ms;

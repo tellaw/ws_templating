@@ -492,6 +492,13 @@ jQuery(document).ready(function() {
      if (active) jQuery('#accordion .in').collapse('hide');
      });*/
 
+    jQuery("#header-rubrique .zoning").on("click", function (a) {
+            if (jQuery(this).find("a").attr("href") != undefined)
+                window.location = jQuery(this).find("a").attr("href")
+            return false;
+        }
+    )
+
     if (screen.width <= 1024) {
         jQuery(".zoning").click(
             function (a) {

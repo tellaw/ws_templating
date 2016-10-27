@@ -1648,6 +1648,8 @@
     display: none; } }
 
 @media only screen and (min-width: 1024px) {
+  .corps-article-link-mobile {
+    display: none; }
   a.pub-style img, a.large-img img, a.haute-img img {
     transition: transform 4s cubic-bezier(0.19, 1, 0.22, 1) 0ms; }
   a.pub-style:hover img, a.large-img:hover img, a.haute-img:hover img {
