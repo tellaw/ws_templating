@@ -798,6 +798,17 @@ $color-red : #ea2336 ;
   }
 }
 
+@media screen and (max-width: 767px) {
+  .article-decouverte,
+  .dictionnaire,
+  .questions,
+  .complement {
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+  }
+}
+
 @media screen and (min-width: 622px) and (max-width: 767px) {
   .xs-width {
     width: 25% !important;
@@ -807,8 +818,6 @@ $color-red : #ea2336 ;
   }
   .xs-width-3{
     width: 58.33333333% !important;
-
-
   }
 }
 @media screen and (min-width: 426px) and (max-width: 621px) {
@@ -948,14 +957,6 @@ $color-red : #ea2336 ;
         }
       }
     }
-  }
-  .article-decouverte,
-  .dictionnaire,
-  .questions,
-  .complement {
-    margin-left: auto;
-    margin-right: auto;
-    width: 250px;
   }
   .abonnement-text {
     text-align: center;

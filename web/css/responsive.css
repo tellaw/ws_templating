@@ -557,6 +557,15 @@
   .tag-box .prices {
     padding-right: 10px; } }
 
+@media screen and (max-width: 767px) {
+  .article-decouverte,
+  .dictionnaire,
+  .questions,
+  .complement {
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px; } }
+
 @media screen and (min-width: 622px) and (max-width: 767px) {
   .xs-width {
     width: 25% !important; }
@@ -653,13 +662,6 @@
     margin: 0; }
     .pagination li:first-child a, .pagination li:last-child a {
       padding: 5px 5px; }
-  .article-decouverte,
-  .dictionnaire,
-  .questions,
-  .complement {
-    margin-left: auto;
-    margin-right: auto;
-    width: 250px; }
   .abonnement-text {
     text-align: center; }
   #design-di-conf-popin {
