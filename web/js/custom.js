@@ -499,7 +499,7 @@ jQuery(document).ready(function() {
         }
     )
 
-    if (screen.width <= 1024) {
+    if (jQuery(window).width() <= 1024) {
         jQuery(".zoning").click(
             function (a) {
                 if (jQuery(this).find("a").attr("href") != undefined)
