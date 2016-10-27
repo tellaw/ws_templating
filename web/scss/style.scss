@@ -560,6 +560,9 @@ div.border-red {
       }
     }
     a {
+      &:hover {
+        text-decoration: none;
+      }
       p {
         span {
           &.titre {
@@ -586,6 +589,39 @@ div.border-red {
   }
   .ico-search:hover {
     background-position:-39px -59px;
+  }
+  &.zoning {
+    &:hover {
+      a {
+        p {
+          span {
+            color:#EA2336!important;
+            &.ico-search {
+              background-position: -39px -59px;
+            }
+          }
+        }
+      }
+    }
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+      p {
+        span {
+          &.titre {
+            text-overflow: ellipsis;
+            max-width: 555px;
+            display: inline-block;
+            white-space: nowrap;
+            overflow: hidden;
+            line-height: 16px;
+            top: 4px;
+            position: relative;
+          }
+        }
+      }
+    }
   }
 }
 
