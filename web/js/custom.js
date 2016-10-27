@@ -41,7 +41,7 @@ jQuery(document).ready(function() {
         jQuery("#button-menu-header").css('cssText', 'display: none !important');
     }
 
-    jQuery(window).scroll(function(){
+    jQuery(window).scroll(function () {
         if ((jQuery(window).width() >= 992) && (jQuery(window).scrollTop() == 0)) {
             jQuery("#navbar-x").addClass("in");
             jQuery("#advanced-search-box").css('cssText', 'display: block !important');
@@ -57,17 +57,17 @@ jQuery(document).ready(function() {
         }
     });
 
-    if ( jQuery( ".subMenu" ).length ) {
+    if (jQuery(".subMenu").length) {
         jQuery('.subMenu').smint({
-            'scrollSpeed' : 1000,
-            'mySelector'     : 'section'
+            'scrollSpeed': 1000,
+            'mySelector': 'section'
         });
 
         jQuery('body').scrollspy({target: ".subMenu", offset: 50});
     }
 
 
-    jQuery(".btn-xpnd-smint").click(function(){
+    jQuery(".btn-xpnd-smint").click(function () {
 
         if (jQuery(this).text() == "+") {
             jQuery(this).text('-');
@@ -117,9 +117,14 @@ jQuery(document).ready(function() {
     });
 
     var eventStick;
-    if (jQuery(window).width() < 1024) {eventStick='click'} else {eventStick='mouseenter'};
+    if (jQuery(window).width() < 1024) {
+        eventStick = 'click'
+    } else {
+        eventStick = 'mouseenter'
+    }
+    ;
 
-    jQuery('#sticky-menu-phone').on(eventStick, function() {
+    jQuery('#sticky-menu-phone').on(eventStick, function () {
 
         var hiddenField = jQuery('#sticky-menu-phone'),
             val = hiddenField.val();
@@ -127,13 +132,13 @@ jQuery(document).ready(function() {
 
         if (hiddenField.val() == "true") {
             jQuery('#sticky-menu-slide-phone').stop().animate({
-                right:"40px"
+                right: "40px"
             }, 500);
             jQuery('#sticky-menu-slide-share').stop().animate({
-                right:"-220px"
+                right: "-220px"
             }, 500);
             jQuery('#sticky-menu-slide-plane').stop().animate({
-                right:"-220px"
+                right: "-220px"
             }, 500);
 
             var hiddenFieldd = jQuery('#sticky-menu-share'),
@@ -145,14 +150,14 @@ jQuery(document).ready(function() {
             hiddenFielddd.val("false");
 
         }
-        else if (hiddenField.val() == "false"){
+        else if (hiddenField.val() == "false") {
             jQuery('#sticky-menu-slide-phone').animate({
-                right:"-220px"
+                right: "-220px"
             }, 500);
         }
     });
 
-    jQuery('#sticky-menu-share').on(eventStick, function() {
+    jQuery('#sticky-menu-share').on(eventStick, function () {
 
         var hiddenField = jQuery('#sticky-menu-share'),
             val = hiddenField.val();
@@ -160,13 +165,13 @@ jQuery(document).ready(function() {
 
         if (hiddenField.val() == "true") {
             jQuery('#sticky-menu-slide-share').stop().animate({
-                right:"40px"
+                right: "40px"
             }, 500);
             jQuery('#sticky-menu-slide-phone').stop().animate({
-                right:"-220px"
+                right: "-220px"
             }, 500);
             jQuery('#sticky-menu-slide-plane').stop().animate({
-                right:"-220px"
+                right: "-220px"
             }, 500);
 
             var hiddenFieldd = jQuery('#sticky-menu-phone'),
@@ -179,14 +184,14 @@ jQuery(document).ready(function() {
 
 
         }
-        else if (hiddenField.val() == "false"){
+        else if (hiddenField.val() == "false") {
             jQuery('#sticky-menu-slide-share').animate({
-                right:"-220px"
+                right: "-220px"
             }, 500);
         }
     });
 
-    jQuery('#sticky-menu-plane').on(eventStick, function() {
+    jQuery('#sticky-menu-plane').on(eventStick, function () {
 
         var hiddenField = jQuery('#sticky-menu-plane'),
             val = hiddenField.val();
@@ -194,13 +199,13 @@ jQuery(document).ready(function() {
 
         if (hiddenField.val() == "true") {
             jQuery('#sticky-menu-slide-plane').stop().animate({
-                right:"40px"
+                right: "40px"
             }, 500);
             jQuery('#sticky-menu-slide-phone').stop().animate({
-                right:"-220px"
+                right: "-220px"
             }, 500);
             jQuery('#sticky-menu-slide-share').stop().animate({
-                right:"-220px"
+                right: "-220px"
             }, 500);
 
             var hiddenFieldd = jQuery('#sticky-menu-phone'),
@@ -213,22 +218,22 @@ jQuery(document).ready(function() {
 
 
         }
-        else if (hiddenField.val() == "false"){
+        else if (hiddenField.val() == "false") {
             jQuery('#sticky-menu-slide-plane').animate({
-                right:"-220px"
+                right: "-220px"
             }, 500);
         }
     });
 
-    jQuery("#sticky").on('mouseleave', function() {
+    jQuery("#sticky").on('mouseleave', function () {
         jQuery('#sticky-menu-slide-plane').stop().animate({
-            right:"-220px"
+            right: "-220px"
         }, 500);
         jQuery('#sticky-menu-slide-phone').stop().animate({
-            right:"-220px"
+            right: "-220px"
         }, 500);
         jQuery('#sticky-menu-slide-share').stop().animate({
-            right:"-220px"
+            right: "-220px"
         }, 500);
 
         var hiddenField = jQuery('#sticky-menu-plane'),
@@ -246,26 +251,33 @@ jQuery(document).ready(function() {
 
     if (jQuery(window).width() >= 1024) {
         jQuery('#sticky-menu-phone').wrap('<a class="switch-popin" href="/switch.html"></a>');
-    };
+    }
+    ;
 
     // !!!! ATTENTION / À MODIFIER LORS DU CHANGEMENT DE HEADER !!!!!
     if (jQuery(window).width() >= 1024) {
         var link;
-        if(jQuery("#register_link-connected").hasClass("no-connect-header")){link = "/newsletter.html"}else{link = "/myti/newsletter.html"};
-        jQuery('#sticky-menu-plane').wrap('<a href='+link+'></a>');
-    };
+        if (jQuery("#register_link-connected").hasClass("no-connect-header")) {
+            link = "/newsletter.html"
+        } else {
+            link = "/myti/newsletter.html"
+        }
+        ;
+        jQuery('#sticky-menu-plane').wrap('<a href=' + link + '></a>');
+    }
+    ;
 
     // gestion des ancres pour les onglets
     if (window.location.href.indexOf("#") > -1) {
-        var anchor = window.location.href.substring(window.location.href.indexOf("#")+1, window.location.href.length);
+        var anchor = window.location.href.substring(window.location.href.indexOf("#") + 1, window.location.href.length);
         anchor = anchor.substring(anchor.indexOf("?"), anchor.length);
-        jQuery("#"+anchor+"_link").click();
+        jQuery("#" + anchor + "_link").click();
         if (anchor != "documents" && anchor != "presentation" && anchor != "expert" && anchor != "" && anchor != "details") {
             jQuery(".col-droite div.pub-bloc div.freezone").hide();
             jQuery(".col-droite-2").hide();
             jQuery(".barre-top").hide();
             if (anchor == "auteurs" || anchor == "meme-sujet" || anchor == "biblio") {
-                jQuery("section#"+anchor).css({margin: "25px 0 0 0"});
+                jQuery("section#" + anchor).css({margin: "25px 0 0 0"});
             }
         }
         else if (anchor == "details") {
@@ -275,7 +287,7 @@ jQuery(document).ready(function() {
     else if (window.location.href.indexOf("#") == -1 && window.location.href.indexOf(".html") == -1) {
         jQuery("#corps-article").removeClass("active");
     }
-    jQuery("#menu-smint > .nav-tabs a").on("click", function(){
+    jQuery("#menu-smint > .nav-tabs a").on("click", function () {
         var link = window.location.href;
         var anchor = jQuery(this).attr("href");
 
@@ -290,7 +302,7 @@ jQuery(document).ready(function() {
             else if (anchor == "#auteurs" || anchor == "#meme-sujet" || anchor == "#biblio") {
                 jQuery(".col-droite-4").show();
                 jQuery(".barre-top").hide();
-                jQuery("section"+anchor).css({margin: "25px 0 0 0"});
+                jQuery("section" + anchor).css({margin: "25px 0 0 0"});
             }
             else if (anchor != "#documents" && anchor != "#presentation" && anchor != "#expert") {
                 jQuery(".col-droite div.pub-bloc div.freezone").hide();
@@ -314,18 +326,18 @@ jQuery(document).ready(function() {
     });
 
     var nbOnglets = jQuery("#menu-smint > .nav-tabs li").length;
-    jQuery("#menu-smint > .nav-tabs li").css("width", ((jQuery("#menu-smint > .nav-tabs").width()/jQuery("#menu-smint > .nav-tabs li").length)*100)/jQuery("#menu-smint > .nav-tabs").width()+"%");
+    jQuery("#menu-smint > .nav-tabs li").css("width", ((jQuery("#menu-smint > .nav-tabs").width() / jQuery("#menu-smint > .nav-tabs li").length) * 100) / jQuery("#menu-smint > .nav-tabs").width() + "%");
 
     var nbOnglets = jQuery(".sommaire-col-dim .nav-tabs li").length;
-    jQuery(".sommaire-col-dim .nav-tabs li").css("width", ((jQuery(".sommaire-col-dim .nav-tabs").width()/jQuery(".sommaire-col-dim .nav-tabs li").length)*100)/jQuery(".sommaire-col-dim .nav-tabs").width()+"%");
+    jQuery(".sommaire-col-dim .nav-tabs li").css("width", ((jQuery(".sommaire-col-dim .nav-tabs").width() / jQuery(".sommaire-col-dim .nav-tabs li").length) * 100) / jQuery(".sommaire-col-dim .nav-tabs").width() + "%");
 
     // gestion erreur formulaire
-    jQuery('#newsletter-form').ready(function(jQuery){
+    jQuery('#newsletter-form').ready(function (jQuery) {
         var form = jQuery('#newsletter-form');
         var inputField = form.find('.newsletter-input');
-        form.submit(function(e){
+        form.submit(function (e) {
             var email = inputField.val();
-            if(email.indexOf("@",1) == -1 || email.indexOf(".", email.indexOf("@",1)+1) == -1 || email.length <= 5){
+            if (email.indexOf("@", 1) == -1 || email.indexOf(".", email.indexOf("@", 1) + 1) == -1 || email.length <= 5) {
                 inputField.siblings('.form-error').remove();
                 inputField.after('<p class="form-error color-red-eti padding-left-10">Veuillez saisir une adresse email valide.</p>');
                 e.preventDefault();
@@ -334,7 +346,7 @@ jQuery(document).ready(function() {
     });
 
     // gestion des popins services
-    jQuery("a.services-popin").click(function() {
+    jQuery("a.services-popin").click(function () {
         if (!jQuery("#services-popin").html()) {
             var ui = '<div id="services-popin" role="dialog" style="display:none;z-index:1001;">' + '<iframe frameborder="0" style="width:100%;height:98%;" src=""></iframe>' + '</div>';
             jQuery("body").append(ui);
@@ -345,11 +357,11 @@ jQuery(document).ready(function() {
             title: jQuery(this).attr("title"),
             width: 780,
             closeText: "X",
-            open: function() {
+            open: function () {
                 window.scrollTo(0, 0);
                 return false;
             },
-            close: function() {
+            close: function () {
                 jQuery("#services-popin").remove();
                 return false;
             }
@@ -358,13 +370,13 @@ jQuery(document).ready(function() {
         jQuery("#services-popin iframe").attr("src", jQuery(this).attr("href"));
         jQuery("#services-popin").dialog("widget").css("top", "150px");
 
-        jQuery("#design-services-popin").css("left", ((jQuery(window).width()-jQuery("#design-services-popin").width())/2));
+        jQuery("#design-services-popin").css("left", ((jQuery(window).width() - jQuery("#design-services-popin").width()) / 2));
         jQuery("#design-services-popin").css("height", "295px");
         return false;
     });
 
     // gestion de popin switch
-    jQuery("a.switch-popin").click(function() {
+    jQuery("a.switch-popin").click(function () {
         if (!jQuery("#switch-popin").html()) {
             var ui = '<div id="switch-popin" role="dialog" style="display:none;z-index:1001;">' + '<iframe frameborder="0" style="width:100%;height:98%;" src=""></iframe>' + '</div>';
             jQuery("body").append(ui);
@@ -375,50 +387,56 @@ jQuery(document).ready(function() {
             title: jQuery(this).attr("title"),
             width: 600,
             closeText: "X",
-            open: function() {
+            open: function () {
                 window.scrollTo(0, top - jQuery(window).height() / 2);
                 return false;
             },
-            close: function() {
+            close: function () {
                 jQuery("#switch-popin").remove();
                 return false;
             }
         });
         jQuery("#switch-popin").dialog("widget").attr("id", "design-switch-popin").css("position", "absolute");
         jQuery("#switch-popin iframe").attr("src", jQuery(this).attr("href"));
-        if(top > "420"){
+        if (top > "420") {
             jQuery("#switch-popin").dialog("widget").css("top", top - jQuery(window).height() / 3);
         }
         else {
             jQuery("#switch-popin").dialog("widget").css("top", "150px");
         }
 
-        jQuery("#design-switch-popin").css("left", ((jQuery(window).width()-jQuery("#design-switch-popin").width())/2));
+        jQuery("#design-switch-popin").css("left", ((jQuery(window).width() - jQuery("#design-switch-popin").width()) / 2));
         jQuery("#design-switch-popin").css("height", "295px");
         return false;
     });
 
-    jQuery('.panel-title a').click(function(event) {
+    jQuery('.panel-title a').click(function (event) {
 
-        if(jQuery(event.target).hasClass("accordion-toggle") ) {
+        if (jQuery(event.target).hasClass("accordion-toggle")) {
             jQuery(event.target).addClass('disabled');
             jQuery(event.target.childNodes[1]).toggleClass('color-red');
             jQuery(event.target.childNodes[2]).toggleClass('fa-angle-up fa-angle-down');
-            setTimeout(function(){ jQuery(event.target).removeClass('disabled'); }, 1000);
+            setTimeout(function () {
+                jQuery(event.target).removeClass('disabled');
+            }, 1000);
         }
 
-        if(jQuery(event.target).hasClass("title-element")) {
+        if (jQuery(event.target).hasClass("title-element")) {
             jQuery(event.target).addClass('disabled');
             jQuery(event.target).toggleClass('color-red');
             jQuery(event.target).next().toggleClass('fa-angle-up fa-angle-down');
-            setTimeout(function(){ jQuery(event.target).closest('a').removeClass('disabled'); }, 1000);
+            setTimeout(function () {
+                jQuery(event.target).closest('a').removeClass('disabled');
+            }, 1000);
         }
 
-        if(jQuery(event.target).hasClass("fa")) {
+        if (jQuery(event.target).hasClass("fa")) {
             jQuery(event.target).addClass('disabled');
             jQuery(event.target).prev().toggleClass('color-red');
             jQuery(event.target).toggleClass('fa-angle-up fa-angle-down');
-            setTimeout(function(){ jQuery(event.target).closest('a').removeClass('disabled'); }, 1000);
+            setTimeout(function () {
+                jQuery(event.target).closest('a').removeClass('disabled');
+            }, 1000);
         }
     });
 
@@ -427,7 +445,7 @@ jQuery(document).ready(function() {
         if (active) {
             active = false;
             jQuery('.panel-collapse').collapse('show');
-            jQuery('#accordion-1 .panel-title a').each(function(index, element) {
+            jQuery('#accordion-1 .panel-title a').each(function (index, element) {
                 if (jQuery(this).find('i').hasClass('fa-angle-down')) {
                     jQuery(this).find('i').toggleClass('fa-angle-down fa-angle-up');
                     jQuery(this).find('span').addClass('color-red');
@@ -437,7 +455,7 @@ jQuery(document).ready(function() {
         } else {
             active = true;
             jQuery('.panel-collapse').collapse('hide');
-            jQuery('#accordion-1 .panel-title a').each(function(index, element) {
+            jQuery('#accordion-1 .panel-title a').each(function (index, element) {
                 if (jQuery(this).find('i').hasClass('fa-angle-up')) {
                     jQuery(this).find('i').toggleClass('fa-angle-up fa-angle-down');
                     jQuery(this).find('span').removeClass('color-red');
@@ -447,7 +465,7 @@ jQuery(document).ready(function() {
         }
     });
 
-    jQuery(function (){
+    jQuery(function () {
         jQuery('#menuSearch').on('shown.bs.collapse', function () {
             jQuery('#fleche-search').removeClass('fa-angle-down').addClass('fa-angle-up');
         })
@@ -455,7 +473,7 @@ jQuery(document).ready(function() {
             jQuery('#fleche-search').removeClass('fa-angle-up').addClass('fa-angle-down');
         })
     });
-    jQuery(function (){
+    jQuery(function () {
         jQuery('#menuFiltre').on('shown.bs.collapse', function () {
             jQuery('#fleche-search').removeClass('fa-angle-down').addClass('fa-angle-up');
         })
@@ -465,23 +483,24 @@ jQuery(document).ready(function() {
     });
 
     /*jQuery('#accordion-1').on('shown.bs.collapse', function (e) {
-        var offset = jQuery(this).find('.collapse.in').prev('.panel-heading');
-        if(offset) {
-            jQuery('html,body').animate({
-                scrollTop: jQuery(offset).offset().top -180
-            }, 500);
-        }
-        if (active) jQuery('#accordion .in').collapse('hide');
-    });*/
+     var offset = jQuery(this).find('.collapse.in').prev('.panel-heading');
+     if(offset) {
+     jQuery('html,body').animate({
+     scrollTop: jQuery(offset).offset().top -180
+     }, 500);
+     }
+     if (active) jQuery('#accordion .in').collapse('hide');
+     });*/
 
-    jQuery(".zoning")
-        .click(
-            function(a){
-                if(jQuery(this).find("a").attr("href")!=undefined)
-                    window.location=jQuery(this).find("a").attr("href")
+    if (navigator.userAgent.match(/(iPhone|Android|BlackBerry)/i) && (screen.width <= 1024)) {
+        jQuery(".zoning").click(
+            function (a) {
+                if (jQuery(this).find("a").attr("href") != undefined)
+                    window.location = jQuery(this).find("a").attr("href")
                 return false;
             }
-        );
+        )
+    }
 
     if (jQuery(window).width() >= 1024) {
         jQuery(".tab-content .documents-smint").css({"minHeight": jQuery(".tab-content .col-droite").height() + 86});
