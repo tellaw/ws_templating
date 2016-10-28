@@ -4090,3 +4090,6 @@ div.fade-out {
 	width: 130px;
 	height: 24px;
 }
+.wrap-table .loupe {
+	display: none;
+}
