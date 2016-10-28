@@ -635,7 +635,7 @@ div.border-red {
   }
 }
 
-.align-r {
+.align-r, .toppage {
   display: none;
 }
 
@@ -669,6 +669,71 @@ div.border-red {
   .titre-contenu {
     a {
       font-family: myriad-pro-semi-bold;
+    }
+  }
+}
+
+.cont-niv1 {
+  .NIV1 {
+    margin: 0;
+    color: #EA2336;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 17px;
+    font-family: myriad-pro-semi-bold;
+  }
+  .cont-mod {
+    margin: 0 0 0 20px;
+    ul {
+      li {
+        list-style-position: outside;
+        list-style-type: none;
+        list-style-image: url(../images/bullet_arrow_red_smll.png)
+      }
+    }
+  }
+}
+.cont-niv2 {
+  .NIV2 {
+    margin: 0;
+    color: #EA2336;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-family: myriad-pro-semi-bold;
+  }
+  .MOD {
+    margin-top:20px;
+    margin-bottom: 5px;
+    font-size:14px;
+    font-family: myriad-pro-semi-bold;
+  }
+}
+
+.ul-toc {
+  width:100%;
+  td {
+    display: block;
+    height: auto!important;
+    &.plan-de-page {
+      span {
+        color: #EA2336;
+        text-transform: uppercase;
+        font-family: myriad-pro-semi-bold;
+        font-size: 17px;
+      }
+    }
+  }
+  ul {
+    list-style: none;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid #c6c6c6;
+    li {
+      padding-top: 5px;
+      &:first-child {
+        padding-top: 0
+      }
     }
   }
 }

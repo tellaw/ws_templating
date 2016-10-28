@@ -4030,3 +4030,63 @@ div.fade-out {
 	font-size: 18px;
 	display: inline-block;
 }
+
+.wrap-table {
+	padding: 0px;
+	margin: 10px auto;
+	display: block;
+	border:0px solid #CC0;
+	clear:both;
+}
+
+.wrap-table div.contenu {
+	border:0px solid #CC0;
+}
+
+.wrap-table table, .wrap-table table thead, .wrap-table th, .wrap-table tr, .wrap-table td,
+.annex table, .annex table thead, .annex th, .annex tr, .annex td,
+.piro_html .div_reg table, .piro_html .div_reg table thead, .piro_html .div_reg th, .piro_html .div_reg tr, .piro_html .div_reg td {
+	border-collapse: collapse;
+	border:1px solid;
+	padding:5px;
+}
+
+.wrap-table .article_table,
+.annex .article_table,
+.piro_html .div_reg .article_table {
+	background: none repeat scroll 0 0 white;
+	width: 100%;
+}
+
+.wrap-table .article_table .tablegend,
+.annex .article_table .tablegend,
+.piro_html .div_reg .article_table .tablegend {
+	font-weight: 700;
+	background-color: #EBEFF0;
+	padding: 5px;
+	border: 1px solid #666666;
+	border-bottom: 0;
+}
+.wrap-table .article_table .tablegend > div,
+.annex .article_table .tablegend > div,
+.piro_html .div_reg .article_table .tablegend > div {
+	display: inline;
+}
+
+.wrap-table .article_table tbody tr.odd,
+.annex .article_table tbody tr.odd,
+.piro_html .div_reg .article_table tbody tr.odd {
+	background: #EEE;
+}
+
+.wrap-table .article_table thead tr,
+.annex .article_table thead tr,
+.piro_html .div_reg .article_table thead tr {
+	border: 1px solid black;
+}
+
+.tabnumber {
+	display: inline;
+	width: 130px;
+	height: 24px;
+}

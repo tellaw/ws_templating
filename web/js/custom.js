@@ -669,8 +669,10 @@ function toggle_div(bouton, id) {
     var div = document.getElementById(id);
     if(div.style.display=="none") {
         div.style.display = "block";
+        document.querySelector(".id_annotation").className += " actif"
     } else {
         div.style.display = "none";
+        document.querySelector(".id_annotation").classList.remove("actif")
     }
 }
 
@@ -679,7 +681,7 @@ function verticalToolbarPosition() {
     var menu = jQuery("#sticky-menu-document");
     var fixedLimit = menu.offset().top - 122;
     var posHide = jQuery(document).height() - topMenuVertical;
-    var posLeft = (jQuery(window).width() - jQuery(".container").width())/2 - 50;
+    var posLeft = (jQuery(window).width() - jQuery(".container").width())/2 - 55;
 
     jQuery(window).scroll(function(event) {
         // Valeur de défilement lors du chargement de la page
