@@ -564,7 +564,9 @@
   .complement {
     margin-left: auto;
     margin-right: auto;
-    width: 250px; } }
+    width: 250px; }
+  .xs-margin-left-10 {
+    margin-left: 10px; } }
 
 @media screen and (min-width: 622px) and (max-width: 767px) {
   .xs-width {
@@ -670,8 +672,9 @@
     margin: 0 0 0 95px; }
   .xs-margin-left-46 {
     margin-left: 46px; }
-  .xs-margin-left-10 {
-    margin-left: 10px; }
+  /*.xs-margin-left-10 {
+    margin-left: 10px;
+  }*/
   .xs-table-margin-left {
     margin-left: 12px !important; }
   .tb-cstm {
