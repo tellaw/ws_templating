@@ -454,6 +454,9 @@ div.border-red {
 .archive .ico-search:hover {
   background-position: -39px 0px; }
 
+.archive div:first-child ul li:first-child {
+  font-weight: bold; }
+
 .article .ico-search {
   background-position: 0 -29px; }
   .article .ico-search.red {
@@ -475,13 +478,16 @@ div.border-red {
 
 .article.zoning a p span.titre {
   text-overflow: ellipsis;
-  max-width: 555px;
+  max-width: 550px;
   display: inline-block;
   white-space: nowrap;
   overflow: hidden;
   line-height: 16px;
   top: 4px;
   position: relative; }
+
+.article div:first-child ul li:first-child {
+  font-weight: bold; }
 
 .fiche .ico-search {
   background-position: 0 -59px; }
@@ -511,6 +517,9 @@ div.border-red {
   line-height: 16px;
   top: 4px;
   position: relative; }
+
+.fiche div:first-child ul li:first-child {
+  font-weight: bold; }
 
 .align-r, .toppage {
   display: none; }

@@ -535,6 +535,17 @@ div.border-red {
   .ico-search:hover {
     background-position:-39px 0px;
   }
+  div {
+    &:first-child {
+      ul {
+        li {
+          &:first-child {
+            font-weight:bold;
+          }
+        }
+      }
+    }
+  }
 }
 .article {
   .ico-search {
@@ -572,13 +583,24 @@ div.border-red {
         span {
           &.titre {
             text-overflow: ellipsis;
-            max-width: 555px;
+            max-width: 550px;
             display: inline-block;
             white-space: nowrap;
             overflow: hidden;
             line-height: 16px;
             top: 4px;
             position: relative;
+          }
+        }
+      }
+    }
+  }
+  div {
+    &:first-child {
+      ul {
+        li {
+          &:first-child {
+            font-weight:bold;
           }
         }
       }
@@ -628,6 +650,17 @@ div.border-red {
             line-height: 16px;
             top: 4px;
             position: relative;
+          }
+        }
+      }
+    }
+  }
+  div {
+    &:first-child {
+      ul {
+        li {
+          &:first-child {
+            font-weight:bold;
           }
         }
       }
