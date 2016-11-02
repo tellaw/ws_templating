@@ -1,4 +1,6 @@
 jQuery(document).ready(function ($) {
+	/*ré-écriture de la recherche dans le champs du header*/
+	jQuery('#searchCommand input[type="text"]').val(jQuery('#query_text').html().substring(1, jQuery('#query_text').html().length - 1));
 
 	/*recherche responsive*/
 	if ($(window).width() < 1201 && (window.location.href.indexOf("advancedSearch=true") == -1 || window.location.href.indexOf("query") > 0)) {
