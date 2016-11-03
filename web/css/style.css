@@ -467,7 +467,7 @@ div.border-red {
   background-position: -39px -29px; }
 
 .article.zoning:hover a p span {
-  color: #EA2336 !important; }
+  color: #ea2336 !important; }
   .article.zoning:hover a p span.ico-search {
     background-position: -39px -29px; }
 
@@ -499,7 +499,7 @@ div.border-red {
   top: 0; }
 
 .fiche.zoning:hover a p span {
-  color: #EA2336 !important; }
+  color: #ea2336 !important; }
   .fiche.zoning:hover a p span.ico-search {
     background-position: -39px -59px; }
 
@@ -524,21 +524,21 @@ div.border-red {
 
 .box #top-toc .ttre {
   margin: 0;
-  color: #EA2336;
+  color: #ea2336;
   text-transform: uppercase;
   margin-bottom: 12px;
   font-size: 17px;
   font-family: myriad-pro-semi-bold; }
 
 .box .desc a:hover {
-  color: #EA2336;
+  color: #ea2336;
   text-decoration: underline; }
 
 .box .titre-contenu, .box .marge-l_20 {
   margin-top: 20px;
   margin-bottom: 5px; }
   .box .titre-contenu a, .box .marge-l_20 a {
-    color: #EA2336;
+    color: #ea2336;
     font-size: 15px; }
 
 .box .titre-contenu a {
@@ -546,7 +546,7 @@ div.border-red {
 
 .cont-niv1 .NIV1 {
   margin: 0;
-  color: #EA2336;
+  color: #ea2336;
   text-transform: uppercase;
   margin-top: 20px;
   margin-bottom: 5px;
@@ -562,7 +562,7 @@ div.border-red {
 
 .cont-niv2 .NIV2 {
   margin: 0;
-  color: #EA2336;
+  color: #ea2336;
   margin-top: 20px;
   margin-bottom: 5px;
   font-size: 15px;
@@ -580,7 +580,7 @@ div.border-red {
     display: block;
     height: auto !important; }
     .ul-toc td.plan-de-page span {
-      color: #EA2336;
+      color: #ea2336;
       text-transform: uppercase;
       font-family: myriad-pro-semi-bold;
       font-size: 17px; }
@@ -934,7 +934,24 @@ input.actions-select {
 .download-page .form-error {
   display: inline-block;
   margin: 10px;
-  color: #EA2336; }
+  color: #ea2336; }
 
 .download-page ul a:hover {
   text-decoration: underline; }
+
+div[id^="background_fiche"] ul {
+  list-style-type: square; }
+  div[id^="background_fiche"] ul.list-unstyled li a:hover {
+    color: #ea2336;
+    text-decoration: underline; }
+
+div[id^="background_fiche"] .steps_navigation a:hover {
+  color: #ea2336;
+  text-decoration: underline; }
+
+div[id^="background_fiche"] .fiche_step h3 {
+  color: #ea2336;
+  font-size: 15px;
+  font-family: myriad-pro-semi-bold;
+  line-height: 15px;
+  letter-spacing: 0.75px; }

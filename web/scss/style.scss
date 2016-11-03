@@ -1,3 +1,6 @@
+// variables
+$color-red : #ea2336 ;
+
 @font-face {
   font-family: 'DIN-Alternate-medium';
   src: url('../fonts/din_alternate_medium-webfont.eot');
@@ -102,7 +105,7 @@ img.zoom {
   position: relative;
 }
 .border-red{
-  border: 1px solid #ea2336;
+  border: 1px solid $color-red;
 }
 
 div.border-red {
@@ -123,7 +126,7 @@ div.border-red {
 }
 .picto-article-temoin:hover {
   text-decoration: underline;
-  color:#ea2336;
+  color:$color-red;
 }
 
 .header {
@@ -264,7 +267,7 @@ div.border-red {
   margin-top:20px;
   a{
     text-decoration: underline!important;
-    color: #ea2336;
+    color: $color-red;
   }
 }
 .sidebar-nav-v1 {
@@ -565,7 +568,7 @@ div.border-red {
       a {
         p {
           span {
-            color:#EA2336!important;
+            color:$color-red!important;
             &.ico-search {
               background-position: -39px -29px;
             }
@@ -625,7 +628,7 @@ div.border-red {
       a {
         p {
           span {
-            color:#EA2336!important;
+            color:$color-red!important;
             &.ico-search {
               background-position: -39px -59px;
             }
@@ -674,7 +677,7 @@ div.border-red {
   #top-toc {
     .ttre {
       margin:0;
-      color: #EA2336;
+      color: $color-red;
       text-transform: uppercase;
       margin-bottom: 12px;
       font-size: 17px;
@@ -684,7 +687,7 @@ div.border-red {
   .desc {
     a {
       &:hover {
-        color: #EA2336;
+        color: $color-red;
         text-decoration: underline;
       }
     }
@@ -693,7 +696,7 @@ div.border-red {
     margin-top: 20px;
     margin-bottom: 5px;
     a {
-      color: #EA2336;
+      color: $color-red;
       font-size: 15px;
     }
   }
@@ -707,7 +710,7 @@ div.border-red {
 .cont-niv1 {
   .NIV1 {
     margin: 0;
-    color: #EA2336;
+    color: $color-red;
     text-transform: uppercase;
     margin-top: 20px;
     margin-bottom: 5px;
@@ -728,7 +731,7 @@ div.border-red {
 .cont-niv2 {
   .NIV2 {
     margin: 0;
-    color: #EA2336;
+    color: $color-red;
     margin-top: 20px;
     margin-bottom: 5px;
     font-size: 15px;
@@ -749,7 +752,7 @@ div.border-red {
     height: auto!important;
     &.plan-de-page {
       span {
-        color: #EA2336;
+        color: $color-red;
         text-transform: uppercase;
         font-family: myriad-pro-semi-bold;
         font-size: 17px;
@@ -1196,7 +1199,7 @@ input {
     a {
       text-transform: uppercase;
       &:hover {
-        color: #ea2336;
+        color: $color-red;
         text-decoration: underline;
       }
     }
@@ -1224,11 +1227,43 @@ input {
   .form-error {
     display: inline-block;
     margin: 10px;
-    color: #EA2336;
+    color: $color-red;
   }
   ul{
     a:hover {
       text-decoration: underline;
+    }
+  }
+}
+div[id^="background_fiche"] {
+  ul {
+    list-style-type: square;
+    &.list-unstyled {
+      li {
+        a {
+          &:hover {
+            color:$color-red;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  .steps_navigation {
+    a {
+      &:hover {
+        color:$color-red;
+        text-decoration: underline;
+      }
+    }
+  }
+  .fiche_step {
+    h3 {
+      color:$color-red;
+      font-size: 15px;
+      font-family: myriad-pro-semi-bold;
+      line-height: 15px;
+      letter-spacing: 0.75px;
     }
   }
 }
