@@ -929,6 +929,15 @@ $color-red : #ea2336 ;
 
 /* Small only */
 @media screen and (max-width: 768px) {
+  .article.zoning {
+    a {
+      p {
+        span.titre {
+          max-width: 46%;
+        }
+      }
+    }
+  }
   .xs-padding-left-60 {
     padding-left: 60px !important;
   }
@@ -1544,6 +1553,37 @@ $color-red : #ea2336 ;
 
 /* Medium and down */
 @media screen and (max-width: 991px) {
+  .article.zoning {
+    a {
+      p {
+        span.titre {
+          max-width: 70%;
+        }
+      }
+    }
+  }
+  div[id^="background_fiche"],
+  div[class^="fiche_step"] {
+    display:block!important;
+  }
+  div#background_fiche0 {
+    ul.list-unstyled {
+      display:none!important;
+    }
+  }
+  div#background_fiche1 {
+    .steps_navigation,
+    p.step_list,
+    div.eti-offers-devider,
+    ul.list-unstyled{
+      display:none!important;
+    }
+  }
+  div#background_fiche2,
+  div#background_fiche3 {
+    margin-top:20px;
+  }
+
   #design-services-popin,
   #design-switch-popin,
   #design-export-biblio-popin ,
