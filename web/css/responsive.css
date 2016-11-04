@@ -45,6 +45,10 @@
     margin-left: -30px; } }
 
 @media screen and (max-width: 340px) {
+  .breadcrumb {
+    display: none; }
+  #header-rubrique {
+    margin-top: 0 !important; }
   .dt-height {
     height: 90px !important; }
   .article-decouverte,
@@ -64,6 +68,10 @@
     height: 50px !important; } }
 
 @media screen and (min-width: 321px) and (max-width: 375px) {
+  .breadcrumb {
+    display: none; }
+  #header-rubrique {
+    margin-top: 0 !important; }
   .pub-annonce {
     display: none !important; }
   .margin-left-17 {
@@ -106,6 +114,10 @@
     padding-left: 55px; } }
 
 @media screen and (min-width: 376px) and (max-width: 425px) {
+  .breadcrumb {
+    display: none; }
+  #header-rubrique {
+    margin-top: 0 !important; }
   .pub-annonce {
     display: none !important; }
   .margin-left-17 {
@@ -359,6 +371,8 @@
     display: none; }
   form select, form input {
     width: 79%; }
+  form #wd_add-tag {
+    width: 100%; }
   form label {
     width: 20%; }
   form .formError {
@@ -388,6 +402,10 @@
     transform: scale(1.2); } }
 
 @media screen and (min-width: 426px) and (max-width: 639px) {
+  .breadcrumb {
+    display: none; }
+  #header-rubrique {
+    margin-top: 0 !important; }
   .margin-left-25p {
     margin-left: 15% !important; }
   .badge-env {
@@ -645,6 +663,15 @@
 
 /* Small only */
 @media screen and (max-width: 768px) {
+  #header-rubrique .nav-rubrique:hover a, #header-rubrique .nav-rubrique:hover p {
+    display: none !important; }
+  #header-rubrique .pdf-added {
+    position: relative; }
+  #header-rubrique #_targetPdf, #header-rubrique #_targetPdf + a {
+    display: block;
+    height: 42px;
+    padding-top: 13px !important;
+    padding-bottom: 13px !important; }
   .article.zoning a p span.titre {
     max-width: 46%; }
   .xs-padding-left-60 {
