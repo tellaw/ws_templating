@@ -1178,7 +1178,7 @@ input {
       }
     }
   }
-  &:hover, .hover_effect {
+  &:hover, &.hover_effect {
     .mark-traduction-hover {
       display: block;
       position: absolute;
