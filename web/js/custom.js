@@ -512,11 +512,11 @@ jQuery(document).ready(function() {
     if (jQuery(window).width() >= 1024) {
         jQuery(".tab-content .documents-smint").css({"minHeight": jQuery(".tab-content .col-droite").height() + 86});
 
-        jQuery(".tab-content-domaine .presentation-smint").css({"minHeight": jQuery(".tab-content .col-droite-2").height() - 60});
-        jQuery(".tab-content-domaine .expert-smint").css({"minHeight": jQuery(".tab-content .col-droite-2").height() - 60});
+        jQuery(".tab-content-domaine .presentation-smint").css({"minHeight": jQuery(".tab-content .col-droite-2").height() + 60});
+        jQuery(".tab-content-domaine .expert-smint").css({"minHeight": jQuery(".tab-content .col-droite-2").height() + 60});
 
-        jQuery(".tab-content-rubrique .presentation-smint").css({"minHeight": jQuery(".tab-content .col-droite-3").height() - 60});
-        jQuery(".tab-content-rubrique .expert-smint").css({"minHeight": jQuery(".tab-content .col-droite-3").height() - 60});
+        jQuery(".tab-content-rubrique .presentation-smint").css({"minHeight": jQuery(".tab-content .col-droite-3").height() + 60});
+        jQuery(".tab-content-rubrique .expert-smint").css({"minHeight": jQuery(".tab-content .col-droite-3").height() + 60});
 
         jQuery(".tab-content-article .presentation-smint").css({"minHeight": jQuery(".tab-content .col-droite-4").height() - 60});
         jQuery(".tab-content-article .corps-article-smint").css({"minHeight": jQuery(".tab-content .col-droite-4").height() - 60});
