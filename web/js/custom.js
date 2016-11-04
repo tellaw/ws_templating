@@ -621,7 +621,7 @@ jQuery(document).ready(function() {
     // shadow module interception
     jQuery(".module-interception .fade-out").css({bottom : jQuery(".module-interception").height() + 61});
 
-    jQuery('.mark-translation').bind('touchstart touchmove touchend', function(e) {
+    jQuery('.mark-translation').on('click', function(e) {
         e.preventDefault();
         jQuery(this).toggleClass('hover_effect');
     });
