@@ -316,6 +316,7 @@ jQuery(document).ready(function() {
                 jQuery(".col-droite-2").show();
                 jQuery(".col-droite-4").show();
                 jQuery(".barre-top").show();
+                jQuery("#sticky-menu-document").show();
             }
             //ajout de l'ancre dans l'url
             if (window.location.href.indexOf("#") > 0) {
