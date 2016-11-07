@@ -297,6 +297,7 @@ jQuery(document).ready(function() {
                 jQuery(".col-droite-3").hide();
                 jQuery(".col-droite-4").hide();
                 jQuery(".barre-top").hide();
+                jQuery("#sticky-menu-document").hide();
                 jQuery("section#details").css({margin: "0"});
             }
             else if (anchor == "#auteurs" || anchor == "#meme-sujet" || anchor == "#biblio") {
