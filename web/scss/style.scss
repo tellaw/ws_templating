@@ -1234,6 +1234,14 @@ input {
       text-decoration: underline;
     }
   }
+  >p {
+    a {
+      &:hover {
+        color:#ea2336;
+        text-decoration: underline;
+      }
+    }
+  }
 }
 div[id^="background_fiche"] {
   ul {
