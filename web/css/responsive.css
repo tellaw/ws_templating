@@ -1696,7 +1696,9 @@
   #pub_fixed_footer {
     display: none; }
   #sticky-menu-document {
-    display: none; } }
+    display: none; }
+  #meme-sujet .zoning {
+    cursor: pointer; } }
 
 @media only screen and (min-width: 1024px) {
   .corps-article-link-mobile {

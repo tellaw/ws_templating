@@ -2561,6 +2561,11 @@ $color-red : #ea2336 ;
   #sticky-menu-document {
     display:none;
   }
+  #meme-sujet {
+    .zoning {
+      cursor:pointer;
+    }
+  }
 }
 
 @media only screen and (min-width: 1024px) {

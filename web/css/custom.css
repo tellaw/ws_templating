@@ -55,6 +55,9 @@ a:hover {
 .zoning {
 	cursor: pointer;
 }
+#meme-sujet .zoning {
+	cursor: default;
+}
 dl {
 	padding: 0.5em;
 	margin-bottom: 0px !important;
