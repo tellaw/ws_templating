@@ -66,7 +66,7 @@ $color-red : #ea2336 ;
     display:none;
   }
   #header-rubrique {
-    margin-top:0!important;
+    margin-top:20px!important;
   }
   .dt-height{
     height: 90px !important;
@@ -96,7 +96,7 @@ $color-red : #ea2336 ;
     display:none;
   }
   #header-rubrique {
-    margin-top:0!important;
+    margin-top:20px!important;
   }
   .pub-annonce {
     display: none !important;
@@ -154,7 +154,7 @@ $color-red : #ea2336 ;
     display:none;
   }
   #header-rubrique {
-    margin-top:0!important;
+    margin-top:20px!important;
   }
   .pub-annonce {
     display: none !important;
@@ -596,7 +596,7 @@ $color-red : #ea2336 ;
     display:none;
   }
   #header-rubrique {
-    margin-top:0!important;
+    margin-top:20px!important;
   }
   .margin-left-25p {
     margin-left: 15% !important;
@@ -970,6 +970,9 @@ $color-red : #ea2336 ;
       height: 42px;
       padding-top: 13px !important;
       padding-bottom: 13px !important;
+    }
+    #_targetPdf + form {
+      padding:13px 20px;
     }
   }
   .article.zoning {

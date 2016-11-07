@@ -539,13 +539,11 @@ div.border-red {
   margin-bottom: 5px; }
   .box .titre-contenu a, .box .marge-l_20 a {
     color: #ea2336;
-    font-size: 15px; }
-
-.box .titre-contenu a {
-  font-family: myriad-pro-semi-bold; }
-  .box .titre-contenu a:hover {
-    text-decoration: none;
-    cursor: default; }
+    font-size: 15px;
+    font-family: myriad-pro-semi-bold; }
+    .box .titre-contenu a:hover, .box .marge-l_20 a:hover {
+      text-decoration: none;
+      cursor: default; }
 
 .cont-niv1 .NIV1 {
   margin: 0;

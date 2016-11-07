@@ -48,7 +48,7 @@
   .breadcrumb {
     display: none; }
   #header-rubrique {
-    margin-top: 0 !important; }
+    margin-top: 20px !important; }
   .dt-height {
     height: 90px !important; }
   .article-decouverte,
@@ -71,7 +71,7 @@
   .breadcrumb {
     display: none; }
   #header-rubrique {
-    margin-top: 0 !important; }
+    margin-top: 20px !important; }
   .pub-annonce {
     display: none !important; }
   .margin-left-17 {
@@ -117,7 +117,7 @@
   .breadcrumb {
     display: none; }
   #header-rubrique {
-    margin-top: 0 !important; }
+    margin-top: 20px !important; }
   .pub-annonce {
     display: none !important; }
   .margin-left-17 {
@@ -405,7 +405,7 @@
   .breadcrumb {
     display: none; }
   #header-rubrique {
-    margin-top: 0 !important; }
+    margin-top: 20px !important; }
   .margin-left-25p {
     margin-left: 15% !important; }
   .badge-env {
@@ -672,6 +672,8 @@
     height: 42px;
     padding-top: 13px !important;
     padding-bottom: 13px !important; }
+  #header-rubrique #_targetPdf + form {
+    padding: 13px 20px; }
   .article.zoning a p span.titre {
     max-width: 46%; }
   .xs-padding-left-60 {
