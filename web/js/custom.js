@@ -304,12 +304,14 @@ jQuery(document).ready(function() {
                 jQuery(".col-droite-4").show();
                 jQuery(".barre-top").hide();
                 jQuery("section" + anchor).css({margin: "25px 0 0 0"});
+                jQuery("#sticky-menu-document").show();
             }
             else if (anchor != "#documents" && anchor != "#presentation" && anchor != "#expert") {
                 jQuery(".col-droite div.pub-bloc div.freezone").hide();
                 jQuery(".col-droite-2").hide();
                 jQuery(".col-droite-4").show();
                 jQuery(".barre-top").show();
+                jQuery("#sticky-menu-document").show();
             }
             else {
                 jQuery(".col-droite div.pub-bloc div.freezone").show();
