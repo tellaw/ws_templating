@@ -508,7 +508,7 @@ div.border-red {
 
 .fiche.zoning a p span.titre {
   text-overflow: ellipsis;
-  max-width: 555px;
+  max-width: 430px;
   display: inline-block;
   white-space: nowrap;
   overflow: hidden;
