@@ -276,12 +276,14 @@ jQuery(document).ready(function() {
             jQuery(".col-droite div.pub-bloc div.freezone").hide();
             jQuery(".col-droite-2").hide();
             jQuery(".barre-top").hide();
+            jQuery("#sticky-menu-document").show();
             if (anchor == "auteurs" || anchor == "meme-sujet" || anchor == "biblio") {
                 jQuery("section#" + anchor).css({margin: "25px 0 0 0"});
             }
         }
         else if (anchor == "details") {
             jQuery(".col-droite-4").hide();
+            jQuery("#sticky-menu-document").hide();
         }
     }
     else if (window.location.href.indexOf("#") == -1 && window.location.href.indexOf(".html") == -1) {
