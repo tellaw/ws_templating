@@ -1694,6 +1694,8 @@
     top: 5px; }
   #pub_mega_skyscraper,
   #pub_fixed_footer {
+    display: none; }
+  #sticky-menu-document {
     display: none; } }
 
 @media only screen and (min-width: 1024px) {
