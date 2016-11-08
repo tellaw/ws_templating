@@ -604,7 +604,9 @@ jQuery(document).ready(function() {
     jQuery('.lecture-facile, .bt-lf').on("click",function() {
         // quitter la lecture facile
         if (jQuery('body').hasClass('lecture_facile')) {
-            window.location.href = window.location.href.replace('?lectureFacile=true', '').replace('&lectureFacile=true', '').replace('&sommaireDetaille=true', '?sommaireDetaille=true');
+            jQuery('body').removeClass('lecture_facile');
+            location.reload();
+
         }
         // ouvrir la lecture facile
         else {
@@ -634,12 +636,13 @@ jQuery(document).ready(function() {
 
     jQuery(window).resize(function() {
         var positionnement = jQuery('#sticky-menu-document').css("position");
-        console.log("positionnement");
         if(jQuery(window).width() >= 1270 && positionnement == "fixed") {
             stickyRight = (jQuery(window).width() - 1140)/2 - 55;
             jQuery('#sticky-menu-document').css("left",stickyRight).show();
         }
     });
+
+    jQuery(".pdf-added").delay(5000).hide(0);
 });
 
 (function() {

@@ -3986,9 +3986,19 @@ div.encadre p, div.ENCADRE p {
 	padding: 0 10px;
 	margin: 0;
 }
+div.remarque, div.REMARQUE {
+	background:#e2e1e1;
+	padding:20px;
+}
+div.remarque p, div.REMARQUE p {
+	margin:0
+}
 div.nota, div.NOTA {
 	margin:0 20px;
 	padding:0 5px;
+}
+div.nota p, div.NOTA p {
+	display: inline-block;
 }
 div.exemple, div.EXEMPLE {
 	margin:0 20px;
