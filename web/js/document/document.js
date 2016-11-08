@@ -25,11 +25,11 @@ jQuery(document).ready(function() {
                 return false;
             }
         });
-        jQuery("#media-popin").dialog("widget").attr("id", "design-media-popin").css("position", "fixed");
+        jQuery("#media-popin").dialog("widget").attr("id", "design-media-popin").css("position", "absolute");
         jQuery("#media-popin iframe").attr("src", jQuery(this).attr("href"));
         var margeTop = jQuery(window).height() / 2.5;
         if(top > "420"){
-            jQuery("#media-popin").dialog("widget").css("top", "100px");
+            jQuery("#media-popin").dialog("widget").css("top", top - margeTop);
         }
         else {
             jQuery("#media-popin").dialog("widget").css("top", "50px");
