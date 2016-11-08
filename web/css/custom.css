@@ -3994,9 +3994,13 @@ div.exemple, div.EXEMPLE {
 	margin:0 20px;
 	padding:0 5px;
 }
-div.exemple p, div.EXEMPLE p {
+div.exemple>p, div.EXEMPLE>p, div.exemple>ul, div.EXEMPLE>ul {
 	border-left: 3px solid;
 	padding-left: 15px;
+	margin: 0;
+}
+div.exemple>ul, div.EXEMPLE>ul {
+	padding-left: 45px;
 }
 .fa-external-link {
 	padding: 0 3px 0 5px;

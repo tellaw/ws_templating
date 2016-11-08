@@ -631,6 +631,15 @@ jQuery(document).ready(function() {
         e.preventDefault();
         jQuery(this).toggleClass('hover_effect');
     });
+
+    jQuery(window).resize(function() {
+        var positionnement = jQuery('#sticky-menu-document').css("position");
+        console.log("positionnement");
+        if(jQuery(window).width() >= 1270 && positionnement == "fixed") {
+            stickyRight = (jQuery(window).width() - 1140)/2 - 55;
+            jQuery('#sticky-menu-document').css("left",stickyRight).show();
+        }
+    });
 });
 
 (function() {
@@ -692,12 +701,11 @@ function verticalToolbarPosition() {
     var menu = jQuery("#sticky-menu-document");
     var fixedLimit = menu.offset().top - 122;
     var posHide = jQuery(document).height() - topMenuVertical;
-    var posLeft = (jQuery(window).width() - jQuery(".container").width())/2 - 55;
 
     jQuery(window).scroll(function(event) {
         // Valeur de défilement lors du chargement de la page
         windowScroll = jQuery(window).scrollTop();
-
+        posLeft = (jQuery(window).width() - jQuery(".container").width())/2 - 55;
         // Mise à jour du positionnement en fonction du scroll
         if( windowScroll >= fixedLimit ) {
             menu.css({position: 'fixed', top: topMenuVertical, left: posLeft});
