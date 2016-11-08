@@ -790,7 +790,7 @@
   .xs-margin-top-15 {
     margin-top: 15px !important; }
   .xs-margin-top-20 {
-    margin-top: 20px; }
+    margin-top: 20px !important; }
   .xs-margin-top-25 {
     margin-top: 25px !important; }
   .xs-margin-top-30 {
@@ -873,7 +873,9 @@
     color: #9eb504 !important; }
   .panel-custom .panel-heading a:hover {
     text-decoration: none;
-    color: #ec1625 !important; } }
+    color: #ec1625 !important; }
+  .module-interception .cas-login {
+    border-right: 1px solid #C6C6C6; } }
 
 /* Medium only */
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -926,7 +928,7 @@
   .sm-margin-top-15 {
     margin-top: 15px !important; }
   .sm-margin-top-20 {
-    margin-top: 20px; }
+    margin-top: 20px !important; }
   .sm-margin-top-25 {
     margin-top: 25px; }
   .sm-margin-top-30 {
@@ -1189,7 +1191,7 @@
   .md-margin-top-10 {
     margin-top: 10px; }
   .md-margin-top-20 {
-    margin-top: 20px; }
+    margin-top: 20px !important; }
   .md-margin-top-25 {
     margin-top: 25px; }
   .md-margin-top-30 {
@@ -1270,9 +1272,7 @@
   .text-align {
     text-align: left !important; }
   .padding-80 {
-    padding-left: 150px !important; }
-  .module-interception .cas-login {
-    border-right: 1px solid #C6C6C6; } }
+    padding-left: 150px !important; } }
 
 /* Tablette portrait à petit desktop */
 @media screen and (min-width: 769px) and (max-width: 1024px) {

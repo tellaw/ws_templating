@@ -432,6 +432,13 @@ div.border-red {
     }
   }
 }
+.linkOnglet {
+  text-decoration: underline;
+  &:hover {
+    color:#EC1625!important;
+    text-decoration:underline;
+  }
+}
 .inner-results.article {
   text-align:left;
 }

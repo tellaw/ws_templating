@@ -364,6 +364,12 @@ div.border-red {
       color: #EC1625 !important;
       text-decoration: underline; }
 
+.linkOnglet {
+  text-decoration: underline; }
+  .linkOnglet:hover {
+    color: #EC1625 !important;
+    text-decoration: underline; }
+
 .inner-results.article {
   text-align: left; }
 
