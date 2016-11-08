@@ -3,25 +3,19 @@
     content: none !important;
   }
 }
+body {
+  margin-top: 0!important;
+}
+
 .header,
 .navbar,
 .navbar-fixed-top,
-#sticky,
 .fp,
-.related-search,
-.tab-search,
-.actions-select,
-.pagination,
-#menu-smint,
-.bottom-bloc,
 #footer,
 .boxPub {
   display:none;
 }
 .inner-results {
-  .checkbox {
-    display:none;
-  }
   .list-inline {
     margin:0;
     padding:0;
