@@ -3398,7 +3398,8 @@ td, th, tr{
 	margin:0;
 	top: -2px;
 }
-#header-rubrique .pdf-added {
+#header-rubrique .pdf-added,
+#header-rubrique .pdf-full {
 	position: absolute;
 	width: 100%;
 	left: 0px;
@@ -3407,10 +3408,15 @@ td, th, tr{
 	margin: 5px 0 0 0px;
 	color: #fff;
 }
-#header-rubrique .pdf-added * {
+#header-rubrique .pdf-full p {
+	margin:5px 0;
+}
+#header-rubrique .pdf-added *,
+#header-rubrique .pdf-full * {
 	color: #fff;
 }
-#header-rubrique .pdf-added a {
+#header-rubrique .pdf-added a,
+#header-rubrique .pdf-full a {
 	text-decoration: underline;
 }
 #header-rubrique .pdf-added .badge-x {
