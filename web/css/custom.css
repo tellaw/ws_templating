@@ -4137,6 +4137,7 @@ div.fade-out {
 	width: 60px;
 	position: relative;
 	z-index: 99999;
+	float: right;
 }
 .docbase-image div.image {
 	text-align: center;
