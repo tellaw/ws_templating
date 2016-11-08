@@ -3992,11 +3992,10 @@ div.nota, div.NOTA {
 }
 div.exemple, div.EXEMPLE {
 	margin:0 20px;
-	padding:0 5px;
+	padding:0 5px 0 20px;
+	border-left: 3px solid;
 }
 div.exemple>p, div.EXEMPLE>p, div.exemple>ul, div.EXEMPLE>ul {
-	border-left: 3px solid;
-	padding-left: 15px;
 	margin: 0;
 }
 div.exemple>ul, div.EXEMPLE>ul {
@@ -4104,4 +4103,41 @@ div.fade-out {
 }
 .wrap-table .loupe {
 	display: none;
+}
+
+.align-center {
+	text-align: center;
+	width: 100%;
+	float: left;
+	margin: 10px 0;
+	display: block;
+}
+.docbase-image {
+	border: 1px solid #bcbcbc;
+	padding: 5px;
+	margin: 0 auto 5px auto;
+	background: #ffffff;
+	display: table;
+}
+.docbase-image div.legende {
+	background: #ebeff0;
+	float: left;
+	margin: 0 0 5px;
+	padding: 8px 0;
+	text-align: left;
+	width: 100%;
+}
+.docbase-image div.legende .title_legende {
+	float: left;
+	padding: 0 15px;
+	width: 366px;
+}
+.docbase-image div.legende span.zoomplus {
+	padding: 0 10px 0 3px;
+	width: 60px;
+	position: relative;
+	z-index: 99999;
+}
+.docbase-image div.image {
+	text-align: center;
 }
