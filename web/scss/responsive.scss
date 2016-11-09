@@ -979,7 +979,9 @@ $color-red : #ea2336 ;
       padding:13px 20px;
     }
   }
-  .article.zoning {
+  .article.zoning,
+  .fiche.zoning,
+  .archive.zoning {
     a {
       p {
         span.titre {
