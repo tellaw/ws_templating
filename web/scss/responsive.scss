@@ -964,6 +964,10 @@ $color-red : #ea2336 ;
     }
     .pdf-added {
       position:relative;
+      >span {
+        padding:0;
+        display: block;
+      }
     }
     #_targetPdf, #_targetPdf + a {
       display: inline-block;
