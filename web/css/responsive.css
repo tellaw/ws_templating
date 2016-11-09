@@ -667,7 +667,7 @@
     display: none !important; }
   #header-rubrique .pdf-added {
     position: relative; }
-    #header-rubrique .pdf-added > span {
+    #header-rubrique .pdf-added > span:first-child {
       padding: 0;
       display: block; }
   #header-rubrique #_targetPdf, #header-rubrique #_targetPdf + a {

@@ -964,7 +964,7 @@ $color-red : #ea2336 ;
     }
     .pdf-added {
       position:relative;
-      >span {
+      >span:first-child {
         padding:0;
         display: block;
       }
