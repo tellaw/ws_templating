@@ -966,7 +966,7 @@ $color-red : #ea2336 ;
       position:relative;
     }
     #_targetPdf, #_targetPdf + a {
-      display: block;
+      display: inline-block;
       height: 42px;
       padding-top: 13px !important;
       padding-bottom: 13px !important;

@@ -668,7 +668,7 @@
   #header-rubrique .pdf-added {
     position: relative; }
   #header-rubrique #_targetPdf, #header-rubrique #_targetPdf + a {
-    display: block;
+    display: inline-block;
     height: 42px;
     padding-top: 13px !important;
     padding-bottom: 13px !important; }
