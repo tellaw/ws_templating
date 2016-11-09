@@ -983,7 +983,8 @@ $color-red : #ea2336 ;
     a {
       p {
         span.titre {
-          max-width: 46%;
+          max-width: 95% !important;
+          margin-left: 25px;
         }
       }
     }

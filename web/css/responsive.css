@@ -678,7 +678,8 @@
   #header-rubrique #_targetPdf + form {
     padding: 13px 20px; }
   .article.zoning a p span.titre {
-    max-width: 46%; }
+    max-width: 95% !important;
+    margin-left: 25px; }
   .xs-padding-left-60 {
     padding-left: 60px !important; }
   .xs-padding-left-15 {
