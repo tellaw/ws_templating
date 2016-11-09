@@ -606,7 +606,7 @@ jQuery(document).ready(function() {
         if (jQuery('body').hasClass('lecture_facile')) {
             jQuery('body').removeClass('lecture_facile');
             location.reload();
-
+            window.location.href = window.location.href.replace('?lectureFacile=true', '').replace('&lectureFacile=true', '').replace('&sommaireDetaille=true', '?sommaireDetaille=true');
         }
         // ouvrir la lecture facile
         else {
@@ -629,10 +629,10 @@ jQuery(document).ready(function() {
     // shadow module interception
     jQuery(".module-interception .fade-out").css({bottom : jQuery(".module-interception").height() + 61});
 
-    jQuery('.mark-translation').on('click', function(e) {
+    /*jQuery('.mark-translation').on('click', function(e) {
         e.preventDefault();
         jQuery(this).toggleClass('hover_effect');
-    });
+    });*/
 
     jQuery(window).resize(function() {
         var positionnement = jQuery('#sticky-menu-document').css("position");

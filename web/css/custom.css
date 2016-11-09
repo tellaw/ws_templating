@@ -2924,7 +2924,8 @@ div.play-button {
 	padding-left: 40px;
 	padding-right: 40px;
 }
-.abo a:hover p[class*="-img"] i {
+.abo a:hover p[class*="-img"] i,
+.abo a:hover p[class*="-img"] span {
 	color:#1B8BBB !important;
 	border: 1.5px solid #1B8BBB;
 }
@@ -2933,7 +2934,7 @@ div.play-button {
 	color:#fff;
 	border: 1.5px solid #1B8BBB;
 }
-.no-abo a:hover p[class*="-img"] i {
+.no-abo a:hover p[class*="-img"] i, {
 	color:#697277 !important;
 	border: 1.5px solid #697277;
 }
@@ -2946,7 +2947,8 @@ div.play-button {
 	margin-bottom: 0px;
 	height: 22px;
 }
-.abonnement-img i {
+.abonnement-img i,
+.abonnement-img span {
 	border: 1.5px solid #697277;
 	height: 24px;
 	width: 24px;
@@ -2956,6 +2958,17 @@ div.play-button {
 	padding-top: 4px;
 	background: #fff;
 }
+.abonnement-img span {
+	padding: 3px 4px 2px 4px;
+	background: url(../images/AD-prospect.png) no-repeat center center #fff;
+	display: inline-block;
+	background-size: 76%;
+}
+.article-devouverte:hover .abonnement-img span {
+	background: url(../images/AD-abo.png) no-repeat center center #fff;
+	background-size: 76%;
+}
+
 .abonnement-text {
 	height: 21px;
 	line-height: 14px;
