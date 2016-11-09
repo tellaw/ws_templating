@@ -277,7 +277,7 @@ jQuery(document).ready(function() {
             jQuery(".col-droite-2").hide();
             jQuery(".barre-top").hide();
             jQuery("#sticky-menu-document").show();
-            if (anchor == "auteurs" || anchor == "meme-sujet" || anchor == "biblio") {
+            if (anchor == "auteurs" || anchor == "meme-sujet" || anchor == "biblio" || anchor == "outils") {
                 jQuery("section#" + anchor).css({margin: "25px 0 0 0"});
             }
         }
@@ -302,7 +302,7 @@ jQuery(document).ready(function() {
                 jQuery("#sticky-menu-document").hide();
                 jQuery("section#details").css({margin: "0"});
             }
-            else if (anchor == "#auteurs" || anchor == "#meme-sujet" || anchor == "#biblio") {
+            else if (anchor == "#auteurs" || anchor == "#meme-sujet" || anchor == "#biblio" || anchor == "#outils") {
                 jQuery(".col-droite-4").show();
                 jQuery(".barre-top").hide();
                 jQuery("section" + anchor).css({margin: "25px 0 0 0"});
@@ -749,6 +749,14 @@ function lectureFacileEnableLinks() {
         }
 
         if (this.href.indexOf('#biblio') >= 0) {
+            return;
+        }
+
+        if (this.href.indexOf('#') >= 0) {
+            return;
+        }
+
+        if (this.href == "") {
             return;
         }
 

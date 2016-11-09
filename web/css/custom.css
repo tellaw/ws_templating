@@ -2613,7 +2613,8 @@ div.play-button {
 .sommaire-background .displayDetailledSummary a img {
 	margin:1px 1px 5px 1px;
 }
-.sommaire-background a:hover{
+.sommaire-background a:hover,
+.outil-link:hover {
 	color:#ea2336;
 	text-decoration: underline;
 }

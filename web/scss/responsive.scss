@@ -2468,6 +2468,12 @@ $color-red : #ea2336 ;
 
 /* Large and down */
 @media screen and (max-width: 1200px) {
+  .bloc-media {
+    img {
+      width: 90%;
+    }
+  }
+
   .navbar-toggle {
     display: block;
   }
