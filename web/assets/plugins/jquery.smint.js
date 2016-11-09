@@ -87,6 +87,8 @@ If you like Smint, or have suggestions on how it could be improved, send me a tw
 				} else {
 					smint.css( 'position', 'relative').removeClass('fxd');
 					smint.css( 'margin-top', '0'); 
+					smint.css( 'margin-left', '0');
+					smint.css( 'left', '0');
 					//remove the padding we added.
 					jQuery('body').css('padding-top', '0' );	
 				}   

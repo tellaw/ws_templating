@@ -3449,6 +3449,12 @@ td, th, tr{
 	text-decoration: underline;
 	letter-spacing: 0.75px;
 }
+#header-rubrique form:hover input[type="submit"] {
+	color:#EA2336;
+}
+#header-rubrique #_targetPdf + a:hover {
+	color:#EA2336;
+}
 .liste-articles-rubrique {
 	border-top: 2px solid #ec1625;
 }
