@@ -970,3 +970,10 @@ div[id^="background_fiche"] .fiche_step h3 {
   font-family: myriad-pro-semi-bold;
   line-height: 15px;
   letter-spacing: 0.75px; }
+
+.contenu_fiche .figures_container {
+  border: 1px solid #ddd;
+  margin: 0 55px;
+  text-align: center; }
+  .contenu_fiche .figures_container img {
+    padding: 20px; }

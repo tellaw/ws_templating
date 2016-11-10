@@ -1288,3 +1288,13 @@ div[id^="background_fiche"] {
     }
   }
 }
+.contenu_fiche {
+  .figures_container {
+    border: 1px solid #ddd;
+    margin: 0 55px;
+    text-align: center;
+    img {
+      padding:20px;
+    }
+  }
+}

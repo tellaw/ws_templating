@@ -3450,7 +3450,8 @@ td, th, tr{
 	text-decoration: underline;
 	letter-spacing: 0.75px;
 }
-#header-rubrique form:hover input[type="submit"] {
+#header-rubrique form:hover input[type="submit"],
+#header-rubrique form:hover i {
 	color:#EA2336;
 }
 #header-rubrique #_targetPdf + a:hover {
@@ -4183,4 +4184,7 @@ div.fade-out {
 }
 .docbase-image div.image {
 	text-align: center;
+}
+.figurestexte_content {
+	overflow:auto;
 }
