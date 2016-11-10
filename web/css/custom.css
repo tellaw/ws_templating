@@ -4159,7 +4159,7 @@ div.fade-out {
 .align-center {
 	text-align: center;
 	width: 100%;
-	float: left;
+	/*float: left;*/
 	margin: 10px 0;
 	display: block;
 }
@@ -4185,7 +4185,6 @@ div.fade-out {
 }
 .docbase-image div.legende span.zoomplus {
 	padding: 0 10px 0 3px;
-	width: 60px;
 	position: relative;
 	z-index: 99999;
 	float: right;
