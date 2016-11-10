@@ -3833,6 +3833,9 @@ div.tableDiv {
 	border: 1px solid #ddd;
 	margin: 0 55px;
 }
+div.tableDiv * {
+	word-break: normal;
+}
 div.tableDiv p {
 	margin:2px 0;
 	font-size: 1.3em;
