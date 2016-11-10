@@ -1291,7 +1291,9 @@ div[class^="element-wrapper-"] img {
 	color: #EC1625;
 	background: #fff;
 }
-
+.btn-u-grey:hover {
+	background: #95a5a6;
+}
 .btn-expend {
 	border: 1px #697277 solid;
 	color: #697277;
@@ -3645,6 +3647,9 @@ form #di-link {
 	color:#ea2336;
 	text-decoration: underline;
 }
+.content-article a[type="buton"]:hover {
+	text-decoration: none;
+}
 .content-article > div {
 	margin: 0 0 30px 0;
 }
@@ -4019,9 +4024,12 @@ div.encadre p, div.ENCADRE p {
 	padding: 0 10px;
 	margin: 0;
 }
-div.remarque, div.REMARQUE {
+div.remarque, div.REMARQUE, div.encart_outil, div.dtnoteintervenant {
 	background:#e2e1e1;
 	padding:20px;
+}
+div.encart_outil .content {
+	padding:0;
 }
 div.remarque p, div.REMARQUE p {
 	margin:0

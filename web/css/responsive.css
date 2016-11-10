@@ -164,6 +164,8 @@
 
 /* Mobile portrait */
 @media screen and (max-width: 425px) {
+  #header-rubrique .btn-u-blue {
+    margin-top: 10px; }
   .timeline-v2 > li .cbp_tmlabel {
     padding-top: 0px; }
   .xxx {
