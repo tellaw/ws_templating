@@ -3634,7 +3634,7 @@ form #di-link {
 	color: #ea2336;
 	text-decoration: underline;
 }
-content-article {
+.content-article {
 	overflow-wrap: break-word;
 }
 .content-article a:hover,
