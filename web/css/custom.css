@@ -22,9 +22,6 @@
 	url('../fonts/MyriadPro-Bold.woff') format('woff'),
 	url('../fonts/MyriadPro-Bold.ttf') format('truetype');
 }
-* {
-	word-break: break-word;
-}
 body {
 	font-family: "myriad-pro", sans-serif;
 	color:#4d5356;
@@ -3636,6 +3633,9 @@ form #di-link {
 .annotation-child .note a:hover {
 	color: #ea2336;
 	text-decoration: underline;
+}
+content-article {
+	overflow-wrap: break-word;
 }
 .content-article a:hover,
 .barre-top a:hover,
