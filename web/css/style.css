@@ -540,14 +540,14 @@ div.border-red {
   color: #ea2336;
   text-decoration: underline; }
 
-.box .titre-contenu, .box .marge-l_20 {
+.box .titre-contenu, .box .marge-l_20.bleu {
   margin-top: 20px;
   margin-bottom: 5px; }
-  .box .titre-contenu a, .box .marge-l_20 a {
+  .box .titre-contenu a, .box .marge-l_20.bleu a {
     color: #ea2336;
     font-size: 15px;
     font-family: myriad-pro-semi-bold; }
-    .box .titre-contenu a:hover, .box .marge-l_20 a:hover {
+    .box .titre-contenu a:hover, .box .marge-l_20.bleu a:hover {
       text-decoration: none;
       cursor: default; }
 
@@ -604,8 +604,12 @@ div.border-red {
   padding-bottom: 20px;
   margin-bottom: 20px;
   border-bottom: 1px solid #c6c6c6; }
+  .bg-sommaire .marge-l_20 {
+    margin-left: 80px; }
   .bg-sommaire .marge-l_40 {
     margin-left: 40px; }
+  .bg-sommaire .marge-l_60 {
+    margin-left: 60px; }
   .bg-sommaire .gras {
     padding-top: 5px;
     display: inline-block; }

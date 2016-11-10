@@ -699,7 +699,7 @@ div.border-red {
       }
     }
   }
-  .titre-contenu, .marge-l_20 {
+  .titre-contenu, .marge-l_20.bleu {
     margin-top: 20px;
     margin-bottom: 5px;
     a {
@@ -783,8 +783,14 @@ div.border-red {
   padding-bottom: 20px;
   margin-bottom: 20px;
   border-bottom: 1px solid #c6c6c6;
+  .marge-l_20 {
+    margin-left:80px;
+  }
   .marge-l_40 {
     margin-left:40px;
+  }
+  .marge-l_60 {
+    margin-left:60px;
   }
   .gras {
     padding-top: 5px;
