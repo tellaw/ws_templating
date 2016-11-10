@@ -4207,3 +4207,18 @@ div[id^="background_fiche"] .figures_container div.figures_classe {
 	background: #F3F3F3;
 	padding: 10px 0;
 }
+.form-erreur-di {
+	margin-left: 145px;
+	color: #ea2336;
+	font-weight: normal;
+	font-size: 12px;
+}
+.bodyQuestion .form-erreur-di {
+	margin-left: 0;
+	position: relative;
+	top: -20px;
+}
+.domaine #domain {
+	position: relative;
+	top: -8px;
+}
