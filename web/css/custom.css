@@ -4189,6 +4189,9 @@ div.fade-out {
 	z-index: 99999;
 	float: right;
 }
+.docbase-image div.legende span.zoomplus i {
+	font-size: 20px;
+}
 .docbase-image div.image {
 	text-align: center;
 }
