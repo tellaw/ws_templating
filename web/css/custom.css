@@ -4024,7 +4024,7 @@ div.encadre p, div.ENCADRE p {
 	padding: 0 10px;
 	margin: 0;
 }
-div.remarque, div.REMARQUE, div.encart_outil, div.dtnoteintervenant {
+div.remarque, div.REMARQUE, div.encart_outil, div.dtnoteintervenant, div.dtnotesimple, div.dtnotewarning {
 	background:#e2e1e1;
 	padding:20px;
 }
@@ -4051,6 +4051,10 @@ div.exemple>p, div.EXEMPLE>p, div.exemple>ul, div.EXEMPLE>ul {
 }
 div.exemple>ul, div.EXEMPLE>ul {
 	padding-left: 45px;
+}
+div.dtnotebaspage,
+div.dtnotebaspage p {
+	display:inline;
 }
 .fa-external-link {
 	padding: 0 3px 0 5px;
