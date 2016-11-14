@@ -2967,7 +2967,7 @@ div.play-button {
 	display: inline-block;
 	background-size: 76%;
 }
-.article-devouverte:hover .abonnement-img span {
+.article-decouverte a:hover .abonnement-img span {
 	background: url(../images/AD-abo.png) no-repeat center center #fff;
 	background-size: 76%;
 }
@@ -3596,6 +3596,14 @@ form #di-link {
 	width: 24px;
 	top:0;
 }
+.tab-content-article .best-fiches .ico-search{
+	margin: 0;
+	background-size: 50px 175px;
+	height: 19px;
+	background-position: -25px -40px!important;
+	width: 24px;
+	top:0;
+}
 .annotation-border {
 	border: 1px solid #697277;
 	width: 294px;
@@ -4024,7 +4032,7 @@ div.encadre p, div.ENCADRE p {
 	padding: 0 10px;
 	margin: 0;
 }
-div.remarque, div.REMARQUE, div.encart_outil, div.dtnoteintervenant, div.dtnotesimple, div.dtnotewarning {
+div.remarque, div.REMARQUE, div.encart_outil, div.dtnoteintervenant, div.dtnotesimple, div.dtnotewarning, div.dtnotecommentaire, div.dtnote {
 	background:#e2e1e1;
 	padding:20px;
 }

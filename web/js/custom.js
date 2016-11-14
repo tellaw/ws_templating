@@ -21,11 +21,13 @@ jQuery(document).ready(function() {
     });
     // navigate to a tab when the history changes
     window.addEventListener("popstate", function(e) {
-        var activeTab = jQuery('[href=' + location.hash + ']');
-        if (activeTab.length) {
-            activeTab.tab('show');
-        } else {
-            jQuery('.nav-tabs a:first').tab('show');
+        if (location.hash != "") {
+            var activeTab = jQuery('[href=' + location.hash + ']');
+            if (activeTab.length) {
+                activeTab.tab('show');
+            } else {
+                jQuery('.nav-tabs a:first').tab('show');
+            }
         }
     });
 });
@@ -271,8 +273,10 @@ jQuery(document).ready(function() {
     if (window.location.href.indexOf("#") > -1) {
         var anchor = window.location.href.substring(window.location.href.indexOf("#") + 1, window.location.href.length);
         anchor = anchor.substring(anchor.indexOf("?"), anchor.length);
+        var anchorFiche = anchor.substring(0, anchor.indexOf("_"));
+        console.log(anchorFiche);
         jQuery("#" + anchor + "_link").click();
-        if (anchor != "documents" && anchor != "presentation" && anchor != "expert" && anchor != "" && anchor != "details") {
+        if (anchor != "documents" && anchor != "presentation" && anchor != "expert" && anchor != "" && anchor != "details" && anchor != "corps-article" && anchorFiche != "corps-article") {
             jQuery(".col-droite div.pub-bloc div.freezone").hide();
             jQuery(".col-droite-2").hide();
             jQuery(".barre-top").hide();
@@ -284,6 +288,13 @@ jQuery(document).ready(function() {
         else if (anchor == "details") {
             jQuery(".col-droite-4").hide();
             jQuery("#sticky-menu-document").hide();
+        }
+
+        if (anchor != "presentation") {
+            jQuery(".barre-top .btn-nav").show();
+        }
+        else {
+            jQuery(".barre-top .btn-nav").hide();
         }
     }
     else if (window.location.href.indexOf("#") == -1 && window.location.href.indexOf(".html") == -1) {
@@ -321,6 +332,13 @@ jQuery(document).ready(function() {
                 jQuery(".col-droite-4").show();
                 jQuery(".barre-top").show();
                 jQuery("#sticky-menu-document").show();
+            }
+
+            if (anchor != "#presentation") {
+                jQuery(".barre-top .btn-nav").show();
+            }
+            else {
+                jQuery(".barre-top .btn-nav").hide();
             }
             //ajout de l'ancre dans l'url
             if (window.location.href.indexOf("#") > 0) {
