@@ -4041,7 +4041,7 @@ div.dtnoteintervenant {
 	background: url(../images/notes.png) no-repeat scroll 15px 15px #e2e1e1;
 	padding-left: 50px;
 }
-.dtnotewarning {
+div.dtnotewarning {
 	background: url(../images/attention2.png) no-repeat scroll 15px 15px #e2e1e1;
 	padding-left: 50px;
 }
