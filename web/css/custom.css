@@ -4250,17 +4250,6 @@ div[id^="background_fiche"] .figures_container div.figures_classe {
 	border: 1px solid #333333;
 	padding: 2px 5px;
 }
-.contenu_fiche .encart_outil {
-	border-color: #D3D3D3;
-	border-style: solid;
-	border-width: 1px;
-	clear: both;
-	float: left;
-	margin: 10px 0;
-	padding: 10px 10px 10px 20px;
-	text-align: left;
-	width: 445px;
-}
 
 .contenu_fiche .encart_outil .type0 {
 	background: url("../images/icons0.png") no-repeat scroll 0 0 transparent;
