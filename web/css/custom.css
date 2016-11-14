@@ -4037,6 +4037,9 @@ div.remarque, div.REMARQUE, div.encart_outil, div.dtnoteintervenant, div.dtnotes
 	padding:20px;
 	margin: 0 0 20px 0;
 }
+div.dtnoteintervenant {
+	background: url(../images/notes.png) no-repeat scroll 5px 5px #e2e1e1;
+}
 div.encart_outil .content {
 	padding:0;
 }
