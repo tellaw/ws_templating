@@ -274,7 +274,6 @@ jQuery(document).ready(function() {
         var anchor = window.location.href.substring(window.location.href.indexOf("#") + 1, window.location.href.length);
         anchor = anchor.substring(anchor.indexOf("?"), anchor.length);
         var anchorFiche = anchor.substring(0, anchor.indexOf("_"));
-        console.log(anchorFiche);
         jQuery("#" + anchor + "_link").click();
         if (anchor != "documents" && anchor != "presentation" && anchor != "expert" && anchor != "" && anchor != "details" && anchor != "corps-article" && anchorFiche != "corps-article") {
             jQuery(".col-droite div.pub-bloc div.freezone").hide();
