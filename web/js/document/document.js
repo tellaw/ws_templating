@@ -6,7 +6,7 @@ jQuery(document).ready(function() {
     // gestion des popins media
     jQuery("a.media-popin").click(function() {
         if (!jQuery("#media-popin").html()) {
-            var ui = '<div id="media-popin" role="dialog" style="display:none;z-index:1001;">' + '<iframe sandbox="allow-scripts allow-modals" frameborder="0" style="width:100%;height:98%;" src=""></iframe>' + '</div>';
+            var ui = '<div id="media-popin" role="dialog" style="display:none;z-index:1001;">' + '<iframe sandbox="allow-scripts allow-modals allow-same-origin" frameborder="0" style="width:100%;height:98%;" src=""></iframe>' + '</div>';
             jQuery("body").append(ui);
         }
         var top = jQuery(this).offset().top;
