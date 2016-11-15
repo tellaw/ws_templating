@@ -4382,3 +4382,6 @@ div[id^="background_fiche"] .figures_container div.figures_classe {
 	margin: 5px 10px 0 0;
 	width: 37px;
 }
+.btn-nav {
+	cursor:pointer;
+}
