@@ -706,14 +706,11 @@ function simulationOnglets(lien){
 
 <!--  Toggle DIV JS -->
 function toggle_div(bouton, id) {
-    bouton.setAttribute("href", "#");
     var div = document.getElementById(id);
     if(div.style.display=="none") {
         div.style.display = "block";
-        bouton.parents(".barre-top").querySelector(".id_annotation").className += " actif"
     } else {
         div.style.display = "none";
-        document.querySelector(".id_annotation").classList.remove("actif")
     }
     return false;
 }
