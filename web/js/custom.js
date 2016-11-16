@@ -354,6 +354,8 @@ jQuery(document).ready(function() {
     var nbOnglets = jQuery(".sommaire-col-dim .nav-tabs li").length;
     jQuery(".sommaire-col-dim .nav-tabs li").css("width", ((jQuery(".sommaire-col-dim .nav-tabs").width() / jQuery(".sommaire-col-dim .nav-tabs li").length) * 100) / jQuery(".sommaire-col-dim .nav-tabs").width() + "%");
 
+    jQuery(".tab-v1 .nav-tabs").css({visibility : "visible"});
+
     // gestion erreur formulaire
     jQuery('#newsletter-form').ready(function (jQuery) {
         var form = jQuery('#newsletter-form');
