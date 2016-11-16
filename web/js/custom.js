@@ -874,3 +874,11 @@ function switchBox(id_1, id_2, styles_default, styles_clicked) {
         if(ar && styles_default) {ar.className = styles_clicked;}
     }
 }
+
+//CAS
+index=1;
+function differedLoginIframeLoad(iframe,url){if(typeof firstLoginIframeLoaded!='undefined'&&firstLoginIframeLoaded==true){document.getElementById(iframe).src=url;}else{setTimeout("differedLoginIframeLoad('"+iframe+"','"+url+"')",500);}}
+function standardIframeLoadWithRedirect(iframe,baseUrl,encodeUrl,params){document.getElementById(iframe).src=baseUrl+'?service='+encodeURI(encodeUrl+escapeQuoteFragment(params));}
+function differedIframeLoadWithRedirect(iframe,baseUrl,encodeUrl,params){if(typeof firstLoginIframeLoaded!='undefined'&&firstLoginIframeLoaded==true){standardIframeLoadWithRedirect(iframe,baseUrl,encodeUrl,params);}else{setTimeout("differedIframeLoadWithRedirect('"+iframe+"','"+escapeQuoteFragment(baseUrl)+"','"+escapeQuoteFragment(encodeUrl)+"','"+escapeQuoteFragment(params)+"')",500);}}
+function differedIframeLoadWithRedirectWithIndex(iframe,baseUrl,encodeUrl,params,myIndex){if(typeof firstLoginIframeLoaded!='undefined'&&firstLoginIframeLoaded==true&&index==myIndex){standardIframeLoadWithRedirect(iframe,baseUrl,encodeUrl,params);index++;}else{setTimeout("differedIframeLoadWithRedirectWithIndex('"+iframe+"','"+escapeQuoteFragment(baseUrl)+"','"+escapeQuoteFragment(encodeUrl)+"','"+escapeQuoteFragment(params)+"','"+myIndex+"')",500);}}
+function escapeQuoteFragment(fragment){return fragment.replace("'","\'");}
