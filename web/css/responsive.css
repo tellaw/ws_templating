@@ -1126,7 +1126,7 @@
 
 @media screen and (max-width: 992px) {
   .bloc-media img {
-    width: 90%; }
+    max-width: 90%; }
   .figures_content img, .contenu_fiche img {
     width: 100%; }
   .row.margin-top-30 {
