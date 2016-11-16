@@ -1546,7 +1546,7 @@ p.cellule-list {
 	border-bottom: solid 2px #697277;
 	position: relative;
 	z-index: 3;
-	visibility: hidden;
+	/*visibility: hidden;*/
 }
 
 .tab-v1 .nav-tabs a {
