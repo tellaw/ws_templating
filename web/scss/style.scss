@@ -558,6 +558,7 @@ div.border-red {
 .article {
   .ico-search {
     background-position:0 -29px;
+    top: -4px!important;
     &.red {
       background-position:-39px -29px;
     }
@@ -565,6 +566,9 @@ div.border-red {
   a {
     span {
       top:0;
+      line-height: 20px;
+      display: inline-block;
+      overflow: hidden;
     }
   }
   .ico-search:hover {
@@ -596,7 +600,6 @@ div.border-red {
             white-space: nowrap;
             overflow: hidden;
             line-height: 20px;
-            top: 4px;
             position: relative;
           }
         }

@@ -462,12 +462,16 @@ div.border-red {
   font-weight: bold; }
 
 .article .ico-search {
-  background-position: 0 -29px; }
+  background-position: 0 -29px;
+  top: -4px !important; }
   .article .ico-search.red {
     background-position: -39px -29px; }
 
 .article a span {
-  top: 0; }
+  top: 0;
+  line-height: 20px;
+  display: inline-block;
+  overflow: hidden; }
 
 .article .ico-search:hover {
   background-position: -39px -29px; }
@@ -487,7 +491,6 @@ div.border-red {
   white-space: nowrap;
   overflow: hidden;
   line-height: 20px;
-  top: 4px;
   position: relative; }
 
 .article div:first-child ul li:first-child {
