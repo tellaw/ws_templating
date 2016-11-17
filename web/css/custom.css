@@ -2598,6 +2598,7 @@ div.play-button {
 }
 .sommaire-background .holder {
 	margin: 0 0 5px 0;
+	position: relative;
 }
 .sommaire-background .list-unstyled {
 	margin: 0 0 10px 9px;
@@ -2625,6 +2626,16 @@ div.play-button {
 .sommaire-background .holder .active {
 	text-decoration: underline;
 	color: #EA2336!important;
+	position: relative;
+}
+
+.sommaire-background .holder .active::before {
+	content:">";
+	position: absolute;
+	left: -8px;
+	text-decoration: none;
+	font-size: 9px;
+	top: 0px;
 }
 
 .mot-editrice-img {
@@ -3611,7 +3622,8 @@ form #di-link {
 	background-color: white;
 	display: none;
 	position: absolute;
-	top: 60px;
+	top: 30px;
+	text-align: left;
 }
 .annotation-child p{
 	margin: 0px;

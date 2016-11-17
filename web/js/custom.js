@@ -662,6 +662,14 @@ jQuery(document).ready(function() {
     });
 
     jQuery(".pdf-added").delay(5000).hide(0);
+
+    //annotation
+    jQuery(".id_annotation").on("click", function() {
+        jQuery(this).next(".id_annotation_box").show();
+        if(jQuery(this).parents(".barre-top").parent().prev("section").attr("id") == "rien"){
+            jQuery(this).next(".id_annotation_box").css({top: "-390px"});
+        };
+    });
 });
 
 (function() {
@@ -708,6 +716,7 @@ function simulationOnglets(lien){
 
 <!--  Toggle DIV JS -->
 function toggle_div(bouton, id) {
+    console.log(bouton);
     var div = document.getElementById(id);
     if(div.style.display=="none") {
         div.style.display = "block";
