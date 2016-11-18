@@ -2923,8 +2923,8 @@ div.play-button {
 #bande {
 	background: #E2E1E1;
 	height: 100%;
-	padding-top: 30px;
-	padding-bottom: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	position: relative;
 	z-index: 2;
 }
@@ -3111,15 +3111,14 @@ a.abonnement-text:hover {
 	min-height: auto;
 	/*width: 320px;*/
 }
-#offres p {
+#offres.tag-box p {
 	margin-left: 0px !important;
 	margin-right: 0px !important;
 	margin-bottom: 8px;
 	font-size: 11px;
-	width: 100%;
 	padding: 0px 10px;
 }
-#offres .text {
+#offres.tag-box .text {
 	background-color: #e2e1e1;
 	font-size: 13px;
 	font-style: normal;
@@ -3150,8 +3149,8 @@ a.abonnement-text:hover {
 }
 .row-3-blocks {
 	background-color: #e2e1e1;
-	padding-bottom: 20px !important;
-	padding-top: 30px !important;
+	padding-bottom: 10px !important;
+	padding-top: 10px !important;
 	margin-right: 0;
 	margin-left: 0;
 	height: 100%;
