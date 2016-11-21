@@ -574,6 +574,16 @@ div.border-red {
   .ico-search:hover {
     background-position:-39px -29px;
   }
+  &.inner-results {
+    .ico-search {
+      top:4px!important;
+    }
+    a {
+      span {
+        display: inline;
+      }
+    }
+  }
   &.zoning {
     &:hover {
       a {
@@ -1075,7 +1085,13 @@ input {
 }
 .header-v1 {
   .form-control {
-    height:40px;
+    height:30px;
+    &:focus {
+      border-right:none;
+    }
+  }
+  button.btn-color {
+    padding:1px 13px;
   }
 }
 #no-result {
