@@ -129,12 +129,6 @@ dt {
 	padding: 8px;
 }
 
-.navbar-mods:first-child {
-	padding-left: 0!important;
-}
-.navbar-mods:last-child {
-	padding-right: 0!important;
-}
 .header-v1 .navbar-default .navbar-nav > li > a,
 .header-v1 .navbar-default .navbar-nav > li > a:hover,
 .header-v1 .navbar-default .navbar-nav > li > a:focus {
@@ -142,9 +136,13 @@ dt {
 	bottom: -1px;
 	color: #697277;
 }
+.header-v1 .navbar-default .navbar-nav > li:hover,
+.brd-active {
+	background:#EA2336;
+}
 .header-v1 .navbar-default .navbar-nav > li:hover > a,
-.brd-active a {
-	border-bottom: 2px solid #EC1625;
+.bg-active a {
+	color:#fff;
 }
 .header-v1 .dropdown > a:after {
 	right:-28px;
@@ -152,8 +150,9 @@ dt {
 	font-size: 18px;
 	top: 14px;
 }
-.header-v1 .navbar-default .navbar-nav > li:hover > a {
-	color:#697277;
+.header-v1 .dropdown:hover > a:after {
+	color:#FFF;
+	content: "\f106";
 }
 /*Pour l'icone menu*/
 .border-0 {
@@ -231,6 +230,7 @@ dt {
 .margin-right-70 { margin-right: 70px !important;}
 
 .margin-left-0 { margin-left: 0px !important;}
+.margin-left-4 { margin-left: 4px !important;}
 .margin-left-20 { margin-left: 20px !important ;}
 .margin-left-23 { margin-left: 23px !important ;}
 .margin-left-25 { margin-left: 25px !important ;}
@@ -477,8 +477,7 @@ dt {
 	color: #697277;
 }
 .border-navbar {
-	border-bottom-width: 0px !important;
-	border-top-width: 0px !important;
+	border-top: 1px solid #c6c6c6;
 }
 .brd-active {
 	color: #EC1625 !important;
@@ -720,7 +719,7 @@ dt {
 	color: #fff !important;
 }
 .eti-accueil-devider {
-	width: 50px;
+	width: 30px;
 	border-bottom: 2px #EC1625 solid;
 }
 
@@ -748,9 +747,9 @@ dt {
 }
 
 .search-btn {
-	height: 40px;
-	width: 41px;
-	padding-bottom: 3px;
+	height: 30px;
+	width: 30px;
+	padding: 6px;
 }
 
 .search-btn i {
@@ -1770,7 +1769,7 @@ p.cellule-list {
 }
 
 .border-bottom-dark-gray {
-	border-bottom : 1px solid #c6c6c6;
+	border-bottom: 1px solid #c6c6c6;
 }
 
 .font-awesome-size-2 {
@@ -1928,7 +1927,9 @@ div.play-button {
 	padding-left: 20px;
 	padding-right: 0px;
 }
-
+.header-v1 .form-control {
+	font-size: 11px;
+}
 .form-control:focus{
 	/*-moz-box-shadow: 0px 0px 10px 0px #EC1625;
 	-webkit-box-shadow: 0px 0px 10px 0px #EC1625;
@@ -4396,4 +4397,16 @@ div[id^="background_fiche"] .figures_container div.figures_classe {
 }
 .btn-nav {
 	cursor:pointer;
+}
+
+.login-box-border {
+	border: 1px solid #697277;
+	width: 294px;
+	background-color: white;
+	display: none;
+	position: absolute;
+	top: 30px;
+	right:100px;
+	text-align: left;
+	z-index:3;
 }

@@ -412,13 +412,8 @@
 
 	.header-v1 .dropdown-menu .active > a,
 	.header-v1 .dropdown-menu li > a:hover {
-		color: #fff;
-		filter: none !important;
-		background: #687074 !important;
-		-webkit-transition: all 0.1s ease-in-out;
-		-moz-transition: all 0.1s ease-in-out;
-		-o-transition: all 0.1s ease-in-out;
-		transition: all 0.1s ease-in-out;
+		color: #ea2336;
+		text-decoration: underline;
 	}
 
 	.header-v1 .dropdown-menu li > a:focus {
@@ -428,7 +423,20 @@
 
 	.header-v1 .navbar-nav > li.dropdown:hover > .dropdown-menu {
 		display: block;
-	}	
+		border:none;
+		border-top: 1px solid #C6C6C6;
+		box-shadow: none;
+	}
+
+	.header-v1 .navbar-nav > li.dropdown:hover > .dropdown-menu div.col-md-6 + div.col-md-3 {
+		border-left: 1px solid #C6C6C6;
+		border-right: 1px solid #C6C6C6;
+		padding:0 50px;
+	}
+
+	.header-v1 .navbar-nav > li.dropdown:hover > .dropdown-menu div.col-md-6 + div.col-md-3 + div.col-md-3 {
+		padding-left:50px;
+	}
 
 	.header-v1 .open > .dropdown-menu {
 		display: none;
@@ -437,6 +445,23 @@
 	/*Search*/
 	.header-v1 .navbar .search-open {
 		width: 330px;
+	}
+
+	.header-v1 .navbar-nav > li.dropdown:hover > .dropdown-menu .blog-thumb .blog-thumb-hover img {
+		width: 80px;
+	}
+
+	.header-v1 .navbar-nav > li.dropdown:hover > .dropdown-menu .blog-thumb .blog-thumb-desc {
+		display:inline;
+	}
+
+	.header-v1 .navbar-nav > li.dropdown:hover > .dropdown-menu div.row > div.col-lg-8 {
+		padding-right: 30px;
+	}
+
+	.header-v1 .navbar-nav > li.dropdown:hover > .dropdown-menu div.row > div.col-lg-4 {
+		border-left: 1px solid #C6C6C6;
+		padding-left: 30px;
 	}
 }
 
@@ -627,6 +652,13 @@
   	position: relative;
 }
 
+.header-v1 .mega-menu #navbar-x {
+	z-index:1;
+}
+.header-v1 .mega-menu > .container {
+	z-index: 2;
+}
+
 .header-v1 .mega-menu .dropdown-menu {
   	left: auto;
 }
@@ -740,7 +772,7 @@
     
     /*Dropdown Arrow Icons*/
     .header-v1 .mega-menu .mega-menu-fullwidth li a {
-    	padding: 5px 10px 5px 30px;	
+    	padding: 5px 4px 5px 4px;
     }
 
     /*.header-v1 .mega-menu .mega-menu-fullwidth li a:after {

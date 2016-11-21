@@ -1,6 +1,8 @@
-.wrapper .navbar-fixed-top {
-  top: 42px; }
-
+/*.wrapper {
+  .navbar-fixed-top {
+    top:42px;
+  }
+}*/
 .listing-elements {
   margin: 20px auto 0;
   overflow: hidden; }
@@ -32,7 +34,7 @@
     position: absolute !important; }
 
 .slider-margin-top {
-  margin-top: 200px !important; }
+  margin-top: 150px !important; }
 
 .catalogue-margin-top {
   margin-top: 195px !important; }
@@ -57,17 +59,23 @@ div[id^="module-"], div[id^="charte-"] {
     #main-menu.header .logo img {
       width: 69%;
       margin: 10px 0 !important; }
-  .wrapper .navbar-fixed-top {
-    top: 51px; }
+  /*.wrapper {
+    .navbar-fixed-top {
+      top: 51px;
+    }
+  }*/
   .catalogue-margin-top {
     margin-top: 70px !important; } }
 
 @media (min-width: 1024px) and (max-width: 1200px) {
   .slider-margin-top {
-    margin-top: 240px !important; } }
+    margin-top: 150px !important; } }
 
 @media (max-width: 1024px) {
-  .wrapper .navbar-fixed-top {
-    top: 48px; }
+  /*.wrapper {
+    .navbar-fixed-top {
+      top: 48px;
+    }
+  }*/
   .slider-margin-top {
-    margin-top: 145px !important; } }
+    margin-top: 75px !important; } }

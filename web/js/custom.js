@@ -49,12 +49,20 @@ jQuery(document).ready(function() {
             jQuery("#advanced-search-box").css('cssText', 'display: block !important');
             jQuery("#button-menu-header").css('cssText', 'display: none !important');
             jQuery("#div-menu-header").css('cssText', 'display: none !important');
+            jQuery(".navbar-fixed-top .md-margin-top-35").css({marginTop: "35px"});
+            jQuery("#logo-header").attr("src", "/images/logo-eti.png");
+            jQuery(".navbar-fixed-top .container > div").addClass("margin-bottom-10");
+            jQuery(".login-box-border").css({top: "30px"});
 
         } else if ((jQuery(window).width() >= 992) && (jQuery(window).scrollTop() != 0)) {
             jQuery("#navbar-x").removeClass("in");
             jQuery("#advanced-search-box").hide();
             jQuery("#button-menu-header").css('cssText', 'display: inline-block !important');
             jQuery("#div-menu-header").css('cssText', 'display: block !important');
+            jQuery(".navbar-fixed-top .md-margin-top-35").css({marginTop: "15px"});
+            jQuery("#logo-header").attr("src", "/images/logo-eti-small.png");
+            jQuery(".navbar-fixed-top .container > div").removeClass("margin-bottom-10");
+            jQuery(".login-box-border").css({top: "10px"});
 
         }
     });
@@ -716,7 +724,6 @@ function simulationOnglets(lien){
 
 <!--  Toggle DIV JS -->
 function toggle_div(bouton, id) {
-    console.log(bouton);
     var div = document.getElementById(id);
     if(div.style.display=="none") {
         div.style.display = "block";

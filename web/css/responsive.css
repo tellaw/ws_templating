@@ -172,6 +172,8 @@
     width: 160px; }
   .xs-margin-top-20 {
     margin-top: 20px !important; }
+  .xs-margin-bottom-0 {
+    margin-bottom: 0px !important; }
   .xs-margin-bottom-10 {
     margin-bottom: 10px !important; }
   .xs-margin-top-60 {
@@ -692,6 +694,8 @@
     padding-left: 25px !important; }
   .xs-padding-right-15 {
     padding-right: 15px !important; }
+  .xs-padding-top-15 {
+    padding-top: 15px !important; }
   #offres {
     width: 300px; }
   .br_tablet {
@@ -819,6 +823,8 @@
     margin-left: 0px !important; }
   .xs-margin-bottom-25 {
     margin-bottom: 25px; }
+  .xs-margin-bottom-0 {
+    margin-bottom: 0px !important; }
   .xs-text-center {
     text-align: center; }
   .no-gutters-xs {
@@ -1122,7 +1128,7 @@
     display: block !important;
     opacity: 1; }
   .btn-u.btn-color {
-    padding: 6px 8px; } }
+    padding: 2px 8px; } }
 
 @media screen and (max-width: 992px) {
   .bloc-media img {
@@ -1142,6 +1148,10 @@
 
 /* Medium and up */
 @media screen and (min-width: 992px) {
+  .header-v1 .navbar-default .navbar-nav {
+    margin-top: 0px; }
+    .header-v1 .navbar-default .navbar-nav .dropdown-menu {
+      margin-top: 0 !important; }
   .download-page {
     margin: auto 20%; }
   .br_tablet {
@@ -1294,6 +1304,10 @@
 
 /* Large à intermédiaire bootstrap */
 @media screen and (min-width: 992px) and (max-width: 1200px) {
+  .header-v1 .navbar-default .navbar-nav > li {
+    margin-right: 6px; }
+    .header-v1 .navbar-default .navbar-nav > li:last-child {
+      margin-right: 0; }
   #cellule-list {
     margin-left: 157px; }
   .lg-margin-top {
@@ -1388,8 +1402,11 @@
     margin-right: 110px;
     line-height: 2.5; }
   .navbar-mods {
-    padding-right: 41px !important;
-    padding-left: 41px !important; }
+    padding-right: 25px !important;
+    padding-left: 25px !important; }
+  .navbar-mods.mega-menu-fullwidth {
+    padding-right: 52px !important;
+    padding-left: 25px !important; }
   .padding-menu-cart {
     padding-left: 45px !important; }
   .padding-menu-account {
@@ -1482,6 +1499,10 @@
 
 /* Large and up */
 @media screen and (min-width: 1200px) {
+  .header-v1 .navbar-default .navbar-nav > li {
+    margin-right: 56px; }
+    .header-v1 .navbar-default .navbar-nav > li:last-child {
+      margin-right: 0; }
   .navbar-collapse.collapse {
     display: block; }
   .lg-width {
@@ -1598,8 +1619,11 @@
   .domaine-padding-top {
     padding-top: 90px; }
   .navbar-mods {
-    padding-right: 66px !important;
-    padding-left: 66px !important; }
+    padding-right: 25px !important;
+    padding-left: 25px !important; }
+  .navbar-mods.mega-menu-fullwidth {
+    padding-right: 52px !important;
+    padding-left: 25px !important; }
   .nav-tabs {
     /*padding-left: 10px;
     padding-right: 10px;*/ }

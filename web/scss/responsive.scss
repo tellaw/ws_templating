@@ -231,6 +231,10 @@ $color-red : #ea2336 ;
     margin-top: 20px !important;
   }
 
+  .xs-margin-bottom-0 {
+    margin-bottom: 0px !important;
+  }
+
   .xs-margin-bottom-10 {
     margin-bottom: 10px !important;
   }
@@ -1010,6 +1014,9 @@ $color-red : #ea2336 ;
   .xs-padding-right-15 {
     padding-right:15px !important;
   }
+  .xs-padding-top-15 {
+    padding-top:15px!important;
+  }
   #offres {
     width: 300px;
   }
@@ -1221,6 +1228,9 @@ $color-red : #ea2336 ;
   }
   .xs-margin-bottom-25 {
     margin-bottom: 25px;
+  }
+  .xs-margin-bottom-0 {
+    margin-bottom: 0px !important;
   }
   .xs-text-center {
     text-align: center;
@@ -1705,7 +1715,7 @@ $color-red : #ea2336 ;
   }
   .btn-u {
     &.btn-color {
-      padding:6px 8px;
+      padding:2px 8px;
     }
   }
 }
@@ -1739,6 +1749,16 @@ $color-red : #ea2336 ;
 }
 /* Medium and up */
 @media screen and (min-width: 992px) {
+  .header-v1 {
+    .navbar-default {
+      .navbar-nav {
+        margin-top: 0px;
+        .dropdown-menu {
+          margin-top:0!important;
+        }
+      }
+    }
+  }
   .download-page {
     margin: auto 20%;
   }
@@ -1960,6 +1980,18 @@ $color-red : #ea2336 ;
 
 /* Large à intermédiaire bootstrap */
 @media screen and (min-width: 992px) and (max-width: 1200px)  {
+  .header-v1 {
+    .navbar-default {
+      .navbar-nav {
+        > li {
+          margin-right: 6px;
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
   #cellule-list {
     margin-left: 157px;
   }
@@ -2091,8 +2123,12 @@ $color-red : #ea2336 ;
     }
   }
   .navbar-mods {
-    padding-right: 41px !important;
-    padding-left: 41px !important;
+    padding-right: 25px !important;
+    padding-left: 25px !important;
+  }
+  .navbar-mods.mega-menu-fullwidth {
+    padding-right: 52px !important;
+    padding-left: 25px !important;
   }
   .padding-menu-cart{
     padding-left:45px !important;
@@ -2236,6 +2272,18 @@ $color-red : #ea2336 ;
 
 /* Large and up */
 @media screen and (min-width: 1200px) {
+  .header-v1 {
+    .navbar-default {
+      .navbar-nav {
+        > li {
+          margin-right: 56px;
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
   .navbar-collapse{
     &.collapse {
       display: block;
@@ -2387,8 +2435,12 @@ $color-red : #ea2336 ;
     padding-top: 90px;
   }
   .navbar-mods {
-    padding-right: 66px !important;
-    padding-left: 66px !important;
+    padding-right: 25px !important;
+    padding-left: 25px !important;
+  }
+  .navbar-mods.mega-menu-fullwidth {
+    padding-right: 52px !important;
+    padding-left: 25px !important;
   }
   .nav-tabs {
     /*padding-left: 10px;
