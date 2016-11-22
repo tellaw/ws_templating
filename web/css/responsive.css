@@ -969,12 +969,6 @@
     padding-top: 22px; }
   .cellule-padding-top-30 {
     padding-top: 30px; }
-  .nav > li {
-    padding-left: 10px !important;
-    padding-right: 10px !important; }
-  .nav > li > a {
-    padding-left: 0px !important;
-    padding-right: 0px !important; }
   .autres-card {
     height: 185px; }
   .autres-card h4 {
@@ -1075,6 +1069,22 @@
 
 /* Medium and down */
 @media screen and (max-width: 991px) {
+  .header-v1 .dropdown > a:after {
+    right: 0px; }
+  .header-v1 .navbar-default .navbar-nav > li > a {
+    border-bottom: 1px solid #EA2336; }
+  .header-v1 .navbar-default .navbar-nav > li:last-child a {
+    border-bottom: 0px solid #EA2336; }
+  .nav > li {
+    padding-left: 10px !important;
+    padding-right: 10px !important; }
+  .nav > li > a {
+    padding-left: 0px !important;
+    padding-right: 0px !important; }
+  .navbar-fixed-top .md-margin-top-35 {
+    margin-top: 15px; }
+  .navbar-fixed-top .container > div {
+    margin-bottom: 0 !important; }
   .article.zoning a p span.titre {
     max-width: 70%; }
   div[id^="background_fiche"],
@@ -1792,7 +1802,9 @@
     width: 236px !important; }
   .navbar-mods {
     padding-left: 16px !important;
-    padding-right: 16px !important; } }
+    padding-right: 16px !important; }
+  .login-box-border {
+    right: 67px; } }
 
 @media all and (min-width: 1200px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .ref {

@@ -402,20 +402,6 @@
 		border-bottom: solid 2px #687074; 
 	}
 
-	.header-v1 .dropdown-menu li a { 
-		color: #687074; 
-		font-size: 13px; 
-		font-weight: 400; 
-		padding: 6px 15px;
-		border-bottom: solid 1px #eee;
-	}
-
-	.header-v1 .dropdown-menu .active > a,
-	.header-v1 .dropdown-menu li > a:hover {
-		color: #ea2336;
-		text-decoration: underline;
-	}
-
 	.header-v1 .dropdown-menu li > a:focus {
 		background: none;
 		filter: none !important;
@@ -465,6 +451,19 @@
 	}
 }
 
+.header-v1 .dropdown-menu .active > a,
+.header-v1 .dropdown-menu li > a:hover {
+	color: #ea2336;
+	text-decoration: underline;
+}
+
+.header-v1 .dropdown-menu li a {
+	color: #687074;
+	font-size: 13px;
+	font-weight: 400;
+	padding: 6px 15px;
+	border-bottom: solid 1px #eee;
+}
 
 /*--------------------------------------------------
     [4. Header - Submenu]
