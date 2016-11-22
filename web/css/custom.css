@@ -109,6 +109,13 @@ dt {
 	padding: 20px !important;
 }
 
+.dropdown-menu .zoning:hover .blog-thumb-desc a {
+	color: #EA2336;
+	text-decoration: underline;
+}
+.dropdown-menu .blog-thumb .blog-thumb-hover:hover:after {
+	background: none;
+}
 .navbar-background-color{
 	background-color: #FFF !important;
 }
@@ -137,7 +144,7 @@ dt {
 	color: #697277;
 }
 .header-v1 .navbar-default .navbar-nav > li:hover,
-.brd-active {
+.header-v1 .brd-active {
 	background:#EA2336;
 }
 .header-v1 .navbar-default .navbar-nav > li:hover > a,
