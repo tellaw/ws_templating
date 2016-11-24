@@ -744,7 +744,6 @@ $color-red : #ea2336 ;
   }
   .autres-card {
     height: 65%;
-    width: 40%;
   }
   .slider-card {
     top: 10px;
@@ -837,6 +836,9 @@ $color-red : #ea2336 ;
 }
 
 @media screen and (max-width: 767px) {
+  .autres-card {
+    height: 65%;
+  }
   .article-decouverte,
   .dictionnaire,
   .questions,
@@ -1614,6 +1616,9 @@ $color-red : #ea2336 ;
 
 /* Medium and down */
 @media screen and (max-width: 991px) {
+  .domaine-secteur-box .ez_html_module p {
+    margin: 0 10%;
+  }
   .header-v1 {
     .dropdown {
       > a:after {

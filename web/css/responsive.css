@@ -517,8 +517,7 @@
   .content-container {
     margin-top: 165px; }
   .autres-card {
-    height: 65%;
-    width: 40%; }
+    height: 65%; }
   .slider-card {
     top: 10px;
     margin-left: 9%;
@@ -580,6 +579,8 @@
     padding-right: 10px; } }
 
 @media screen and (max-width: 767px) {
+  .autres-card {
+    height: 65%; }
   .article-decouverte,
   .dictionnaire,
   .questions,
@@ -1069,6 +1070,8 @@
 
 /* Medium and down */
 @media screen and (max-width: 991px) {
+  .domaine-secteur-box .ez_html_module p {
+    margin: 0 10%; }
   .header-v1 .dropdown > a:after {
     right: 0px; }
   .header-v1 .navbar-default .navbar-nav > li > a {

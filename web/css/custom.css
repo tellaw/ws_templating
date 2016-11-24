@@ -58,6 +58,9 @@ a:hover {
 #meme-sujet .zoning {
 	cursor: default;
 }
+#meme-sujet .content-article > div {
+	margin: 10px 0 0 0;
+}
 dl {
 	padding: 0.5em;
 	margin-bottom: 0px !important;
@@ -274,6 +277,7 @@ dt {
 .margin-right-2 {margin-right: 2px!important;}
 .margin-right-3 {margin-right: 3px !important;}
 .margin-right-5 { margin-right: 5px!important;}
+.fa-arrow-right.margin-right-5 { margin-right: 10px!important;}
 .margin-right-6 { margin-right: 6px !important;}
 .margin-right-10 { margin-right: 10px!important;}
 .margin-right-15 { margin-right: 15px !important;}
@@ -1129,6 +1133,7 @@ div[class^="element-wrapper-"] img {
 	position: fixed;
 	z-index: 50;
 	right: -220px;
+	padding-top: 10px;
 }
 
 #sticky-menu-share {
@@ -1153,6 +1158,12 @@ div[class^="element-wrapper-"] img {
 	position: fixed;
 	z-index: 50;
 	right: -220px;
+}
+
+#sticky-menu-slide .btn-action {
+	font-size:13px;
+	width:250px;
+	letter-spacing: 0.75px;
 }
 .btn-stk {
 	padding: 5px 0 5px;
@@ -1251,7 +1262,7 @@ div[class^="element-wrapper-"] img {
 	padding: 0px 18px 0px 18px;
 }
 .inscription-newsletter-slide {
-	padding-top: 10px !important;
+	padding-top: 8px !important;
 	padding-bottom: 0px !important;
 	padding-left: 0px !important;
 	padding-right: 0px !important;
@@ -1660,7 +1671,7 @@ p.cellule-list {
 	position: relative;
 }
 .title-downloads-panel {
-	line-height: 20px;
+	line-height: 19px;
 }
 
 .download-panel-img {
@@ -2323,6 +2334,7 @@ div.play-button {
 }
 .timeline-v2 > li:hover .cbp_tmlabel div * {
 	color: #EC1625!important;
+	text-decoration: underline;
 }
 #presentation .table > tbody > tr.zoning:hover * {
 	color: #EC1625!important;
@@ -2559,7 +2571,7 @@ div.play-button {
 }
 
 .eti-offers-devider {
-	width: 50px;
+	width: 30px;
 	border-bottom: 2px #9eb504 solid;
 }
 
@@ -2663,7 +2675,7 @@ div.play-button {
 	position: relative;
 }
 .sommaire-background .list-unstyled {
-	margin: 0 0 10px 9px;
+	margin: 0 0 20px 9px;
 }
 .sommaire-background .sous-menu{
 	margin: 0 0 3px 0;
@@ -2689,6 +2701,7 @@ div.play-button {
 	text-decoration: underline;
 	color: #EA2336!important;
 	position: relative;
+	font-family: 'myriad-pro-semi-bold';
 }
 
 .sommaire-background .holder .active::before {
@@ -2730,8 +2743,9 @@ div.play-button {
 }
 
 .carousel-title-adds {
-	letter-spacing: 1px;
+	letter-spacing: 0.75px;
 	height:44px;
+	text-transform: uppercase;
 }
 
 .carousel-cat-adds {
@@ -2739,8 +2753,9 @@ div.play-button {
 }
 
 .carousel-text {
-	letter-spacing: 0.4px;
-	height:54px;
+	letter-spacing: 0.75px;
+	height: 90px;
+	line-height: 20px;
 }
 
 .slider-digit-offers {
@@ -2961,9 +2976,11 @@ div.play-button {
 	background: transparent;
 }
 
-.best-sales {
+.best-sales,
+.best-articles {
 	font-size: 17px;
 	letter-spacing: 1.5px;
+	font-family: 'myriad-pro-semi-bold';
 }
 .best-sales i {
 	font-size: 17px !important;
@@ -3423,6 +3440,9 @@ td, th, tr{
  #offre-commerciale {
 	 position:relative;
 	 z-index: 99;
+ }
+ #maj .timeline-v2 > li .cbp_tmlabel span:last-child {
+	 max-width: 540px;
  }
 .ez_content .expert ,
 .ez_content .expert .text > p {
