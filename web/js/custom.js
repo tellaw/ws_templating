@@ -97,8 +97,8 @@ jQuery(document).ready(function() {
     jQuery('.your-class').slick({
         dots: true,
         arrows: false,
-        //autoplay: true,
-        //autoplaySpeed: 3000
+        autoplay: true,
+        autoplaySpeed: 10000
     });
 
     jQuery(".owl-carousel").owlCarousel({
