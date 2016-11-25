@@ -492,12 +492,13 @@ div.border-red {
 
 .article.zoning a p span.titre {
   text-overflow: ellipsis;
-  max-width: 535px;
+  max-width: 530px;
   display: inline-block;
   white-space: nowrap;
   overflow: hidden;
   line-height: 20px;
-  position: relative; }
+  position: relative;
+  padding: 0 !important; }
 
 .article div:first-child ul li:first-child {
   font-weight: bold; }

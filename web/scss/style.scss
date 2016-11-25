@@ -605,12 +605,13 @@ div.border-red {
         span {
           &.titre {
             text-overflow: ellipsis;
-            max-width: 535px;
+            max-width: 530px;
             display: inline-block;
             white-space: nowrap;
             overflow: hidden;
             line-height: 20px;
             position: relative;
+            padding: 0!important;
           }
         }
       }

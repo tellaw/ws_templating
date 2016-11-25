@@ -44,7 +44,6 @@ h3 {
 }
 
 a, p {
-	font-family: "myriad-pro", sans-serif;
 	color: #4d5356;
 }
 
@@ -277,7 +276,7 @@ dt {
 .margin-right-2 {margin-right: 2px!important;}
 .margin-right-3 {margin-right: 3px !important;}
 .margin-right-5 { margin-right: 5px!important;}
-.fa-arrow-right.margin-right-5 { margin-right: 10px!important;}
+i.fa.margin-right-5 { margin-right: 10px!important;}
 .margin-right-6 { margin-right: 6px !important;}
 .margin-right-10 { margin-right: 10px!important;}
 .margin-right-15 { margin-right: 15px !important;}
@@ -297,6 +296,7 @@ dt {
 .margin-left-32 { margin-left: 32px!important;}
 .margin-left-38 { margin-left: 38px!important;}
 .margin-left-45 { margin-left: 45px !important ;}
+.margin-left-55 { margin-left: 55px !important ;}
 .margin-left-70 { margin-left: 70px !important ;}
 .margin-left-95 { margin-left: 95px !important; }
 
@@ -3442,7 +3442,7 @@ td, th, tr{
 	 z-index: 99;
  }
  #maj .timeline-v2 > li .cbp_tmlabel span:last-child {
-	 max-width: 540px;
+	 max-width: 520px;
  }
 .ez_content .expert ,
 .ez_content .expert .text > p {
