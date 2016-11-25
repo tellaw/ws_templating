@@ -3914,8 +3914,9 @@ form #di-link {
 }
 
 .img-svg {
-	max-width: 92%;
-	min-width:40%;
+	/*max-width: 92%;
+	min-width:50%;*/
+	width:92%;
 }
 
 div.wrapperTable table.innerTable {
