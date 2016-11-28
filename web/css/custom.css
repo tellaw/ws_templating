@@ -4069,7 +4069,7 @@ div.tableDiv .figure  {
 	list-style: none;
 	position: absolute;
 	top: 0;
-	left: 25px;
+	left: 0px;
 	padding: 0;
 	background-color: #e2e1e1;
 }
@@ -4107,7 +4107,7 @@ div.tableDiv .figure  {
 }
 figure.contentConteneurB {
 	border: 1px solid #ddd;
-	margin: 0 25px;
+	margin: 0 29px;
 }
 figure.eqb {
 	margin: 10px 0 10px 0;
