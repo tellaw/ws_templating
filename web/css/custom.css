@@ -2015,6 +2015,20 @@ div.play-button {
 .slick-slider {
 	margin-top:20px
 }
+.slick-slider .slick-prev {
+	display: inline-block;
+	position: absolute;
+	top: 155px;
+	left: 0;
+	z-index: 1;
+}
+.slick-slider .slick-next {
+	display: inline-block;
+	position: absolute;
+	top: 155px;
+	right: 0;
+	z-index: 1;
+}
 
 .vertical-align-center {
 	display: inline-block;
@@ -2336,13 +2350,10 @@ div.play-button {
 	color: #EC1625!important;
 	text-decoration: underline;
 }
-#presentation .table > tbody > tr.zoning:hover * {
+#presentation .table > tbody > tr:hover .col4 a {
 	color: #EC1625!important;
 	cursor: pointer;
 	text-decoration: underline;
-}
-#presentation .table > tbody > tr.zoning:hover td:first-child * {
-	text-decoration: none!important;
 }
 #presentation .table > tbody > tr:hover td.col1 * {
 	color: #ffffff!important;
@@ -3915,12 +3926,6 @@ form #di-link {
 	position: absolute;
 	top: -10px;
 	left: 0;
-}
-
-.img-svg {
-	/*max-width: 92%;
-	min-width:50%;
-	width:92%;*/
 }
 
 div.wrapperTable table.innerTable {

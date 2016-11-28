@@ -96,7 +96,7 @@ jQuery(document).ready(function() {
     //StyleSwitcher.initStyleSwitcher();
     jQuery('.your-class').slick({
         dots: true,
-        arrows: false,
+        arrows: true,
         autoplay: true,
         autoplaySpeed: 10000
     });

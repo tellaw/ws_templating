@@ -1964,7 +1964,7 @@ $color-red : #ea2336 ;
     font-size: 35px;
     color: #ea2336;
     display: inline;
-    margin-right: 14px;
+    margin-right: 12px;
   }
   .mots-clef-title {
     font-size: 18px !important;
@@ -2588,6 +2588,9 @@ $color-red : #ea2336 ;
 
 /* Large and down */
 @media screen and (max-width: 1200px) {
+  .img-svg {
+    width:92%!important;
+  }
   .navbar-toggle {
     display: block;
   }
