@@ -3941,7 +3941,7 @@ div.tableDiv {
 	overflow:auto;
 	margin-bottom:10px;
 	border: 1px solid #ddd;
-	margin: 0 55px;
+	margin: 0 25px;
 }
 div.tableDiv * {
 	word-break: normal;
