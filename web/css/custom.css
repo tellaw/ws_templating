@@ -3906,6 +3906,10 @@ form #di-link {
 }
 #popin .btn-block {
 	width: auto;
+	font-size: 13px;
+	line-height: 12px;
+	padding-top: 13px;
+	padding-bottom: 13px;
 }
 #popin .logo-top {
 	position: absolute;
