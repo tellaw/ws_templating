@@ -51,6 +51,9 @@ a:hover {
 	text-decoration: none;
 	cursor:pointer;
 }
+a.color-red-eti:hover {
+	text-decoration: underline;
+}
 .zoning {
 	cursor: pointer;
 }
