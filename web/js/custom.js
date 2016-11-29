@@ -15,6 +15,24 @@ jQuery( window ).ready(function() {
 
 //gestion back des onglets page domaines/secteurs/offres
 jQuery(document).ready(function() {
+    // add a hash to the URL when the user clicks on a tab
+    jQuery('a[data-toggle="tab"]').on('click', function(e) {
+        history.pushState(null, null, jQuery(this).attr('href'));
+    });
+    // navigate to a tab when the history changes
+    window.addEventListener("popstate", function(e) {
+        if (location.hash != "") {
+            var activeTab = jQuery('[href=' + location.hash + ']');
+            if (activeTab.length) {
+                activeTab.tab('show');
+            } else {
+                jQuery('.nav-tabs a:first').tab('show');
+            }
+        }
+    });
+});
+
+jQuery(document).ready(function() {
     jQuery(function() {
         jQuery( "#query" ).autocomplete({
             delay: 100,
@@ -38,24 +56,6 @@ jQuery(document).ready(function() {
         };
     });
 
-    // add a hash to the URL when the user clicks on a tab
-    jQuery('a[data-toggle="tab"]').on('click', function(e) {
-        history.pushState(null, null, jQuery(this).attr('href'));
-    });
-    // navigate to a tab when the history changes
-    window.addEventListener("popstate", function(e) {
-        if (location.hash != "") {
-            var activeTab = jQuery('[href=' + location.hash + ']');
-            if (activeTab.length) {
-                activeTab.tab('show');
-            } else {
-                jQuery('.nav-tabs a:first').tab('show');
-            }
-        }
-    });
-});
-
-jQuery(document).ready(function() {
     if ((jQuery(window).width() >= 992) && (jQuery(window).scrollTop() == 0)) {
         jQuery("#navbar-x").addClass("in");
         jQuery("#button-menu-header").css('cssText', 'display: none !important');
@@ -126,7 +126,7 @@ jQuery(document).ready(function() {
     jQuery('.your-class').slick({
         dots: true,
         arrows: false,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 10000
     });
 
