@@ -258,7 +258,9 @@
     margin-bottom: 20px !important; }
   .autres-card h4 {
     font-size: 14px;
-    margin: 0px; }
+    margin: 0px;
+    line-height: 20px;
+    padding-bottom: 7px; }
   .autres-icon {
     font-size: 22px !important; }
   .slick-dots > li > button {

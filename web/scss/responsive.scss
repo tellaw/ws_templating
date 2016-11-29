@@ -354,10 +354,15 @@ $color-red : #ea2336 ;
     margin-top: 0px !important;
     margin-bottom: 20px !important;
   }
-  .autres-card h4 {
-    font-size: 14px;
-    margin: 0px;
+  .autres-card {
+    h4 {
+      font-size: 14px;
+      margin: 0px;
+      line-height: 20px;
+      padding-bottom: 7px;
+    }
   }
+
   .autres-icon {
     font-size: 22px !important;
   }
