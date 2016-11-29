@@ -753,15 +753,22 @@ $color-red : #ea2336 ;
     height: 65%;
   }
   .slider-card {
-    top: 10px;
-    margin-left: 9%;
+    top: 30px;
+    margin-left: 330px;
     padding: 5px;
     width: 350px;
     font-size: 10px;
+    .slider-text {
+      margin-top: 0px;
+      font-size: 14.5px;
+      margin-bottom: 10px;
+      line-height: 19px;
+    }
+    div {
+      display: none;
+    }
   }
-  .slider-text {
-    font-size: 14px;
-  }
+
   .card-sub-title-1 {
     font-size: 14px;
   }
@@ -1490,9 +1497,9 @@ $color-red : #ea2336 ;
     top: 38px;
     padding: 17px 26px 20px 25px;
     width: 293px;
-    margin-left: 1111px;
+    margin-left: 390px;
   }
-  .slider-card {
+  /*.slider-card {
     .slider-text {
       margin-top: 0px;
       font-size: 14.5px;
@@ -1510,7 +1517,7 @@ $color-red : #ea2336 ;
   }
   .slider-text {
     margin-bottom: 12px !important;
-  }
+  }*/
   .mots-clef-title {
     font-size: 17px !important;
   }

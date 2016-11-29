@@ -523,13 +523,18 @@
   .autres-card {
     height: 65%; }
   .slider-card {
-    top: 10px;
-    margin-left: 9%;
+    top: 30px;
+    margin-left: 330px;
     padding: 5px;
     width: 350px;
     font-size: 10px; }
-  .slider-text {
-    font-size: 14px; }
+    .slider-card .slider-text {
+      margin-top: 0px;
+      font-size: 14.5px;
+      margin-bottom: 10px;
+      line-height: 19px; }
+    .slider-card div {
+      display: none; }
   .card-sub-title-1 {
     font-size: 14px; }
   .owl-custom-left {
@@ -992,19 +997,26 @@
     top: 38px;
     padding: 17px 26px 20px 25px;
     width: 293px;
-    margin-left: 1111px; }
-  .slider-card .slider-text {
-    margin-top: 0px;
-    font-size: 14.5px;
-    margin-bottom: 10px;
-    line-height: 19px; }
-  .slider-card div {
-    margin-top: 0px;
-    font-size: 9.8px;
-    line-height: 1.25;
-    margin-bottom: 0px; }
+    margin-left: 390px; }
+  /*.slider-card {
+    .slider-text {
+      margin-top: 0px;
+      font-size: 14.5px;
+      margin-bottom: 10px;
+      line-height: 19px;
+    }
+  }
+  .slider-card {
+    div {
+      margin-top: 0px;
+      font-size: 9.8px;
+      line-height: 1.25;
+      margin-bottom: 0px;
+    }
+  }
   .slider-text {
-    margin-bottom: 12px !important; }
+    margin-bottom: 12px !important;
+  }*/
   .mots-clef-title {
     font-size: 17px !important; }
   .colu-width {
