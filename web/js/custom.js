@@ -93,13 +93,12 @@ jQuery(document).ready(function() {
     });
 
     App.init();
-    RevolutionSlider.initRSfullWidth({
+    /*RevolutionSlider.initRSfullWidth({
         delay:10000,
         startwidth:1170,
         startheight:336,
 
-    });
-    //jQuery(".tp-banner-container").revolution();
+    });*/
     //StyleSwitcher.initStyleSwitcher();
     jQuery('.your-class').slick({
         dots: true,
