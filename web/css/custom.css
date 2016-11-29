@@ -801,7 +801,7 @@ i.fa.margin-right-5 { margin-right: 10px!important;}
 }
 
 .search-bar-2 {
-	height: 40px;
+	height: 40px!important;
 	background-color: #e2e1e1;
 	border: 0px;
 }
@@ -814,6 +814,12 @@ i.fa.margin-right-5 { margin-right: 10px!important;}
 	height: 30px;
 	width: 30px;
 	padding: 6px;
+}
+
+.search-btn-2 {
+	height: 40px;
+	width: 40px;
+	padding: 11px;
 }
 
 .search-btn i {
@@ -2016,7 +2022,7 @@ div.play-button {
 }
 
 .slick-slider {
-	margin-top:20px
+	/*margin-top:20px*/
 }
 .slick-slider .slick-prev {
 	display: inline-block;
