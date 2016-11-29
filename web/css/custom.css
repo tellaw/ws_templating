@@ -57,7 +57,8 @@ a.color-red-eti:hover {
 .zoning {
 	cursor: pointer;
 }
-#meme-sujet .zoning {
+#meme-sujet .zoning,
+.timeline-v2 .zoning {
 	cursor: default;
 }
 #meme-sujet .content-article > div {

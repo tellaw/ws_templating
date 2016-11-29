@@ -1762,6 +1762,8 @@
   #sticky-menu-document {
     display: none; }
   #meme-sujet .zoning {
+    cursor: pointer; }
+  .timeline-v2 .zoning {
     cursor: pointer; } }
 
 @media only screen and (min-width: 1024px) {
