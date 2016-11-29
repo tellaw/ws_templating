@@ -2062,12 +2062,6 @@ $color-red : #ea2336 ;
     font-size: 25px !important;
   }
   .slider-card {
-    top: 51px;
-    padding: 18px 25px 32px 31px;
-    width: 335px;
-    margin-left: 1495px;
-  }
-  .slider-card {
     .slider-text {
       margin-top: 0px;
       font-size: 17px;
@@ -2649,6 +2643,12 @@ $color-red : #ea2336 ;
 
 /* FOOTER ANCIEN */
 @media  screen and (max-width: 1024px) {
+  .slider-card {
+    top: 51px;
+    padding: 18px 25px 32px 31px;
+    width: 335px;
+    margin-left: 540px;
+  }
   .slider-margin-top {
     margin-top: 51px;
   }
@@ -2713,6 +2713,12 @@ $color-red : #ea2336 ;
 }
 
 @media only screen and (min-width: 1024px) {
+  .slider-card {
+    top: 51px;
+    padding: 18px 25px 32px 31px;
+    width: 335px;
+    margin-left: 1495px;
+  }
   .corps-article-link-mobile {
     display:none;
   }
