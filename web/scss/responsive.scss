@@ -215,7 +215,7 @@ $color-red : #ea2336 ;
 /* Mobile portrait */
 @media screen and (max-width: 425px) {
   .your-class {
-    display: none;
+    display: none!important;
   }
   .large-img {
     width:300px;

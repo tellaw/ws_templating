@@ -15,6 +15,29 @@ jQuery( window ).ready(function() {
 
 //gestion back des onglets page domaines/secteurs/offres
 jQuery(document).ready(function() {
+    jQuery(function() {
+        jQuery( "#query" ).autocomplete({
+            delay: 100,
+            minLength : 3,
+            source: function(request, response) {
+                var scopes = jQuery("#searchCommand input[name='scope']");
+                var scope = scopes !== undefined && scopes.length > 0 ? scopes[0].value : "";
+                request_term = request.term;
+                var params = {q:request_term};
+                if (scope && scope != "") {params = {q:request_term,scope:scope};}
+                jQuery.ajax({type:"POST",async:true,dataType:"json",url:'/suggest-ajax.do',data: params,success: function(data){response(data);}});
+                return false;
+            }
+        }).data("autocomplete")._renderItem = function (ul, item){
+            var re = new RegExp( "^" + this.term, "i" );
+            var t = item.label.replace( re, "<span style='font-weight:bold;color:#c2010c;'>" + this.term + "</span>" );
+            return jQuery("<li></li>")
+                .data("item", item)
+                .append("<a>" + t + "</a>")
+                .appendTo(ul);
+        };
+    });
+
     // add a hash to the URL when the user clicks on a tab
     jQuery('a[data-toggle="tab"]').on('click', function(e) {
         history.pushState(null, null, jQuery(this).attr('href'));
