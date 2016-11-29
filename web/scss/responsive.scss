@@ -214,7 +214,9 @@ $color-red : #ea2336 ;
 
 /* Mobile portrait */
 @media screen and (max-width: 425px) {
-
+  .large-img {
+    width:300px;
+  }
   #header-rubrique {
     .btn-u-blue {
       margin-top:10px;
