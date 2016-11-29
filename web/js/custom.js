@@ -126,7 +126,7 @@ jQuery(document).ready(function() {
     jQuery('.your-class').slick({
         dots: true,
         arrows: false,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 10000
     });
 
