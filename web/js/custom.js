@@ -34,15 +34,15 @@ jQuery(document).ready(function() {
 
 jQuery(document).ready(function() {
     jQuery(function() {
-        jQuery( "#query" ).autocomplete({
+        jQuery( ".ui-autocomplete-input" ).autocomplete({
             delay: 100,
             minLength : 3,
             source: function(request, response) {
-                var scopes = jQuery("#searchCommand input[name='scope']");
-                var scope = scopes !== undefined && scopes.length > 0 ? scopes[0].value : "";
+                //var scopes = jQuery("#searchCommand input[name='scope']");
+                //var scope = scopes !== undefined && scopes.length > 0 ? scopes[0].value : "";
                 request_term = request.term;
                 var params = {q:request_term};
-                if (scope && scope != "") {params = {q:request_term,scope:scope};}
+                //if (scope && scope != "") {params = {q:request_term,scope:scope};}
                 jQuery.ajax({type:"POST",async:true,dataType:"json",url:'/suggest-ajax.do',data: params,success: function(data){response(data);}});
                 return false;
             }
@@ -54,6 +54,12 @@ jQuery(document).ready(function() {
                 .append("<a>" + t + "</a>")
                 .appendTo(ul);
         };
+
+        jQuery( ".ui-autocomplete-input" ).on("focus", function() {
+            var offset = jQuery(this).offset();
+            jQuery("#ui-id-1").css({top: offset.top})
+            console.log(offset.top);
+        });
     });
 
     if ((jQuery(window).width() >= 992) && (jQuery(window).scrollTop() == 0)) {
