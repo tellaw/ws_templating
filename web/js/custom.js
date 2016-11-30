@@ -54,12 +54,6 @@ jQuery(document).ready(function() {
                 .append("<a>" + t + "</a>")
                 .appendTo(ul);
         };
-
-        jQuery( ".ui-autocomplete-input" ).on("focus", function() {
-            var offset = jQuery(this).offset();
-            jQuery("#ui-id-1").css({top: offset.top})
-            console.log(offset.top);
-        });
     });
 
     if ((jQuery(window).width() >= 992) && (jQuery(window).scrollTop() == 0)) {
