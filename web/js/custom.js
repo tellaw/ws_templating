@@ -34,7 +34,29 @@ jQuery(document).ready(function() {
 
 jQuery(document).ready(function() {
     jQuery(function() {
-        jQuery( ".ui-autocomplete-input" ).autocomplete({
+        jQuery( "#query" ).autocomplete({
+            delay: 100,
+            minLength : 3,
+            source: function(request, response) {
+                //var scopes = jQuery("#searchCommand input[name='scope']");
+                //var scope = scopes !== undefined && scopes.length > 0 ? scopes[0].value : "";
+                request_term = request.term;
+                var params = {q:request_term};
+                //if (scope && scope != "") {params = {q:request_term,scope:scope};}
+                jQuery.ajax({type:"POST",async:true,dataType:"json",url:'/suggest-ajax.do',data: params,success: function(data){response(data);}});
+                return false;
+            }
+        }).data("ui-autocomplete")._renderItem = function (ul, item){
+            console.log(ul);
+            var re = new RegExp( "^" + this.term, "i" );
+            var t = item.label.replace( re, "<span style='font-weight:bold;color:#c2010c;'>" + this.term + "</span>" );
+            return jQuery("<li></li>")
+                .data("item", item)
+                .append("<a>" + t + "</a>")
+                .appendTo(ul);
+        };
+
+        jQuery( "#query2" ).autocomplete({
             delay: 100,
             minLength : 3,
             source: function(request, response) {
