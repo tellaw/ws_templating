@@ -47,6 +47,7 @@ jQuery(document).ready(function() {
                 return false;
             }
         }).data("ui-autocomplete")._renderItem = function (ul, item){
+            console.log(ul);
             var re = new RegExp( "^" + this.term, "i" );
             var t = item.label.replace( re, "<span style='font-weight:bold;color:#c2010c;'>" + this.term + "</span>" );
             return jQuery("<li></li>")
