@@ -1323,9 +1323,16 @@ div[id^="background_fiche"] {
   background: #F6F6F6;
   z-index: 1002;
   font-size:12px;
+  top: 83px!important;/*à supprimer par la suite*/
   li {
     a {
       font-size:1.1em;
     }
   }
+}
+
+// ACTUALITE //
+.thematic_url,
+.widgettitle {
+  display: none;
 }
