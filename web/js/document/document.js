@@ -44,9 +44,9 @@ jQuery(document).ready(function() {
     jQuery('[data-title]').each(function() {
         jQuery(this).attr('data-toggle', 'tooltip').attr('data-placement', 'bottom');
     });
-    /*jQuery('[data-toggle="tooltip"]').tooltip({
+    jQuery('[data-toggle="tooltip"]').tooltip({
         delay: {show: 0, hide: 1000}
-    });*/
+    });
 
     jQuery("#inlineResults .top .right").on("click",function() {
         jQuery("id-rechercher-div").hide();
