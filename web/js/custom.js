@@ -141,11 +141,6 @@ jQuery(document).ready(function() {
     });
 
     App.init();
-    RevolutionSlider.initRSfullWidth({
-        delay:10000,
-        startwidth:1170,
-        startheight:336
-    });
     //StyleSwitcher.initStyleSwitcher();
     jQuery('.your-class').slick({
         dots: true,
