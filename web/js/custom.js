@@ -46,7 +46,7 @@ jQuery(document).ready(function() {
                 jQuery.ajax({type:"POST",async:true,dataType:"json",url:'/suggest-ajax.do',data: params,success: function(data){response(data);}});
                 return false;
             }
-        }).data("autocomplete")._renderItem = function (ul, item){
+        }).data("ui-autocomplete")._renderItem = function (ul, item){
             console.log(ul);
             var re = new RegExp( "^" + this.term, "i" );
             var t = item.label.replace( re, "<span style='font-weight:bold;color:#c2010c;'>" + this.term + "</span>" );
