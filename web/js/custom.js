@@ -56,7 +56,7 @@ jQuery(document).ready(function() {
                 .appendTo(ul);
         };
 
-        jQuery( "#query2" ).autocomplete({
+        jQuery( "#query-2" ).autocomplete({
             delay: 100,
             minLength : 3,
             source: function(request, response) {
