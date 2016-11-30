@@ -4513,3 +4513,161 @@ div[id^="background_fiche"] .figures_container div.figures_classe {
 	text-align: left;
 	z-index:3;
 }
+
+/* SOUS MENU ACTU */
+
+#ti_actu_submenu_container {
+	background:#ca030a;
+}
+#ti_actu_submenu_container li {
+	opacity:0.8;
+	padding:12px 0 8px 17px;
+	position:relative;
+}
+@-moz-document url-prefix(){
+	#ti_actu_submenu_container li {
+		padding:12px 0 8px 8px;
+	}
+}
+#ti_actu_submenu_container li .sub-menu {
+	position:absolute;
+	z-index:99;
+	top:47px;
+	left:15px;
+	background:#333;
+	display:none;
+	margin:0;
+	padding:0;
+}
+#ti_actu_submenu_container li:hover .sub-menu {
+	display:block;
+}
+#ti_actu_submenu_container li .sub-menu li {
+	float:none;
+	opacity:1;
+	padding: 0 11px;
+}
+#ti_actu_submenu_container li .sub-menu li:hover {
+	background:url(../images/arrow-grey-right.png) left center no-repeat #c1c1c1;
+}
+#ti_actu_submenu_container li .sub-menu li:hover a {
+	color:#333;
+}
+#ti_actu_submenu_container li .sub-menu li a {
+	display:block;
+	white-space: nowrap;
+}
+#ti_actu_submenu_container li.actif {
+	opacity:1;
+}
+#ti_actu_submenu_container li.actif a {
+	border-bottom:3px solid #fff;
+	padding: 0 0 3px 0;
+}
+#ti_actu_submenu_container li.actif ul li a {
+	border:none;
+}
+#ti_actu_submenu_container li:hover {
+	opacity:1;
+}
+#ti_actu_submenu_container a {
+	color:#fff;
+	font-family:DIN-Alternate-medium, century gothic;
+	font-size:11px;
+	text-transform:uppercase;
+	font-weight:bold;
+	color:#fff;
+	line-height: 27px;
+}
+#ti_actu_submenu_container li.home a {
+	font-size:0;
+	background:url(../images/sous-menu-home.png) center center no-repeat transparent;
+	height: 24px;
+	width: 14px;
+	display: block;
+}
+#ti_actu_submenu_container li.home.actif a {
+	padding-bottom:0;
+}
+#ti_actu_submenu_container li.insolite.actif {
+	border:none;
+}
+#ti_actu_submenu_container li.insolite a {
+	font-size:0;
+	background:url(../images/sous-menu-insolite.png) center center no-repeat transparent;
+	height: 27px;
+	width: 58px;
+	display: block;
+	border:none;
+	padding:0
+}
+#ti_actu_submenu_container ul {
+	margin-bottom:0;
+	padding-left:0;
+}
+#ti_actu_submenu_container ul li {
+	float:left;
+	list-style: none;
+}
+#ti_actu_submenu_container div div ul:before,
+#ti_actu_submenu_container div div ul:after,
+#ti_actu_right_now_container div div ul:before,
+#ti_actu_right_now_container div div ul:after {
+	content: '.';
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	font-size: 0;
+	line-height: 0;
+	width: 0;
+	height: 0;
+	clear:both;
+}
+#ti_actu_right_now_container ul {
+	margin-bottom:0;
+	padding-left:0;
+}
+#ti_actu_right_now_container li {
+	float:left;
+	list-style-type: disc;
+	list-style-position: outside;
+	margin: 0 24px 0 0;
+	padding:5px 0 6px;
+	font-size:14px;
+	font-weight:bold;
+	text-transform:uppercase;
+}
+#ti_actu_right_now_container li:last-child {
+	margin:0;
+}
+#ti_actu_right_now_container li.titre,
+#ti_actu_right_now_container li.titre + li {
+	list-style:none;
+}
+#ti_actu_right_now_container li.titre + li {
+	background:url(../images/picto-en-ce-moment.png) left center no-repeat transparent;
+	padding-left:12px;
+}
+#ti_actu_right_now_container li.titre {
+	background:#333;
+	text-transform:initial;
+	padding:5px 10px 6px;
+	margin:0
+}
+#ti_actu_right_now_container li.titre a {
+	color:#fff;
+	font-size:14px;
+}
+#ti_actu_right_now_container li.titre a:hover {
+	cursor:default;
+	text-decoration:none;
+}
+#ti_actu_right_now_container li a {
+	color:#333333;
+	font-family:DIN-Alternate-medium, century gothic;
+	font-size:11px;
+	font-weight:bold;
+}
+#ti_actu_right_now_container li a:hover {
+	text-decoration:underline;
+}
