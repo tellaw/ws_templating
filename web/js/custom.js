@@ -46,7 +46,7 @@ jQuery(document).ready(function() {
                 jQuery.ajax({type:"POST",async:true,dataType:"json",url:'/suggest-ajax.do',data: params,success: function(data){response(data);}});
                 return false;
             }
-        }).data("autocomplete")._renderItem = function (ul, item){
+        })/*.data("autocomplete")._renderItem = function (ul, item){
             var re = new RegExp( "^" + this.term, "i" );
             var t = item.label.replace( re, "<span style='font-weight:bold;color:#c2010c;'>" + this.term + "</span>" );
             return jQuery("<li></li>")
@@ -56,7 +56,8 @@ jQuery(document).ready(function() {
                 .parent(ul)
                 .addClass('first-ul')
                 .css({top: jQuery("#query").offset().top + 26});
-        };
+        }*/;
+        jQuery("ul.ui-autocomplete").css({top: jQuery("#query").offset().top + 26});
 
         if(jQuery( "#query-2").length) {
             jQuery( "#query-2" ).autocomplete({
@@ -71,7 +72,7 @@ jQuery(document).ready(function() {
                     jQuery.ajax({type:"POST",async:true,dataType:"json",url:'/suggest-ajax.do',data: params,success: function(data){response(data);}});
                     return false;
                 }
-            }).data("autocomplete")._renderItem = function (ul, item){
+            })/*.data("autocomplete")._renderItem = function (ul, item){
                 var re = new RegExp( "^" + this.term, "i" );
                 var t = item.label.replace( re, "<span style='font-weight:bold;color:#c2010c;'>" + this.term + "</span>" );
                 return jQuery("<li></li>")
@@ -81,7 +82,8 @@ jQuery(document).ready(function() {
                     .parent(ul)
                     .addClass('second-ul')
                     .css({top: jQuery("#query-2").offset().top + 40});
-            };
+            }*/;
+            jQuery("ul.ui-autocomplete + ul.ui-autocomplete").css({top: jQuery("#query-2").offset().top + 40});
         }
     });
 
