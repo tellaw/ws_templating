@@ -991,6 +991,9 @@ div[class^="element-wrapper-"] img {
 	font-size:12px;
 	min-height:82px;
 }
+.large-img .acceuil-title p {
+	min-height:46px;
+}
 
 .acceuil-title-2 {
 	background-color: #fff !important;
