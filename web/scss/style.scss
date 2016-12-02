@@ -1323,7 +1323,6 @@ div[id^="background_fiche"] {
   background: #F6F6F6;
   z-index: 1002;
   font-size:12px;
-  top: 83px!important;/*à supprimer par la suite*/
   li {
     a {
       font-size:1.1em;
@@ -1335,4 +1334,29 @@ div[id^="background_fiche"] {
 .thematic_url,
 .widgettitle {
   display: none;
+}
+.breves {
+  >div {
+    width:300px;
+    margin:0 auto;
+    background: #fff;
+  }
+  .content {
+    text-transform: none;
+    font-size: 12px;
+    font-weight: normal;
+    position: relative;
+    padding:0;
+    div {
+      height: 209px;
+      overflow: auto;
+      padding:0 0 0 10px;
+      a.descriptif {
+        font-size: 12px;
+        display: block;
+        line-height: 16px;
+        margin: 0 0 5px 0;
+      }
+    }
+  }
 }

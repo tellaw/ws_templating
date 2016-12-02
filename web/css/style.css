@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: 'DIN-Alternate-medium';
   src: url("../fonts/din_alternate_medium-webfont.eot");
@@ -998,12 +997,31 @@ div[id^="background_fiche"] .fiche_step h3 {
   border: 1px solid #EBEBEB;
   background: #F6F6F6;
   z-index: 1002;
-  font-size: 12px;
-  top: 83px !important;
-  /*à supprimer par la suite*/ }
+  font-size: 12px; }
   .ui-autocomplete li a {
     font-size: 1.1em; }
 
 .thematic_url,
 .widgettitle {
   display: none; }
+
+.breves > div {
+  width: 300px;
+  margin: 0 auto;
+  background: #fff; }
+
+.breves .content {
+  text-transform: none;
+  font-size: 12px;
+  font-weight: normal;
+  position: relative;
+  padding: 0; }
+  .breves .content div {
+    height: 209px;
+    overflow: auto;
+    padding: 0 0 0 10px; }
+    .breves .content div a.descriptif {
+      font-size: 12px;
+      display: block;
+      line-height: 16px;
+      margin: 0 0 5px 0; }
