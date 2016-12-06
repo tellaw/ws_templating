@@ -518,7 +518,8 @@
     paddinf-left: 0 !important;
     margin-left: auto !important;
     margin-right: auto !important; }
-  .rwd-break {
+  .rwd-break,
+  .boxPub.zoneId212 {
     display: none; }
   .content-container {
     margin-top: 165px; }
@@ -1757,7 +1758,8 @@
   form #phone-prefix {
     top: 5px; }
   #pub_mega_skyscraper,
-  #pub_fixed_footer {
+  #pub_fixed_footer,
+  .boxPub.zoneId214 {
     display: none; }
   #sticky-menu-document {
     display: none; }
@@ -1774,8 +1776,12 @@
     margin-left: 540px; }
   .corps-article-link-mobile {
     display: none; }
-  a.pub-style img, a.large-img img, a.haute-img img {
+  a.pub-style img, a.large-img img, a.haute-img img, a.large img {
     transition: transform 4s cubic-bezier(0.19, 1, 0.22, 1) 0ms; }
+  a.large:hover img {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1); }
   a.pub-style:hover img, a.large-img:hover img, a.haute-img:hover img {
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
