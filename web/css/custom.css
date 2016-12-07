@@ -1002,6 +1002,14 @@ div[class^="element-wrapper-"] img {
 	font-size:12px;
 	min-height:82px;
 }
+
+.edition .acceuil-title {
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	border: 1px solid #C6C6C6;
+	border-top: none;
+}
 .large-img .acceuil-title p {
 	min-height:46px;
 }
