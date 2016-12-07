@@ -4792,3 +4792,7 @@ div[id^="background_fiche"] .figures_container div.figures_classe {
 .reassurance:hover p {
 	color: #EA2336;
 }
+form + a:hover {
+	text-decoration: underline;
+	color:#EA2336;
+}
