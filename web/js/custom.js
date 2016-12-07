@@ -155,6 +155,14 @@ jQuery(document).ready(function() {
         autoplaySpeed: 10000
     });
 
+    jQuery(".les-plus span").on("click", function(){
+        jQuery(".les-plus span").removeClass("actif");
+        jQuery(this).addClass("actif");
+        jQuery(".les-plus .box-colors > div").hide();
+        var list = jQuery(this).attr("id");
+        jQuery(".les-plus .box-colors div."+list).show();
+    });
+
     jQuery(".owl-carousel").owlCarousel({
         loop: true,
         responsiveClass: true,
@@ -580,6 +588,13 @@ jQuery(document).ready(function() {
      });*/
 
     jQuery("#header-rubrique .zoning").on("click", function (a) {
+            if (jQuery(this).find("a").attr("href") != undefined)
+                window.location = jQuery(this).find("a").attr("href")
+            return false;
+        }
+    )
+
+    jQuery(".owl-carousel .zoning").on("click", function (a) {
             if (jQuery(this).find("a").attr("href") != undefined)
                 window.location = jQuery(this).find("a").attr("href")
             return false;
