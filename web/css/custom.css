@@ -4783,9 +4783,11 @@ div[id^="background_fiche"] .figures_container div.figures_classe {
 	border: 1px solid #ec1625;
 	color:#fff;
 }
+.reassurance p {
+	margin:0;
+}
 .reassurance:hover {
-	border: solid 1px #d0d0d0;
-	transform: scale(1.2);
+	background: #e2e1e1!important;
 }
 .reassurance:hover p {
 	color: #EA2336;
