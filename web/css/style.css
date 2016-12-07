@@ -1008,6 +1008,10 @@ div[id^="background_fiche"] .fiche_step h3 {
   top: 0;
   background: #EA2336;
   opacity: 0.6; }
+  .filtre-red i {
+    font-size: 50px;
+    color: #fff;
+    margin: 17% 46%; }
 
 .thematic_url,
 .widgettitle {
