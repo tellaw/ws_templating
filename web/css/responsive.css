@@ -1597,6 +1597,8 @@
     position: relative; }
     .cadre-downloads-large:hover .border-hover {
       display: block; }
+    .cadre-downloads-large:hover h3 {
+      text-decoration: underline; }
     .cadre-downloads-large:hover .cadre-downloads::before {
       content: ">";
       position: absolute;

@@ -2424,6 +2424,9 @@ $color-red : #ea2336 ;
       .border-hover {
         display: block;
       }
+      h3 {
+        text-decoration:underline;
+      }
       .cadre-downloads::before {
         content: ">";
         position: absolute;

@@ -1550,6 +1550,7 @@ p.cellule-list {
 	margin-top: 6px;
 	width: 300px;
 	min-height: 66px;
+	line-height: 16px;
 }
 .margin-tagbox-actualite{
 	margin-top: 5px !important;
@@ -4559,7 +4560,7 @@ div[id^="background_fiche"] .figures_container div.figures_classe {
 }
 #ti_actu_submenu_container li {
 	opacity:0.8;
-	padding:12px 0 8px 17px;
+	padding:12px 0 8px 37px;
 	position:relative;
 }
 @-moz-document url-prefix(){
@@ -4571,7 +4572,7 @@ div[id^="background_fiche"] .figures_container div.figures_classe {
 	position:absolute;
 	z-index:99;
 	top:47px;
-	left:15px;
+	left:35px;
 	background:#333;
 	display:none;
 	margin:0;
@@ -4752,7 +4753,7 @@ div[id^="background_fiche"] .figures_container div.figures_classe {
 	text-align: center;
 }
 .les-plus ul li a.wpp-post-title {
-	width: 70%;
+	width: 67%;
 	height: 37px;
 }
 .posts_list + .col-droite {
