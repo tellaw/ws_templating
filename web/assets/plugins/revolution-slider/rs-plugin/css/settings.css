@@ -22,7 +22,11 @@ website:   	http://www.themepunch.com
 .tp-hide-revslider,.tp-caption.tp-hidden-caption	{	visibility:hidden !important; display:none !important}
 
 
-.tp-caption { z-index:1; white-space:nowrap}
+.tp-caption { z-index:1; width: 50%!important; margin: 0 10%!important;padding: 22px!important;}
+
+.tp-caption p {
+	margin:0!important;
+}
 
 .tp-caption-demo .tp-caption	{	position:relative !important; display:inline-block; margin-bottom:10px; margin-right:20px !important}
 
@@ -1974,8 +1978,9 @@ img.tp-slider-alternative-image	{	width:100%; height:auto;}
 
 
 /* NAVIGATION PREVIEW 4 */
-.tparrows.preview4 							{	width:30px; height:110px;  background:transparent;-webkit-transform-style: preserve-3d; -webkit-perspective: 1000; -moz-perspective: 1000}
-.tparrows.preview4:after					{	position:absolute;  line-height: 110px;text-align: center; font-family: "revicons"; color:#fff; font-size:20px; top:0px;left:0px;z-index:0; width:30px;height:110px; background: #000; background: rgba(0,0,0,0.25);
+.tparrows.preview4 							{	width:30px; height:110px;  background:#EA2336;-webkit-transform-style: preserve-3d; -webkit-perspective: 1000; -moz-perspective: 1000}
+.tparrows.preview4:hover					{	background: transparent;}
+.tparrows.preview4:after					{	position:absolute;  line-height: 110px;text-align: center; font-family: "revicons"; color:#fff; font-size:20px; top:0px;left:0px;z-index:0; width:30px;height:110px;
 												-webkit-transition: all 0.2s ease-in-out;
 											    -moz-transition: all 0.2s ease-in-out;
 											    -o-transition: all 0.2s ease-in-out;
@@ -2016,15 +2021,10 @@ img.tp-slider-alternative-image	{	width:100%; height:auto;}
 
 
 
-.tparrows.preview4 .tp-arr-titleholder		{	display:block; font-size:12px; line-height:25px; padding:0px 10px;text-align:left;color:#fff; position: relative;
+.tparrows.preview4 .tp-arr-titleholder		{	display:block; font-size:12px; line-height:15px; padding:10px;text-align:left;color:#fff; position: relative;
 												background: #000;
 												color: #FFF;
-												text-transform: uppercase;
-												white-space: nowrap;
 												letter-spacing: 1px;
-												font-weight: 700;
-												font-size: 11px;
-												line-height: 2.75;
 												-webkit-transition: all 0.3s;
 												transition: all 0.3s;
 												-webkit-transform: rotateX(-90deg);
@@ -2065,17 +2065,17 @@ img.tp-slider-alternative-image	{	width:100%; height:auto;}
 .tp-bullets.preview4 						{ 	height: 17px}
 .tp-bullets.preview4 .bullet 				{	cursor: pointer;
 											    position: relative !important;
-											    background: rgba(0, 0, 0, 0.5) !important;
+											    background: #FFF !important;
 											    -webkit-border-radius: 10px;
 											    border-radius: 10px;
 											    -webkit-box-shadow: none;
 											    -moz-box-shadow: none;
 											    box-shadow: none;
-											    width: 6px !important;
-											    height: 6px !important;
-											    border: 5px solid rgba(0, 0, 0, 0) !important;
+											    width: 15px !important;
+											    height: 15px !important;
 											    display: inline-block;
-											    margin-right: 2px !important;
+											    margin-right: 5px !important;
+											    margin-left: 5px !important;
 											    margin-bottom: 0px !important;
 											    -webkit-transition: background-color 0.2s, border-color 0.2s;
 											    -moz-transition: background-color 0.2s, border-color 0.2s;
@@ -2092,10 +2092,9 @@ img.tp-slider-alternative-image	{	width:100%; height:auto;}
 .tp-bullets.preview4 .bullet.selected 		{	-webkit-box-shadow: none;
 											    -moz-box-shadow: none;
 											    box-shadow: none;
-												background: rgba(255, 255, 255, 1) !important;
-												width: 6px !important;
-											    height: 6px !important;
-											    border: 5px solid rgba(0, 0, 0, 1) !important;
+												background: #ea2336 !important;
+												width: 15px !important;
+											    height: 15px !important;
 }
 
 

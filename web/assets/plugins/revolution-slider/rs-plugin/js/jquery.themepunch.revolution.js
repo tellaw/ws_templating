@@ -27,8 +27,8 @@
 				////////////////////////////////
 				var defaults = {
 					delay:9000,
-					startheight:500,
-					startwidth:960,
+					startheight:336,
+					startwidth:1140,
 					fullScreenAlignForce:"off",
 					autoHeight:"off",
 					hideTimerBar:"off",
@@ -1625,7 +1625,7 @@
 
 
 				//opt.height= opt.startheight * opt.bh;
-				opt.height = Math.round(opt.startheight * (opt.width/opt.startwidth));
+				opt.height = 336;
 
 
 				if (opt.height>opt.startheight && opt.autoHeight!="on") opt.height=opt.startheight;
