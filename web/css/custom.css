@@ -4801,3 +4801,11 @@ form + a:hover {
 	text-decoration: underline;
 	color:#EA2336;
 }
+#pub_300_250 {
+	top: -17px;
+	position: relative;
+	height: 250px;
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+}
