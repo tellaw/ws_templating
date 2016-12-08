@@ -2384,6 +2384,11 @@ div.play-button {
 	color: #4d5356;
 	letter-spacing: 1px;
 }
+.timeline-v2 > li > p {
+	position: absolute;
+	top: 18px;
+	left: 147px;
+}
 .timeline-v2 > li .cbp_tmlabel .table > tbody > tr > td {
 	padding-top: 0px;
 }
