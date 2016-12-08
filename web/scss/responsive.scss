@@ -878,15 +878,6 @@ $color-red : #ea2336 ;
 }
 
 @media screen and (max-width: 767px) {
-  .timeline-v2 {
-    > li {
-      > p {
-        position: absolute;
-        top: 6px;
-        left: 125px;
-      }
-    }
-  }
   .autres-card {
     height: 65%;
   }
@@ -1401,15 +1392,6 @@ $color-red : #ea2336 ;
 
 /* Medium only */
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  .timeline-v2 {
-    > li {
-      > p {
-        position: absolute;
-        top: 18px;
-        left: 137px;
-      }
-    }
-  }
   .cadre-downloads-large {
     position: relative;
     &:hover {
@@ -2109,15 +2091,6 @@ $color-red : #ea2336 ;
 
 /* Large à intermédiaire bootstrap */
 @media screen and (min-width: 992px) and (max-width: 1200px)  {
-  .timeline-v2 {
-    > li {
-      > p {
-        position: absolute;
-        top: 18px;
-        left: 117px;
-      }
-    }
-  }
   .cadre-downloads-large {
     position: relative;
     &:hover {

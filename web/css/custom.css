@@ -2384,10 +2384,10 @@ div.play-button {
 	color: #4d5356;
 	letter-spacing: 1px;
 }
-.timeline-v2 > li > p {
-	position: absolute;
-	top: 18px;
-	left: 147px;
+.timeline-v2 > li .badge {
+	padding: 2px 2px 3px;
+	line-height:14px!important;
+	top:-6px!important;
 }
 .timeline-v2 > li .cbp_tmlabel .table > tbody > tr > td {
 	padding-top: 0px;
@@ -2398,6 +2398,10 @@ div.play-button {
 .timeline-v2 > li:hover .cbp_tmlabel div * {
 	color: #EC1625!important;
 	text-decoration: underline;
+}
+.timeline-v2 > li:hover .cbp_tmlabel div .badge i {
+	color: #FFF!important;
+	text-decoration: none;
 }
 #presentation .table > tbody > tr:hover .col4 a {
 	color: #EC1625!important;
@@ -2435,12 +2439,12 @@ div.play-button {
 	padding-left: 0px;
 }
 .timeline-v2 > li .cbp_tmlabel span:last-child {
-	text-overflow: ellipsis;
-	max-width: 405px;
+	/*text-overflow: ellipsis; */
+	/* max-width: 405px; */
 	display: inline-block;
-	white-space: nowrap;
-	overflow: hidden;
-	line-height: 20px;
+	/* white-space: nowrap; */
+	/* overflow: hidden; */
+	line-height: 18px;
 	position: relative;
 }
 .color-697277  {
@@ -3500,9 +3504,6 @@ td, th, tr{
  #offre-commerciale {
 	 position:relative;
 	 z-index: 99;
- }
- #maj .timeline-v2 > li .cbp_tmlabel span:last-child {
-	 max-width: 520px;
  }
 .ez_content .expert ,
 .ez_content .expert .text > p {
