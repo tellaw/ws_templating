@@ -2386,8 +2386,8 @@ div.play-button {
 }
 .timeline-v2 > li .badge {
 	padding: 2px 2px 3px;
-	line-height:14px!important;
-	top:-6px!important;
+	line-height: 12px!important;
+	top: -10px!important;
 }
 .timeline-v2 > li .cbp_tmlabel .table > tbody > tr > td {
 	padding-top: 0px;
