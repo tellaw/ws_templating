@@ -694,7 +694,7 @@ jQuery(document).ready(function() {
     }
 
     // gérer les warning dans les listing rubrique
-    jQuery( ".zoning.warning" ).parents('.panel-default').find(".my-warning-to-display").css("display", "inline");
+    jQuery( ".warning" ).parents('.panel-default').find(".my-warning-to-display").css("display", "inline");
 
     // lecture facile
     jQuery('.lecture-facile, .bt-lf').on("click",function() {
