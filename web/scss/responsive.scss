@@ -869,7 +869,7 @@ $color-red : #ea2336 ;
   .tag-box {
     .licence {
       padding-left:10px;
-      height:40px;
+      height:45px;
     }
   }
   .tag-box .prices {
@@ -930,7 +930,7 @@ $color-red : #ea2336 ;
   }
   .tag-box .licence {
     padding-left:10px;
-    height:40px;
+    height:45px;
   }
 
   .tag-box .prices {
@@ -1397,6 +1397,7 @@ $color-red : #ea2336 ;
     &:hover {
       .border-hover {
         display: block;
+        cursor: pointer;
       }
       .cadre-downloads::before {
         content: ">";
@@ -1878,6 +1879,13 @@ $color-red : #ea2336 ;
     z-index: 10;
   }
 
+  .col-droite-actu {
+    position: absolute;
+    top: 0;
+    right: -9px;
+    z-index: 10;
+  }
+
   .col-droite-2 {
     position: absolute;
     top: 106px;
@@ -2096,6 +2104,7 @@ $color-red : #ea2336 ;
     &:hover {
       .border-hover {
         display: block;
+        cursor: pointer;
       }
       .cadre-downloads::before {
         content: ">";
@@ -2106,6 +2115,9 @@ $color-red : #ea2336 ;
         top: 40px;
         color: #EA2336;
         font-weight: 300;
+      }
+      .filtre-red {
+        display: none;
       }
     }
     .border-hover {
@@ -2423,6 +2435,7 @@ $color-red : #ea2336 ;
     &:hover {
       .border-hover {
         display: block;
+        cursor: pointer;
       }
       h3 {
         text-decoration:underline;

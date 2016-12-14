@@ -2595,7 +2595,7 @@ div.play-button {
 
 .devis-box-text {
 	line-height: 1.35;
-	margin-bottom: 17px !important;
+	margin-bottom: 22px !important;
 	margin-top: -4px !important;
 	padding-left: 25px;
 	font-size: 14px!important;
@@ -3467,6 +3467,7 @@ td, th, tr{
 	font-weight: 600;
 	margin-top: -7px;
 	letter-spacing: 1px;
+	clear: both;
 }
 .timeline-v2 > li .cbp_tmlabel{
 	background: none;

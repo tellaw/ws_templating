@@ -606,7 +606,7 @@
     padding-right: 0; }
   .tag-box .licence {
     padding-left: 10px;
-    height: 40px; }
+    height: 45px; }
   .tag-box .prices {
     padding-right: 10px; } }
 
@@ -647,7 +647,7 @@
     width: 100%; }
   .tag-box .licence {
     padding-left: 10px;
-    height: 40px; }
+    height: 45px; }
   .tag-box .prices {
     padding-right: 10px; }
   .devis, .tag-box--middle {
@@ -929,7 +929,8 @@
   .cadre-downloads-large {
     position: relative; }
     .cadre-downloads-large:hover .border-hover {
-      display: block; }
+      display: block;
+      cursor: pointer; }
     .cadre-downloads-large:hover .cadre-downloads::before {
       content: ">";
       position: absolute;
@@ -1226,6 +1227,11 @@
     top: 75px;
     right: -9px;
     z-index: 10; }
+  .col-droite-actu {
+    position: absolute;
+    top: 0;
+    right: -9px;
+    z-index: 10; }
   .col-droite-2 {
     position: absolute;
     top: 106px;
@@ -1377,7 +1383,8 @@
   .cadre-downloads-large {
     position: relative; }
     .cadre-downloads-large:hover .border-hover {
-      display: block; }
+      display: block;
+      cursor: pointer; }
     .cadre-downloads-large:hover .cadre-downloads::before {
       content: ">";
       position: absolute;
@@ -1387,6 +1394,8 @@
       top: 40px;
       color: #EA2336;
       font-weight: 300; }
+    .cadre-downloads-large:hover .filtre-red {
+      display: none; }
     .cadre-downloads-large .border-hover {
       display: none;
       position: absolute;
@@ -1596,7 +1605,8 @@
   .cadre-downloads-large {
     position: relative; }
     .cadre-downloads-large:hover .border-hover {
-      display: block; }
+      display: block;
+      cursor: pointer; }
     .cadre-downloads-large:hover h3 {
       text-decoration: underline; }
     .cadre-downloads-large:hover .cadre-downloads::before {
