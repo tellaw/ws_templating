@@ -153,7 +153,7 @@ jQuery(document).ready(function() {
         arrows: false,
         autoplay: true,
         autoplaySpeed: 10000
-    });
+    }).css({visibility: "visible"});
 
     jQuery(".les-plus span").on("click", function(){
         jQuery(".les-plus span").removeClass("actif");
