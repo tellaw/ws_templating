@@ -2057,8 +2057,8 @@ div.play-button {
 	margin-top:30px !important;
 }
 
-.slick-slider {
-	/*margin-top:20px*/
+.your-class {
+	visibility: hidden;
 }
 .slick-slider .slick-prev {
 	display: inline-block;
@@ -4560,7 +4560,7 @@ div[id^="background_fiche"] .figures_container div.figures_classe {
 }
 #ti_actu_submenu_container li {
 	opacity:0.8;
-	padding:12px 0 8px 37px;
+	padding:12px 0 8px 20px;
 	position:relative;
 }
 @-moz-document url-prefix(){
