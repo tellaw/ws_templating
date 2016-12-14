@@ -164,6 +164,8 @@
 
 /* Mobile portrait */
 @media screen and (max-width: 425px) {
+  .filtre-red i {
+    margin: 26% 42%; }
   .slider-card {
     top: 30px;
     margin: 0 auto;
@@ -1230,7 +1232,7 @@
   .col-droite-actu {
     position: absolute;
     top: 0;
-    right: -9px;
+    right: 0px;
     z-index: 10; }
   .col-droite-2 {
     position: absolute;
