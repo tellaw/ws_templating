@@ -2558,6 +2558,7 @@ div.play-button {
 	font-size: 11.93px;
 	text-align: right;
 	display: inline-block;
+	margin-bottom: 0;
 }
 
 .strike-center {
@@ -2832,10 +2833,6 @@ div.play-button {
 	font-size: 12px !important;
 	letter-spacing: 1.2px !important;
 	color: #4d5356;
-}
-
-.carousel-price {
-	margin-top: -5px;
 }
 
 .carousel-price span {
