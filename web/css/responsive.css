@@ -1010,6 +1010,8 @@
       top: 40px;
       color: #EA2336;
       font-weight: 300; }
+    .cadre-downloads-large:hover .filtre-red {
+      display: none; }
     .cadre-downloads-large .border-hover {
       display: none;
       position: absolute;
@@ -1688,6 +1690,8 @@
       top: 32px;
       color: #EA2336;
       font-weight: 300; }
+    .cadre-downloads-large:hover .filtre-red {
+      display: none; }
     .cadre-downloads-large .border-hover {
       display: none;
       position: absolute;

@@ -1496,6 +1496,9 @@ $color-red : #ea2336 ;
         color: #EA2336;
         font-weight: 300;
       }
+      .filtre-red {
+        display: none;
+      }
     }
     .border-hover {
       display:none;
@@ -2536,6 +2539,9 @@ $color-red : #ea2336 ;
         top: 32px;
         color: #EA2336;
         font-weight: 300;
+      }
+      .filtre-red {
+        display: none;
       }
     }
     .border-hover {

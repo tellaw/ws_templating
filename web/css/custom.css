@@ -1715,6 +1715,12 @@ p.cellule-list {
 	z-index: 2;
 	position: relative;
 }
+.cadre-downloads:hover .filtre-red {
+	display: none;
+}
+.cadre-downloads .filtre-red i {
+	margin: 26% 42%;
+}
 .title-downloads-panel {
 	line-height: 19px;
 }
@@ -1959,6 +1965,7 @@ a.large-img:hover .picto-plus-zoom {
 	width: 100%;
 	max-width: 600px;
 	height:178px;
+	overflow: hidden;
 }
 .youtube-container iframe {
 	width: 300px !important;
@@ -4663,7 +4670,7 @@ div[id^="background_fiche"] .figures_container div.figures_classe {
 	margin-bottom:0;
 	padding-left:0;
 	background: #697277;
-	height: 29px;
+	height: 34px;
 	overflow: hidden;
 }
 #ti_actu_right_now_container li {
