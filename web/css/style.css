@@ -1026,7 +1026,8 @@ div[id^="background_fiche"] .fiche_step h3 {
   margin: 0 auto;
   background: #fff; }
   .breves > div.breves-afp {
-    height: 39px; }
+    height: 39px;
+    border-bottom: 1px solid #e2e1e1; }
 
 .breves .content {
   text-transform: none;
@@ -1066,3 +1067,35 @@ div[id^="background_fiche"] .fiche_step h3 {
 
 .cadre-downloads-large .cadre-downloads {
   padding: 20px 0 0 0; }
+
+.cadre-downloads-large .visuel-lb {
+  margin: 65px 83px;
+  position: relative;
+  padding: 0 14px; }
+
+.top-thematique {
+  text-align: center;
+  background-size: 100% !important;
+  padding: 4% 0; }
+  .top-thematique .name-thematique {
+    background: #ffffff;
+    display: inline-block;
+    padding: 5px 20px; }
+
+.sous-thematique {
+  text-align: center;
+  margin: 25px 0; }
+  .sous-thematique a {
+    background: #F3F3F3;
+    padding: 6px 15px;
+    margin-left: 10px;
+    display: inline-block;
+    margin-bottom: 10px; }
+    .sous-thematique a:hover {
+      background: #EA2336;
+      color: #ffffff; }
+
+.desc-thematique p {
+  text-align: center;
+  padding: 0 10%;
+  margin-bottom: 30px; }

@@ -1625,7 +1625,13 @@
 
 
 				//opt.height= opt.startheight * opt.bh;
-				opt.height = 336;
+
+				if (opt.width > 780){
+					opt.height = 336;
+				}
+				else {
+					opt.height = 250;
+				}
 
 
 				if (opt.height>opt.startheight && opt.autoHeight!="on") opt.height=opt.startheight;

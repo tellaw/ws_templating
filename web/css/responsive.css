@@ -613,6 +613,74 @@
     padding-right: 10px; } }
 
 @media screen and (max-width: 767px) {
+  .cadre-downloads-large .large {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    height: 250px;
+    display: block;
+    overflow: hidden;
+    width: 300px;
+    position: relative; }
+    .cadre-downloads-large .large.edition > div {
+      height: 250px; }
+      .cadre-downloads-large .large.edition > div + div {
+        height: auto;
+        border-bottom: 1px solid #C6C6C6; }
+    .cadre-downloads-large .large.edition .cadre-downloads {
+      background-color: #fff !important;
+      position: absolute;
+      font-size: 15px;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      border: 1px solid #C6C6C6;
+      border-top: none;
+      z-index: 2;
+      padding: 8px 18px;
+      color: #EC1625;
+      letter-spacing: 0.75px;
+      line-height: 18px;
+      min-height: auto; }
+    .cadre-downloads-large .large .bloc-infos {
+      background-color: #fff !important;
+      position: absolute;
+      font-size: 15px;
+      left: 10px;
+      bottom: 10px;
+      width: 80%;
+      z-index: 2;
+      padding: 8px 18px;
+      color: #EC1625;
+      letter-spacing: 0.75px;
+      line-height: 18px;
+      height: auto; }
+      .cadre-downloads-large .large .bloc-infos .cadre-downloads {
+        width: auto;
+        min-height: auto;
+        padding: 0; }
+  .cadre-downloads-large .book {
+    height: 250px;
+    display: block; }
+    .cadre-downloads-large .book .visuel-lb {
+      margin: 53px 0 0 0;
+      position: relative;
+      padding: 0 14px; }
+    .cadre-downloads-large .book .bloc-infos {
+      position: absolute;
+      z-index: -1; }
+      .cadre-downloads-large .book .bloc-infos .cadre-downloads {
+        border-bottom: 1px solid #E3E3E3; }
+        .cadre-downloads-large .book .bloc-infos .cadre-downloads > div {
+          width: 165px;
+          margin-left: 135px;
+          margin-top: 34px;
+          min-height: 120px; }
+        .cadre-downloads-large .book .bloc-infos .cadre-downloads > p {
+          padding-top: 20px;
+          padding-left: 20px;
+          height: 70px;
+          overflow: hidden; }
   .autres-card {
     height: 65%; }
   .article-decouverte,
