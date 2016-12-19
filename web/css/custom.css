@@ -54,6 +54,11 @@ a:hover {
     text-decoration: none;
     cursor: pointer;
 }
+.link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: #EC1625;
+}
 
 a.color-red-eti:hover {
     text-decoration: underline;
@@ -292,6 +297,10 @@ dt {
 
 .padding-15 {
     padding: 15px!important;
+}
+
+.padding-20 {
+    padding: 20px!important;
 }
 
 .padding-80 {
