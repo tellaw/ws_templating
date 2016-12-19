@@ -93,7 +93,7 @@ dt {
 }
 
 .footer3-bg-color {
-    background-color: #EA2336 !important;
+    background-color: #EC1625 !important;
     font-family: "myriad-pro", sans-serif;
 }
 
@@ -194,7 +194,7 @@ dt {
 }
 
 .dropdown-menu .zoning:hover .blog-thumb-desc a {
-    color: #EA2336;
+    color: #EC1625;
     text-decoration: underline;
 }
 
@@ -232,7 +232,7 @@ dt {
 
 .header-v1 .navbar-default .navbar-nav > li:hover,
 .header-v1 .brd-active {
-    background: #EA2336;
+    background: #EC1625;
 }
 
 .header-v1 .navbar-default .navbar-nav > li:hover > a,
@@ -1392,7 +1392,7 @@ i.fa.margin-right-5 {
 }
 
 .cat-btn i {
-    color: #EA2336;
+    color: #EC1625;
 }
 
 .cat-btn:hover {
@@ -3477,17 +3477,17 @@ div.play-button {
 
 .sommaire-background a:hover,
 .outil-link:hover {
-    color: #ea2336;
+    color: #EC1625;
     text-decoration: underline;
 }
 
 .sommaire-background .displayDetailledSummary a:hover img {
-    outline: 1px solid #ea2336;
+    outline: 1px solid #EC1625;
 }
 
 .sommaire-background .holder .active {
     text-decoration: underline;
-    color: #EA2336!important;
+    color: #EC1625!important;
     position: relative;
     font-family: 'myriad-pro-semi-bold';
 }
@@ -4445,11 +4445,11 @@ tr {
 
 #header-rubrique form:hover input[type="submit"],
 #header-rubrique form:hover i {
-    color: #EA2336;
+    color: #EC1625;
 }
 
 #header-rubrique #_targetPdf + a:hover {
-    color: #EA2336;
+    color: #EC1625;
 }
 
 .liste-articles-rubrique {
@@ -4593,7 +4593,7 @@ form #di-link {
 .formError {
     left: 140px!important;
     width: 255px;
-    color: #EA2336;
+    color: #EC1625;
     font-size: 12px;
 }
 
@@ -4671,7 +4671,7 @@ form #di-link {
 }
 
 .annotation-child .note a:hover {
-    color: #ea2336;
+    color: #EC1625;
     text-decoration: underline;
 }
 
@@ -4683,7 +4683,7 @@ form #di-link {
 .barre-top a:hover,
 .pasword-forgotten:hover,
 .tags a:hover {
-    color: #ea2336;
+    color: #EC1625;
     text-decoration: underline;
 }
 
@@ -5078,7 +5078,7 @@ div.tableDiv .figure {
 }
 
 .medias-ops-choice li a:hover {
-    color: #EA2336;
+    color: #EC1625;
 }
 
 .medias-ops-choice li.opt-search {
@@ -5371,7 +5371,7 @@ div[id^="background_fiche"] .figures_container div.figures_classe {
 
 .form-erreur-di {
     margin-left: 145px;
-    color: #ea2336;
+    color: #EC1625;
     font-weight: normal;
     font-size: 12px;
 }
@@ -5393,7 +5393,7 @@ div[id^="background_fiche"] .figures_container div.figures_classe {
 
 .fiche_step a:hover {
     text-decoration: underline;
-    color: #EA2336;
+    color: #EC1625;
 }
 
 .contenu_fiche .fiche_step table {
@@ -5559,7 +5559,7 @@ div[id^="background_fiche"] .figures_container div.figures_classe {
 
 #ti_actu_submenu_container li {
     opacity: 0.8;
-    padding: 12px 0 8px 37px;
+    padding: 12px 0 8px 22px;
     position: relative;
 }
 
@@ -5718,7 +5718,7 @@ div[id^="background_fiche"] .figures_container div.figures_classe {
 }
 
 #ti_actu_right_now_container li.titre a {
-    color: #EA2336;
+    color: #EC1625;
     font-size: 14px;
     text-transform: uppercase;
     font-family: myriad-pro-bold;
@@ -5749,7 +5749,7 @@ div[id^="background_fiche"] .figures_container div.figures_classe {
 }
 
 .les-plus span.actif {
-    background: #EA2336;
+    background: #EC1625;
     color: #ffffff!important;
 }
 
@@ -5777,7 +5777,7 @@ div[id^="background_fiche"] .figures_container div.figures_classe {
 
 .wpp-list li:hover a {
     text-decoration: underline;
-    color: #EA2336;
+    color: #EC1625;
 }
 
 .les-plus ul li a {
@@ -5844,12 +5844,12 @@ div[id^="background_fiche"] .figures_container div.figures_classe {
 }
 
 .reassurance:hover p {
-    color: #EA2336;
+    color: #EC1625;
 }
 
 form + a:hover {
     text-decoration: underline;
-    color: #EA2336;
+    color: #EC1625;
 }
 
 #pub_300_250 {

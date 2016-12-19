@@ -1,5 +1,5 @@
 // variables
-$color-red : #ea2336 ;
+$color-red : #EC1625 ;
 
 @font-face {
   font-family: 'DIN-Alternate-medium';
@@ -1270,7 +1270,7 @@ input {
   >p {
     a {
       &:hover {
-        color:#ea2336;
+        color:#EC1625;
         text-decoration: underline;
       }
     }
@@ -1336,7 +1336,7 @@ div[id^="background_fiche"] {
   width: 100%;
   position: absolute;
   top: 0;
-  background: #EA2336;
+  background: #EC1625;
   opacity: 0.6;
   i {
     font-size: 50px;
@@ -1352,7 +1352,7 @@ div[id^="background_fiche"] {
   a{
     &:hover {
       text-decoration:underline;
-      color:#EA2336;
+      color:#EC1625;
     }
   }
   >div {
@@ -1383,7 +1383,7 @@ div[id^="background_fiche"] {
     }
     .voir-tout {
       text-decoration:underline;
-      color:#EA2336;
+      color:#EC1625;
       padding:5px 15px 5px 0;
     }
   }
@@ -1432,7 +1432,7 @@ div[id^="background_fiche"] {
 }
 .sous-thematique {
   text-align: center;
-  margin: 25px 0;
+  margin: 25px 0 15px;
   a {
     background: #F3F3F3;
     padding: 6px 15px;
@@ -1440,7 +1440,7 @@ div[id^="background_fiche"] {
     display: inline-block;
     margin-bottom: 10px;
     &:hover {
-      background: #EA2336;
+      background: #EC1625;
       color: #ffffff;
     }
   }
@@ -1451,6 +1451,37 @@ div[id^="background_fiche"] {
     text-align: center;
     padding:0 10%;
     margin-bottom:30px;
+  }
+}
+
+.dossier {
+  .sous-thematique {
+    text-align: left;
+    a {
+      background: #e2e1e1;
+      &:first-child {
+        margin-left: 0;
+      }
+      &:hover {
+        background: #EC1625;
+        color: #ffffff;
+      }
+    }
+  }
+  img {
+    &:first-child{
+      width:100%;
+      height:auto;
+    }
+  }
+  .acceuil-title {
+    background-color: #EC1625 !important;
+    width: 63%;
+    left: 35px;
+    bottom:20px;
+    * {
+      color: #ffffff !important;
+    }
   }
 }
 
