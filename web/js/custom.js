@@ -641,9 +641,10 @@ $(document).ready(function () {
             $('#sticky-menu-document').css("left", stickyRight).show();
         }
     });
+
     /** Highlight thématique **/
     // On récupère l'URL de la thématique principale
-    var url_principal_thematic = $('#content .thematic_url').text();
+    var url_principal_thematic = $('.thematic_url').text();
     if(url_principal_thematic != '') {
         // On cible le lien en question dans le sous-menu actu
         var tag_link_thematic = $('#ti_actu_submenu_container a[href="'+url_principal_thematic+'"]');
@@ -676,6 +677,15 @@ $(document).ready(function () {
             }
         });
     }
+
+    var word = "actualite";
+    var reg = new RegExp('\\b' + window.location.pathname + '\\b', "g");
+    var resultat = word.match(reg);
+    if (resultat == null) {
+        $("#poussemenu .menu-general").hide();
+        $("#poussemenu .menu-actualite").show();
+    }
+
     $(".pdf-added").delay(5000).hide(0);
     //annotation
     $(".id_annotation").on("click", function () {

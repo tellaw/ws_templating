@@ -5694,20 +5694,20 @@ div[id^="background_fiche"] .figures_container div.figures_classe {
 	margin-bottom:0;
 	padding-left:0;
 	background: #697277;
-	height: 34px;
+	height: auto;
 	overflow: hidden;
 }
 
 #ti_actu_right_now_container li {
     float: left;
     list-style: none;
-    margin: 0 40px 0 0;
+    margin: 0 20px;
     padding: 5px 0 6px;
     font-size: 14px;
 }
 
 #ti_actu_right_now_container li:last-child {
-    margin: 0;
+    margin-right: 0;
 }
 
 #ti_actu_right_now_container li.titre,
@@ -5718,6 +5718,7 @@ div[id^="background_fiche"] .figures_container div.figures_classe {
 #ti_actu_right_now_container li.titre + li {
     background: url(../images/picto-en-ce-moment.png) left center no-repeat transparent;
     padding-left: 44px;
+    margin: 0 40px 0 0;
 }
 
 #ti_actu_right_now_container li.titre {
