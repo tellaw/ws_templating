@@ -966,7 +966,12 @@
   .margin-top-1stblock {
     margin-top: 77px; }
   .tab-search {
-    height: auto; } }
+    height: auto; }
+  .dossier .acceuil-title {
+    width: 85% !important;
+    bottom: 6px !important; }
+    .dossier .acceuil-title h1 {
+      font-size: 19px !important; } }
 
 /* Tablette portrait and up */
 @media screen and (min-width: 768px) {

@@ -641,6 +641,41 @@ $(document).ready(function () {
             $('#sticky-menu-document').css("left", stickyRight).show();
         }
     });
+    /** Highlight thématique **/
+    // On récupère l'URL de la thématique principale
+    var url_principal_thematic = $('#content .thematic_url').text();
+    if(url_principal_thematic != '') {
+        // On cible le lien en question dans le sous-menu actu
+        var tag_link_thematic = $('#ti_actu_submenu_container a[href="'+url_principal_thematic+'"]');
+        // On enlève la classe "actif" sur tous les 'li'
+        var tags_li = $(tag_link_thematic.parents('ul')[0]).children('li');
+        $(tags_li).each(function(index) {
+            $(this).removeClass('actif');
+        });
+        // Highlight sur la thématique principale
+        tag_link_thematic.parent().addClass('actif');
+    }
+
+    // Menu mobile
+    if(navigator.userAgent.match(/(iPhone|Android|BlackBerry|iPad)/i) || (window.matchMedia("(max-width:1024px)").matches)){
+        var menuActualite = $("#ti_actu_submenu_container");
+        $( ".menu-actualite" ).append(menuActualite);
+
+        $(".menu-actualite #ti_actu_submenu_container #menu-menu-ti-actu>li").each(function(){
+            if($(this).find("ul").length){
+                $(this).prepend('<div class="arrow-bottom"></div>');
+            }
+        });
+
+        $(".menu-actualite #ti_actu_submenu_container #menu-menu-ti-actu>li").click(function(){
+            if($(".menu-actualite #ti_actu_submenu_container #menu-menu-ti-actu>li>ul").is(":visible")) {
+                $(".menu-actualite #ti_actu_submenu_container #menu-menu-ti-actu>li>ul").hide();
+            }
+            else {
+                $(this).children("ul").show();
+            }
+        });
+    }
     $(".pdf-added").delay(5000).hide(0);
     //annotation
     $(".id_annotation").on("click", function () {

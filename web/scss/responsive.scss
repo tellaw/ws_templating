@@ -1420,6 +1420,15 @@ $color-red : #EC1625 ;
   .tab-search {
     height:auto;
   }
+  .dossier {
+    .acceuil-title {
+      width: 85%!important;
+      bottom: 6px!important;
+      h1 {
+        font-size:19px !important
+      }
+    }
+  }
 }
 
 /* Tablette portrait and up */
