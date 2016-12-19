@@ -3501,7 +3501,8 @@ div.play-button {
     font-family: 'myriad-pro-semi-bold';
 }
 
-.sommaire-background .holder .active::before {
+.sommaire-background .holder .active::before,
+.dossier .box-colors > div > a:hover::before {
     content: ">";
     position: absolute;
     left: -8px;

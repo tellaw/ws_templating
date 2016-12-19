@@ -1121,3 +1121,13 @@ div[id^="background_fiche"] .fiche_step h3 {
   bottom: 20px; }
   .dossier .acceuil-title * {
     color: #ffffff !important; }
+
+.dossier .box-colors > div > a {
+  position: relative; }
+  .dossier .box-colors > div > a:hover::before {
+    content: ">";
+    position: absolute;
+    left: -16px;
+    text-decoration: none;
+    font-size: 12px;
+    top: -2px; }

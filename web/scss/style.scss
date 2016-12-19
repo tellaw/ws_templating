@@ -1483,5 +1483,20 @@ div[id^="background_fiche"] {
       color: #ffffff !important;
     }
   }
+  .box-colors {
+    > div {
+      > a {
+        position: relative;
+        &:hover::before {
+          content: ">";
+          position: absolute;
+          left: -16px;
+          text-decoration: none;
+          font-size: 12px;
+          top: -2px;
+        }
+      }
+    }
+  }
 }
 
