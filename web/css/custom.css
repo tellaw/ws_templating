@@ -5702,7 +5702,7 @@ div[id^="background_fiche"] .figures_container div.figures_classe {
     float: left;
     list-style: none;
     margin: 0 20px;
-    padding: 5px 0 6px;
+    padding: 7px 0 6px;
     font-size: 14px;
 }
 
@@ -5724,7 +5724,7 @@ div[id^="background_fiche"] .figures_container div.figures_classe {
 #ti_actu_right_now_container li.titre {
     background: #ffffff;
     text-transform: initial;
-    padding: 5px 10px 6px;
+    padding: 7px 10px 6px;
     margin: 0
 }
 
