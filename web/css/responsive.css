@@ -985,7 +985,7 @@
     .filtre-red i {
       font-size: 50px;
       color: #fff;
-      margin: 33% 42%; }
+      margin: 33% 42% !important; }
   #sub-menu {
     width: 720px; }
   .price-2 {
