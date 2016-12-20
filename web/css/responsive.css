@@ -975,6 +975,17 @@
 
 /* Tablette portrait and up */
 @media screen and (min-width: 768px) {
+  .filtre-red {
+    height: 250px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background: #EC1625;
+    opacity: 0.6; }
+    .filtre-red i {
+      font-size: 50px;
+      color: #fff;
+      margin: 33% 42%; }
   #sub-menu {
     width: 720px; }
   .price-2 {
