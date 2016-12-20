@@ -1389,6 +1389,18 @@ div[id^="background_fiche"] {
   }
 }
 
+.col-droite-actu {
+  .breves {
+    .breves-afp {
+      background: none;
+    }
+    .content {
+      margin: 0 2px;
+      width: 296px;
+    }
+  }
+}
+
 .les-plus {
   .box-colors {
     border:1px solid #e2e1e1;

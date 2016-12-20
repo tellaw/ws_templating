@@ -1049,6 +1049,13 @@ div[id^="background_fiche"] .fiche_step h3 {
     color: #EC1625;
     padding: 5px 15px 5px 0; }
 
+.col-droite-actu .breves .breves-afp {
+  background: none; }
+
+.col-droite-actu .breves .content {
+  margin: 0 2px;
+  width: 296px; }
+
 .les-plus .box-colors {
   border: 1px solid #e2e1e1;
   border-top: 0px; }

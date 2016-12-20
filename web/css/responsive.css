@@ -2005,7 +2005,10 @@
   #footer-cols .col {
     width: 100% !important; }
   #menu-footer-generique > li {
-    width: 100% !important; } }
+    width: 100% !important; }
+  #footer .footer-thematique div > ul > li {
+    width: 100%;
+    float: none; } }
 
 /* CSS for ie11 */
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {

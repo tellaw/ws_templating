@@ -3055,6 +3055,10 @@ $color-red : #EC1625 ;
       width:100% !important
     }
   }
+  #footer .footer-thematique div>ul>li {
+    width: 100%;
+    float: none;
+  }
 }
 
 /* CSS for ie11 */
