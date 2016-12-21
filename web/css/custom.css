@@ -54,6 +54,7 @@ a:hover {
     text-decoration: none;
     cursor: pointer;
 }
+
 .link:hover {
     text-decoration: underline;
     cursor: pointer;
@@ -2390,11 +2391,13 @@ p.cellule-list {
     z-index: 2;
     position: relative;
 }
+
 .cadre-downloads:hover .filtre-red {
-	display: none;
+    display: none;
 }
+
 .cadre-downloads .filtre-red i {
-	margin: 26% 42%;
+    margin: 26% 42%;
 }
 
 .title-downloads-panel {
@@ -2641,12 +2644,12 @@ a.large-img:hover .picto-plus-zoom {
 }
 
 .youtube-container {
-	display: block;
-	margin: 0px auto;
-	width: 100%;
-	max-width: 600px;
-	height:178px;
-	overflow: hidden;
+    display: block;
+    margin: 0px auto;
+    width: 100%;
+    max-width: 600px;
+    height: 178px;
+    overflow: hidden;
 }
 
 .youtube-container iframe {
@@ -5386,13 +5389,10 @@ div[id^="background_fiche"] .figures_container div.figures_classe {
 }
 
 .form-erreur-di {
-<<<<<<< HEAD
-    color: #ea2336;
-=======
-    margin-left: 145px;
+    <<<<<<< HEAD color: #ea2336;
+    =======margin-left: 145px;
     color: #EC1625;
->>>>>>> origin/master
-    font-weight: normal;
+    >>>>>>> origin/master font-weight: normal;
     font-size: 12px;
 }
 
@@ -5701,11 +5701,11 @@ div[id^="background_fiche"] .figures_container div.figures_classe {
 }
 
 #ti_actu_right_now_container ul {
-	margin-bottom:0;
-	padding-left:0;
-	background: #697277;
-	height: auto;
-	overflow: hidden;
+    margin-bottom: 0;
+    padding-left: 0;
+    background: #697277;
+    height: auto;
+    overflow: hidden;
 }
 
 #ti_actu_right_now_container li {
@@ -5924,6 +5924,10 @@ form + a:hover {
     padding: 6px !important;
 }
 
+.demande-identification .icon {
+    top: 30px;
+}
+
 .demande-information h2,
 .demande-identification h2 {
     border-bottom: 0px solid #4c7fa4;
@@ -5977,7 +5981,7 @@ form + a:hover {
 
 .demande-identification .icon {
     margin-top: 54px;
-    height: 40px;
+    height: 60px;
     width: 30px;
     margin: 0 auto;
 }
@@ -5989,8 +5993,8 @@ form + a:hover {
 
 .demande-identification .icon .fa-user {
     position: absolute;
-    right: 13px;
-    top: -3px;
+    right: 8px;
+    top: -7px;
 }
 
 .demande-identification .col-xs-12 a span:hover {
@@ -6012,7 +6016,8 @@ form + a:hover {
 
 .demande-identification > .register .col-sm-9 {
     text-align: left;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
+    line-height: 25px;
 }
 
 .demande-identification .register a {
@@ -6038,7 +6043,7 @@ form + a:hover {
     float: none;
     display: table-cell;
     vertical-align: top;
-    padding: 0 10px;
+    padding: 10px 20px;
     font-weight: bold;
 }
 
@@ -6080,6 +6085,10 @@ form + a:hover {
 
 .mb-20 {
     margin-bottom: 20px;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
 }
 
 .hoveru:hover {
