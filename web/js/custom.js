@@ -4,13 +4,13 @@ $(window).resize(function () {
     if ($("#sub-menu").hasClass("fxd")) {
         $('#sub-menu').css('margin-top', $('#main-header').height());
     }
-    else if (!$("#sub-menu").hasClass("fxd")) {}
+    //    else if (!$("#sub-menu").hasClass("fxd")) {}
 });
 $(window).ready(function () {
     if ($("#sub-menu").hasClass("fxd")) {
         $('#sub-menu').css('margin-top', $('#main-header').height());
     }
-    else if (!$("#sub-menu").hasClass("fxd")) {}
+    //    else if (!$("#sub-menu").hasClass("fxd")) {}
 });
 //gestion back des onglets page domaines/secteurs/offres
 $(document).ready(function () {
@@ -20,7 +20,7 @@ $(document).ready(function () {
     });
     // navigate to a tab when the history changes
     window.addEventListener("popstate", function (e) {
-        if (location.hash != "") {
+        if (location.hash !== "") {
             var activeTab = $('[href=' + location.hash + ']');
             if (activeTab.length) {
                 activeTab.tab('show');
@@ -651,14 +651,18 @@ $(document).ready(function () {
             });
         };
     });
+    $('.form-erreur-di').find('b').each(function () {
+        $(this).parent().show();
+    });
+    //manage error on input
     $(".form-group input").on('input', function () {
         if (!$(this).val().length) {
             $(this).addClass('has-error');
-            $(this).next('span').text('Ce champ est requis').show();
+            $(this).siblings('span').show().text('champs requis');
         }
         else {
             $(this).removeClass('has-error');
-            $(this).next('span').text('').hide();
+            $(this).next('span').hide();
         }
     });
 });

@@ -4486,7 +4486,9 @@ form .btn-u {
     display: inline;
 }
 
-form label,
+
+/* form label, */
+
 form .client > span {
     color: #4d5356;
     font-size: 14px;
@@ -5363,7 +5365,6 @@ div[id^="background_fiche"] .figures_container div.figures_classe {
 }
 
 .form-erreur-di {
-    margin-left: 145px;
     color: #ea2336;
     font-weight: normal;
     font-size: 12px;
@@ -5861,28 +5862,48 @@ form + a:hover {
     margin: 25px auto;
 }
 
-.modification-email input {
+.modification-email input,
+.creation-compte input,
+.password-recovery input {
     width: 100%;
 }
 
+.demande-information .fa-user,
+.demande-information .fa-question {
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
 .demande-information h1,
-.demande-identification .register h2,
 .demande-identification .register h2 {
+    font-weight: bold;
     color: #ed1b2e;
 }
 
 .demande-identification .login h2 {
     color: #188aba;
+    font-weight: bold;
 }
 
-.demande-information h2 .demande-identification h2 {
+.demande-identification .login p,
+.demande-identification .register p {
+    font-size: 19px;
+}
+
+.demande-identification .login button {
+    padding: 6px !important;
+}
+
+.demande-information h2,
+.demande-identification h2 {
     border-bottom: 0px solid #4c7fa4;
-    color: #000;
     font-weight: "normal";
     color: #ed1b2e;
 }
 
 .demande-information .fa-unlock-alt {
+    margin-top: 20px;
     display: block;
     color: #ed1b2e;
 }
@@ -5905,9 +5926,6 @@ form + a:hover {
 
 .form-erreur-di {
     display: none;
-}
-
-.modification-email .form-erreur-di {
     position: absolute;
     margin: 0;
     padding: 0;
@@ -5915,7 +5933,12 @@ form + a:hover {
     bottom: -13px;
 }
 
-.demande-identification h2 {
+.form-erreur-di.mail-error {
+    left: 5px;
+    bottom: -20px;
+}
+
+.mail-error .demande-identification h2 {
     margin-top: 10px;
 }
 
@@ -5926,28 +5949,112 @@ form + a:hover {
 .demande-identification .icon {
     margin-top: 54px;
     height: 40px;
+    width: 30px;
+    margin: 0 auto;
 }
 
-.demande-identification .icon i {
+.demande-identification .icon .fa-check-circle {
     position: absolute;
+    color: #1B8BBB;
 }
 
-.demande-identification .col-xs-12 a span {
+.demande-identification .icon .fa-user {
+    position: absolute;
+    right: 13px;
+    top: -3px;
+}
+
+.demande-identification .col-xs-12 a span:hover {
     text-decoration: underline;
 }
 
-.demande-identification .register .row .fa {
+.demande-identification .row .fa {
     float: right;
+    font-size: 20px;
 }
 
-.demande-identification .register .col-xs-9,
-.demande-identification .register .col-sm-9 {
+.demande-identification .activation-email {
+    margin-bottom: 50px;
+}
+
+.demande-identification .row .fa-file-pdf-o {
+    margin-right: 2px;
+}
+
+.demande-identification > .register .col-sm-9 {
     text-align: left;
     margin-bottom: 5px;
 }
 
 .demande-identification .register a {
     margin-top: 20px;
+}
+
+.demande-identification .register .btn-u-red {
+    padding: 13px;
+    font-size: 13px;
+    line-height: 14px;
+    margin-bottom: 20px;
+}
+
+.creation-compte-intro .usages {
+    padding: 0;
+}
+
+.creation-compte-intro .is-table-row {
+    display: table;
+}
+
+.creation-compte-intro .is-table-row [class*="col-"] {
+    float: none;
+    display: table-cell;
+    vertical-align: top;
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+.creation-compte-intro .is-table-row [class*="col-"]:nth-child(1) {
+    border-right: 20px solid white;
+}
+
+.creation-compte-intro .is-table-row [class*="col-"]:nth-child(3) {
+    border-left: 20px solid white;
+}
+
+.creation-compte {
+    margin-top: 70px;
+}
+
+.demande-identification .input-group-btn button {
+    color: white;
+    background: #ca030a;
+    padding: 2px;
+}
+
+.creation-compte-intro h1,
+.creation-compte-intro h2,
+.demande-information h1,
+.demande-information h2,
+.demande-identification h1,
+.demande-identification h2 {
+    text-align: center;
+    margin: 15px 0 20px;
+}
+
+.creation-compte select {
+    width: 100%;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.hoveru:hover {
+    text-decoration: underline;
 }
 
 
