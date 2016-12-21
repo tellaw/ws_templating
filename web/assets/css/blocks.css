@@ -4539,7 +4539,7 @@
   position:relative;
 }
 
-/*Slider Contents v1*/
+/*Slider Contents v1
 .revolution-mch-1:after {
   top: 0;
   left: 0;
@@ -4549,7 +4549,7 @@
   content: ' ';
   position: absolute;
   background: rgba(0,0,0,0.3);
-}
+}*/
 
 .revolution-ch1 {
   color: #fff;

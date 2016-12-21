@@ -1,8 +1,8 @@
-.wrapper {
+/*.wrapper {
   .navbar-fixed-top {
     top:42px;
   }
-}
+}*/
 
 .listing-elements {
   margin:20px auto 0;
@@ -43,7 +43,7 @@
 }
 
 .slider-margin-top {
-  margin-top: 200px!important;
+  margin-top: 150px!important;
 }
 
 .catalogue-margin-top {
@@ -77,11 +77,11 @@ div[id^="module-"], div[id^="charte-"] {
     }
   }
 
-  .wrapper {
+  /*.wrapper {
     .navbar-fixed-top {
       top: 51px;
     }
-  }
+  }*/
 
   .catalogue-margin-top {
     margin-top: 70px !important;
@@ -90,18 +90,18 @@ div[id^="module-"], div[id^="charte-"] {
 
 @media (min-width: 1024px) and (max-width: 1200px){
   .slider-margin-top {
-    margin-top: 240px !important;
+    margin-top: 150px !important;
   }
 }
 
 @media (max-width: 1024px) {
-  .wrapper {
+  /*.wrapper {
     .navbar-fixed-top {
       top: 48px;
     }
-  }
+  }*/
 
   .slider-margin-top {
-    margin-top: 145px !important;
+    margin-top: 75px !important;
   }
 }

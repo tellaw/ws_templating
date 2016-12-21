@@ -14,4 +14,4 @@ vendor/
 
 !var/bootstrap.php.cache
 !var/SymfonyRequirements.php
-
+web/bundles/*
