@@ -1978,7 +1978,7 @@ img.tp-slider-alternative-image	{	width:100%; height:auto;}
 
 
 /* NAVIGATION PREVIEW 4 */
-.tparrows.preview4 							{	width:30px; height:110px;  background:#EA2336;-webkit-transform-style: preserve-3d; -webkit-perspective: 1000; -moz-perspective: 1000}
+.tparrows.preview4 							{	width:30px; height:110px;  background:#EC1625;-webkit-transform-style: preserve-3d; -webkit-perspective: 1000; -moz-perspective: 1000}
 .tparrows.preview4:hover					{	background: transparent;}
 .tparrows.preview4:after					{	position:absolute;  line-height: 110px;text-align: center; font-family: "revicons"; color:#fff; font-size:20px; top:0px;left:0px;z-index:0; width:30px;height:110px;
 												-webkit-transition: all 0.2s ease-in-out;
@@ -2092,7 +2092,7 @@ img.tp-slider-alternative-image	{	width:100%; height:auto;}
 .tp-bullets.preview4 .bullet.selected 		{	-webkit-box-shadow: none;
 											    -moz-box-shadow: none;
 											    box-shadow: none;
-												background: #ea2336 !important;
+												background: #EC1625 !important;
 												width: 15px !important;
 											    height: 15px !important;
 }

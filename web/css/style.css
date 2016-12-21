@@ -91,7 +91,7 @@ img.zoom {
   position: relative; }
 
 .border-red {
-  border: 1px solid #ea2336; }
+  border: 1px solid #EC1625; }
 
 div.border-red {
   position: absolute;
@@ -110,7 +110,7 @@ div.border-red {
 
 .picto-article-temoin:hover {
   text-decoration: underline;
-  color: #ea2336; }
+  color: #EC1625; }
 
 .header .navbar-toggle {
   margin-top: 8px !important; }
@@ -238,7 +238,7 @@ div.border-red {
   margin-top: 20px; }
   .suggest-word a {
     text-decoration: underline !important;
-    color: #ea2336; }
+    color: #EC1625; }
 
 .sidebar-nav-v1 ul li span.badge {
   margin: -4px 0 0 5px !important; }
@@ -483,7 +483,7 @@ div.border-red {
   display: inline; }
 
 .article.zoning:hover a p span {
-  color: #ea2336 !important; }
+  color: #EC1625 !important; }
   .article.zoning:hover a p span.ico-search {
     background-position: -39px -29px; }
 
@@ -515,7 +515,7 @@ div.border-red {
   top: 0; }
 
 .fiche.zoning:hover a p span {
-  color: #ea2336 !important; }
+  color: #EC1625 !important; }
   .fiche.zoning:hover a p span.ico-search {
     background-position: -39px -59px; }
 
@@ -540,21 +540,21 @@ div.border-red {
 
 .box #top-toc .ttre {
   margin: 0;
-  color: #ea2336;
+  color: #EC1625;
   text-transform: uppercase;
   margin-bottom: 12px;
   font-size: 17px;
   font-family: myriad-pro-semi-bold; }
 
 .box .desc a:hover {
-  color: #ea2336;
+  color: #EC1625;
   text-decoration: underline; }
 
 .box .titre-contenu, .box .marge-l_20.bleu {
   margin-top: 20px;
   margin-bottom: 5px; }
   .box .titre-contenu a, .box .marge-l_20.bleu a {
-    color: #ea2336;
+    color: #EC1625;
     font-size: 15px;
     font-family: myriad-pro-semi-bold; }
     .box .titre-contenu a:hover, .box .marge-l_20.bleu a:hover {
@@ -563,7 +563,7 @@ div.border-red {
 
 .cont-niv1 .NIV1 {
   margin: 0;
-  color: #ea2336;
+  color: #EC1625;
   text-transform: uppercase;
   margin-top: 20px;
   margin-bottom: 5px;
@@ -579,7 +579,7 @@ div.border-red {
 
 .cont-niv2 .NIV2 {
   margin: 0;
-  color: #ea2336;
+  color: #EC1625;
   margin-top: 20px;
   margin-bottom: 5px;
   font-size: 15px;
@@ -597,7 +597,7 @@ div.border-red {
     display: block;
     height: auto !important; }
     .ul-toc td.plan-de-page span {
-      color: #ea2336;
+      color: #EC1625;
       text-transform: uppercase;
       font-family: myriad-pro-semi-bold;
       font-size: 17px; }
@@ -938,7 +938,7 @@ input.actions-select {
     .jcorgFilterTextParent p a {
       text-transform: uppercase; }
       .jcorgFilterTextParent p a:hover {
-        color: #ea2336;
+        color: #EC1625;
         text-decoration: underline; }
   .jcorgFilterTextParent .jcorgFilterTextChild {
     line-height: 17px; }
@@ -960,27 +960,27 @@ input.actions-select {
 .download-page .form-error {
   display: inline-block;
   margin: 10px;
-  color: #ea2336; }
+  color: #EC1625; }
 
 .download-page ul a:hover {
   text-decoration: underline; }
 
 .download-page > p a:hover {
-  color: #ea2336;
+  color: #EC1625;
   text-decoration: underline; }
 
 div[id^="background_fiche"] ul {
   list-style-type: square; }
   div[id^="background_fiche"] ul.list-unstyled li a:hover {
-    color: #ea2336;
+    color: #EC1625;
     text-decoration: underline; }
 
 div[id^="background_fiche"] .steps_navigation a:hover {
-  color: #ea2336;
+  color: #EC1625;
   text-decoration: underline; }
 
 div[id^="background_fiche"] .fiche_step h3 {
-  color: #ea2336;
+  color: #EC1625;
   font-size: 15px;
   font-family: myriad-pro-semi-bold;
   line-height: 15px;
@@ -1006,12 +1006,12 @@ div[id^="background_fiche"] .fiche_step h3 {
   width: 100%;
   position: absolute;
   top: 0;
-  background: #EA2336;
+  background: #EC1625;
   opacity: 0.6; }
   .filtre-red i {
     font-size: 50px;
     color: #fff;
-    margin: 13% 46%; }
+    margin: 20% 42%; }
 
 .thematic_url,
 .widgettitle {
@@ -1019,7 +1019,7 @@ div[id^="background_fiche"] .fiche_step h3 {
 
 .breves a:hover {
   text-decoration: underline;
-  color: #EA2336; }
+  color: #EC1625; }
 
 .breves > div {
   width: 300px;
@@ -1046,8 +1046,15 @@ div[id^="background_fiche"] .fiche_step h3 {
       margin: 0 0 5px 0; }
   .breves .content .voir-tout {
     text-decoration: underline;
-    color: #EA2336;
+    color: #EC1625;
     padding: 5px 15px 5px 0; }
+
+.col-droite-actu .breves .breves-afp {
+  background: none; }
+
+.col-droite-actu .breves .content {
+  margin: 0 2px;
+  width: 296px; }
 
 .les-plus .box-colors {
   border: 1px solid #e2e1e1;
@@ -1084,7 +1091,7 @@ div[id^="background_fiche"] .fiche_step h3 {
 
 .sous-thematique {
   text-align: center;
-  margin: 25px 0; }
+  margin: 25px 0 15px; }
   .sous-thematique a {
     background: #F3F3F3;
     padding: 6px 15px;
@@ -1092,10 +1099,42 @@ div[id^="background_fiche"] .fiche_step h3 {
     display: inline-block;
     margin-bottom: 10px; }
     .sous-thematique a:hover {
-      background: #EA2336;
+      background: #EC1625;
       color: #ffffff; }
 
 .desc-thematique p {
   text-align: center;
   padding: 0 10%;
   margin-bottom: 30px; }
+
+.dossier .sous-thematique {
+  text-align: left; }
+  .dossier .sous-thematique a {
+    background: #e2e1e1; }
+    .dossier .sous-thematique a:first-child {
+      margin-left: 0; }
+    .dossier .sous-thematique a:hover {
+      background: #EC1625;
+      color: #ffffff; }
+
+.dossier img:first-child {
+  width: 100%;
+  height: auto; }
+
+.dossier .acceuil-title {
+  background-color: #EC1625 !important;
+  width: 63%;
+  left: 35px;
+  bottom: 20px; }
+  .dossier .acceuil-title * {
+    color: #ffffff !important; }
+
+.dossier .box-colors > div > a {
+  position: relative; }
+  .dossier .box-colors > div > a:hover::before {
+    content: ">";
+    position: absolute;
+    left: -16px;
+    text-decoration: none;
+    font-size: 12px;
+    top: -2px; }

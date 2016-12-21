@@ -1,5 +1,5 @@
 // variables
-$color-red : #ea2336 ;
+$color-red : #EC1625 ;
 
 /* Petit Mobile portrait */
 @media screen and (max-width: 320px) {
@@ -36,7 +36,7 @@ $color-red : #ea2336 ;
     margin-right: 10px !important;
   }
   .energies-badge {
-    background-color: #ea2336 !important;
+    background-color: #EC1625 !important;
     position: absolute;
     left: 40px;
     top: 0px;
@@ -45,7 +45,7 @@ $color-red : #ea2336 ;
     color: #fff;
   }
   .right-badge {
-    background-color: #ea2336 !important;
+    background-color: #EC1625 !important;
     position: absolute;
     left: 40px !important;
     top: 0px;
@@ -118,7 +118,7 @@ $color-red : #ea2336 ;
     margin-right: 10px !important;
   }
   .energies-badge {
-    background-color: #ea2336 !important;
+    background-color: #EC1625 !important;
     position: absolute;
     left: 50px;
     top: 0px;
@@ -127,7 +127,7 @@ $color-red : #ea2336 ;
     color: #fff;
   }
   .right-badge {
-    background-color: #ea2336 !important;
+    background-color: #EC1625 !important;
     position: absolute;
     left: 50px !important;
     top: 0px;
@@ -136,7 +136,7 @@ $color-red : #ea2336 ;
     color: #fff;
   }
   .right-badge-bis {
-    background-color: #ea2336 !important;
+    background-color: #EC1625 !important;
     position: absolute;
     left: 50px !important;
     top: 0px;
@@ -183,7 +183,7 @@ $color-red : #ea2336 ;
     margin-right: 10px !important;
   }
   .energies-badge {
-    background-color: #ea2336 !important;
+    background-color: #EC1625 !important;
     position: absolute;
     left: 50px;
     top: 0px;
@@ -192,7 +192,7 @@ $color-red : #ea2336 ;
     color: #fff;
   }
   .right-badge {
-    background-color: #ea2336 !important;
+    background-color: #EC1625 !important;
     position: absolute;
     left: 50px !important;
     top: 0px;
@@ -202,7 +202,7 @@ $color-red : #ea2336 ;
   }
 
   .right-badge-bis {
-    background-color: #ea2336 !important;
+    background-color: #EC1625 !important;
     position: absolute;
     left: 50px !important;
     top: 0px;
@@ -349,7 +349,7 @@ $color-red : #ea2336 ;
   }
   .badge-env {
     margin-top: 4px;
-    background-color: #ea2336 !important;
+    background-color: #EC1625 !important;
     position: absolute;
     left: 50px;
     top: 0px;
@@ -651,7 +651,7 @@ $color-red : #ea2336 ;
   }
   .badge-env {
     margin-top: 4px;
-    background-color: #ea2336 !important;
+    background-color: #EC1625 !important;
     position: absolute;
     left: 150px;
     top: 0px;
@@ -677,7 +677,7 @@ $color-red : #ea2336 ;
     margin-right: 10px !important;
   }
   .energies-badge {
-    background-color: #ea2336 !important;
+    background-color: #EC1625 !important;
     position: absolute;
     left: 150px;
     top: 0px;
@@ -686,7 +686,7 @@ $color-red : #ea2336 ;
     color: #fff;
   }
   .right-badge {
-    background-color: #ea2336 !important;
+    background-color: #EC1625 !important;
     position: absolute;
     left: 150px !important;
     top: 0px;
@@ -696,7 +696,7 @@ $color-red : #ea2336 ;
   }
 
   .right-badge-bis {
-    background-color: #ea2336 !important;
+    background-color: #EC1625 !important;
     position: absolute;
     left: 150px !important;
     top: 0px;
@@ -710,7 +710,7 @@ $color-red : #ea2336 ;
 @media screen and (min-width:640px) and (max-width: 767px) {
   .badge-env {
     margin-top: 4px;
-    background-color: #ea2336 !important;
+    background-color: #EC1625 !important;
     position: absolute;
     left: 30px;
     top: 0px;
@@ -737,7 +737,7 @@ $color-red : #ea2336 ;
     margin-right: 20px !important;
   }
   .right-badge {
-    background-color: #ea2336 !important;
+    background-color: #EC1625 !important;
     position: absolute;
     left: 30px;
     top: 0px;
@@ -746,7 +746,7 @@ $color-red : #ea2336 ;
     color: #fff;
   }
   .right-badge-bis {
-    background-color: #ea2336 !important;
+    background-color: #EC1625 !important;
     position: absolute;
     left: 20px;
     top: 0px;
@@ -1378,13 +1378,13 @@ $color-red : #ea2336 ;
   }
   .accueil-title-icon-1 {
     font-size: 30px;
-    color: #ea2336;
+    color: #EC1625;
     display: block;
   }
 
   .accueil-title-icon-2 {
     font-size: 20px;
-    color: #ea2336;
+    color: #EC1625;
     display: none;
   }
   .margin-top-xs-40 {
@@ -1420,10 +1420,32 @@ $color-red : #ea2336 ;
   .tab-search {
     height:auto;
   }
+  .dossier {
+    .acceuil-title {
+      width: 85%!important;
+      bottom: 6px!important;
+      h1 {
+        font-size:19px !important
+      }
+    }
+  }
 }
 
 /* Tablette portrait and up */
 @media screen and (min-width: 768px){
+  .filtre-red {
+    height: 250px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background: #EC1625;
+    opacity: 0.6;
+    i {
+      font-size: 50px;
+      color: #fff;
+      margin: 33% 42%!important;
+    }
+  }
   #sub-menu {
     width: 720px;
   }
@@ -1493,8 +1515,11 @@ $color-red : #ea2336 ;
         text-decoration: none;
         font-size: 20px;
         top: 40px;
-        color: #EA2336;
+        color: #EC1625;
         font-weight: 300;
+      }
+      .filtre-red {
+        display: none;
       }
     }
     .border-hover {
@@ -1550,7 +1575,7 @@ $color-red : #ea2336 ;
   }
   .badge-env {
     margin-top: 4px;
-    background-color: #ea2336 !important;
+    background-color: #EC1625 !important;
     position: absolute;
     left: 60px;
     top: 0px;
@@ -1631,12 +1656,12 @@ $color-red : #ea2336 ;
   }
   .accueil-title-icon-1 {
     font-size: 30px;
-    color: #ea2336;
+    color: #EC1625;
     display: block;
   }
   .accueil-title-icon-2 {
     font-size: 20px;
-    color: #ea2336;
+    color: #EC1625;
     display: none;
   }
   .slider-card {
@@ -1679,7 +1704,7 @@ $color-red : #ea2336 ;
     margin-right: 20px !important;
   }
   .right-badge {
-    background-color: #ea2336 !important;
+    background-color: #EC1625 !important;
     position: absolute;
     left: 70px;
     top: 0px;
@@ -1688,7 +1713,7 @@ $color-red : #ea2336 ;
     color: #fff;
   }
   .right-badge-bis {
-    background-color: #ea2336 !important;
+    background-color: #EC1625 !important;
     position: absolute;
     left: 60px;
     top: 0px;
@@ -1779,11 +1804,11 @@ $color-red : #ea2336 ;
       .navbar-nav {
         > li {
           > a {
-            border-bottom: 1px solid #EA2336;
+            border-bottom: 1px solid #EC1625;
           }
           &:last-child {
             a {
-              border-bottom: 0px solid #EA2336;
+              border-bottom: 0px solid #EC1625;
             }
           }
         }
@@ -2114,12 +2139,12 @@ $color-red : #ea2336 ;
   }
   .accueil-title-icon-1 {
     font-size: 30px;
-    color: #ea2336;
+    color: #EC1625;
     display: none;
   }
   .accueil-title-icon-2 {
     font-size: 35px;
-    color: #ea2336;
+    color: #EC1625;
     display: inline;
     margin-right: 12px;
   }
@@ -2200,7 +2225,7 @@ $color-red : #ea2336 ;
         text-decoration: none;
         font-size: 20px;
         top: 40px;
-        color: #EA2336;
+        color: #EC1625;
         font-weight: 300;
       }
       .filtre-red {
@@ -2534,8 +2559,11 @@ $color-red : #ea2336 ;
         text-decoration: none;
         font-size: 30px;
         top: 32px;
-        color: #EA2336;
+        color: #EC1625;
         font-weight: 300;
+      }
+      .filtre-red {
+        display: none;
       }
     }
     .border-hover {
@@ -2678,7 +2706,7 @@ $color-red : #ea2336 ;
   }
 
   .right-badge {
-    background-color: #ea2336 !important;
+    background-color: #EC1625 !important;
     position: absolute;
     left: 45px;
     top: 0px;
@@ -2687,7 +2715,7 @@ $color-red : #ea2336 ;
     color: #fff;
   }
   .right-badge-bis {
-    background-color: #ea2336 !important;
+    background-color: #EC1625 !important;
     position: absolute;
     left: 35px;
     top: 0px;
@@ -2697,7 +2725,7 @@ $color-red : #ea2336 ;
   }
 
   .acceuil-badge {
-    background-color: #ea2336 !important;
+    background-color: #EC1625 !important;
     position: absolute;
     left: 45px;
     top: 0px;
@@ -3026,6 +3054,10 @@ $color-red : #ea2336 ;
     >li {
       width:100% !important
     }
+  }
+  #footer .footer-thematique div>ul>li {
+    width: 100%;
+    float: none;
   }
 }
 
