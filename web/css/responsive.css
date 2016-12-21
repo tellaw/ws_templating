@@ -3938,8 +3938,11 @@
   #footer .container_24 {
     width: 100% !important;
     background: none !important; }
+/*
   #footer-cols .col {
-    width: 100% !important; }
+      width: 100% !important;
+  }
+*/
   #menu-footer-generique > li {
     width: 100% !important; }
   #footer .footer-thematique div > ul > li {
