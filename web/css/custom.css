@@ -4483,22 +4483,17 @@
     }
     /* form label, */
     
+    form label,
     form .client > span {
         color: #4d5356;
         font-size: 14px;
-        width: 135px;
         font-weight: normal;
-    }
-    
-    form .client > span {
         display: inline-block;
     }
     
     form select,
     form input,
     form textarea {
-        /*	width:255px;*/
-        /* modified by Adrien on 12/12 */
         border-color: #aaaeb1;
         border-style: solid;
         border-width: 1px;
@@ -5878,6 +5873,10 @@
         font-weight: bold;
         color: #ed1b2e;
     }
+
+.demande-information p {
+        color: #999;
+}
     
     .demande-identification .login h2 {
         color: #188aba;
