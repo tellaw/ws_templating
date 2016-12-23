@@ -2989,7 +2989,6 @@
     
     .brd-sec-active {
         color: #9eb504 !important;
-        /*font-weight: bold;*/
     }
     
     .btn-devis--details {
@@ -5873,10 +5872,10 @@
         font-weight: bold;
         color: #ed1b2e;
     }
-
-.demande-information p {
+    
+    .demande-information p {
         color: #999;
-}
+    }
     
     .demande-identification .login h2 {
         color: #188aba;
@@ -5978,6 +5977,13 @@
         margin-bottom: 50px;
     }
     
+    .activation-login {
+        height: 120px;
+        width: 85px;
+        border: 0;
+        display: inline-block;
+    }
+    
     .demande-identification .row .fa-file-pdf-o {
         margin-right: 2px;
     }
@@ -6074,9 +6080,283 @@
         margin-bottom: 50px;
     }
     
+    .pt-40 {
+        padding-top: 40px;
+    }
+    
     .hoveru:hover {
         text-decoration: underline;
     }
+    /* ERROR PAGE 40X */
+    
+    #error-page .row hr {
+        background: #EC1625;
+        height: 2px;
+    }
+    
+    #error-page .head-err-msg img {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    
+    #error-page ul {
+        list-style-type: none;
+    }
+    
+    #error-page ul li:hover {
+        list-style-type: none;
+        text-decoration: underline;
+    }
+    
+    #error-page .erreur-text {
+        color: #ed1b2e;
+        font-size: 24px;
+        line-height: 20px;
+        letter-spacing: 0.75px;
+    }
+    
+    #error-page #erreur-text div .tel {
+        background: url(/images/reassurance_2.png) no-repeat top left transparent;
+        padding: 5px 0 0 30px;
+        height: 25px
+    }
+    
+    #error-page .listing hr {
+        width: 40px;
+        height: 2px;
+        margin: 10px 0;
+    }
+    
+    #container-nofloat {
+        float: none;
+    }
+    
+    #error-page .ttre_holder {
+        position: relative;
+    }
+    
+    #error-page .ttre_holder img {
+        width: 40px;
+        position: absolute;
+        left: -50px;
+    }
+    
+    #error-page li h3 {
+        margin: 4px 0;
+        letter-spacing: 0.75px;
+    }
+    
+    #error-page .middle-transport .ttre_holder a h2 {
+        color: #25435b;
+    }
+    
+    #error-page .middle-transport .ttre_holder hr {
+        background: #25435b;
+    }
+    
+    #error-page .middle-ti .ttre_holder a h2 {
+        color: #bfa580;
+    }
+    
+    #error-page .middle-ti .ttre_holder hr {
+        background: #bfa580;
+    }
+    
+    #error-page .middle-ti .ttre_holder img {
+        top: -7px;
+    }
+    
+    #error-page .middle-sciences .ttre_holder a h2 {
+        color: #209b99;
+    }
+    
+    #error-page .middle-sciences .ttre_holder hr {
+        background: #209b99;
+    }
+    
+    #error-page .middle-sciences .ttre_holder img {
+        top: -11px;
+    }
+    
+    #error-page .middle-procedes .ttre_holder a h2 {
+        color: #1ea972;
+    }
+    
+    #error-page .middle-procedes .ttre_holder hr {
+        background: #1ea972;
+    }
+    
+    #error-page .middle-procedes .ttre_holder img {
+        top: -10px;
+    }
+    
+    #error-page .middle-analyses .ttre_holder a h2 {
+        color: #1b8bbd;
+    }
+    
+    #error-page .middle-analyses .ttre_holder hr {
+        background: #1b8bbd;
+    }
+    
+    #error-page .middle-analyses .ttre_holder img {
+        top: -5px;
+    }
+    
+    #error-page .middle-mecanique .ttre_holder a h2 {
+        color: #ec1625;
+    }
+    
+    #error-page .middle-mecanique .ttre_holder hr {
+        background: #ec1625;
+    }
+    
+    #error-page .middle-materiaux .ttre_holder a h2 {
+        color: #632e86;
+    }
+    
+    #error-page .middle-materiaux .ttre_holder hr {
+        background: #632e86;
+    }
+    
+    #error-page .middle-innovation .ttre_holder a h2 {
+        color: #a41a79;
+    }
+    
+    #error-page .middle-innovation .ttre_holder hr {
+        background: #a41a79;
+    }
+    
+    #error-page .middle-innovation .ttre_holder img {
+        top: -12px;
+    }
+    
+    #error-page .middle-genie .ttre_holder a h2 {
+        color: #198cbb;
+    }
+    
+    #error-page .middle-genie .ttre_holder hr {
+        background: #198cbb;
+    }
+    
+    #error-page .middle-env .ttre_holder a h2 {
+        color: #9eb51d;
+    }
+    
+    #error-page .middle-env .ttre_holder hr {
+        background: #9eb51d;
+    }
+    
+    #error-page .middle-energies .ttre_holder a h2 {
+        color: #f5bd10;
+    }
+    
+    #error-page .middle-energies .ttre_holder hr {
+        background: #f5bd10;
+    }
+    
+    #error-page .middle-energies .ttre_holder img {
+        top: -11px;
+    }
+    
+    #error-page .middle-electronique .ttre_holder a h2 {
+        color: #e6456f;
+    }
+    
+    #error-page .middle-electronique .ttre_holder hr {
+        background: #e6456f;
+    }
+    
+    #error-page .middle-electronique .ttre_holder img {
+        top: -10px;
+    }
+    
+    #error-page .middle-construction .ttre_holder a h2 {
+        color: #df760b;
+    }
+    
+    #error-page .middle-construction .ttre_holder hr {
+        background: #df760b;
+    }
+    
+    #error-page .middle-construction .ttre_holder img {
+        top: -10px;
+    }
+    /*
+
+#box-container .univers {
+    background: #eeeeee;
+    padding: 1px 0 0 0;
+    height: auto
+}
+
+.zoning .holder img {
+    width: 35px;
+    height: 35px;
+    margin-right: 3px;
+}
+
+.zoning .pngfix a {
+    padding-top: 2px;
+}
+
+.zoning .pngfix {
+    margin-bottom: 2px;
+}
+
+.listing {
+    color: #000000;
+    font-size: 11px;
+    margin: 0 0 10px 0;
+}
+
+.listing h2 {
+    background: none;
+    color: black;
+    padding: 5px 5px 5px 16px;
+    font-size: 14px;
+}
+
+.listing h3 {
+    margin: 0 0 1px;
+    padding: 0 0 0 17px;
+    color: #333;
+    background: none;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: Arial;
+}
+
+.sidebar-nav ul li .holder {
+    padding: 1px 0 4px 3px;
+}
+
+.sidebar-nav .ttre {
+    background-color: black;
+}
+
+.erreur-text div p:first-child {
+    margin: 0 0 5px 0;
+}
+
+.erreur-text div {
+    margin: 10px 0 0 50px;
+}
+*/
+    /*
+.erreur-text div .adresse {
+    line-height: 12px;
+    height: 50px;
+}
+
+.erreur-text div a {
+    padding: 3px 10px;
+}
+
+.erreur-text div a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+*/
     /* exception pour le bandeau IP */
     
     @media screen and (max-width: 800px) {
