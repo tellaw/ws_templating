@@ -1472,10 +1472,12 @@ div[id^="background_fiche"] {
 .dossier {
   .sous-thematique {
     text-align: left;
+    margin-right:10px;
+    margin-left: 0;
     a {
       background: #e2e1e1;
       &:first-child {
-        margin-right: 0;
+        margin-left: 0;
       }
       &:hover {
         background: #EC1625;
@@ -1560,4 +1562,12 @@ article {
 }
 .corps-article {
   position: relative;
+}
+.ressources-liees {
+  a {
+    &:hover {
+      color: #EC1625;
+      text-decoration: underline;
+    }
+  }
 }

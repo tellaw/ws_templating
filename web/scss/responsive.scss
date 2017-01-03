@@ -705,7 +705,13 @@ $color-red : #EC1625 ;
     color: #fff;
   }
 }
-
+@media screen and (max-width:640px) {
+  .corps-article {
+    iframe {
+      width: 100%!important;
+    }
+  }
+}
 
 @media screen and (min-width:640px) and (max-width: 767px) {
   .badge-env {

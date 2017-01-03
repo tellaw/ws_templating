@@ -1111,11 +1111,13 @@ div[id^="background_fiche"] .fiche_step h3 {
   margin-bottom: 30px; }
 
 .dossier .sous-thematique {
-  text-align: left; }
+  text-align: left;
+  margin-right: 10px;
+  margin-left: 0; }
   .dossier .sous-thematique a {
     background: #e2e1e1; }
     .dossier .sous-thematique a:first-child {
-      margin-right: 0; }
+      margin-left: 0; }
     .dossier .sous-thematique a:hover {
       background: #EC1625;
       color: #ffffff; }
@@ -1179,3 +1181,7 @@ article h2 {
 
 .corps-article {
   position: relative; }
+
+.ressources-liees a:hover {
+  color: #EC1625;
+  text-decoration: underline; }
