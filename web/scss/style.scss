@@ -374,6 +374,9 @@ div.border-red {
 .border-grey {
   border:1px solid #697277;
 }
+.border-grey-light {
+  border:1px solid #C6C6C6;
+}
 .color-f4f3f3 {
   background-color:#f4f3f3;
 }
@@ -1448,7 +1451,7 @@ div[id^="background_fiche"] {
   a {
     background: #F3F3F3;
     padding: 6px 15px;
-    margin-left:10px;
+    margin-right:10px;
     display: inline-block;
     margin-bottom: 10px;
     &:hover {
@@ -1472,7 +1475,7 @@ div[id^="background_fiche"] {
     a {
       background: #e2e1e1;
       &:first-child {
-        margin-left: 0;
+        margin-right: 0;
       }
       &:hover {
         background: #EC1625;
@@ -1511,4 +1514,46 @@ div[id^="background_fiche"] {
     }
   }
 }
+article {
+  h2 {
+    color: #EC1625;
+    margin:20px 0 10px 0;
+    font-family: myriad-pro-semi-bold;
+  }
+}
+#comments {
+  li {
+    border-top: 1px solid #C6C6C6;
+    &:first-child {
+      border: none;
+    }
+  }
+  .comment-reply-link {
+    color: #EC1625;
+    font-size: 12px;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+.a2a_counter {
+  position: relative;
+  padding-right:10px!important;
+  .a2a_count {
+    line-height: 18px!important;
+    height: 18px!important;
+    width: auto!important;
+    min-width: 18px!important;
+    border-radius: 10px!important;
+    background: #EC1625!important;
+    color: #ffffff!important;
+    border:none!important;
+    position: absolute;
+    top:-8px;
+    right: 3px;
+    &:before, &:after {
+      display: none;
+    }
 
+  }
+}

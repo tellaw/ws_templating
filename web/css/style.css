@@ -320,6 +320,9 @@ div.border-red {
 .border-grey {
   border: 1px solid #697277; }
 
+.border-grey-light {
+  border: 1px solid #C6C6C6; }
+
 .color-f4f3f3 {
   background-color: #f4f3f3; }
 
@@ -1095,7 +1098,7 @@ div[id^="background_fiche"] .fiche_step h3 {
   .sous-thematique a {
     background: #F3F3F3;
     padding: 6px 15px;
-    margin-left: 10px;
+    margin-right: 10px;
     display: inline-block;
     margin-bottom: 10px; }
     .sous-thematique a:hover {
@@ -1112,7 +1115,7 @@ div[id^="background_fiche"] .fiche_step h3 {
   .dossier .sous-thematique a {
     background: #e2e1e1; }
     .dossier .sous-thematique a:first-child {
-      margin-left: 0; }
+      margin-right: 0; }
     .dossier .sous-thematique a:hover {
       background: #EC1625;
       color: #ffffff; }
@@ -1138,3 +1141,37 @@ div[id^="background_fiche"] .fiche_step h3 {
     text-decoration: none;
     font-size: 12px;
     top: -2px; }
+
+article h2 {
+  color: #EC1625;
+  margin: 20px 0 10px 0;
+  font-family: myriad-pro-semi-bold; }
+
+#comments li {
+  border-top: 1px solid #C6C6C6; }
+  #comments li:first-child {
+    border: none; }
+
+#comments .comment-reply-link {
+  color: #EC1625;
+  font-size: 12px; }
+  #comments .comment-reply-link:hover {
+    text-decoration: underline; }
+
+.a2a_counter {
+  position: relative;
+  padding-right: 10px !important; }
+  .a2a_counter .a2a_count {
+    line-height: 18px !important;
+    height: 18px !important;
+    width: auto !important;
+    min-width: 18px !important;
+    border-radius: 10px !important;
+    background: #EC1625 !important;
+    color: #ffffff !important;
+    border: none !important;
+    position: absolute;
+    top: -8px;
+    right: 3px; }
+    .a2a_counter .a2a_count:before, .a2a_counter .a2a_count:after {
+      display: none; }

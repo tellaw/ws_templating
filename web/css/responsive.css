@@ -1008,6 +1008,8 @@
     text-decoration: none;
     color: #ec1625 !important; }
   .module-interception .cas-login {
+    border-right: 1px solid #C6C6C6; }
+  #respond {
     border-right: 1px solid #C6C6C6; } }
 
 /* Medium only */
