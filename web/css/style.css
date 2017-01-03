@@ -1153,6 +1153,7 @@ article h2 {
     border: none; }
 
 #comments .comment-reply-link {
+  display: none;
   color: #EC1625;
   font-size: 12px; }
   #comments .comment-reply-link:hover {
@@ -1175,3 +1176,6 @@ article h2 {
     right: 3px; }
     .a2a_counter .a2a_count:before, .a2a_counter .a2a_count:after {
       display: none; }
+
+.corps-article {
+  position: relative; }

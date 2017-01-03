@@ -1529,6 +1529,7 @@ article {
     }
   }
   .comment-reply-link {
+    display:none;
     color: #EC1625;
     font-size: 12px;
     &:hover {
@@ -1556,4 +1557,7 @@ article {
     }
 
   }
+}
+.corps-article {
+  position: relative;
 }

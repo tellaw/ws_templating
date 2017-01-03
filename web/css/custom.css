@@ -544,10 +544,6 @@ i.fa.margin-right-5 {
     margin-left: 35px !important;
 }
 
-.margin-left-32 {
-    margin-left: 32px!important;
-}
-
 .margin-left-38 {
     margin-left: 38px!important;
 }
@@ -4757,8 +4753,16 @@ form #di-link {
     right: 0px;
 }
 
+#sticky-menu-reagir {
+    z-index: 100;
+    color: #fff;
+    right: 0px;
+    cursor: pointer;
+}
+
 #sticky-menu-aplus a,
-#sticky-menu-amoins a {
+#sticky-menu-amoins a,
+#sticky-menu-reagir a{
     color: #fff;
 }
 
@@ -4770,6 +4774,10 @@ form #di-link {
 .sticky-grey a,
 .sticky-grey i.fa-eye {
     padding: 10px 5px 10px 10px;
+}
+
+.sticky-grey i.fa-comment-o {
+    padding: 6px 0;
 }
 
 .sticky-grey a {
