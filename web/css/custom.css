@@ -4808,7 +4808,10 @@ form #di-link {
 .lecture_facile #footer,
 .lecture_facile #sticky-menu-document,
 .lecture_facile #bande,
-.lecture_facile .nav-rubrique * {
+.lecture_facile .nav-rubrique *,
+.lecture_facile #ti_actu_submenu_container,
+.lecture_facile #ti_actu_right_now_container,
+.lecture_facile .col-droite-actu {
     display: none !important;
 }
 
