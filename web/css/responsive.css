@@ -983,9 +983,6 @@
 
 /* Tablette portrait and up */
 @media screen and (min-width: 768px) {
-  .image-dossier i {
-    font-size: 50px;
-    color: #fff; }
   #sub-menu {
     width: 720px; }
   .price-2 {
