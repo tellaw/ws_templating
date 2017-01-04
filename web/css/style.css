@@ -1096,6 +1096,14 @@ div[id^="background_fiche"] .fiche_step h3 {
   position: relative;
   padding: 0 14px; }
 
+.publi {
+  background: #697277;
+  padding: 6px 20px;
+  color: #ffffff !important;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
 .top-thematique {
   text-align: center;
   background-size: 100% !important;
