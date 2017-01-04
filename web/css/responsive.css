@@ -164,8 +164,6 @@
 
 /* Mobile portrait */
 @media screen and (max-width: 425px) {
-  .filtre-red i {
-    margin: 26% 42%; }
   .slider-card {
     top: 30px;
     margin: 0 auto;
@@ -173,7 +171,7 @@
     width: 240px; }
     .slider-card .slider-text {
       margin-top: 0px;
-      font-size: 11px;
+      font-size: 14px;
       margin-bottom: 0px;
       line-height: 19px; }
     .slider-card div {
@@ -486,7 +484,7 @@
     padding: 8px 18px;
     color: #fff; } }
 
-@media screen and (max-width: 640px) {
+@media screen and (min-width: 426px) and (max-width: 639px) and (max-width: 640px) {
   .corps-article iframe {
     width: 100% !important; } }
 
@@ -632,7 +630,7 @@
         height: auto;
         border-bottom: 1px solid #C6C6C6; }
     .cadre-downloads-large .large.edition .cadre-downloads {
-      background-color: #fff !important;
+      background-color: #EC1625 !important;
       position: absolute;
       font-size: 15px;
       width: 100%;
@@ -642,10 +640,16 @@
       border-top: none;
       z-index: 2;
       padding: 8px 18px;
-      color: #EC1625;
+      color: #fff;
       letter-spacing: 0.75px;
       line-height: 18px;
       min-height: auto; }
+      .cadre-downloads-large .large.edition .cadre-downloads .top {
+        background: none;
+        padding: 0; }
+      .cadre-downloads-large .large.edition .cadre-downloads h3 {
+        color: #ffffff !important;
+        padding: 0; }
     .cadre-downloads-large .large .bloc-infos {
       background-color: #fff !important;
       position: absolute;
@@ -979,17 +983,9 @@
 
 /* Tablette portrait and up */
 @media screen and (min-width: 768px) {
-  .filtre-red {
-    height: 250px;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    background: #EC1625;
-    opacity: 0.6; }
-    .filtre-red i {
-      font-size: 50px;
-      color: #fff;
-      margin: 33% 42% !important; }
+  .image-dossier i {
+    font-size: 50px;
+    color: #fff; }
   #sub-menu {
     width: 720px; }
   .price-2 {
@@ -1023,7 +1019,7 @@
     .cadre-downloads-large:hover .border-hover {
       display: block;
       cursor: pointer; }
-    .cadre-downloads-large:hover .cadre-downloads::before {
+    .cadre-downloads-large .cadre-downloads::before {
       content: ">";
       position: absolute;
       left: -42px;
@@ -1032,8 +1028,6 @@
       top: 40px;
       color: #EC1625;
       font-weight: 300; }
-    .cadre-downloads-large:hover .filtre-red {
-      display: none; }
     .cadre-downloads-large .border-hover {
       display: none;
       position: absolute;
@@ -1479,7 +1473,7 @@
     .cadre-downloads-large:hover .border-hover {
       display: block;
       cursor: pointer; }
-    .cadre-downloads-large:hover .cadre-downloads::before {
+    .cadre-downloads-large .cadre-downloads::before {
       content: ">";
       position: absolute;
       left: -17px;
@@ -1488,8 +1482,6 @@
       top: 40px;
       color: #EC1625;
       font-weight: 300; }
-    .cadre-downloads-large:hover .filtre-red {
-      display: none; }
     .cadre-downloads-large .border-hover {
       display: none;
       position: absolute;
@@ -1703,7 +1695,7 @@
       cursor: pointer; }
     .cadre-downloads-large:hover h3 {
       text-decoration: underline; }
-    .cadre-downloads-large:hover .cadre-downloads::before {
+    .cadre-downloads-large .cadre-downloads::before {
       content: ">";
       position: absolute;
       left: -50px;
@@ -1712,8 +1704,6 @@
       top: 32px;
       color: #EC1625;
       font-weight: 300; }
-    .cadre-downloads-large:hover .filtre-red {
-      display: none; }
     .cadre-downloads-large .border-hover {
       display: none;
       position: absolute;

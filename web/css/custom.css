@@ -696,6 +696,10 @@ i.fa.margin-right-5 {
     padding-bottom: 5px!important;
 }
 
+.padding-bottom-8 {
+    padding-bottom: 8px!important;
+}
+
 .padding-bottom-10 {
     padding-bottom: 10px !important;
 }
@@ -1639,6 +1643,10 @@ div[class^="element-wrapper-"] img {
     bottom: 0;
     border: 1px solid #C6C6C6;
     border-top: none;
+    background: #EC1625!important;
+}
+.edition .acceuil-title * {
+    color: #ffffff !important;
 }
 
 .large-img .acceuil-title p {
@@ -1757,6 +1765,7 @@ div[class^="element-wrapper-"] img {
     margin-right: auto;
     margin-top: 0px;
     height: 100%;
+    min-height: 250px;
     display: block;
     overflow: hidden;
     width: 300px;
@@ -2177,11 +2186,11 @@ p.cellule-list {
     font-size: 13px;
 }
 
-#newsletter-form .btn-u {
+/*#newsletter-form .btn-u {
     height: 34px;
     padding-top: 9px !important;
     padding-bottom: 9px !important;
-}
+}*/
 
 .conf-title {
     left: 0px;
@@ -2353,7 +2362,8 @@ margin:0;
     filter: progid: DXImageTransform.Microsoft.Shadow(color=#EC1625, Direction=134, Strength=0);
 }
 
-.cadre-downloads .book:hover {
+.cadre-downloads .book:hover,
+.col-droite-actu .book:hover {
     -moz-box-shadow: 0px 0px 1px 0px #9b9b9b;
     -webkit-box-shadow: 0px 0px 1px 0px #9b9b9b;
     -o-box-shadow: 0px 0px 1px 0px #9b9b9b;
@@ -2372,14 +2382,6 @@ margin:0;
     margin-bottom: 0;
     z-index: 2;
     position: relative;
-}
-
-.cadre-downloads:hover .filtre-red {
-    display: none;
-}
-
-.cadre-downloads .filtre-red i {
-    margin: 26% 42%;
 }
 
 .title-downloads-panel {
@@ -2635,6 +2637,14 @@ a.large-img:hover .picto-plus-zoom {
 .youtube-container iframe {
     width: 300px !important;
     height: 178px !important;
+}
+
+.cadre-downloads-large .youtube-container {
+    height: 250px;
+}
+
+.cadre-downloads-large .youtube-container iframe {
+    height: 250px !important;
 }
 
 .youtube-container a img,
@@ -5570,7 +5580,7 @@ div[id^="background_fiche"] .figures_container div.figures_classe {
     position: absolute;
     z-index: 99;
     top: 47px;
-    left: 35px;
+    left: 20px;
     background: #333;
     display: none;
     margin: 0;
@@ -5691,6 +5701,7 @@ div[id^="background_fiche"] .figures_container div.figures_classe {
     margin: 0 20px;
     padding: 7px 0 6px;
     font-size: 14px;
+    letter-spacing: 0.75px;
 }
 
 #ti_actu_right_now_container li:last-child {
@@ -5855,6 +5866,8 @@ form + a:hover {
     width: 300px;
     margin-left: auto;
     margin-right: auto;
+    background: url("../images/visuel-pub-defaut.jpg") bottom left no-repeat transparent;
+    cursor: pointer;
 }
 
 .pub-style #pub_300_250 {

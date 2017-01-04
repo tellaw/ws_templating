@@ -214,9 +214,6 @@ $color-red : #EC1625 ;
 
 /* Mobile portrait */
 @media screen and (max-width: 425px) {
-  .filtre-red i {
-    margin: 26% 42%;
-  }
   .slider-card {
     top: 30px;
     margin:0 auto;
@@ -224,7 +221,7 @@ $color-red : #EC1625 ;
     width: 240px;
     .slider-text {
       margin-top: 0px;
-      font-size: 11px;
+      font-size: 14px;
       margin-bottom: 0px;
       line-height: 19px;
     }
@@ -627,12 +624,12 @@ $color-red : #EC1625 ;
 @media screen and (min-width:426px) and (max-width: 639px) {
   .slider-card {
     top: 30px;
-    margin:0 auto!important;
+    margin: 0 auto !important;
     padding: 5px;
     width: 240px;
     .slider-text {
       margin-top: 0px;
-      font-size: 11px!important;
+      font-size: 11px !important;
       margin-bottom: 0px;
       line-height: 19px;
     }
@@ -641,10 +638,10 @@ $color-red : #EC1625 ;
     }
   }
   .breadcrumb {
-    display:none;
+    display: none;
   }
   #header-rubrique {
-    margin-top:20px!important;
+    margin-top: 20px !important;
   }
   .margin-left-25p {
     margin-left: 15% !important;
@@ -704,15 +701,14 @@ $color-red : #EC1625 ;
     padding: 8px 18px;
     color: #fff;
   }
-}
-@media screen and (max-width:640px) {
-  .corps-article {
-    iframe {
-      width: 100%!important;
+  @media screen and (max-width: 640px) {
+    .corps-article {
+      iframe {
+        width: 100% !important;
+      }
     }
   }
 }
-
 @media screen and (min-width:640px) and (max-width: 767px) {
   .badge-env {
     margin-top: 4px;
@@ -906,7 +902,7 @@ $color-red : #EC1625 ;
           }
         }
         .cadre-downloads {
-          background-color: #fff !important;
+          background-color: #EC1625 !important;
           position: absolute;
           font-size: 15px;
           width: 100%;
@@ -916,10 +912,18 @@ $color-red : #EC1625 ;
           border-top: none;
           z-index: 2;
           padding: 8px 18px;
-          color: #EC1625;
+          color: #fff;
           letter-spacing: 0.75px;
           line-height: 18px;
           min-height:auto;
+          .top {
+            background: none;
+            padding: 0;
+          }
+          h3 {
+            color: #ffffff!important;
+            padding:0;
+          }
         }
       }
       .bloc-infos {
@@ -1439,17 +1443,10 @@ $color-red : #EC1625 ;
 
 /* Tablette portrait and up */
 @media screen and (min-width: 768px){
-  .filtre-red {
-    height: 250px;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    background: #EC1625;
-    opacity: 0.6;
+  .image-dossier {
     i {
       font-size: 50px;
       color: #fff;
-      margin: 33% 42%!important;
     }
   }
   #sub-menu {
@@ -1517,19 +1514,16 @@ $color-red : #EC1625 ;
         display: block;
         cursor: pointer;
       }
-      .cadre-downloads::before {
-        content: ">";
-        position: absolute;
-        left: -42px;
-        text-decoration: none;
-        font-size: 20px;
-        top: 40px;
-        color: #EC1625;
-        font-weight: 300;
-      }
-      .filtre-red {
-        display: none;
-      }
+    }
+    .cadre-downloads::before {
+      content: ">";
+      position: absolute;
+      left: -42px;
+      text-decoration: none;
+      font-size: 20px;
+      top: 40px;
+      color: #EC1625;
+      font-weight: 300;
     }
     .border-hover {
       display:none;
@@ -2227,19 +2221,16 @@ $color-red : #EC1625 ;
         display: block;
         cursor: pointer;
       }
-      .cadre-downloads::before {
-        content: ">";
-        position: absolute;
-        left: -17px;
-        text-decoration: none;
-        font-size: 20px;
-        top: 40px;
-        color: #EC1625;
-        font-weight: 300;
-      }
-      .filtre-red {
-        display: none;
-      }
+    }
+    .cadre-downloads::before {
+      content: ">";
+      position: absolute;
+      left: -17px;
+      text-decoration: none;
+      font-size: 20px;
+      top: 40px;
+      color: #EC1625;
+      font-weight: 300;
     }
     .border-hover {
       display:none;
@@ -2561,19 +2552,16 @@ $color-red : #EC1625 ;
       h3 {
         text-decoration:underline;
       }
-      .cadre-downloads::before {
-        content: ">";
-        position: absolute;
-        left: -50px;
-        text-decoration: none;
-        font-size: 30px;
-        top: 32px;
-        color: #EC1625;
-        font-weight: 300;
-      }
-      .filtre-red {
-        display: none;
-      }
+    }
+    .cadre-downloads::before {
+      content: ">";
+      position: absolute;
+      left: -50px;
+      text-decoration: none;
+      font-size: 30px;
+      top: 32px;
+      color: #EC1625;
+      font-weight: 300;
     }
     .border-hover {
       display:none;
