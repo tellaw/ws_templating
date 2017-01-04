@@ -22,7 +22,8 @@ website:   	http://www.themepunch.com
 .tp-hide-revslider,.tp-caption.tp-hidden-caption	{	visibility:hidden !important; display:none !important}
 
 
-.tp-caption { z-index:1; width: 58%!important; margin: 0 10%!important;padding: 22px!important;}
+.tp-caption { z-index:1; width: 58%!important; margin: 0 10%!important;padding: 22px!important;
+	text-align: center; left: 11%!important;}
 
 .tp-caption p {
 	margin:0!important;
