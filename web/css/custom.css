@@ -278,6 +278,9 @@ dt {
 .margin-0 {
     margin: 0;
 }
+.margin-center {
+    margin: 0 auto;
+}
 
 .padding-0 {
     padding-right: 0px !important;
@@ -1434,6 +1437,11 @@ i.fa.margin-right-5 {
 .eti-footer-devider {
     width: 30px;
     border-bottom: 2px #FFF solid;
+}
+
+.eti-actu-devider {
+    width: 30px;
+    border-bottom: 2px #697277 solid;
 }
 
 .cat-btn {
@@ -4692,6 +4700,9 @@ form #di-link {
     margin: 0 0 30px 0;
 }
 
+.corps-article > article a {
+    color:#EC1625;
+}
 .content-article .box ul li {
     list-style-position: outside;
     list-style-type: none;
