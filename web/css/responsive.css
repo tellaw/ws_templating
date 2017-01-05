@@ -983,6 +983,11 @@
 
 /* Tablette portrait and up */
 @media screen and (min-width: 768px) {
+  .cadre-downloads-large .cadre-downloads {
+    padding: 20px 0 0 0; }
+    .cadre-downloads-large .cadre-downloads .publi {
+      top: 15px !important;
+      left: 0px !important; }
   #sub-menu {
     width: 720px; }
   .price-2 {

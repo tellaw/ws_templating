@@ -1435,6 +1435,10 @@ div[id^="background_fiche"] {
 .cadre-downloads-large {
   .cadre-downloads {
     padding: 20px 0 0 0;
+    .publi {
+      top: -8px;
+      left: -18px;
+    }
   }
   .edition {
     .cadre-downloads {

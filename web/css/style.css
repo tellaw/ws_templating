@@ -1080,6 +1080,9 @@ div[id^="background_fiche"] .fiche_step h3 {
 
 .cadre-downloads-large .cadre-downloads {
   padding: 20px 0 0 0; }
+  .cadre-downloads-large .cadre-downloads .publi {
+    top: -8px;
+    left: -18px; }
 
 .cadre-downloads-large .edition .cadre-downloads {
   padding: 0; }
