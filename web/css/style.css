@@ -1218,3 +1218,6 @@ article h2 {
 .ressources-liees a:hover {
   color: #EC1625;
   text-decoration: underline; }
+
+.associated-book .cadre-downloads {
+  background: none; }

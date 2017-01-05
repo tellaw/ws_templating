@@ -1645,6 +1645,16 @@ div[class^="element-wrapper-"] img {
     min-height: 82px;
 }
 
+.acceuil-title .publi {
+    background: #697277;
+    padding: 6px 20px;
+    color: #ffffff!important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+}
+
 .edition .acceuil-title {
     width: 100%;
     left: 0;
