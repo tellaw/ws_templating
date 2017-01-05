@@ -60,13 +60,13 @@ $(document).ready(function () {
                 delay: 100
                 , minLength: 3
                 , source: function (request, response) {
-                    //var scopes = $("#searchCommand input[name='scope']");
-                    //var scope = scopes !== undefined && scopes.length > 0 ? scopes[0].value : "";
+                    var scopes = $("#searchCommand2 input[name='scope']");
+                    var scope = scopes !== undefined && scopes.length > 0 ? scopes[0].value : "";
                     request_term = request.term;
                     var params = {
                         q: request_term
                     };
-                    //if (scope && scope != "") {params = {q:request_term,scope:scope};}
+                    if (scope && scope != "") {params = {q:request_term,scope:scope};}
                     $.ajax({
                         type: "POST"
                         , async: true
