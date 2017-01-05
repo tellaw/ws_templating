@@ -1435,9 +1435,12 @@ div[id^="background_fiche"] {
 .cadre-downloads-large {
   .cadre-downloads {
     padding: 20px 0 0 0;
-    .publi {
-      top: -8px;
-      left: -18px;
+    &.publi {
+      .bg-grey {
+        top: -8px;
+        left: -18px;
+        border: none;
+      }
     }
   }
   .edition {
@@ -1462,12 +1465,22 @@ div[id^="background_fiche"] {
   }
 }
 .publi {
-  background: #697277;
-  padding: 6px 20px;
-  color: #ffffff!important;
-  position: absolute;
-  top: 0;
-  left: 0;
+  .bg-grey {
+    background: #697277;
+    padding: 6px 20px;
+    color: #ffffff!important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+  }
+  &:before {
+    color: #697277!important;
+    top:42px!important;
+  }
+  h3 {
+    color: #697277!important;
+  }
 }
 .top-thematique {
   text-align: center;

@@ -985,9 +985,10 @@
 @media screen and (min-width: 768px) {
   .cadre-downloads-large .cadre-downloads {
     padding: 20px 0 0 0; }
-    .cadre-downloads-large .cadre-downloads .publi {
+    .cadre-downloads-large .cadre-downloads.publi .bg-grey {
       top: 15px !important;
-      left: 0px !important; }
+      left: 0px !important;
+      border: none; }
   #sub-menu {
     width: 720px; }
   .price-2 {

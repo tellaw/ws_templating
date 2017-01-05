@@ -1446,9 +1446,12 @@ $color-red : #EC1625 ;
   .cadre-downloads-large {
     .cadre-downloads {
       padding: 20px 0 0 0;
-      .publi {
-        top: 15px!important;
-        left: 0px!important;
+      &.publi {
+        .bg-grey {
+          top: 15px!important;
+          left: 0px!important;
+          border: none;
+        }
       }
     }
   }

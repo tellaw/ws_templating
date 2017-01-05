@@ -1080,9 +1080,10 @@ div[id^="background_fiche"] .fiche_step h3 {
 
 .cadre-downloads-large .cadre-downloads {
   padding: 20px 0 0 0; }
-  .cadre-downloads-large .cadre-downloads .publi {
+  .cadre-downloads-large .cadre-downloads.publi .bg-grey {
     top: -8px;
-    left: -18px; }
+    left: -18px;
+    border: none; }
 
 .cadre-downloads-large .edition .cadre-downloads {
   padding: 0; }
@@ -1099,13 +1100,21 @@ div[id^="background_fiche"] .fiche_step h3 {
   position: relative;
   padding: 0 14px; }
 
-.publi {
+.publi .bg-grey {
   background: #697277;
   padding: 6px 20px;
   color: #ffffff !important;
   position: absolute;
   top: 0;
-  left: 0; }
+  left: 0;
+  border: none; }
+
+.publi:before {
+  color: #697277 !important;
+  top: 42px !important; }
+
+.publi h3 {
+  color: #697277 !important; }
 
 .top-thematique {
   text-align: center;
