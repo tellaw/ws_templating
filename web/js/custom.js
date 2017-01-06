@@ -710,6 +710,39 @@ $(document).ready(function () {
             $(this).next('span').hide();
         }
     });
+
+    /**
+     * Sélection d'une thématique dans l'espace livres blancs
+     */
+    $('#select-thematiques').change(function(evt){
+        switch($(this).val()){
+            case 'les-plus-telecharges':
+                var url = baseUrl+'/livre-blanc/'+$(this).val();
+                break;
+            case '':
+                var url = baseUrl+'/livre-blanc/tous-les-livres-blancs';
+                break;
+            default:
+                var url = baseUrl+'/livre-blanc/thematique/'+$(this).val();
+        }
+
+        $(location).attr('href', url);
+    });
+
+    /**
+     * Sélection d'une thématique dans l'espace webinar
+     */
+    $('#select-evt-thematiques').change(function(evt){
+        switch($(this).val()){
+            case '':
+                var url = baseUrl+'/conferences-en-ligne/';
+                break;
+            default:
+                var url = baseUrl+'/conferences-en-ligne/thematique/'+$(this).val();
+        }
+
+        $(location).attr('href', url);
+    });
 });
 (function () {
     var v = document.getElementsByClassName("youtube-player");

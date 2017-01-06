@@ -1151,7 +1151,7 @@ div[id^="background_fiche"] .fiche_step h3 {
     background: #e2e1e1; }
     .dossier .sous-thematique a:first-child {
       margin-left: 0; }
-    .dossier .sous-thematique a:hover {
+    .dossier .sous-thematique a:hover, .dossier .sous-thematique a.actif {
       background: #EC1625;
       color: #ffffff; }
 
@@ -1221,3 +1221,23 @@ article h2 {
 
 .associated-book .cadre-downloads {
   background: none; }
+
+.encart-top {
+  position: relative; }
+  .encart-top .titre-top {
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    margin-left: -25%;
+    padding: 15px;
+    background: #fff;
+    width: 50%;
+    text-align: center; }
+
+.label-search:after {
+  content: ">";
+  position: absolute;
+  right: 4px;
+  text-decoration: none;
+  font-size: 15px;
+  top: 10px; }

@@ -883,6 +883,11 @@ $color-red : #EC1625 ;
 }
 
 @media screen and (max-width: 767px) {
+  .label-search {
+    &:after {
+      display: none;
+    }
+  }
   .cadre-downloads-large {
     .large {
       margin-left: auto;
@@ -1974,6 +1979,9 @@ $color-red : #EC1625 ;
 }
 /* Medium and up */
 @media screen and (min-width: 992px) {
+  .label-search {
+    margin: 10px 0;
+  }
   .header-v1 {
     .navbar-default {
       .navbar-nav {

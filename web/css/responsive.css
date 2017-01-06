@@ -615,6 +615,8 @@
     padding-right: 10px; } }
 
 @media screen and (max-width: 767px) {
+  .label-search:after {
+    display: none; }
   .cadre-downloads-large .large {
     margin-left: auto;
     margin-right: auto;
@@ -1303,6 +1305,8 @@
 
 /* Medium and up */
 @media screen and (min-width: 992px) {
+  .label-search {
+    margin: 10px 0; }
   .header-v1 .navbar-default .navbar-nav {
     margin-top: 0px; }
     .header-v1 .navbar-default .navbar-nav .dropdown-menu {
