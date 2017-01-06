@@ -2371,6 +2371,10 @@ margin:0;
     /*border:1px solid #c6c6c6;*/
 }
 
+.cadre-downloads .book .shadow-red,
+.cadre-downloads-large .book .shadow-red {
+    box-shadow: none;
+}
 .cadre-downloads .book:hover .shadow-red,
 .cadre-downloads-large .book:hover .shadow-red {
     -moz-box-shadow: 5px -5px 0px 0px #EC1625;
@@ -4042,7 +4046,7 @@ a.abonnement-text:hover {
     /*width: 320px;*/
 }
 
-#offres.tag-box p {
+.tag-box p {
     margin-left: 0px !important;
     margin-right: 0px !important;
     margin-bottom: 8px;
@@ -4050,7 +4054,7 @@ a.abonnement-text:hover {
     padding: 0px 10px;
 }
 
-#offres.tag-box .text {
+.tag-box .text {
     background-color: #e2e1e1;
     font-size: 13px;
     font-style: normal;
@@ -4520,11 +4524,13 @@ form .client > span {
     font-size: 14px;
     font-weight: normal;
     display: inline-block;
+    width: 135px;
 }
 
 form select,
 form input,
 form textarea {
+    width: 255px;
     border-color: #aaaeb1;
     border-style: solid;
     border-width: 1px;

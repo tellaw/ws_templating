@@ -95,6 +95,14 @@ img.zoom {
   z-index: 2;
   position: relative; }
 
+.shadow-red {
+  -moz-box-shadow: 10px -10px 0px 0px #EC1625;
+  -webkit-box-shadow: 10px -10px 0px 0px #EC1625;
+  -o-box-shadow: 10px -10px 0px 0px #EC1625;
+  box-shadow: 10px -10px 0px 0px #EC1625;
+  filter: progid:DXImageTransform.Microsoft.Shadow(color=#EC1625, Direction=45, Strength=0);
+  margin: 0 auto; }
+
 div.border-red {
   position: absolute;
   top: -5px;
@@ -1130,10 +1138,12 @@ div[id^="background_fiche"] .fiche_step h3 {
   margin: 25px 0 15px; }
   .sous-thematique a {
     background: #F3F3F3;
-    padding: 6px 15px;
+    padding: 10px 15px;
     margin-right: 10px;
     display: inline-block;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    font-size: 13px;
+    letter-spacing: 0.75px; }
     .sous-thematique a:hover {
       background: #EC1625;
       color: #ffffff; }
