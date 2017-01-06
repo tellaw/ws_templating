@@ -1234,15 +1234,12 @@ article h2 {
 
 .encart-top {
   position: relative; }
-  .encart-top .titre-top {
-    position: absolute;
-    top: 42%;
-    left: 50%;
-    margin-left: -25%;
-    padding: 15px;
-    background: #fff;
-    width: 50%;
-    text-align: center; }
+  .encart-top p {
+    background: url("../images/visuel-livresblancs.jpg") no-repeat center center transparent;
+    padding: 98px 0; }
+    .encart-top p > span {
+      background: #fff;
+      padding: 13px 32px; }
 
 .label-search:after {
   content: ">";

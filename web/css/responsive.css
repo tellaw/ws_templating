@@ -336,6 +336,12 @@
     border-bottom: 1px solid #C6C6C6; }
     .formulaire-di h1 span {
       padding: 0; }
+  .encart-top p {
+    background: none !important;
+    padding: 20px 0 !important;
+    border-bottom: 1px solid #C6C6C6; }
+    .encart-top p > span {
+      padding: 0 !important; }
   .formulaire-di .intro {
     margin: 20px 0; }
   form .note::before {
