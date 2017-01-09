@@ -6474,6 +6474,7 @@ text-decoration: none;
 }
 ul.menu-selected {
     width: auto;
+    padding: 0;
     height: 36px;
     display: none;
     list-style: none;
@@ -6481,7 +6482,7 @@ ul.menu-selected {
     top: 0px;
     left: 0px;
     z-index: 99;
-    background: url("..images/fond-floating-menu.png") bottom center no-repeat transparent;
+    background: url("../images/fond-floating-menu.png") bottom center no-repeat transparent;
 }
 ul.menu-selected>li {
     background: #373737;
@@ -6496,6 +6497,7 @@ ul.menu-selected>li {
 ul.menu-selected>li>* {
     margin:3px 0;
     padding: 2px 0;
+    color: #FFF;
 }
 ul.menu-selected li.titre {
     width:auto;
@@ -6505,22 +6507,36 @@ ul.menu-selected li.titre span {
     font-family:DIN-Alternate-medium, century gothic;
     color:#fff;
     height:17px;
-    border-right: 1px solid #5d5d5d;
-    margin: 5px 7px 5px 0;
+    margin: 5px 0 5px 0;
     padding: 2px 7px 0 7px;
     display: block;
 }
-ul.menu-selected li.reagir img {
-    padding:5px 0;
+ul.menu-selected li.reagir {
+    width:auto;
+}
+ul.menu-selected li.reagir a {
+    border-left: 1px solid #5d5d5d;
+    margin: 5px 0;
+    padding: 0 10px;
+    display: inline-block;
+}
+ul.menu-selected li.reagir a i {
+    position: relative;
+    top: -2px;
 }
 ul.menu-selected li.email {
-    width:39px;
+    width:auto;
 }
 ul.menu-selected li.email a {
     border-left: 1px solid #5d5d5d;
     border-right: 1px solid #5d5d5d;
     margin: 5px 0;
-    padding: 0 7px;
+    padding: 0 10px;
+    display: inline-block;
+}
+ul.menu-selected li.email a i {
+    position: relative;
+    top: -2px;
 }
 ul.menu-selected li.reseau {
     width:80px;
