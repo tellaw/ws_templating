@@ -1031,6 +1031,9 @@ i.fa.margin-right-5 {
     border-right: 3px solid #CDCDCD;
 }
 
+.no-border {
+    border-right:none!important;
+}
 .no-border-top {
     border-top-width: 0px !important;
 }
