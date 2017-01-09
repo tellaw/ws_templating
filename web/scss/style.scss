@@ -1654,3 +1654,30 @@ article {
     top: 10px;
   }
 }
+blockquote {
+  padding: 25px 45px;
+  border: 1px solid #c6C6C6;
+  p {
+    position: relative;
+    &:first-child {
+      &:before {
+        content:"\201C";
+        position: absolute;
+        top:8px;
+        left:-20px;
+        font-family: Arial, "Times New Roman";
+        color: #EC1625;
+        font-size:35px;
+      }
+      &:after {
+        content:"\201D";
+        position: absolute;
+        bottom:-8px;
+        right:-20px;
+        font-family: Arial, "Times New Roman", Mont;
+        color: #EC1625;
+        font-size:35px;
+      }
+    }
+  }
+}
