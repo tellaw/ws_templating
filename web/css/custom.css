@@ -4885,6 +4885,10 @@ form #di-link {
     cursor: pointer;
 }
 
+.lecture_facile .thumbnail-large img {
+    margin:0 auto;
+}
+
 #choixCompteDecouverte {
     top: 50px;
     right: 0;
