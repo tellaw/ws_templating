@@ -743,6 +743,38 @@ $(document).ready(function () {
 
         $(location).attr('href', url);
     });
+
+    //placement toolbar selection texte dans article
+    $('.corps-article article').click(function() {
+        var sel = getSelection().toString();
+
+        var a2a_config = a2a_config || {};
+        a2a_config.linkname = 'Bla';
+
+        if(sel){
+
+            document.getElementById("myFloatingMenu").style.display="block";
+
+            var range = window.getSelection().getRangeAt(0);
+
+            var coords = getSelectionCoords();
+            var posX = coords.x ;
+            var posY = coords.y + window.pageYOffset - 40;
+
+            $("#myFloatingMenu").css({ top: posY, left: posX });
+            $('#selectionSharerPopover').css({ top: 0, left: 151 });
+            $('.selectionSharer').appendTo("#myFloatingMenu li.reseau");
+        }
+        else {
+            document.getElementById("myFloatingMenu").style.display="none";
+        }
+    });
+
+    $(document).click(function(event) {
+        if(!$(event.target).closest('.corps-article article').length) {
+            document.getElementById("myFloatingMenu").style.display="none";
+        }
+    });
 });
 (function () {
     var v = document.getElementsByClassName("youtube-player");
@@ -785,7 +817,36 @@ function toggle_div(bouton, id) {
     else div = "none";
     return false;
 }
+function getSelectionCoords() {
+    var sel = document.selection, range;
+    var x = 0, y = 0;
+    if (sel) {
+        if (sel.type != "Control") {
+            range = sel.createRange();
 
+            range.collapse(true);
+            x = range.boundingLeft;
+            y = range.boundingTop;
+            r = range.boundingRight;
+        }
+    } else if (window.getSelection) {
+
+        sel = window.getSelection();
+        if (sel.rangeCount) {
+            range = sel.getRangeAt(0).cloneRange();
+
+            if (range.getClientRects()) {
+                range.collapse(true);
+                var rect = range.getClientRects()[0];
+
+                x = rect.left;
+                y = rect.top;
+                r = rect.right;
+            }
+        }
+    }
+    return { x: x, y: y, r :r};
+}
 function verticalToolbarPosition() {
     var topMenuVertical = $("#masthead").height();
     var menu = $("#sticky-menu-document");
