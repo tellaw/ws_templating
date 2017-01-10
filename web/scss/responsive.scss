@@ -470,7 +470,7 @@ $color-red : #EC1625 ;
       }
     }
   }
-  .encart-top {
+  .encart-top, .encart-top-evenement {
     p {
       background:none!important;
       padding:20px 0!important;
@@ -893,6 +893,10 @@ $color-red : #EC1625 ;
 }
 
 @media screen and (max-width: 767px) {
+  .boutons{
+    width:100%!important;
+    text-align: center;
+  }
   .label-search {
     &:after {
       display: none;
@@ -1546,6 +1550,11 @@ $color-red : #EC1625 ;
       color: #EC1625;
       font-weight: 300;
     }
+    .cadre-downloads{
+      &.padding-0::before {
+        top: 1px;
+      }
+    }
     .border-hover {
       display:none;
       position: absolute;
@@ -1815,6 +1824,13 @@ $color-red : #EC1625 ;
 
 /* Medium and down */
 @media screen and (max-width: 991px) {
+  .col-droite-webinar {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: auto;
+    min-height: auto;
+  }
   .domaine-secteur-box .ez_html_module p {
     margin: 0 10%;
   }
@@ -1990,7 +2006,7 @@ $color-red : #EC1625 ;
 /* Medium and up */
 @media screen and (min-width: 992px) {
   .label-search {
-    margin: 10px 0;
+    margin: 10px 0!important;
   }
   .header-v1 {
     .navbar-default {
@@ -2255,6 +2271,11 @@ $color-red : #EC1625 ;
       top: 40px;
       color: #EC1625;
       font-weight: 300;
+    }
+    .cadre-downloads{
+      &.padding-0::before {
+        top: 1px;
+      }
     }
     .border-hover {
       display:none;
@@ -2587,6 +2608,11 @@ $color-red : #EC1625 ;
       color: #EC1625;
       font-weight: 300;
     }
+    .cadre-downloads{
+      &.padding-0::before {
+        top: -7px;
+      }
+    }
     .border-hover {
       display:none;
       position: absolute;
@@ -2598,6 +2624,9 @@ $color-red : #EC1625 ;
     }
     >a {
       display:block;
+    }
+    .boutons {
+      left: 30px;
     }
   }
 

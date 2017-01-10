@@ -336,11 +336,11 @@
     border-bottom: 1px solid #C6C6C6; }
     .formulaire-di h1 span {
       padding: 0; }
-  .encart-top p {
+  .encart-top p, .encart-top-evenement p {
     background: none !important;
     padding: 20px 0 !important;
     border-bottom: 1px solid #C6C6C6; }
-    .encart-top p > span {
+    .encart-top p > span, .encart-top-evenement p > span {
       padding: 0 !important; }
   .formulaire-di .intro {
     margin: 20px 0; }
@@ -621,6 +621,9 @@
     padding-right: 10px; } }
 
 @media screen and (max-width: 767px) {
+  .boutons {
+    width: 100% !important;
+    text-align: center; }
   .label-search:after {
     display: none; }
   .cadre-downloads-large .large {
@@ -1039,6 +1042,8 @@
       top: 40px;
       color: #EC1625;
       font-weight: 300; }
+    .cadre-downloads-large .cadre-downloads.padding-0::before {
+      top: 1px; }
     .cadre-downloads-large .border-hover {
       display: none;
       position: absolute;
@@ -1220,6 +1225,12 @@
 
 /* Medium and down */
 @media screen and (max-width: 991px) {
+  .col-droite-webinar {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: auto;
+    min-height: auto; }
   .domaine-secteur-box .ez_html_module p {
     margin: 0 10%; }
   .header-v1 .dropdown > a:after {
@@ -1312,7 +1323,7 @@
 /* Medium and up */
 @media screen and (min-width: 992px) {
   .label-search {
-    margin: 10px 0; }
+    margin: 10px 0 !important; }
   .header-v1 .navbar-default .navbar-nav {
     margin-top: 0px; }
     .header-v1 .navbar-default .navbar-nav .dropdown-menu {
@@ -1495,6 +1506,8 @@
       top: 40px;
       color: #EC1625;
       font-weight: 300; }
+    .cadre-downloads-large .cadre-downloads.padding-0::before {
+      top: 1px; }
     .cadre-downloads-large .border-hover {
       display: none;
       position: absolute;
@@ -1717,6 +1730,8 @@
       top: 32px;
       color: #EC1625;
       font-weight: 300; }
+    .cadre-downloads-large .cadre-downloads.padding-0::before {
+      top: -7px; }
     .cadre-downloads-large .border-hover {
       display: none;
       position: absolute;
@@ -1727,6 +1742,8 @@
       top: 0; }
     .cadre-downloads-large > a {
       display: block; }
+    .cadre-downloads-large .boutons {
+      left: 30px; }
   .header-v1 .navbar-default .navbar-nav > li {
     margin-right: 56px; }
     .header-v1 .navbar-default .navbar-nav > li:last-child {

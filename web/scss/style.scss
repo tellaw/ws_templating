@@ -1412,6 +1412,14 @@ div[id^="background_fiche"] {
   }
 }
 
+.col-droite-webinar {
+  position: absolute;
+  top:0;
+  right:0;
+  width: 300px;
+  min-height:523px;
+  padding:0 30px;
+}
 .les-plus {
   .box-colors {
     border:1px solid #e2e1e1;
@@ -1648,6 +1656,17 @@ article {
     }
   }
 }
+.encart-top-evenement {
+  position: relative;
+  p {
+    background: url("../images/visuel-webinar.jpg") no-repeat center center transparent;
+    padding: 98px 0;
+    > span {
+      background: #fff;
+      padding: 13px 32px;
+    }
+  }
+}
 .label-search {
   &:after {
     content: ">";
@@ -1684,4 +1703,28 @@ blockquote {
       }
     }
   }
+}
+.boutons {
+  position: absolute;
+  bottom: 0;
+  left:0;
+  z-index: 1;
+  width: 300px;
+}
+.border-rounded {
+  border: 1px solid #EC1625;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  padding: 4px 8px;
+}
+.single-evenement {
+  .youtube-container {
+    height:auto!important;
+    iframe {
+      width:100%!important;
+      height:250px!important;
+    }
+  }
+
 }

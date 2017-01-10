@@ -281,15 +281,14 @@ dt {
 }
 
 .margin-0 {
-    margin: 0;
+    margin: 0 !important;
 }
 .margin-center {
     margin: 0 auto;
 }
 
 .padding-0 {
-    padding-right: 0px !important;
-    padding-left: 0px !important;
+    padding: 0px !important;
 }
 
 .padding-10 {
@@ -836,10 +835,6 @@ i.fa.margin-right-5 {
     font-size: 18px !important;
 }
 
-.font-size-26 {
-    font-size: 26px !important;
-}
-
 .font-size-19 {
     font-size: 19px !important;
 }
@@ -870,6 +865,14 @@ i.fa.margin-right-5 {
 
 .font-size-25 {
     font-size: 25px !important;
+}
+
+.font-size-26 {
+    font-size: 26px !important;
+}
+
+.font-size-28 {
+    font-size: 28px !important;
 }
 
 .font-size-30 {
