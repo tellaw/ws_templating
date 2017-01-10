@@ -1155,6 +1155,14 @@ div[id^="background_fiche"] .fiche_step h3 {
     .sous-thematique a:hover {
       background: #EC1625;
       color: #ffffff; }
+  .sous-thematique span {
+    background: #F3F3F3;
+    padding: 10px 15px;
+    margin-right: 10px;
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 13px;
+    letter-spacing: 0.75px; }
 
 .desc-thematique p {
   text-align: center;
@@ -1176,6 +1184,10 @@ div[id^="background_fiche"] .fiche_step h3 {
     .dossier .sous-thematique a:hover, .dossier .sous-thematique a.actif {
       background: #EC1625;
       color: #ffffff; }
+  .dossier .sous-thematique span {
+    background: #e2e1e1; }
+    .dossier .sous-thematique span:first-child {
+      margin-left: 0; }
 
 .dossier img:first-child {
   width: 100%;
