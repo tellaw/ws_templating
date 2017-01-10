@@ -5801,7 +5801,7 @@ div[id^="background_fiche"] .figures_container div.figures_classe {
 }
 
 .les-plus span.actif {
-    background: #EC1625;
+    background: #EC1625!important;
     color: #ffffff!important;
 }
 
