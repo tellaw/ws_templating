@@ -1311,3 +1311,6 @@ blockquote {
   .single-evenement .youtube-container iframe {
     width: 100% !important;
     height: 250px !important; }
+
+.border-hover {
+  display: none; }
