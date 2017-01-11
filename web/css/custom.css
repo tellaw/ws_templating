@@ -1821,7 +1821,7 @@ div[class^="element-wrapper-"] img {
     width: 300px;
     position: relative;
 }
-.pub-style img {
+.pub-style > img {
     min-width: 300px;
     min-height: 250px;
 }
