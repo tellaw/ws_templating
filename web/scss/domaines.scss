@@ -28,13 +28,13 @@ $i: 1;
   /* #{nth($domaines_secteurs_name, $i)} */
   .skin-#{$class} {
     .background-encart {
-      background-color: nth($domaines_secteurs_colors, $i);
+      background-color: nth($domaines_secteurs_colors, $i)!important;
     }
-    .border-encart {
+    .border-encart, &:hover {
       border:1px solid nth($domaines_secteurs_colors, $i);
     }
     .text-color {
-      /*color: nth($domaines_secteurs_colors, $i);*/
+      color: nth($domaines_secteurs_colors, $i);
       font-family: 'myriad-pro-semi-bold';
     }
   }

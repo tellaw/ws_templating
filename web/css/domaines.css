@@ -1,243 +1,243 @@
 /* mesures analyse */
 .skin-th1 .background-encart {
-  background-color: #178BB7; }
+  background-color: #178BB7 !important; }
 
-.skin-th1 .border-encart {
+.skin-th1 .border-encart, .skin-th1:hover {
   border: 1px solid #178BB7; }
 
 .skin-th1 .text-color {
-  /*color: nth($domaines_secteurs_colors, $i);*/
+  color: #178BB7;
   font-family: 'myriad-pro-semi-bold'; }
 
 /* procedes chimie bio agro */
 .skin-th2 .background-encart {
-  background-color: #1EAA74; }
+  background-color: #1EAA74 !important; }
 
-.skin-th2 .border-encart {
+.skin-th2 .border-encart, .skin-th2:hover {
   border: 1px solid #1EAA74; }
 
 .skin-th2 .text-color {
-  /*color: nth($domaines_secteurs_colors, $i);*/
+  color: #1EAA74;
   font-family: 'myriad-pro-semi-bold'; }
 
 /* construction */
 .skin-th3 .background-encart {
-  background-color: #E0760C; }
+  background-color: #E0760C !important; }
 
-.skin-th3 .border-encart {
+.skin-th3 .border-encart, .skin-th3:hover {
   border: 1px solid #E0760C; }
 
 .skin-th3 .text-color {
-  /*color: nth($domaines_secteurs_colors, $i);*/
+  color: #E0760C;
   font-family: 'myriad-pro-semi-bold'; }
 
 /* energie */
 .skin-th4 .background-encart {
-  background-color: #FABD11; }
+  background-color: #FABD11 !important; }
 
-.skin-th4 .border-encart {
+.skin-th4 .border-encart, .skin-th4:hover {
   border: 1px solid #FABD11; }
 
 .skin-th4 .text-color {
-  /*color: nth($domaines_secteurs_colors, $i);*/
+  color: #FABD11;
   font-family: 'myriad-pro-semi-bold'; }
 
 /* environement */
 .skin-th5 .background-encart {
-  background-color: #9DB51D; }
+  background-color: #9DB51D !important; }
 
-.skin-th5 .border-encart {
+.skin-th5 .border-encart, .skin-th5:hover {
   border: 1px solid #9DB51D; }
 
 .skin-th5 .text-color {
-  /*color: nth($domaines_secteurs_colors, $i);*/
+  color: #9DB51D;
   font-family: 'myriad-pro-semi-bold'; }
 
 /* genie industriel */
 .skin-th6 .background-encart {
-  background-color: #1C8CBB; }
+  background-color: #1C8CBB !important; }
 
-.skin-th6 .border-encart {
+.skin-th6 .border-encart, .skin-th6:hover {
   border: 1px solid #1C8CBB; }
 
 .skin-th6 .text-color {
-  /*color: nth($domaines_secteurs_colors, $i);*/
+  color: #1C8CBB;
   font-family: 'myriad-pro-semi-bold'; }
 
 /* mecanique */
 .skin-th7 .background-encart {
-  background-color: #D31E2C; }
+  background-color: #D31E2C !important; }
 
-.skin-th7 .border-encart {
+.skin-th7 .border-encart, .skin-th7:hover {
   border: 1px solid #D31E2C; }
 
 .skin-th7 .text-color {
-  /*color: nth($domaines_secteurs_colors, $i);*/
+  color: #D31E2C;
   font-family: 'myriad-pro-semi-bold'; }
 
 /* sciences fondamentales */
 .skin-th8 .background-encart {
-  background-color: #1F9A99; }
+  background-color: #1F9A99 !important; }
 
-.skin-th8 .border-encart {
+.skin-th8 .border-encart, .skin-th8:hover {
   border: 1px solid #1F9A99; }
 
 .skin-th8 .text-color {
-  /*color: nth($domaines_secteurs_colors, $i);*/
+  color: #1F9A99;
   font-family: 'myriad-pro-semi-bold'; }
 
 /* technologie de l information */
 .skin-th9 .background-encart {
-  background-color: #C2A681; }
+  background-color: #C2A681 !important; }
 
-.skin-th9 .border-encart {
+.skin-th9 .border-encart, .skin-th9:hover {
   border: 1px solid #C2A681; }
 
 .skin-th9 .text-color {
-  /*color: nth($domaines_secteurs_colors, $i);*/
+  color: #C2A681;
   font-family: 'myriad-pro-semi-bold'; }
 
 /* nanotechnologies */
 .skin-th10 .background-encart {
-  background-color: #A41979; }
+  background-color: #A41979 !important; }
 
-.skin-th10 .border-encart {
+.skin-th10 .border-encart, .skin-th10:hover {
   border: 1px solid #A41979; }
 
 .skin-th10 .text-color {
-  /*color: nth($domaines_secteurs_colors, $i);*/
+  color: #A41979;
   font-family: 'myriad-pro-semi-bold'; }
 
 /* materiaux */
 .skin-th11 .background-encart {
-  background-color: #642F85; }
+  background-color: #642F85 !important; }
 
-.skin-th11 .border-encart {
+.skin-th11 .border-encart, .skin-th11:hover {
   border: 1px solid #642F85; }
 
 .skin-th11 .text-color {
-  /*color: nth($domaines_secteurs_colors, $i);*/
+  color: #642F85;
   font-family: 'myriad-pro-semi-bold'; }
 
 /* archives */
 .skin-th12 .background-encart {
-  background-color: #6f6f6f; }
+  background-color: #6f6f6f !important; }
 
-.skin-th12 .border-encart {
+.skin-th12 .border-encart, .skin-th12:hover {
   border: 1px solid #6f6f6f; }
 
 .skin-th12 .text-color {
-  /*color: nth($domaines_secteurs_colors, $i);*/
+  color: #6f6f6f;
   font-family: 'myriad-pro-semi-bold'; }
 
 /* electronique photonique */
 .skin-th13 .background-encart {
-  background-color: #E4054F; }
+  background-color: #E4054F !important; }
 
-.skin-th13 .border-encart {
+.skin-th13 .border-encart, .skin-th13:hover {
   border: 1px solid #E4054F; }
 
 .skin-th13 .text-color {
-  /*color: nth($domaines_secteurs_colors, $i);*/
+  color: #E4054F;
   font-family: 'myriad-pro-semi-bold'; }
 
 /* transports */
 .skin-th14 .background-encart {
-  background-color: #25445C; }
+  background-color: #25445C !important; }
 
-.skin-th14 .border-encart {
+.skin-th14 .border-encart, .skin-th14:hover {
   border: 1px solid #25445C; }
 
 .skin-th14 .text-color {
-  /*color: nth($domaines_secteurs_colors, $i);*/
+  color: #25445C;
   font-family: 'myriad-pro-semi-bold'; }
 
 /* biomediacl pharma */
 .skin-th15 .background-encart {
-  background-color: #233267; }
+  background-color: #233267 !important; }
 
-.skin-th15 .border-encart {
+.skin-th15 .border-encart, .skin-th15:hover {
   border: 1px solid #233267; }
 
 .skin-th15 .text-color {
-  /*color: nth($domaines_secteurs_colors, $i);*/
+  color: #233267;
   font-family: 'myriad-pro-semi-bold'; }
 
 /* automatique robotique */
 .skin-th16 .background-encart {
-  background-color: #959594; }
+  background-color: #959594 !important; }
 
-.skin-th16 .border-encart {
+.skin-th16 .border-encart, .skin-th16:hover {
   border: 1px solid #959594; }
 
 .skin-th16 .text-color {
-  /*color: nth($domaines_secteurs_colors, $i);*/
+  color: #959594;
   font-family: 'myriad-pro-semi-bold'; }
 
 /* aerospatial */
 .skin-sc1 .background-encart {
-  background-color: #25445C; }
+  background-color: #25445C !important; }
 
-.skin-sc1 .border-encart {
+.skin-sc1 .border-encart, .skin-sc1:hover {
   border: 1px solid #25445C; }
 
 .skin-sc1 .text-color {
-  /*color: nth($domaines_secteurs_colors, $i);*/
+  color: #25445C;
   font-family: 'myriad-pro-semi-bold'; }
 
 /* agroalimentaire */
 .skin-sc2 .background-encart {
-  background-color: #23AB75; }
+  background-color: #23AB75 !important; }
 
-.skin-sc2 .border-encart {
+.skin-sc2 .border-encart, .skin-sc2:hover {
   border: 1px solid #23AB75; }
 
 .skin-sc2 .text-color {
-  /*color: nth($domaines_secteurs_colors, $i);*/
+  color: #23AB75;
   font-family: 'myriad-pro-semi-bold'; }
 
 /* automobile */
 .skin-sc3 .background-encart {
-  background-color: #222221; }
+  background-color: #222221 !important; }
 
-.skin-sc3 .border-encart {
+.skin-sc3 .border-encart, .skin-sc3:hover {
   border: 1px solid #222221; }
 
 .skin-sc3 .text-color {
-  /*color: nth($domaines_secteurs_colors, $i);*/
+  color: #222221;
   font-family: 'myriad-pro-semi-bold'; }
 
 /* eco-indiustrie */
 .skin-sc4 .background-encart {
-  background-color: #9DB51D; }
+  background-color: #9DB51D !important; }
 
-.skin-sc4 .border-encart {
+.skin-sc4 .border-encart, .skin-sc4:hover {
   border: 1px solid #9DB51D; }
 
 .skin-sc4 .text-color {
-  /*color: nth($domaines_secteurs_colors, $i);*/
+  color: #9DB51D;
   font-family: 'myriad-pro-semi-bold'; }
 
 /* equipement-industriel */
 .skin-sc5 .background-encart {
-  background-color: #D31E2C; }
+  background-color: #D31E2C !important; }
 
-.skin-sc5 .border-encart {
+.skin-sc5 .border-encart, .skin-sc5:hover {
   border: 1px solid #D31E2C; }
 
 .skin-sc5 .text-color {
-  /*color: nth($domaines_secteurs_colors, $i);*/
+  color: #D31E2C;
   font-family: 'myriad-pro-semi-bold'; }
 
 /* plasturgie */
 .skin-sc6 .background-encart {
-  background-color: #642F85; }
+  background-color: #642F85 !important; }
 
-.skin-sc6 .border-encart {
+.skin-sc6 .border-encart, .skin-sc6:hover {
   border: 1px solid #642F85; }
 
 .skin-sc6 .text-color {
-  /*color: nth($domaines_secteurs_colors, $i);*/
+  color: #642F85;
   font-family: 'myriad-pro-semi-bold'; }
 
 /* mesures analyse */
