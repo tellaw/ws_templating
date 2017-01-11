@@ -16,6 +16,9 @@
 .skin-th1 .color {
   color: #178BB7; }
 
+body.skin-th1:hover {
+  border: 0px solid #178BB7; }
+
 /* procedes chimie bio agro */
 .skin-th2 .background-encart {
   background-color: #1EAA74 !important; }
@@ -33,6 +36,9 @@
 
 .skin-th2 .color {
   color: #1EAA74; }
+
+body.skin-th2:hover {
+  border: 0px solid #1EAA74; }
 
 /* construction */
 .skin-th3 .background-encart {
@@ -52,6 +58,9 @@
 .skin-th3 .color {
   color: #E0760C; }
 
+body.skin-th3:hover {
+  border: 0px solid #E0760C; }
+
 /* energie */
 .skin-th4 .background-encart {
   background-color: #FABD11 !important; }
@@ -69,6 +78,9 @@
 
 .skin-th4 .color {
   color: #FABD11; }
+
+body.skin-th4:hover {
+  border: 0px solid #FABD11; }
 
 /* environement */
 .skin-th5 .background-encart {
@@ -88,6 +100,9 @@
 .skin-th5 .color {
   color: #9DB51D; }
 
+body.skin-th5:hover {
+  border: 0px solid #9DB51D; }
+
 /* genie industriel */
 .skin-th6 .background-encart {
   background-color: #1C8CBB !important; }
@@ -105,6 +120,9 @@
 
 .skin-th6 .color {
   color: #1C8CBB; }
+
+body.skin-th6:hover {
+  border: 0px solid #1C8CBB; }
 
 /* mecanique */
 .skin-th7 .background-encart {
@@ -124,6 +142,9 @@
 .skin-th7 .color {
   color: #D31E2C; }
 
+body.skin-th7:hover {
+  border: 0px solid #D31E2C; }
+
 /* sciences fondamentales */
 .skin-th8 .background-encart {
   background-color: #1F9A99 !important; }
@@ -141,6 +162,9 @@
 
 .skin-th8 .color {
   color: #1F9A99; }
+
+body.skin-th8:hover {
+  border: 0px solid #1F9A99; }
 
 /* technologie de l information */
 .skin-th9 .background-encart {
@@ -160,6 +184,9 @@
 .skin-th9 .color {
   color: #C2A681; }
 
+body.skin-th9:hover {
+  border: 0px solid #C2A681; }
+
 /* nanotechnologies */
 .skin-th10 .background-encart {
   background-color: #A41979 !important; }
@@ -177,6 +204,9 @@
 
 .skin-th10 .color {
   color: #A41979; }
+
+body.skin-th10:hover {
+  border: 0px solid #A41979; }
 
 /* materiaux */
 .skin-th11 .background-encart {
@@ -196,6 +226,9 @@
 .skin-th11 .color {
   color: #642F85; }
 
+body.skin-th11:hover {
+  border: 0px solid #642F85; }
+
 /* archives */
 .skin-th12 .background-encart {
   background-color: #6f6f6f !important; }
@@ -213,6 +246,9 @@
 
 .skin-th12 .color {
   color: #6f6f6f; }
+
+body.skin-th12:hover {
+  border: 0px solid #6f6f6f; }
 
 /* electronique photonique */
 .skin-th13 .background-encart {
@@ -232,6 +268,9 @@
 .skin-th13 .color {
   color: #E4054F; }
 
+body.skin-th13:hover {
+  border: 0px solid #E4054F; }
+
 /* transports */
 .skin-th14 .background-encart {
   background-color: #25445C !important; }
@@ -249,6 +288,9 @@
 
 .skin-th14 .color {
   color: #25445C; }
+
+body.skin-th14:hover {
+  border: 0px solid #25445C; }
 
 /* biomediacl pharma */
 .skin-th15 .background-encart {
@@ -268,6 +310,9 @@
 .skin-th15 .color {
   color: #233267; }
 
+body.skin-th15:hover {
+  border: 0px solid #233267; }
+
 /* automatique robotique */
 .skin-th16 .background-encart {
   background-color: #959594 !important; }
@@ -285,6 +330,9 @@
 
 .skin-th16 .color {
   color: #959594; }
+
+body.skin-th16:hover {
+  border: 0px solid #959594; }
 
 /* aerospatial */
 .skin-sc1 .background-encart {
@@ -304,6 +352,9 @@
 .skin-sc1 .color {
   color: #25445C; }
 
+body.skin-sc1:hover {
+  border: 0px solid #25445C; }
+
 /* agroalimentaire */
 .skin-sc2 .background-encart {
   background-color: #23AB75 !important; }
@@ -321,6 +372,9 @@
 
 .skin-sc2 .color {
   color: #23AB75; }
+
+body.skin-sc2:hover {
+  border: 0px solid #23AB75; }
 
 /* automobile */
 .skin-sc3 .background-encart {
@@ -340,6 +394,9 @@
 .skin-sc3 .color {
   color: #222221; }
 
+body.skin-sc3:hover {
+  border: 0px solid #222221; }
+
 /* eco-indiustrie */
 .skin-sc4 .background-encart {
   background-color: #9DB51D !important; }
@@ -357,6 +414,9 @@
 
 .skin-sc4 .color {
   color: #9DB51D; }
+
+body.skin-sc4:hover {
+  border: 0px solid #9DB51D; }
 
 /* equipement-industriel */
 .skin-sc5 .background-encart {
@@ -376,6 +436,9 @@
 .skin-sc5 .color {
   color: #D31E2C; }
 
+body.skin-sc5:hover {
+  border: 0px solid #D31E2C; }
+
 /* plasturgie */
 .skin-sc6 .background-encart {
   background-color: #642F85 !important; }
@@ -393,6 +456,9 @@
 
 .skin-sc6 .color {
   color: #642F85; }
+
+body.skin-sc6:hover {
+  border: 0px solid #642F85; }
 
 /* mesures analyse */
 .zone-th1 {

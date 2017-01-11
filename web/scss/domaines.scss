@@ -47,6 +47,11 @@ $i: 1;
       color: nth($domaines_secteurs_colors, $i);
     }
   }
+  body.skin-#{$class} {
+    &:hover {
+      border:0px solid nth($domaines_secteurs_colors, $i);
+    }
+  }
   $i: $i + 1;
 }
 
