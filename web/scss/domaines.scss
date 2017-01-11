@@ -43,6 +43,9 @@ $i: 1;
       color: nth($domaines_secteurs_colors, $i);
       font-family: 'myriad-pro-semi-bold';
     }
+    .color {
+      color: nth($domaines_secteurs_colors, $i);
+    }
   }
   $i: $i + 1;
 }
