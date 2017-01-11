@@ -30,6 +30,12 @@ $i: 1;
     .background-encart {
       background-color: nth($domaines_secteurs_colors, $i)!important;
     }
+    .background-hover {
+      &:hover{
+        background-color: #ffffff!important;
+        color: nth($domaines_secteurs_colors, $i)!important;
+      }
+    }
     .border-encart, &:hover {
       border:1px solid nth($domaines_secteurs_colors, $i);
     }

@@ -2,6 +2,10 @@
 .skin-th1 .background-encart {
   background-color: #178BB7 !important; }
 
+.skin-th1 .background-hover:hover {
+  background-color: #ffffff !important;
+  color: #178BB7 !important; }
+
 .skin-th1 .border-encart, .skin-th1:hover {
   border: 1px solid #178BB7; }
 
@@ -12,6 +16,10 @@
 /* procedes chimie bio agro */
 .skin-th2 .background-encart {
   background-color: #1EAA74 !important; }
+
+.skin-th2 .background-hover:hover {
+  background-color: #ffffff !important;
+  color: #1EAA74 !important; }
 
 .skin-th2 .border-encart, .skin-th2:hover {
   border: 1px solid #1EAA74; }
@@ -24,6 +32,10 @@
 .skin-th3 .background-encart {
   background-color: #E0760C !important; }
 
+.skin-th3 .background-hover:hover {
+  background-color: #ffffff !important;
+  color: #E0760C !important; }
+
 .skin-th3 .border-encart, .skin-th3:hover {
   border: 1px solid #E0760C; }
 
@@ -34,6 +46,10 @@
 /* energie */
 .skin-th4 .background-encart {
   background-color: #FABD11 !important; }
+
+.skin-th4 .background-hover:hover {
+  background-color: #ffffff !important;
+  color: #FABD11 !important; }
 
 .skin-th4 .border-encart, .skin-th4:hover {
   border: 1px solid #FABD11; }
@@ -46,6 +62,10 @@
 .skin-th5 .background-encart {
   background-color: #9DB51D !important; }
 
+.skin-th5 .background-hover:hover {
+  background-color: #ffffff !important;
+  color: #9DB51D !important; }
+
 .skin-th5 .border-encart, .skin-th5:hover {
   border: 1px solid #9DB51D; }
 
@@ -56,6 +76,10 @@
 /* genie industriel */
 .skin-th6 .background-encart {
   background-color: #1C8CBB !important; }
+
+.skin-th6 .background-hover:hover {
+  background-color: #ffffff !important;
+  color: #1C8CBB !important; }
 
 .skin-th6 .border-encart, .skin-th6:hover {
   border: 1px solid #1C8CBB; }
@@ -68,6 +92,10 @@
 .skin-th7 .background-encart {
   background-color: #D31E2C !important; }
 
+.skin-th7 .background-hover:hover {
+  background-color: #ffffff !important;
+  color: #D31E2C !important; }
+
 .skin-th7 .border-encart, .skin-th7:hover {
   border: 1px solid #D31E2C; }
 
@@ -78,6 +106,10 @@
 /* sciences fondamentales */
 .skin-th8 .background-encart {
   background-color: #1F9A99 !important; }
+
+.skin-th8 .background-hover:hover {
+  background-color: #ffffff !important;
+  color: #1F9A99 !important; }
 
 .skin-th8 .border-encart, .skin-th8:hover {
   border: 1px solid #1F9A99; }
@@ -90,6 +122,10 @@
 .skin-th9 .background-encart {
   background-color: #C2A681 !important; }
 
+.skin-th9 .background-hover:hover {
+  background-color: #ffffff !important;
+  color: #C2A681 !important; }
+
 .skin-th9 .border-encart, .skin-th9:hover {
   border: 1px solid #C2A681; }
 
@@ -100,6 +136,10 @@
 /* nanotechnologies */
 .skin-th10 .background-encart {
   background-color: #A41979 !important; }
+
+.skin-th10 .background-hover:hover {
+  background-color: #ffffff !important;
+  color: #A41979 !important; }
 
 .skin-th10 .border-encart, .skin-th10:hover {
   border: 1px solid #A41979; }
@@ -112,6 +152,10 @@
 .skin-th11 .background-encart {
   background-color: #642F85 !important; }
 
+.skin-th11 .background-hover:hover {
+  background-color: #ffffff !important;
+  color: #642F85 !important; }
+
 .skin-th11 .border-encart, .skin-th11:hover {
   border: 1px solid #642F85; }
 
@@ -122,6 +166,10 @@
 /* archives */
 .skin-th12 .background-encart {
   background-color: #6f6f6f !important; }
+
+.skin-th12 .background-hover:hover {
+  background-color: #ffffff !important;
+  color: #6f6f6f !important; }
 
 .skin-th12 .border-encart, .skin-th12:hover {
   border: 1px solid #6f6f6f; }
@@ -134,6 +182,10 @@
 .skin-th13 .background-encart {
   background-color: #E4054F !important; }
 
+.skin-th13 .background-hover:hover {
+  background-color: #ffffff !important;
+  color: #E4054F !important; }
+
 .skin-th13 .border-encart, .skin-th13:hover {
   border: 1px solid #E4054F; }
 
@@ -144,6 +196,10 @@
 /* transports */
 .skin-th14 .background-encart {
   background-color: #25445C !important; }
+
+.skin-th14 .background-hover:hover {
+  background-color: #ffffff !important;
+  color: #25445C !important; }
 
 .skin-th14 .border-encart, .skin-th14:hover {
   border: 1px solid #25445C; }
@@ -156,6 +212,10 @@
 .skin-th15 .background-encart {
   background-color: #233267 !important; }
 
+.skin-th15 .background-hover:hover {
+  background-color: #ffffff !important;
+  color: #233267 !important; }
+
 .skin-th15 .border-encart, .skin-th15:hover {
   border: 1px solid #233267; }
 
@@ -166,6 +226,10 @@
 /* automatique robotique */
 .skin-th16 .background-encart {
   background-color: #959594 !important; }
+
+.skin-th16 .background-hover:hover {
+  background-color: #ffffff !important;
+  color: #959594 !important; }
 
 .skin-th16 .border-encart, .skin-th16:hover {
   border: 1px solid #959594; }
@@ -178,6 +242,10 @@
 .skin-sc1 .background-encart {
   background-color: #25445C !important; }
 
+.skin-sc1 .background-hover:hover {
+  background-color: #ffffff !important;
+  color: #25445C !important; }
+
 .skin-sc1 .border-encart, .skin-sc1:hover {
   border: 1px solid #25445C; }
 
@@ -188,6 +256,10 @@
 /* agroalimentaire */
 .skin-sc2 .background-encart {
   background-color: #23AB75 !important; }
+
+.skin-sc2 .background-hover:hover {
+  background-color: #ffffff !important;
+  color: #23AB75 !important; }
 
 .skin-sc2 .border-encart, .skin-sc2:hover {
   border: 1px solid #23AB75; }
@@ -200,6 +272,10 @@
 .skin-sc3 .background-encart {
   background-color: #222221 !important; }
 
+.skin-sc3 .background-hover:hover {
+  background-color: #ffffff !important;
+  color: #222221 !important; }
+
 .skin-sc3 .border-encart, .skin-sc3:hover {
   border: 1px solid #222221; }
 
@@ -210,6 +286,10 @@
 /* eco-indiustrie */
 .skin-sc4 .background-encart {
   background-color: #9DB51D !important; }
+
+.skin-sc4 .background-hover:hover {
+  background-color: #ffffff !important;
+  color: #9DB51D !important; }
 
 .skin-sc4 .border-encart, .skin-sc4:hover {
   border: 1px solid #9DB51D; }
@@ -222,6 +302,10 @@
 .skin-sc5 .background-encart {
   background-color: #D31E2C !important; }
 
+.skin-sc5 .background-hover:hover {
+  background-color: #ffffff !important;
+  color: #D31E2C !important; }
+
 .skin-sc5 .border-encart, .skin-sc5:hover {
   border: 1px solid #D31E2C; }
 
@@ -232,6 +316,10 @@
 /* plasturgie */
 .skin-sc6 .background-encart {
   background-color: #642F85 !important; }
+
+.skin-sc6 .background-hover:hover {
+  background-color: #ffffff !important;
+  color: #642F85 !important; }
 
 .skin-sc6 .border-encart, .skin-sc6:hover {
   border: 1px solid #642F85; }
