@@ -4737,6 +4737,9 @@ form #di-link {
 
 .content-article {
     overflow-wrap: break-word;
+}
+
+.content-article.no-gutters-right{
     min-height: 1635px;
 }
 
