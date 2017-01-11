@@ -1524,7 +1524,7 @@ div[id^="background_fiche"] {
       color: #ffffff;
     }
   }
-  span {
+  >span {
     background: #F3F3F3;
     padding: 10px 15px;
     margin-right: 10px;
@@ -1562,7 +1562,7 @@ div[id^="background_fiche"] {
         color: #ffffff;
       }
     }
-    span {
+    >span {
       background: #e2e1e1;
       &:first-child {
         margin-left: 0;
@@ -1766,4 +1766,7 @@ blockquote {
       text-decoration: underline;
     }
   }
+}
+.border {
+  border: 1px solid #C6C6C6;
 }

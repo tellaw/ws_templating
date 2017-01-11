@@ -523,6 +523,10 @@ i.fa.margin-right-5 {
     margin-left: 4px !important;
 }
 
+.margin-left-15 {
+    margin-left: 15px !important;
+}
+
 .margin-left-20 {
     margin-left: 20px !important;
 }
@@ -737,6 +741,10 @@ i.fa.margin-right-5 {
 
 .padding-left-10 {
     padding-left: 10px!important;
+}
+
+.padding-left-15 {
+    padding-left: 15px!important;
 }
 
 .padding-left-20 {
@@ -1628,6 +1636,17 @@ div[class^="element-wrapper-"] img {
     text-transform: uppercase;
 }
 
+.left-badge-bis {
+    background-color: #EC1625 !important;
+    z-index: 2;
+    padding: 8px 14px;
+    color: #fff;
+    font-family: "myriad-pro", sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+}
+
 .acceuil-badge {
     background-color: #EC1625 !important;
     position: absolute;
@@ -1801,6 +1820,10 @@ div[class^="element-wrapper-"] img {
     overflow: hidden;
     width: 300px;
     position: relative;
+}
+.pub-style img {
+    min-width: 300px;
+    min-height: 250px;
 }
 
 .large-img {
@@ -2419,6 +2442,9 @@ margin:0;
     position: relative;
 }
 
+.cadre-downloads:hover h3 {
+    text-decoration: underline;
+}
 .title-downloads-panel {
     line-height: 19px;
 }
@@ -4060,11 +4086,11 @@ a.abonnement-text:hover {
 }
 
 .tag-box p {
-    margin-left: 0px !important;
-    margin-right: 0px !important;
+    /*margin-left: 0px !important;
+    margin-right: 0px !important;*/
     margin-bottom: 8px;
-    font-size: 11px;
-    padding: 0px 10px;
+    /*font-size: 11px;
+    padding: 0px 10px;*/
 }
 
 .tag-box .text {
