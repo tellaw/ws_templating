@@ -4601,7 +4601,7 @@ form .pasword-remember,
 form input[type="radio"],
 form .client > label {
     width: auto;
-    display: inline-block;
+    display: inline;
 }
 
 form input[type="checkbox"] {
