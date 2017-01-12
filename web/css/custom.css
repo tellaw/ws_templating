@@ -607,6 +607,10 @@ i.fa.margin-right-5 {
     padding-top: 1px !important;
 }
 
+.padding-top-2 {
+    padding-top: 2px !important;
+}
+
 .padding-top-3 {
     padding-top: 3px!important;
 }
@@ -6239,7 +6243,7 @@ form + a:hover {
 }
 
 #error-page .listing hr {
-    width: 40px;
+    width: 30px;
     height: 2px;
     margin: 10px 0;
 }
@@ -6258,9 +6262,21 @@ form + a:hover {
     left: -50px;
 }
 
+#error-page .ttre_holder a h2 {
+    font-size:17px;
+    text-transform: uppercase;
+}
+
 #error-page li h3 {
     margin: 4px 0;
     letter-spacing: 0.75px;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+#error-page li h3:hover {
+    text-decoration: underline;
+    color: #EC1625;
 }
 
 #error-page .middle-transport .ttre_holder a h2 {
