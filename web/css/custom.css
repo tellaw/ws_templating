@@ -4739,6 +4739,10 @@ form #di-link {
     overflow-wrap: break-word;
 }
 
+.content-article .titre-droid {
+    font-family: 'Droid Serif', serif;
+}
+
 .content-article.no-gutters-right{
     min-height: 1635px;
 }

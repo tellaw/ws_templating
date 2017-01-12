@@ -1698,6 +1698,14 @@
     position: relative; }
     .cadre-downloads-large:hover h3 {
       text-decoration: underline; }
+    .cadre-downloads-large:hover .border-hover {
+      display: none;
+      position: absolute;
+      border: 1px solid #c6c6c6;
+      height: 250px;
+      margin: 0 0 0 44px;
+      width: 62%;
+      top: 0; }
     .cadre-downloads-large .cadre-downloads::before {
       content: ">";
       position: absolute;
@@ -1977,8 +1985,8 @@
       position: absolute;
       border: 1px solid #c6c6c6;
       height: 250px;
-      margin: 0 0 0 44px;
-      width: 62%;
+      margin: 0 0 0 15px;
+      width: 65%;
       top: 0; }
   .slider-card {
     top: 51px;
