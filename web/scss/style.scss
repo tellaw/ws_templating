@@ -1601,7 +1601,7 @@ div[id^="background_fiche"] {
   }
 }
 article {
-  h2 {
+  h2, h3, h4, h5 {
     color: $color-red;
     margin:20px 0 10px 0;
     font-family: myriad-pro-semi-bold;
