@@ -5942,7 +5942,8 @@ form + a:hover {
     color: #EC1625;
 }
 
-#pub_300_250 {
+#pub_300_250,
+#pub_300_250_lucy{
     top: -17px;
     position: relative;
     height: 267px;
@@ -5953,7 +5954,9 @@ form + a:hover {
     cursor: pointer;
 }
 
-.pub-style #pub_300_250 {
+.pub-style #pub_300_250,
+.pub-style #pub_300_250_lucy
+{
     top: 0!important;
 }
 
