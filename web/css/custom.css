@@ -891,6 +891,10 @@ i.fa.margin-right-5 {
     font-size: 35px !important;
 }
 
+.font-size-38 {
+    font-size: 38px !important;
+}
+
 .font-size-40 {
     font-size: 40px !important;
 }
@@ -4741,6 +4745,7 @@ form #di-link {
 
 .content-article .titre-droid {
     font-family: 'Droid Serif', serif;
+    ont-weight: normal;
 }
 
 .content-article.no-gutters-right{
