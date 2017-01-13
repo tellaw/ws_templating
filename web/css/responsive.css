@@ -994,6 +994,8 @@
 
 /* Tablette portrait and up */
 @media screen and (min-width: 768px) {
+  .border-right-module {
+    border-right: 1px solid #C6C6C6; }
   .cadre-downloads-large .cadre-downloads {
     padding: 20px 0 0 0; }
     .cadre-downloads-large .cadre-downloads.publi .bg-grey {

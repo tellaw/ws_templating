@@ -1607,6 +1607,16 @@ article {
     font-family: myriad-pro-semi-bold;
   }
 }
+#toggle_all img {
+  height: auto;
+  width: 40px;
+  margin: 0 10px 0 0;
+}
+label.text-hover {
+  &:hover {
+    text-decoration: underline;
+  }
+}
 #comments {
   li {
     border-top: 1px solid #C6C6C6;

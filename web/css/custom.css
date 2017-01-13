@@ -515,6 +515,10 @@ i.fa.margin-right-5 {
     margin-right: 70px !important;
 }
 
+.margin-right-95 {
+    margin-right: 70px !important;
+}
+
 .margin-left-0 {
     margin-left: 0px !important;
 }
@@ -1461,6 +1465,11 @@ i.fa.margin-right-5 {
 .eti-accueil-devider {
     width: 30px;
     border-bottom: 2px #EC1625 solid;
+}
+
+.eti-blue-devider {
+    width: 30px;
+    border-bottom: 2px #1B8BBB solid;
 }
 
 .eti-footer-devider {
@@ -5988,20 +5997,8 @@ form + a:hover {
     margin-bottom: 10px;
 }
 
-.demande-information h1,
-.demande-identification h1,
-.demande-identification .register h2 {
-    font-weight: bold;
-    color: #ed1b2e;
-}
-
 .demande-information p {
     color: #999;
-}
-
-.demande-identification .login h2 {
-    color: #188aba;
-    font-weight: bold;
 }
 
 .demande-identification .login p,
@@ -6056,8 +6053,7 @@ form + a:hover {
 }
 
 .form-erreur-di.mail-error {
-    left: 5px;
-    bottom: -20px;
+    left: 0px;
 }
 
 .mail-error .demande-identification h2 {
@@ -6165,25 +6161,11 @@ form + a:hover {
     color: inherit;
 }
 
-.creation-compte {
-    margin-top: 70px;
-}
-
 .demande-identification .input-group-btn button {
     color: white;
     background: #ed1b2e;
     padding: 2px;
     letter-spacing: 0.75px;
-}
-
-.creation-compte-intro h1,
-.creation-compte-intro h2,
-.demande-information h1,
-.demande-information h2,
-.demande-identification h1,
-.demande-identification h2 {
-    text-align: center;
-    margin: 15px 0 20px;
 }
 
 .creation-compte select {

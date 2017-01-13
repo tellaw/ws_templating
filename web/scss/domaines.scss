@@ -46,6 +46,12 @@ $i: 1;
     .color {
       color: nth($domaines_secteurs_colors, $i);
     }
+    hr {
+      background: nth($domaines_secteurs_colors, $i);
+      width: 30px;
+      height: 2px;
+      margin: 0 0 10px 79px;
+    }
   }
   body.skin-#{$class} {
     &:hover {
