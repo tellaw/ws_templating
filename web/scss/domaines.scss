@@ -37,7 +37,7 @@ $i: 1;
       }
     }
     .border-encart, &:hover {
-      border:1px solid nth($domaines_secteurs_colors, $i);
+      border:3px solid nth($domaines_secteurs_colors, $i);
     }
     .text-color {
       color: nth($domaines_secteurs_colors, $i);

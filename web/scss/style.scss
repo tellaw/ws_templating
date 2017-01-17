@@ -291,6 +291,7 @@ div.border-red {
   .checkbox {
     label {
       padding-left: 10px;
+      line-height: 1.6;
     }
   }
   .filtre {
@@ -1480,6 +1481,13 @@ div[id^="background_fiche"] {
     padding: 0 14px;
   }
 }
+a {
+  div {
+    h3 {
+      margin-top:0!important;
+    }
+  }
+}
 .publi {
   .bg-grey {
     background: #697277;
@@ -1791,4 +1799,37 @@ blockquote {
 }
 .border {
   border: 1px solid #C6C6C6;
+}
+#glossaire {
+  a {
+    &:hover {
+      color: #EC1625;
+      text-decoration: underline;
+      &:before {
+        content: ">";
+        position: absolute;
+        left: -16px;
+        text-decoration: none;
+        font-size: 12px;
+        top: -2px;
+      }
+    }
+  }
+}
+.dark-grey-title {
+  strong {
+    color: #EC1625;
+    font-weight:normal;
+  }
+}
+
+.contact {
+  h1 {
+    background: url(../images/bandeau-contact.png) no-repeat center center transparent;
+    padding: 98px 0;
+    >span {
+      background: #fff;
+      padding: 13px 32px;
+    }
+  }
 }
