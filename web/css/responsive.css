@@ -2,7 +2,7 @@
 /* Petit Mobile portrait */
 @media screen and (max-width: 320px) {
   .xs-padding-0 {
-    padding: 0px; }
+    padding: 0px !important; }
   .wrapper {
     margin-right: -6px !important; }
   .autres-card {
@@ -639,6 +639,8 @@
     margin-top: 6px; }
     .cadre-downloads-large .evenement .cadre-downloads h3 {
       margin: 0; }
+  .sm-padding-0 {
+    padding: 0 !important; }
   .boutons {
     width: 100% !important;
     text-align: center; }
@@ -1063,6 +1065,8 @@
       top: 1px; }
     .cadre-downloads-large > a {
       display: block; }
+  .sm-padding-0 {
+    padding: 0 !important; }
   .sm-padding-left-30 {
     padding-left: 30px !important; }
   .sm-padding-left-60 {
