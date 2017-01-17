@@ -1387,3 +1387,6 @@ blockquote {
   .contact h1 > span {
     background: #fff;
     padding: 13px 32px; }
+
+.contact h2 i {
+  width: 40px; }
