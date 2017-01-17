@@ -5664,6 +5664,27 @@ div[id^="background_fiche"] .figures_container div.figures_classe {
     text-align: left;
     z-index: 3;
 }
+/* MESSAGES --------------------------------- */
+#login-box .errors {
+    background:#EC1625;
+    font-size:14px;
+    font-weight:bold;
+    color: ##ffffff;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    opacity:1;
+    padding:5px;
+}
+#login-box #status{
+    display:block;
+    width:300px;
+    height:100px;
+    padding:38px 0;
+    z-index:999
+}
 /* SOUS MENU ACTU */
 
 #ti_actu_submenu_container {
