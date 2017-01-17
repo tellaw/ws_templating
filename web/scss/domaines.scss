@@ -36,8 +36,11 @@ $i: 1;
         color: nth($domaines_secteurs_colors, $i)!important;
       }
     }
-    .border-encart, &:hover {
+    img.border-encart {
       border:3px solid nth($domaines_secteurs_colors, $i);
+    }
+    .border-encart, &:hover {
+      border:1px solid nth($domaines_secteurs_colors, $i);
     }
     .text-color {
       color: nth($domaines_secteurs_colors, $i);
