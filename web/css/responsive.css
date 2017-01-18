@@ -621,6 +621,8 @@
     padding-right: 10px; } }
 
 @media screen and (min-width: 767px) {
+  .usages .bg {
+    min-height: 172px; }
   .cadre-downloads-large .evenement > div + div {
     min-height: auto; }
   .cadre-downloads-large .evenement .pub-style .youtube-container {
@@ -1931,6 +1933,8 @@
 
 /* Large and down */
 @media screen and (max-width: 1200px) {
+  .border-bloc {
+    border: 1px solid #c6c6c6; }
   .img-svg {
     width: 92% !important; }
   .navbar-toggle {

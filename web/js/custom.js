@@ -786,6 +786,12 @@ $(document).ready(function () {
     }
 })();
 
+function refresh(owner) {
+    // Peu importe les parametres c'est uniquement pour que ca rafraichisse a
+    // tous les coups et que ca ne reaffiche pas l'image en cache.
+    owner.setAttribute("src", owner.getAttribute("src") + "?action=refresh");
+}
+
 function labnolThumb(id) {
     return '<img class="youtube-thumb" src="//i.ytimg.com/vi/' + id + '/hqdefault.jpg"><div class="play-button"></div>';
 }

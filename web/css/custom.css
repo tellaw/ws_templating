@@ -28,6 +28,14 @@ body.customize-support {
     font-size: 15px;
 }
 
+/*permet de couper des mots avec un tiret si trop long avec passage à la ligne*/
+.hyphens {
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -o-hyphens: auto;
+    hyphens: auto;
+}
 h1,
 h2,
 h3,
@@ -66,7 +74,7 @@ a:hover {
 .link:hover {
     text-decoration: underline;
     cursor: pointer;
-    color: #EC1625;
+    color: #EC1625!important;
 }
 
 a.color-red-eti:hover {
@@ -4551,6 +4559,9 @@ tr {
     padding: 5px 0;
 }
 
+.form-group {
+    margin-bottom:20px;
+}
 .formulaire-di {
     position: relative
 }
@@ -4584,6 +4595,9 @@ form .btn-u {
     display: inline;
 }
 /* form label, */
+form .label1 {
+    width:100%;
+}
 
 form label,
 form .client > span {
@@ -4605,7 +4619,8 @@ form textarea {
 }
 
 form select,
-form input[type="text"] {
+form input[type="text"] ,
+form input[type="password"]{
     height: 26px;
 }
 
@@ -6066,8 +6081,12 @@ form + a:hover {
     margin-bottom: 15px;
 }
 
-.demande-information .captcha {
+.captcha {
     width: 100%;
+    border: 1px solid #aaaeb1;
+    padding: 0;
+    margin: 0 0 10px;
+    cursor: pointer;
 }
 
 .form-group input.has-error {
@@ -6077,11 +6096,11 @@ form + a:hover {
 
 .form-erreur-di {
     display: none;
-    position: absolute;
+    /*position: absolute;*/
     margin: 0;
     padding: 0;
-    left: 15px;
-    bottom: -13px;
+    /*left: 15px;
+    bottom: -13px;*/
 }
 
 .form-erreur-di.mail-error {
