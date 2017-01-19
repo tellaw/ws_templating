@@ -1722,6 +1722,16 @@ label.text-hover {
     }
   }
 }
+.encart-top-edito {
+  position: relative;
+  h1 {
+    padding: 98px 0;
+    > span {
+      background: #fff;
+      padding: 13px 32px;
+    }
+  }
+}
 .label-search {
   &:after {
     content: ">";

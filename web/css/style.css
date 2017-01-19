@@ -1302,6 +1302,14 @@ label.text-hover:hover {
       background: #fff;
       padding: 13px 32px; }
 
+.encart-top-edito {
+  position: relative; }
+  .encart-top-edito h1 {
+    padding: 98px 0; }
+    .encart-top-edito h1 > span {
+      background: #fff;
+      padding: 13px 32px; }
+
 .label-search:after {
   content: ">";
   position: absolute;
