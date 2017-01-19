@@ -13,6 +13,8 @@
     margin-top: 10px; }
   #page-edito a {
     text-decoration: underline; }
+    #page-edito a.btn-u {
+      text-decoration: none; }
     #page-edito a:hover {
       color: #EC1625; }
   #page-edito strong, #page-edito b, #page-edito .conseiller_name {

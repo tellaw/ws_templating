@@ -17,6 +17,9 @@
   }
   a {
     text-decoration: underline;
+    &.btn-u {
+      text-decoration: none;
+    }
     &:hover {
       color: #EC1625;
     }
