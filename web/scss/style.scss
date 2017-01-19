@@ -1824,17 +1824,19 @@ blockquote {
 }
 
 .contact {
-  h1 {
-    background: url(../images/bandeau-contact.png) no-repeat center center transparent;
-    padding: 98px 0;
-    >span {
-      background: #fff;
-      padding: 13px 32px;
+  .encart-top-contact {
+    h1 {
+      background: url(../images/bandeau-contact.png) no-repeat center center transparent;
+      padding: 98px 0;
+      >span {
+        background: #fff;
+        padding: 13px 32px;
+      }
     }
-  }
-  h2 {
-    i {
-      width:40px;
+    h2 {
+      i {
+        width:40px;
+      }
     }
   }
 }

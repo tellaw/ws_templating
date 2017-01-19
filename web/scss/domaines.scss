@@ -46,6 +46,13 @@ $i: 1;
       color: nth($domaines_secteurs_colors, $i);
       font-family: 'myriad-pro-semi-bold';
     }
+    a {
+      &.text-color {
+        span:hover {
+          text-decoration: underline;
+        }
+      }
+    }
     .color {
       color: nth($domaines_secteurs_colors, $i);
     }

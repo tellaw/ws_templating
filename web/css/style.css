@@ -1381,12 +1381,12 @@ blockquote {
   color: #EC1625;
   font-weight: normal; }
 
-.contact h1 {
+.contact .encart-top-contact h1 {
   background: url(../images/bandeau-contact.png) no-repeat center center transparent;
   padding: 98px 0; }
-  .contact h1 > span {
+  .contact .encart-top-contact h1 > span {
     background: #fff;
     padding: 13px 32px; }
 
-.contact h2 i {
+.contact .encart-top-contact h2 i {
   width: 40px; }

@@ -336,11 +336,11 @@
     border-bottom: 1px solid #C6C6C6; }
     .formulaire-di h1 span {
       padding: 0; }
-  .encart-top p, .encart-top-evenement p {
+  .encart-top p, .encart-top h1, .encart-top-evenement p, .encart-top-evenement h1, .encart-top-contact p, .encart-top-contact h1 {
     background: none !important;
     padding: 20px 0 !important;
     /*border-bottom: 1px solid #C6C6C6;*/ }
-    .encart-top p > span, .encart-top-evenement p > span {
+    .encart-top p > span, .encart-top h1 > span, .encart-top-evenement p > span, .encart-top-evenement h1 > span, .encart-top-contact p > span, .encart-top-contact h1 > span {
       padding: 0 !important; }
   .formulaire-di .intro {
     margin: 20px 0; }

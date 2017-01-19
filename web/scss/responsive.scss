@@ -470,8 +470,8 @@ $color-red : #EC1625 ;
       }
     }
   }
-  .encart-top, .encart-top-evenement {
-    p {
+  .encart-top, .encart-top-evenement, .encart-top-contact {
+    p, h1 {
       background:none!important;
       padding:20px 0!important;
       /*border-bottom: 1px solid #C6C6C6;*/
