@@ -8,9 +8,11 @@
   #page-edito h2 {
     margin-top: 30px; }
   #page-edito h3 {
-    margin-top: 20px; }
+    margin-top: 20px;
+    text-transform: none; }
   #page-edito h4 {
-    margin-top: 10px; }
+    margin-top: 10px;
+    text-transform: none; }
   #page-edito a {
     text-decoration: underline; }
     #page-edito a.btn-u {
@@ -68,7 +70,13 @@
   #page-edito iframe {
     margin: 10px 0 30px 0; }
   #page-edito .alignleft {
-    float: left; }
+    float: left;
+    clear: left;
+    margin-right: 20px !important; }
+  #page-edito .alignright {
+    float: right;
+    clear: right;
+    margin-left: 20px !important; }
   #page-edito img {
     margin-right: 20px !important; }
   #page-edito .accordion #sommaire {
@@ -139,5 +147,5 @@
           padding: 0 35px 0 0; }
       #page-edito .grid-3-small-1-tiny-1 li:before, #page-edito .liste_partenaires li:before {
         content: "" !important; }
-  #page-edito #tabs-2 {
+  #page-edito #tabs-2, #page-edito .tab-links {
     display: none; }

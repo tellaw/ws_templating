@@ -10,10 +10,12 @@
     margin-top: 30px
   }
   h3 {
-    margin-top: 20px
+    margin-top: 20px;
+    text-transform: none;
   }
   h4 {
-    margin-top: 10px
+    margin-top: 10px;
+    text-transform: none;
   }
   a {
     text-decoration: underline;
@@ -92,6 +94,13 @@
   }
   .alignleft {
     float: left;
+    clear: left;
+    margin-right: 20px !important;
+  }
+  .alignright {
+    float: right;
+    clear: right;
+    margin-left: 20px !important;
   }
   img {
     margin-right: 20px !important;
@@ -176,7 +185,7 @@
       }
     }
   }
-  #tabs-2 {
+  #tabs-2, .tab-links {
     display: none;
   }
 }
