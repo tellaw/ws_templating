@@ -67,6 +67,18 @@
       position: absolute;
       top: 0px;
       left: -20px; }
+  #page-edito li.pack {
+    margin-left: 22px !important; }
+    #page-edito li.pack a {
+      text-decoration: none; }
+      #page-edito li.pack a:hover {
+        text-decoration: underline; }
+    #page-edito li.pack ul {
+      padding-left: 0 !important; }
+      #page-edito li.pack ul li {
+        margin-left: 32px !important; }
+    #page-edito li.pack:before {
+      content: "" !important; }
   #page-edito iframe {
     margin: 10px 0 30px 0; }
   #page-edito .alignleft {
