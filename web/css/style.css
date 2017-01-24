@@ -836,7 +836,7 @@ input.actions-select {
   margin-top: 0; }
 
 .header-v1 .form-control {
-  height: 30px; }
+  height: 30px !important; }
   .header-v1 .form-control:focus {
     border-right: none; }
 

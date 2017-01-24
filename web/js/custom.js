@@ -771,7 +771,7 @@ $(document).ready(function () {
     });
 
     $(document).click(function(event) {
-        if(!$(event.target).closest('.corps-article article').length) {
+        if($('.corps-article article').length) {
             document.getElementById("myFloatingMenu").style.display="none";
         }
     });
