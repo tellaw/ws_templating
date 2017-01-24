@@ -1630,6 +1630,24 @@ label.text-hover {
     font-size: 20px;
     margin: 0 10px 0 7px;
   }
+  input[type="checkbox"]{
+    margin:0;
+    margin: 31px 0px;
+  }
+  label {
+    display: block;
+    height: 80px;
+    width: 100%;
+    padding: 31px 0px;
+    text-align: center;
+    margin:0;
+    color: #fff;
+    font-size:17px;
+    background: #EC1625;
+    &:hover {
+      cursor: pointer;
+    }
+  }
 }
 #newsletter-subscription-docbase {
   .fa-paper-plane {

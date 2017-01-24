@@ -941,6 +941,10 @@ i.fa.margin-right-5 {
     font-size: 58px !important;
 }
 
+.line-height-0 {
+    line-height: 0px;
+}
+
 .line-height-12 {
     line-height: 12px;
 }

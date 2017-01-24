@@ -1232,6 +1232,23 @@ label.text-hover:hover {
   font-size: 20px;
   margin: 0 10px 0 7px; }
 
+#check_div1 input[type="checkbox"] {
+  margin: 0;
+  margin: 31px 0px; }
+
+#check_div1 label {
+  display: block;
+  height: 80px;
+  width: 100%;
+  padding: 31px 0px;
+  text-align: center;
+  margin: 0;
+  color: #fff;
+  font-size: 17px;
+  background: #EC1625; }
+  #check_div1 label:hover {
+    cursor: pointer; }
+
 #newsletter-subscription-docbase .fa-paper-plane {
   font-size: 17px;
   margin: 0 10px 0 20px; }
