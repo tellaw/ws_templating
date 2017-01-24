@@ -1335,7 +1335,7 @@ div[id^="background_fiche"] {
 .ui-autocomplete {
   border: 1px solid #EBEBEB;
   background: #F6F6F6;
-  z-index: 1002;
+  z-index: 2000!important;
   font-size:12px;
   li {
     a {
@@ -1867,4 +1867,11 @@ blockquote {
       width:45px;
     }
   }
+}
+#abo-header {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  width: 300px;
+  text-align: right;
 }
