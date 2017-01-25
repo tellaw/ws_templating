@@ -267,7 +267,7 @@ dt {
 
 .header-v1 .navbar-default .navbar-nav > li:hover > a,
 .bg-active a {
-    color: #fff;
+    color: #fff!important;
 }
 
 .header-v1 .dropdown > a:after {
@@ -277,9 +277,11 @@ dt {
     top: 14px;
 }
 
-.header-v1 .dropdown:hover > a:after {
-    color: #FFF;
-    content: "\f106";
+.header-v1 .dropdown:hover > a:after,
+.header-v1 .dropdown.bg-active > a:after
+{
+    color: #FFF!important;
+    content: "\f106"!important;
 }
 
 /*Pour l'icone menu*/
