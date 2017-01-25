@@ -80,6 +80,12 @@ a:hover {
     text-decoration: underline;
 }
 
+.link-mon-compte:hover {
+    cursor: pointer;
+    color: #1B8BBB!important;
+    text-decoration: underline;
+}
+
 a.color-red-eti:hover {
     text-decoration: underline;
 }
