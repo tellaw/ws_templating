@@ -820,7 +820,6 @@ function simulationOnglets(lien) {
 <!--  Toggle DIV JS -->
 function toggle_div(bouton, id) {
     var div = document.getElementById(id).style.display;
-    console.log(div);
     if (div == "none") div = "block";
     else div = "none";
     return false;
