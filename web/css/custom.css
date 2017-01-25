@@ -253,6 +253,15 @@ dt {
     padding: 8px;
 }
 
+.header-v1 .navbar-fixed-top {
+    border-width:1px;
+}
+.header-v1 .navbar-nav {
+    float:left!important;
+}
+.header-v1 .navbar-default .navbar-nav > li {
+    margin-left:0px;
+}
 .header-v1 .navbar-default .navbar-nav > li > a,
 .header-v1 .navbar-default .navbar-nav > li > a:hover,
 .header-v1 .navbar-default .navbar-nav > li > a:focus {
@@ -269,6 +278,11 @@ dt {
 .header-v1 .navbar-default .navbar-nav > li.bg-active,
 .header-v1 .brd-active {
     background: #EC1625;
+    -moz-box-shadow: 0px 1px 0px 0px #EC1625;
+    -webkit-box-shadow: 0px 1px 0px 0px #EC1625;
+    -o-box-shadow: 0px 1px 0px 0px #EC1625;
+    box-shadow: 0px 1px 0px 0px #EC1625;
+    filter:progid:DXImageTransform.Microsoft.Shadow(color=#EC1625, Direction=180, Strength=0);
 }
 
 .header-v1 .navbar-default .navbar-nav > li:hover > a,
@@ -5729,7 +5743,7 @@ div[id^="background_fiche"] .figures_container div.figures_classe {
 /* SOUS MENU ACTU */
 
 #ti_actu_submenu_container {
-    background: #ca030a;
+    background: #EC1625;
 }
 
 #ti_actu_submenu_container li {
