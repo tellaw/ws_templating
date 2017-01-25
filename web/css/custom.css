@@ -253,9 +253,14 @@ dt {
     padding: 15px 0px 15px 0px!important;
     bottom: -1px;
     color: #697277;
+    font-size:12px;
+    font-family: 'myriad-pro-semi-bold';
+    letter-spacing: 1.10px;
+    text-transform: uppercase;
 }
 
 .header-v1 .navbar-default .navbar-nav > li:hover,
+.header-v1 .navbar-default .navbar-nav > li.bg-active,
 .header-v1 .brd-active {
     background: #EC1625;
 }
