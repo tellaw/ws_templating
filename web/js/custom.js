@@ -113,12 +113,12 @@ $(document).ready(function () {
             $("#advanced-search-box").hide();
             $("#button-menu-header, #div-menu-header").css('cssText', 'display: inline-block !important');
             $(".navbar-fixed-top .md-margin-top-35").css({
-                marginTop: "15px"
+                marginTop: "25px"
             });
             $("#logo-header").attr("src", logo);
             $(".navbar-fixed-top .container > div").removeClass("margin-bottom-10");
             $(".login-box-border").css({
-                top: "10px"
+                top: "20px"
             });
         }
     });
