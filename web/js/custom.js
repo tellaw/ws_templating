@@ -89,15 +89,14 @@ $(document).ready(function () {
         $("#navbar-x").addClass("in");
         $("#button-menu-header").css('cssText', 'display: none !important');
     }
-    if (($(window).width() >= 992) && ($(window).scrollTop() == 0)) {
-        $("#navbar-x").addClass("in");
-        $("#button-menu-header").css('cssText', 'display: none !important');
-    }
+
     $(window).scroll(function () {
         if (($(window).width() >= 992) && ($(window).scrollTop() == 0)) {
+            var logo = $("#logo-header").attr("src");
+            logo=logo.replace("/images/logo-eti-small.png","/images/logo-eti.png");
             $("#navbar-x").addClass("in");
             $(".navbar-fixed-top .container > div").addClass("margin-bottom-10");
-            $("#logo-header").attr("src", "/images/logo-eti.png");
+            $("#logo-header").attr("src", logo);
             $("#advanced-search-box").css('cssText', 'display: block !important');
             $("#button-menu-header, #div-menu-header").css('cssText', 'display: none !important');
             $(".navbar-fixed-top .md-margin-top-35").css({
@@ -108,13 +107,15 @@ $(document).ready(function () {
             });
         }
         else if (($(window).width() >= 992) && ($(window).scrollTop() != 0)) {
+            var logo = $("#logo-header").attr("src");
+            logo=logo.replace("/images/logo-eti.png","/images/logo-eti-small.png");
             $("#navbar-x").removeClass("in");
             $("#advanced-search-box").hide();
             $("#button-menu-header, #div-menu-header").css('cssText', 'display: inline-block !important');
             $(".navbar-fixed-top .md-margin-top-35").css({
                 marginTop: "15px"
             });
-            $("#logo-header").attr("src", "/images/logo-eti-small.png");
+            $("#logo-header").attr("src", logo);
             $(".navbar-fixed-top .container > div").removeClass("margin-bottom-10");
             $(".login-box-border").css({
                 top: "10px"

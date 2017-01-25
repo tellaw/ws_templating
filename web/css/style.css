@@ -5,6 +5,9 @@
   font-weight: normal;
   font-style: normal; }
 
+body {
+  margin-top: 140px; }
+
 .container-fluid {
   max-width: 1024px; }
 
