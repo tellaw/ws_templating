@@ -286,7 +286,7 @@ dt {
 }
 
 .header-v1 .navbar-default .navbar-nav > li:hover > a,
-.bg-active a {
+.bg-active > a {
     color: #fff!important;
 }
 
