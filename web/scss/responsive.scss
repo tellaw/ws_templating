@@ -3079,6 +3079,29 @@ $color-red : #EC1625 ;
     }
   }
 
+  a.pub-style, a.large-img, a.haute-img {
+    &:hover {
+      .acceuil-title {
+        p {
+          display: block;
+          color: #697277;
+          span {
+            float: left;
+            margin: 0 0 0 5px;
+            display: inline-block;
+            width: 190px;
+          }
+        }
+        h3, span {
+          display: none;
+        }
+      }
+      .overlay {
+        display: block;
+      }
+    }
+  }
+
   a.large {
     &:hover {
       img {
@@ -3120,29 +3143,6 @@ $color-red : #EC1625 ;
   }
   .corps-article-link-mobile {
     display:none;
-  }
-
-  a.pub-style, a.large-img, a.haute-img {
-    &:hover {
-      .acceuil-title {
-        p {
-          display: block;
-          color: #697277;
-          span {
-            float: left;
-            margin: 0 0 0 5px;
-            display: inline-block;
-            width: 190px;
-          }
-        }
-        h3, span {
-          display: none;
-        }
-      }
-      .overlay {
-        display: block;
-      }
-    }
   }
 }
 

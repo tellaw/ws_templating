@@ -538,7 +538,7 @@ $(document).ready(function () {
         if ($(this).find("a").attr("href") != undefined) window.location = $(this).find("a").attr("href")
         return false;
     })
-    if ($(window).width() < 1024) {
+    if ($(window).width() <= 1024) {
         $(".zoning").click(function (a) {
             if ($(this).find("a").attr("href") != undefined) window.location = $(this).find("a").attr("href")
             return false;
