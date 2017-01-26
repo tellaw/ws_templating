@@ -1242,6 +1242,8 @@
 
 /* Medium and down */
 @media screen and (max-width: 991px) {
+  body {
+    margin-top: 69px; }
   .sm-margin-37 {
     margin: 0 37px !important; }
   .col-droite-webinar {
@@ -1253,6 +1255,8 @@
     min-width: 300px; }
   .domaine-secteur-box .ez_html_module p {
     margin: 0 10%; }
+  .header-v1 .navbar-nav {
+    float: none !important; }
   .header-v1 .dropdown > a:after {
     right: 0px; }
   .header-v1 .navbar-default .navbar-nav > li > a {
@@ -1266,7 +1270,7 @@
     padding-left: 0px !important;
     padding-right: 0px !important; }
   .navbar-fixed-top .md-margin-top-35 {
-    margin-top: 15px; }
+    margin-top: 25px !important; }
   .navbar-fixed-top .container > div {
     margin-bottom: 0 !important; }
   .article.zoning a p span.titre {

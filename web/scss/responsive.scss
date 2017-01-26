@@ -1867,6 +1867,9 @@ $color-red : #EC1625 ;
 
 /* Medium and down */
 @media screen and (max-width: 991px) {
+  body {
+    margin-top: 69px;
+  }
   .sm-margin-37 {
     margin:0 37px!important;
   }
@@ -1882,6 +1885,9 @@ $color-red : #EC1625 ;
     margin: 0 10%;
   }
   .header-v1 {
+    .navbar-nav {
+      float: none!important;
+    }
     .dropdown {
       > a:after {
         right:0px;
@@ -1920,7 +1926,7 @@ $color-red : #EC1625 ;
 
   .navbar-fixed-top {
     .md-margin-top-35 {
-      margin-top:15px;
+      margin-top:25px!important;
     }
   }
   .navbar-fixed-top {
