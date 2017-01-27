@@ -84,6 +84,36 @@ $(document).ready(function () {
                 top: $("#query-2").offset().top + 40
             });
         }
+
+        if ($("#query-3").length) {
+            $("#query-3").autocomplete({
+                delay: 100
+                , minLength: 3
+                , source: function (request, response) {
+                    var scopes = $("#searchCommand3 input[name='scope']");
+                    var scope = scopes !== undefined && scopes.length > 0 ? scopes[0].value : "";
+                    request_term = request.term;
+                    var params = {
+                        q: request_term
+                    };
+                    if (scope && scope != "") {params = {q:request_term,scope:scope};}
+                    $.ajax({
+                        type: "POST"
+                        , async: true
+                        , dataType: "json"
+                        , url: '/suggest-ajax.do'
+                        , data: params
+                        , success: function (data) {
+                            response(data);
+                        }
+                    });
+                    return false;
+                }
+            });
+            $("ul.ui-autocomplete + ul.ui-autocomplete").css({
+                top: $("#query-3").offset().top + 40
+            });
+        }
     });
     if (($(window).width() >= 992) && ($(window).scrollTop() == 0)) {
         $("#navbar-x").addClass("in");

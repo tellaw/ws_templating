@@ -538,7 +538,9 @@
 }
 
 .header-v1 .dropdown-menu li [class^="fa-"],
-.header-v1 .dropdown-menu li [class*=" fa-"] {
+.header-v1 .dropdown-menu li [class*=" fa-"],
+.header-v1 .dropdown-menu li [class^="glyphicon-"],
+.header-v1 .dropdown-menu li [class*=" glyphicon-"]{
 	left: -3px;
 	width: 1.25em;
 	margin-right: 1px;
@@ -771,7 +773,8 @@
     
     /*Dropdown Arrow Icons*/
     .header-v1 .mega-menu .mega-menu-fullwidth li a {
-    	padding: 5px 4px 5px 4px;
+    	padding: 0 4px;
+		margin: 5px 0;
     }
 
     /*.header-v1 .mega-menu .mega-menu-fullwidth li a:after {
