@@ -930,6 +930,8 @@
   .no-gutters-xs {
     padding-left: 0;
     padding-right: 0; }
+  .no-gutters-right-xs {
+    padding-right: 0; }
   .center-offers-button {
     width: 200px;
     margin-left: auto;
@@ -973,6 +975,8 @@
     text-align: center; }
   .no-gutters-xs {
     padding-left: 0;
+    padding-right: 0; }
+  .no-gutters-right-xs {
     padding-right: 0; }
   .subscription-btn {
     font-size: 10px;

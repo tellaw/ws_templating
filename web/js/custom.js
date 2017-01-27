@@ -1073,3 +1073,17 @@ function differedIframeLoadWithRedirectWithIndex(iframe, baseUrl, encodeUrl, par
 function escapeQuoteFragment(fragment) {
     return fragment.replace("'", "\'");
 }
+
+function checkEmail(frm, alertMessage) {
+    email = frm.email.value;
+
+    var indexOfAt = email.indexOf("@", 1);
+    var indexOfPoint = email.indexOf(".", indexOfAt + 1);
+
+    if ((email.length > 5) && (indexOfAt > -1) && (indexOfPoint > 1)) {
+        return true;
+    } else {
+        alert(alertMessage);
+        return false;
+    }
+}

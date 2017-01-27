@@ -1252,10 +1252,6 @@ label.text-hover:hover {
   #check_div1 label:hover {
     cursor: pointer; }
 
-#newsletter-subscription-docbase .fa-paper-plane {
-  font-size: 17px;
-  margin: 0 10px 0 20px; }
-
 #comments li {
   border-top: 1px solid #C6C6C6; }
   #comments li:first-child {

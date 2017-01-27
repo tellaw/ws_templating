@@ -1382,6 +1382,9 @@ $color-red : #EC1625 ;
     padding-left: 0;
     padding-right: 0;
   }
+  .no-gutters-right-xs {
+    padding-right: 0;
+  }
   .center-offers-button {
     width: 200px;
     margin-left: auto;
@@ -1444,6 +1447,9 @@ $color-red : #EC1625 ;
   }
   .no-gutters-xs {
     padding-left: 0;
+    padding-right: 0;
+  }
+  .no-gutters-right-xs {
     padding-right: 0;
   }
   .subscription-btn {
