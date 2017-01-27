@@ -1650,6 +1650,11 @@ label.text-hover {
     background: #EC1625;
     &:hover {
       cursor: pointer;
+      >span{
+        &:first-child {
+          display: block!important;
+        }
+      }
     }
   }
 }

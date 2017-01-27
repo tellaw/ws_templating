@@ -1087,3 +1087,11 @@ function checkEmail(frm, alertMessage) {
         return false;
     }
 }
+
+function goToDesinscription(){
+    var checked = checkEmail(document.getElementById("newsletter-form"), 'Veuillez saisir une\nadresse e-mail valide !\nMerci');
+    if (checked) {
+        var email = document.getElementById('email').value;
+        location.href='/desinscription-globale.html?email=' + email;
+    }
+}
