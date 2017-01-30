@@ -114,8 +114,8 @@ $(document).ready(function () {
                 }
             });
 
-            $("ul.ui-autocomplete + ul.ui-autocomplete + ul.ui-autocomplete").delay(10000).css({
-                top: $("#query-3").offset().top + 279
+            $("ul.ui-autocomplete + ul.ui-autocomplete + ul.ui-autocomplete").css({
+                top: $("#query-3").offset().top + 280
             });
         }
     });
