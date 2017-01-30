@@ -774,7 +774,8 @@
     /*Dropdown Arrow Icons*/
     .header-v1 .mega-menu .mega-menu-fullwidth li a {
     	padding: 0 4px;
-		margin: 5px 0;
+		margin: 3px 0;
+		display: inline-block;
     }
 
     /*.header-v1 .mega-menu .mega-menu-fullwidth li a:after {
