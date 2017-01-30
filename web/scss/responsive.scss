@@ -2348,9 +2348,16 @@ $color-red : #EC1625 ;
     .navbar-default {
       .navbar-nav {
         > li {
-          margin-right: 6px;
+          margin-right: 9px;
+          padding: 0 24px!important;
           &:last-child {
             margin-right: 0;
+          }
+          &:first-child {
+            padding:0!important;
+          }
+          a:after {
+            right: -20px;
           }
         }
       }
@@ -2684,9 +2691,10 @@ $color-red : #EC1625 ;
     .navbar-default {
       .navbar-nav {
         > li {
-          margin-right: 24px;
+          margin-right: 36px;
           &:last-child {
             margin-right: 0;
+            padding: 0 27px!important;
           }
         }
       }

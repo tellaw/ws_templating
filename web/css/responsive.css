@@ -1542,9 +1542,14 @@
     .cadre-downloads-large > a {
       display: block; }
   .header-v1 .navbar-default .navbar-nav > li {
-    margin-right: 6px; }
+    margin-right: 9px;
+    padding: 0 24px !important; }
     .header-v1 .navbar-default .navbar-nav > li:last-child {
       margin-right: 0; }
+    .header-v1 .navbar-default .navbar-nav > li:first-child {
+      padding: 0 !important; }
+    .header-v1 .navbar-default .navbar-nav > li a:after {
+      right: -20px; }
   #cellule-list {
     margin-left: 157px; }
   .lg-margin-top {
@@ -1765,9 +1770,10 @@
     .cadre-downloads-large .boutons {
       left: 30px; }
   .header-v1 .navbar-default .navbar-nav > li {
-    margin-right: 24px; }
+    margin-right: 36px; }
     .header-v1 .navbar-default .navbar-nav > li:last-child {
-      margin-right: 0; }
+      margin-right: 0;
+      padding: 0 27px !important; }
   .navbar-collapse.collapse {
     display: block; }
   .lg-width {
