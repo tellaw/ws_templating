@@ -1254,6 +1254,15 @@ label.text-hover:hover {
     #check_div1 label:hover > span:first-child {
       display: block !important; }
 
+.accueil a {
+  font-size: 0 !important;
+  background: url(../images/menu-home.png) center center no-repeat transparent !important;
+  height: auto;
+  width: 45px;
+  display: block !important; }
+  .accueil a:hover {
+    background: url(../images/menu-home-hover.png) center center no-repeat transparent !important; }
+
 #comments li {
   border-top: 1px solid #C6C6C6; }
   #comments li:first-child {

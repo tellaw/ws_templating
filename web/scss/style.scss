@@ -1658,6 +1658,18 @@ label.text-hover {
     }
   }
 }
+.accueil{
+  a{
+    font-size: 0!important;
+    background: url(../images/menu-home.png) center center no-repeat transparent!important;
+    height: auto;
+    width: 45px;
+    display: block!important;
+    &:hover {
+      background: url(../images/menu-home-hover.png) center center no-repeat transparent!important;
+    }
+  }
+}
 #comments {
   li {
     border-top: 1px solid #C6C6C6;
