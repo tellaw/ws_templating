@@ -30,6 +30,9 @@ $(document).ready(function () {
             }
         }
     });
+    $('li.ressources-doc').append($('#ressources-doc').removeClass('hide'));
+    $('li.magazine-actualite').append($('#magazine-actualite').removeClass('hide'));
+
     $(function () {
         $("#query").autocomplete({
             delay: 100
@@ -110,11 +113,13 @@ $(document).ready(function () {
                     return false;
                 }
             });
-            $("ul.ui-autocomplete + ul.ui-autocomplete").css({
-                top: $("#query-3").offset().top + 40
+
+            $("ul.ui-autocomplete + ul.ui-autocomplete + ul.ui-autocomplete").delay(10000).css({
+                top: $("#query-3").offset().top + 279
             });
         }
     });
+
     if (($(window).width() >= 992) && ($(window).scrollTop() == 0)) {
         $("#navbar-x").addClass("in");
         $("#button-menu-header").css('cssText', 'display: none !important');
