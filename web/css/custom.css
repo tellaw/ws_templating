@@ -1956,7 +1956,6 @@ div[class^="element-wrapper-"] img {
     position: fixed;
     z-index: 50;
     right: -220px;
-    padding-top: 10px;
 }
 
 #sticky-menu-share {
@@ -2087,7 +2086,7 @@ div[class^="element-wrapper-"] img {
 }
 
 .inscription-newsletter-slide {
-    padding-top: 8px !important;
+    padding-top: 11px !important;
     padding-bottom: 0px !important;
     padding-left: 0px !important;
     padding-right: 0px !important;
@@ -2944,7 +2943,7 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color=#EC1625, Direction=NaN, St
 
 .myti-info-compte {
     background: #e2e1e1;
-    margin: 0px auto 10px;
+    margin: 0px auto;
     padding: 5px 0;
     max-width: 1140px;
     border: none;
@@ -2961,7 +2960,7 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color=#EC1625, Direction=NaN, St
 .myti-info-compte div.text-ip {
     display: inline-block;
     margin: 0;
-    padding: 3px 40px 0 0;
+    padding: 7px 40px 0 0;
     line-height: 20px;
     width: 65%;
     font-weight: normal;
