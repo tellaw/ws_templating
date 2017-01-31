@@ -214,6 +214,11 @@ $color-red : #EC1625 ;
 
 /* Mobile portrait */
 @media screen and (max-width: 425px) {
+  .header-v1{
+    button.btn-color {
+      padding: 1px 5px;
+    }
+  }
   .slider-card {
     top: 30px;
     margin:0 auto;
