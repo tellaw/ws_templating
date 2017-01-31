@@ -382,7 +382,7 @@
 	.header-v1 .navbar-default .navbar-nav > li > a:hover,
 	.header-v1 .navbar-default .navbar-nav > li > a:focus {
 		color: #72c02c;
-		bottom: -2px;
+		/*bottom: -2px;*/
 		position: relative;
 	}
 

@@ -265,7 +265,7 @@ dt {
 .header-v1 .navbar-default .navbar-nav > li > a,
 .header-v1 .navbar-default .navbar-nav > li > a:hover,
 .header-v1 .navbar-default .navbar-nav > li > a:focus {
-    padding: 15px 0px 15px 0px!important;
+    padding: 15px 0px 15px 0px;
     bottom: -1px;
     color: #697277;
     font-size:12px;
@@ -274,9 +274,8 @@ dt {
     text-transform: uppercase;
 }
 
-.header-v1 .navbar-default .navbar-nav > li:hover,
-.header-v1 .navbar-default .navbar-nav > li.bg-active,
-.header-v1 .brd-active {
+.header-v1 .navbar-default .navbar-nav > li.mega-menu-fullwidth:hover,
+.header-v1 .navbar-default .navbar-nav > li.bg-active {
     background: #EC1625;
     -moz-box-shadow: 0px 1px 0px 0px #EC1625;
     -webkit-box-shadow: 0px 1px 0px 0px #EC1625;
@@ -285,7 +284,21 @@ dt {
     filter:progid:DXImageTransform.Microsoft.Shadow(color=#EC1625, Direction=180, Strength=0);
 }
 
-.header-v1 .navbar-default .navbar-nav > li:hover > a,
+.header-v1 .navbar-default .navbar-nav > .brd-bottom:hover a,
+.header-v1 .navbar-default .navbar-nav > .brd-bottom-active a {
+    border-bottom: 3px solid #EC1625;
+    padding-bottom: 12px!important;
+}
+.header-v1 .navbar-default .navbar-nav > .accueil.brd-bottom:hover a,
+.header-v1 .navbar-default .navbar-nav > .accueil.brd-bottom-active a {
+    padding-top: 18px;
+    padding-bottom: 9px!important;
+    margin-top: 5px;
+    height:45px;
+    bottom: -1px;
+}
+
+.header-v1 .navbar-default .navbar-nav > li.mega-menu-fullwidth:hover > a,
 .bg-active > a {
     color: #fff!important;
 }
