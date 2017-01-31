@@ -498,6 +498,9 @@ $(document).ready(function () {
         $("#design-switch-popin").css("height", "295px");
         return false;
     });
+    //harmoniser hauteur colonne col-droite-actu et content-article
+    $(".content-article").css("minHeight" , $(".col-droite-actu").height());
+
     $('.panel-title a').click(function (event) {
         if ($(event.target).hasClass("accordion-toggle")) {
             $(event.target).addClass('disabled');
