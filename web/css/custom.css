@@ -2945,7 +2945,7 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color=#EC1625, Direction=NaN, St
 .myti-info-compte {
     background: #e2e1e1;
     margin: 0px auto 10px;
-    padding: 15px 0;
+    padding: 5px 0;
     max-width: 1140px;
     border: none;
     color: #697277;
@@ -2964,7 +2964,6 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color=#EC1625, Direction=NaN, St
     padding: 3px 40px 0 0;
     line-height: 20px;
     width: 65%;
-    font-size: 13px;
     font-weight: normal;
     letter-spacing: 0.75px;
 }
@@ -2976,30 +2975,15 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color=#EC1625, Direction=NaN, St
     color: #1B8BBB;
     width: 20%;
     text-align: center;
-    font-family: Arial, Helvetica, Verdana, sans-serif;
 }
 
 .myti-info-compte .icone {
     display: inline-block;
-    color: #fff;
     margin: 6px 0 0 0;
-}
-
-.myti-info-compte .badge-x {
-    background: #fff!important;
-}
-
-.myti-info-compte .badge {
-    color: #1B8BBB;
 }
 
 .myti-info-compte div .img-ip {
     margin: 7px 0 7px;
-}
-
-.myti-info-compte div.text-ip a {
-    color: #fff;
-    font-weight: bold;
 }
 
 .myti-info-compte .myti-buton-red {
