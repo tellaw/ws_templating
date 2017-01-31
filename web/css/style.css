@@ -1430,3 +1430,6 @@ blockquote {
   right: 19%;
   width: 500px;
   text-align: right; }
+
+.red {
+  color: #ed1b2e !important; }

@@ -219,6 +219,9 @@ $color-red : #EC1625 ;
       padding: 1px 5px;
     }
   }
+  .login-box-border {
+    right:35px;
+  }
   .slider-card {
     top: 30px;
     margin:0 auto;
@@ -1881,6 +1884,9 @@ $color-red : #EC1625 ;
   body {
     margin-top: 69px;
   }
+  .login-box-border {
+    right:93px;
+  }
   .sm-margin-37 {
     margin:0 37px!important;
   }
@@ -2360,6 +2366,7 @@ $color-red : #EC1625 ;
           }
           &:first-child {
             padding:0!important;
+            margin-right: 0;
           }
           a:after {
             right: -20px;
@@ -2697,9 +2704,9 @@ $color-red : #EC1625 ;
       .navbar-nav {
         > li {
           margin-right: 36px;
-          &:last-child {
+          &:last-child,
+          &:first-child {
             margin-right: 0;
-            padding: 0 27px!important;
           }
         }
       }
@@ -3210,6 +3217,12 @@ $color-red : #EC1625 ;
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .header-title {
     width: 280px;
+  }
+}
+
+@media all and (max-width: 1199px) {
+  .login-box-border {
+    right:60px;
   }
 }
 

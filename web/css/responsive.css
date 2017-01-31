@@ -166,6 +166,8 @@
 @media screen and (max-width: 425px) {
   .header-v1 button.btn-color {
     padding: 1px 5px; }
+  .login-box-border {
+    right: 35px; }
   .slider-card {
     top: 30px;
     margin: 0 auto;
@@ -1251,6 +1253,8 @@
 @media screen and (max-width: 991px) {
   body {
     margin-top: 69px; }
+  .login-box-border {
+    right: 93px; }
   .sm-margin-37 {
     margin: 0 37px !important; }
   .col-droite-webinar {
@@ -1550,7 +1554,8 @@
     .header-v1 .navbar-default .navbar-nav > li:last-child {
       margin-right: 0; }
     .header-v1 .navbar-default .navbar-nav > li:first-child {
-      padding: 0 !important; }
+      padding: 0 !important;
+      margin-right: 0; }
     .header-v1 .navbar-default .navbar-nav > li a:after {
       right: -20px; }
   #cellule-list {
@@ -1774,9 +1779,8 @@
       left: 30px; }
   .header-v1 .navbar-default .navbar-nav > li {
     margin-right: 36px; }
-    .header-v1 .navbar-default .navbar-nav > li:last-child {
-      margin-right: 0;
-      padding: 0 27px !important; }
+    .header-v1 .navbar-default .navbar-nav > li:last-child, .header-v1 .navbar-default .navbar-nav > li:first-child {
+      margin-right: 0; }
   .navbar-collapse.collapse {
     display: block; }
   .lg-width {
@@ -2087,6 +2091,10 @@
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .header-title {
     width: 280px; } }
+
+@media all and (max-width: 1199px) {
+  .login-box-border {
+    right: 60px; } }
 
 @media all and (min-width: 992px) and (max-width: 1199px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .md-smint {
