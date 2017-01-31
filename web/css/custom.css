@@ -293,8 +293,8 @@ dt {
 .header-v1 .navbar-default .navbar-nav > .accueil.brd-bottom-active a {
     padding-top: 18px;
     padding-bottom: 9px!important;
-    margin-top: 5px;
-    height:45px;
+    margin-top: 4px;
+    height:46px;
     bottom: -1px;
 }
 
@@ -317,6 +317,9 @@ dt {
     content: "\f106"!important;
 }
 
+.header-v1 .navbar-default .navbar-nav > li:hover > a {
+    color: #697277;
+}
 /*Pour l'icone menu*/
 
 .border-0 {
