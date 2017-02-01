@@ -140,7 +140,7 @@ dt {
 }
 
 .footer-bg-color {
-    background-color: #646D72 !important;
+    background-color: #F3F3F3 !important;
 }
 
 .footer3-bg-color {
@@ -214,10 +214,6 @@ dt {
 .footer2-bg-color #shorcuts_nav .inline {
     display: inline;
     padding: 0;
-}
-
-.footer-bg-color {
-    background-color: #ffffff !important;
 }
 
 .dark-grey-title {
