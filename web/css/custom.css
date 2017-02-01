@@ -123,6 +123,10 @@ dt {
     clear: both;
 }
 
+.footer-bg-color {
+    background-color: #646D72 !important;
+}
+
 .footer3-bg-color {
     background-color: #EC1625 !important;
     font-family: "myriad-pro", sans-serif;
@@ -210,6 +214,11 @@ dt {
 
 .red-title {
     color: #EC1625 !important;
+}
+
+.inline {
+    display: inline;
+    padding: 0;
 }
 
 .devider-bg-color-dark {
