@@ -171,28 +171,6 @@ dt {
     font-family: "myriad-pro", sans-serif;
 }
 
-.footer1-bg-color #menu-footer-generique > li > a {
-    font-family: 'myriad-pro-semi-bold';
-    background: none !important;
-    padding: 0 !important;
-}
-
-.footer1-bg-color #menu-footer-generique > li > .sub-menu {
-    font-family: 'myriad-pro-semi-bold';
-    margin: 0;
-}
-
-.footer1-bg-color #menu-footer-generique > li > .sub-menu li {
-    font-family: 'myriad-pro-semi-bold';
-    background: none;
-    padding: 0;
-    display: block;
-}
-
-.footer1-bg-color #menu-footer-generique > li > .sub-menu li a {
-    font-family: 'myriad-pro-semi-bold';
-}
-
 .footer2-bg-color #shorcuts_nav {
     padding: 15px 0;
     font-size: 11px;
