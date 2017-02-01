@@ -98,11 +98,6 @@ ul.inline li.last {
     margin: 0;
     padding: 0;
 }
-#footer-cols .col,
-#menu-footer-generique>li {
-    width: 33.33333333%;
-    float: left;
-}
 
 #footer-cols h4, #footer-cols p.rub,
 #menu-footer-generique>li>a {

@@ -6704,3 +6704,10 @@ li.no-border.padding-top-10.padding-bottom-10.font-size-13 {
         bottom: 0;
     }
 }
+ul.inline li {
+    display: inline;
+    padding: 0 5px;
+}
+.line1 li, .line2 li {
+    border-right: 1px solid;
+}
