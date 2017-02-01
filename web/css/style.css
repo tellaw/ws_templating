@@ -986,6 +986,18 @@ input.actions-select {
   color: #EC1625;
   text-decoration: underline; }
 
+ul[id^="menu-footer-"] > li {
+  letter-spacing: 0.75px; }
+  ul[id^="menu-footer-"] > li > a {
+    font-size: 16px;
+    line-height: 22px;
+    font-family: "myriad-pro", sans-serif;
+    letter-spacing: 1px;
+    margin-top: 5px;
+    text-shadow: none;
+    font-weight: normal;
+    display: block; }
+
 div[id^="background_fiche"] ul {
   list-style-type: square; }
   div[id^="background_fiche"] ul.list-unstyled li a:hover {

@@ -33,6 +33,7 @@ $(document).ready(function () {
     $('li.ressources-doc').append($('#ressources-doc').removeClass('hide'));
     $('li.magazine-actualite').append($('#magazine-actualite').removeClass('hide'));
 
+    $('ul[id^="menu-footer-"] > li > a').after('<div class="eti-footer-devider margin-bottom-15 margin-top-10"></div>');
     $(function () {
         $("#query").autocomplete({
             delay: 100
