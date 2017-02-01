@@ -997,6 +997,8 @@ ul[id^="menu-footer-"] > li {
     text-shadow: none;
     font-weight: normal;
     display: block; }
+  ul[id^="menu-footer-"] > li > ul > li a {
+    font-size: 12px; }
 
 div[id^="background_fiche"] ul {
   list-style-type: square; }

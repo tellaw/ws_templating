@@ -1307,6 +1307,13 @@ ul[id^="menu-footer-"] {
       font-weight: normal;
       display: block;
     }
+    >ul {
+      >li {
+        a {
+          font-size:12px;
+        }
+      }
+    }
   }
 }
 
