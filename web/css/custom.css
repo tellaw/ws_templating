@@ -123,6 +123,22 @@ dt {
     clear: both;
 }
 
+.social_facebook {
+    background: url(../images/facebook.png) no-repeat #ffffff;
+}
+
+.social_twitter {
+    background: url(../images/twitter.png) no-repeat #ffffff;
+}
+
+.social_googleplus {
+    background: url(../images/googleplus.png) no-repeat #ffffff;
+}
+
+.social_linkedin {
+    background: url(../images/linkedin.png) no-repeat #ffffff;
+}
+
 .footer-bg-color {
     background-color: #646D72 !important;
 }
