@@ -4964,7 +4964,8 @@ form #di-link {
 .lecture_facile .nav-rubrique *,
 .lecture_facile #ti_actu_submenu_container,
 .lecture_facile #ti_actu_right_now_container,
-.lecture_facile .col-droite-actu {
+.lecture_facile .col-droite-actu,
+.lecture_facile .navbar-fixed-top {
     display: none !important;
 }
 
@@ -4980,16 +4981,19 @@ form #di-link {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #000000;
-    color: #ffffff;
+    background-color: #fff;
+    border-bottom: 1px solid #c6c6c6;
+    color: #697277;
     font-weight: bold;
     padding: 10px 20px 5px;
     z-index: 9999;
+    font-family: myriad-pro;
 }
 
 .lecture_facile .bt-lf span {
-    padding: 0 10px 0 0;
+    padding: 0 10px;
     cursor: pointer;
+    letter-spacing: 0.75px;
 }
 
 .lecture_facile .thumbnail-large img {
