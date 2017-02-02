@@ -1729,6 +1729,9 @@ label.text-hover {
 }
 .corps-article {
   position: relative;
+  article {
+    font-size:15px!important;
+  }
 }
 .ressources-liees {
   a {
