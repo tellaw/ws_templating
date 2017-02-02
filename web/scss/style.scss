@@ -1730,7 +1730,13 @@ label.text-hover {
 .corps-article {
   position: relative;
   article {
-    font-size:15px!important;
+    font-size: 16px !important;
+    line-height: 24px;
+    blockquote {
+      p {
+        font-size: 16px !important;
+      }
+    }
   }
 }
 .ressources-liees {
