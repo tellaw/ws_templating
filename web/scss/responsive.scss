@@ -1669,6 +1669,9 @@ $color-red : #EC1625 ;
     padding-left: 0;
     padding-right: 0;
   }
+  .no-gutters-right-sm {
+    padding-right:0;
+  }
   .badge-env {
     margin-top: 4px;
     background-color: #EC1625 !important;
@@ -2078,6 +2081,9 @@ $color-red : #EC1625 ;
     padding-left: 0;
     padding-right: 0;
   }
+  .no-gutters-right-md {
+    padding-right:0;
+  }
 }
 /* Medium and up */
 @media screen and (min-width: 992px) {
@@ -2305,6 +2311,9 @@ $color-red : #EC1625 ;
       margin-right: 110px;
       line-height: 2.5;
     }
+  }
+  .no-gutters-right-lg {
+    padding-right:0;
   }
   .md-lg-hide {
     display: none !important;
