@@ -792,7 +792,6 @@ $(document).ready(function () {
         a2a_config.linkname = 'Bla';
 
         if(sel){
-
             document.getElementById("myFloatingMenu").style.display="block";
 
             var range = window.getSelection().getRangeAt(0);
@@ -804,15 +803,14 @@ $(document).ready(function () {
             $("#myFloatingMenu").css({ top: posY, left: posX });
             $('#selectionSharerPopover').css({ top: 0, left: 151 });
             $('.selectionSharer').appendTo("#myFloatingMenu li.reseau");
+            return false;
         }
         else {
-            document.getElementById("myFloatingMenu").style.display="none";
-        }
-    });
-
-    $(document).click(function(event) {
-        if($('.corps-article article').length) {
-            document.getElementById("myFloatingMenu").style.display="none";
+            $("body").click(function(event) {
+                if($("#myFloatingMenu").css('display') == 'block') {
+                    document.getElementById("myFloatingMenu").style.display="none";
+                }
+            })
         }
     });
 });
