@@ -1312,6 +1312,9 @@ label.text-hover:hover {
     line-height: 24px; }
     .corps-article article blockquote p {
       font-size: 16px !important; }
+    .corps-article article img {
+      width: 100%;
+      height: auto; }
 
 .ressources-liees a:hover {
   color: #EC1625;
