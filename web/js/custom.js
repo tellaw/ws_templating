@@ -500,7 +500,7 @@ $(document).ready(function () {
         return false;
     });
     //harmoniser hauteur colonne col-droite-actu et content-article
-    $(".content-article").css("minHeight" , $(".col-droite-actu").height());
+    if ($(window).width() >= 1024) {$(".content-article").css("minHeight" , $(".col-droite-actu").height());}
 
     $('.panel-title a').click(function (event) {
         if ($(event.target).hasClass("accordion-toggle")) {

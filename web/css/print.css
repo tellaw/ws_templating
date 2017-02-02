@@ -14,7 +14,8 @@
   #topcontrol,
   #sticky,
   #reagir-article,
-  .col-droite-actu {
+  .col-droite-actu,
+  .hidden-print {
     display: none; }
 
   .inner-results .list-inline {
