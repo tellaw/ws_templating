@@ -16,7 +16,8 @@
   #reagir-article,
   .col-droite-actu,
   .hidden-print,
-  #footer-v2 {
+  #footer-v2,
+  #bandeau-cookie {
     display: none; }
 
   .inner-results .list-inline {
