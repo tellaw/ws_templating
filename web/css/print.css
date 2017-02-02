@@ -15,7 +15,8 @@
   #sticky,
   #reagir-article,
   .col-droite-actu,
-  .hidden-print {
+  .hidden-print,
+  #footer-v2 {
     display: none; }
 
   .inner-results .list-inline {
