@@ -18,7 +18,7 @@
   .hidden-print,
   #footer-v2,
   #bandeau-cookie {
-    display: none; }
+    display: none!important; }
 
   .inner-results .list-inline {
     margin: 0;
@@ -38,4 +38,7 @@
   .inner-results .dark-grey-title {
     margin: 0 0 0 5px; }
 
+  .content-article.no-gutters-right {
+    min-height:auto!important;
+  }
 }
