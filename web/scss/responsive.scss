@@ -925,6 +925,12 @@ $color-red : #EC1625 ;
   }
 }
 @media screen and (max-width: 767px) {
+  .corps-article {
+    article {
+      margin-left:29px;
+      margin-right:29px;
+    }
+  }
   .cadre-downloads-large {
     .evenement {
       .pub-style {
