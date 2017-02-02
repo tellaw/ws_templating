@@ -351,27 +351,29 @@
     margin: 20px 0; }
   form .note::before {
     display: none; }
-  form select, form input, form label {
-    width: 100%; }
-  form .formError {
-    left: 0 !important; }
-  form .client > span {
-    width: 100%;
-    margin-bottom: 5px; }
-  form p {
-    margin: 0 0 10px 0;
-    min-height: 50px !important; }
-  form input[type="checkbox"] + label {
-    display: inline; }
-  form #phone-prefix {
-    position: absolute;
-    top: 26px !important;
-    left: 0;
-    width: 8%;
-    display: inline-block; }
-  form input[id="lffield[phone]"] {
-    width: 90%;
-    float: right; }
+  form {
+    /*input[id="lffield[phone]"] {
+      width: 90%;
+      float: right;
+    }*/ }
+    form select, form input, form label {
+      width: 100%; }
+    form .formError {
+      left: 0 !important; }
+    form .client > span {
+      width: 100%;
+      margin-bottom: 5px; }
+    form p {
+      margin: 0 0 10px 0;
+      min-height: 50px !important; }
+    form input[type="checkbox"] + label {
+      display: inline; }
+    form #phone-prefix {
+      position: absolute;
+      top: 26px !important;
+      left: 0;
+      width: 8%;
+      display: inline-block; }
   .formulaire-di .intro {
     margin: 30px 0; }
   #ti-classic-form input[id="lffield[phone]"] {
