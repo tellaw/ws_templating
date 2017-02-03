@@ -818,6 +818,9 @@ $(document).ready(function () {
         jQuery('.navbar-nav .contact').addClass('brd-bottom-active');
         return false;
     }
+    else if(url.indexOf('/actualite/edito') != -1){
+        return false;
+    }
     else if(url.indexOf('/actualite') != -1){
         jQuery('.navbar-nav .magazine-actualite').addClass('bg-active');
         return false;
