@@ -113,7 +113,7 @@ $(document).ready(function () {
                     });
                     return false;
                 }
-            }).autocomplete( "widget" ).addClass( "whatever" );
+            }).autocomplete( "widget" ).css({ top: $("#query-3").offset().top + 280, position: "absolute" });
 
             $("ul.ui-autocomplete + ul.ui-autocomplete + ul.ui-autocomplete").css({
                 top: $("#query-3").offset().top + 280, position: "absolute"
