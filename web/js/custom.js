@@ -55,10 +55,8 @@ $(document).ready(function () {
                 });
                 return false;
             }
-        });
-        $("ul.ui-autocomplete").css({
-            top: $("#query").offset().top + 26, position: "fixed"
-        });
+        }).autocomplete( "widget" ).css({ top: $("#query").offset().top + 26, position: "fixed" });
+
         if ($("#query-2").length) {
             $("#query-2").autocomplete({
                 delay: 100
@@ -83,10 +81,7 @@ $(document).ready(function () {
                     });
                     return false;
                 }
-            });
-            $("ul.ui-autocomplete + ul.ui-autocomplete").css({
-                top: $("#query-2").offset().top + 40,position: "absolute"
-            });
+            }).autocomplete( "widget" ).css({ top: $("#query-2").offset().top + 40,position: "absolute" });
         }
 
         if ($("#query-3").length) {
@@ -114,10 +109,6 @@ $(document).ready(function () {
                     return false;
                 }
             }).autocomplete( "widget" ).css({ top: $("#query-3").offset().top + 280, position: "absolute" });
-
-            $("ul.ui-autocomplete + ul.ui-autocomplete + ul.ui-autocomplete").css({
-                top: $("#query-3").offset().top + 280, position: "absolute"
-            });
         }
     });
 
