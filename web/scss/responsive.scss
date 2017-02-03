@@ -1919,7 +1919,7 @@ $color-red : #EC1625 ;
     }
     .dropdown {
       > a:after {
-        right:0px;
+        right:-30px;
       }
     }
     .navbar-default {
@@ -1942,6 +1942,9 @@ $color-red : #EC1625 ;
     > li {
       padding-left: 10px !important;
       padding-right: 10px !important;
+      &.magazine-actualite, &.ressources-doc {
+        padding-right: 50px !important;
+      }
     }
   }
   .nav {

@@ -13,7 +13,7 @@ $color-red : #EC1625 ;
 }
 
 body{
-  margin-top: 150px;
+  margin-top: 143px;
 }
 
 .container-fluid {
@@ -1382,6 +1382,9 @@ div[id^="background_fiche"] {
     a {
       font-size:1.1em;
     }
+  }
+  &:first-child {
+    position: fixed;
   }
 }
 

@@ -57,7 +57,7 @@ $(document).ready(function () {
             }
         });
         $("ul.ui-autocomplete").css({
-            top: $("#query").offset().top + 26
+            top: $("#query").offset().top + 26, position: "fixed"
         });
         if ($("#query-2").length) {
             $("#query-2").autocomplete({
@@ -85,7 +85,7 @@ $(document).ready(function () {
                 }
             });
             $("ul.ui-autocomplete + ul.ui-autocomplete").css({
-                top: $("#query-2").offset().top + 40
+                top: $("#query-2").offset().top + 40,position: "absolute"
             });
         }
 
@@ -116,7 +116,7 @@ $(document).ready(function () {
             });
 
             $("ul.ui-autocomplete + ul.ui-autocomplete + ul.ui-autocomplete").css({
-                top: $("#query-3").offset().top + 280
+                top: $("#query-3").offset().top + 280, position: "absolute"
             });
         }
     });
