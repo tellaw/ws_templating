@@ -1949,6 +1949,10 @@ blockquote {
   right: 19%;
   width: 500px;
   text-align: right;
+  span {
+    text-transform: capitalize;
+    padding-right:20px!important;
+  }
 }
 .red {
   color: #ed1b2e!important;
