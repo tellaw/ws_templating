@@ -13,7 +13,7 @@ $color-red : #EC1625 ;
 }
 
 body{
-  margin-top: 140px;
+  margin-top: 150px;
 }
 
 .container-fluid {
@@ -1109,8 +1109,14 @@ input {
       border-right:none;
     }
   }
-  button.btn-color {
-    padding:1px 13px;
+  .btn-color {
+    padding:2px 13px 3px;
+    &#card:hover {
+      background: #74b504;
+    }
+    &#login:hover {
+      background: #1b8bbb;
+    }
   }
 }
 #no-result {
@@ -1684,10 +1690,15 @@ label.text-hover {
 .accueil{
   a{
     font-size: 0!important;
-    background: url(../images/menu-home.png) center center no-repeat transparent!important;
-    height: auto;
+    background: url(../images/menu-home.png) center 17px no-repeat transparent!important;
+    height: 50px;
     width: 45px;
     display: block!important;
+  }
+  &:hover {
+    a {
+      background: url(../images/menu-home.png) center 13px no-repeat transparent!important;
+    }
   }
 }
 #comments {

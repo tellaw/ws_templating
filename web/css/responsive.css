@@ -957,6 +957,8 @@
     margin-top: 10px; }
   .xs-margin-top-15 {
     margin-top: 15px !important; }
+  .xs-margin-top-17 {
+    margin-top: 17px !important; }
   .xs-margin-top-20 {
     margin-top: 20px !important; }
   .xs-margin-top-25 {
@@ -1662,7 +1664,7 @@
     padding-right: 25px !important;
     padding-left: 25px !important; }
   .navbar-mods.mega-menu-fullwidth {
-    padding-right: 52px !important;
+    padding-right: 42px !important;
     padding-left: 25px !important; }
   .padding-menu-cart {
     padding-left: 45px !important; }
@@ -1789,7 +1791,7 @@
     .cadre-downloads-large .boutons {
       left: 30px; }
   .header-v1 .navbar-default .navbar-nav > li {
-    margin-right: 36px; }
+    margin-right: 30px; }
     .header-v1 .navbar-default .navbar-nav > li:last-child, .header-v1 .navbar-default .navbar-nav > li:first-child {
       margin-right: 0; }
   .navbar-collapse.collapse {
@@ -1914,7 +1916,7 @@
     padding-right: 25px !important;
     padding-left: 25px !important; }
   .navbar-mods.mega-menu-fullwidth {
-    padding-right: 52px !important;
+    padding-right: 42px !important;
     padding-left: 25px !important; }
   .nav-tabs {
     /*padding-left: 10px;

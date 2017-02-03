@@ -24,9 +24,9 @@ body {
     color: #4d5356;
     overflow-x: hidden;
 }
-body.customize-support {
+/*body.customize-support {
     font-size: 15px;
-}
+}*/
 
 /*permet de couper des mots avec un tiret si trop long avec passage à la ligne*/
 .hyphens {

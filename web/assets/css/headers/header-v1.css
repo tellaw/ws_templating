@@ -399,7 +399,8 @@
 		z-index: 9999 !important;
 		margin-top: -2px !important;
 		border-top: solid 2px #72c02c; 
-		border-bottom: solid 2px #687074; 
+		border-bottom: solid 2px #687074;
+		background: #E2E1E1!important;
 	}
 
 	.header-v1 .dropdown-menu li > a:focus {
@@ -458,11 +459,9 @@
 }
 
 .header-v1 .dropdown-menu li a {
-	color: #687074;
 	font-size: 13px;
 	font-weight: 400;
 	padding: 6px 15px;
-	border-bottom: solid 1px #eee;
 }
 
 /*--------------------------------------------------

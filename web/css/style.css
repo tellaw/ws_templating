@@ -6,7 +6,7 @@
   font-style: normal; }
 
 body {
-  margin-top: 140px; }
+  margin-top: 150px; }
 
 .container-fluid {
   max-width: 1024px; }
@@ -843,8 +843,12 @@ input.actions-select {
   .header-v1 .form-control:focus {
     border-right: none; }
 
-.header-v1 button.btn-color {
-  padding: 1px 13px; }
+.header-v1 .btn-color {
+  padding: 2px 13px 3px; }
+  .header-v1 .btn-color#card:hover {
+    background: #74b504; }
+  .header-v1 .btn-color#login:hover {
+    background: #1b8bbb; }
 
 #no-result {
   width: 100%;
@@ -1270,10 +1274,13 @@ label.text-hover:hover {
 
 .accueil a {
   font-size: 0 !important;
-  background: url(../images/menu-home.png) center center no-repeat transparent !important;
-  height: auto;
+  background: url(../images/menu-home.png) center 17px no-repeat transparent !important;
+  height: 50px;
   width: 45px;
   display: block !important; }
+
+.accueil:hover a {
+  background: url(../images/menu-home.png) center 13px no-repeat transparent !important; }
 
 #comments li {
   border-top: 1px solid #C6C6C6; }
