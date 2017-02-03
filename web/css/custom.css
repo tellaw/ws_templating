@@ -309,11 +309,14 @@ dt {
     top: 14px;
 }
 
-.header-v1 .dropdown:hover > a:after,
-.header-v1 .dropdown.bg-active > a:after
+.header-v1 .dropdown:hover > a:after
 {
     color: #FFF!important;
     content: "\f106"!important;
+}
+.header-v1 .dropdown.bg-active > a:after
+{
+    color: #FFF!important;
 }
 
 .header-v1 .navbar-default .navbar-nav > li:hover > a {
@@ -850,6 +853,10 @@ i.fa.margin-right-5 {
 
 .padding-left-60 {
     padding-left: 60px !important;
+}
+
+.padding-left-75 {
+    padding-left: 75px !important;
 }
 
 .letter-spacing-1 {
