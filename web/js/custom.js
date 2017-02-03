@@ -113,7 +113,7 @@ $(document).ready(function () {
                     });
                     return false;
                 }
-            }).data("ui-autocomplete")._renderItem = function (ul, item) { ul.addClass('customClass');};
+            }).autocomplete( "widget" ).addClass( "whatever" );
 
             $("ul.ui-autocomplete + ul.ui-autocomplete + ul.ui-autocomplete").css({
                 top: $("#query-3").offset().top + 280, position: "absolute"
