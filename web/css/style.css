@@ -1284,7 +1284,7 @@ label.text-hover:hover {
   width: 45px;
   display: block !important; }
 
-.accueil:hover a {
+.accueil:hover a, .accueil.brd-bottom-active a {
   background: url(../images/menu-home.png) center 13px no-repeat transparent !important; }
 
 #comments li {

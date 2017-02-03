@@ -1708,7 +1708,7 @@ label.text-hover {
     width: 45px;
     display: block!important;
   }
-  &:hover {
+  &:hover, &.brd-bottom-active {
     a {
       background: url(../images/menu-home.png) center 13px no-repeat transparent!important;
     }
