@@ -79,7 +79,8 @@ If you like Smint, or have suggestions on how it could be improved, send me a tw
 				// if we scroll more than the navigation, change its position to fixed and add class 'fxd', otherwise change it back to absolute and remove the class
 				if (scrollTop > stickyTop+myOffset && jQuery(window).width() < 992) {
 					smint.css({ 'position': 'fixed', 'top':0, 'left': '50%', 'margin-left': -smint.width()/2 }).addClass('fxd');
-					jQuery('#sub-menu').css('margin-top', jQuery('.navbar-fixed-top').height() + jQuery('#main-menu').height());
+					//jQuery('#sub-menu').css('margin-top', jQuery('.navbar-fixed-top').height() + jQuery('#main-menu').height());
+					jQuery('#sub-menu').css('marginTop', jQuery('.navbar').height());
 
 					// add padding to the body to make up for the loss in heigt when the menu goes to a fixed position.
 					// When an item is fixed, its removed from the flow so its height doesnt impact the other items on the page
