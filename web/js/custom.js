@@ -813,6 +813,77 @@ $(document).ready(function () {
             })
         }
     });
+
+    var url = window.location.href;
+    if(url.indexOf('/contenus-gratuits') != -1){
+        jQuery('.navbar-nav .contenu-gratuit').addClass('brd-bottom-active');
+        return false;
+    }
+    else if(url.indexOf('/edito/mieux-nous-connaitre') != -1){
+        jQuery('.navbar-nav .a-propos').addClass('brd-bottom-active');
+        return false;
+    }
+    else if(url.indexOf('/edito/contact') != -1){
+        jQuery('.navbar-nav .contact').addClass('brd-bottom-active');
+        return false;
+    }
+    else if(url.indexOf('/actualite') != -1){
+        jQuery('.navbar-nav .magazine-actualite').addClass('bg-active');
+        return false;
+    }
+    else if(url.indexOf('/ressources-documentaires') != -1 || url.indexOf('/base-documentaire') != -1){
+        jQuery('.navbar-nav .ressources-doc').addClass('bg-active');
+        return false;
+    }
+    else {
+        jQuery('.navbar-nav .accueil').addClass('brd-bottom-active');
+        return false;
+    }
+
+    // ajout class et attributs sur les liens du menu
+    $("#menu-menu-generique-ti li").each(function(){
+        $(this).find("a").addClass("dropdown-toggle").attr("data-toggle","dropdown");
+    });
+
+    $("#login").on("click", function(){
+        if ($("#login-box").css('display') == 'none'){
+            $("#login-box").show();
+        }
+        else {
+            $("#login-box").hide();
+        };
+    });
+
+    var cookies = document.cookie ? document.cookie.split('; ') : [];
+    var ok = false;
+    for (var i = 0, l = cookies.length; i < l; i++) {
+        var parts = cookies[i].split('=');
+        var name = parts[0];
+        if (name === 'cookie_cnil') {
+            ok = true;
+            continue;
+        }
+    }
+    if(!ok) {
+        $('#bandeau-cookie').show();
+    }
+
+    // tracking analytics sur liens anv principale
+    $('a', '.main-menu-container, #menu-menu-generique-ti, #menu-menu-generique-ti-1').on('click', function (e) {
+        var link = $(this);
+        var url = link.attr('href');
+        var label = link.text();
+        e.preventDefault();
+        if(typeof(ga) == "function") {
+            ga('send', 'event', 'header_lucy_2017', label);
+        }else{
+            __gaTracker('send', 'event', 'header_lucy_2017', label);
+        }
+        //_gaq.push(['_trackEvent', 'header_unique_2017', label]);
+        setTimeout(function () {
+            document.location = url;
+        }, 300);
+    });
 });
 (function () {
     var v = document.getElementsByClassName("youtube-player");
@@ -1101,4 +1172,21 @@ function goToDesinscription(){
         var email = document.getElementById('email').value;
         location.href='/desinscription-globale.html?email=' + email;
     }
+}
+
+function setCookieCnil() {
+    var domain = '';
+    var d = document.domain.split('.');
+
+    if (d.length == 1) {
+        domain = d[0];
+    } else {
+        domain = d[d.length - 2] + '.' + d[d.length - 1];
+    }
+
+    var date = new Date();
+    date.setTime(date.getTime() + 6 * 30 * 24 * 3600 * 1000); // 6 mois
+
+    document.cookie = 'cookie_cnil=1; expires=' + date.toUTCString() + '; domain=' + domain + '; path=/';
+    jQuery('#bandeau-cookie').hide();
 }
