@@ -6038,7 +6038,7 @@ form + a:hover {
     width: 300px;
     margin-left: auto;
     margin-right: auto;
-    background: url("../images/visuel-pub-defaut.jpg") top left no-repeat transparent;
+    background: url("../images/visuel-pub-defaut.jpg") bottom left no-repeat transparent;
     cursor: pointer;
 }
 
