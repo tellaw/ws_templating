@@ -1111,18 +1111,20 @@ input {
   }
   .btn-color {
     padding:2px 13px 3px;
+    background: none;
     &#card:hover {
-      background: #74b504;
+      i {
+        color: #74b504;
+      }
     }
     &#login:hover {
-      background: #1b8bbb;
-      .badge-x {
-        background:#ffffff!important;
-        transition: all 0.3s ease-in-out;
-        i {
-          color: #1B8BBB;
-          transition: all 0.3s ease-in-out;
-        }
+      .title-icon>i {
+        color: #1b8bbb;
+      }
+    }
+    &#button-menu-header:hover, &#button-menu-header:active, &#button-menu-header:focus {
+      i {
+        color: #EC1625;
       }
     }
   }

@@ -845,15 +845,6 @@ $(document).ready(function () {
         $(this).find("a").addClass("dropdown-toggle").attr("data-toggle","dropdown");
     });
 
-    $("#login").on("click", function(){
-        if ($("#login-box").css('display') == 'none'){
-            $("#login-box").show();
-        }
-        else {
-            $("#login-box").hide();
-        };
-    });
-
     var cookies = document.cookie ? document.cookie.split('; ') : [];
     var ok = false;
     for (var i = 0, l = cookies.length; i < l; i++) {

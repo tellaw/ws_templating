@@ -2112,7 +2112,7 @@
 
 @media all and (max-width: 1199px) {
   .login-box-border {
-    right: 60px; } }
+    right: 10% !important; } }
 
 @media all and (min-width: 992px) and (max-width: 1199px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .md-smint {
