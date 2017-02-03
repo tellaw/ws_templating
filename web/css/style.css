@@ -849,6 +849,12 @@ input.actions-select {
     background: #74b504; }
   .header-v1 .btn-color#login:hover {
     background: #1b8bbb; }
+    .header-v1 .btn-color#login:hover .badge-x {
+      background: #ffffff !important;
+      transition: all 0.3s ease-in-out; }
+      .header-v1 .btn-color#login:hover .badge-x i {
+        color: #1B8BBB;
+        transition: all 0.3s ease-in-out; }
 
 #no-result {
   width: 100%;

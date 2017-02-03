@@ -1116,6 +1116,14 @@ input {
     }
     &#login:hover {
       background: #1b8bbb;
+      .badge-x {
+        background:#ffffff!important;
+        transition: all 0.3s ease-in-out;
+        i {
+          color: #1B8BBB;
+          transition: all 0.3s ease-in-out;
+        }
+      }
     }
   }
 }
