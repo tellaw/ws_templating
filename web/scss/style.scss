@@ -1376,10 +1376,10 @@ div[id^="background_fiche"] {
   }
 }
 .ui-autocomplete {
-  border: 1px solid #EBEBEB;
   background: #F6F6F6;
   z-index: 2000!important;
   font-size:12px;
+  font-family: myriad-pro!important;
   li {
     a {
       font-size:1.1em;
@@ -1388,6 +1388,14 @@ div[id^="background_fiche"] {
   &:first-child {
     position: fixed;
   }
+}
+.ui-state-hover{
+  border:none!important;
+  background:#e2e1e1!important;
+  color:#222222!important;
+}
+.ui-menu {
+  padding:0!important;
 }
 
 // ACTUALITE //

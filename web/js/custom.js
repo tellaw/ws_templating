@@ -55,7 +55,16 @@ $(document).ready(function () {
                 });
                 return false;
             }
-        }).autocomplete( "widget" ).css({ top: $("#query").offset().top + 26, position: "fixed" });
+        }).data( "autocomplete" )._renderItem = function( ul, item ) {
+            var re = new RegExp(this.term, "i" );
+            console.log(re);
+            var t = item.label.replace( re, "<span style='font-weight:bold;color:#c2010c;'>" + this.term + "</span>" );
+            return $("<li></li>")
+                .data("item", item)
+                .append("<a>" + t + "</a>")
+                .appendTo(ul);
+        };
+        $("#query").autocomplete( "widget" ).css({ top: $("#query").offset().top + 26, position: "fixed" });
 
         if ($("#query-2").length) {
             $("#query-2").autocomplete({
@@ -81,7 +90,15 @@ $(document).ready(function () {
                     });
                     return false;
                 }
-            }).autocomplete( "widget" ).css({ top: $("#query-2").offset().top + 40,position: "absolute" });
+            }).data( "autocomplete" )._renderItem = function( ul, item ) {
+                var re = new RegExp(this.term, "i" );
+                var t = item.label.replace( re, "<span style='font-weight:bold;color:#c2010c;'>" + this.term + "</span>" );
+                return $("<li></li>")
+                    .data("item", item)
+                    .append("<a>" + t + "</a>")
+                    .appendTo(ul);
+            };
+            $("#query-2").autocomplete( "widget" ).css({ top: $("#query-2").offset().top + 40,position: "absolute" });
         }
 
         if ($("#query-3").length) {
@@ -108,7 +125,15 @@ $(document).ready(function () {
                     });
                     return false;
                 }
-            }).autocomplete( "widget" ).css({ top: $("#query-3").offset().top + 280, position: "absolute" });
+            }).data( "autocomplete" )._renderItem = function( ul, item ) {
+                var re = new RegExp(this.term, "i" );
+                var t = item.label.replace( re, "<span style='font-weight:bold;color:#c2010c;'>" + this.term + "</span>" );
+                return $("<li></li>")
+                    .data("item", item)
+                    .append("<a>" + t + "</a>")
+                    .appendTo(ul);
+            };
+            $("#query-3").autocomplete( "widget" ).css({ top: $("#query-3").offset().top + 280, position: "absolute" });
         }
     });
 
