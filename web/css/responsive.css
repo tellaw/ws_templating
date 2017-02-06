@@ -1364,12 +1364,12 @@
     float: none; }
   .no-gutters-md {
     padding-left: 0;
-    padding-right: 0; }
-  .no-gutters-right-md {
     padding-right: 0; } }
 
 /* Medium and up */
 @media screen and (min-width: 992px) {
+  .no-gutters-right-md {
+    padding-right: 0; }
   .contact .bouton-red {
     position: absolute;
     bottom: 0;
