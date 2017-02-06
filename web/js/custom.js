@@ -34,6 +34,7 @@ $(document).ready(function () {
     $('li.magazine-actualite').append($('#magazine-actualite').removeClass('hide'));
 
     $('ul[id^="menu-footer-"] > li > a').after('<div class="eti-footer-devider margin-bottom-15 margin-top-10"></div>');
+
     $(function () {
         $("#query").autocomplete({
             delay: 100
@@ -55,15 +56,7 @@ $(document).ready(function () {
                 });
                 return false;
             }
-        }).data( "autocomplete" )._renderItem = function( ul, item ) {
-            var re = new RegExp(this.term, "i" );
-            console.log(re);
-            var t = item.label.replace( re, "<span style='font-weight:bold;color:#c2010c;'>" + this.term + "</span>" );
-            return $("<li></li>")
-                .data("item", item)
-                .append("<a>" + t + "</a>")
-                .appendTo(ul);
-        };
+        });
         $("#query").autocomplete( "widget" ).css({ top: $("#query").offset().top + 26, position: "fixed" });
 
         if ($("#query-2").length) {
@@ -90,14 +83,7 @@ $(document).ready(function () {
                     });
                     return false;
                 }
-            }).data( "autocomplete" )._renderItem = function( ul, item ) {
-                var re = new RegExp(this.term, "i" );
-                var t = item.label.replace( re, "<span style='font-weight:bold;color:#c2010c;'>" + this.term + "</span>" );
-                return $("<li></li>")
-                    .data("item", item)
-                    .append("<a>" + t + "</a>")
-                    .appendTo(ul);
-            };
+            });
             $("#query-2").autocomplete( "widget" ).css({ top: $("#query-2").offset().top + 40,position: "absolute" });
         }
 
@@ -125,14 +111,7 @@ $(document).ready(function () {
                     });
                     return false;
                 }
-            }).data( "autocomplete" )._renderItem = function( ul, item ) {
-                var re = new RegExp(this.term, "i" );
-                var t = item.label.replace( re, "<span style='font-weight:bold;color:#c2010c;'>" + this.term + "</span>" );
-                return $("<li></li>")
-                    .data("item", item)
-                    .append("<a>" + t + "</a>")
-                    .appendTo(ul);
-            };
+            });
             $("#query-3").autocomplete( "widget" ).css({ top: $("#query-3").offset().top + 280, position: "absolute" });
         }
     });
