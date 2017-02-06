@@ -850,6 +850,19 @@ $(document).ready(function () {
             document.location = url;
         }, 300);
     });
+
+    if (jQuery(".sommaire-media").hasClass("active")) {
+
+        jQuery(".summary-link").each(function( index ) {
+            var link = jQuery(this).attr('href');
+            var hash = link.substring(link.indexOf("#"));
+            var linkWithoutHash = link.substring(0, link.indexOf("#"));
+            link = addParameterToURL(linkWithoutHash, "summary=true") + hash;
+            jQuery(this).prop("href", link)
+        });
+
+
+    }
 });
 (function () {
     var v = document.getElementsByClassName("youtube-player");
@@ -860,6 +873,22 @@ $(document).ready(function () {
         v[n].appendChild(p);
     }
 })();
+
+function hasParamInUrl(param){
+    _url = location.href;
+    if (!_url.includes('?'+param) && !_url.includes('&'+param)) {
+        return true;
+    }
+    return false;
+}
+
+
+function addParameterToURL(url, param){
+    if (!url.includes('?'+param) && !url.includes('&'+param)) {
+        url += (url.split('?')[1] ? '&':'?') + param;
+    }
+    return url;
+}
 
 function refresh(owner) {
     // Peu importe les parametres c'est uniquement pour que ca rafraichisse a
