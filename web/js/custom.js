@@ -850,19 +850,6 @@ $(document).ready(function () {
             document.location = url;
         }, 300);
     });
-
-    if (jQuery(".sommaire-media").hasClass("active")) {
-
-        jQuery(".summary-link").each(function( index ) {
-            var link = jQuery(this).attr('href');
-            var hash = link.substring(link.indexOf("#"));
-            var linkWithoutHash = link.substring(0, link.indexOf("#"));
-            link = addParameterToURL(linkWithoutHash, "summary=true") + hash;
-            jQuery(this).prop("href", link)
-        });
-
-
-    }
 });
 (function () {
     var v = document.getElementsByClassName("youtube-player");
@@ -1203,6 +1190,14 @@ function detailledSummaryLink() {
     var minheightcol = $(".tab-content .col-droite-4").height() - 60;
     $(".tab-content-article .presentation-smint, .tab-content-article .corps-article-smint, .tab-content-article .auteurs-smint, .tab-content-article .biblio-smint, .tab-content-article .outils-smint, .tab-content-article .meme-sujet-smint").css({
         "minHeight": minheightcol
+    });
+
+    $(".summary-link").each(function( index ) {
+        var link = $(this).attr('href');
+        var hash = link.substring(link.indexOf("#"));
+        var linkWithoutHash = link.substring(0, link.indexOf("#"));
+        link = addParameterToURL(linkWithoutHash, "summary=true") + hash;
+        $(this).prop("href", link)
     });
 }
 
