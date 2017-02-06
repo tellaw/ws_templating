@@ -5392,7 +5392,7 @@ div.fade-out {
 
 .cross-close {
     cursor: pointer;
-    padding-top: 5px;
+    padding-top: 10px;
     font-size: 18px;
     display: inline-block;
 }
@@ -6700,3 +6700,10 @@ ul.inline li {
 .line1 li, .line2 li {
     border-right: 1px solid;
 }
+.ui-widget-header {
+    font-weight:normal;
+}
+.ui-dialog .ui-dialog-titlebar-close {
+    font-size:18px;
+}
+)
