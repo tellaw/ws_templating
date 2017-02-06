@@ -810,7 +810,7 @@ $(document).ready(function () {
     });
 
     var url = window.location.href;
-    if(url.indexOf('/contenus-gratuits') != -1 || url.indexOf('/livre-blanc') != -1 || url.indexOf('/conference-en-ligne') != -1 || url.indexOf('/article-temoin') != -1){
+    if(url.indexOf('/contenus-gratuits') != -1 || url.indexOf('/livre-blanc') != -1 || url.indexOf('/conferences-en-ligne') != -1 || url.indexOf('/article-temoin') != -1){
         jQuery('.navbar-nav .contenu-gratuit').addClass('brd-bottom-active');
         return false;
     }
