@@ -1185,10 +1185,19 @@ function detailledSummaryLink() {
 
     $(".summary-link").each(function( index ) {
         var link = $(this).attr('href');
-        var hash = link.substring(link.indexOf("#"));
-        var linkWithoutHash = link.substring(0, link.indexOf("#"));
+
+        var hash = "";
+        var linkWithoutHash = "";
+
+        if (link.indexOf("#") != -1) {
+            hash = link.substring(link.indexOf("#"));
+            linkWithoutHash = link.substring(0, link.indexOf("#"));
+        } else {
+            linkWithoutHash = link;
+        }
+
         link = addParameterToURL(linkWithoutHash, "summary=true") + hash;
-        $(this).prop("href", link)
+        $(this).prop("href", link);
     });
 }
 
@@ -1203,8 +1212,17 @@ function normalSummaryLink() {
     });
     $(".summary-link").each(function( index ) {
         var link = $(this).attr('href');
-        var hash = link.substring(link.indexOf("#"));
-        var linkWithoutHash = link.substring(0, link.indexOf("#"));
+
+        var hash = "";
+        var linkWithoutHash = "";
+
+        if (link.indexOf("#") != -1) {
+            hash = link.substring(link.indexOf("#"));
+            linkWithoutHash = link.substring(0, link.indexOf("#"));
+        } else {
+            linkWithoutHash = link;
+        }
+
         link = removeParameterToURL(linkWithoutHash, "summary=true") + hash;
         $(this).prop("href", link)
     });
