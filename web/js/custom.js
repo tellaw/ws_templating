@@ -861,15 +861,6 @@ $(document).ready(function () {
     }
 })();
 
-function hasParamInUrl(param){
-    _url = location.href;
-    if (!_url.includes('?'+param) && !_url.includes('&'+param)) {
-        return true;
-    }
-    return false;
-}
-
-
 function addParameterToURL(url, param){
     if (!url.includes('?'+param) && !url.includes('&'+param)) {
         url += (url.split('?')[1] ? '&':'?') + param;
@@ -1210,4 +1201,20 @@ function normalSummaryLink() {
     $(".tab-content-article .presentation-smint, .tab-content-article .corps-article-smint, .tab-content-article .auteurs-smint, .tab-content-article .biblio-smint, .tab-content-article .outils-smint, .tab-content-article .meme-sujet-smint").css({
         "minHeight": minheightcol
     });
+    $(".summary-link").each(function( index ) {
+        var link = $(this).attr('href');
+        var hash = link.substring(link.indexOf("#"));
+        var linkWithoutHash = link.substring(0, link.indexOf("#"));
+        link = removeParameterToURL(linkWithoutHash, "summary=true") + hash;
+        $(this).prop("href", link)
+    });
+}
+
+function removeParameterToURL(url, param){
+    if (url.includes('?'+param)) {
+        url = url.replace('?'+param, "");
+    } else if (url.includes('&'+param)) {
+        url = url.replace('&'+param, "");
+    }
+    return url;
 }
