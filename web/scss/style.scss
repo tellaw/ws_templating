@@ -1698,6 +1698,8 @@ label.text-hover {
     color: #fff;
     font-size:17px;
     background: #EC1625;
+    white-space: normal;
+    line-height: 20px;
     &:hover {
       cursor: pointer;
       >span{

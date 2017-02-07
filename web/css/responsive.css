@@ -1278,7 +1278,7 @@
   .header-v1 .navbar-nav {
     float: none !important; }
   .header-v1 .dropdown > a:after {
-    right: -30px; }
+    right: 0px; }
   .header-v1 .navbar-default .navbar-nav > li > a {
     border-bottom: 1px solid #EC1625; }
   .header-v1 .navbar-default .navbar-nav > li:last-child a {
@@ -1286,11 +1286,12 @@
   .nav > li {
     padding-left: 10px !important;
     padding-right: 10px !important; }
-    .nav > li.magazine-actualite, .nav > li.ressources-doc {
-      padding-right: 50px !important; }
-  .nav > li > a {
-    padding-left: 0px !important;
-    padding-right: 0px !important; }
+    .nav > li > a {
+      padding-left: 0px !important;
+      padding-right: 0px !important; }
+    .nav > li.accueil a {
+      width: 100%;
+      background-position: left 13px; }
   .navbar-fixed-top .md-margin-top-35 {
     margin-top: 25px !important; }
   .navbar-fixed-top .container > div {

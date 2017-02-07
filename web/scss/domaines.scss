@@ -38,6 +38,7 @@ $i: 1;
     }
     img.border-encart {
       border:3px solid nth($domaines_secteurs_colors, $i);
+      margin: 0 auto;
     }
     .border-encart, &:hover {
       border:1px solid nth($domaines_secteurs_colors, $i);
@@ -60,7 +61,7 @@ $i: 1;
       background: nth($domaines_secteurs_colors, $i);
       width: 30px;
       height: 2px;
-      margin: 0 0 10px 79px;
+      margin: 0 400px 10px 79px;
     }
   }
   body.skin-#{$class} {

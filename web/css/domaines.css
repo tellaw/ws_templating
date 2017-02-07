@@ -7,7 +7,8 @@
   color: #178BB7 !important; }
 
 .skin-th1 img.border-encart {
-  border: 3px solid #178BB7; }
+  border: 3px solid #178BB7;
+  margin: 0 auto; }
 
 .skin-th1 .border-encart, .skin-th1:hover {
   border: 1px solid #178BB7; }
@@ -26,7 +27,7 @@
   background: #178BB7;
   width: 30px;
   height: 2px;
-  margin: 0 0 10px 79px; }
+  margin: 0 400px 10px 79px; }
 
 body.skin-th1:hover {
   border: 0px solid #178BB7; }
@@ -40,7 +41,8 @@ body.skin-th1:hover {
   color: #1EAA74 !important; }
 
 .skin-th2 img.border-encart {
-  border: 3px solid #1EAA74; }
+  border: 3px solid #1EAA74;
+  margin: 0 auto; }
 
 .skin-th2 .border-encart, .skin-th2:hover {
   border: 1px solid #1EAA74; }
@@ -59,7 +61,7 @@ body.skin-th1:hover {
   background: #1EAA74;
   width: 30px;
   height: 2px;
-  margin: 0 0 10px 79px; }
+  margin: 0 400px 10px 79px; }
 
 body.skin-th2:hover {
   border: 0px solid #1EAA74; }
@@ -73,7 +75,8 @@ body.skin-th2:hover {
   color: #E0760C !important; }
 
 .skin-th3 img.border-encart {
-  border: 3px solid #E0760C; }
+  border: 3px solid #E0760C;
+  margin: 0 auto; }
 
 .skin-th3 .border-encart, .skin-th3:hover {
   border: 1px solid #E0760C; }
@@ -92,7 +95,7 @@ body.skin-th2:hover {
   background: #E0760C;
   width: 30px;
   height: 2px;
-  margin: 0 0 10px 79px; }
+  margin: 0 400px 10px 79px; }
 
 body.skin-th3:hover {
   border: 0px solid #E0760C; }
@@ -106,7 +109,8 @@ body.skin-th3:hover {
   color: #FABD11 !important; }
 
 .skin-th4 img.border-encart {
-  border: 3px solid #FABD11; }
+  border: 3px solid #FABD11;
+  margin: 0 auto; }
 
 .skin-th4 .border-encart, .skin-th4:hover {
   border: 1px solid #FABD11; }
@@ -125,7 +129,7 @@ body.skin-th3:hover {
   background: #FABD11;
   width: 30px;
   height: 2px;
-  margin: 0 0 10px 79px; }
+  margin: 0 400px 10px 79px; }
 
 body.skin-th4:hover {
   border: 0px solid #FABD11; }
@@ -139,7 +143,8 @@ body.skin-th4:hover {
   color: #9DB51D !important; }
 
 .skin-th5 img.border-encart {
-  border: 3px solid #9DB51D; }
+  border: 3px solid #9DB51D;
+  margin: 0 auto; }
 
 .skin-th5 .border-encart, .skin-th5:hover {
   border: 1px solid #9DB51D; }
@@ -158,7 +163,7 @@ body.skin-th4:hover {
   background: #9DB51D;
   width: 30px;
   height: 2px;
-  margin: 0 0 10px 79px; }
+  margin: 0 400px 10px 79px; }
 
 body.skin-th5:hover {
   border: 0px solid #9DB51D; }
@@ -172,7 +177,8 @@ body.skin-th5:hover {
   color: #1C8CBB !important; }
 
 .skin-th6 img.border-encart {
-  border: 3px solid #1C8CBB; }
+  border: 3px solid #1C8CBB;
+  margin: 0 auto; }
 
 .skin-th6 .border-encart, .skin-th6:hover {
   border: 1px solid #1C8CBB; }
@@ -191,7 +197,7 @@ body.skin-th5:hover {
   background: #1C8CBB;
   width: 30px;
   height: 2px;
-  margin: 0 0 10px 79px; }
+  margin: 0 400px 10px 79px; }
 
 body.skin-th6:hover {
   border: 0px solid #1C8CBB; }
@@ -205,7 +211,8 @@ body.skin-th6:hover {
   color: #D31E2C !important; }
 
 .skin-th7 img.border-encart {
-  border: 3px solid #D31E2C; }
+  border: 3px solid #D31E2C;
+  margin: 0 auto; }
 
 .skin-th7 .border-encart, .skin-th7:hover {
   border: 1px solid #D31E2C; }
@@ -224,7 +231,7 @@ body.skin-th6:hover {
   background: #D31E2C;
   width: 30px;
   height: 2px;
-  margin: 0 0 10px 79px; }
+  margin: 0 400px 10px 79px; }
 
 body.skin-th7:hover {
   border: 0px solid #D31E2C; }
@@ -238,7 +245,8 @@ body.skin-th7:hover {
   color: #1F9A99 !important; }
 
 .skin-th8 img.border-encart {
-  border: 3px solid #1F9A99; }
+  border: 3px solid #1F9A99;
+  margin: 0 auto; }
 
 .skin-th8 .border-encart, .skin-th8:hover {
   border: 1px solid #1F9A99; }
@@ -257,7 +265,7 @@ body.skin-th7:hover {
   background: #1F9A99;
   width: 30px;
   height: 2px;
-  margin: 0 0 10px 79px; }
+  margin: 0 400px 10px 79px; }
 
 body.skin-th8:hover {
   border: 0px solid #1F9A99; }
@@ -271,7 +279,8 @@ body.skin-th8:hover {
   color: #C2A681 !important; }
 
 .skin-th9 img.border-encart {
-  border: 3px solid #C2A681; }
+  border: 3px solid #C2A681;
+  margin: 0 auto; }
 
 .skin-th9 .border-encart, .skin-th9:hover {
   border: 1px solid #C2A681; }
@@ -290,7 +299,7 @@ body.skin-th8:hover {
   background: #C2A681;
   width: 30px;
   height: 2px;
-  margin: 0 0 10px 79px; }
+  margin: 0 400px 10px 79px; }
 
 body.skin-th9:hover {
   border: 0px solid #C2A681; }
@@ -304,7 +313,8 @@ body.skin-th9:hover {
   color: #A41979 !important; }
 
 .skin-th10 img.border-encart {
-  border: 3px solid #A41979; }
+  border: 3px solid #A41979;
+  margin: 0 auto; }
 
 .skin-th10 .border-encart, .skin-th10:hover {
   border: 1px solid #A41979; }
@@ -323,7 +333,7 @@ body.skin-th9:hover {
   background: #A41979;
   width: 30px;
   height: 2px;
-  margin: 0 0 10px 79px; }
+  margin: 0 400px 10px 79px; }
 
 body.skin-th10:hover {
   border: 0px solid #A41979; }
@@ -337,7 +347,8 @@ body.skin-th10:hover {
   color: #642F85 !important; }
 
 .skin-th11 img.border-encart {
-  border: 3px solid #642F85; }
+  border: 3px solid #642F85;
+  margin: 0 auto; }
 
 .skin-th11 .border-encart, .skin-th11:hover {
   border: 1px solid #642F85; }
@@ -356,7 +367,7 @@ body.skin-th10:hover {
   background: #642F85;
   width: 30px;
   height: 2px;
-  margin: 0 0 10px 79px; }
+  margin: 0 400px 10px 79px; }
 
 body.skin-th11:hover {
   border: 0px solid #642F85; }
@@ -370,7 +381,8 @@ body.skin-th11:hover {
   color: #6f6f6f !important; }
 
 .skin-th12 img.border-encart {
-  border: 3px solid #6f6f6f; }
+  border: 3px solid #6f6f6f;
+  margin: 0 auto; }
 
 .skin-th12 .border-encart, .skin-th12:hover {
   border: 1px solid #6f6f6f; }
@@ -389,7 +401,7 @@ body.skin-th11:hover {
   background: #6f6f6f;
   width: 30px;
   height: 2px;
-  margin: 0 0 10px 79px; }
+  margin: 0 400px 10px 79px; }
 
 body.skin-th12:hover {
   border: 0px solid #6f6f6f; }
@@ -403,7 +415,8 @@ body.skin-th12:hover {
   color: #E4054F !important; }
 
 .skin-th13 img.border-encart {
-  border: 3px solid #E4054F; }
+  border: 3px solid #E4054F;
+  margin: 0 auto; }
 
 .skin-th13 .border-encart, .skin-th13:hover {
   border: 1px solid #E4054F; }
@@ -422,7 +435,7 @@ body.skin-th12:hover {
   background: #E4054F;
   width: 30px;
   height: 2px;
-  margin: 0 0 10px 79px; }
+  margin: 0 400px 10px 79px; }
 
 body.skin-th13:hover {
   border: 0px solid #E4054F; }
@@ -436,7 +449,8 @@ body.skin-th13:hover {
   color: #25445C !important; }
 
 .skin-th14 img.border-encart {
-  border: 3px solid #25445C; }
+  border: 3px solid #25445C;
+  margin: 0 auto; }
 
 .skin-th14 .border-encart, .skin-th14:hover {
   border: 1px solid #25445C; }
@@ -455,7 +469,7 @@ body.skin-th13:hover {
   background: #25445C;
   width: 30px;
   height: 2px;
-  margin: 0 0 10px 79px; }
+  margin: 0 400px 10px 79px; }
 
 body.skin-th14:hover {
   border: 0px solid #25445C; }
@@ -469,7 +483,8 @@ body.skin-th14:hover {
   color: #233267 !important; }
 
 .skin-th15 img.border-encart {
-  border: 3px solid #233267; }
+  border: 3px solid #233267;
+  margin: 0 auto; }
 
 .skin-th15 .border-encart, .skin-th15:hover {
   border: 1px solid #233267; }
@@ -488,7 +503,7 @@ body.skin-th14:hover {
   background: #233267;
   width: 30px;
   height: 2px;
-  margin: 0 0 10px 79px; }
+  margin: 0 400px 10px 79px; }
 
 body.skin-th15:hover {
   border: 0px solid #233267; }
@@ -502,7 +517,8 @@ body.skin-th15:hover {
   color: #959594 !important; }
 
 .skin-th16 img.border-encart {
-  border: 3px solid #959594; }
+  border: 3px solid #959594;
+  margin: 0 auto; }
 
 .skin-th16 .border-encart, .skin-th16:hover {
   border: 1px solid #959594; }
@@ -521,7 +537,7 @@ body.skin-th15:hover {
   background: #959594;
   width: 30px;
   height: 2px;
-  margin: 0 0 10px 79px; }
+  margin: 0 400px 10px 79px; }
 
 body.skin-th16:hover {
   border: 0px solid #959594; }
@@ -535,7 +551,8 @@ body.skin-th16:hover {
   color: #25445C !important; }
 
 .skin-sc1 img.border-encart {
-  border: 3px solid #25445C; }
+  border: 3px solid #25445C;
+  margin: 0 auto; }
 
 .skin-sc1 .border-encart, .skin-sc1:hover {
   border: 1px solid #25445C; }
@@ -554,7 +571,7 @@ body.skin-th16:hover {
   background: #25445C;
   width: 30px;
   height: 2px;
-  margin: 0 0 10px 79px; }
+  margin: 0 400px 10px 79px; }
 
 body.skin-sc1:hover {
   border: 0px solid #25445C; }
@@ -568,7 +585,8 @@ body.skin-sc1:hover {
   color: #23AB75 !important; }
 
 .skin-sc2 img.border-encart {
-  border: 3px solid #23AB75; }
+  border: 3px solid #23AB75;
+  margin: 0 auto; }
 
 .skin-sc2 .border-encart, .skin-sc2:hover {
   border: 1px solid #23AB75; }
@@ -587,7 +605,7 @@ body.skin-sc1:hover {
   background: #23AB75;
   width: 30px;
   height: 2px;
-  margin: 0 0 10px 79px; }
+  margin: 0 400px 10px 79px; }
 
 body.skin-sc2:hover {
   border: 0px solid #23AB75; }
@@ -601,7 +619,8 @@ body.skin-sc2:hover {
   color: #222221 !important; }
 
 .skin-sc3 img.border-encart {
-  border: 3px solid #222221; }
+  border: 3px solid #222221;
+  margin: 0 auto; }
 
 .skin-sc3 .border-encart, .skin-sc3:hover {
   border: 1px solid #222221; }
@@ -620,7 +639,7 @@ body.skin-sc2:hover {
   background: #222221;
   width: 30px;
   height: 2px;
-  margin: 0 0 10px 79px; }
+  margin: 0 400px 10px 79px; }
 
 body.skin-sc3:hover {
   border: 0px solid #222221; }
@@ -634,7 +653,8 @@ body.skin-sc3:hover {
   color: #9DB51D !important; }
 
 .skin-sc4 img.border-encart {
-  border: 3px solid #9DB51D; }
+  border: 3px solid #9DB51D;
+  margin: 0 auto; }
 
 .skin-sc4 .border-encart, .skin-sc4:hover {
   border: 1px solid #9DB51D; }
@@ -653,7 +673,7 @@ body.skin-sc3:hover {
   background: #9DB51D;
   width: 30px;
   height: 2px;
-  margin: 0 0 10px 79px; }
+  margin: 0 400px 10px 79px; }
 
 body.skin-sc4:hover {
   border: 0px solid #9DB51D; }
@@ -667,7 +687,8 @@ body.skin-sc4:hover {
   color: #D31E2C !important; }
 
 .skin-sc5 img.border-encart {
-  border: 3px solid #D31E2C; }
+  border: 3px solid #D31E2C;
+  margin: 0 auto; }
 
 .skin-sc5 .border-encart, .skin-sc5:hover {
   border: 1px solid #D31E2C; }
@@ -686,7 +707,7 @@ body.skin-sc4:hover {
   background: #D31E2C;
   width: 30px;
   height: 2px;
-  margin: 0 0 10px 79px; }
+  margin: 0 400px 10px 79px; }
 
 body.skin-sc5:hover {
   border: 0px solid #D31E2C; }
@@ -700,7 +721,8 @@ body.skin-sc5:hover {
   color: #642F85 !important; }
 
 .skin-sc6 img.border-encart {
-  border: 3px solid #642F85; }
+  border: 3px solid #642F85;
+  margin: 0 auto; }
 
 .skin-sc6 .border-encart, .skin-sc6:hover {
   border: 1px solid #642F85; }
@@ -719,7 +741,7 @@ body.skin-sc5:hover {
   background: #642F85;
   width: 30px;
   height: 2px;
-  margin: 0 0 10px 79px; }
+  margin: 0 400px 10px 79px; }
 
 body.skin-sc6:hover {
   border: 0px solid #642F85; }

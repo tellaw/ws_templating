@@ -6557,6 +6557,9 @@ text-decoration: none;
     .myti-info-compte div.text-ip {
         padding: 3px 0 0 0;
         width: 85%;
+        margin: 0 auto;
+        float: none;
+        display: block;
     }
     .myti-info-compte .buton-abos {
         float: none;
