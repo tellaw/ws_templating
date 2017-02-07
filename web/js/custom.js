@@ -152,6 +152,8 @@ $(document).ready(function () {
                 top: "20px"
             });
         }
+        console.log("scroll");
+        $("#button-menu-header i").css({color: "#697277"});
     });
     if ($(".subMenu").length) {
         $('.subMenu').smint({
@@ -786,6 +788,25 @@ $(document).ready(function () {
         }
     });
 
+    $("#button-menu-header").hover(function() {
+        console.log("hover");
+        $(this).find("i").css({color: "#EC1625"});
+    }, function(){
+        if($("#navbar-x").css('display') == 'none'){
+            console.log("not-hover");
+            $(this).find("i").css({color: "#697277"});
+        }
+    }).on("click", function(){
+        if($("#navbar-x").css('display') == 'block'){
+            console.log("display-block");
+            $(this).find("i").css({color: "#697277"});
+        }
+        else {
+            console.log("display-none");
+            $(this).find("i").css({color: "#EC1625"});
+        }
+    });
+
     var url = window.location.href;
     if(url.indexOf('/contenus-gratuits') != -1 || url.indexOf('/livre-blanc') != -1 || url.indexOf('/conferences-en-ligne') != -1 || url.indexOf('/article-temoin') != -1){
         jQuery('.navbar-nav .contenu-gratuit').addClass('brd-bottom-active');
@@ -849,24 +870,6 @@ $(document).ready(function () {
         setTimeout(function () {
             document.location = url;
         }, 300);
-    });
-
-    $("#button-menu-header").hover(function(){
-        $("#button-menu-header i").css("color", "#EC1625");
-    }, function() {
-        $("#button-menu-header i").css("color", "#697277");
-    });
-
-    $("#button-menu-header").on("click", function(){
-        if($("#navbar-x").css('display') == 'block'){
-            $("#button-menu-header i").css("color", "#697277");
-        }
-        else {
-            $("#button-menu-header i").css("color", "#EC1625");
-        }
-    });
-    $(window).scroll(function () {
-        $("#button-menu-header i").css("color", "#697277");
     });
 });
 (function () {
