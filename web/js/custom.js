@@ -850,6 +850,23 @@ $(document).ready(function () {
             document.location = url;
         }, 300);
     });
+
+    $("#button-menu-header").on("click", function(){
+        if($("#navbar-x").css('display') == 'block'){
+            $("#button-menu-header i").css("color", "#697277");
+        }
+        else {
+            $("#button-menu-header i").css("color", "#EC1625");
+        }
+    });
+    $(window).scroll(function () {
+        if($("#navbar-x").css('display') == 'block'){
+            $("#button-menu-header i").css("color", "#697277");
+        }
+        else {
+            $("#button-menu-header i").css("color", "#EC1625");
+        }
+    });
 });
 (function () {
     var v = document.getElementsByClassName("youtube-player");
