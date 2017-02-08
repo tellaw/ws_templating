@@ -475,7 +475,6 @@ $(document).ready(function () {
             , width: 600
             , closeText: "X"
             , open: function () {
-                /*window.scrollTo(0, top );*/
                 return false;
             }
             , close: function () {
