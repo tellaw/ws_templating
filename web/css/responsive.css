@@ -1291,7 +1291,7 @@
       padding-right: 0px !important; }
     .nav > li.accueil a {
       width: 100%;
-      background-position: left 13px; }
+      background-position: left 13px !important; }
   .navbar-fixed-top .md-margin-top-35 {
     margin-top: 25px !important; }
   .navbar-fixed-top .container > div {

@@ -5,13 +5,12 @@ $(window).resize(function () {
         $('#sub-menu').css('margin-top', $('#main-header').height());
     }
     //    else if (!$("#sub-menu").hasClass("fxd")) {}
-});
-$(window).ready(function () {
-    if ($("#sub-menu").hasClass("fxd")) {
-        $('#sub-menu').css('margin-top', $('#main-header').height());
-    }
-    //    else if (!$("#sub-menu").hasClass("fxd")) {}
 
+    // Menu mobile
+    if(navigator.userAgent.match(/(iPhone|Android|BlackBerry|iPad)/i) || (window.matchMedia("(max-width:991px)").matches)){
+        $("#button-menu-header").show();
+        $("#navbar-x").removeClass("in");
+    }
     window.addEventListener("orientationchange", function() {
         if(window.matchMedia("(max-width:991px)").matches){
             $("#button-menu-header").show();
@@ -24,6 +23,12 @@ $(window).ready(function () {
             }
         }
     }, false);
+});
+$(window).ready(function () {
+    if ($("#sub-menu").hasClass("fxd")) {
+        $('#sub-menu').css('margin-top', $('#main-header').height());
+    }
+    //    else if (!$("#sub-menu").hasClass("fxd")) {}
 });
 //gestion back des onglets page domaines/secteurs/offres
 $(document).ready(function () {
