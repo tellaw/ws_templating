@@ -669,6 +669,13 @@ $(document).ready(function () {
         tag_link_thematic.parent().addClass('actif');
     }
 
+    //picto up down login box
+    $(".cross-close i").hover(function(){
+        $(this).toggleClass('fa-angle-down fa-angle-up');
+    },function(){
+        $(this).toggleClass('fa-angle-up fa-angle-down');
+    });
+
     // Menu mobile
     if(navigator.userAgent.match(/(iPhone|Android|BlackBerry|iPad)/i) || (window.matchMedia("(max-width:1024px)").matches)){
         var menuActualite = $("#ti_actu_submenu_container");
