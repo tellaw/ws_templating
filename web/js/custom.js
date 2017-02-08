@@ -857,39 +857,6 @@ $(document).ready(function () {
     $("#menu-menu-generique-ti li").each(function(){
         $(this).find("a").addClass("dropdown-toggle").attr("data-toggle","dropdown");
     });
-
-    var cookies = document.cookie ? document.cookie.split('; ') : [];
-
-    var ok = false;
-    for (var i = 0, l = cookies.length; i < l; i++) {
-        var parts = cookies[i].split('=');
-        var name = parts[0];
-        if (name === 'cookie_cnil') {
-            ok = true;
-            continue;
-        }
-    }
-    console.log(ok);
-    if(!ok) {
-        $('#bandeau-cookie').show();
-    }
-
-    // tracking analytics sur liens anv principale
-    $('a', '.main-menu-container, #menu-menu-generique-ti, #menu-menu-generique-ti-1').on('click', function (e) {
-        var link = $(this);
-        var url = link.attr('href');
-        var label = link.text();
-        e.preventDefault();
-        if(typeof(ga) == "function") {
-            ga('send', 'event', 'header_lucy_2017', label);
-        }else{
-            __gaTracker('send', 'event', 'header_lucy_2017', label);
-        }
-        //_gaq.push(['_trackEvent', 'header_unique_2017', label]);
-        setTimeout(function () {
-            document.location = url;
-        }, 300);
-    });
 });
 (function () {
     var v = document.getElementsByClassName("youtube-player");
