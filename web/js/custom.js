@@ -486,7 +486,7 @@ $(document).ready(function () {
         $("#switch-popin").dialog("widget").attr("id", "design-switch-popin").css("position", "absolute");
         $("#switch-popin iframe").attr("src", $(this).attr("href"));
         if (top > "420") {
-            $("#switch-popin").dialog("widget").css("top", top - $(window).height() / 3);
+            $("#switch-popin").dialog("widget").css("top", top );
         }
         else {
             $("#switch-popin").dialog("widget").css("top", "150px");
