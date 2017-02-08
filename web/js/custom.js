@@ -17,10 +17,8 @@ $(window).resize(function () {
             $("#navbar-x").removeClass("in");
         }
         else {
-            if(window.matchMedia("(max-width:991px)").matches){
-                $("#button-menu-header").hide();
-                $("#navbar-x").addClass("in");
-            }
+            $("#button-menu-header").hide();
+            $("#navbar-x").addClass("in");
         }
     }, false);
 });
