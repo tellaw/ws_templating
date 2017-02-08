@@ -6533,7 +6533,7 @@ text-decoration: none;
         width: 85%;
         margin: 0 auto;
         float: none;
-        display: block;
+        display: inline-block;
     }
     .myti-info-compte .buton-abos {
         float: none;
