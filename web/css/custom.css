@@ -3030,6 +3030,11 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color=#EC1625, Direction=NaN, St
     font-size: 13px;
 }
 
+#di-conf-popin .formError {
+    position: absolute;!important;
+    left:0!important;
+    width:auto!important;
+}
 #di-conf-popin .formErrorContent {
     position: relative;
     display: block;
