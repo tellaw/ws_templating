@@ -2944,77 +2944,6 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color=#EC1625, Direction=NaN, St
     border-bottom: 2.5px #EC1625 solid;
 }
 
-.myti-info-compte .left {
-    float: left;
-}
-
-.myti-info-compte div.left:first-child {
-    width: 10%;
-    text-align: center;
-}
-
-.myti-info-compte {
-    background: #e2e1e1;
-    margin: 0px auto;
-    padding: 5px 0;
-    max-width: 1140px;
-    border: none;
-    color: #697277;
-    font-family:myriad-pro;
-}
-
-.myti-info-compte div span.text,
-.myti-info-compte div.text-ip,
-.myti-info-compte div .text-ip a {
-    color: #697277;
-}
-
-.myti-info-compte div.text-ip {
-    display: inline-block;
-    margin: 0;
-    padding: 7px 40px 0 0;
-    line-height: 20px;
-    width: 65%;
-    font-weight: normal;
-    letter-spacing: 0.75px;
-}
-
-.myti-info-compte .buton-abos {
-    margin: 6px 0;
-    padding: 0;
-    float: right;
-    color: #1B8BBB;
-    width: 20%;
-    text-align: center;
-}
-
-.myti-info-compte .icone {
-    display: inline-block;
-    margin: 6px 0 0 0;
-}
-
-.myti-info-compte div .img-ip {
-    margin: 7px 0 7px;
-}
-
-.myti-info-compte .myti-buton-red {
-    padding: 3px 3px 1px 3px;
-}
-
-.myti-info-compte .myti-buton-red img {
-    margin: 0 3px 0 0;
-}
-
-.myti-info-compte .myti-buton-red span.text {
-    margin: 2px 0;
-    padding: 3px 0 3px 20px;
-    font-size: 12px;
-}
-
-.myti-info-compte .myti-icon {
-    padding: 0 0 15px 23px
-}
-
 .panel-heading .downloads-title a:hover {
     text-decoration: underline;
 }
@@ -6525,32 +6454,6 @@ color: #fff;
 text-decoration: none;
 }
 */
-/* exception pour le bandeau IP */
-
-@media screen and (max-width: 800px) {
-    .myti-info-compte div.text-ip {
-        padding: 3px 0 0 0;
-        width: 85%;
-        margin: 0 auto;
-        float: none;
-        display: inline-block;
-    }
-    .myti-info-compte .buton-abos {
-        float: none;
-        clear: both;
-        width: auto;
-    }
-}
-
-@media screen and (max-width: 425px) {
-    .myti-info-compte div.left:first-child {
-        display: none;
-    }
-    .myti-info-compte div.text-ip {
-        text-align: center;
-        width: 100%
-    }
-}
 
 .encart-gauche {
     float: left;
