@@ -11,6 +11,18 @@ $(window).resize(function () {
         $("#button-menu-header").show();
         $("#navbar-x").removeClass("in");
     }
+    window.addEventListener("orientationchange", function() {
+        if(window.matchMedia("(max-width:991px)").matches){
+            $("#button-menu-header").show();
+            $("#navbar-x").removeClass("in");
+        }
+        else {
+            if(window.matchMedia("(max-width:991px)").matches){
+                $("#button-menu-header").hide();
+                $("#navbar-x").addClass("in");
+            }
+        }
+    }, false);
 });
 $(window).ready(function () {
     if ($("#sub-menu").hasClass("fxd")) {
