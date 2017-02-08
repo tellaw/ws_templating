@@ -848,8 +848,8 @@ $(document).ready(function () {
         jQuery('.navbar-nav .ressources-doc').addClass('bg-active');
         return false;
     }
-    else {
-        jQuery('.navbar-nav .accueil').addClass('brd-bottom-active');
+    else if(url == "https://preprod.techniques-ingenieur.fr/" || url == "http://preprod.techniques-ingenieur.fr/"){
+        jQuery('.navbar-nav .ressources-doc').addClass('bg-active');
         return false;
     }
 
