@@ -859,6 +859,7 @@ $(document).ready(function () {
     });
 
     var cookies = document.cookie ? document.cookie.split('; ') : [];
+
     var ok = false;
     for (var i = 0, l = cookies.length; i < l; i++) {
         var parts = cookies[i].split('=');
@@ -868,6 +869,7 @@ $(document).ready(function () {
             continue;
         }
     }
+    console.log(ok);
     if(!ok) {
         $('#bandeau-cookie').show();
     }
