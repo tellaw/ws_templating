@@ -808,6 +808,10 @@ i.fa.margin-right-5 {
     padding-bottom: 20px !important;
 }
 
+.padding-bottom-25 {
+    padding-bottom: 25px !important;
+}
+
 .padding-bottom-70 {
     padding-bottom: 70px !important;
 }
@@ -2956,7 +2960,7 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color=#EC1625, Direction=NaN, St
 .myti-info-compte {
     background: #e2e1e1;
     margin: 0px auto;
-    padding: 5px 0;
+    padding: 10px 0;
     max-width: 1140px;
     border: none;
     color: #697277;
