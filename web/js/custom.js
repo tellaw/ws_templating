@@ -132,7 +132,7 @@ $(document).ready(function () {
                 .mouseover(function() {
                     $("#ressources-doc").show();
                     if(!$("li.ressources-doc").hasClass("bg-active")){
-                        $(this).addClass("bg-active");
+                        $("li.ressources-doc").addClass("bg-active");
                     };
                 })
                 .mouseleave(function() {
