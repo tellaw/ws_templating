@@ -812,6 +812,10 @@ i.fa.margin-right-5 {
     padding-bottom: 25px !important;
 }
 
+.padding-bottom-30 {
+    padding-bottom: 30px !important;
+}
+
 .padding-bottom-70 {
     padding-bottom: 70px !important;
 }
@@ -1897,6 +1901,10 @@ div[class^="element-wrapper-"] img {
 
 .footer a {
     font-size: 11px;
+    color: #ffffff;
+}
+.footer a:hover {
+    text-decoration: underline;
 }
 
 .footer h2 {
@@ -6605,7 +6613,7 @@ ul.inline li {
     padding: 0 5px;
 }
 .line1 li, .line2 li {
-    border-right: 1px solid;
+    border-right: 1px solid #ffffff;
 }
 .ui-widget-header {
     font-weight:normal;
