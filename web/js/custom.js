@@ -849,7 +849,7 @@ $(document).ready(function () {
         return false;
     }
     else if(url == "https://preprod.techniques-ingenieur.fr/" || url == "http://preprod.techniques-ingenieur.fr/"){
-        jQuery('.navbar-nav .accueil').addClass('bg-active');
+        jQuery('.navbar-nav .accueil').addClass('brd-bottom-active');
         return false;
     }
 
