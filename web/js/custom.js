@@ -128,7 +128,22 @@ $(document).ready(function () {
                     return false;
                 }
             });
-            $("#query-3").autocomplete( "widget" ).css({ top: $("#query-3").offset().top + 280, position: "absolute" });
+            $("#query-3").autocomplete( "widget" ).css({ top: $("#query-3").offset().top + 280, position: "absolute" })
+                .mouseover(function() {
+                    $("#ressources-doc").show();
+                    if(!$("li.ressources-doc").hasClass("bg-active")){
+                        $(this).addClass("bg-active");
+                    };
+                })
+                .mouseleave(function() {
+                    $("#ressources-doc").removeAttr("style");
+
+                    var url = window.location.href;
+                    if(url.indexOf('/ressources-documentaires') == -1 && url.indexOf('/base-documentaire') == -1){
+                        $("li.ressources-doc").removeClass("bg-active");
+                        return false;
+                    }
+                });
         }
     });
 

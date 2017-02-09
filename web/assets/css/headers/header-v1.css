@@ -410,18 +410,21 @@
 
 	.header-v1 .navbar-nav > li.dropdown:hover > .dropdown-menu {
 		display: block;
+	}
+
+	.header-v1 .navbar-nav > li.dropdown > .dropdown-menu {
 		border:none;
 		border-top: 1px solid #C6C6C6;
 		box-shadow: none;
 	}
 
-	.header-v1 .navbar-nav > li.dropdown:hover > .dropdown-menu div.col-md-6 + div.col-md-3 {
+	.header-v1 .navbar-nav > li.dropdown > .dropdown-menu div.col-md-6 + div.col-md-3 {
 		border-left: 1px solid #C6C6C6;
 		border-right: 1px solid #C6C6C6;
 		padding:0 50px;
 	}
 
-	.header-v1 .navbar-nav > li.dropdown:hover > .dropdown-menu div.col-md-6 + div.col-md-3 + div.col-md-3 {
+	.header-v1 .navbar-nav > li.dropdown > .dropdown-menu div.col-md-6 + div.col-md-3 + div.col-md-3 {
 		padding-left:50px;
 	}
 
