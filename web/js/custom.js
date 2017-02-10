@@ -869,7 +869,7 @@ $(document).ready(function () {
     }
 
     // ajout class et attributs sur les liens du menu
-    $("#menu-menu-generique-ti li").each(function(){
+    $("#menu-menu-generique-ti > li").each(function(){
         $(this).find("a").addClass("dropdown-toggle").attr("data-toggle","dropdown");
     });
 });
