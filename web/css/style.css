@@ -1383,8 +1383,8 @@ label.text-hover:hover {
 .encart-top-account {
   position: relative; }
   .encart-top-account p {
-    background: url("../images/visuel-webinar.jpg") no-repeat center center transparent;
-    padding: 55px 0;
+    background: url("../images/visuel-mon-compte.jpg") no-repeat center center transparent;
+    padding: 65px 0;
     margin-top: 0; }
     .encart-top-account p > span {
       background: #1b8bbb;
