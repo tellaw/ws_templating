@@ -6231,6 +6231,9 @@ form + a:hover {
 .hoveru:hover {
     text-decoration: underline;
 }
+.blog-thumb-desc .hoveru:hover {
+    color: #EC1625;
+}
 /* ERROR PAGE 40X */
 #error-page .row hr {
     background: #EC1625;

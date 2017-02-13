@@ -867,6 +867,10 @@ $(document).ready(function () {
         jQuery('.navbar-nav .magazine-actualite').addClass('bg-active');
         return false;
     }
+    else if(url.indexOf('/glossaire') != -1){
+        jQuery('.navbar-nav .magazine-actualite').addClass('bg-active');
+        return false;
+    }
     else if(url.indexOf('/ressources-documentaires') != -1 || url.indexOf('/base-documentaire') != -1){
         jQuery('.navbar-nav .ressources-doc').addClass('bg-active');
         return false;
