@@ -5,12 +5,549 @@
 {% block body %}
 <!--=== Content Part  ===-->
 <div class="container slider-margin-top">
-    <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-8">
-            <div class="row">
-                <div class="col-xs-6 col-sm-6 col-md-6 no-gutters">
-                    {{ module('actualite/article-300x250') }}
-                    {{ module('actualite/article-300x250') }}
+    <div class="row margin-0">
+        <div class="col-xs-12 no-gutters">
+            <div class="clearfix background-account">
+                <div class="encart-top-account">
+                    <p class="text-center font-size-24-22-20">
+                        <span class="font-family-myriadpro-semibold letter-spacing-75">Espace Mon Compte</span>
+                    </p>
+                </div>
+                <div class="encart-infos">
+                    <div class="col-xs-12 col-md-6 no-gutters">
+                        <div class="col-xs-2 no-gutters-right text-center">
+                            <img src="/images/silhouette.jpg" alt="silhouette" class="inline-block">
+                        </div>
+                        <div class="col-xs-10">
+                            <span class="inline-block margin-top-10 margin-left-15 color-blue-eti font-size-20">Bonjour Marie Lesavre Du Colombier</span>
+                            <br>
+                            <span class="inline-block margin-left-15 margin-top-5"> > <a href="#" class="link letter-spacing-75">Accueil mon compte</a></span>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6 no-gutters">
+                        <div class="col-xs-6 padding-top-20 padding-bottom-20">
+                            <a href="">
+                                <span class="col-xs-2 bg-color-red-eti text-center no-gutters"><i class="fa fa-envelope-o"></i></span>
+                                <span class="text col-xs-10 color-red-eti letter-spacing-75 font-size-15 no-gutters padding-left-10">Service relation clientèle</span>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 padding-top-20 padding-bottom-20">
+                            <a href="">
+                                <span class="col-xs-2 bg-color-red-eti text-center no-gutters"><i class="fa fa-user"></i></span>
+                                <span class="text col-xs-10 color-red-eti letter-spacing-75 font-size-15 no-gutters padding-left-10">Mon conseiller commercial</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row padding-bottom-30 margin-0 background-account">
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 no-gutters">
+            <div class="clearfix">
+                <p id="menu-account" class="hidden-lg hidden-md padding-top-12 padding-bottom-12 padding-left-10 padding-right-15 padding-left-15 letter-spacing-75 margin-bottom-10 active">
+                    <span>MENU</span>
+                </p>
+                <ul class="list-group sidebar-nav-v1" id="sidebar-nav">
+                    <!-- espace relation clientèle -->
+                    <li class="list-group-item list-toggle bg-color-red-eti">
+                        <a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapse-espace-relation-clientele">Espace relation clientèle</a>
+                        <ul id="collapse-espace-relation-clientele" class="collapse in">
+                            <li><a href="#">Gestion des contacts</a></li>
+                            <li><a href="#">Gestion des utilisateurs</a></li>
+                            <li><a href="#">Statistiques</a></li>
+                            <li><a href="#">Envoyer un message</a></li>
+                        </ul>
+                    </li>
+                    <!-- administration du site -->
+                    <li class="list-group-item list-toggle bg-color-red-eti">
+                        <a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapse-administration-site">Administration du site</a>
+                        <ul id="collapse-administration-site" class="collapse in">
+                            <li><a href="#">Gestion SQR</a></li>
+                            <li><a href="#">Gestion des logiciels</a></li>
+                            <li><a href="#">Gestion des campagne Dolist</a></li>
+                            <li><a href="#">Gestion du cache</a></li>
+                            <li><a href="#">Gestion des souscriptions</a></li>
+                            <li><a href="#">Gestion des produits</a></li>
+                            <li><a href="#">Configuration globale</a></li>
+                        </ul>
+                    </li>
+                    <!-- mon tableau de bord -->
+                    <li class="list-group-item actif">
+                        <a href="#"><i class="fa fa-compass"></i> Mon tableau de bord</a>
+                    </li>
+                    <!-- mes ressources documentaires -->
+                    <li class="list-group-item">
+                        <a href="#"><i class="fa fa-list-ul"></i> Mes ressources documentaires</a>
+                    </li>
+                    <!-- mes services -->
+                    <li class="list-group-item list-toggle">
+                        <a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapse-services">Mes services</a>
+                        <ul id="collapse-services" class="collapse in">
+                            <li><a href="#"><i class="fa fa-exchange vertical-align-center"></i> Questions aux experts</a></li>
+                            <li class="actif"><a href="#"><i class="fa fa-globe vertical-align-center"></i> Articles découverte</a></li>
+                            <li><a href="#"><i class="fa fa-globe vertical-align-center"></i> Dictionnaire technique multilingue</a></li>
+                            <li><a href="#"><i class="fa fa-book vertical-align-center"></i> Impression à la demande</a></li>
+                        </ul>
+                    </li>
+                    <!-- mes logiciels -->
+                    <li class="list-group-item list-toggle">
+                        <a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapse-logiciels">Mes logiciels</a>
+                        <ul id="collapse-logiciels" class="collapse in">
+                            <li><a href="#"><i class="fa fa-flask vertical-align-center"></i> RiskEv</a></li>
+                            <li><a href="#"><i class="fa fa-html5 vertical-align-center"></i> Toksev</a></li>
+                        </ul>
+                    </li>
+                    <!-- mon profil -->
+                    <li class="list-group-item list-toggle">
+                        <a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapse-profil">Mon profil</a>
+                        <ul id="collapse-profil" class="collapse in">
+                            <li><a href="#"><i class="fa fa-user vertical-align-center"></i> Mes données personnelles</a></li>
+                            <li><a href="#"><i class="fa fa-lock vertical-align-center"></i> Mon mot de passe</a></li>
+                            <li><a href="#"><i class="fa fa-plane vertical-align-center"></i> Mes newsletters et alertes</a></li>
+                            <li><a href="#"><i class="fa fa-download vertical-align-center"></i> Mes téléchargements</a></li>
+                            <li><a href="#"><i class="fa fa-pencil vertical-align-center"></i> Mes annotations</a></li>
+                            <li><a href="#"><i class="fa fa-comment-o vertical-align-center"></i> Mes commentaires</a></li>
+                            <li><a href="#"><i class="fa fa-user-plus vertical-align-center"></i> Mon code de rattachement</a></li>
+                        </ul>
+                    </li>
+                    <!-- mon espace admin -->
+                    <li class="list-group-item list-toggle">
+                        <a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapse-espace-admin">Mon espace admin</a>
+                        <ul id="collapse-espace-admin" class="collapse in">
+                            <li><a href="#"><i class="fa fa-info vertical-align-center"></i> Information du compte</a></li>
+                            <li><a href="#"><i class="fa fa-cog vertical-align-center"></i> Personnaliser mon compte</a></li>
+                            <li><a href="#"><i class="fa fa-users vertical-align-center"></i> Gérer mes utilisateurs</a></li>
+                            <li><a href="#"><i class="fa fa-area-chart vertical-align-center"></i> Mes statistiques du compte</a></li>
+                            <li><a href="#"><i class="fa fa-server vertical-align-center"></i> Mon historique de téléchargement</a></li>
+                        </ul>
+                    </li>
+                    <!-- aide -->
+                    <li class="list-group-item"><a href="shortcode_accordion_and_tabs.html"><i class="fa fa-clipboard vertical-align-center"></i> Aide</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 no-gutters">
+            <div class="clearfix">
+                <div class="col-xs-12 margin-bottom-10">
+                    <div class="background-blanc padding-top-25 padding-bottom-25">
+                        <p class="text-center color-blue-eti text-uppercase font-size-20 letter-spacing-75">Tableau de bord</p>
+                        <p class="font-size-15 letter-spacing-75 line-height-18 text-center">Retrouvez ici les dernières informations de votre compte<br>ainsi que des accès directs à vos principaux espaces.</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 margin-bottom-10">
+                    <div class="background-jaune padding-top-25 padding-bottom-25">
+                        <p class="text-center color-red-eti font-size-20 letter-spacing-75">Vous avez un message !</p>
+                        <p class="font-size-15 letter-spacing-75 line-height-18 text-center">Retrouvez ici les dernières informations de votre compte<br>ainsi que des accès directs à vos principaux espaces.</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 xs-padding-right-15 sm-padding-right-15 padding-right-5">
+                    <div class="col-xs-12 no-gutters">
+                        <div class="background-blanc clearfix">
+                            <p class="border-bottom-account-3 color-blue-eti padding-left-20 padding-right-20 padding-top-10 padding-bottom-10">
+                                <i class="fa fa-align-left font-size-20 margin-right-15 vertical-align-center" aria-hidden="true"></i>
+                                <span class="text-uppercase letter-spacing-75 font-size-16">Mon fil d'actualité</span>
+                            </p>
+                            <div class="fil-actu padding-top-20 padding-bottom-20">
+                                <p class="letter-spacing-75 date margin-bottom-10">22/01/2016</p>
+                                <div class="clear"></div>
+                                <ul class="timeline-v1">
+                                    <li class="timeline-inverted">
+                                        <div class="timeline-badge primary">
+                                            <i class="cbp_tmicon rounded-x"></i>
+                                        </div>
+                                        <div class="timeline-panel background-ebebeb">
+                                            <p class="tweet-category color-blue-eti">Mon activité</p>
+                                            <p class="tweet-message">Bla bla sur mon activité</p>
+                                        </div>
+                                    </li>
+                                    <li class="timeline-inverted">
+                                        <div class="timeline-badge primary">
+                                            <i class="cbp_tmicon rounded-x"></i>
+                                        </div>
+                                        <div class="timeline-panel background-ebebeb">
+                                            <p class="tweet-category color-blue-eti">Mon activité</p>
+                                            <p class="tweet-message">Bla bla sur mon activité Bla bla sur mon activité Bla bla sur mon activité Bla bla sur mon activité Bla bla sur mon activité Bla bla sur mon activité</p>
+                                            <a href="#">Bla bla sur mon activité</a>
+                                        </div>
+                                    </li>
+                                    <li class="timeline-inverted">
+                                        <div class="timeline-badge primary">
+                                            <i class="cbp_tmicon rounded-x"></i>
+                                        </div>
+                                        <div class="timeline-panel background-ebebeb">
+                                            <p class="tweet-category color-blue-eti">Mon activité</p>
+                                            <p class="tweet-message">Bla bla sur mon activité Bla bla sur mon activité Bla bla sur mon activité</p>
+                                        </div>
+                                    </li>
+                                    <li class="clearfix margin-0" style="float: none;"></li>
+                                </ul>
+
+                                <p class="letter-spacing-75 date margin-bottom-10">21/01/2016</p>
+                                <div class="clear"></div>
+                                <ul class="timeline-v1">
+                                    <li class="timeline-inverted">
+                                        <div class="timeline-badge primary">
+                                            <i class="cbp_tmicon rounded-x"></i>
+                                        </div>
+                                        <div class="timeline-panel background-ebebeb">
+                                            <p class="tweet-category color-blue-eti">Mon activité</p>
+                                            <p class="tweet-message">Bla bla sur mon activité</p>
+                                        </div>
+                                    </li>
+                                    <li class="timeline-inverted">
+                                        <div class="timeline-badge primary">
+                                            <i class="cbp_tmicon rounded-x"></i>
+                                        </div>
+                                        <div class="timeline-panel background-ebebeb">
+                                            <p class="tweet-category color-blue-eti">Mon activité</p>
+                                            <p class="tweet-message">Bla bla sur mon activité Bla bla sur mon activité Bla bla sur mon activité Bla bla sur mon activité Bla bla sur mon activité Bla bla sur mon activité</p>
+                                            <a href="#">Bla bla sur mon activité</a>
+                                        </div>
+                                    </li>
+                                    <li class="timeline-inverted">
+                                        <div class="timeline-badge primary">
+                                            <i class="cbp_tmicon rounded-x"></i>
+                                        </div>
+                                        <div class="timeline-panel background-ebebeb">
+                                            <p class="tweet-category color-blue-eti">Mon activité</p>
+                                            <p class="tweet-message">Bla bla sur mon activité Bla bla sur mon activité Bla bla sur mon activité</p>
+                                        </div>
+                                    </li>
+                                    <li class="timeline-inverted">
+                                        <div class="timeline-badge primary">
+                                            <i class="cbp_tmicon rounded-x"></i>
+                                        </div>
+                                        <div class="timeline-panel background-ebebeb">
+                                            <p class="tweet-category color-blue-eti">Mon activité</p>
+                                            <p class="tweet-message">Bla bla sur mon activité Bla bla sur mon activité Bla bla sur mon activité Bla bla sur mon activité Bla bla sur mon activité Bla bla sur mon activité</p>
+                                            <a href="#">Bla bla sur mon activité</a>
+                                        </div>
+                                    </li>
+                                    <li class="timeline-inverted">
+                                        <div class="timeline-badge primary">
+                                            <i class="cbp_tmicon rounded-x"></i>
+                                        </div>
+                                        <div class="timeline-panel background-ebebeb">
+                                            <p class="tweet-category color-blue-eti">Mon activité</p>
+                                            <p class="tweet-message">Bla bla sur mon activité Bla bla sur mon activité Bla bla sur mon activité</p>
+                                        </div>
+                                    </li>
+                                    <li class="clearfix margin-0" style="float: none;"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 no-gutters">
+                        <hr class="hr-account">
+                    </div>
+                    <div class="col-xs-12 no-gutters">
+                        <div class="background-blanc clearfix">
+                            <p class="border-bottom-account-3 color-blue-eti padding-left-20 padding-right-20 padding-top-10 padding-bottom-10">
+                                <i class="fa fa-plus font-size-20 margin-right-15 vertical-align-center" aria-hidden="true"></i>
+                                <span class="text-uppercase letter-spacing-75 font-size-16">Mes services</span>
+                            </p>
+                            <div class="services block-link-hover padding-top-15 padding-bottom-15 clearfix text-center">
+                                <a class="col-xs-3" href="">
+                                    <div class="margin-bottom-10 padding-9 border-blue"><i class="fa fa-exchange font-size-26" aria-hidden="true"></i></div>
+                                    <span class="font-size-13 letter-spacing-75">Questions aux experts</span>
+                                </a>
+                                <a class="col-xs-3" href="">
+                                    <div class="margin-bottom-10 padding-9 border-blue"><i class="fa fa-newspaper-o font-size-26" aria-hidden="true"></i></div>
+                                    <span class="font-size-13 letter-spacing-75">Articles découverte</span>
+                                </a>
+                                <a class="col-xs-3" href="">
+                                    <div class="margin-bottom-10 padding-9 border-blue"><i class="fa fa-globe font-size-26" aria-hidden="true"></i></div>
+                                    <span class="font-size-13 letter-spacing-75">Dictionnaire multilingue</span>
+                                </a>
+                                <a class="col-xs-3" href="">
+                                    <div class="margin-bottom-10 padding-9 border-blue"><i class="fa fa-book font-size-26" aria-hidden="true"></i></div>
+                                    <span class="font-size-13 letter-spacing-75">Impression à la demande</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 no-gutters">
+                        <hr class="hr-account">
+                    </div>
+                    <div class="col-xs-12 no-gutters">
+                        <div class="background-blanc clearfix">
+                            <p class="border-bottom-account-3 color-blue-eti padding-left-20 padding-right-20 padding-top-10 padding-bottom-10">
+                                <i class="fa fa-wrench font-size-20 margin-right-15 vertical-align-center" aria-hidden="true"></i>
+                                <span class="text-uppercase letter-spacing-75 font-size-16">Mes logiciels</span>
+                            </p>
+                            <div class="logiciels padding-30 clearfix text-center">
+                                <a href="">
+                                    <p class="">
+                                        <img src="/images/riskev-logo.png" alt="RiskEV">
+                                    </p>
+                                    <p class="letter-spacing-75 margin-top-10">L'évaluation des risques profesionnels</p>
+                                </a>
+                                <hr class="hr-account margin-top-20 margin-bottom-20">
+                                <a href="">
+                                    <p class="">
+                                        <img src="/images/toxev-logo.png" alt="TOXEV">
+                                    </p>
+                                    <p class="letter-spacing-75 margin-top-10">La gestion du risque chimique</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 no-gutters">
+                        <hr class="hr-account">
+                    </div>
+                    <div class="col-xs-12 no-gutters">
+                        <div class="background-blanc clearfix">
+                            <p class="border-bottom-account-3 color-blue-eti padding-left-20 padding-right-20 padding-top-10 padding-bottom-10">
+                                <i class="fa fa-user color-blue-eti font-size-20 margin-right-15 vertical-align-center" aria-hidden="true"></i>
+                                <span class="text-uppercase letter-spacing-75 font-size-16">Mon profil</span>
+                            </p>
+                            <div class="block-link-hover profil clearfix text-center padding-top-15 padding-bottom-15">
+                                <p class="letter-spacing-75 margin-bottom-20">Retrouvez tous les éléments de votre profil ici :</p>
+                                <a class="col-xs-4" href="">
+                                    <div class="margin-bottom-10 border-blue padding-10">
+                                        <i class="fa fa-lock font-size-26" aria-hidden="true"></i>
+                                        <p class="font-size-13 letter-spacing-75 padding-top-10">Mon mot<br>de passe</p>
+                                    </div>
+                                </a>
+                                <a class="col-xs-4 no-gutters" href="">
+                                    <div class="margin-bottom-10 border-blue padding-top-10 padding-bottom-10 padding-left-5 padding-right-5">
+                                        <i class="fa fa-bell font-size-26" aria-hidden="true"></i><br>
+                                        <p class="font-size-13 letter-spacing-75 padding-top-10">Mes newsletters<br>et alertes</p>
+                                    </div>
+                                </a>
+                                <a class="col-xs-4" href="">
+                                    <div class="margin-bottom-10 border-blue padding-22 color-blue-eti"><span class="font-size-35 font-family-myriadpro-bold">+</span></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 no-gutters">
+                        <hr class="hr-account">
+                    </div>
+                    <div class="col-xs-12 no-gutters">
+                        <div class="background-blanc clearfix padding-top-30 padding-bottom-30 padding-left-10 padding-right-10 zoning">
+                            <div class="col-xs-3 no-gutters text-center">
+                                <i class="fa fa-cog font-size-85 color-blue-eti" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-xs-9">
+                                <p class="text-uppercase color-blue-eti margin-bottom-15 font-size-20 font-family-myriadpro-semibold letter-spacing-75">Mon espace admin</p>
+                                <p class="text-uppercase color-blue-eti margin-bottom-15 font-size-18 letter-spacing-75">N°7200096533</p>
+                                <p> > <a href="#" class="margin-top-10 link letter-spacing-75">Toute votre administration de compte</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 no-gutters hidden-md hidden-lg">
+                        <hr class="hr-account">
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 xs-padding-left-15 sm-padding-left-15 padding-left-5">
+                    <div class="col-xs-12 no-gutters">
+                        <div class="background-blanc clearfix zoning">
+                            <p class="border-bottom-account-3 color-blue-eti padding-left-20 padding-right-20 padding-top-10 padding-bottom-10">
+                                <i class="fa fa-list-ul color-blue-eti font-size-20 margin-right-15 vertical-align-center" aria-hidden="true"></i>
+                                <span class="text-uppercase letter-spacing-75 font-size-16">Mes ressources documentaires</span>
+                            </p>
+                            <div class="padding-top-20 padding-bottom-20 padding-left-15 padding-right-15 clearfix">
+                                <div class="col-xs-3 col-md-4 text-center">
+                                    <img src="/images/b_timent-et-environnement.png" class="img-responsive" alt="Ressources documentaires">
+                                </div>
+                                <div class="col-xs-9 col-md-8">
+                                    <p> > <a href="#" class="margin-top-10 letter-spacing-75 font-size-16 line-height-20">Retrouvez toutes vos Offres ressources documentaires</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 no-gutters">
+                        <hr class="hr-account">
+                    </div>
+                    <div class="col-xs-12 no-gutters">
+                        <div class="background-blanc clearfix">
+                            <p class="border-bottom-account-3 color-blue-eti padding-left-20 padding-right-20 padding-top-10 padding-bottom-10">
+                                <i class="fa fa-user-plus color-blue-eti font-size-20 margin-right-15 vertical-align-center" aria-hidden="true"></i>
+                                <span class="text-uppercase letter-spacing-75 font-size-16">Me rattacher</span>
+                            </p>
+                            <div class="rattacher padding-top-20 padding-bottom-20 padding-left-15 padding-right-15 clearfix">
+                                <div class="clearfix">
+                                    <div class="col-xs-9 col-md-8 no-gutters">
+                                        <p class="letter-spacing-75 color-blue-eti text-center">Si votre administrateur vous a communiqué un code de rattachement, vous pouvez le saisir ici&nbsp;:</p>
+                                    </div>
+                                    <div class="col-xs-3 col-md-4 text-center">
+                                        <img src="/images/b_timent-et-environnement.png" class="img-responsive" alt="Ressources documentaires">
+                                    </div>
+                                </div>
+                                <div class="text-center margin-top-20">
+                                    <input type="text" id="code" name="secretCode" value="">
+                                    <input class="btn-u btn-u-blue letter-spacing-75" type="submit" value="OK" name="submitSecretCode">
+
+                                    <p style="font-size:11px; text-align:center;margin: 5px;">
+                                        <span class="red"></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 no-gutters">
+                        <hr class="hr-account">
+                    </div>
+                    <div class="col-xs-12 no-gutters">
+                        <div class="background-blanc clearfix zoning">
+                            <p class="border-bottom-account-3 color-blue-eti padding-left-20 padding-right-20 padding-top-10 padding-bottom-10">
+                                <i class="fa fa-download color-blue-eti font-size-20 margin-right-15 vertical-align-center" aria-hidden="true"></i>
+                                <span class="text-uppercase letter-spacing-75 font-size-16">Mes téléchargements en cours</span>
+                            </p>
+                            <div class="downloads padding-top-20 padding-bottom-20 padding-left-15 padding-right-15 clearfix">
+                                <div class="col-xs-3 no-gutters text-center margin-top-15">
+                                    <i class="fa fa-hourglass-end font-size-58 color-blue-eti" aria-hidden="true"></i>
+                                </div>
+                                <div class="col-xs-9 no-gutters">
+                                    <p class="letter-spacing-75 text-center">
+                                        <span class="pastille rounded-x badge font-size-18">9</span>
+                                        <span class="font-size-16">Téléchargements en attente :</span>
+                                    </p>
+                                    <p class="text-center">
+                                        <a href="" class="btn-u btn-u-blue btn-u-sm btn-center text-uppercase margin-top-15">
+                                            <i class="fa fa-download font-size-20 margin-right-5 vertical-align-center"></i>Télécharger
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 no-gutters">
+                        <hr class="hr-account">
+                    </div>
+                    <div class="col-xs-12 no-gutters">
+                        <div class="background-blanc clearfix">
+                            <p class="border-bottom-account-3 color-blue-eti padding-left-20 padding-right-20 padding-top-10 padding-bottom-10">
+                                <i class="fa fa-download color-blue-eti font-size-20 margin-right-15 vertical-align-center" aria-hidden="true"></i>
+                                <span class="text-uppercase letter-spacing-75 font-size-16">Mes derniers téléchargements</span>
+                            </p>
+                            <div class="downloads padding-top-20 padding-bottom-20 padding-left-15 padding-right-15 clearfix">
+                                <div class="clearfix zoning">
+                                    <div class="col-xs-1 no-gutters text-center">
+                                        <i class="fa fa-file-pdf-o color-blue-eti font-size-35" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="col-xs-11 no-gutters-right">
+                                        <p class="font-size-13">Date : 03 janv. 2016</p>
+                                        <p class="font-family-myriadpro-semibold margin-top-5 margin-bottom-5 letter-spacing-75 line-height-16">Mettre en oeuvre les indicateurs et les tableaux de bord en eaux troubles</p>
+                                        <p class="font-size-12">Référence : 0342 | Poids : 340 ko | sur le compte : 72000100403</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 no-gutters">
+                                    <hr class="hr-account">
+                                </div>
+                                <div class="clearfix zoning">
+                                    <div class="col-xs-1 no-gutters text-center">
+                                        <i class="fa fa-file-pdf-o color-blue-eti font-size-35" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="col-xs-11 no-gutters-right">
+                                        <p class="font-size-13">Date : 03 janv. 2016</p>
+                                        <p class="font-family-myriadpro-semibold margin-top-5 margin-bottom-5 letter-spacing-75 line-height-16">Mettre en oeuvre les indicateurs et les tableaux de bord en eaux troubles</p>
+                                        <p class="font-size-12">Référence : 0342 | Poids : 340 ko | sur le compte : 72000100403</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 no-gutters">
+                                    <hr class="hr-account">
+                                </div>
+                                <div class="clearfix zoning">
+                                    <div class="col-xs-1 no-gutters text-center">
+                                        <i class="fa fa-file-pdf-o color-blue-eti font-size-35" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="col-xs-11 no-gutters-right">
+                                        <p class="font-size-13">Date : 03 janv. 2016</p>
+                                        <p class="font-family-myriadpro-semibold margin-top-5 margin-bottom-5 letter-spacing-75 line-height-16">Mettre en oeuvre les indicateurs et les tableaux de bord en eaux troubles</p>
+                                        <p class="font-size-12">Référence : 0342 | Poids : 340 ko | sur le compte : 72000100403</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flou"></div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 no-gutters">
+                        <hr class="hr-account">
+                    </div>
+                    <div class="col-xs-12 no-gutters">
+                        <div class="background-blanc clearfix zoning">
+                            <p class="border-bottom-account-3 color-blue-eti padding-left-20 padding-right-20 padding-top-10 padding-bottom-10">
+                                <i class="fa fa-newspaper-o color-blue-eti font-size-20 margin-right-15 vertical-align-center" aria-hidden="true"></i>
+                                <span class="text-uppercase letter-spacing-75 font-size-16">Mon magazine d'actualité</span>
+                            </p>
+                            <div class="actualite padding-20 clearfix">
+                                <div class="clearfix zoning">
+                                    <div class="col-xs-12 no-gutters">
+                                        <img class="img-responsive" src="/images/fond-dictionnaire-technique-multilingue.png" alt="">
+                                    </div>
+                                    <div class="col-xs-12 no-gutters margin-top-7">
+                                        <span class="text-uppercase font-family-myriadpro-semibold font-size-12 color-697277">En ce moment</span>
+                                        <span class="font-size-13 color-697277 pull-right">2 fév 2017</span>
+                                        <p><a href="#" class="color-red-eti font-family-myriadpro-semibold letter-spacing-75 margin-bottom-5 margin-top-5">Énergies renouvelables: un élan mondial à amplifier</a></p>
+                                        <p class="line-height-16 letter-spacing-75 margin-bottom-0 hidden-xs">
+                                            Le 18e colloque annuel du Syndicat des énergies renouvelables s'est tenu...
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 no-gutters">
+                                    <hr class="hr-account">
+                                </div>
+                                <div class="clearfix zoning">
+                                    <div class="col-xs-12 no-gutters">
+                                        <img class="img-responsive" src="/images/fond-dictionnaire-technique-multilingue.png" alt="">
+                                    </div>
+                                    <div class="col-xs-12 no-gutters margin-top-7">
+                                        <span class="text-uppercase font-family-myriadpro-semibold font-size-12 color-697277">En ce moment</span>
+                                        <span class="font-size-13 color-697277 pull-right">2 fév 2017</span>
+                                        <p><a href="#" class="color-red-eti font-family-myriadpro-semibold letter-spacing-75 margin-bottom-5 margin-top-5">Énergies renouvelables: un élan mondial à amplifier</a></p>
+                                        <p class="line-height-16 letter-spacing-75 margin-bottom-0 hidden-xs">
+                                            Le 18e colloque annuel du Syndicat des énergies renouvelables s'est tenu le 31 janvier à la Maison de la Mutualité...
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 no-gutters">
+                                    <hr class="hr-account">
+                                </div>
+                                <div class="clearfix zoning">
+                                    <div class="col-xs-3 no-gutters">
+                                        <img class="img-responsive" src="/images/fond-dictionnaire-technique-multilingue.png" alt="">
+                                    </div>
+                                    <div class="col-xs-9 no-gutters padding-left-10">
+                                        <span class="text-uppercase font-family-myriadpro-semibold font-size-12 color-697277">En ce moment</span>
+                                        <span class="font-size-13 color-697277 pull-right">2 fév 2017</span>
+                                        <p><a href="#" class="color-red-eti font-family-myriadpro-semibold letter-spacing-75 margin-bottom-5 margin-top-5">Énergies renouvelables: un élan mondial à amplifier</a></p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 no-gutters">
+                                    <hr class="hr-account">
+                                </div>
+                                <div class="clearfix zoning">
+                                    <div class="col-xs-9 no-gutters padding-right-10">
+                                        <span class="text-uppercase font-family-myriadpro-semibold font-size-12 color-697277">En ce moment</span>
+                                        <span class="font-size-13 color-697277 pull-right">2 fév 2017</span>
+                                        <p><a href="#" class="color-red-eti font-family-myriadpro-semibold letter-spacing-75 margin-bottom-5 margin-top-5">Énergies renouvelables: un élan mondial à amplifier</a></p>
+                                    </div>
+                                    <div class="col-xs-3 no-gutters">
+                                        <img class="img-responsive" src="/images/fond-dictionnaire-technique-multilingue.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 no-gutters">
+                                    <hr class="hr-account">
+                                </div>
+                                <div class="clearfix zoning">
+                                    <div class="col-xs-12 no-gutters">
+                                        <span class="text-uppercase font-family-myriadpro-semibold font-size-12 color-697277">En ce moment</span>
+                                        <span class="font-size-13 color-697277 pull-right">2 fév 2017</span>
+                                        <p><a href="#" class="color-red-eti font-family-myriadpro-semibold letter-spacing-75 margin-bottom-5 margin-top-5">Énergies renouvelables: un élan mondial à amplifier</a></p>
+                                    </div>
+                                </div>
+                                <div class="clearfix text-center margin-top-10 text-uppercase">
+                                    <a class="btn-u btn-u-blue btn-u-sm btn-center" href="/actualite/">
+                                        <i class="fa fa-forward font-size-16 vertical-align-center" aria-hidden="true"></i> Voir tout
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

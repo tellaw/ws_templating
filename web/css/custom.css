@@ -352,6 +352,10 @@ dt {
     padding: 0px !important;
 }
 
+.padding-9 {
+    padding: 9px!important;
+}
+
 .padding-10 {
     padding: 10px!important;
 }
@@ -362,6 +366,18 @@ dt {
 
 .padding-20 {
     padding: 20px!important;
+}
+
+.padding-22 {
+    padding: 22px!important;
+}
+
+.padding-26 {
+    padding: 26px!important;
+}
+
+.padding-30 {
+    padding: 30px!important;
 }
 
 .padding-80 {
@@ -800,6 +816,10 @@ i.fa.margin-right-5 {
     padding-bottom: 10px !important;
 }
 
+.padding-bottom-12 {
+    padding-bottom: 12px !important;
+}
+
 .padding-bottom-15 {
     padding-bottom: 15px !important;
 }
@@ -1002,6 +1022,10 @@ i.fa.margin-right-5 {
 
 .font-size-58 {
     font-size: 58px !important;
+}
+
+.font-size-85 {
+    font-size: 85px !important;
 }
 
 .line-height-0 {

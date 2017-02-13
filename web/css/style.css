@@ -8,6 +8,12 @@
 body {
   margin-top: 143px; }
 
+.background-blanc {
+  background: #ffffff; }
+
+.background-jaune {
+  background: #fff5b5; }
+
 .container-fluid {
   max-width: 1024px; }
 
@@ -809,8 +815,7 @@ input.actions-select {
 .up-ul.list-inline {
   margin-left: 0; }
 
-.list-group-item:first-child,
-.list-group-item:last-child {
+.related-search .list-group-item:first-child, .related-search .list-group-item:last-child {
   background: #697277;
   color: #FFF;
   position: relative; }
@@ -1374,6 +1379,17 @@ label.text-hover:hover {
     .encart-top-evenement p > span {
       background: #fff;
       padding: 13px 32px; }
+
+.encart-top-account {
+  position: relative; }
+  .encart-top-account p {
+    background: url("../images/visuel-webinar.jpg") no-repeat center center transparent;
+    padding: 55px 0;
+    margin-top: 0; }
+    .encart-top-account p > span {
+      background: #1b8bbb;
+      padding: 13px 32px;
+      color: #fff; }
 
 .encart-top-edito {
   position: relative; }

@@ -421,7 +421,11 @@
   .list-toggle:after {
     top: -3px; }
   .list-toggle.active:after {
-    top: -3px; } }
+    top: -3px; }
+  .sidebar-nav-v1 .list-toggle:after {
+    top: 8px; }
+  .sidebar-nav-v1 .list-toggle.active:after {
+    top: 8px; } }
 
 @media screen and (min-width: 426px) {
   .xs-padding-left {
@@ -742,7 +746,13 @@
     margin-right: auto;
     width: 250px; }
   .xs-margin-left-10 {
-    margin-left: 10px; } }
+    margin-left: 10px; }
+  ul.timeline-v1 > li {
+    width: 97%; }
+    ul.timeline-v1 > li.timeline-inverted {
+      margin-top: 0px; }
+    ul.timeline-v1 > li > .timeline-badge {
+      top: -6px; } }
 
 @media screen and (min-width: 622px) and (max-width: 767px) {
   .xs-width {
@@ -789,7 +799,9 @@
   .header-last-title {
     font-size: 21px;
     letter-spacing: 1px;
-    line-height: 1.4; } }
+    line-height: 1.4; }
+  .encart-infos .text {
+    padding-top: 0 !important; } }
 
 @media screen and (max-width: 424px) {
   #mot-editrice,
@@ -942,6 +954,8 @@
     padding-right: 0; }
   .no-gutters-right-xs {
     padding-right: 0; }
+  .no-gutters-left-xs {
+    padding-left: 0; }
   .center-offers-button {
     width: 200px;
     margin-left: auto;
@@ -1064,7 +1078,9 @@
   .module-interception .cas-login {
     border-right: 1px solid #C6C6C6; }
   #respond {
-    border-right: 1px solid #C6C6C6; } }
+    border-right: 1px solid #C6C6C6; }
+  ul.timeline-v1 > li.timeline-inverted {
+    margin-left: 9.2%; } }
 
 /* Medium only */
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -1087,10 +1103,14 @@
       display: block; }
   .sm-padding-0 {
     padding: 0 !important; }
+  .sm-padding-left-15 {
+    padding-left: 15px !important; }
   .sm-padding-left-30 {
     padding-left: 30px !important; }
   .sm-padding-left-60 {
     padding-left: 60px !important; }
+  .sm-padding-right-15 {
+    padding-right: 15px !important; }
   .article-margin {
     margin-bottom: 35px; }
   .archive-info-margin {
@@ -1116,6 +1136,8 @@
     padding-right: 0; }
   .no-gutters-right-sm {
     padding-right: 0; }
+  .no-gutters-left-sm {
+    padding-left: 0; }
   .badge-env {
     margin-top: 4px;
     background-color: #EC1625 !important;
@@ -1266,6 +1288,8 @@
     right: 93px; }
   .sm-margin-37 {
     margin: 0 37px !important; }
+  #sidebar-nav {
+    display: none; }
   .col-droite-webinar {
     position: relative;
     top: 0;
@@ -1371,6 +1395,8 @@
 @media screen and (min-width: 992px) {
   .no-gutters-right-md {
     padding-right: 0; }
+  .no-gutters-left-md {
+    padding-left: 0; }
   .contact .bouton-red {
     position: absolute;
     bottom: 0;
@@ -1383,6 +1409,16 @@
     margin-top: 0px; }
     .header-v1 .navbar-default .navbar-nav .dropdown-menu {
       margin-top: 0 !important; }
+  .sidebar-nav-v1 li.actif:after, .sidebar-nav-v1 li.actif:hover:after {
+    position: absolute;
+    top: 0px;
+    right: -11px;
+    display: inline-block;
+    border-top: 22px solid transparent;
+    border-left: 11px solid #434343;
+    border-right: 0 solid #434343;
+    border-bottom: 23px solid transparent;
+    content: " "; }
   .download-page {
     margin: auto 20%; }
   .br_tablet {
@@ -1524,6 +1560,8 @@
     line-height: 2.5; }
   .no-gutters-right-lg {
     padding-right: 0; }
+  .no-gutters-left-lg {
+    padding-left: 0; }
   .md-lg-hide {
     display: none !important; }
   .margin-top-newsletter {
@@ -1549,6 +1587,8 @@
 
 /* Large à intermédiaire bootstrap */
 @media screen and (min-width: 992px) and (max-width: 1200px) {
+  .encart-infos .text {
+    padding: 0; }
   .cadre-downloads-large {
     position: relative; }
     .cadre-downloads-large .cadre-downloads::before {
@@ -1728,7 +1768,11 @@
   .list-toggle a:after {
     top: -3px; }
   .list-toggle.active a:after {
-    top: -3px; } }
+    top: -3px; }
+  .sidebar-nav-v1 .list-toggle a:after {
+    top: 8px; }
+  .sidebar-nav-v1 .list-toggle.active a:after {
+    top: 8px; } }
 
 /* Petit desktop à large */
 @media screen and (min-width: 1024px) and (max-width: 1200px) {

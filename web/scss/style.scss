@@ -1,5 +1,6 @@
 // variables
 $color-red : #EC1625 ;
+$color-blue : #1b8bbb ;
 
 @font-face {
   font-family: 'DIN-Alternate-medium';
@@ -16,6 +17,13 @@ body{
   margin-top: 143px;
 }
 
+.background-blanc {
+  background:#ffffff;
+}
+
+.background-jaune {
+  background:#fff5b5;
+}
 .container-fluid {
   max-width: 1024px;
 }
@@ -210,7 +218,7 @@ div.border-red {
     }
   }
   .abo {
-    color:#1b8bbb;
+    color:$color-blue;
     margin:-2px 0 0 0;
     span {
       margin:1px 0 0 5px;
@@ -1062,12 +1070,17 @@ input {
     margin-left:0;
   }
 }
-.list-group-item:first-child,
-.list-group-item:last-child {
-  background:#697277;
-  color:#FFF;
-  position:relative;
+
+.related-search {
+  .list-group-item {
+    &:first-child, &:last-child {
+      background:#697277;
+      color:#FFF;
+      position:relative;
+    }
+  }
 }
+
 .tab-search {
   height:45px;
   margin:0;
@@ -1119,7 +1132,7 @@ input {
     }
     &#login:hover {
       .title-icon>i {
-        color: #1b8bbb;
+        color: $color-blue;
       }
     }
     /*&#button-menu-header:hover, &#button-menu-header:active, &#button-menu-header:focus {
@@ -1820,6 +1833,19 @@ label.text-hover {
     > span {
       background: #fff;
       padding: 13px 32px;
+    }
+  }
+}
+.encart-top-account {
+  position: relative;
+  p {
+    background: url("../images/visuel-webinar.jpg") no-repeat center center transparent;
+    padding: 55px 0;
+    margin-top:0;
+    > span {
+      background: $color-blue;
+      padding: 13px 32px;
+      color: #fff;
     }
   }
 }
