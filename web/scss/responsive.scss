@@ -246,7 +246,7 @@ $color-red : #EC1625 ;
     }
   }
 
-  .timeline-v2 > li .cbp_tmlabel {
+  #timeline-v2.timeline-v2 > li .cbp_tmlabel {
     padding-top: 0px;
   }
   .xxx {
@@ -320,7 +320,7 @@ $color-red : #EC1625 ;
   .header {
     margin-bottom: 0px;
   }
-  .timeline-v2 > li .cbp_tmlabel span {
+  #timeline-v2.timeline-v2 > li .cbp_tmlabel span {
     line-height: 20px;
   }
   #design-di-conf-popin #form-container {
@@ -933,6 +933,16 @@ $color-red : #EC1625 ;
   }
 }
 @media screen and (max-width: 767px) {
+  .timeline-v2 {
+    > li {
+      .cbp_tmlabel{
+        margin-left:0;
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
   .corps-article {
     article {
       margin-left:29px;
@@ -3077,6 +3087,12 @@ $color-red : #EC1625 ;
 
 /* Large and down */
 @media screen and (max-width: 1200px) {
+  .timeline-v2 {
+    &:before {
+      left: 22.3%;
+    }
+  }
+
   .border-bloc {
     border:1px solid #c6c6c6;
   }
@@ -3188,7 +3204,7 @@ $color-red : #EC1625 ;
       cursor:pointer;
     }
   }
-  .timeline-v2 {
+  #timeline-v2.timeline-v2 {
     .zoning {
       cursor: pointer;
     }
@@ -3224,7 +3240,7 @@ $color-red : #EC1625 ;
             width: 190px;
           }
         }
-        h3, span {
+        h3, span, div {
           display: none;
         }
       }
@@ -3280,6 +3296,9 @@ $color-red : #EC1625 ;
 
 /* MOBILE PORTRAIT et PAYSAGE */
 @media all and (max-width:680px) {
+  .xs-padding-0 {
+    padding: 0px!important;
+  }
   #footer {
     padding:0 2%
   }

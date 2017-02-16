@@ -100,7 +100,7 @@ a.color-red-eti:hover {
 }
 
 #meme-sujet .zoning,
-.timeline-v2 .zoning {
+#timeline-v2.timeline-v2 .zoning {
     cursor: default;
 }
 
@@ -350,6 +350,10 @@ dt {
 
 .padding-0 {
     padding: 0px !important;
+}
+
+.padding-5 {
+    padding: 5px!important;
 }
 
 .padding-9 {
@@ -648,6 +652,10 @@ i.fa.margin-right-5 {
     margin-left: 45px !important;
 }
 
+.margin-left-50 {
+    margin-left: 50px !important;
+}
+
 .margin-left-55 {
     margin-left: 55px !important;
 }
@@ -870,6 +878,10 @@ i.fa.margin-right-5 {
 
 .padding-left-30 {
     padding-left: 30px !important;
+}
+
+.padding-left-35 {
+    padding-left: 35px !important;
 }
 
 .padding-left-40 {
@@ -1612,6 +1624,10 @@ i.fa.margin-right-5 {
 
 .inline-block {
     display: inline-block;
+}
+
+.block {
+    display: block;
 }
 
 .search-bar {
@@ -3173,26 +3189,26 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color=#EC1625, Direction=NaN, St
     letter-spacing: 1px;
 }
 
-.timeline-v2 > li .badge {
+#timeline-v2.timeline-v2 > li .badge {
     padding: 2px 2px 3px;
     line-height: 12px!important;
     top: -3px!important;
 }
 
-.timeline-v2 > li .cbp_tmlabel .table > tbody > tr > td {
+#timeline-v2.timeline-v2 > li .cbp_tmlabel .table > tbody > tr > td {
     padding-top: 0px;
 }
 
-.timeline-v2 > li .cbp_tmlabel .table {
+#timeline-v2.timeline-v2 > li .cbp_tmlabel .table {
     margin-bottom: 0;
 }
 
-.timeline-v2 > li:hover .cbp_tmlabel div * {
+#timeline-v2.timeline-v2 > li:hover .cbp_tmlabel div * {
     color: #EC1625!important;
     text-decoration: underline;
 }
 
-.timeline-v2 > li:hover .cbp_tmlabel div .badge i {
+#timeline-v2.timeline-v2 > li:hover .cbp_tmlabel div .badge i {
     color: #FFF!important;
     text-decoration: none;
 }
@@ -3227,7 +3243,7 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color=#EC1625, Direction=NaN, St
     width: 10%;
 }
 
-.timeline-v2 > li .cbp_tmlabel span {
+#timeline-v2.timeline-v2 > li .cbp_tmlabel span {
     top: 0;
     line-height: 20px;
     overflow: hidden;
@@ -3235,11 +3251,11 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color=#EC1625, Direction=NaN, St
     letter-spacing: 1px;
 }
 
-.timeline-v2 > li .cbp_tmlabel span:first-child {
+#timeline-v2.timeline-v2 > li .cbp_tmlabel span:first-child {
     padding-left: 0px;
 }
 
-.timeline-v2 > li .cbp_tmlabel span:last-child {
+#timeline-v2.timeline-v2 > li .cbp_tmlabel span:last-child {
     /*text-overflow: ellipsis; */
     /* max-width: 405px; */
     display: inline-block;
@@ -3861,7 +3877,19 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color=#EC1625, Direction=NaN, St
 .owl-item {
     background: transparent;
 }
-
+.owl-item div[class^="element-wrapper-"] .old-price{
+    text-align: left;
+    padding-left: 0;
+}
+.owl-item div[class^="element-wrapper-"] .old-price .strike-center:after {
+    border-top: 1px solid #000;
+    border-color: #697277;
+    position: absolute;
+    content: "";
+    left: 1px;
+    top: 43%;
+    width: 100%;
+}
 .best-sales,
 .best-articles {
     font-size: 17px;
@@ -4060,11 +4088,18 @@ a.abonnement-text:hover {
     margin-bottom: 0px;
 }
 
+.color-white {
+    color: #ffffff!important;
+}
 .color-ec1625 {
     color: #ec1625;
 }
 
 .color-697277 {
+    color: #4d5356;
+}
+
+.color-4d5356 {
     color: #4d5356;
 }
 
@@ -4369,39 +4404,40 @@ tr {
     letter-spacing: 1px;
 }
 
-.timeline-v2 > li .cbp_tmlabel {
+#timeline-v2.timeline-v2 > li .cbp_tmlabel {
     background: none;
     margin-bottom: 0px;
     padding-left: 0px;
 }
 
-.timeline-v2 > li.last .cbp_tmlabel {
+#timeline-v2.timeline-v2 > li.last .cbp_tmlabel {
     padding-bottom: 0;
 }
 
-.timeline-v2 > li.last .cbp_tmlabel > p {
+#timeline-v2.timeline-v2 > li.last .cbp_tmlabel > p {
     margin-bottom: 0;
 }
 
-.timeline-v2 > li .cbp_tmlabel .table > tbody > tr > td {
+#timeline-v2.timeline-v2 > li .cbp_tmlabel .table > tbody > tr > td {
     border: none;
 }
 
-.timeline-v2 > li .cbp_tmicon {
+#timeline-v2.timeline-v2 > li .cbp_tmicon {
     background: #EC1625;
     box-shadow: 0 0 0 4px #dcdcdc;
 }
 
-.timeline-v2 > li .cbp_tmlabel:after {
-    border: 0;
+#timeline-v2.timeline-v2 > li .cbp_tmlabel:after {
+    border-right-color: transparent;
 }
 
-.timeline-v2:before {
+#timeline-v2.timeline-v2:before {
     background: #dcdcdc;
     top: 20px;
+    left: 22%!important;
 }
 
-.timeline-v2 > li .cbp_tmtime span {
+#timeline-v2.timeline-v2 > li .cbp_tmtime span {
     color: #9FA1A2!important;
 }
 
@@ -6650,4 +6686,5 @@ ul.inline li {
 }
 .ui-widget {
     font-family: myriad-pro;
+    background: #ffffff;
 }

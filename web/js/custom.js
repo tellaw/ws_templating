@@ -185,6 +185,29 @@ $(document).ready(function () {
         }
         $("#button-menu-header i").css({color: "#697277"});
     });
+
+    if($(".sidebar-nav-v1 li ul li.article-dec").hasClass("actif")) {
+        var picto_ad = $(".sidebar-nav-v1 li ul li.article-dec a .picto-article-decouverte").attr("src");
+        picto_ad=picto_ad.replace("/images/article-decouverte-abo.png", "/images/article-decouverte-abo-white.png");
+        $(".sidebar-nav-v1 li ul li.article-dec a .picto-article-decouverte").attr("src",picto_ad);
+    }
+
+    if($(".sidebar-nav-v1 li ul li.riskev").hasClass("actif")) {
+        var picto_ad = $(".sidebar-nav-v1 li ul li.riskev a img").attr("src");
+        picto_ad=picto_ad.replace("/images/picto-riskev-abo.png", "/images/picto-riskev-abo-white.png");
+        $(".sidebar-nav-v1 li ul li.riskev a img").attr("src",picto_ad);
+    }
+
+    if($(".sidebar-nav-v1 li ul li.toxev").hasClass("actif")) {
+        var picto_ad = $(".sidebar-nav-v1 li ul li.toxev a img").attr("src");
+        picto_ad=picto_ad.replace("/images/picto-toxev-abo.png", "/images/picto-toxev-abo-white.png");
+        $(".sidebar-nav-v1 li ul li.toxev a img").attr("src",picto_ad);
+    }
+
+    $(".delete-cross").on("click", function() {
+        $(this).parent().remove();
+    })
+
     if ($(".subMenu").length) {
         $('.subMenu').smint({
             'scrollSpeed': 1000
@@ -616,6 +639,10 @@ $(document).ready(function () {
     });
 
     $("#menu-account").click(function() {
+        $(this).toggleClass("active");
+    });
+
+    $(".title-collapse").click(function() {
         $(this).toggleClass("active");
     });
 

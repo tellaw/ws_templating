@@ -184,7 +184,7 @@
     width: 300px; }
   #header-rubrique .btn-u-blue {
     margin-top: 10px; }
-  .timeline-v2 > li .cbp_tmlabel {
+  #timeline-v2.timeline-v2 > li .cbp_tmlabel {
     padding-top: 0px; }
   .xxx {
     width: 160px; }
@@ -229,7 +229,7 @@
     margin-bottom: 10px; }
   .header {
     margin-bottom: 0px; }
-  .timeline-v2 > li .cbp_tmlabel span {
+  #timeline-v2.timeline-v2 > li .cbp_tmlabel span {
     line-height: 20px; }
   #design-di-conf-popin #form-container {
     margin: 0 0 0 40px !important;
@@ -642,6 +642,10 @@
       height: 250px !important; } }
 
 @media screen and (max-width: 767px) {
+  .timeline-v2 > li .cbp_tmlabel {
+    margin-left: 0; }
+    .timeline-v2 > li .cbp_tmlabel:after {
+      display: none; }
   .corps-article article {
     margin-left: 29px;
     margin-right: 29px; }
@@ -2017,6 +2021,8 @@
 
 /* Large and down */
 @media screen and (max-width: 1200px) {
+  .timeline-v2:before {
+    left: 22.3%; }
   .border-bloc {
     border: 1px solid #c6c6c6; }
   .img-svg {
@@ -2081,7 +2087,7 @@
     display: none; }
   #meme-sujet .zoning {
     cursor: pointer; }
-  .timeline-v2 .zoning {
+  #timeline-v2.timeline-v2 .zoning {
     cursor: pointer; } }
 
 @media only screen and (min-width: 1025px) {
@@ -2098,7 +2104,7 @@
       margin: 0 0 0 5px;
       display: inline-block;
       width: 190px; }
-  a.pub-style:hover .acceuil-title h3, a.pub-style:hover .acceuil-title span, a.large-img:hover .acceuil-title h3, a.large-img:hover .acceuil-title span, a.haute-img:hover .acceuil-title h3, a.haute-img:hover .acceuil-title span {
+  a.pub-style:hover .acceuil-title h3, a.pub-style:hover .acceuil-title span, a.pub-style:hover .acceuil-title div, a.large-img:hover .acceuil-title h3, a.large-img:hover .acceuil-title span, a.large-img:hover .acceuil-title div, a.haute-img:hover .acceuil-title h3, a.haute-img:hover .acceuil-title span, a.haute-img:hover .acceuil-title div {
     display: none; }
   a.pub-style:hover .overlay, a.large-img:hover .overlay, a.haute-img:hover .overlay {
     display: block; }
@@ -2132,6 +2138,8 @@
 
 /* MOBILE PORTRAIT et PAYSAGE */
 @media all and (max-width: 680px) {
+  .xs-padding-0 {
+    padding: 0px !important; }
   #footer {
     padding: 0 2%; }
   #footer #shorcuts_nav {

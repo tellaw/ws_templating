@@ -156,18 +156,22 @@ p {
     background: #E5E5E5; }
   .sidebar-nav-v1 li a {
     font-size: 15px; }
-    .sidebar-nav-v1 li a i {
+    .sidebar-nav-v1 li a i, .sidebar-nav-v1 li a img {
       color: #1B8BBB;
       font-size: 20px;
       margin-right: 5px;
       width: 23px;
       text-align: center; }
+    .sidebar-nav-v1 li a .picto-article-decouverte {
+      width: 19px;
+      margin-right: 9px; }
   .sidebar-nav-v1 li.actif, .sidebar-nav-v1 li.actif:hover {
     border: none; }
     .sidebar-nav-v1 li.actif a, .sidebar-nav-v1 li.actif:hover a {
       background: #434343;
       color: #ffffff;
-      padding: 12px 0px 12px 10px; }
+      padding: 12px 0px 12px 10px;
+      min-height: 44px; }
       .sidebar-nav-v1 li.actif a i, .sidebar-nav-v1 li.actif:hover a i {
         color: #ffffff; }
   .sidebar-nav-v1 li ul {
@@ -216,7 +220,7 @@ p {
     .sidebar-nav-v1 > li.bg-color-red-eti.active:hover, .sidebar-nav-v1 > li.bg-color-red-eti.active:focus {
       border-color: #EC1625; }
 
-.list-toggle:after, #menu-account:after {
+.list-toggle:after, #menu-account:after, .title-collapse:after {
   top: 8px;
   right: 15px;
   color: #ffffff;
@@ -228,6 +232,107 @@ p {
   font-family: FontAwesome;
   z-index: 1; }
 
-.list-toggle.active:after, #menu-account.active:after {
+.list-toggle.active:after, #menu-account.active:after, .title-collapse.active:after {
   color: #fff;
   content: "\f107"; }
+
+.title-collapse {
+  position: relative; }
+  .title-collapse > a, .title-collapse > p {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    display: block;
+    z-index: 2;
+    position: relative; }
+    .title-collapse > a span, .title-collapse > p span {
+      display: block; }
+    .title-collapse > a:hover, .title-collapse > p:hover {
+      cursor: pointer; }
+  .title-collapse a:hover {
+    color: #ffffff; }
+  .title-collapse > p {
+    padding: 0; }
+  .title-collapse.bloc-timeline:after {
+    color: #1B8BBB;
+    top: 0px; }
+
+.timeline-v2 {
+  padding: 20px; }
+  .timeline-v2 > li .cbp_tmlabel {
+    background: #E5E5E5;
+    margin-bottom: 15px;
+    margin-left: 23%;
+    padding: 15px 20px; }
+    .timeline-v2 > li .cbp_tmlabel:after {
+      border-right-color: #E5E5E5;
+      top: 10px; }
+    .timeline-v2 > li .cbp_tmlabel a:hover {
+      text-decoration: underline !important; }
+    .timeline-v2 > li .cbp_tmlabel a.btn-u {
+      font-size: 13px;
+      line-height: 13px;
+      padding: 7px 12px 5px; }
+      .timeline-v2 > li .cbp_tmlabel a.btn-u:hover {
+        text-decoration: none !important; }
+  .timeline-v2 > li .cbp_tmtime {
+    width: 15%;
+    display: block;
+    position: absolute;
+    background: #E5E5E5;
+    padding: 15px 10px; }
+    .timeline-v2 > li .cbp_tmtime span {
+      text-align: left;
+      top: 0;
+      font-size: 12px !important;
+      color: #4D5356 !important; }
+      .timeline-v2 > li .cbp_tmtime span:last-child {
+        font-size: 12px;
+        color: #4D5356 !important; }
+    .timeline-v2 > li .cbp_tmtime:before {
+      left: 100%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border-left-color: #E5E5E5;
+      border-width: 10px;
+      top: 10px; }
+  .timeline-v2 > li .cbp_tmicon {
+    background: #ffffff;
+    box-shadow: 0 0 0 4px #1B8BBB;
+    left: 20.6%;
+    top: 15px; }
+  .timeline-v2:before {
+    background: #dcdcdc;
+    top: 20px;
+    bottom: 35px; }
+
+.keywords {
+  padding: 0; }
+  .keywords li {
+    margin-bottom: 10px; }
+    .keywords li span, .keywords li a {
+      padding: 8px 10px;
+      background: #898989;
+      color: #ffffff;
+      border-radius: 10px;
+      display: block; }
+    .keywords li a:hover {
+      background: #1B8BBB;
+      text-decoration: none; }
+    .keywords li span {
+      font-size: 12px; }
+
+#annotation .desc-annotation {
+  position: relative; }
+
+#annotation .delete-cross {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  color: #4d5356;
+  cursor: pointer;
+  font-size: 16px;
+  z-index: 1; }
