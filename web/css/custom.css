@@ -3394,7 +3394,7 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color=#EC1625, Direction=NaN, St
     content: "";
     right: 0;
     top: 40%;
-    width: 50%;
+    width: 100%;
 }
 
 .old-price span {
