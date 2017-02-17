@@ -231,6 +231,14 @@ p {
             color: #4d5356;
           }
         }
+        &.numero-compte {
+          padding: 11px 0px 11px 13px;
+          border: none;
+          &:hover {
+            background: none;
+            color: #434343;
+          }
+        }
       }
     }
   }
@@ -252,7 +260,7 @@ p {
       }
     }
     a {
-      padding:12px 0px 12px 15px;
+      padding:11px 0px 11px 10px;
       letter-spacing: 0.75px;
     }
   }
