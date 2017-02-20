@@ -63,7 +63,7 @@ p {
 .profil a div {
   min-height: 85px; }
 
-.rattacher #code {
+.rattacher #secretCode, .rattacher #code {
   width: 70%;
   height: 30px;
   padding-left: 15px;
@@ -245,8 +245,7 @@ p {
 .title-collapse {
   position: relative; }
   .title-collapse > a, .title-collapse > p {
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding: 12px 40px;
     display: block;
     z-index: 2;
     position: relative; }
@@ -342,3 +341,23 @@ p {
   cursor: pointer;
   font-size: 16px;
   z-index: 1; }
+
+tr[class^="subscription-ti"] td, tr[class^="subscription-fp"] td {
+  height: 25px !important; }
+  tr[class^="subscription-ti"] td .hoveru:hover, tr[class^="subscription-fp"] td .hoveru:hover {
+    color: #EC1625; }
+
+.subscription-tip {
+  height: 70px; }
+
+.subscription-thematique + .filet {
+  display: none; }
+
+.subscription-thematique .ressources-subscription {
+  background: #1B8BBB; }
+
+table.collapse.in {
+  display: table; }
+
+table .title-collapse:after, table .title-collapse.active:after {
+  color: #1B8BBB; }

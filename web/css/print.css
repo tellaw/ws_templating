@@ -17,7 +17,8 @@
   .col-droite-actu,
   .hidden-print,
   #footer-v2,
-  #bandeau-cookie {
+  #bandeau-cookie,
+  .sidebar-nav-v1 {
     display: none!important; }
 
   .inner-results .list-inline {
