@@ -632,7 +632,12 @@ $(document).ready(function () {
             return false;
         }).css({
             cursor: "pointer"
-        })
+        });
+
+        $("#navbar-x").css({maxHeight: $(window).height(), overflow: "scroll"});
+        $(".navbar-nav > li").each(function () {
+            $(this).addClass("clearfix").find("div.dropdown-menu").show().css({position : "relative"});
+        });
     }
     $("#menu-account").on("click", function() {
         $("#sidebar-nav").toggle();
