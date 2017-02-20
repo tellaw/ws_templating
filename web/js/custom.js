@@ -51,7 +51,7 @@ $(document).ready(function () {
 
     $('ul[id^="menu-footer-"] > li > a').after('<div class="eti-footer-devider margin-bottom-15 margin-top-10"></div>');
 
-    /*$(function () {
+    $(function () {
         $("#query").autocomplete({
             delay: 100
             , minLength: 3
@@ -145,7 +145,7 @@ $(document).ready(function () {
                     }
                 });
         }
-    });*/
+    });
 
     if (($(window).width() >= 992) && ($(window).scrollTop() == 0)) {
         $("#navbar-x").addClass("in");
