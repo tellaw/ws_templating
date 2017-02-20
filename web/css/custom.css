@@ -4288,8 +4288,13 @@ a.abonnement-text:hover {
     border: solid 1px #d0d0d0;
 }
 
+.service-element-border:hover i,
 .service-element-border:hover p {
     color: #ec1625;
+}
+
+.service-element-border:hover p:first-child {
+    text-decoration: underline;
 }
 
 .devider-prospets-1 {
