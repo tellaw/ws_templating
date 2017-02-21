@@ -633,8 +633,10 @@ $(document).ready(function () {
         }).css({
             cursor: "pointer"
         });
+    }
 
-        $("#navbar-x").css({maxHeight: $(window).height(), overflow: "scroll"});
+    if(navigator.userAgent.match(/(iPhone|Android|BlackBerry|iPad)/i) || (window.matchMedia("(max-width:1024px)").matches)){
+        $("#navbar-x").css({maxHeight: $(window).height() - 70, overflow: "scroll"});
         $(".navbar-nav > li").each(function () {
             $(this).addClass("clearfix").find("div.dropdown-menu").show().css({position : "relative"});
         });
