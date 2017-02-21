@@ -314,7 +314,7 @@
 	}
 
 	.header-v1 .navbar-default .navbar-nav > li a {
-		border-bottom: solid 1px #eee;
+		border-bottom: solid 0px #eee;
 	}	
 
 	.header-v1 .navbar-default .navbar-nav > li > a:focus {

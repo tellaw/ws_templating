@@ -1587,7 +1587,9 @@
     top: 21px;
     padding: 18px 25px 32px 31px;
     width: 375px;
-    margin-left: 540px; } }
+    margin-left: 540px; }
+  .recherche {
+    display: none; } }
 
 /* Large à intermédiaire bootstrap */
 @media screen and (min-width: 992px) and (max-width: 1200px) {
@@ -2059,6 +2061,21 @@
   /*.slider-margin-top {
     margin-top: 51px;
   }*/
+  .header-v1 #navbar-x .navbar-nav > li.dropdown > .dropdown-menu {
+    width: 100%;
+    background: #ffffff !important;
+    box-shadow: none;
+    border: none; }
+    .header-v1 #navbar-x .navbar-nav > li.dropdown > .dropdown-menu div.col-md-6 + div.col-md-3 + div.col-md-3 {
+      display: none; }
+    .header-v1 #navbar-x .navbar-nav > li.dropdown > .dropdown-menu li a {
+      padding: 0 4px;
+      margin: 3px 0;
+      display: inline-block; }
+  .header-v1 #navbar-x .navbar-nav > li.dropdown > a {
+    bottom: 0; }
+    .header-v1 #navbar-x .navbar-nav > li.dropdown > a:after {
+      display: none; }
   .btn-stk {
     padding: 7px 0 5px; }
   #footer {

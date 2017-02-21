@@ -2425,6 +2425,9 @@ $color-red : #EC1625 ;
     width: 375px;
     margin-left: 540px;
   }
+  .recherche {
+    display: none;
+  }
 }
 
 /* Large à intermédiaire bootstrap */
@@ -3145,6 +3148,36 @@ $color-red : #EC1625 ;
   /*.slider-margin-top {
     margin-top: 51px;
   }*/
+  .header-v1 {
+    #navbar-x {
+      .navbar-nav {
+        > li.dropdown {
+          > .dropdown-menu {
+            width:100%;
+            background:#ffffff!important;
+            box-shadow: none;
+            border:none;
+            div.col-md-6 + div.col-md-3 + div.col-md-3 {
+              display:none;
+            }
+            li {
+              a {
+                padding: 0 4px;
+                margin: 3px 0;
+                display: inline-block;
+              }
+            }
+          }
+          >a {
+            bottom:0;
+            &:after {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
   .btn-stk {
     padding: 7px 0 5px;
   }
