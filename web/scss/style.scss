@@ -1135,7 +1135,9 @@ input {
       }
     }
     &#login {
-      margin:0 0 0 5px;
+      .badge {
+        margin:0 0 0 5px;
+      }
       &:hover {
         .title-icon>i {
           color: $color-blue;

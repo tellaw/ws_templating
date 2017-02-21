@@ -4160,7 +4160,8 @@ a.abonnement-text:hover {
     /*font-size: 11px;
     padding: 0px 10px;*/
 }
-.tag-box p.old-price {
+.tag-box p.old-price,
+.tag-box p.new-price-2 {
     margin-bottom: 3px;
 }
 .tag-box .text {
