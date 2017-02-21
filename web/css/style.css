@@ -861,8 +861,10 @@ input.actions-select {
     }*/ }
   .header-v1 .btn-color#card:hover i {
     color: #74b504; }
-  .header-v1 .btn-color#login:hover .title-icon > i {
-    color: #1b8bbb; }
+  .header-v1 .btn-color#login {
+    margin: 0 0 0 5px; }
+    .header-v1 .btn-color#login:hover .title-icon > i {
+      color: #1b8bbb; }
 
 #no-result {
   width: 100%;

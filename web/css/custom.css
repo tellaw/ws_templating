@@ -4160,7 +4160,9 @@ a.abonnement-text:hover {
     /*font-size: 11px;
     padding: 0px 10px;*/
 }
-
+.tag-box p.old-price {
+    margin-bottom: 3px;
+}
 .tag-box .text {
     background-color: #e2e1e1;
     font-size: 13px;
@@ -4293,7 +4295,7 @@ a.abonnement-text:hover {
     color: #ec1625;
 }
 
-.service-element-border:hover p:first-child {
+.service-element-border:hover p {
     text-decoration: underline;
 }
 

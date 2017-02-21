@@ -1134,9 +1134,12 @@ input {
         color: #74b504;
       }
     }
-    &#login:hover {
-      .title-icon>i {
-        color: $color-blue;
+    &#login {
+      margin:0 0 0 5px;
+      &:hover {
+        .title-icon>i {
+          color: $color-blue;
+        }
       }
     }
     /*&#button-menu-header:hover, &#button-menu-header:active, &#button-menu-header:focus {
