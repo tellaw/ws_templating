@@ -642,10 +642,12 @@
       height: 250px !important; } }
 
 @media screen and (max-width: 767px) {
-  .timeline-v2 > li .cbp_tmlabel {
-    margin-left: 0; }
-    .timeline-v2 > li .cbp_tmlabel:after {
-      display: none; }
+  .timeline-v2 {
+    padding: 20px 0; }
+    .timeline-v2 > li .cbp_tmlabel {
+      margin-left: 0; }
+      .timeline-v2 > li .cbp_tmlabel:after {
+        display: none; }
   .corps-article article {
     margin-left: 29px;
     margin-right: 29px; }

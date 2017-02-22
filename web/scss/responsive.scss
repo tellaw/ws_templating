@@ -934,6 +934,7 @@ $color-red : #EC1625 ;
 }
 @media screen and (max-width: 767px) {
   .timeline-v2 {
+    padding: 20px 0;
     > li {
       .cbp_tmlabel{
         margin-left:0;

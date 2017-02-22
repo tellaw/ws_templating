@@ -1,6 +1,11 @@
 p {
   margin:0;
 }
+.hoveru {
+  &:hover {
+    color:#1B8BBB;
+  }
+}
 .background-account {
   background: #E5E5E5;
 }
@@ -11,7 +16,7 @@ p {
   border-bottom:3px solid #E5E5E5;
 }
 .border-blue {
-  border:1px solid #1B8BBB;
+  border:2px solid #1B8BBB;
 }
 .fa-thumb-tack {
   -ms-transform: rotate(20deg); /* IE 9 */
@@ -351,7 +356,7 @@ p {
       display: block;
       position: absolute;
       background: #E5E5E5;
-      padding:15px 10px;
+      padding:15px 0 15px 10px;
       span {
         text-align: left;
         top:0;

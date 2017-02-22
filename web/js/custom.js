@@ -1304,3 +1304,71 @@ function removeParameterToURL(url, param){
     }
     return url;
 }
+
+var timeoutDlZip;
+
+function startTimeoutForDownloadZip(zipLocation) {
+    timeoutDlZip = setTimeout("downloadZip('"+zipLocation+"')",4000);
+}
+
+function downloadZip(location) {
+    clearTimeout(timeoutDlZip);
+    document.location = location;
+}
+
+function submitAddPdfToCartForm(id) {
+    var form = document.getElementById(id);
+    form.submit();
+}
+
+function addTagToFilter(form, tag) {
+    var filter = document.getElementById(form).elements['tags'].value;
+    if ((filter.length==0) || (filter==null)) {
+        filter = tag;
+    } else {
+        filter = filter + ", " + tag;
+    }
+    document.getElementById(form).elements['tags'].value = filter;
+    document.getElementById(form).submit();
+}
+
+function clearFilter(form) {
+    document.getElementById(form).elements['tags'].value = "";
+    document.getElementById(form).submit();
+}
+
+function showHelp ( idObj ) {
+
+    if ( $(idObj).style.display != "none") {
+        Effect.Fade($(idObj));
+    } else {
+        Effect.Appear($(idObj));
+    }
+}
+
+function cartDownload() {
+    if (jQuery('.g-recaptcha').length > 0) {
+        if (jQuery('.g-recaptcha').css('display') === 'none') {
+            jQuery('.g-recaptcha').css('display', 'block');
+            return false;
+        }
+    };
+
+    return true;
+}
+
+function newsletterActionCheck(parent) {
+
+    if (jQuery(parent).prop("checked")) {
+        var mustCheck=true;
+    } else {
+        var mustCheck=false;
+    }
+
+    jQuery('input[parent-checkbox='+parent.id+']').each(function(index, element) {
+        jQuery(element).attr("checked", mustCheck);
+        if (parent.id == "rootThemes") {
+            newsletterActionCheck(element);
+        }
+    });
+}

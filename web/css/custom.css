@@ -2438,6 +2438,10 @@ p.cellule-list {
     width: 225px;
 }
 
+.min-height-auto {
+    min-height: auto!important;
+}
+
 .height-21 {
     height: 21px;
 }
