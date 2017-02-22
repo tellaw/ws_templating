@@ -7,7 +7,7 @@ $(window).resize(function () {
     //    else if (!$("#sub-menu").hasClass("fxd")) {}
 
     // Menu mobile
-    if(navigator.userAgent.match(/(iPhone|Android|BlackBerry|iPad)/i) || (window.matchMedia("(max-width:991px)").matches)){
+    if(navigator.userAgent.match(/(iPhone|Android|BlackBerry|iPad)/i) || (window.matchMedia("(max-width:1024px)").matches)){
         $("#button-menu-header").show();
         $("#navbar-x").removeClass("in");
     }
@@ -147,13 +147,13 @@ $(document).ready(function () {
         }
     });
 
-    if (($(window).width() >= 992) && ($(window).scrollTop() == 0)) {
+    if (($(window).width() >= 1024) && ($(window).scrollTop() == 0)) {
         $("#navbar-x").addClass("in");
         $("#button-menu-header").css('cssText', 'display: none !important');
     }
 
     $(window).scroll(function () {
-        if (($(window).width() >= 992) && ($(window).scrollTop() == 0)) {
+        if (($(window).width() >= 1024) && ($(window).scrollTop() == 0)) {
             var logo = $("#logo-header").attr("src");
             logo=logo.replace("/images/logo-eti-small.png","/images/logo-eti.png");
             $("#navbar-x").addClass("in");
@@ -168,7 +168,7 @@ $(document).ready(function () {
                 top: "30px"
             });
         }
-        else if (($(window).width() >= 992) && ($(window).scrollTop() != 0)) {
+        else if (($(window).width() >= 1024) && ($(window).scrollTop() != 0)) {
             var logo = $("#logo-header").attr("src");
             logo=logo.replace("/images/logo-eti.png","/images/logo-eti-small.png");
             $("#navbar-x").removeClass("in");
@@ -635,7 +635,7 @@ $(document).ready(function () {
         });
     }
 
-    if(navigator.userAgent.match(/(iPhone|Android|BlackBerry|iPad)/i) || (window.matchMedia("(max-width:1024px)").matches)){
+    if(navigator.userAgent.match(/(iPhone|Android|BlackBerry|iPad)/i) || (window.matchMedia("(max-width:1023px)").matches)){
         $("#navbar-x").css({maxHeight: $(window).height() - 70, overflow: "scroll"});
         $(".navbar-nav > li").each(function () {
             $(this).addClass("clearfix").find("div.dropdown-menu").show().css({position : "relative"});
