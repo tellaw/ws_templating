@@ -1674,12 +1674,6 @@
     margin-left: 110px;
     margin-right: 110px;
     line-height: 2.5; }
-  .navbar-mods {
-    padding-right: 25px !important;
-    padding-left: 25px !important; }
-  .navbar-mods.mega-menu-fullwidth {
-    padding-right: 42px !important;
-    padding-left: 25px !important; }
   .padding-menu-cart {
     padding-left: 45px !important; }
   .padding-menu-account {
@@ -1757,6 +1751,12 @@
       margin-right: 0; }
     .header-v1 .navbar-default .navbar-nav > li a:after {
       right: -20px; }
+  .navbar-mods {
+    padding-right: 25px !important;
+    padding-left: 25px !important; }
+  .navbar-mods.mega-menu-fullwidth {
+    padding-right: 42px !important;
+    padding-left: 25px !important; }
   .slider-card {
     top: 51px;
     padding: 18px 25px 32px 31px;

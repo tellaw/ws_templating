@@ -181,9 +181,9 @@
 
 /*Navbar Menu*/
 @media (min-width: 992px) {
-	.header-v1 .navbar-default .navbar-nav {
+	/*.header-v1 .navbar-default .navbar-nav {
 		margin-top: -6px;
-	}
+	}*/
 }
 
 /*.header-v1 .navbar-default .navbar-nav > li > a {

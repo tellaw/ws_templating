@@ -2521,14 +2521,6 @@ $color-red : #EC1625 ;
       line-height: 2.5;
     }
   }
-  .navbar-mods {
-    padding-right: 25px !important;
-    padding-left: 25px !important;
-  }
-  .navbar-mods.mega-menu-fullwidth {
-    padding-right: 42px !important;
-    padding-left: 25px !important;
-  }
   .padding-menu-cart{
     padding-left:45px !important;
   }
@@ -2667,6 +2659,14 @@ $color-red : #EC1625 ;
         }
       }
     }
+  }
+  .navbar-mods {
+    padding-right: 25px !important;
+    padding-left: 25px !important;
+  }
+  .navbar-mods.mega-menu-fullwidth {
+    padding-right: 42px !important;
+    padding-left: 25px !important;
   }
   .slider-card {
     top: 51px;
