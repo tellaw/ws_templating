@@ -11,6 +11,7 @@ $(window).resize(function () {
     if(navigator.userAgent.match(/(iPhone|Android|BlackBerry|iPad)/i) || (window.matchMedia("(max-width:1024px)").matches)){
         $("#button-menu-header").show();
         $("#navbar-x").removeClass("in");
+        $(".navbar > div > div > div > div.hidden-xs.hidden-sm img").css({height: "45px"});
     }
     window.addEventListener("orientationchange", function() {
         if(window.matchMedia("(max-width:1024px)").matches){

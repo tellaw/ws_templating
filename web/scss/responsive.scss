@@ -1945,9 +1945,6 @@ $color-red : #EC1625 ;
 
 /* Medium and down */
 @media screen and (max-width: 991px) {
-  body {
-    margin-top: 69px;
-  }
   .login-box-border {
     right:93px;
   }
@@ -3083,6 +3080,9 @@ $color-red : #EC1625 ;
 
 /* FOOTER ANCIEN */
 @media  screen and (max-width: 1024px) {
+  body {
+    margin-top: 69px;
+  }
   .header-v1 {
     #navbar-x {
       .navbar-nav {
@@ -3116,6 +3116,7 @@ $color-red : #EC1625 ;
         }
         > li {
           float: none!important;
+          width:100%;
           > a {
             border-bottom: 1px solid #EC1625;
           }
