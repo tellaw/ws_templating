@@ -1623,7 +1623,7 @@ i.fa.margin-right-5 {
 }
 
 .inline-block {
-    display: inline-block;
+    display: inline-block!important;
 }
 
 .block {
@@ -3148,6 +3148,10 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color=#EC1625, Direction=NaN, St
     background-color: #9eb504;
 }
 
+.bg-color-e5e5e5 {
+    background-color: #e5e5e5;
+}
+
 .bg-color-74b504 {
     background-color: #74b504;
 }
@@ -3373,7 +3377,7 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color=#EC1625, Direction=NaN, St
 
 .prices {
     margin-top: -2px;
-    min-height: 42px;
+    min-height: 47px;
 }
 
 .old-price {
@@ -4296,7 +4300,8 @@ a.abonnement-text:hover {
     color: #ec1625;
 }
 
-.service-element-border:hover p {
+.service-element-border p:first-child,
+.service-element-border:hover p:first-child {
     text-decoration: underline;
 }
 
@@ -6699,4 +6704,7 @@ ul.inline li {
 .ui-widget {
     font-family: myriad-pro;
     background: #ffffff;
+}
+.border-radius-5 {
+    border-radius: 5px;
 }
