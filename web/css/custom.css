@@ -5759,6 +5759,7 @@ div[id^="background_fiche"] .figures_container div.figures_classe {
 
 #ti_actu_submenu_container {
     background: #EC1625;
+    display:none;
 }
 
 #ti_actu_submenu_container li {
@@ -5869,6 +5870,9 @@ div[id^="background_fiche"] .figures_container div.figures_classe {
     list-style: none;
 }
 
+#ti_actu_right_now_container {
+    display:none;
+}
 #ti_actu_submenu_container div div ul:before,
 #ti_actu_submenu_container div div ul:after,
 #ti_actu_right_now_container div div ul:before,

@@ -12,6 +12,9 @@ $(window).resize(function () {
         $("#button-menu-header").show();
         $("#navbar-x").removeClass("in");
     }
+    if(navigator.userAgent.match(/(iPhone|Android|BlackBerry|iPad)/i) && (window.matchMedia("(min-width:1025px)").matches)){
+        $("#ti_actu_submenu_container").show();
+    }
     window.addEventListener("orientationchange", function() {
         if(window.matchMedia("(max-width:1024px)").matches){
             $("#button-menu-header").show();
