@@ -3085,6 +3085,9 @@ $color-red : #EC1625 ;
   }
   .header-v1 {
     #navbar-x {
+      .container {
+        background: #EBEBEB;
+      }
       .navbar-nav {
         margin-top: 0px;
         width:100%;

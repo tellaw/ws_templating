@@ -2035,6 +2035,8 @@
 @media screen and (max-width: 1024px) {
   body {
     margin-top: 69px; }
+  .header-v1 #navbar-x .container {
+    background: #EBEBEB; }
   .header-v1 #navbar-x .navbar-nav {
     margin-top: 0px;
     width: 100%; }
