@@ -12,9 +12,6 @@ $(window).resize(function () {
         $("#button-menu-header").show();
         $("#navbar-x").removeClass("in");
     }
-    if(navigator.userAgent.match(/(iPhone|Android|BlackBerry|iPad)/i) && (window.matchMedia("(min-width:1024px)").matches)){
-        $("#ti_actu_submenu_container").show();
-    }
     window.addEventListener("orientationchange", function() {
         if(window.matchMedia("(max-width:1024px)").matches){
             $("#button-menu-header").show();
@@ -29,6 +26,9 @@ $(window).resize(function () {
 $(window).ready(function () {
     if ($("#sub-menu").hasClass("fxd")) {
         $('#sub-menu').css('margin-top', $('#main-header').height());
+    }
+    if(navigator.userAgent.match(/(iPhone|Android|BlackBerry|iPad)/i) && (window.matchMedia("(min-width:1024px)").matches)){
+        $("#ti_actu_submenu_container").show();
     }
     //    else if (!$("#sub-menu").hasClass("fxd")) {}
 });
