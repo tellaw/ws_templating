@@ -27,7 +27,7 @@ $(window).ready(function () {
     if ($("#sub-menu").hasClass("fxd")) {
         $('#sub-menu').css('margin-top', $('#main-header').height());
     }
-    if(navigator.userAgent.match(/(iPhone|Android|BlackBerry|iPad)/i) && (window.matchMedia("(min-width:1024px)").matches)){
+    if(navigator.userAgent.match(/(iPhone|Android|BlackBerry|iPad)/i) && (window.matchMedia("(min-width:1025px)").matches)){
         $("#ti_actu_submenu_container").show();
     }
     //    else if (!$("#sub-menu").hasClass("fxd")) {}
