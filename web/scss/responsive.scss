@@ -3081,6 +3081,19 @@ $color-red : #EC1625 ;
   body {
     margin-top: 69px;
   }
+  .navbar {
+    > div {
+      > div {
+        > div {
+          > div.hidden-xs.hidden-sm {
+            img {
+              height: 45px;
+            }
+          }
+        }
+      }
+    }
+  }
   .header-v1 {
     #navbar-x {
       .container {

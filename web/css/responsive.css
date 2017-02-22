@@ -2034,6 +2034,8 @@
 @media screen and (max-width: 1024px) {
   body {
     margin-top: 69px; }
+  .navbar > div > div > div > div.hidden-xs.hidden-sm img {
+    height: 45px; }
   .header-v1 #navbar-x .container {
     background: #EBEBEB; }
   .header-v1 #navbar-x .navbar-nav {
