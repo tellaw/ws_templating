@@ -12,7 +12,7 @@ $(window).resize(function () {
         $("#navbar-x").removeClass("in");
     }
     window.addEventListener("orientationchange", function() {
-        if(window.matchMedia("(max-width:991px)").matches){
+        if(window.matchMedia("(max-width:1024px)").matches){
             $("#button-menu-header").show();
             $("#navbar-x").removeClass("in");
         }

@@ -1305,27 +1305,6 @@
     min-width: 300px; }
   .domaine-secteur-box .ez_html_module p {
     margin: 0 10%; }
-  .header-v1 .navbar-nav {
-    float: none !important; }
-  .header-v1 .dropdown > a:after {
-    right: 0px; }
-  .header-v1 .navbar-default .navbar-nav > li > a {
-    border-bottom: 1px solid #EC1625; }
-  .header-v1 .navbar-default .navbar-nav > li:last-child a {
-    border-bottom: 0px solid #EC1625; }
-  .nav > li {
-    padding-left: 10px !important;
-    padding-right: 10px !important; }
-    .nav > li > a {
-      padding-left: 0px !important;
-      padding-right: 0px !important; }
-    .nav > li.accueil a {
-      width: 100%;
-      background-position: left 13px !important; }
-  .navbar-fixed-top .md-margin-top-35 {
-    margin-top: 25px !important; }
-  .navbar-fixed-top .container > div {
-    margin-bottom: 0 !important; }
   .article.zoning a p span.titre {
     max-width: 70%; }
   div[id^="background_fiche"],
@@ -1411,10 +1390,6 @@
     margin: 137px 0 !important; }
   .label-search {
     margin: 10px 0 !important; }
-  .header-v1 .navbar-default .navbar-nav {
-    margin-top: 0px; }
-    .header-v1 .navbar-default .navbar-nav .dropdown-menu {
-      margin-top: 0 !important; }
   .sidebar-nav-v1 li.actif:after, .sidebar-nav-v1 li.actif:hover:after {
     position: absolute;
     top: 0px;
@@ -1612,16 +1587,6 @@
       top: 1px; }
     .cadre-downloads-large > a {
       display: block; }
-  .header-v1 .navbar-default .navbar-nav > li {
-    margin-right: 9px;
-    padding: 0 24px !important; }
-    .header-v1 .navbar-default .navbar-nav > li:last-child {
-      margin-right: 0; }
-    .header-v1 .navbar-default .navbar-nav > li:first-child {
-      padding: 0 !important;
-      margin-right: 0; }
-    .header-v1 .navbar-default .navbar-nav > li a:after {
-      right: -20px; }
   #cellule-list {
     margin-left: 157px; }
   .lg-margin-top {
@@ -1784,6 +1749,16 @@
 
 /* Petit desktop à large */
 @media screen and (min-width: 1024px) and (max-width: 1200px) {
+  .header-v1 .navbar-default .navbar-nav > li {
+    margin-right: 9px;
+    padding: 0 24px !important; }
+    .header-v1 .navbar-default .navbar-nav > li:last-child {
+      margin-right: 0; }
+    .header-v1 .navbar-default .navbar-nav > li:first-child {
+      padding: 0 !important;
+      margin-right: 0; }
+    .header-v1 .navbar-default .navbar-nav > li a:after {
+      right: -20px; }
   .slider-card {
     top: 51px;
     padding: 18px 25px 32px 31px;
@@ -2063,21 +2038,43 @@
   /*.slider-margin-top {
     margin-top: 51px;
   }*/
-  .header-v1 #navbar-x .navbar-nav > li.dropdown > .dropdown-menu {
-    width: 100%;
-    background: #ffffff !important;
-    box-shadow: none;
-    border: none; }
-    .header-v1 #navbar-x .navbar-nav > li.dropdown > .dropdown-menu div.col-md-6 + div.col-md-3 + div.col-md-3 {
-      display: none; }
-    .header-v1 #navbar-x .navbar-nav > li.dropdown > .dropdown-menu li a {
-      padding: 0 4px;
-      margin: 3px 0;
-      display: inline-block; }
-  .header-v1 #navbar-x .navbar-nav > li.dropdown > a {
-    bottom: 0; }
-    .header-v1 #navbar-x .navbar-nav > li.dropdown > a:after {
-      display: none; }
+  .header-v1 #navbar-x .navbar-nav {
+    margin-top: 0px;
+    float: none !important; }
+    .header-v1 #navbar-x .navbar-nav > li.dropdown > .dropdown-menu {
+      width: 100%;
+      background: #ffffff !important;
+      box-shadow: none;
+      border: none;
+      margin-top: 0 !important; }
+      .header-v1 #navbar-x .navbar-nav > li.dropdown > .dropdown-menu div.col-md-6 + div.col-md-3 + div.col-md-3 {
+        display: none; }
+      .header-v1 #navbar-x .navbar-nav > li.dropdown > .dropdown-menu li a {
+        padding: 0 4px;
+        margin: 3px 0;
+        display: inline-block; }
+    .header-v1 #navbar-x .navbar-nav > li.dropdown > a {
+      bottom: 0; }
+      .header-v1 #navbar-x .navbar-nav > li.dropdown > a:after {
+        display: none;
+        right: 0px; }
+    .header-v1 #navbar-x .navbar-nav > li > a {
+      border-bottom: 1px solid #EC1625; }
+    .header-v1 #navbar-x .navbar-nav > li:last-child a {
+      border-bottom: 0px solid #EC1625; }
+  .nav > li {
+    padding-left: 10px !important;
+    padding-right: 10px !important; }
+    .nav > li > a {
+      padding-left: 0px !important;
+      padding-right: 0px !important; }
+    .nav > li.accueil a {
+      width: 100%;
+      background-position: left 13px !important; }
+  .navbar-fixed-top .md-margin-top-35 {
+    margin-top: 25px !important; }
+  .navbar-fixed-top .container > div {
+    margin-bottom: 0 !important; }
   .btn-stk {
     padding: 7px 0 5px; }
   #footer {
