@@ -8,7 +8,7 @@ $(window).resize(function () {
     //    else if (!$("#sub-menu").hasClass("fxd")) {}
 
     // Menu mobile
-    if(navigator.userAgent.match(/(iPhone|Android|BlackBerry|iPad)/i) || (window.matchMedia("(max-width:1024px)").matches)){
+    if(navigator.userAgent.match(/(iPhone|Android|BlackBerry|iPad)/i) && (window.matchMedia("(max-width:1024px)").matches)){
         $("#button-menu-header").show();
         $("#navbar-x").removeClass("in");
     }
@@ -636,7 +636,7 @@ $(document).ready(function () {
         });
     }
 
-    if(navigator.userAgent.match(/(iPhone|Android|BlackBerry|iPad)/i) || (window.matchMedia("(max-width:1024px)").matches)){
+    if(navigator.userAgent.match(/(iPhone|Android|BlackBerry|iPad)/i) && (window.matchMedia("(max-width:1024px)").matches)){
         $("#navbar-x").css({maxHeight: $(window).height() - 70, overflow: "scroll"});
         $(".navbar-nav > li").each(function () {
             $(this).addClass("clearfix").find("div.dropdown-menu").show().css({position : "relative"});
