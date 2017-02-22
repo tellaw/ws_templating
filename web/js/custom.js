@@ -147,13 +147,13 @@ $(document).ready(function () {
         }
     });
 
-    if (($(window).width() >= 1024) && ($(window).scrollTop() == 0)) {
+    if (($(window).width() > 1024) && ($(window).scrollTop() == 0)) {
         $("#navbar-x").addClass("in");
         $("#button-menu-header").css('cssText', 'display: none !important');
     }
 
     $(window).scroll(function () {
-        if (($(window).width() >= 1024) && ($(window).scrollTop() == 0)) {
+        if (($(window).width() > 1024) && ($(window).scrollTop() == 0)) {
             var logo = $("#logo-header").attr("src");
             logo=logo.replace("/images/logo-eti-small.png","/images/logo-eti.png");
             $("#navbar-x").addClass("in");
@@ -168,7 +168,7 @@ $(document).ready(function () {
                 top: "30px"
             });
         }
-        else if (($(window).width() >= 1024) && ($(window).scrollTop() != 0)) {
+        else if (($(window).width() > 1024) && ($(window).scrollTop() != 0)) {
             var logo = $("#logo-header").attr("src");
             logo=logo.replace("/images/logo-eti.png","/images/logo-eti-small.png");
             $("#navbar-x").removeClass("in");

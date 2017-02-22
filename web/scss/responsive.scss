@@ -3090,7 +3090,7 @@ $color-red : #EC1625 ;
     #navbar-x {
       .navbar-nav {
         margin-top: 0px;
-        float: none!important;
+        width:100%;
         > li.dropdown {
           > .dropdown-menu {
             width:100%;
@@ -3118,6 +3118,7 @@ $color-red : #EC1625 ;
           }
         }
         > li {
+          float: none!important;
           > a {
             border-bottom: 1px solid #EC1625;
           }
