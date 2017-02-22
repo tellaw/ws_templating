@@ -16,10 +16,18 @@ $(window).resize(function () {
         if(window.matchMedia("(max-width:1024px)").matches){
             $("#button-menu-header").show();
             $("#navbar-x").removeClass("in");
+            $("#navbar-x").css({maxHeight: $(window).height() - 70, overflow: "scroll"});
+            $(".navbar-nav > li").each(function () {
+                $(this).addClass("clearfix").find("div.dropdown-menu").show().css({position : "relative"});
+            });
         }
         else {
             $("#button-menu-header").hide();
             $("#navbar-x").addClass("in");
+            $("#navbar-x").removeAttr("style");
+            $(".navbar-nav > li").each(function () {
+                $(this).removeClass("clearfix").find("div.dropdown-menu").removeAttr("style");
+            });
         }
     }, false);
 });
