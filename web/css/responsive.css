@@ -2039,13 +2039,14 @@
     background: #EBEBEB; }
   .header-v1 #navbar-x .navbar-nav {
     margin-top: 0px;
-    width: 100%; }
+    width: 100%;
+    padding: 0 !important; }
     .header-v1 #navbar-x .navbar-nav > li.dropdown > .dropdown-menu {
       width: 100%;
       background: #ffffff !important;
       box-shadow: none;
       border: none;
-      margin-top: 0 !important; }
+      margin: 0 !important; }
       .header-v1 #navbar-x .navbar-nav > li.dropdown > .dropdown-menu div.col-md-6 + div.col-md-3 + div.col-md-3 {
         display: none; }
       .header-v1 #navbar-x .navbar-nav > li.dropdown > .dropdown-menu li a {
