@@ -6103,7 +6103,7 @@ form + a:hover {
 }
 
 .demande-information p {
-    color: #999;
+    /*color: #999;*/
 }
 
 .demande-identification .login p,

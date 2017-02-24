@@ -1334,6 +1334,8 @@ function addTagToFilter(form, tag) {
     }
     document.getElementById(form).elements['tags'].value = filter;
     document.getElementById(form).submit();
+
+
 }
 
 function clearFilter(form) {
