@@ -333,10 +333,10 @@ p {
     .keywords li span {
       font-size: 12px; }
 
-#annotation .desc-annotation {
+#annotations .desc-annotation {
   position: relative; }
 
-#annotation .delete-cross {
+#annotations .delete-cross {
   position: absolute;
   top: 5px;
   right: 10px;
@@ -344,6 +344,16 @@ p {
   cursor: pointer;
   font-size: 16px;
   z-index: 1; }
+
+.pagination-actif, .pagination-inactif {
+  display: inline-block;
+  width: 35px; }
+
+.pagination-inactif {
+  border: 1px solid #697277; }
+
+.pagination-actif {
+  border: 1px solid #1B8BBB; }
 
 tr[class^="subscription-ti"] td, tr[class^="subscription-fp"] td {
   height: 25px !important; }

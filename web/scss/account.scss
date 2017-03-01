@@ -415,7 +415,7 @@ p {
     }
   }
 }
-#annotation {
+#annotations {
   .desc-annotation {
     position: relative;
   }
@@ -428,6 +428,17 @@ p {
     font-size: 16px;
     z-index: 1;
   }
+}
+
+.pagination-actif, .pagination-inactif {
+  display: inline-block;
+  width: 35px;
+}
+.pagination-inactif {
+  border: 1px solid #697277;
+}
+.pagination-actif {
+  border: 1px solid #1B8BBB;
 }
 
 tr[class^="subscription-ti"], tr[class^="subscription-fp"] {
