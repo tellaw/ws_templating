@@ -461,3 +461,21 @@ table {
     }
   }
 }
+
+
+.mes-commentaires .timeline-v2 {
+  padding: 0px;
+}
+.comment-text {
+  display: inline-block;
+  width: calc(100% - 40px);
+  vertical-align: top;
+}
+
+.comment-avatar {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 14px;
+}
