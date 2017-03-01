@@ -1325,6 +1325,12 @@ function submitAddPdfToCartForm(id) {
     form.submit();
 }
 
+function submitTagForm(formId, paramName, paramValue) {
+ 	var form = document.forms[formId];
+ 	form.elements[paramName].value = paramValue;
+ 	form.submit();
+}
+
 function addTagToFilter(form, tag) {
     var filter = document.getElementById(form).elements['tags'].value;
     if ((filter.length==0) || (filter==null)) {
@@ -1334,8 +1340,27 @@ function addTagToFilter(form, tag) {
     }
     document.getElementById(form).elements['tags'].value = filter;
     document.getElementById(form).submit();
+}
 
+function removeTagToFilter(form, tag) {
+	var filter = document.getElementById(form).elements['tags'].value;
+	var result = filter.split(", ");
+	var index = result.indexOf(tag);
+	if (index != -1) {
+		result.splice(index, 1);
+	}
+	document.getElementById('annotation').elements['tags'].value = result.join(", ");
+	document.getElementById(form).submit();
+}
 
+function ajaxDeleteAnnotationNote(type, id, noteId) {
+	jQuery.ajax({
+		url : '/ajax/myti/box/deleteNote?type=' + encodeURIComponent(type) + '&id=' + encodeURIComponent(id) + '&noteId=' + encodeURIComponent(noteId),
+		'complete': function (data) {
+			jQuery('#' + noteId).remove();
+		}
+	});
+	return false;
 }
 
 function clearFilter(form) {
