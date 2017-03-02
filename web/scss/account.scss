@@ -402,7 +402,7 @@ p {
       background: #898989;
       color: #ffffff;
       border-radius: 10px;
-      display: block;
+      display: inline-block;
     }
     a {
       &:hover {
@@ -412,6 +412,14 @@ p {
     }
     span {
       font-size: 12px;
+      a {
+        padding:0 0 0 10px;
+      }
+    }
+    &.active {
+      span, a {
+        background: #1b8bbb ;
+      }
     }
   }
 }

@@ -326,12 +326,16 @@ p {
       background: #898989;
       color: #ffffff;
       border-radius: 10px;
-      display: block; }
+      display: inline-block; }
     .keywords li a:hover {
       background: #1B8BBB;
       text-decoration: none; }
     .keywords li span {
       font-size: 12px; }
+      .keywords li span a {
+        padding: 0 0 0 10px; }
+    .keywords li.active span, .keywords li.active a {
+      background: #1b8bbb; }
 
 #annotations .desc-annotation {
   position: relative; }
