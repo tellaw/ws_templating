@@ -475,24 +475,28 @@ table {
 
 /*mes commentaires*/
 .mes-commentaires {
-  .timeline-v2 {
-    padding: 0px;
-  }
-  .timeline-v2:first-child:before {
-    top: 15px;
-  }
-  .timeline-v2:nth-child(2):before {
-    top: 0px;
+  .timeline-v2:before {
+      top: 32px;
+      z-index: 8;
+      bottom: -44px;
   }
   .timeline-v2:last-child:before {
-    bottom: 0px;
+    bottom: 32px;
   }
-  .timeline-v2:before {
-    left: 20.6%;
-    z-index: 8;
-    bottom: -22px;
-    top:0;
-  }
+
+/*.timeline-v2:first-child:before {
+  top: 15px;
+}
+.timeline-v2:nth-child(2):before {
+  top: 0px;
+}
+
+.timeline-v2:before {
+  left: 20.6%;
+  z-index: 8;
+  bottom: -22px;
+  top:0;
+}*/
 
   .myti-bloc-desc-top {
     margin-bottom: 30px;
@@ -501,21 +505,19 @@ table {
     z-index: 9;
   }
 }
-.timeline-v2:before {
-  top: 32px;
-}
+
 .comment-text {
-  display: inline-block;
-  width: calc(100% - 90px);
-  vertical-align: top;
-  margin-bottom:10px;
+ display: inline-block;
+ width: calc(100% - 90px);
+ vertical-align: top;
+ margin-bottom:10px;
 }
 
 .comment-avatar {
-  width: 30px;
-  height: 30px;
-  display: inline-block;
-  vertical-align: top;
-  margin-top: 14px;
-  margin-left: 50px;
+ width: 30px;
+ height: 30px;
+ display: inline-block;
+ vertical-align: top;
+ margin-top: 14px;
+ margin-left: 50px;
 }
