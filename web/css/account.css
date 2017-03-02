@@ -418,3 +418,12 @@ table .title-collapse:after, table .title-collapse.active:after {
   vertical-align: top;
   margin-top: 14px;
   margin-left: 50px; }
+
+.form-message {
+  display: block;
+  overflow: hidden;
+  padding: 5px 0 20px 0; }
+
+.modifier-password .btn-center.left {
+  float: left;
+  line-height: 14px; }
