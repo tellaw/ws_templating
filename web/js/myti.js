@@ -10,9 +10,6 @@ jQuery(document).ready(function () {
 
 		if (navigatorName.indexOf("internet explorer") == -1) {
 
-			<#--
-				Not IE navigator => Activate JS on form
-			 -->
 			jQuery("#picture-button").click(function () {
 				jQuery('#picture-input').click();
 			});
@@ -20,10 +17,6 @@ jQuery(document).ready(function () {
 			var fileInput = document.getElementById("picture-input");
 			fileInput.onchange = function () {changeListenerOnFileInput()};
 
-
-			<#--
-				CSS
-			-->
 			jQuery('#picture-input').css("display", "none");
 			jQuery("#picture-button").css("display", "block");
 			jQuery("#picture-button-ie").css("display","none");
