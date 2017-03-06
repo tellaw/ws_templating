@@ -1,6 +1,6 @@
-$(document).ready(function () {
-    $('#leadDepartment').change(function(evt){
-		ajaxOnChangedLeadDepartment($(this).val());
+jQuery(document).ready(function () {
+    jQuery('#leadDepartment').change(function(evt){
+		ajaxOnChangedLeadDepartment(jQuery(this).val());
     });
 
 	function initPictureForm () {
@@ -45,7 +45,7 @@ $(document).ready(function () {
 			if (mbSize > 2){
 				jQuery("#picture-input-size span").html("Le fichier est trop volumineux. Veuillez en choisir un autre");
 				jQuery("#picture-input-size").css("display", "block");
-				$("#picture-input").attr("value","");
+				jQuery("#picture-input").attr("value","");
 		     } else {
 				jQuery("#picture-input-size").html("");
 				jQuery("#picture-form-submit").click();
@@ -62,7 +62,7 @@ function ajaxOnChangedLeadDepartment(departmentId) {
 	jQuery.ajax({
 		url : '/ajax/lucy/myti/profile/ajaxOnChangedLeadService?leadDepartmentId=' + encodeURIComponent(departmentId),
 		success : function (data) {
-			var leadFunction = $('#leadFunction');
+			var leadFunction = jQuery('#leadFunction');
             leadFunction.empty();
             for (var i = 0; i < data.length; i++) {
                 leadFunction.append('<option value=' + data[i].value + '>' + data[i].name + '</option>');
