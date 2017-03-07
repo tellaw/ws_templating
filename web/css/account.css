@@ -459,3 +459,8 @@ table .title-collapse:after, table .title-collapse.active:after {
   top: 10px;
   margin: 20px 0;
   position: relative; }
+
+input.btn-u.btn-u-blue.letter-spacing-75.btn-carre {
+  padding: 6px;
+  position: relative;
+  top: -1px; }
