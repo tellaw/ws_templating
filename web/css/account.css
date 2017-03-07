@@ -427,3 +427,35 @@ table .title-collapse:after, table .title-collapse.active:after {
 .modifier-password .btn-center.left {
   float: left;
   line-height: 14px; }
+
+/*logiciels*/
+.list-logiciels * {
+  box-sizing: border-box;
+  vertical-align: top; }
+
+.list-logiciels img {
+  display: inline-block;
+  width: 62px;
+  height: 62px;
+  margin-right: 15px; }
+
+.list-logiciels > div {
+  display: inline-block;
+  width: calc(100% - 90px); }
+
+.list-logiciels > p:not(.myti-bloc-desc-top) {
+  color: #1b8bbb;
+  text-align: right;
+  font-weight: 600; }
+
+.list-logiciels .logiciels-title {
+  color: #1b8bbb; }
+
+.separator-line {
+  background-color: #555;
+  height: 1px;
+  width: 100%;
+  overflow: hidden;
+  top: 10px;
+  margin: 20px 0;
+  position: relative; }
