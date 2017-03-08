@@ -588,3 +588,21 @@ input.btn-u.btn-u-blue.letter-spacing-75.btn-carre {
   max-width: 680px;
   margin: 0 auto;
 }
+.profile-form {
+  .separator-line {
+    top: 0px;
+  }
+  form p {
+    min-height: 0px!important;
+  }
+}
+.padding-0-20 {
+   padding: 0 20px;
+ }
+.padding-20-0 {
+  padding: 20px 0;
+}
+.image-center {
+  display: block;
+  margin: 0 auto;
+}

@@ -468,3 +468,19 @@ input.btn-u.btn-u-blue.letter-spacing-75.btn-carre {
 .rattacher.padding-top-20.padding-bottom-20.padding-left-15.padding-right-15.clearfix {
   max-width: 680px;
   margin: 0 auto; }
+
+.profile-form .separator-line {
+  top: 0px; }
+
+.profile-form form p {
+  min-height: 0px !important; }
+
+.padding-0-20 {
+  padding: 0 20px; }
+
+.padding-20-0 {
+  padding: 20px 0; }
+
+.image-center {
+  display: block;
+  margin: 0 auto; }
