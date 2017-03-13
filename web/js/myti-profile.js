@@ -1,8 +1,21 @@
 jQuery(document).ready(function () {
-    jQuery('#leadDepartment').change(function(evt){
-		ajaxOnChangedLeadDepartment(jQuery(this).val());
-    });
 
+  //Les services => reliés aux fonctions
+  jQuery('#leadDepartment').change(function(evt){
+		ajaxOnChangedLeadDepartment(jQuery(this).val());
+  });
+
+  //Zipcode relié aux villes
+  jQuery("#zipCode").keyup(function() {
+	  var value = this.value;
+	  if (/^[0-9]{5}$/.test(value)) {
+	    ajaxGetCityByZipcode(value);
+	  } else {
+	  	jQuery('#city').empty();
+	  }
+	});
+
+  //Photo de profil
 	function initPictureForm () {
 
 		var navigatorName;
@@ -52,15 +65,29 @@ jQuery(document).ready(function () {
 });
 
 function ajaxOnChangedLeadDepartment(departmentId) {
-	jQuery.ajax({
-		url : '/ajax/lucy/myti/profile/ajaxOnChangedLeadService?leadDepartmentId=' + encodeURIComponent(departmentId),
-		success : function (data) {
-			var leadFunction = jQuery('#leadFunction');
-            leadFunction.empty();
-            for (var i = 0; i < data.length; i++) {
-                leadFunction.append('<option value=' + data[i].value + '>' + data[i].name + '</option>');
-            }
-		}
-	});
+  	jQuery.ajax({
+  		url : '/ajax/lucy/myti/profile/ajaxOnChangedLeadService?leadDepartmentId=' + encodeURIComponent(departmentId),
+  		success : function (data) {
+  			var leadFunction = jQuery('#leadFunction');
+        leadFunction.empty();
+        for (var i = 0; i < data.length; i++) {
+            leadFunction.append('<option value=' + data[i].value + '>' + data[i].name + '</option>');
+        }
+  		}
+  	});
+	return false;
+}
+
+function ajaxGetCityByZipcode(zipcode) {
+  	jQuery.ajax({
+  		url : '/ajax/lucy/myti/profile/ajaxGetCityByZipcode?zipcode=' + encodeURIComponent(zipcode),
+  		success : function (data) {
+  			var citySelect = jQuery('#city');
+	        citySelect.empty();
+	        for (var i = 0; i < data.length; i++) {
+	            citySelect.append('<option value=' + data[i].value + '>' + data[i].name + '</option>');
+	        }
+  		}
+  	});
 	return false;
 }
