@@ -554,3 +554,6 @@ input.btn-u.btn-u-blue.letter-spacing-75.btn-carre {
 .image-center {
   display: block;
   margin: 0 auto; }
+
+.actualite .img-responsive {
+  width: 100%; }
