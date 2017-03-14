@@ -11,4 +11,8 @@ jQuery(document).ready(function () {
 			jQuery("#search-subscription-div").highlight(value, true);
 		}
 	});
+
+  if ( jQuery( "#profile-avatar" ).length ) {
+		jQuery("#user-bar-avatar").attr("src", jQuery("#profile-avatar").attr('src'));
+	}
 });
