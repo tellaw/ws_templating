@@ -78,7 +78,9 @@ p {
 
 .rattacher .btn-u-blue {
   padding: 6px;
-  display: inline-block; }
+  position: relative;
+  display: inline-block;
+  top: -1px; }
 
 .pastille {
   background: #EC1625; }
