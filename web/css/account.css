@@ -566,3 +566,9 @@ input.btn-u.btn-u-blue.letter-spacing-75.btn-carre {
   margin-bottom: 20px; }
   .logiciels > a:last-child {
     border-bottom: 0px solid transparent; }
+
+span.res-chevron {
+  margin-right: 5px;
+  display: inline-block;
+  margin-bottom: 20px;
+  float: left; }
