@@ -557,3 +557,12 @@ input.btn-u.btn-u-blue.letter-spacing-75.btn-carre {
 
 .actualite .img-responsive {
   width: 100%; }
+
+.logiciels > a {
+  padding-bottom: 20px;
+  overflow: hidden;
+  display: block;
+  border-bottom: 1px solid #4d5356;
+  margin-bottom: 20px; }
+  .logiciels > a:last-child {
+    border-bottom: 0px solid transparent; }
