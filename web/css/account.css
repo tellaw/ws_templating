@@ -572,3 +572,6 @@ span.res-chevron {
   display: inline-block;
   margin-bottom: 20px;
   float: left; }
+
+.encart-top-account p {
+  background-size: cover; }
