@@ -437,7 +437,16 @@ table .title-collapse:after, table .title-collapse.active:after {
   float: left;
   line-height: 14px; }
 
-/*logiciels*/
+/*LOGICIELS*/
+.accroche-logiciels p.text-logiciels-accroche {
+  color: #4d5356;
+  text-align: center;
+  padding: 20px; }
+
+.accroche-logiciels img {
+  margin-bottom: 10px;
+  display: inline-block; }
+
 .list-logiciels * {
   box-sizing: border-box;
   vertical-align: top; }
