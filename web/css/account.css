@@ -116,6 +116,10 @@ p {
     .block-link-hover a:hover div i, .block-link-hover a:hover div p, .block-link-hover a:hover div span {
       color: #ffffff; }
 
+.services.block-link-hover a div {
+  width: 60px;
+  margin: 0 auto; }
+
 .timeline-v1 {
   padding: 0; }
   .timeline-v1:before {
