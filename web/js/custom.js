@@ -190,6 +190,18 @@ $(document).ready(function () {
         $("#button-menu-header i").css({color: "#697277"});
     });
 
+    $( ".block-link-hover a.article-decouverte" ).hover(
+        function() {
+            var picto_ad = $(".block-link-hover a .picto-article-decouverte").attr("src");
+            picto_ad=picto_ad.replace("/images/article-decouverte-prospect.png", "/images/article-decouverte-abo-white.png");
+            $(".block-link-hover a .picto-article-decouverte").attr("src",picto_ad);
+        }, function() {
+            var picto_ad = $(".block-link-hover a .picto-article-decouverte").attr("src");
+            picto_ad=picto_ad.replace("/images/article-decouverte-abo-white.png", "/images/article-decouverte-prospect.png");
+            $(".block-link-hover a .picto-article-decouverte").attr("src",picto_ad);
+        }
+    );
+
     if($(".sidebar-nav-v1 li ul li.article-dec").hasClass("actif")) {
         var picto_ad = $(".sidebar-nav-v1 li ul li.article-dec a .picto-article-decouverte").attr("src");
         picto_ad=picto_ad.replace("/images/article-decouverte-abo.png", "/images/article-decouverte-abo-white.png");
