@@ -1,0 +1,121 @@
+/* style-v1.css */
+/* MENU */
+.sous-menu input#button,
+.sous-menu label {
+  display: none;
+}
+@media only screen and (max-width: 767px) {
+  nav.sous-menu[role="custom-dropdown"] {
+    border: 0;
+    height: 40px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+  }
+  nav.sous-menu[role="custom-dropdown"] ul {
+    display: none;
+    height: auto;
+    padding: 0;
+  }
+  nav.sous-menu[role="custom-dropdown"] label {
+    display: block;
+    width: 45px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.1em;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: grey;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  nav.sous-menu[role="custom-dropdown"] label:after {
+    content: "\2261";
+    font-size: 20px;
+    color: #FFF;
+  }
+  nav.sous-menu[role="custom-dropdown"] label.followMeBar.fixed {
+    position: fixed!important;
+    top: 0!important;
+    z-index: 6;
+  }
+  nav.sous-menu[role="custom-dropdown"] input[type=checkbox]:checked ~ label {
+    background-color: #E5E5E5;
+  }
+  nav.sous-menu[role="custom-dropdown"] input[type=checkbox]:checked ~ label:after {
+    color: white;
+  }
+  nav.sous-menu[role="custom-dropdown"] input[type=checkbox]:checked ~ ul {
+    display: block;
+    padding: 0;
+    position: fixed;
+    top: 40px;
+    right: 0;
+    width: 260px;
+    z-index: 5;
+  }
+  nav.sous-menu[role="custom-dropdown"] input[type=checkbox]:checked ~ ul > li {
+    width: 100%!important;
+    opacity: 1;
+    text-align: left!important;
+    margin: 0!important;
+    padding: 0!important;
+    height: 55px!important;
+    line-height: 55px!important;
+    border-left: 1px solid #E5E5E5!important;
+    border-right: 1px solid #E5E5E5!important;
+    background-color: white!important;
+  }
+  nav.sous-menu[role="custom-dropdown"] input[type=checkbox]:checked ~ ul > li:first-child {
+    border-top: 2px solid #E5E5E5!important;
+    height: 57px!important;
+    line-height: 57px!important;
+  }
+  nav.sous-menu[role="custom-dropdown"] input[type=checkbox]:checked ~ ul > li > a {
+    width: 100%!important;
+    text-align: left!important;
+    min-width: 100%;
+    height: 100%!important;
+    vertical-align: middle;
+    display: inline-block;
+    padding: 7px 20px 0 10px;
+  }
+  nav.sous-menu[role="custom-dropdown"] input[type=checkbox]:checked ~ ul > li > a:after {
+    position: absolute;
+    right: 8px;
+    top: 9px;
+    content: "\203A";
+    font: bold 1.7em sans-serif;
+  }
+  .tab-content > .tab-pane {
+    display: block!important;
+  }
+}
+@media (min-width: 992px) {
+  .hidden-lg-up {
+    display: none;
+  }
+}
+/**/
+#home .followMeBar {
+  margin-left: -15px;
+}
+.followMeBar {
+  background: #999;
+  padding: 10px 20px;
+  z-index: 1;
+  color: #fff;
+}
+.followMeBar.fixed {
+  position: fixed;
+  top: 0!important;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 5;
+  height: 40px;
+}
+.followMeBar.fixed.absolute {
+  position: absolute;
+}

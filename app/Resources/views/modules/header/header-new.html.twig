@@ -1,0 +1,327 @@
+<!--=== Header v1 ===-->
+<div class="header-v1">
+
+    <!-- Navbar -->
+    <div class="navbar navbar-default mega-menu navbar-background-color navbar-fixed-top border-bottom-dark-gray" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="row margin-bottom-10 xs-margin-bottom-0">
+
+                <div class="col-xs-9 col-sm-9 col-md-10 col-lg-10 no-gutters">
+                    <div class="hidden-xs hidden-sm col-md-3 col-lg-3">
+                        <a href="/">
+                            <img id="logo-header" class="img-responsive margin-top-10 margin-left-10" src="{{ media ("logo-eti.png") }}" alt="Logo">
+                        </a>
+                    </div>
+                    <div class="hidden-xs col-sm-3 hidden-md hidden-lg">
+                        <a href="/">
+                            <img id="logo-header" class="img-responsive margin-top-10 margin-left-10" src="{{ media ("logo-eti-small.png") }}" alt="Logo">
+                        </a>
+                    </div>
+                    <div class="col-xs-2 hidden-sm hidden-md hidden-lg no-gutters text-center">
+                        <a href="/">
+                            <img id="logo-header-mobile" class="xs-margin-top-10 sm-margin-top-20 lg-margin-top" src="{{ media ("logo-eti-mobile.png") }}" alt="Logo" height="40" width="40">
+                        </a>
+                    </div>
+                    <div class="hidden-xs hidden-sm col-md-6 col-lg-5">
+                        <p class="md-margin-top-35 padding-top-5 color-red-eti letter-spacing-110"><span class="font-family-myriadpro-semibold">L'expertise technique et scientifique</span> de référence</p>
+                    </div>
+                    <div class="col-xs-10 col-sm-offset-1 col-md-offset-0 col-sm-8 col-md-3 col-lg-4 xs-margin-top-15 md-margin-top-35 no-gutters-left">
+                        {{ module ("recherche/recherche") }}
+                    </div>
+                </div>
+
+
+
+                <div class="col-xs-3 col-sm-3 col-md-2 col-lg-2 sm-margin-left--30 no-gutters" style="position: relative;">
+                    <button type="button" class="btn-u btn-color margin-bottom-15 xs-font-size-10 xs-margin-top-15 sm-margin-top-30 md-margin-top-35"><i class="fa fa-shopping-cart header-btn-size"></i></button>
+                    <button type="button" onclick="toggle_div(this,'login-box')" class="btn-u btn-color margin-bottom-15 xs-font-size-10 xs-margin-top-15 sm-margin-top-30 md-margin-top-35"><i class="fa fa-user header-btn-size"></i></button>
+                    <button id="button-menu-header" type="button" class="btn-u btn-color margin-bottom-15 xs-font-size-10 xs-margin-top-15 sm-margin-top-30 md-margin-top-35" data-toggle="collapse" data-target=".navbar-responsive-collapse"><i class="fa fa-bars header-btn-size"></i></button>
+                    <div id="login-box" class="login-box-border" style="display: none">
+                        <div class="col-xs-12 col-sm-12 col-md-12">
+                            <span class="pull-left user-btn header-btn-size"><i class="fa fa-user"></i></span>
+                            <span class="cross-close pull-right" aria-hidden="true" onclick="jQuery('#login-box').hide();">X</span>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 margin-bottom-20">
+                            <div class="row">
+                                <center><p class="connect-font letter-spacing-1 font-size-15 color-blue-eti text-uppercase">Identifiez-vous ! </p></center>
+                            </div>
+                            <form class="reg-page">
+                                <div>
+                                    <div class="input-group margin-bottom-10 input-grp-adjust col-xs-12 col-sm-12 col-lg-12" style="padding:0 10%;">
+                                        <span class="input-group-addon"><i class="fa fa-user" style="color: #b3b3b3;padding-top: 0px; margin-top: 4px;"></i></span>
+                                        <input id="headerLogin" name="username" value="" onkeypress="submitonEnter(event);" type="text" placeholder="Identifiant" class="form-control" style="height:34px">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="input-group margin-bottom-10 input-grp-adjust col-xs-12 col-sm-12 col-lg-12" style="padding:0 10%;">
+                                        <span class="input-group-addon"><i class="fa fa-unlock-alt" style="padding-top: 0px; margin-top: 4px;"></i></span>
+                                        <input id="headerPassword" name="password" onkeypress="submitonEnter(event);" type="password" placeholder="Mot de passe" class="form-control" style="height:34px">
+                                    </div>
+                                </div>
+                                <div class="clearfix">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                                        <button id="login_form_submit" name="login_form_submit" style="display: inline-block;width: auto;" type="submit" class="btn-u btn-block btn-u-blue font-size-13 letter-spacing-7520 letter-spacing-75 btn-center"><i class="fa fa-arrow-right margin-right-5"></i>SE CONNECTER</button>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <input id="rememberMe" name="rememberMe" class="input input-checkbox" type="checkbox" value="true"><input type="hidden" name="_rememberMe" value="on">
+                                    <label class="checkbox pasword-remember article-body-color margin-bottom-0" for="rememberMe">Mémoriser votre mot de passe</label>
+                                </div>
+                                <div class="text-center">
+                                    <a target="_parent" class="letter-spacing-75 pasword-forgotten article-body-color" href="http://www.techniques-ingenieur.fr/password.html"><u>Vous avez oublié votre mot de passe ?</u></a>
+                                </div>
+                            </form>
+                            <hr id="hr-separator">
+                            <div class="row">
+                                <center><p class="connect-font letter-spacing-1 font-size-15 color-red-eti text-uppercase margin-0">Inscrivez-vous !</p></center>
+                            </div>
+                            <div class="text-center">
+                                <p class="letter-spacing-75 article-body-color">Vous n'avez pas encore de compte ?</p>
+                            </div>
+                            <div class="clearfix">
+                                <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                                    <button style="display: inline-block;width: auto;" class="btn-u btn-block btn-u-red font-size-13 letter-spacing-7520 letter-spacing-75 btn-center"><i class="fa fa-arrow-right margin-right-5"></i>CRÉER UN COMPTE</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div id="navbar-x" class="collapse navbar-responsive-collapse menu-background-color border-navbar">
+            <div class="container">
+                <ul class="nav navbar-nav">
+
+                    <!-- RESSOURCES DOCUMENTAIRES -->
+                    <li id="tab-1" class="dropdown mega-menu-fullwidth bg-active dropdown-style navbar-mods">
+                        <a href="javascript:void(0);" class="dropdown-toggle padding-menu-buttons font-size-12 font-family-myriadpro-semibold letter-spacing-110" data-toggle="dropdown">
+                            RESSOURCES DOCUMENTAIRES
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-padding-20 background-color-F1F1F1 letter-spacing-75">
+                            <p class="text-center color-red-eti font-size-16 margin-bottom-20"><i class="fa fa-list-ul vertical-align-center font-size-24 margin-right-15"></i><span class="font-family-myriadpro-semibold">RECHERCHEZ </span>parmi plus de <span class="font-family-myriadpro-semibold">8000</span> articles de références ou pratiques et <span class="font-family-myriadpro-semibold">4000</span> articles d'actualité</p>
+
+                            <div class="row">
+                                <div class="col-md-6 no-gutters clearfix">
+                                    <p class="color-red-eti margin-bottom-10 margin-left-20">PAR DOMAINE<span class="font-family-myriadpro-semibold"> D'EXPERTISE</span></p>
+                                    <div class="eti-accueil-devider margin-top-10 margin-bottom-12 margin-left-20"></div>
+                                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-uppercase">
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                <a href="/base-documentaire/automatique-robotique-th16/">Automatique - Robotique</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="/base-documentaire/biomedical-pharma-th15/">Biomédical - Pharma</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="/base-documentaire/construction-et-travaux-publics-th3/">Construction et travaux publics</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="/base-documentaire/electronique-automatique-th13/">Électronique - Photonique</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="/base-documentaire/energies-th4/">Énergies</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="/base-documentaire/environnement-securite-th5/">Environnement - Sécurité</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="/base-documentaire/genie-industriel-th6/">Génie industriel</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="/base-documentaire/transports-th14/">Ingénierie des transports</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-uppercase">
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                <a href="/base-documentaire/innovation-th10/">Innovation</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="/base-documentaire/materiaux-th11/">Matériaux</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="/base-documentaire/mecanique-th7/">Mécanique</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="/base-documentaire/mesures-analyses-th1/">Mesures - Analyses</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="/base-documentaire/procedes-chimie-bio-agro-th2/">Procédés chimie - bio - agro</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="/base-documentaire/sciences-fondamentales-th8/">Sciences fondamentales</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="/base-documentaire/technologies-de-l-information-th9/">Technologies de l'information</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 sm-margin-top-15 clearfix">
+                                    <p class="color-red-eti margin-bottom-10 margin-left-4">PAR SECTEUR<span class="font-family-myriadpro-semibold"> INDUSTRIEL</span></p>
+                                    <div class="eti-accueil-devider margin-top-10 margin-bottom-12 margin-left-4"></div>
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-uppercase no-gutters">
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">AÉROSPATIAL</a></li>
+                                            <li><a href="#">AGROALIMENTAIRE</a></li>
+                                            <li><a href="#">AUTOMOBILE</a></li>
+                                            <li><a href="#">ÉCO-INDUSTRIES</a></li>
+                                            <li><a href="#">ÉQUIEMENTS INDUSTRIELS</a></li>
+                                            <li><a href="#">PLASTURGIE</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 sm-margin-top-15 clearfix">
+                                    <p class="color-red-eti margin-bottom-10">PAR<span class="font-family-myriadpro-semibold"> MOTS-CLES</span></p>
+                                    <div class="eti-accueil-devider margin-top-10 margin-bottom-12"></div>
+                                    <div class="input-group input-grp">
+                                        <input class="form-control input-srch-col menu-ressources-search-bar letter-spacing-110" placeholder="Tapez votre recherche ici" type="text">
+                                            <span class="input-group-btn">
+                                                <button class="btn-u bg-color-red-eti search-btn" type="button"><i class="glyphicon glyphicon-search"></i></button>
+                                            </span>
+                                    </div>
+                                    <p class="pull-right text-left font-size-11 margin-top-10"><a href="#"><span class="color-red-eti"> &gt; Recherche avancée</span></a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- End RESSOURCES DOCUMENTAIRES -->
+
+                    <!-- LE MAGAZINE D'ACTUALITE -->
+                    <li id="tab-2" class="dropdown mega-menu-fullwidth dropdown-style navbar-mods">
+                        <a href="javascript:void(0);" class="dropdown-toggle padding-menu-buttons font-size-12 font-family-myriadpro-semibold letter-spacing-110" data-toggle="dropdown">
+                            LE MAGAZINE D'ACTUALITE
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-padding-20 background-color-F1F1F1 letter-spacing-75">
+                            <P class="text-center color-red-eti font-size-16 margin-bottom-20"><i class="fa fa-newspaper-o accueil-title-icon-2 vertical-align-center"></i><span class="font-family-myriadpro-semibold">DÉCOUVREZ</span> toute l'actualité, la veille technologique <span class="font-family-myriadpro-semibold">GRATUITE</span>, les études de cas et les évenements de chaque secteur de l'industrie.</P>
+
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 no-gutters text-uppercase">
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Environnement</a></li>
+                                            <li><a href="#">Énergie</a></li>
+                                            <li><a href="#">Innovations sectorielles</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 no-gutters text-uppercase">
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Informatique et numérique</a></li>
+                                            <li><a href="#">Matériaux, biotech & chimie</a></li>
+                                            <li><a href="#">Espace</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 no-gutters text-uppercase">
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Entreprises et marchés</a></li>
+                                            <li><a href="#">Insolite</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 no-gutters">
+                                        <hr id="hr-separator">
+                                        <ul class="list-unstyled">
+                                            <li class="col-xs-12 col-sm-4 col-md-4 col-lg-4 no-gutters"><a href="#"><i class="fa fa-folder font-size-20 vertical-align-center"></i>Les dossiers mensuels</a></li>
+                                            <li class="col-xs-12 col-sm-4 col-md-4 col-lg-4 no-gutters"><a href="#"><i class="fa fa-file-pdf-o font-size-20 vertical-align-center"></i>Les livres blancs</a></li>
+                                            <li class="col-xs-12 col-sm-4 col-md-4 col-lg-4 no-gutters"><a href="#"><i class="fa fa-play-circle-o font-size-20 vertical-align-center"></i>Les conférences en ligne</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="hidden-xs hidden-sm col-md-4 col-lg-4">
+                                    <div class="blog-thumb margin-bottom-5 zoning">
+                                        <div class="blog-thumb-hover">
+                                            <img src="{{ bootstrap ("img/main/img26.jpg") }}" alt="">
+                                        </div>
+                                        <div class="blog-thumb-desc">
+                                            <p class="margin-0 line-height-16 margin-top-10 font-size-13"><a href="blog_single.html">Tchernobyl contamine toujours les Alpes</a></p>
+                                        </div>
+                                    </div>
+                                    <div class="blog-thumb margin-bottom-5 zoning">
+                                        <div class="blog-thumb-hover">
+                                            <img src="{{ bootstrap ("img/main/img26.jpg") }}" alt="">
+                                        </div>
+                                        <div class="blog-thumb-desc">
+                                            <p class="margin-0 line-height-16 margin-top-10 font-size-13"><a href="blog_single.html">Tchernobyl contamine toujours les Alpes</a></p>
+                                        </div>
+                                    </div>
+                                    <div class="blog-thumb margin-bottom-5 zoning">
+                                        <div class="blog-thumb-hover">
+                                            <img src="{{ bootstrap ("img/main/img26.jpg") }}" alt="">
+                                        </div>
+                                        <div class="blog-thumb-desc">
+                                            <p class="margin-0 line-height-16 margin-top-10 font-size-13"><a href="blog_single.html">Tchernobyl contamine toujours les Alpes</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- End LE MAGAZINE D'ACTUALITE -->
+
+                    <!-- TELECHARGEMENTS GRATUITS -->
+                    <li class="navbar-mods">
+                        <a href="javascript:void(0);" class="dropdown-toggle padding-menu-buttons font-size-12 font-family-myriadpro-semibold letter-spacing-110" data-toggle="dropdown">
+                            CONTENUS GRATUITS
+                        </a>
+                    </li>
+                    <!-- End TELECHARGEMENTS GRATUITS -->
+
+                    <!-- A PROPOS -->
+                    <li class="navbar-mods">
+                        <a href="javascript:void(0);" class="dropdown-toggle font-size-12 font-family-myriadpro-semibold letter-spacing-110" data-toggle="dropdown">
+                            A PROPOS
+                        </a>
+                        <!-- <ul class="dropdown-menu">
+                            <li><a href="environnement.html">Environnement</a></li>
+                            <li class="active"><a href="offres.html">Offres</a></li>
+                            <li><a href="article_actualite.html">Actualités</a></li>
+                            <li><a href="accueil.html">Accueil</a></li>
+                            <li><a href="env_test_2.html">Domaine</a></li>
+                        </ul> -->
+                    </li>
+                    <!-- End A PROPOS -->
+
+                    <!-- CONTACTS -->
+                    <li class="navbar-mods">
+                        <a href="javascript:void(0);" class="dropdown-toggle font-size-12 font-family-myriadpro-semibold letter-spacing-110" data-toggle="dropdown">
+                            CONTACT
+                        </a>
+                    </li>
+                    <!-- End CONTACTS -->
+
+                    <!-- RECHERCHE
+                    <li class="dropdown dropdown-style navbar-mods md-lg-hide">
+                        <div class="input-group input-grp" style="width: 100%;">
+                            <input class="form-control input-srch-col search-bar" style="padding-left: 8px; width: 187px;" placeholder="Tapez votre recherche ici" type="text">
+                                <span class="input-group-btn">
+                                    <button class="btn-u bg-color-red-eti " type="button"><i class="glyphicon glyphicon-search"></i></button>
+                                </span>
+                        </div>
+                    </li>
+                     End RECHERCHE -->
+
+                </ul>
+            </div><!--/end container-->
+        </div><!--/navbar-collapse-->
+    </div>
+    <!-- End Navbar -->
+</div><!--=== End Header v1 ===-->

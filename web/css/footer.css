@@ -1,0 +1,265 @@
+/*****************************
+FOOTER
+*******************************/
+#shorcuts_nav {
+    padding: 14px;
+    font-size: 11px;
+    color: #FFF!important;
+}
+#shorcuts_nav li {
+    color: #FFF!important;
+}
+#shorcuts_nav a{
+    color: #FFF!important;
+    font-family: Arial, Helvetica, Verdana, sans-serif!important;
+}
+
+#shorcuts_nav .inline .line1 {
+    padding-bottom: 6px;
+}
+
+#shorcuts_nav .inline {
+    display: inline;
+    padding: 0;
+}
+.bg {
+    background: #e2e3e4;
+}
+.line1 li,.line2 li {
+    border-right: 1px solid;
+}
+.line2 ul.inline {
+    margin-bottom: 0;
+}
+ul.inline li {
+    display: inline;
+    padding: 0 5px;
+}
+ul.inline li.last {
+    border-right: none !important;
+}
+.center {
+    text-align: center;
+    margin: 0 auto;
+}
+
+#footer {
+    padding-bottom: 20px;
+    background: url('../images/fond_footer.png') 0 0 #ffffff repeat-x;
+    position: relative;
+    z-index: 101;
+}
+#footer .container_24 {
+    width:960px;
+    margin: 0 auto;
+}
+#footer * {
+    font-family: DIN-Alternate-medium, century gothic!important;
+}
+
+#footer a {
+    color: #565c60;
+    font-weight: normal;
+}
+#footer a:hover {
+    color:#565c60;
+    text-decoration:underline;
+}
+/****** footer_searchForm *******/
+#footer_searchForm_holder {
+    position: relative;
+    height: 78px;
+    margin-bottom: 15px;
+    width: 963px;
+}
+
+*+html #footer_searchForm {
+    margin-left: 275px;
+    left: 0;
+}
+
+#footer_searchForm {
+    position: absolute;
+    width: 397px;
+    left: 50%;
+    top: 9px;
+    margin-left: -198px;
+    padding: 14px 0 0 12px;
+}
+
+/****** QuickLinks *******/
+#footer-cols,
+.footer-thematique {
+    margin: 15px 0;
+    padding-bottom: 15px;
+}
+#menu-footer-generique {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#footer-cols h4, #footer-cols p.rub,
+#menu-footer-generique>li>a {
+    font-size: 14px;
+    font-weight: 700;
+    height: 25px;
+    padding: 7px 0 0 45px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #333;
+    margin-bottom: 10px;
+    display: block;
+}
+
+#footer-cols h4.actu, #footer-cols p.actu,
+#menu-footer-generique li.actu>a {
+    padding: 7px 0 0 20px;
+}
+
+#footer-cols h4.ressdoc, #footer-cols p.ressdoc,
+#menu-footer-generique li.ressdoc>a{
+    background: url("../images/picto_basdoc.png") no-repeat scroll 5px 0 rgba(0, 0, 0, 0);
+}
+
+#footer-cols h4.conseil, #footer-cols p.conseil,
+#menu-footer-generique li.conseil>a {
+    background: url("../images/picto_conseil.png") no-repeat scroll 5px 0 rgba(0, 0, 0, 0);
+}
+
+#footer-cols h4.formation, #footer-cols p.formation,
+#menu-footer-generique li.formation>a {
+    background: url("../images/picto_formation.png") no-repeat scroll 5px 0 rgba(0, 0, 0, 0);
+}
+
+/****** QuickLinks *******/
+#footerlinks .line1,#footerlinks .line2,#seo,#baseline {
+    margin: 0 0 5px;
+}
+
+#footerlinks .line1,#footerlinks .line2 {
+    padding: 5px;
+}
+
+#footerlinks *, #baseline * {
+    font-size: 11px;
+    font-family: Arial, Helvetica, Verdana, sans-serif!important;
+}
+#baseline {
+    margin: 20px 0 0;
+}
+#footer-cols .col {width:33.33333333%; float:left;}
+
+/***** quicklink *****/
+.quicklinks,
+.col-pad .border-bottom {
+    background: transparent url(../images/dots.png) repeat-x 0 100%;
+    border:none;
+}
+
+.quicklinks .col-pad,
+.footer-thematique  {
+    background: transparent url(../images/dots_vertical.png) repeat-y 50% 0;
+}
+
+.quicklinks ul,.quicklinks h3, #menu-footer-generique li .sub-menu {
+    padding: 0;
+    margin: 0 0 10px 20px;
+}
+
+.quicklinks h3 {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 18px;
+}
+
+.quicklinks li {
+    background: transparent url(../images/bullet_arrow_red_smll.png) no-repeat 0 4px;
+    padding: 0 0 0 12px;
+    display: block;
+    font-size: 11px;
+}
+#footer .quicklinks li a {
+    font-family: myriad-pro!important;
+}
+#seo a {
+    text-decoration: none;
+    font-family: myriad-pro!important;
+}
+#seo * {
+    font-family: myriad-pro!important;
+    color:#333;
+    font-size: 12px;
+}
+
+#footer .footer-thematique {
+    background: transparent url(../images/dots_vertical.png) repeat-y 49% 0;
+}
+#footer .border-bottom {
+    background: transparent url(../images/dots.png) repeat-x 50% 50%;
+    height: 20px;
+}
+#footer .footer-thematique div>ul {
+    clear: both;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#footer .footer-thematique div>ul>li {
+    width:33%;
+    float:left;
+}
+#footer .footer-thematique div>ul>li>a {
+    min-height:30px;
+    height: auto!important;
+}
+#footer .footer-thematique div>ul>li a {
+    font-size: 14px;
+    font-weight: 700;
+    height: 25px;
+    padding: 7px 0 0 45px;
+    text-align: left;
+    text-transform: uppercase;
+    color:#000;
+    display: block;
+}
+#footer .footer-thematique div>ul>li.autre a {
+    padding: 7px 0 0 20px;
+}
+#footer .footer-thematique div>ul>li.lower a {
+    text-transform:initial;
+    font-size: 12px;
+}
+#footer .footer-thematique div>ul>li.ressdoc {
+    background: url("../images/picto_basdoc.png") no-repeat scroll 5px 0 transparent;
+}
+#footer .footer-thematique div>ul#menu-footer-generique>li.ressdoc {
+    height: 355px;
+}
+#footer .footer-thematique div>ul>li.formation {
+    background: url("../images/picto_formation.png") no-repeat scroll 5px 0 transparent;
+}
+#footer .footer-thematique div>ul>li.conseil {
+    background: url("../images/picto_conseil.png") no-repeat scroll 5px 0 transparent;
+}
+#footer .footer-thematique div>ul#menu-footer-generique>li.conseil {
+    margin: -25px 0 0 0;
+}
+#footer .footer-thematique div ul.sub-menu {
+    padding: 0;
+    margin: 0 0 10px 20px;
+    list-style: none;
+}
+#footer .footer-thematique div ul.sub-menu li a {
+    background: transparent url(../images/bullet_arrow_red_smll.png) no-repeat 0 4px;
+    padding: 0 0 0 12px;
+    display: block;
+    font-size: 11px;
+    text-transform:initial;
+    height: auto;
+    color:#565c60;
+    font-weight:normal
+}
+#footer .footer-thematique div .rss ul.sub-menu li {
+    background: transparent url(../images/rss.jpg) no-repeat 40px 0;
+}

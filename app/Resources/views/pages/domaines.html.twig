@@ -1,0 +1,283 @@
+{# wk-template : domaine.html.twig #}
+{# wk-description : Page domaine du site #}
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <!--=== Content Part  ===-->
+    <div class="container slider-margin-top">
+        <!--=== Breadcrumbs ===-->
+        {{ module("navigation/breadcrumb") }}
+        <!--=== End Breadcrumbs ===-->
+        <div class="tag-box tag-box-v6 domaine-secteur-box header-modified">
+            <div class="heading heading-v1 margin-bottom-10">
+                <img class="col-centered" src="{{ media ("domaines/env_sec.png") }}">
+                <h1 class="text-center letter-spacing-2v5 background-encart">Environnement et sécurité</h1>
+                <p class="text-center line-height-1v2 font-size-15 letter-spacing-75">Une véritable <span class="text-color">(r)évolution</span> des comportements a vu le jour depuis que le respect de l’<span class="text-color">environnement</span> et la prévention des risques sont au coeur des préoccupations des entreprises. Pour un produit, un procédé ou une installation, c’est le <span class="text-color">cycle de vie</span> complet qui est analysé pour améliorer la <span class="text-color">performance écologique</span> et <span class="text-color">économique</span>, anticiper les <span class="text-color">risques</span> et les maîtriser.</p>
+            </div>
+        </div>
+
+        <div id="menu-smint" class="tab-v1 tab-domaines">
+            <div id="sub-menu" class="subMenu margin-bottom-20" style="position: fixed; margin-top: 0px; top: 0px; left: 0px;">
+                <div class="inner">
+                    <a href="#documents-smint" class="subNavBtn active pull-left" id="documents-smint">Offres ressources documentaires</a>
+                    <a href="#downloads-smint" class="subNavBtn" id="downloads-smint">Téléchargements gratuits (PDF)</a>
+                    <a href="#actualites-smint" class="subNavBtn" id="actualites-smint">Dernières actualités</a>
+                    <a href="#conferences-smint" class="subNavBtn" id="conferences-smint">Conférences en ligne</a>
+                    <a href="#rien-smint" class="subNavBtn" id="rien-smint">Formations</a>
+                    <a href="javascript:void(0);" class="btn menu-button dropdown-toggle extLink" data-toggle="dropdown">
+                        <i class="fa fa-angle-down menu-icon"></i>
+                    </a>
+                    <ul class="dropdown-menu pull-right pop-up-menu list-unstyled link-list-cstm padding-bottom-0 padding-top-0">
+                        <li onclick="$('.documents-smint').ScrollTo();"><p id="d-documents" class="pop-up-style margin-top-5 margin-bottom-5">Offres ressources documentaires</p></li>
+                        <li onclick="$('.downloads-smint').ScrollTo();"><p id="d-downloads" class="pop-up-style margin-top-5 margin-bottom-5">Téléchargements gratuits (PDF)</p></li>
+                        <li onclick="$('.actualites-smint').ScrollTo();"><p id="d-actualites" class="pop-up-style margin-top-5 margin-bottom-5">Dernières actualités</p></li>
+                        <li onclick="$('.conferences-smint').ScrollTo();"><p id="d-conferences" class="pop-up-style margin-top-5 margin-bottom-5">Conférences en ligne</p></li>
+                    </ul>
+                </div>
+            </div>
+            {{ module("navigation/onglets") }}
+            <div class="tab-content tab-content-domaine">
+                <!--=== onglet ressources documentaires ===-->
+                <section class="documents-smint tab-pane fade in tab-bg active" id="documents">
+                    <h4 class="downloads-title text-center margin-top-35 margin-bottom-40 margin-right-200 font-size-17">TOUTES NOS<span class="font-family-myriadpro-semibold"> OFFRES POUR ENVIRONNEMENT</span> ET <span class="font-family-myriadpro-semibold">SÉCURITÉ</span></h4>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-8">
+
+                            <h4 class="margin-top-0 margin-bottom-15 font-weight-300 text-left font-size-15 letter-spacing-75">Ce domaine scientifique comprend<span class="font-size-20 font-family-myriadpro-semibold"> 687</span> articles, organisés en <span class="font-size-20 font-family-myriadpro-semibold">6 </span> offres.</h4>
+                            <p class="margin-bottom-50 text-left font-size-13 letter-spacing-75 line-height-16">Une offre Techniques de l’Ingénieur, c’est la garantie d’accéder en ligne à une base complète d'articles, actualisée et mise à jour en permanenceet de bénéficier de services et d'outils pratiques.</p>
+
+                            <div class="panel panel-default cellule header-padding no-border-top no-border-bottom">
+                                {{ module("domaine/riskev") }}
+                            </div>
+
+                            <div class="panel panel-default cellule header-padding no-border-bottom">
+                                {{ module("domaine/pack") }}
+                            </div>
+                            <div class="panel panel-default cellule header-padding no-border-bottom">
+                                {{ module("domaine/pack") }}
+                            </div>
+                            <div class="panel panel-default cellule header-padding no-border-bottom">
+                                {{ module("domaine/pack") }}
+                            </div>
+                            <div class="panel panel-default cellule header-padding no-border-bottom">
+                                {{ module("domaine/pack") }}
+                            </div>
+                            <div class="panel panel-default cellule header-padding no-border-bottom">
+                                {{ module("domaine/pack") }}
+                            </div>
+                            <div class="panel panel-default cellule header-padding no-border-bottom">
+                                {{ module("domaine/pack") }}
+                            </div>
+                        </div>
+                        <div class="hidden-xs hidden-sm col-md-4">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6 col-md-12 ">
+                                    {{ module("reassurance/offre-commerciale") }}
+                                </div>
+                                <div class="pub-bloc hidden-xs hidden-sm col-md-12 margin-top-40-pub">
+                                    {{ module("publicite/bandeau-liens") }}
+                                    {{ module('actualite/emplacement-pub-300x250') }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--=== onglet téléchargements gratuits ===-->
+                <section class="downloads-smint tab-pane fade tab-bg" id="downloads">
+                    <div class="mint margin-top-20 margin-bottom-20">
+                        <div class="menu">
+                            <p class="menuBtn">Téléchargements gratuits (PDF)</p>
+                            <a href="javascript:void(0);" class="btn menu-button dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-angle-down menu-icon"></i>
+                            </a>
+                            <ul class="dropdown-menu pull-right pop-up-menu list-unstyled link-list-cstm padding-bottom-0 padding-top-0">
+                                <li onclick="$('.documents-smint').ScrollTo();"><p id="d-documents" class="pop-up-style margin-top-5 margin-bottom-5">Offres ressources documentaires</p></li>
+                                <li onclick="$('.downloads-smint').ScrollTo();"><p id="d-downloads" class="pop-up-style margin-top-5 margin-bottom-5">Téléchargements gratuits (PDF)</p></li>
+                                <li onclick="$('.actualites-smint').ScrollTo();"><p id="d-actualites" class="pop-up-style margin-top-5 margin-bottom-5">Dernières actualités</p></li>
+                                <li onclick="$('.conferences-smint').ScrollTo();"><p id="d-conferences" class="pop-up-style margin-top-5 margin-bottom-5">Conférences en ligne</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h2 class="downloads-title text-center margin-top-30 margin-bottom-40 margin-right-200 font-size-17">tous nos <span class="font-family-myriadpro-semibold">livres blancs environnement</span> et <span class="font-family-myriadpro-semibold">sécurité</span></h2>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 xs-padding-0">
+                            {{ module("livre-blanc/livre-blanc") }}
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 xs-padding-0">
+                            {{ module("livre-blanc/livre-blanc") }}
+                        </div>
+                        <div class="hidden-xs hidden-sm col-md-4 col-lg-4 xs-padding-0">
+                            {{ module("reassurance/offre-commerciale") }}
+                        </div>
+                    </div>
+                    <div class="row margin-top-30">
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 xs-padding-0">
+                            {{ module("livre-blanc/livre-blanc") }}
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 xs-padding-0">
+                            {{ module("livre-blanc/livre-blanc") }}
+                        </div>
+                        <div class="pub-bloc hidden-xs hidden-sm col-md-4 col-lg-4 xs-padding-0">
+                            {{ module("publicite/bandeau-liens") }}
+                            {{ module('actualite/emplacement-pub-300x250') }}
+                        </div>
+                    </div>
+                    <div class="row margin-top-30">
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 xs-padding-0">
+                            {{ module("livre-blanc/livre-blanc") }}
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 xs-padding-0">
+                            {{ module("livre-blanc/livre-blanc") }}
+                        </div>
+                        <div class="col-xs-12 hidden-sm col-md-4 col-lg-4 xs-padding-0">
+                            {{ module("livre-blanc/livre-blanc") }}
+                        </div>
+                    </div>
+                    <p class="text-center margin-top-55">
+                        <a href="#" class="btn-u btn-brd btn-u-red btn-u-sm color-red-eti btn-center letter-spacing-75" type="button"><i class="fa fa-fa fa-chevron-right margin-right-5"></i> TOUS LES LIVRES BLANCS</a>
+                    </p>
+                </section>
+
+                <!--=== onglet actualité ===-->
+                <section class="actualites-smint tab-pane fade tab-bg" id="actualites">
+                    <div class="mint margin-top-20 margin-bottom-20">
+                        <div class="menu">
+                            <p class="menuBtn">Dernières actualités</p>
+                            <a href="javascript:void(0);" class="btn menu-button dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-angle-down menu-icon"></i>
+                            </a>
+                            <ul class="dropdown-menu pull-right pop-up-menu list-unstyled link-list-cstm padding-bottom-0 padding-top-0">
+                                <li onclick="$('.documents-smint').ScrollTo();"><p id="d-documents" class="pop-up-style margin-top-5 margin-bottom-5">Offres ressources documentaires</p></li>
+                                <li onclick="$('.downloads-smint').ScrollTo();"><p id="d-downloads" class="pop-up-style margin-top-5 margin-bottom-5">Téléchargements gratuits (PDF)</p></li>
+                                <li onclick="$('.actualites-smint').ScrollTo();"><p id="d-actualites" class="pop-up-style margin-top-5 margin-bottom-5">Dernières actualités</p></li>
+                                <li onclick="$('.conferences-smint').ScrollTo();"><p id="d-conferences" class="pop-up-style margin-top-5 margin-bottom-5">Conférences en ligne</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h2 class="downloads-title text-center margin-top-30 margin-bottom-40 margin-right-200 font-size-17">toute <span class="font-family-myriadpro-semibold">l'actualité environnement</span> et <span class="font-family-myriadpro-semibold">sécurité</span></h2>
+                    <div class="margin-right-40">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 xs-padding-0">
+                                {{ module('actualite/article-300x250') }}
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 xs-padding-0">
+                                {{ module('actualite/article-300x250') }}
+                            </div>
+                            <div class="hidden-xs hidden-sm col-md-4 col-lg-4 xs-padding-0">
+                                {{ module("reassurance/offre-commerciale") }}
+                            </div>
+                        </div>
+                        <div class="row margin-top-30">
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 xs-padding-0">
+                                {{ module('actualite/article-300x250') }}
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 xs-padding-0">
+                                {{ module('actualite/article-300x250') }}
+                            </div>
+                            <div class="pub-bloc hidden-xs hidden-sm col-md-4 col-lg-4 xs-padding-0">
+                                {{ module("publicite/bandeau-liens") }}
+                                {{ module('actualite/emplacement-pub-300x250') }}
+                            </div>
+                        </div>
+                        <div class="row margin-top-30">
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 xs-padding-0">
+                                {{ module('actualite/article-300x250') }}
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 xs-padding-0">
+                                {{ module('actualite/article-300x250') }}
+                            </div>
+                            <div class="col-xs-12 hidden-sm col-md-4 col-lg-4 xs-padding-0">
+                                {{ module('actualite/article-300x250') }}
+                            </div>
+                        </div>
+                        <p class="text-center margin-top-40">
+                            <a href="#" class="btn-u btn-brd btn-u-red btn-u-sm color-red-eti btn-center" type="button"><i class="fa fa-fa fa-chevron-right margin-right-5"></i> TOUTE L'ACTUALITÉ</a>
+                        </p>
+                    </div>
+                </section>
+
+                <!--=== onglet conferences en ligne ===-->
+                <section class="conferences-smint tab-pane fade tab-bg" id="conferences">
+                    <div class="mint margin-top-20 margin-bottom-20">
+                        <div class="menu">
+                            <p class="menuBtn">Conférences en ligne</p>
+                            <a href="javascript:void(0);" class="btn menu-button dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-angle-down menu-icon"></i>
+                            </a>
+                            <ul class="dropdown-menu pull-right pop-up-menu list-unstyled link-list-cstm padding-bottom-0 padding-top-0">
+                                <li onclick="$('.documents-smint').ScrollTo();"><p id="d-documents" class="pop-up-style margin-top-5 margin-bottom-5">Offres ressources documentaires</p></li>
+                                <li onclick="$('.downloads-smint').ScrollTo();"><p id="d-downloads" class="pop-up-style margin-top-5 margin-bottom-5">Téléchargements gratuits (PDF)</p></li>
+                                <li onclick="$('.actualites-smint').ScrollTo();"><p id="d-actualites" class="pop-up-style margin-top-5 margin-bottom-5">Dernières actualités</p></li>
+                                <li onclick="$('.conferences-smint').ScrollTo();"><p id="d-conferences" class="pop-up-style margin-top-5 margin-bottom-5">Conférences en ligne</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h2 class="downloads-title text-center margin-top-30 margin-bottom-40 margin-right-200 font-size-17">toutes nos <span class="font-family-myriadpro-semibold">conférences environnement</span> et <span class="font-family-myriadpro-semibold">sécurité</span></h2>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 xs-padding-0 xs-margin-bottom-15">
+                            {{ module("conference/conference") }}
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 xs-padding-0 xs-margin-bottom-15">
+                            {{ module("conference/conference") }}
+                        </div>
+                        <div class="hidden-xs hidden-sm col-md-4 col-lg-4 xs-padding-0">
+                            {{ module("reassurance/offre-commerciale") }}
+                        </div>
+                    </div>
+                    <div class="row margin-top-30">
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 xs-padding-0 xs-margin-bottom-15">
+                            {{ module("conference/conference") }}
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 xs-padding-0 xs-margin-bottom-15">
+                            {{ module("conference/conference") }}
+                        </div>
+                        <div class="pub-bloc hidden-xs hidden-sm col-md-4 col-lg-4 xs-padding-0">
+                            {{ module("publicite/bandeau-liens") }}
+                            {{ module('actualite/emplacement-pub-300x250') }}
+                        </div>
+                    </div>
+                    <div class="row margin-top-30">
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 xs-padding-0 xs-margin-bottom-15">
+                            {{ module("conference/conference") }}
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 xs-padding-0 xs-margin-bottom-15">
+                            {{ module("conference/conference") }}
+                        </div>
+                        <div class="col-xs-12 hidden-sm col-md-4 col-lg-4 xs-padding-0 xs-margin-bottom-15">
+                            {{ module("conference/conference") }}
+                        </div>
+                    </div>
+
+                    <p class="text-center margin-top-55">
+                        <a href="#" class="btn-u btn-brd btn-u-red btn-u-sm color-red-eti btn-center" type="button"><i class="fa fa-fa fa-chevron-right margin-right-5"></i> TOUTES LES CONFÉRENCES</a>
+                    </p>
+                </section>
+
+                <!--=== onglet formation ===-->
+
+
+                <!--=== onglet rien ===-->
+                <section class="rien-smint tab-pane fade tab-bg" id="rien"></section>
+            </div>
+        </div>
+
+        <div class="bottom-bloc">
+            <hr id="hr-separator">
+            <div class="row blocs">
+                <div class="col-xs-12 col-sm-6 hidden-md hidden-lg ">
+                    {{ module("reassurance/offre-commerciale") }}
+                </div>
+                <div class="pub-bloc col-xs-12 col-sm-6 hidden-md hidden-lg">
+                    {{ module("publicite/bandeau-liens") }}
+                    {{ module('actualite/emplacement-pub-300x250') }}
+                </div>
+            </div>
+            <hr id="hr-separator" class=" hidden-md hidden-lg ">
+            {{ module ("newsletter/newsletter") }}
+            <!--=== 3 blocs ===-->
+            {{ module ("reassurance/reassurance2") }}
+            <!--=== End 3 blocs ===-->
+        </div>
+    </div>
+{% endblock %}
