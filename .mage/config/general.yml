@@ -1,9 +1,0 @@
-# global settings
-name: Magento PimLink
-email: fguerard@weka.fr
-notifications: true
-logging: true
-maxlogs: 30
-ssh_needs_tty: false
-colors : false
-use_sudo : true
