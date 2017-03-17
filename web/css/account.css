@@ -67,7 +67,7 @@ p {
   min-height: 85px; }
 
 .rattacher #secretCode, .rattacher #code {
-  width: 84%;
+  width: 80%;
   height: 30px;
   padding-left: 15px;
   margin-right: 15px;
@@ -117,8 +117,10 @@ p {
       color: #ffffff; }
 
 .services.block-link-hover a div {
-  width: 60px;
-  margin: 0 auto; }
+  width: 70px;
+  margin: 0 auto;
+  height: 58px;
+  padding: 10px !important; }
 
 .timeline-v1 {
   padding: 0; }
@@ -384,7 +386,7 @@ tr[class^="subscription-ti"] td, tr[class^="subscription-fp"] td {
   display: none; }
 
 .subscription-thematique .ressources-subscription {
-  background: #1B8BBB; }
+  background: #1B8BBB !important; }
 
 table.collapse.in {
   display: table; }

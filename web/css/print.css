@@ -18,7 +18,8 @@
   .hidden-print,
   #footer-v2,
   #bandeau-cookie,
-  .sidebar-nav-v1 {
+  .sidebar-nav-v1,
+  .title-collapse:after {
     display: none!important; }
 
   .inner-results .list-inline {
@@ -41,5 +42,10 @@
 
   .content-article.no-gutters-right {
     min-height:auto!important;
+  }
+
+  .thematique a.color-white,
+  .ressources-subscription {
+    color:#000000!important;
   }
 }

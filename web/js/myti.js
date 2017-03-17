@@ -6,9 +6,9 @@ jQuery(document).ready(function () {
 
   jQuery("#search-subscription-input").keyup(function() {
 		var value = this.value;
-		jQuery("#search-subscription-div").removeHighlight();
+		jQuery(".subscriptions-list").removeHighlight();
 		if (value != "") {
-			jQuery("#search-subscription-div").highlight(value, true);
+			jQuery(".subscriptions-list").highlight(value, true);
 		}
 	});
 
