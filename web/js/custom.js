@@ -934,6 +934,29 @@ $(document).ready(function () {
     $("#menu-menu-generique-ti > li").each(function(){
         $("#menu-menu-generique-ti > li > a").addClass("dropdown-toggle").attr("data-toggle","dropdown");
     });
+
+    var pageNumber = 1;
+
+    $('#tweet-list').scroll(function(){
+        var $this = $(this);
+        var height = this.scrollHeight - $this.innerHeight(); // Get the height of the div
+        var scroll = $this.scrollTop(); // Get the vertical scroll position
+
+        var isScrolledToEnd = (scroll >= height);
+
+        if (isScrolledToEnd) {
+            //On lance la fonction ajax
+            $.ajax({
+                type:"GET",
+                url:'/dashboard-tweet-ajax?pageNumber='+pageNumber,
+                success: function(data) {
+                    $("#tweet-list").append(data);
+                    load=false;
+                    pageNumber++;
+                }
+            });
+        }
+    });
 });
 (function () {
     var v = document.getElementsByClassName("youtube-player");
