@@ -3095,6 +3095,11 @@ $color-red : #EC1625 ;
     }
   }
   .header-v1 {
+    .form-control {
+      &:focus {
+        text-transform: lowercase;
+      }
+    }
     #navbar-x {
       .container {
         background: #EBEBEB;
