@@ -1396,6 +1396,10 @@ label.text-hover:hover {
       padding: 13px 32px;
       color: #fff; }
 
+.encart-info-compte {
+  background: url("../images/visuel-mon-compte-bis.jpg") no-repeat center center transparent;
+  background-size: 100%; }
+
 .encart-top-edito {
   position: relative; }
   .encart-top-edito h1 {
