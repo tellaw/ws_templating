@@ -3380,6 +3380,16 @@ $color-red : #EC1625 ;
   .login-box-border {
     right:10%!important;
   }
+  .myti-bloc-actions-users {
+    form {
+      input, select {
+        width:100%;
+      }
+      p {
+        min-height: 35px!important;
+      }
+    }
+  }
 }
 
 @media all and (min-width: 992px) and (max-width: 1199px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {

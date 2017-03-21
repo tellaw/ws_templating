@@ -2186,7 +2186,11 @@
 
 @media all and (max-width: 1199px) {
   .login-box-border {
-    right: 10% !important; } }
+    right: 10% !important; }
+  .myti-bloc-actions-users form input, .myti-bloc-actions-users form select {
+    width: 100%; }
+  .myti-bloc-actions-users form p {
+    min-height: 35px !important; } }
 
 @media all and (min-width: 992px) and (max-width: 1199px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .md-smint {

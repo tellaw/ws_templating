@@ -591,3 +591,6 @@ span.res-chevron {
   .toxev-subscriptions a:hover {
     color: #1B8BBB;
     text-decoration: underline; }
+
+.contact-infos, .contact-name, .contact-identifiant {
+  word-wrap: break-word; }

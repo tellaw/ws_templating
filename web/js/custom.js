@@ -966,6 +966,16 @@ $(document).ready(function () {
         }
     });
 
+    $(".mode-list").click(function() {
+        $("#mode-list").show();
+        $("#mode-bloc").hide();
+    });
+
+    $(".mode-bloc").click(function() {
+        $("#mode-bloc").show();
+        $("#mode-list").hide();
+    });
+
 });
 (function () {
     var v = document.getElementsByClassName("youtube-player");
