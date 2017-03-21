@@ -936,7 +936,6 @@ $(document).ready(function () {
     });
 
     var pageNumber = 1;
-
     $('.fil-actu').scroll(function(){
         var $this = $(this);
         var height = this.scrollHeight - $this.innerHeight(); // Get the height of the div
@@ -957,6 +956,16 @@ $(document).ready(function () {
             });
         }
     });
+
+    $('#timeline > p > a').on('click', function(){
+        if($(this).parent('p').hasClass('active')) {
+            $(this).html('Masquer les questions');
+        }
+        else {
+            $(this).html('Afficher les questions');
+        }
+    });
+
 });
 (function () {
     var v = document.getElementsByClassName("youtube-player");

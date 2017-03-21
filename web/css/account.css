@@ -572,3 +572,22 @@ span.res-chevron {
 
 .encart-top-account p {
   background-size: cover; }
+
+.intitule-compte label {
+  width: 100%;
+  color: #1B8BBB;
+  font-family: myriad-pro-semi-bold; }
+
+#picture-button {
+  background: none;
+  border: none;
+  color: #1B8BBB;
+  width: auto;
+  padding: 0;
+  font-family: myriad-pro-semi-bold; }
+
+.toxev-subscriptions a {
+  font-family: myriad-pro-semi-bold; }
+  .toxev-subscriptions a:hover {
+    color: #1B8BBB;
+    text-decoration: underline; }
