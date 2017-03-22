@@ -4287,6 +4287,10 @@ a.abonnement-text:hover {
     vertical-align: middle;
 }
 
+.vertical-align-top {
+    vertical-align: top;
+}
+
 .display-flex {
     display: -webkit-box;
     display: -moz-box;
