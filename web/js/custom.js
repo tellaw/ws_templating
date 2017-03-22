@@ -190,7 +190,7 @@ $(document).ready(function () {
         $("#button-menu-header i").css({color: "#697277"});
     });
 
-    $( ".block-link-hover a.article-decouverte" ).hover(
+    $( ".block-link-hover a.ad" ).hover(
         function() {
             var picto_ad = $(".block-link-hover a .picto-article-decouverte").attr("src");
             picto_ad=picto_ad.replace("/images/article-decouverte-prospect.png", "/images/article-decouverte-abo-white.png");

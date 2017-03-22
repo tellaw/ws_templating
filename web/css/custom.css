@@ -4409,6 +4409,11 @@ tr {
     color: white;
 }
 
+.bg-red {
+    background-color: #EC1625;
+    color: white;
+}
+
 .bg-gray {
     background-color: #697277;
     color: white;
