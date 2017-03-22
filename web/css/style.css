@@ -1350,6 +1350,12 @@ label.text-hover:hover {
     .corps-article article div[class^='encart-'] img {
       width: 100%;
       height: auto; }
+    .corps-article article .encart-large {
+      clear: both; }
+      .corps-article article .encart-large img {
+        width: auto !important;
+        height: auto;
+        float: left; }
 
 .alignleft {
   float: left;

@@ -1799,6 +1799,14 @@ label.text-hover {
         height: auto;
       }
     }
+    .encart-large {
+      clear:both;
+      img {
+        width: auto!important;
+        height: auto;
+        float:left;
+      }
+    }
   }
 }
 .alignleft {
