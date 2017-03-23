@@ -1348,7 +1348,8 @@ label.text-hover:hover {
     .corps-article article blockquote p {
       font-size: 16px !important; }
     .corps-article article div[class^='encart-'] img {
-      width: 100%;
+      width: auto;
+      max-width: 100%;
       height: auto; }
     .corps-article article .encart-large {
       clear: both; }
@@ -1369,6 +1370,10 @@ label.text-hover:hover {
   clear: both;
   display: block;
   margin: 7px auto; }
+
+.wp-caption {
+  width: auto;
+  max-width: 100%; }
 
 .wp-caption-text {
   -webkit-box-sizing: border-box;

@@ -1795,7 +1795,8 @@ label.text-hover {
     }
     div[class^='encart-']{
       img {
-        width: 100%;
+        width: auto;
+        max-width: 100%;
         height: auto;
       }
     }
@@ -1821,6 +1822,10 @@ label.text-hover {
   clear: both;
   display: block;
   margin: 7px auto;
+}
+.wp-caption {
+  width: auto;
+  max-width: 100%;
 }
 .wp-caption-text {
   -webkit-box-sizing: border-box;
