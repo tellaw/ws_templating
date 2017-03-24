@@ -4325,6 +4325,9 @@ a.abonnement-text:hover {
     border-top-width: 0px !important;
 }
 
+.border-top-blue {
+    border-top: 1px solid #1B8BBB;
+}
 .service-element-border {
     border: solid 1px transparent;
 }
@@ -6754,4 +6757,11 @@ ul.inline li {
 }
 .border-radius-5 {
     border-radius: 5px;
+}
+#collapse-espace-admin ul.border-top-blue {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#collapse-espace-admin ul.border-top-blue:first-child {
+    border:none;
 }
