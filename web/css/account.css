@@ -578,6 +578,10 @@ span.res-chevron {
   color: #1B8BBB;
   font-family: myriad-pro-semi-bold; }
 
+.print-logo {
+  position: absolute;
+  right: 25px; }
+
 #picture-button {
   background: none;
   border: none;
