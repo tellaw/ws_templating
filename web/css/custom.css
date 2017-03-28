@@ -4786,7 +4786,7 @@ form #di-link {
 }
 
 .formError {
-    left: 140px!important;
+    left: 140px;
     width: 255px;
     color: #EC1625;
     font-size: 12px;
