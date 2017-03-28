@@ -177,7 +177,7 @@ p {
   .sidebar-nav-v1 li a {
     font-size: 15px; }
     .sidebar-nav-v1 li a i, .sidebar-nav-v1 li a img {
-      color: #1B8BBB;
+      color: #1B8BBB !important;
       font-size: 20px;
       margin-right: 5px;
       width: 23px;
@@ -193,7 +193,7 @@ p {
       padding: 12px 0px 12px 10px;
       min-height: 44px; }
       .sidebar-nav-v1 li.actif a i, .sidebar-nav-v1 li.actif:hover a i {
-        color: #ffffff; }
+        color: #ffffff !important; }
   .sidebar-nav-v1 li ul {
     background: #ffffff; }
     .sidebar-nav-v1 li ul li a {
