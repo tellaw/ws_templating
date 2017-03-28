@@ -6765,3 +6765,28 @@ ul.inline li {
 #collapse-espace-admin ul.border-top-blue:first-child {
     border:none;
 }
+.xls {
+    height: 50px;
+    float: left;
+    padding: 10px 0 0 50px;
+    font-weight: bold;
+    text-decoration: underline;
+    background: url(../images/icons1.png) no-repeat 10px 0px;
+    font-size:12px;
+}
+.xml {
+    height: 50px;
+    float: right;
+    padding: 10px 0 0 50px;
+    font-weight: bold;
+    text-decoration: underline;
+    background: url(../images/icons8.png) no-repeat 10px 0px;
+    font-size:12px;
+}
+.xls:hover a, .xml:hover a {
+    color: #1B8BBB;
+}
+.stats {
+    background: url(../images/onglet_statistique.jpg) right -19px no-repeat transparent;
+    clear: both;
+}

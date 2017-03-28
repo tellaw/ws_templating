@@ -938,7 +938,7 @@ $(document).ready(function () {
     var pageNumber = 1;
     $('.fil-actu').scroll(function(){
         var $this = $(this);
-        var height = this.scrollHeight - $this.innerHeight(); // Get the height of the div
+        var height = this.scrollHeight - $this.innerHeight() - $('#tweet-welcome').height(); // Get the height of the div
         var scroll = $this.scrollTop(); // Get the vertical scroll position
 
         var isScrolledToEnd = (scroll >= height);

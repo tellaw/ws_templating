@@ -164,6 +164,8 @@
 
 /* Mobile portrait */
 @media screen and (max-width: 425px) {
+  .profile-form span.red {
+    margin-left: 0; }
   .header-v1 button.btn-color {
     padding: 1px 5px; }
   .login-box-border {
@@ -648,6 +650,10 @@
       margin-left: 0; }
       .timeline-v2 > li .cbp_tmlabel:after {
         display: none; }
+  .encart-info-compte {
+    background: none; }
+    .encart-info-compte p.color-white {
+      color: #1B8BBB !important; }
   .corps-article article {
     margin-left: 29px;
     margin-right: 29px; }
@@ -1568,6 +1574,12 @@
 
 /* Large à intermédiaire bootstrap */
 @media screen and (min-width: 992px) and (max-width: 1200px) {
+  .profile-form form select, .profile-form form input {
+    width: 79%; }
+  .profile-form form label {
+    width: 20%; }
+  .profile-form form span.red {
+    margin-left: 21%; }
   .encart-infos .text {
     padding: 0; }
   .cadre-downloads-large {
@@ -2000,6 +2012,8 @@
 @media screen and (max-width: 1200px) {
   .timeline-v2:before {
     left: 22.3%; }
+  .encart-info-compte {
+    background-size: 200%; }
   .border-bloc {
     border: 1px solid #c6c6c6; }
   .img-svg {

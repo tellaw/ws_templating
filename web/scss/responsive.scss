@@ -214,6 +214,11 @@ $color-red : #EC1625 ;
 
 /* Mobile portrait */
 @media screen and (max-width: 425px) {
+  .profile-form {
+    span.red {
+      margin-left: 0;
+    }
+  }
   .header-v1{
     button.btn-color {
       padding: 1px 5px;
@@ -942,6 +947,12 @@ $color-red : #EC1625 ;
           display: none;
         }
       }
+    }
+  }
+  .encart-info-compte {
+    background: none;
+    p.color-white {
+      color: #1B8BBB!important;
     }
   }
   .corps-article {
@@ -2366,6 +2377,19 @@ $color-red : #EC1625 ;
 
 /* Large à intermédiaire bootstrap */
 @media screen and (min-width: 992px) and (max-width: 1200px)  {
+  .profile-form {
+    form {
+      select, input {
+        width:79%;
+      }
+      label {
+        width:20%;
+      }
+      span.red {
+        margin-left: 21%;
+      }
+    }
+  }
   .encart-infos {
     .text {
       padding: 0;
@@ -3030,7 +3054,9 @@ $color-red : #EC1625 ;
       left: 22.3%;
     }
   }
-
+  .encart-info-compte {
+    background-size: 200%;
+  }
   .border-bloc {
     border:1px solid #c6c6c6;
   }
