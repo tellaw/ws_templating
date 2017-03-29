@@ -949,6 +949,13 @@ $color-red : #EC1625 ;
       }
     }
   }
+  .services {
+    a {
+      display: block;
+      min-height: 0px;
+      padding-bottom: 15px;
+    }
+  }
   .encart-info-compte {
     background: none;
     p.color-white {

@@ -242,6 +242,16 @@ p {
         }
       }
     }
+    &.active {
+      ul {
+        li.actif {
+          a {
+            background: #434343;
+            padding: 12px 0px 12px 10px;
+          }
+        }
+      }
+    }
     ul {
       background: #ffffff;
       li {

@@ -194,6 +194,9 @@ p {
       min-height: 44px; }
       .sidebar-nav-v1 li.actif a i, .sidebar-nav-v1 li.actif:hover a i {
         color: #ffffff !important; }
+  .sidebar-nav-v1 li.active ul li.actif a {
+    background: #434343;
+    padding: 12px 0px 12px 10px; }
   .sidebar-nav-v1 li ul {
     background: #ffffff; }
     .sidebar-nav-v1 li ul li a {

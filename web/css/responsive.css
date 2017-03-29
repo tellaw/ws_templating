@@ -650,6 +650,10 @@
       margin-left: 0; }
       .timeline-v2 > li .cbp_tmlabel:after {
         display: none; }
+  .services a {
+    display: block;
+    min-height: 0px;
+    padding-bottom: 15px; }
   .encart-info-compte {
     background: none; }
     .encart-info-compte p.color-white {
