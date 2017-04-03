@@ -1,18 +1,53 @@
-jQuery(document).ready(function () {
-  //On cache le bloc #mon-espace-admin s'il n'a pas d'entrée
-  if (jQuery("#mon-espace-admin").has( "ul" ).length > 0) {
-    jQuery("#mon-espace-admin").show();
-  }
+$ = jQuery;
 
-  jQuery("#search-subscription-input").keyup(function() {
+$(document).ready(function () {
+	//On cache le bloc #mon-espace-admin s'il n'a pas d'entrée
+	if ($("#mon-espace-admin").has( "ul" ).length > 0) {
+		$("#mon-espace-admin").show();
+	}
+
+	var j = 0;
+	$("#search-subscription-input").keyup(function() {
+		//if(j == 0) $(this).parent("div").append('<i class="fa fa-times" aria-hidden="true" style="position:absolute; right:15px; top:calc((100% - 50%)/2); font-size:20px; z-index:99; cursor: pointer;"></i>');
+		if(j == 0) $(".reset-search p").show();
+		j++;
 		var value = this.value;
-		jQuery(".subscriptions-list").removeHighlight();
+		$(".subscriptions-list").removeHighlight();
 		if (value != "") {
-			jQuery(".subscriptions-list").highlight(value, true);
+			$(".subscriptions-list").highlight(value, true);
+		}
+		/*else if(j > 0 && value == "") {
+			j = 0;
+			$(this).parent("div").find('i.fa-times').remove();
+		}*/
+		else if(j > 0 && value == "") {
+			j = 0;
+			i = 0;
+			$(".reset-search p").hide();
 		}
 	});
 
-  if ( jQuery( "#profile-avatar" ).length ) {
-		jQuery("#user-bar-avatar").attr("src", jQuery("#profile-avatar").attr('src'));
+	var i = 0;
+	$("#search-subscription-input").on("keypress", function(event){
+		var keycode = (event.keyCode ? event.keyCode : event.which);
+
+		if(keycode == '13'){
+			i++;
+			if (i >= $('.highlight').length) i = 0;
+			$('body').animate({
+				scrollTop: $('.highlight').eq(i).offset().top - 80
+			}, 300);
+		}
+	});
+
+	$(".reset-search p").on("click",function() {
+		$('#search-subscription-input').val('');
+		$(".reset-search p").hide();
+		j = 0;
+		i = 0;
+	});
+
+	if ( $( "#profile-avatar" ).length ) {
+		$("#user-bar-avatar").attr("src", $("#profile-avatar").attr('src'));
 	}
 });

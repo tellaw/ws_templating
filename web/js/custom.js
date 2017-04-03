@@ -957,7 +957,7 @@ $(document).ready(function () {
         }
     });
 
-    $('#timeline > p > a').on('click', function(){
+    $('#timeline > p > a.my-questions').on('click', function(){
         if($(this).parent('p').hasClass('active')) {
             $(this).html('Masquer les questions');
         }
@@ -975,7 +975,6 @@ $(document).ready(function () {
         $("#mode-bloc").show();
         $("#mode-list").hide();
     });
-
 });
 (function () {
     var v = document.getElementsByClassName("youtube-player");

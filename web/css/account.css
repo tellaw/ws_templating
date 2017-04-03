@@ -249,6 +249,11 @@ p {
     .sidebar-nav-v1 > li.bg-color-red-eti.active:hover, .sidebar-nav-v1 > li.bg-color-red-eti.active:focus {
       border-color: #EC1625; }
 
+.reset-search {
+  height: 18px; }
+  .reset-search p {
+    display: none; }
+
 .list-toggle:after, #menu-account:after, .title-collapse:after {
   top: 8px;
   right: 15px;
@@ -425,6 +430,8 @@ table .title-collapse:after, table .title-collapse.active:after {
   overflow: hidden;
   padding: 5px 0 20px 0;
   font-size: 12px; }
+  .form-message b {
+    font-weight: normal; }
 
 .modifier-password .btn-center.left {
   float: left;
@@ -477,7 +484,7 @@ input.btn-u.btn-u-blue.letter-spacing-75.btn-carre {
   top: -1px; }
 
 .rattacher.padding-top-20.padding-bottom-20.padding-left-15.padding-right-15.clearfix {
-  max-width: 680px;
+  max-width: 545px;
   margin: 0 auto; }
   .rattacher.padding-top-20.padding-bottom-20.padding-left-15.padding-right-15.clearfix .letter-spacing-75.color-blue-eti.text-center {
     text-align: left;
@@ -516,8 +523,10 @@ input.btn-u.btn-u-blue.letter-spacing-75.btn-carre {
   margin: 20px 0 10px; }
 
 .profile-form .button-sup-photo {
-  width: 250px;
-  display: block !important; }
+  width: auto;
+  background: none;
+  border: none;
+  color: #1B8BBB; }
 
 .padding-0-20 {
   padding: 0 20px; }
@@ -557,15 +566,8 @@ span.res-chevron {
 
 .print-logo {
   position: absolute;
-  right: 25px; }
-
-#picture-button {
-  background: none;
-  border: none;
-  color: #1B8BBB;
-  width: auto;
-  padding: 0;
-  font-family: myriad-pro-semi-bold; }
+  right: 25px;
+  z-index: 9; }
 
 .toxev-subscriptions a {
   font-family: myriad-pro-semi-bold; }

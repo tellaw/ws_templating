@@ -310,6 +310,12 @@ p {
     }
   }
 }
+.reset-search {
+  height: 18px;
+  p {
+    display: none;
+  }
+}
 .list-toggle, #menu-account, .title-collapse {
   &:after {
     top: 8px;
@@ -546,6 +552,9 @@ table {
   &.form-success.vert {
     //color : vert;
   }
+  b {
+    font-weight: normal;
+  }
 }
 .modifier-password {
   .btn-center.left {
@@ -603,7 +612,7 @@ input.btn-u.btn-u-blue.letter-spacing-75.btn-carre {
   top: -1px;
 }
 .rattacher.padding-top-20.padding-bottom-20.padding-left-15.padding-right-15.clearfix {
-  max-width: 680px;
+  max-width: 545px;
   margin: 0 auto;
   .letter-spacing-75.color-blue-eti.text-center {
     text-align: left;
@@ -648,8 +657,10 @@ input.btn-u.btn-u-blue.letter-spacing-75.btn-carre {
     margin: 20px 0 10px;
   }
   .button-sup-photo {
-    width: 250px;
-    display: block!important;
+    width: auto;
+    background: none;
+    border: none;
+    color: #1B8BBB;
   }
 }
 .padding-0-20 {
@@ -705,15 +716,11 @@ span.res-chevron {
 .print-logo {
   position: absolute;
   right: 25px;
+  z-index: 9;
 }
 
 #picture-button{
-  background: none;
-  border:none;
-  color:#1B8BBB;
-  width: auto;
-  padding:0;
-  font-family: myriad-pro-semi-bold;
+
 }
 
 .toxev-subscriptions {
