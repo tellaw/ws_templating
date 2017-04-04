@@ -522,6 +522,7 @@ $(document).ready(function () {
             }
             , close: function () {
                 $("#services-popin").remove();
+                parent.location.reload();
                 return false;
             }
         });

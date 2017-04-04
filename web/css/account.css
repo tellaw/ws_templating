@@ -590,3 +590,9 @@ li[class*="telechargement-infos-"] {
 
 ul.myti-my-contacts > li > div {
   min-height: 180px; }
+
+.background-blue {
+  background: #1B8BBB !important; }
+
+.pagination .active a {
+  border: 1px solid #1B8BBB !important; }
