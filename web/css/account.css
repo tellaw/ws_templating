@@ -60,7 +60,8 @@ p {
 .services a {
   display: block;
   min-height: 115px;
-  padding-bottom: 15px; }
+  width: 94px;
+  margin: 0 auto; }
   .services a p {
     width: 48px;
     margin: 0 auto; }
@@ -434,6 +435,10 @@ table .title-collapse:after, table .title-collapse.active:after {
   font-size: 12px; }
   .form-message b {
     font-weight: normal; }
+
+.red b {
+  font-weight: normal;
+  font-size: 12px; }
 
 .modifier-password .btn-center.left {
   float: left;

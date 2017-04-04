@@ -66,7 +66,8 @@ p {
   a {
     display: block;
     min-height: 115px;
-    padding-bottom: 15px;
+    width: 94px;
+    margin: 0 auto;
     p {
       width: 48px;
       margin: 0 auto;
@@ -553,12 +554,18 @@ table {
   display: block;
   overflow: hidden;
   padding:5px 0 20px 0;
-  font-size:12px;s
+  font-size:12px;
   &.form-success.vert {
     //color : vert;
   }
   b {
     font-weight: normal;
+  }
+}
+.red {
+  b {
+    font-weight: normal;
+    font-size:12px;
   }
 }
 .modifier-password {

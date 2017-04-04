@@ -4692,7 +4692,7 @@ form p {
     min-height: 50px!important;
     position: relative;
 }
-form.disabled-form p {
+form.disabled-form fieldset:first-child p {
     min-height: 35px!important;
 }
 
