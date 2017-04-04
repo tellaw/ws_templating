@@ -795,6 +795,7 @@ $(document).ready(function () {
     }
 
     $(".pdf-added").delay(5000).hide(0);
+    $(".erreur-vide").delay(5000).slideUp("slow");
     //annotation
     $(".id_annotation").on("click", function () {
         $(this).next(".id_annotation_box").show();

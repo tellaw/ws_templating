@@ -579,3 +579,9 @@ span.res-chevron {
 
 .contact-infos, .contact-name, .contact-identifiant {
   word-wrap: break-word; }
+
+li[class*="telechargement-infos-"] {
+  min-height: 92px; }
+
+ul.myti-my-contacts > li > div {
+  min-height: 180px; }

@@ -4596,12 +4596,20 @@ tr {
 }
 
 #header-rubrique .pdf-added,
-#header-rubrique .pdf-full {
-    position: absolute;
+ #header-rubrique .pdf-full {
+     position: absolute;
+     width: 100%;
+     left: 0px;
+     background: #1B8BBB;
+     padding: 7px;
+     margin: 5px 0 0 0px;
+     color: #fff;
+ }
+
+.erreur-vide {
     width: 100%;
-    left: 0px;
     background: #1B8BBB;
-    padding: 7px;
+    padding: 0 7px;
     margin: 5px 0 0 0px;
     color: #fff;
 }
@@ -4755,7 +4763,7 @@ form input[type="checkbox"] {
 }
 
 form input[type="radio"] {
-    margin: 0 15px 0 5px;
+    margin: 0 0 0 15px;
 }
 
 form input[type="submit"] {
