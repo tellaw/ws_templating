@@ -253,6 +253,8 @@ p {
   height: 18px; }
   .reset-search p {
     display: none; }
+    .reset-search p span:hover {
+      cursor: pointer; }
 
 .list-toggle:after, #menu-account:after, .title-collapse:after {
   top: 8px;

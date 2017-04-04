@@ -40,9 +40,10 @@ $(document).ready(function () {
 		}
 	});
 
-	$(".reset-search p").on("click",function() {
+	$(".reset-search p span").on("click",function() {
 		$('#search-subscription-input').val('');
 		$(".reset-search p").hide();
+		$('.highlight').removeClass('highlight'); //Remove old search highlights
 		j = 0;
 		i = 0;
 	});

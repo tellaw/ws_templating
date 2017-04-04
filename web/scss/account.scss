@@ -314,6 +314,11 @@ p {
   height: 18px;
   p {
     display: none;
+    span {
+      &:hover {
+        cursor: pointer;
+      }
+    }
   }
 }
 .list-toggle, #menu-account, .title-collapse {
