@@ -51,4 +51,16 @@
   .color-white {
     color:#4d5356!important;
   }
+  li[class*="telechargement-infos-"] {
+    width:50%;
+  }
+  .block-link-hover > .col-sm-3,
+  .block-link-hover > .col-md-3,
+  .encart-info-compte > .col-sm-3 {
+    width:25%;
+  }
+  .block-link-hover > .col-sm-4,
+  .encart-info-compte > .col-sm-5 {
+    width:33%;
+  }
 }
