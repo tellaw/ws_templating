@@ -108,7 +108,12 @@ p {
 
 .downloads {
   .badge {
-    padding: 4px 8px;
+    &.one-digit{
+      padding: 4px 8px;
+    }
+    &.two-digit{
+      padding: 4px;
+    }
   }
 }
 

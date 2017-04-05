@@ -5703,7 +5703,8 @@
 	border-radius: 0;
 }
 
-.pagination li a {
+.pagination li a,
+.pagination li span {
 	color: #777;
 	padding: 5px 15px;
 }

@@ -88,8 +88,11 @@ p {
 .pastille {
   background: #EC1625; }
 
-.downloads .badge {
+.downloads .badge.one-digit {
   padding: 4px 8px; }
+
+.downloads .badge.two-digit {
+  padding: 4px; }
 
 .flou {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+100 */
