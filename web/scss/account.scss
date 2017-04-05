@@ -738,10 +738,6 @@ span.res-chevron {
   z-index: 9;
 }
 
-#picture-button{
-
-}
-
 .toxev-subscriptions {
   a {
     font-family:myriad-pro-semi-bold;
@@ -776,4 +772,10 @@ ul.myti-my-contacts {
       border: 1px solid #1B8BBB!important;
     }
   }
+}
+#picture-input,
+#picture-button-ie,
+#picture-form-submit,
+p.red {
+  display:none;
 }

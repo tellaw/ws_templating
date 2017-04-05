@@ -29,12 +29,13 @@ jQuery(document).ready(function () {
 
 			var fileInput = document.getElementById("picture-input");
 			fileInput.onchange = function () {changeListenerOnFileInput()};
-
-			jQuery('#picture-input').css("display", "none");
-			jQuery("#picture-button").css("display", "block");
-			jQuery("#picture-button-ie").css("display","none");
-			jQuery("#picture-form-submit").css("display", "none");
-			jQuery('p.red').css("display", "none");
+		}
+		else {
+			jQuery('#picture-input').css("display", "block");
+			jQuery("#picture-button").css("display", "none");
+			jQuery("#picture-button-ie").css("display","block");
+			jQuery("#picture-form-submit").css("display", "block");
+			jQuery('p.red').css("display", "block");
 		}
 	}
 

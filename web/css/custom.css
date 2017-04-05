@@ -1220,6 +1220,9 @@ i.fa.margin-right-5 {
     border-right: 3px solid #CDCDCD;
 }
 
+.no-border {
+    border:none!important;
+}
 .no-border:hover {
     border:none!important;
 }
@@ -6814,4 +6817,25 @@ ul.inline li {
 .stats {
     background: url(../images/onglet_statistique.jpg) right -19px no-repeat transparent;
     clear: both;
+}
+input#picture-input {
+    height: 40px;
+    float: left;
+    width: 16%;
+    filter: alpha(opacity :     0);
+    opacity: 0;
+    z-index: 2;
+    position: relative;
+    cursor: pointer;
+    margin: 0;
+    margin: 0 42%;
+}
+
+#picture-button-ie {
+    position: absolute;
+    top: 18px;
+    left: 15px;
+    z-index: 1;
+    width: 15%;
+    margin: 0 41%;
 }

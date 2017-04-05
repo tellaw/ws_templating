@@ -601,3 +601,9 @@ ul.myti-my-contacts > li > div {
 
 .pagination .active a {
   border: 1px solid #1B8BBB !important; }
+
+#picture-input,
+#picture-button-ie,
+#picture-form-submit,
+p.red {
+  display: none; }
