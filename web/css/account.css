@@ -471,11 +471,6 @@ table .title-collapse:after, table .title-collapse.active:after {
   display: inline-block;
   width: calc(100% - 90px); }
 
-.list-logiciels > p:not(.myti-bloc-desc-top) {
-  color: #1b8bbb;
-  text-align: right;
-  font-weight: 600; }
-
 .list-logiciels .logiciels-title {
   color: #1b8bbb; }
 
@@ -607,3 +602,7 @@ ul.myti-my-contacts > li > div {
 #picture-form-submit,
 p.red {
   display: none; }
+
+.myti-bloc-actions-users .block-link-hover a div {
+  width: 56px;
+  margin: 0 auto; }

@@ -605,11 +605,6 @@ table {
     display: inline-block;
     width: calc(100% - 90px);
   }
-  & > p:not(.myti-bloc-desc-top) {
-    color: #1b8bbb;
-    text-align: right;
-    font-weight : 600;
-  }
   .logiciels-title {
     color: #1b8bbb;
   }
@@ -778,4 +773,15 @@ ul.myti-my-contacts {
 #picture-form-submit,
 p.red {
   display:none;
+}
+
+.myti-bloc-actions-users {
+  .block-link-hover {
+    a {
+      div {
+        width: 56px;
+        margin: 0 auto;
+      }
+    }
+  }
 }
