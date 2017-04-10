@@ -17,32 +17,42 @@ jQuery(document).ready(function () {
 			jQuery("#city-function-p").hide().find("select").attr("id", "city-disabled").attr("name", "city-disabled");
 		}
 
-		//on change le pays
-		jQuery('#profile').change(function(evt) {
-			var profilVal = jQuery("#profile").val();
-			if (profilVal == "STUDENT") {
-				jQuery("#lead-service-p").hide();
-				jQuery("#lead-function-p").hide();
-        jQuery("#leadDepartment").val("NR")
-        jQuery("#leadFunction").val("");
+
+		if (jQuery("#profile").val() == "STUDENT") {
+			jQuery("#lead-service-p").hide();
+			jQuery("#lead-function-p").hide();
+			jQuery("#lead-activity-sector-p").hide();
+		}
+
+		//champs pays : si pas france ou nul
+		jQuery('.country-select').change(function(evt) {
+			var newCountryVal = jQuery(".country-select").val();
+			if (newCountryVal == "fr" || newCountryVal == "") {
+				jQuery("#city-function-p").show().find("select").attr("id", "city").attr("name", "city");
+				jQuery("#city-input-p").hide().find("input").attr("id", "city-disabled").attr("name", "city-disabled");
+				zipCode ();
 			}
 			else {
-				jQuery("#lead-service-p").show();
-				jQuery("#lead-function-p").show();
+				jQuery("#city-input-p").show().find("input").attr("id", "city").attr("name", "city");
+				jQuery("#city-function-p").hide().find("select").attr("id", "city-disabled").attr("name", "city-disabled");
 			}
 		});
 
-	//champs profil : si etudiant pas services et fonction
-	jQuery('.country-select').change(function(evt) {
-		var newCountryVal = jQuery(".country-select").val();
-		if (newCountryVal == "fr" || newCountryVal == "") {
-			jQuery("#city-function-p").show().find("select").attr("id", "city").attr("name", "city");
-			jQuery("#city-input-p").hide().find("input").attr("id", "city-disabled").attr("name", "city-disabled");
-			zipCode ();
+	//on change le profil : si etudiant pas services et fonction et secteur activite
+	jQuery('#profile').change(function(evt) {
+		var profilVal = jQuery("#profile").val();
+		if (profilVal == "STUDENT") {
+			jQuery("#lead-service-p").hide();
+			jQuery("#lead-function-p").hide();
+			jQuery("#lead-activity-sector-p").hide();
+			jQuery("#leadDepartment").val("NR");
+			jQuery("#leadFunction").val("NR");
+			jQuery("#leadActivitySector").val("NR");
 		}
 		else {
-			jQuery("#city-input-p").show().find("input").attr("id", "city").attr("name", "city");
-			jQuery("#city-function-p").hide().find("select").attr("id", "city-disabled").attr("name", "city-disabled");
+			jQuery("#lead-service-p").show();
+			jQuery("#lead-function-p").show();
+			jQuery("#lead-activity-sector-p").show();
 		}
 	});
 
