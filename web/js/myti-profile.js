@@ -23,6 +23,8 @@ jQuery(document).ready(function () {
 			if (profilVal == "STUDENT") {
 				jQuery("#lead-service-p").hide();
 				jQuery("#lead-function-p").hide();
+        jQuery("#leadDepartment").val("NR")
+        jQuery("#leadFunction").val("");
 			}
 			else {
 				jQuery("#lead-service-p").show();
