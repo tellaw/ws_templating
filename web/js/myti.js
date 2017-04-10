@@ -9,7 +9,10 @@ $(document).ready(function () {
 	var j = 0;
 	$("#search-subscription-input").keyup(function() {
 		//if(j == 0) $(this).parent("div").append('<i class="fa fa-times" aria-hidden="true" style="position:absolute; right:15px; top:calc((100% - 50%)/2); font-size:20px; z-index:99; cursor: pointer;"></i>');
-		if(j == 0) $(".reset-search p").show();
+		if(j == 0) {
+			$(".reset-search p").show();
+			$(".info-search p").show();
+		}
 		j++;
 		var value = this.value;
 		$(".subscriptions-list").removeHighlight();
@@ -24,6 +27,7 @@ $(document).ready(function () {
 			j = 0;
 			i = 0;
 			$(".reset-search p").hide();
+			$(".info-search p").hide();
 		}
 	});
 
@@ -43,6 +47,7 @@ $(document).ready(function () {
 	$(".reset-search p span").on("click",function() {
 		$('#search-subscription-input').val('');
 		$(".reset-search p").hide();
+		$(".info-search p").hide();
 		$('.highlight').removeClass('highlight'); //Remove old search highlights
 		j = 0;
 		i = 0;

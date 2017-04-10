@@ -253,11 +253,11 @@ p {
     .sidebar-nav-v1 > li.bg-color-red-eti.active:hover, .sidebar-nav-v1 > li.bg-color-red-eti.active:focus {
       border-color: #EC1625; }
 
-.reset-search {
+.reset-search, .info-search {
   height: 18px; }
-  .reset-search p {
+  .reset-search p, .info-search p {
     display: none; }
-    .reset-search p span:hover {
+    .reset-search p span:hover, .info-search p span:hover {
       cursor: pointer; }
 
 .list-toggle:after, #menu-account:after, .title-collapse:after {
