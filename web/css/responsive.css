@@ -849,6 +849,8 @@
 
 /* Small only */
 @media screen and (max-width: 768px) {
+  .info-search {
+    height: auto; }
   #header-rubrique .nav-rubrique:hover a, #header-rubrique .nav-rubrique:hover p {
     display: none !important; }
   #header-rubrique .pdf-added {

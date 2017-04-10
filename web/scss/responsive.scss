@@ -1241,6 +1241,9 @@ $color-red : #EC1625 ;
 
 /* Small only */
 @media screen and (max-width: 768px) {
+  .info-search {
+    height:auto;
+  }
   #header-rubrique {
     .nav-rubrique:hover {
       a, p {
