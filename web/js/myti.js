@@ -32,11 +32,11 @@ $(document).ready(function () {
 		var keycode = (event.keyCode ? event.keyCode : event.which);
 
 		if(keycode == '13'){
-			i++;
 			if (i >= $('.highlight').length) i = 0;
 			$('body').animate({
 				scrollTop: $('.highlight').eq(i).offset().top - 80
 			}, 300);
+			i++;
 		}
 	});
 
