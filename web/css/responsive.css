@@ -1298,6 +1298,14 @@
 
 /* Medium and down */
 @media screen and (max-width: 991px) {
+  .myti-info-compte .icone {
+    display: none; }
+  .myti-info-compte .text-ip {
+    width: 98%; }
+  .myti-info-compte .buton-abos {
+    width: 100%;
+    text-align: center;
+    margin-top: 15px; }
   .login-box-border {
     right: 93px; }
   .sm-margin-37 {
