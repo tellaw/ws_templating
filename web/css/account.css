@@ -606,3 +606,6 @@ ul.myti-my-contacts > li > div {
 .myti-bloc-actions-users .block-link-hover a div {
   width: 56px;
   margin: 0 auto; }
+
+#account-infos div[disabled="disabled"] {
+  min-height: 50px; }

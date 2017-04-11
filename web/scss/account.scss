@@ -785,3 +785,9 @@ ul.myti-my-contacts {
     }
   }
 }
+
+#account-infos {
+  div[disabled="disabled"] {
+    min-height:50px;
+  }
+}

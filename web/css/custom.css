@@ -331,6 +331,10 @@ dt {
     border: 0px !important;
 }
 
+.border-1 {
+    border: 1px solid #AAAAAA !important;
+}
+
 .font-size-20 {
     font-size: 20px;
 }
@@ -4450,6 +4454,10 @@ tr {
 .bg-gray {
     background-color: #697277;
     color: white;
+}
+
+.bg-white {
+    background-color: #FFFFFF;
 }
 
 .bold-text {
