@@ -600,7 +600,7 @@ ul.myti-my-contacts > li > div {
 #picture-input,
 #picture-button-ie,
 #picture-form-submit,
-#upload-picture p.red {
+.pic-box p.red {
   display: none; }
 
 .myti-bloc-actions-users .block-link-hover a div {
