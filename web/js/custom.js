@@ -1382,7 +1382,7 @@ function submitAddPdfToCartForm(id) {
 
 function submitTagForm(formId, paramName, paramValue) {
  	var form = document.forms[formId];
- 	form.elements[paramName].value = Number(paramValue);
+ 	form.elements[paramName].value = Number(paramValue.replace(" ", ""));
  	form.submit();
 }
 
