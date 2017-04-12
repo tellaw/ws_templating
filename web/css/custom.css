@@ -4733,6 +4733,10 @@ form .btn-u {
 form .btn-u {
     display: inline;
 }
+
+form .form-download .btn-u {
+    display: inline-block;
+}
 /* form label, */
 form .label1 {
     width:100%;
