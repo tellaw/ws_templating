@@ -4795,6 +4795,10 @@ form input[type="radio"] {
     margin: 0 0 0 15px;
 }
 
+form .client input[type="radio"] {
+    margin: 0 15px 0 5px;
+}
+
 form input[type="submit"] {
     width: auto;
     border-color: transparent;
