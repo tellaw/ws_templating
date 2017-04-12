@@ -6838,7 +6838,7 @@ ul.inline li {
     color: #1B8BBB;
 }
 .stats {
-    background: url(../images/onglet_statistique.jpg) right -19px no-repeat transparent;
+    background: url(../images/logo-counter.png) right top no-repeat transparent;
     clear: both;
 }
 input#picture-input {
