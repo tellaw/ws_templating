@@ -693,6 +693,11 @@ i.fa.margin-right-5 {
 .margin-left-155 {
     margin-left: 155px !important;
 }
+
+.margin-left-184 {
+    margin-left: 184px !important;
+}
+
 .padding-right-5 {
     padding-right: 5px!important;
 }
@@ -3250,15 +3255,14 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color=#EC1625, Direction=NaN, St
 
 .table > tbody > tr {
     font-family: 'myriad-pro', sans-serif;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: normal;
     color: #4d5356;
     letter-spacing: 1px;
 }
-.myti-contacts .table > tbody > tr {
-    font-size: 13px;
+.width100 {
+    width:100px;
 }
-
 #timeline-v2.timeline-v2 > li .badge {
     padding: 2px 2px 3px;
     line-height: 12px!important;

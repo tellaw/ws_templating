@@ -633,6 +633,13 @@ input.btn-u.btn-u-blue.letter-spacing-75.btn-carre {
 
 }
 
+.articles-demo {
+  span.red {
+    display: block;
+    text-align: left;
+    margin-left: 37%;
+  }
+}
 .profile-form {
   .background-blanc {
     overflow: hidden;
@@ -790,4 +797,8 @@ ul.myti-my-contacts {
   div[disabled="disabled"] {
     min-height:50px;
   }
+}
+
+html input[disabled] {
+  background: #EBEBEB;
 }
