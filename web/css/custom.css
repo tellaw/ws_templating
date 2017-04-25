@@ -3255,11 +3255,15 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color=#EC1625, Direction=NaN, St
 
 .table > tbody > tr {
     font-family: 'myriad-pro', sans-serif;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: normal;
     color: #4d5356;
     letter-spacing: 1px;
 }
+.myti-bloc-actions-users .table > tbody > tr {
+    font-size: 13px;
+}
+
 .width100 {
     width:100px;
 }
