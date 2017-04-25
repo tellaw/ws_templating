@@ -430,6 +430,10 @@ dt {
     margin-bottom: 30px!important;
 }
 
+.margin-bottom-35 {
+    margin-bottom: 35px!important;
+}
+
 .margin-bottom-45 {
     margin-bottom: 45px!important;
 }
@@ -882,6 +886,10 @@ i.fa.margin-right-5 {
     padding-bottom: 30px !important;
 }
 
+.padding-bottom-35 {
+    padding-bottom: 35px !important;
+}
+
 .padding-bottom-70 {
     padding-bottom: 70px !important;
 }
@@ -1133,6 +1141,10 @@ i.fa.margin-right-5 {
 
 .color-red-eti {
     color: #EC1625 !important;
+}
+
+.color-blue-eti {
+    color: #1b8bbb !important;
 }
 
 .color-blue-eti {
