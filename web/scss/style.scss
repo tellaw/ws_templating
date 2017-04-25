@@ -2049,3 +2049,62 @@ blockquote {
   color: #74b504!important;
 }
 
+/* IFRAME */
+.iframeContainer{
+  position: relative;
+  height: 600px;
+  margin-bottom: 30px;
+}
+
+.iframeContainer a.zoom{
+  width: 30px;
+  height: 30px;
+  background-color: #DB0C18;
+  position: absolute;
+  z-index: 11;
+  right: 15px;
+  cursor: pointer;
+  display: none;
+  text-decoration: none;
+
+  background:url("/images/zoom.png") no-repeat center center #DB0C18;
+  background-size: 20px;
+  font-size: 0;
+}
+
+.iframeContainer a.zoom.visible.close {
+  font-size: 22px;
+  font-weight: normal;
+  text-align: center;
+  padding-top: 0px;
+  line-height: 25px;
+  background-image:none;
+  color:white;
+}
+
+.iframeContainer a.zoom.visible{
+  display: block;
+}
+
+.iframeContainer a.zoom:hover{
+  text-decoration: none;
+}
+
+.carto.fullscreen .iframeContainer{
+  position: fixed;
+  z-index: 111;
+  left: 0px;
+  right: 0px;
+  top: 146px;
+  height: 850px;
+}
+
+#thes-iframe {
+  width: 100%;
+  height: 100%;
+  margin-top: 17px;
+}
+
+.carto #middle iframe {
+  margin: 0 0 20px 0;
+}
