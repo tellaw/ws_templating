@@ -2093,6 +2093,12 @@ $color-red : #EC1625 ;
       padding:2px 8px;
     }
   }
+  #top-page-carto {
+    background: none;
+  }
+  #video-tuto iframe {
+    width:100%;
+  }
 }
 
 @media screen and (max-width: 992px) {
