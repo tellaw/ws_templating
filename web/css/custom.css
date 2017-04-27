@@ -358,6 +358,10 @@ dt {
     padding: 0px !important;
 }
 
+.padding-3 {
+    padding: 3px!important;
+}
+
 .padding-5 {
     padding: 5px!important;
 }
@@ -3277,7 +3281,10 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color=#EC1625, Direction=NaN, St
 }
 
 .width100 {
-    width:100px;
+    min-width:100px;
+}
+.width150 {
+    min-width:150px;
 }
 #timeline-v2.timeline-v2 > li .badge {
     padding: 2px 2px 3px;
