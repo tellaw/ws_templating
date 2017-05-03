@@ -493,7 +493,7 @@ div.border-red {
       width:25px;
       height:25px;
       display:inline-block;
-      margin:-6px 0 0 -13px;
+      margin:-6px 0 0 -6px;
       padding:0;
     }
   }
@@ -1105,7 +1105,7 @@ input {
       width:50%;
     }
     select.pertinence {
-      width:80%;
+      width:75%;
     }
   }
   .checkbox {
@@ -2108,4 +2108,10 @@ blockquote {
 #top-page-carto {
   background: url("../images/fond-cartographie-interactive.jpg") no-repeat top center;
   background-size: 100% 100%;
+}
+
+#header-rubrique {
+  >div.row {
+    min-height:120px;
+  }
 }

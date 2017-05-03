@@ -3003,6 +3003,7 @@
 /*Testimonials*/
 .testimonials {
 	margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .testimonials .testimonial-info {
