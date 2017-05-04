@@ -4695,9 +4695,10 @@ tr {
 
 #header-rubrique .rela-client {
     border: 1px solid #697277 !important;
-    padding: 9px 10px;
+    padding: 12px 10px;
     display: inline-block;
     margin: 0;
+    letter-spacing: 0.75px;
 }
 
 #header-rubrique form input[type="submit"] {

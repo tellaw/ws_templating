@@ -56,4 +56,8 @@ $(document).ready(function () {
 	if ( $( "#profile-avatar" ).length ) {
 		$("#user-bar-avatar").attr("src", $("#profile-avatar").attr('src'));
 	}
+
+	$(".supp-ref").on("click", function() {
+		$(this).parent("div").remove();
+	});
 });
