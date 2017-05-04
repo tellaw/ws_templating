@@ -4753,6 +4753,10 @@ form.disabled-form fieldset:first-child p {
     min-height: 35px!important;
 }
 
+form.disabled-form fieldset:first-child p span.red {
+    display:none;
+}
+
 form .col-lg-12 p,
 form .btn-u {
     min-height: auto!important;
