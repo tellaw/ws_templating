@@ -4630,11 +4630,16 @@ tr {
     margin-bottom: 0;
 }
 
+#header-rubrique .nav-rubrique {
+    min-height: 120px;
+}
 #header-rubrique .nav-rubrique a {
     font-family: myriad-pro-semi-bold;
     font-size: 14px;
     display: block;
     min-height: 40px;
+    position: absolute;
+    top: 55px;
 }
 
 #header-rubrique .nav-rubrique a span {
