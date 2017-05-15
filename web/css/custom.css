@@ -719,6 +719,10 @@ i.fa.margin-right-5 {
     padding-right: 10px!important;
 }
 
+.padding-right-13 {
+    padding-right: 13px!important;
+}
+
 .padding-right-15 {
     padding-right: 15px!important;
 }
@@ -917,6 +921,10 @@ i.fa.margin-right-5 {
 
 .padding-left-10 {
     padding-left: 10px!important;
+}
+
+.padding-left-13 {
+    padding-left: 13px!important;
 }
 
 .padding-left-15 {
@@ -1237,6 +1245,9 @@ i.fa.margin-right-5 {
     font-size: 16px;
 }
 
+.border-e2e1e1 {
+    border : 1px solid #e2e1e1;
+}
 .border-top {
     border-top: 3px solid #CDCDCD !important;
 }
