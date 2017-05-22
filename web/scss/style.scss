@@ -2119,3 +2119,14 @@ blockquote {
     min-height:120px;
   }
 }
+.btn-txt {
+  display:inline;
+  position:relative;
+  a.mention {
+    position: absolute;
+    top: 32px;
+    right: 4px;
+    text-align: right;
+    width: 100%;
+  }
+}
