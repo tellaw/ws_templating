@@ -1609,12 +1609,12 @@ blockquote {
   min-height: 120px; }
 
 .btn-txt {
-  display: inline;
+  display: inline-block;
   position: relative; }
   .btn-txt a.mention {
     position: absolute;
-    top: 32px;
+    top: 45px;
     right: 4px;
     text-align: right;
-    width: 100%;
+    width: 190px;
     font-size: 13px; }
