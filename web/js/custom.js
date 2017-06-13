@@ -31,26 +31,9 @@ $(window).ready(function () {
         $("#ti_actu_submenu_container").show();
     }
     //    else if (!$("#sub-menu").hasClass("fxd")) {}
-    //cacher overlay pub interstitiel quand pas de pub
-    if($("#div-gpt-ad-1490604501599-9").is(":hidden")) {
-        $("#overlaypub").remove();
-    };
-
-    if(!$("#div-gpt-ad-1490604501599-9").is(":visible")) {
-        $("#overlaypub").remove();
-    };
 });
 //gestion back des onglets page domaines/secteurs/offres
 $(document).ready(function () {
-    //cacher overlay pub interstitiel quand pas de pub
-    if($("#div-gpt-ad-1490604501599-9").is(":hidden")) {
-        $("#overlaypub").remove();
-    };
-
-    if(!$("#div-gpt-ad-1490604501599-9").is(":visible")) {
-        $("#overlaypub").remove();
-    };
-
     // add a hash to the URL when the user clicks on a tab
     $('a[data-toggle="tab"]').on('click', function (e) {
         history.pushState(null, null, $(this).attr('href'));
