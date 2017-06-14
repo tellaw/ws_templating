@@ -32,18 +32,26 @@ $(window).ready(function () {
     }
     //    else if (!$("#sub-menu").hasClass("fxd")) {}
 });
+$(document).ready(function() {
+    console.log("document ready occurred!");
+    $("#div-gpt-ad-1490604501599-9").wrap("<div id='overlaypub' style='position: fixed;top: 0;left: 0;background: url(http://cdn.techniques-ingenieur.fr/images/jquery-sliderBack.png) 0 0;z-index: 9999;width: 100%;height:100%;text-align: center;'></div>");
+    $("#overlaypub").prepend('<p><a href="#pub" class="closepub"><img src="//cdn.techniques-ingenieur.fr/images/close.png" alt="fermer"></a></p>');
+    $("#overlaypub .closepub").on("click", function() {
+        $("#overlaypub").remove();
+    });
+});
+
+$(window).load(function() {
+    console.log("window load occurred!");
+    $("#div-gpt-ad-1490604501599-9").wrap("<div id='overlaypub' style='position: fixed;top: 0;left: 0;background: url(http://cdn.techniques-ingenieur.fr/images/jquery-sliderBack.png) 0 0;z-index: 9999;width: 100%;height:100%;text-align: center;'></div>");
+    $("#overlaypub").prepend('<p><a href="#pub" class="closepub"><img src="//cdn.techniques-ingenieur.fr/images/close.png" alt="fermer"></a></p>');
+    $("#overlaypub .closepub").on("click", function() {
+        $("#overlaypub").remove();
+    });
+});
+
 //gestion back des onglets page domaines/secteurs/offres
 $(document).ready(function () {
-    //cacher overlay pub interstitiel quand pas de pub
-    $("#div-gpt-ad-1490604501599-9").load(function() {
-        $("#div-gpt-ad-1490604501599-9").wrap("<div id='overlaypub' style='position: fixed;top: 0;left: 0;background: url(http://cdn.techniques-ingenieur.fr/images/jquery-sliderBack.png) 0 0;z-index: 9999;width: 100%;height:100%;text-align: center;'></div>");
-        $("#overlaypub").prepend('<p><a href="#pub" class="closepub"><img src="//cdn.techniques-ingenieur.fr/images/close.png" alt="fermer"></a></p>');
-        $("#overlaypub .closepub").on("click", function() {
-            $("#overlaypub").remove();
-        });
-    });
-
-
     // add a hash to the URL when the user clicks on a tab
     $('a[data-toggle="tab"]').on('click', function (e) {
         history.pushState(null, null, $(this).attr('href'));
