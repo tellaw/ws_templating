@@ -6919,3 +6919,11 @@ input#picture-input {
     width: 15%;
     margin: 0 41%;
 }
+
+#overlaypub .closepub {
+    width: 100%;
+    height: 0;
+    position: fixed;
+    left: 380px;
+    top: 52px;
+}
