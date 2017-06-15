@@ -6926,4 +6926,5 @@ input#picture-input {
     position: fixed;
     left: 380px;
     top: 62px;
+    z-index:99999;
 }
