@@ -57,7 +57,7 @@ $(document).ready(function () {
             var iBody = $(this).contents().find("body");
             var widthPub = $(this).width();
             var heightPub = $(this).height();
-            console.log(iBody);
+            console.log(iBody.text().length);
             if(iBody.text().length != 1) {
                 console.log("pub1");
                 pubOk = 1;
