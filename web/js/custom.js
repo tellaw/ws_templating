@@ -45,7 +45,8 @@ $(document).ready(function () {
         $("#overlaypub").remove();
     });
     $( "#div-gpt-ad-1490604501599-9 iframe" ).load(function() {
-        if($("#div-gpt-ad-1490604501599-9").css("display") != "none") {
+        var iBody = $(this).contents().find("body");
+        if(iBody.length != 1) {
             $("#overlaypub").show();
         }
     });
