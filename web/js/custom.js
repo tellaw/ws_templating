@@ -35,7 +35,7 @@ $(window).ready(function () {
 
 //gestion back des onglets page domaines/secteurs/offres
 $(document).ready(function () {
-    //gestion overlay intersitiel
+    //gestion overlay interstitiel
     if($("body").hasClass("home")) {
 
     }
@@ -44,10 +44,19 @@ $(document).ready(function () {
     $("#overlaypub .closepub").on("click", function() {
         $("#overlaypub").remove();
     });
+
+    //affichage interstitiel
     $( "#div-gpt-ad-1490604501599-9 iframe" ).load(function() {
         var iBody = $(this).contents().find("body");
         if(iBody.length != 1) {
             $("#overlaypub").show();
+        }
+    });
+    //affichage banner bottom
+    $( "#div-gpt-ad-1490604501599-0 iframe" ).load(function() {
+        var iBody = $(this).contents().find("body");
+        if(iBody.length != 1) {
+            $("#pub_fixed_footer").show();
         }
     });
 
