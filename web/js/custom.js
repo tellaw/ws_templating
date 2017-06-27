@@ -45,8 +45,8 @@ $(document).ready(function () {
     //affichage interstitiel
     $( "#div-gpt-ad-1490604501599-9 iframe" ).load(function() {
         var iBody = $(this).contents().find("body");
-        console.log(iBody);
         if(iBody.text().length != 1) {
+            console.log("inter");
             $("#overlaypub").show();
         }
     });
@@ -58,6 +58,7 @@ $(document).ready(function () {
             var widthPub = $(this).width();
             var heightPub = $(this).height();
             if(iBody.text().length != 1) {
+                console.log("pub1");
                 pubOk = 1;
                 $("#pub_fixed_footer").show();
                 $("#pub_fixed_footer #pubclose p").css({"left" : widthPub/2, "bottom" : heightPub + 10}).show();
@@ -70,6 +71,7 @@ $(document).ready(function () {
             var widthPub = $(this).width();
             var heightPub = $(this).height();
             if (iBody.text().length != 1) {
+                console.log("pub2");
                 pubOk = 1;
                 $("#pub_fixed_footer").show();
                 $("#pub_fixed_footer #pubclose p").css({"left": widthPub / 2, "bottom": heightPub + 10}).show();
@@ -82,6 +84,7 @@ $(document).ready(function () {
             var widthPub = $(this).width();
             var heightPub = $(this).height();
             if (iBody.text().length != 1) {
+                console.log("pub3");
                 pubOk = 1;
                 $("#pub_fixed_footer").show();
                 $("#pub_fixed_footer #pubclose p").css({"left": widthPub / 2, "bottom": heightPub + 10}).show();
