@@ -36,13 +36,17 @@ $(window).ready(function () {
 //gestion back des onglets page domaines/secteurs/offres
 $(document).ready(function () {
     //gestion overlay intersitiel
+    if($("body").hasClass("home")) {
+
+    }
+    $("#div-gpt-ad-1490604501599-9").wrap("<div id='overlaypub' style='display:none;position: fixed;top: 0;left: 0;background: url(http://cdn.techniques-ingenieur.fr/images/jquery-sliderBack.png) 0 0;z-index: 9999;width: 100%;height:100%;text-align: center;'></div>");
+    $("#overlaypub").prepend('<p><a href="#pub" class="closepub"><img src="//cdn.techniques-ingenieur.fr/images/close.png" alt="fermer"></a></p>');
+    $("#overlaypub .closepub").on("click", function() {
+        $("#overlaypub").remove();
+    });
     $( "#div-gpt-ad-1490604501599-9 iframe" ).load(function() {
-        if($("body").hasClass("home")) {
-            $("#div-gpt-ad-1490604501599-9").wrap("<div id='overlaypub' style='position: fixed;top: 0;left: 0;background: url(http://cdn.techniques-ingenieur.fr/images/jquery-sliderBack.png) 0 0;z-index: 9999;width: 100%;height:100%;text-align: center;'></div>");
-            $("#overlaypub").prepend('<p><a href="#pub" class="closepub"><img src="//cdn.techniques-ingenieur.fr/images/close.png" alt="fermer"></a></p>');
-            $("#overlaypub .closepub").on("click", function() {
-                $("#overlaypub").remove();
-            });
+        if($("#div-gpt-ad-1490604501599-9").css("display") != "none") {
+            $("#overlaypub").show();
         }
     });
 
