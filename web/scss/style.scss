@@ -2129,6 +2129,10 @@ blockquote {
     text-align: right;
     width: 190px;
     font-size: 13px;
+    &:hover {
+      color: #EC1625;
+      text-decoration: underline;
+    }
   }
 }
 #presentation {

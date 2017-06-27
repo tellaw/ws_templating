@@ -1618,6 +1618,9 @@ blockquote {
     text-align: right;
     width: 190px;
     font-size: 13px; }
+    .btn-txt a.mention:hover {
+      color: #EC1625;
+      text-decoration: underline; }
 
 #presentation .note .date {
   font-family: myriad-pro-semi-bold; }

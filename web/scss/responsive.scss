@@ -3319,8 +3319,8 @@ $color-red : #EC1625 ;
   a.pub-style, a.large-img, a.haute-img {
     &:hover {
       .acceuil-title {
-        p {
-          display: block;
+        p, div.accroche {
+          display: block!important;
           color: #697277;
           span {
             float: left;

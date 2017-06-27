@@ -2151,10 +2151,10 @@
     cursor: pointer; }
   a.pub-style img, a.large-img img, a.haute-img img, a.large img {
     transition: transform 4s cubic-bezier(0.19, 1, 0.22, 1) 0ms; }
-  a.pub-style:hover .acceuil-title p, a.large-img:hover .acceuil-title p, a.haute-img:hover .acceuil-title p {
-    display: block;
+  a.pub-style:hover .acceuil-title p, a.pub-style:hover .acceuil-title div.accroche, a.large-img:hover .acceuil-title p, a.large-img:hover .acceuil-title div.accroche, a.haute-img:hover .acceuil-title p, a.haute-img:hover .acceuil-title div.accroche {
+    display: block !important;
     color: #697277; }
-    a.pub-style:hover .acceuil-title p span, a.large-img:hover .acceuil-title p span, a.haute-img:hover .acceuil-title p span {
+    a.pub-style:hover .acceuil-title p span, a.pub-style:hover .acceuil-title div.accroche span, a.large-img:hover .acceuil-title p span, a.large-img:hover .acceuil-title div.accroche span, a.haute-img:hover .acceuil-title p span, a.haute-img:hover .acceuil-title div.accroche span {
       float: left;
       margin: 0 0 0 5px;
       display: inline-block;
