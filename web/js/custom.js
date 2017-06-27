@@ -45,16 +45,18 @@ $(document).ready(function () {
     //affichage interstitiel
     $( "#div-gpt-ad-1490604501599-9 iframe" ).load(function() {
         var iBody = $(this).contents().find("body");
-        if(iBody.length != 1) {
+        if(iBody.text().length != 1) {
             $("#overlaypub").show();
         }
     });
     //affichage banner bottom
-    $( "div[id^='div-gpt-ad-1490604501599-'] iframe" ).load(function() {
-        var iBody = $(this).contents().find("body");
-        if(iBody.length != 1) {
-            $("#pub_fixed_footer").show();
-        }
+    $( "#pub_fixed_footer div[id^='div-gpt-ad-1490604501599-']").each(function() {
+        $( "iframe" ).load(function() {
+            var iBody = $(this).contents().find("body");
+            if(iBody.text().length != 1) {
+                $("#pub_fixed_footer").show();
+            }
+        });
     });
 
     // add a hash to the URL when the user clicks on a tab
