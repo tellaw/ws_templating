@@ -4673,7 +4673,8 @@ tr {
 }
 
 #header-rubrique .pdf-added,
- #header-rubrique .pdf-full {
+ #header-rubrique .pdf-full,
+ #header-search .search-added {
      position: absolute;
      width: 100%;
      left: 0px;
@@ -4682,6 +4683,11 @@ tr {
      margin: 5px 0 0 0px;
      color: #fff;
  }
+
+#header-search .search-added {
+    top:0;
+    text-align: center;
+}
 
 .erreur-vide {
     width: 100%;
