@@ -35,22 +35,24 @@ $(window).ready(function () {
 
 //gestion back des onglets page domaines/secteurs/offres
 $(document).ready(function () {
-    if($("body").hasClass("home")) {
-        //gestion overlay interstitiel
-        $("#div-gpt-ad-1490604501599-9").wrap("<div id='overlaypub' style='display:none;position: fixed;top: 0;left: 0;background: url(http://cdn.techniques-ingenieur.fr/images/jquery-sliderBack.png) 0 0;z-index: 9999;width: 100%;height:100%;text-align: center;'></div>");
-        $("#overlaypub").prepend('<p><a href="#pub" class="closepub"><img src="//cdn.techniques-ingenieur.fr/images/close.png" alt="fermer"></a></p>');
-        $("#overlaypub .closepub").on("click", function() {
-            $("#overlaypub").remove();
-        });
+    if ($(window).width() > 800) {
+        if ($("body").hasClass("home")) {
+            //gestion overlay interstitiel
+            $("#div-gpt-ad-1490604501599-9").wrap("<div id='overlaypub' style='display:none;position: fixed;top: 0;left: 0;background: url(http://cdn.techniques-ingenieur.fr/images/jquery-sliderBack.png) 0 0;z-index: 9999;width: 100%;height:100%;text-align: center;'></div>");
+            $("#overlaypub").prepend('<p><a href="#pub" class="closepub"><img src="//cdn.techniques-ingenieur.fr/images/close.png" alt="fermer"></a></p>');
+            $("#overlaypub .closepub").on("click", function () {
+                $("#overlaypub").remove();
+            });
 
-        //affichage interstitiel
-        $( "#div-gpt-ad-1490604501599-9 iframe" ).load(function() {
-            var iBody = $(this).contents().find("body");
-            console.log(iBody.length);
-            if(iBody.length == 1) {
-                $("#overlaypub").show();
-            }
-        });
+            //affichage interstitiel
+            $("#div-gpt-ad-1490604501599-9 iframe").load(function () {
+                var iBody = $(this).contents().find("body");
+                console.log(iBody.length);
+                if (iBody.length == 1) {
+                    $("#overlaypub").show();
+                }
+            });
+        }
     }
 
     //affichage banner bottom
@@ -62,6 +64,18 @@ $(document).ready(function () {
             $("#pub_fixed_footer #pubclose p").css({"left" : widthPub/2, "bottom" : heightPub - 10}).show();
         }
     });
+
+    var countIframePub = 0;
+    $( "#pub_fixed_footer div[id^='div-gpt-ad-1490604501599-'] iframe").each(function() {
+        var iBody = $(this).contents().find("body");
+        if(iBody.length == 1) {
+            countIframePub = countIframePub + 1;
+        }
+        console.log(countIframePub);
+    });
+    if (countIframePub == 3) {
+        $("#pub_fixed_footer").remove();
+    }
 
     // add a hash to the URL when the user clicks on a tab
     $('a[data-toggle="tab"]').on('click', function (e) {
