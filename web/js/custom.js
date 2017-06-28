@@ -35,21 +35,24 @@ $(window).ready(function () {
 
 //gestion back des onglets page domaines/secteurs/offres
 $(document).ready(function () {
-    //gestion overlay interstitiel
-    $("#div-gpt-ad-1490604501599-9").wrap("<div id='overlaypub' style='display:none;position: fixed;top: 0;left: 0;background: url(http://cdn.techniques-ingenieur.fr/images/jquery-sliderBack.png) 0 0;z-index: 9999;width: 100%;height:100%;text-align: center;'></div>");
-    $("#overlaypub").prepend('<p><a href="#pub" class="closepub"><img src="//cdn.techniques-ingenieur.fr/images/close.png" alt="fermer"></a></p>');
-    $("#overlaypub .closepub").on("click", function() {
-        $("#overlaypub").remove();
-    });
+    if($("body").hasClass("home")) {
+        //gestion overlay interstitiel
+        $("#div-gpt-ad-1490604501599-9").wrap("<div id='overlaypub' style='display:none;position: fixed;top: 0;left: 0;background: url(http://cdn.techniques-ingenieur.fr/images/jquery-sliderBack.png) 0 0;z-index: 9999;width: 100%;height:100%;text-align: center;'></div>");
+        $("#overlaypub").prepend('<p><a href="#pub" class="closepub"><img src="//cdn.techniques-ingenieur.fr/images/close.png" alt="fermer"></a></p>');
+        $("#overlaypub .closepub").on("click", function() {
+            $("#overlaypub").remove();
+        });
 
-    //affichage interstitiel
-    $( "#div-gpt-ad-1490604501599-9 iframe" ).load(function() {
-        var iBody = $(this).contents().find("body");
-        if(iBody.text().length != 1) {
-            console.log("inter");
-            $("#overlaypub").show();
-        }
-    });
+        //affichage interstitiel
+        $( "#div-gpt-ad-1490604501599-9 iframe" ).load(function() {
+            var iBody = $(this).contents().find("body");
+            if(iBody.text().length != 1) {
+                console.log(iBody.text().length);
+                $("#overlaypub").show();
+            }
+        });
+    }
+
     //affichage banner bottom
     var pubOk = 0;
     if(pubOk == 0){
@@ -57,9 +60,7 @@ $(document).ready(function () {
             var iBody = $(this).contents().find("body");
             var widthPub = $(this).width();
             var heightPub = $(this).height();
-            console.log(iBody.text().length);
-            if(iBody.text().length != 1) {
-                console.log("pub1");
+            if(iBody.text().length > 1) {
                 pubOk = 1;
                 $("#pub_fixed_footer").show();
                 $("#pub_fixed_footer #pubclose p").css({"left" : widthPub/2, "bottom" : heightPub + 10}).show();
@@ -71,8 +72,7 @@ $(document).ready(function () {
             var iBody = $(this).contents().find("body");
             var widthPub = $(this).width();
             var heightPub = $(this).height();
-            if (iBody.text().length != 1) {
-                console.log("pub2");
+            if (iBody.text().length > 1) {
                 pubOk = 1;
                 $("#pub_fixed_footer").show();
                 $("#pub_fixed_footer #pubclose p").css({"left": widthPub / 2, "bottom": heightPub + 10}).show();
@@ -84,8 +84,7 @@ $(document).ready(function () {
             var iBody = $(this).contents().find("body");
             var widthPub = $(this).width();
             var heightPub = $(this).height();
-            if (iBody.text().length != 1) {
-                console.log("pub3");
+            if (iBody.text().length > 1) {
                 pubOk = 1;
                 $("#pub_fixed_footer").show();
                 $("#pub_fixed_footer #pubclose p").css({"left": widthPub / 2, "bottom": heightPub + 10}).show();
