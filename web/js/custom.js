@@ -45,9 +45,8 @@ $(document).ready(function () {
 
         //affichage interstitiel
         $( "#div-gpt-ad-1490604501599-9 iframe" ).load(function() {
-            var iBody = $(this).contents().find("body");
-            if(iBody.text().length != 1) {
-                console.log(iBody.text().length);
+            var iBody = $(this).contents().find("body").html();
+            if(iBody.length > 1) {
                 $("#overlaypub").show();
             }
         });
@@ -57,10 +56,11 @@ $(document).ready(function () {
     var pubOk = 0;
     if(pubOk == 0){
         $( "#pub_fixed_footer #div-gpt-ad-1490604501599-0 iframe" ).load(function() {
-            var iBody = $(this).contents().find("body");
+            var iBody = $(this).contents().find("body").html();
             var widthPub = $(this).width();
             var heightPub = $(this).height();
-            if(iBody.text().length > 1) {
+            if(iBody.length > 1) {
+                console.log(iBody.length);
                 pubOk = 1;
                 $("#pub_fixed_footer").show();
                 $("#pub_fixed_footer #pubclose p").css({"left" : widthPub/2, "bottom" : heightPub + 10}).show();
@@ -69,10 +69,11 @@ $(document).ready(function () {
     }
     else if(pubOk == 0) {
         $("#pub_fixed_footer #div-gpt-ad-1490604501599-4 iframe").load(function () {
-            var iBody = $(this).contents().find("body");
+            var iBody = $(this).contents().find("body").html();
             var widthPub = $(this).width();
             var heightPub = $(this).height();
-            if (iBody.text().length > 1) {
+            if (iBody.length > 1) {
+                console.log(iBody.length);
                 pubOk = 1;
                 $("#pub_fixed_footer").show();
                 $("#pub_fixed_footer #pubclose p").css({"left": widthPub / 2, "bottom": heightPub + 10}).show();
@@ -81,10 +82,11 @@ $(document).ready(function () {
     }
     else if(pubOk == 0) {
         $("#pub_fixed_footer #div-gpt-ad-1490604501599-2 iframe").load(function () {
-            var iBody = $(this).contents().find("body");
+            var iBody = $(this).contents().find("body").html();
             var widthPub = $(this).width();
             var heightPub = $(this).height();
-            if (iBody.text().length > 1) {
+            if (iBody.length > 1) {
+                console.log(iBody.length);
                 pubOk = 1;
                 $("#pub_fixed_footer").show();
                 $("#pub_fixed_footer #pubclose p").css({"left": widthPub / 2, "bottom": heightPub + 10}).show();
