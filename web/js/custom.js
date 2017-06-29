@@ -64,36 +64,33 @@ $(document).ready(function () {
         }
     });
 
-    var countIframePub = 0;
-    $( "#pub_fixed_footer div[id^='div-gpt-ad-1490604501599-']").each(function() {
-        var iBody = $(this).find("iframe").length;
-        if(iBody == 0) {
-            countIframePub = countIframePub + 1;
-        }
-    });
-
     $( "#pub_fixed_footer #div-gpt-ad-1490604501599-0 iframe").load(function() {
         var iBody = $(this).contents().find("body").html();
-        if(iBody.length == 1) {
-            countIframePub = countIframePub + 1;
+        if(iBody.length == 0) {
+            $("#pub_fixed_footer").hide();
+        }
+        else {
+            $("#pub_fixed_footer").show();
         }
     });
     $( "#pub_fixed_footer #div-gpt-ad-1490604501599-4 iframe").load(function() {
         var iBody = $(this).contents().find("body").html();
-        if(iBody.length == 1) {
-            countIframePub = countIframePub + 1;
+        if(iBody.length == 0) {
+            $("#pub_fixed_footer").hide();
+        }
+        else {
+            $("#pub_fixed_footer").show();
         }
     });
     $( "#pub_fixed_footer #div-gpt-ad-1490604501599-2 iframe").load(function() {
         var iBody = $(this).contents().find("body").html();
-        if(iBody.length == 1) {
-            countIframePub = countIframePub + 1;
+        if(iBody.length == 0) {
+            $("#pub_fixed_footer").hide();
+        }
+        else {
+            $("#pub_fixed_footer").show();
         }
     });
-
-    if (countIframePub >= 3) {
-        $("#pub_fixed_footer").remove();
-    }
 
     // add a hash to the URL when the user clicks on a tab
     $('a[data-toggle="tab"]').on('click', function (e) {
