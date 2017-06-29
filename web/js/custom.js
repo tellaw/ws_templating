@@ -91,7 +91,7 @@ $(document).ready(function () {
         }
     });
 
-    if (countIframePub == 3) {
+    if (countIframePub >= 3) {
         $("#pub_fixed_footer").remove();
     }
 
