@@ -59,6 +59,7 @@ $(document).ready(function () {
         var iBody = $(this).contents().find("body").html();
         var widthPub = $(this).width();
         var heightPub = $(this).height();
+        console.log("coco4");
         if(iBody.length > 1) {
             $("#pub_fixed_footer #pubclose p").css({"left" : widthPub/2, "bottom" : heightPub - 10}).show();
         }
