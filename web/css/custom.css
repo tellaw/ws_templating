@@ -6935,6 +6935,6 @@ input#picture-input {
     z-index:99999;
 }
 
-div[id^='div-gpt-ad-1490604501599-'] {bottom: 0;opacity: 1;position: fixed;width: 100%;z-index: 100;height: auto;text-align:center;}
-div[id^='div-gpt-ad-1490604501599-'] #pubclose p {width:100%;height:0;position:fixed;}
-div[id^='div-gpt-ad-1490604501599-'] #pubclose p a.closepub {color:#fff;font-size:15px;font-weight:700;position: relative; top: -20px; left: 0;}
+.banner div[id^='div-gpt-ad-1490604501599-'] {bottom: 0;opacity: 1;position: fixed;width: 100%;z-index: 100;height: auto;text-align:center;}
+.banner div[id^='div-gpt-ad-1490604501599-'] #pubclose p {width:100%;height:0;position:fixed;}
+.banner div[id^='div-gpt-ad-1490604501599-'] #pubclose p a.closepub {color:#fff;font-size:15px;font-weight:700;position: relative; top: -20px; left: 0;}
