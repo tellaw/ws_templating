@@ -30,6 +30,14 @@ $i: 1;
     .background-encart {
       background-color: nth($domaines_secteurs_colors, $i)!important;
     }
+    .rounded-border {
+      border: 3px solid nth($domaines_secteurs_colors, $i)!important;
+      border-radius: 100%;
+      height: 240px;
+      width: 240px;
+      display: table-cell;
+      vertical-align: middle;
+    }
     .background-hover {
       &:hover{
         background-color: #ffffff!important;

@@ -343,7 +343,7 @@ $(document).ready(function () {
         ]
         , controlsClass: "owl-custom-controls"
     });
-    var eventStick;
+    /*var eventStick;
     if ($(window).width() < 1024) {
         eventStick = 'click'
     }
@@ -464,7 +464,7 @@ $(document).ready(function () {
             link = "/myti/newsletter.html"
         };
         $('#sticky-menu-plane').wrap('<a href=' + link + '></a>');
-    };
+    };*/
     // gestion des ancres pour les onglets
     if (window.location.href.indexOf("#") > -1) {
         var anchor = window.location.href.substring(window.location.href.indexOf("#") + 1, window.location.href.length);
@@ -961,15 +961,15 @@ $(document).ready(function () {
 
     var url = window.location.href;
     if(url.indexOf('/contenus-gratuits') != -1){
-        jQuery('.navbar-nav .contenu-gratuit').addClass('brd-bottom-active');
+        jQuery('.navbar-nav .contenu-gratuit').addClass('bg-active');
         return false;
     }
     else if(url.indexOf('/edito/mieux-nous-connaitre') != -1){
-        jQuery('.navbar-nav .a-propos').addClass('brd-bottom-active');
+        jQuery('.navbar-nav .a-propos').addClass('bg-active');
         return false;
     }
     else if(url.indexOf('/edito/contact') != -1){
-        jQuery('.navbar-nav .contact').addClass('brd-bottom-active');
+        jQuery('.navbar-nav .contact').addClass('bg-active');
         return false;
     }
     else if(url.indexOf('/actualite/edito') != -1){
@@ -988,7 +988,7 @@ $(document).ready(function () {
         return false;
     }
     else if(url == "https://preprod.techniques-ingenieur.fr/" || url == "http://preprod.techniques-ingenieur.fr/"){
-        jQuery('.navbar-nav .accueil').addClass('brd-bottom-active');
+        jQuery('.navbar-nav .accueil').addClass('bg-active');
         return false;
     }
 
@@ -1036,6 +1036,20 @@ $(document).ready(function () {
     $(".mode-bloc").click(function() {
         $("#mode-bloc").show();
         $("#mode-list").hide();
+    });
+
+    $("#sticky .close-sticky").on("click", function() {
+        console.log("ici");
+        $(this).find("i").toggleClass("fa-angle-right fa-angle-left");
+        $("#sticky-menu").toggleClass("sticky-show sticky-hide");
+    });
+
+    $("#sticky-menu").on("hover", function() {
+        console.log("la");
+        if($("#sticky-menu").hasClass("sticky-hide")) {
+            $(this).find("i").toggleClass("fa-angle-right fa-angle-left");
+            $("#sticky-menu").toggleClass("sticky-show sticky-hide");
+        }
     });
 });
 (function () {
