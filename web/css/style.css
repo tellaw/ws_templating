@@ -533,8 +533,8 @@ div.border-red {
   color: #697277; }
 
 .article div:first-child ul .type-fichier {
-  font-family: myriad-pro-semi-bold;
-  color: #697277; }
+  background-color: #E2E1E1;
+  color: #4D5356; }
 
 .fiche .ico-search {
   background-position: 0 -59px; }
