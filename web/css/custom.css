@@ -3357,7 +3357,7 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color=#EC1625, Direction=NaN, St
     margin-bottom: 0;
 }
 
-#timeline-v2.timeline-v2 > li:hover .cbp_tmlabel div * {
+#timeline-v2.timeline-v2 > li:hover .cbp_tmlabel div .color-red-eti {
     color: #EC1625!important;
     text-decoration: underline;
 }
@@ -3397,6 +3397,15 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color=#EC1625, Direction=NaN, St
     width: 10%;
 }
 
+#presentation .table > tbody > tr > td.col4 span {
+    color : #697277
+}
+
+#presentation .table > tbody > tr > td.col4 span.media-key-download {
+    background-color : #E2E1E1;
+    color : #4D5356
+}
+
 #timeline-v2.timeline-v2 > li .cbp_tmlabel span {
     top: 0;
     line-height: 20px;
@@ -3419,6 +3428,9 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color=#EC1625, Direction=NaN, St
     position: relative;
 }
 
+#timeline-v2.timeline-v2 > li .cbp_tmlabel span.color-697277 {
+    font-size:13px
+}
 .color-697277 {
     color: #4D5356 !important;
 }

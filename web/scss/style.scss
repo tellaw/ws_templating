@@ -623,7 +623,6 @@ div.border-red {
       a {
         p {
           span {
-            color:$color-red!important;
             &.ico-search {
               background-position: -39px -29px;
             }
@@ -645,7 +644,7 @@ div.border-red {
             overflow: hidden;
             line-height: 20px;
             position: relative;
-            padding: 0!important;
+            padding: 0 0 0 77px!important;
           }
         }
       }
@@ -656,8 +655,14 @@ div.border-red {
       ul {
         li {
           &:first-child {
-            font-weight:bold;
+            font-family: myriad-pro-bold;
+            padding-left: 0;
+            color: #697277;
           }
+        }
+        .type-fichier {
+          font-family: myriad-pro-semi-bold;
+          color: #697277;
         }
       }
     }
@@ -716,8 +721,14 @@ div.border-red {
       ul {
         li {
           &:first-child {
-            font-weight:bold;
+            font-family: myriad-pro-bold;
+            padding-left: 0;
+            color: #697277;
           }
+        }
+        .type-fichier {
+          font-family: myriad-pro-semi-bold;
+          color: #697277;
         }
       }
     }
