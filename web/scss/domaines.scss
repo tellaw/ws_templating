@@ -94,3 +94,29 @@ $i: 1;
   }
   $i: $i + 1;
 }
+
+@media  screen and (max-width: 1024px) {
+  $i: 1;
+  @each $class in $domaines_secteurs_code {
+    /* #{nth($domaines_secteurs_name, $i)} */
+    .skin-#{$class} {
+      .rounded-border {
+        height: 205px;
+      }
+    }
+    $i: $i + 1;
+  }
+}
+
+@media  screen and (max-width: 768px) {
+  $i: 1;
+  @each $class in $domaines_secteurs_code {
+    /* #{nth($domaines_secteurs_name, $i)} */
+    .skin-#{$class} {
+      .rounded-border {
+        height: 150px;
+      }
+    }
+    $i: $i + 1;
+  }
+}

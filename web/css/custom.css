@@ -2151,10 +2151,14 @@ div[class^="element-wrapper-"] img {
     color: #ffffff;
 }
 
+#sticky-menu .abo p.badge {
+    padding: 2px 2px 2px 2px!important;
+    border: 1px solid;
+}
 #sticky .close-sticky {
     position: absolute;
     top: 0px;
-    left: -20px;
+    left: 0px;
     background: #ebebeb;
     cursor: pointer;
     padding: 2px 5px;
@@ -2162,10 +2166,15 @@ div[class^="element-wrapper-"] img {
 
 .sticky-show {
     margin-right:0px;
+    background: #ffffff;
 }
 
 .sticky-hide {
-    margin-right:-80px;
+    margin-right: -136px;
+}
+
+.sticky-hide .prospect {
+    margin-left: 20px;
 }
 
 .btn-stk {
@@ -2304,7 +2313,11 @@ div[class^="element-wrapper-"] img {
 }
 
 .domaine-secteur-box .ez_html_module p {
-    margin: 0 120px;
+    margin: 0 15px;
+}
+
+.domaine-secteur-box .ez_html_module p.text-center {
+    text-align: left;
 }
 
 .domaine-secteur-box img {
@@ -2391,7 +2404,9 @@ div[class^="element-wrapper-"] img {
     box-shadow: 0px 0px 0px #888888;
     margin-bottom: 0px;
 }
-
+.cellule.panel-default:first-child {
+    border: none!important;
+}
 .cellule .panel-heading {
     background-color: #fff;
 }
@@ -4092,12 +4107,9 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color=#EC1625, Direction=NaN, St
     padding-bottom: 10px;
 }
 
-#bande > div{
-    min-height:148px;
-}
-
 #bande > div:first-child {
     background: #dedede;
+    min-height:148px;
 }
 
 .title-icon {
@@ -4148,12 +4160,12 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color=#EC1625, Direction=NaN, St
 .abonnement-img i,
 .abonnement-img span {
     border: 1.5px solid #1B8BBB;
+    border-radius: 4px;
     height: 35px;
     width: 35px;
     font-size: 28px;
     padding: 1px;
     margin-top: -1px;
-    padding-top: 4px;
     background: #fff;
 }
 
@@ -4177,6 +4189,7 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color=#EC1625, Direction=NaN, St
     text-align: center;
     display: block;
     width: 100%;
+    font-family: myriad-pro-semi-bold;
 }
 
 a.abonnement-text {
@@ -4374,7 +4387,7 @@ a.abonnement-text:hover {
 }
 
 .row-3-blocks {
-    background-color: #ebebeb;
+    background-color: #ededed;
     /*padding-bottom: 10px !important;
     padding-top: 10px !important;*/
     margin-right: 0;
@@ -4649,7 +4662,7 @@ tr {
 }
 
 #timeline-v2.timeline-v2 > li .cbp_tmicon {
-    background: #EC1625;
+    background: #777777;
     box-shadow: 0 0 0 4px #dcdcdc;
 }
 
@@ -7027,10 +7040,6 @@ input#picture-input {
     display: inline-block;
     padding-right: 3px;
     padding-left: 3px;
-    border-left: 1px solid;
-}
-.partage > li:first-child {
-    border-left: 0px solid;
 }
 
 .partage > li.newsletter-link {
