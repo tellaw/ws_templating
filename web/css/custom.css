@@ -2162,6 +2162,7 @@ div[class^="element-wrapper-"] img {
     background: #ebebeb;
     cursor: pointer;
     padding: 2px 5px;
+    display:none;
 }
 
 .sticky-show {
