@@ -1038,20 +1038,11 @@ $(document).ready(function () {
         $("#mode-list").hide();
     });
 
-    $("#sticky .close-sticky").on("click", function() {
-        console.log("ici");
+    $("#sticky .close-sticky").click(function() {
         $(this).find("i").toggleClass("fa-angle-right fa-comment");
         /*$(this).find("i").toggleClass("fa-angle-right fa-angle-left");*/
         $("#sticky-menu").toggleClass("sticky-show sticky-hide");
     });
-
-    /*$("#sticky-menu").on("hover", function() {
-        console.log("la");
-        if($("#sticky-menu").hasClass("sticky-hide")) {
-            $(this).find("i").toggleClass("fa-angle-right fa-angle-left");
-            $("#sticky-menu").toggleClass("sticky-show sticky-hide");
-        }
-    });*/
 });
 (function () {
     var v = document.getElementsByClassName("youtube-player");
