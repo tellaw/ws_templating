@@ -688,7 +688,6 @@ div.border-red {
       a {
         p {
           span {
-            color:$color-red!important;
             &.ico-search {
               background-position: -39px -59px;
             }
@@ -704,13 +703,13 @@ div.border-red {
         span {
           &.titre {
             text-overflow: ellipsis;
-            max-width: 430px;
+            max-width: 530px;
             display: inline-block;
             white-space: nowrap;
             overflow: hidden;
-            line-height: 16px;
-            top: 4px;
+            line-height: 20px;
             position: relative;
+            padding: 0 0 0 77px !important;
           }
         }
       }

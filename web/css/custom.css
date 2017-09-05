@@ -3413,12 +3413,15 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color=#EC1625, Direction=NaN, St
 }
 
 #presentation .table > tbody > tr > td.col4 span {
-    color : #697277
+    color : #697277;
+    font-family: myriad-pro-bold;
 }
 
-#presentation .table > tbody > tr > td.col4 span.media-key-download {
+span.media-key-download {
     background-color : #E2E1E1;
-    color : #4D5356
+    color : #4D5356;
+    padding: 3px 7px;
+    font-family: myriad-pro-bold;
 }
 
 #timeline-v2.timeline-v2 > li .cbp_tmlabel span {
@@ -7051,4 +7054,8 @@ input#picture-input {
 }
 .carto-bg {
     background: url(../images/fond-carto-home.png) no-repeat top center;
+}
+.decalage_visu_real_bd li:first-child, .type-article {
+    font-family: myriad-pro-bold;
+    color: #697277;
 }

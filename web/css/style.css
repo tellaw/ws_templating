@@ -547,23 +547,21 @@ div.border-red {
 .fiche a span {
   top: 0; }
 
-.fiche.zoning:hover a p span {
-  color: #EC1625 !important; }
-  .fiche.zoning:hover a p span.ico-search {
-    background-position: -39px -59px; }
+.fiche.zoning:hover a p span.ico-search {
+  background-position: -39px -59px; }
 
 .fiche.zoning a:hover {
   text-decoration: none; }
 
 .fiche.zoning a p span.titre {
   text-overflow: ellipsis;
-  max-width: 430px;
+  max-width: 530px;
   display: inline-block;
   white-space: nowrap;
   overflow: hidden;
-  line-height: 16px;
-  top: 4px;
-  position: relative; }
+  line-height: 20px;
+  position: relative;
+  padding: 0 0 0 77px !important; }
 
 .fiche div:first-child ul li:first-child {
   font-family: myriad-pro-bold;
