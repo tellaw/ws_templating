@@ -580,7 +580,7 @@ $(document).ready(function () {
             }
             , close: function () {
                 $("#services-popin").remove();
-                parent.location.reload();
+                //parent.location.reload();
                 return false;
             }
         });

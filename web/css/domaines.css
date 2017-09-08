@@ -1255,3 +1255,71 @@ body.skin-sc6:hover {
   /* plasturgie */
   .skin-sc6 .rounded-border {
     height: 150px; } }
+
+@media screen and (max-width: 736px) {
+  /* mesures analyse */
+  .skin-th1 .rounded-border {
+    height: 240px; }
+  /* procedes chimie bio agro */
+  .skin-th2 .rounded-border {
+    height: 240px; }
+  /* construction */
+  .skin-th3 .rounded-border {
+    height: 240px; }
+  /* energie */
+  .skin-th4 .rounded-border {
+    height: 240px; }
+  /* environement */
+  .skin-th5 .rounded-border {
+    height: 240px; }
+  /* genie industriel */
+  .skin-th6 .rounded-border {
+    height: 240px; }
+  /* mecanique */
+  .skin-th7 .rounded-border {
+    height: 240px; }
+  /* sciences fondamentales */
+  .skin-th8 .rounded-border {
+    height: 240px; }
+  /* technologie de l information */
+  .skin-th9 .rounded-border {
+    height: 240px; }
+  /* nanotechnologies */
+  .skin-th10 .rounded-border {
+    height: 240px; }
+  /* materiaux */
+  .skin-th11 .rounded-border {
+    height: 240px; }
+  /* archives */
+  .skin-th12 .rounded-border {
+    height: 240px; }
+  /* electronique photonique */
+  .skin-th13 .rounded-border {
+    height: 240px; }
+  /* transports */
+  .skin-th14 .rounded-border {
+    height: 240px; }
+  /* biomediacl pharma */
+  .skin-th15 .rounded-border {
+    height: 240px; }
+  /* automatique robotique */
+  .skin-th16 .rounded-border {
+    height: 240px; }
+  /* aerospatial */
+  .skin-sc1 .rounded-border {
+    height: 240px; }
+  /* agroalimentaire */
+  .skin-sc2 .rounded-border {
+    height: 240px; }
+  /* automobile */
+  .skin-sc3 .rounded-border {
+    height: 240px; }
+  /* eco-indiustrie */
+  .skin-sc4 .rounded-border {
+    height: 240px; }
+  /* equipement-industriel */
+  .skin-sc5 .rounded-border {
+    height: 240px; }
+  /* plasturgie */
+  .skin-sc6 .rounded-border {
+    height: 240px; } }
