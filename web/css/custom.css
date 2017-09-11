@@ -3395,7 +3395,7 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color=#EC1625, Direction=NaN, St
 #presentation .table > tbody > tr > td {
     border-top: 0px solid #ddd;
     height: 30px !important;
-    padding: 4px 8px;
+    padding: 4px 8px 8px;
     vertical-align: top!important;
 }
 
@@ -3417,10 +3417,10 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color=#EC1625, Direction=NaN, St
     font-family: myriad-pro-bold;
 }
 
-span.media-key-download {
+.media-key-download {
     background-color : #E2E1E1;
     color : #4D5356;
-    padding: 3px 7px;
+    padding: 3px 10px;
     font-family: myriad-pro-bold;
 }
 
@@ -3432,9 +3432,9 @@ span.media-key-download {
     letter-spacing: 1px;
 }
 
-#timeline-v2.timeline-v2 > li .cbp_tmlabel span:first-child {
+/*#timeline-v2.timeline-v2 > li .cbp_tmlabel span:first-child {
     padding-left: 0px;
-}
+}*/
 
 #timeline-v2.timeline-v2 > li .cbp_tmlabel span:last-child {
     /*text-overflow: ellipsis; */
