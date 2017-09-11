@@ -499,7 +499,6 @@ div.border-red {
 .article a span {
   top: 0;
   line-height: 20px;
-  display: inline-block;
   overflow: hidden; }
 
 .article .ico-search:hover {
