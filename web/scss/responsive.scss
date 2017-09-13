@@ -1591,6 +1591,11 @@ $color-red : #EC1625 ;
       }
     }
   }
+  .row-3-blocks {
+    >div {
+      min-height: 100%;
+    }
+  }
 }
 
 /* Tablette portrait and up */
