@@ -32,11 +32,11 @@ body{
   max-width: 1024px;
 }
 iframe {
-  border:none;
+  border: none;
 }
 
 .pointer {
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .buton-blue {
@@ -2003,6 +2003,7 @@ blockquote {
 }
 #glossaire {
   a {
+    word-break: break-all;
     &:hover {
       color: #EC1625;
       text-decoration: underline;
@@ -2121,10 +2122,35 @@ blockquote {
   background-size: 100% 100%;
 }
 
+#top-page-lexique {
+  background: url("../images/fond-lexique.jpg") no-repeat top center;
+  background-size: auto;
+}
+#top-page-lexique-words {
+  background: url("../images/fond-lexique.jpg") no-repeat center center;
+  background-size: auto;
+}
+#dictionary_search_box {
+  border: none;
+  .drapeaux {
+    width: 110%;
+  }
+  .input-group-btn {
+    vertical-align: bottom;
+  }
+}
 #header-rubrique {
   >div.row {
     min-height:120px;
   }
+}
+.figure-legend,
+.figure-title {
+  display:none;
+}
+.figure-legend-selected,
+.figure-title-selected {
+  display:block;
 }
 .btn-txt {
   display:inline-block;

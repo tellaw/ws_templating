@@ -425,7 +425,9 @@
   .sidebar-nav-v1 .list-toggle:after {
     top: 8px; }
   .sidebar-nav-v1 .list-toggle.active:after {
-    top: 8px; } }
+    top: 8px; }
+  form .drapeaux label {
+    width: auto; } }
 
 @media screen and (min-width: 426px) {
   .xs-padding-left {
@@ -579,6 +581,8 @@
       line-height: 19px; }
     .slider-card div {
       display: none; }
+  #dictionary_search_box .drapeaux {
+    width: 112%; }
   .card-sub-title-1 {
     font-size: 14px; }
   .owl-custom-left {
@@ -750,6 +754,8 @@
           padding-left: 20px;
           height: 70px;
           overflow: hidden; }
+  #dictionary_search_box .drapeaux {
+    width: 114%; }
   .autres-card {
     height: 65%; }
   .article-decouverte,
@@ -760,7 +766,7 @@
     margin-right: auto;
     width: 250px; }
   .xs-margin-left-10 {
-    margin-left: 10px; }
+    margin-left: 10px !important; }
   ul.timeline-v1 > li {
     width: 97%; }
     ul.timeline-v1 > li.timeline-inverted {
@@ -843,7 +849,9 @@
   .padding-lft-5 {
     padding-left: 5px !important; }
   .xs-margin-left-devis {
-    margin-left: 30px !important; } }
+    margin-left: 30px !important; }
+  #dictionary_search_box .drapeaux {
+    width: 120%; } }
 
 /* Small only */
 @media screen and (max-width: 768px) {
@@ -1308,6 +1316,8 @@
     display: none; }
   .myti-info-compte .text-ip {
     width: 98%; }
+  .unshow {
+    display: none; }
   .myti-info-compte .buton-abos {
     width: 100%;
     text-align: center;
@@ -1381,7 +1391,9 @@
     opacity: 1; }
   .btn-u.btn-color {
     padding: 2px 8px; }
-  #top-page-carto {
+  #top-page-carto,
+  #top-page-lexique,
+  #top-page-lexique-words {
     background: none; }
   #video-tuto iframe {
     width: 100%; } }
@@ -1582,7 +1594,9 @@
   .owl-custom-left {
     left: 0px; }
   .owl-custom-right {
-    right: 0px; } }
+    right: 0px; }
+  #dictionary_search_box .drapeaux {
+    width: 114%; } }
 
 @media screen and (min-width: 992px) and (max-width: 1024px) {
   .slider-card {

@@ -1515,16 +1515,18 @@ blockquote {
 .border {
   border: 1px solid #C6C6C6; }
 
-#glossaire a:hover {
-  color: #EC1625;
-  text-decoration: underline; }
-  #glossaire a:hover:before {
-    content: ">";
-    position: absolute;
-    left: -16px;
-    text-decoration: none;
-    font-size: 12px;
-    top: -2px; }
+#glossaire a {
+  word-break: break-all; }
+  #glossaire a:hover {
+    color: #EC1625;
+    text-decoration: underline; }
+    #glossaire a:hover:before {
+      content: ">";
+      position: absolute;
+      left: -16px;
+      text-decoration: none;
+      font-size: 12px;
+      top: -2px; }
 
 .dark-grey-title strong {
   color: #EC1625;
@@ -1609,8 +1611,31 @@ blockquote {
   background: url("../images/fond-cartographie-interactive.jpg") no-repeat top center;
   background-size: 100% 100%; }
 
+#top-page-lexique {
+  background: url("../images/fond-lexique.jpg") no-repeat top center;
+  background-size: auto; }
+
+#top-page-lexique-words {
+  background: url("../images/fond-lexique.jpg") no-repeat center center;
+  background-size: auto; }
+
+#dictionary_search_box {
+  border: none; }
+  #dictionary_search_box .drapeaux {
+    width: 110%; }
+  #dictionary_search_box .input-group-btn {
+    vertical-align: bottom; }
+
 #header-rubrique > div.row {
   min-height: 120px; }
+
+.figure-legend,
+.figure-title {
+  display: none; }
+
+.figure-legend-selected,
+.figure-title-selected {
+  display: block; }
 
 .btn-txt {
   display: inline-block;

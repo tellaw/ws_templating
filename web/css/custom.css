@@ -419,6 +419,10 @@ dt {
     padding: 30px!important;
 }
 
+.padding-40 {
+    padding: 40px!important;
+}
+
 .padding-80 {
     padding-left: 80px !important;
 }
@@ -5101,7 +5105,9 @@ form #di-link {
 .content-article a:hover,
 .barre-top a:hover,
 .pasword-forgotten:hover,
-.tags a:hover {
+.tags a:hover,
+#dictionary-results-box ul li a:hover,
+#dictionary-results-box ul li.selected a {
     color: #EC1625;
     text-decoration: underline;
 }

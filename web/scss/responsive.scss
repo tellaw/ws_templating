@@ -633,6 +633,13 @@ $color-red : #EC1625 ;
       top:8px;
     }
   }
+  form {
+  .drapeaux {
+      label {
+        width:auto;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 426px) {
@@ -830,7 +837,11 @@ $color-red : #EC1625 ;
       display: none;
     }
   }
-
+  #dictionary_search_box {
+    .drapeaux {
+      width: 112%;
+    }
+  }
   .card-sub-title-1 {
     font-size: 14px;
   }
@@ -1090,6 +1101,11 @@ $color-red : #EC1625 ;
       }
     }
   }
+  #dictionary_search_box {
+    .drapeaux {
+      width: 114%;
+    }
+  }
   .autres-card {
     height: 65%;
   }
@@ -1102,7 +1118,7 @@ $color-red : #EC1625 ;
     width: 250px;
   }
   .xs-margin-left-10 {
-    margin-left: 10px;
+    margin-left: 10px!important;
   }
   ul.timeline-v1 {
     > li {
@@ -1234,7 +1250,11 @@ $color-red : #EC1625 ;
   .xs-margin-left-devis {
     margin-left: 30px !important;
   }
-
+  #dictionary_search_box {
+    .drapeaux {
+      width: 120%;
+    }
+  }
 }
 
 /* Small only */
@@ -1981,7 +2001,9 @@ $color-red : #EC1625 ;
   .myti-info-compte .text-ip {
     width: 98%;
   }
-
+  .unshow {
+    display: none;
+  }
   .myti-info-compte .buton-abos {
     width: 100%;
     text-align: center;
@@ -2099,7 +2121,9 @@ $color-red : #EC1625 ;
       padding:2px 8px;
     }
   }
-  #top-page-carto {
+  #top-page-carto,
+  #top-page-lexique,
+  #top-page-lexique-words {
     background: none;
   }
   #video-tuto iframe {
@@ -2398,6 +2422,11 @@ $color-red : #EC1625 ;
   }
   .owl-custom-right {
     right: 0px;
+  }
+  #dictionary_search_box {
+    .drapeaux {
+      width: 114%;
+    }
   }
 }
 @media  screen and (min-width: 992px) and (max-width: 1024px) {

@@ -1043,6 +1043,22 @@ $(document).ready(function () {
         /*$(this).find("i").toggleClass("fa-angle-right fa-angle-left");*/
         $("#sticky-menu").toggleClass("sticky-show sticky-hide");
     });
+
+    // ouvrir-fermer resultats recherche colonne gauche
+    if(navigator.userAgent.match(/(iPhone|Android|BlackBerry|iPad)/i) || (window.matchMedia("(max-width:991px)").matches)) {
+        $('#dictionary-results-box .ttr').click(function () {
+            if ($(this).hasClass("accordion-toggle")) {
+                $(this).siblings("ul").removeClass('unshow');
+                $(this).find("i").toggleClass('fa-angle-up fa-angle-down');
+                $(this).removeClass("accordion-toggle");
+            }
+            else {
+                $(this).siblings("ul").addClass('unshow');
+                $(this).find("i").toggleClass('fa-angle-up fa-angle-down');
+                $(this).addClass("accordion-toggle");
+            }
+        });
+    };
 });
 (function () {
     var v = document.getElementsByClassName("youtube-player");
