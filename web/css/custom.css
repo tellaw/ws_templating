@@ -2661,6 +2661,7 @@ margin:0;
 .tab-v1 .nav-tabs a {
     padding: 5px 0;
     font-family: myriad-pro-semi-bold;
+    min-height: 65px;
     /*white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;*/
