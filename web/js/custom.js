@@ -1046,14 +1046,14 @@ $(document).ready(function () {
 
     // ouvrir-fermer resultats recherche colonne gauche
     if(navigator.userAgent.match(/(iPhone|Android|BlackBerry|iPad)/i) || (window.matchMedia("(max-width:991px)").matches)) {
-        $('#dictionary-results-box .ttr').click(function () {
+        $('.ttre_holder>.ttre').click(function () {
             if ($(this).hasClass("accordion-toggle")) {
-                $(this).siblings("ul").removeClass('unshow');
+                $(this).siblings(".search-box").removeClass('unshow');
                 $(this).find("i").toggleClass('fa-angle-up fa-angle-down');
                 $(this).removeClass("accordion-toggle");
             }
             else {
-                $(this).siblings("ul").addClass('unshow');
+                $(this).siblings(".search-box").addClass('unshow');
                 $(this).find("i").toggleClass('fa-angle-up fa-angle-down');
                 $(this).addClass("accordion-toggle");
             }
