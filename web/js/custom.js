@@ -35,63 +35,6 @@ $(window).ready(function () {
 
 //gestion back des onglets page domaines/secteurs/offres
 $(document).ready(function () {
-    /*if ($(window).width() > 800) {
-        if ($("body").hasClass("home")) {
-            //gestion overlay interstitiel
-            $("#div-gpt-ad-1490604501599-9").wrap("<div id='overlaypub' style='display:none;position: fixed;top: 0;left: 0;background: url(http://cdn.techniques-ingenieur.fr/images/jquery-sliderBack.png) 0 0;z-index: 9999;width: 100%;height:100%;text-align: center;'></div>");
-            $("#overlaypub").prepend('<p><a href="#pub" class="closepub"><img src="//cdn.techniques-ingenieur.fr/images/close.png" alt="fermer"></a></p>');
-            $("#overlaypub .closepub").on("click", function () {
-                $("#overlaypub").remove();
-            });
-
-            //affichage interstitiel
-            $("#div-gpt-ad-1490604501599-9 iframe").load(function () {
-                var iBody = $(this).contents().find("body");
-                if (iBody.length == 1) {
-                    $("#overlaypub").show();
-                }
-            });
-        }
-    }*/
-
-    //affichage banner bottom
-    /*$( "#pub_fixed_footer #div-gpt-ad-1490604501599-0 iframe" ).load(function() {
-        var iBody = $(this).contents().find("body").html();
-        var widthPub = $(this).width();
-        var heightPub = $(this).height();
-        if(iBody.length > 1) {
-            $("#pub_fixed_footer #pubclose p").css({"left" : widthPub/2, "bottom" : heightPub - 10}).show();
-        }
-    });
-
-    $( "#pub_fixed_footer #div-gpt-ad-1490604501599-0 iframe").load(function() {
-        var iBody = $(this).contents().find("body").html();
-        if(iBody.length == 0) {
-            $("#pub_fixed_footer").hide();
-        }
-        else {
-            $("#pub_fixed_footer").show();
-        }
-    });
-    $( "#pub_fixed_footer #div-gpt-ad-1490604501599-4 iframe").load(function() {
-        var iBody = $(this).contents().find("body").html();
-        if(iBody.length == 0) {
-            $("#pub_fixed_footer").hide();
-        }
-        else {
-            $("#pub_fixed_footer").show();
-        }
-    });
-    $( "#pub_fixed_footer #div-gpt-ad-1490604501599-2 iframe").load(function() {
-        var iBody = $(this).contents().find("body").html();
-        if(iBody.length == 0) {
-            $("#pub_fixed_footer").hide();
-        }
-        else {
-            $("#pub_fixed_footer").show();
-        }
-    });*/
-
     // add a hash to the URL when the user clicks on a tab
     $('a[data-toggle="tab"]').on('click', function (e) {
         history.pushState(null, null, $(this).attr('href'));
