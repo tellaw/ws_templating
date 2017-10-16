@@ -35,7 +35,7 @@ $(window).ready(function () {
 
 //gestion back des onglets page domaines/secteurs/offres
 $(document).ready(function () {
-    if ($(window).width() > 800) {
+    /*if ($(window).width() > 800) {
         if ($("body").hasClass("home")) {
             //gestion overlay interstitiel
             $("#div-gpt-ad-1490604501599-9").wrap("<div id='overlaypub' style='display:none;position: fixed;top: 0;left: 0;background: url(http://cdn.techniques-ingenieur.fr/images/jquery-sliderBack.png) 0 0;z-index: 9999;width: 100%;height:100%;text-align: center;'></div>");
@@ -52,7 +52,7 @@ $(document).ready(function () {
                 }
             });
         }
-    }
+    }*/
 
     //affichage banner bottom
     /*$( "#pub_fixed_footer #div-gpt-ad-1490604501599-0 iframe" ).load(function() {

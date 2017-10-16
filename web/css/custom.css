@@ -7033,14 +7033,14 @@ input#picture-input {
     margin: 0 41%;
 }
 
-#overlaypub .closepub {
+/*#overlaypub .closepub {
     width: 100%;
     height: 0;
     position: fixed;
     left: 380px;
     top: 62px;
     z-index:99999;
-}
+}*/
 
 .banner div[id^='div-gpt-ad-1490604501599-'] {bottom: 0;opacity: 1;position: fixed;width: 100%;z-index: 100;height: auto;text-align:center;}
 .banner div[id^='div-gpt-ad-1490604501599-'] #pubclose p {width:100%;height:0;position:fixed;}
