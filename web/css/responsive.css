@@ -2247,9 +2247,11 @@
   #div-gpt-ad-1490604501599-11 {
     padding: 0 0 0 15px;
     display: table-cell;
+    vertical-align: middle;
     width: 630px !important; }
   #div-gpt-ad-1490604501599-11 * {
-    width: 630px !important; } }
+    width: 630px !important;
+    height: 221px !important; } }
 
 @media all and (min-width: 992px) and (max-width: 1199px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .md-smint {
