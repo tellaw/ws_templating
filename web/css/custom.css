@@ -1699,6 +1699,13 @@ i.fa.margin-right-5 {
     text-decoration: none!important;
 }
 
+.btn-u-green:hover,
+.btn-u-green:focus {
+    background-color: #fff !important;
+    color: #74b504 !important;
+    text-decoration: none!important;
+}
+
 .btn-u-blue:hover,
 .btn-u-blue:focus {
     background-color: #fff !important;
@@ -7068,4 +7075,9 @@ input#picture-input {
 }
 .skin-notheme strong {
     font-family: myriad-pro-bold;
+}
+
+#div-gpt-ad-1490604501599-11 {
+    padding:0 0 0 44px;
+    margin:0px;
 }

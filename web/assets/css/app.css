@@ -672,6 +672,7 @@ a.btn-u-xs {
 	background: #ec1625;
 	border: 1px solid #EC1625;
 }
+
 .btn-u.btn-u-red:hover,
 .btn-u.btn-u-red:focus,
 .btn-u.btn-u-red:active,
@@ -679,6 +680,12 @@ a.btn-u-xs {
 .open .dropdown-toggle.btn-u.btn-u-red {
 	background: #EC1625;
 }
+
+.btn-u.btn-u-green {
+	background: #74b504;
+	border: 1px solid #74b504;
+}
+
 .btn-u.btn-u-split-red.dropdown-toggle {
 	border-left: solid 1px #c0392b;
 }
