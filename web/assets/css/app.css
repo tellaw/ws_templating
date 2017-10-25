@@ -681,11 +681,6 @@ a.btn-u-xs {
 	background: #EC1625;
 }
 
-.btn-u.btn-u-green {
-	background: #74b504;
-	border: 1px solid #74b504;
-}
-
 .btn-u.btn-u-split-red.dropdown-toggle {
 	border-left: solid 1px #c0392b;
 }
@@ -719,8 +714,10 @@ a.btn-u-xs {
 }
 
 .btn-u.btn-u-green {
-	background: #2ecc71;
+	background: #74b504;
+	border: 1px solid #74b504;
 }
+
 .btn-u.btn-u-green:hover,
 .btn-u.btn-u-green:focus,
 .btn-u.btn-u-green:active,
