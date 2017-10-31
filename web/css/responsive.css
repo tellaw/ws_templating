@@ -1312,6 +1312,11 @@
 
 /* Medium and down */
 @media screen and (max-width: 991px) {
+  #div-gpt-ad-1490604501599-11 {
+    padding: 0 0 0 37px;
+    display: table-cell;
+    vertical-align: middle;
+    width: 630px !important; }
   .myti-info-compte .icone {
     display: none; }
   .myti-info-compte .text-ip {
