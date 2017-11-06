@@ -2250,7 +2250,7 @@
   .myti-bloc-actions-users form p {
     min-height: 35px !important; } }
 
-@media all and (min-width: 992px) and (max-width: 1199px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+@media all and (min-width: 992px) and (max-width: 1199px) {
   .md-smint {
     height: 48px; }
   .last-tab {

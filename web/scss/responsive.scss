@@ -3499,7 +3499,7 @@ $color-red : #EC1625 ;
   }
 }
 
-@media all and (min-width: 992px) and (max-width: 1199px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+@media all and (min-width: 992px) and (max-width: 1199px) {
   .md-smint {
     height: 48px;
   }
