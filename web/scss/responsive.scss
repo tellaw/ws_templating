@@ -3475,14 +3475,6 @@ $color-red : #EC1625 ;
   }
 }
 
-/* CSS for ie11 */
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .header-title {
-    width: 280px;
-  }
-}
-
 @media all and (max-width: 1199px) {
   .login-box-border {
     right:10%!important;
@@ -3499,7 +3491,27 @@ $color-red : #EC1625 ;
   }
 }
 
-@media all and (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1199px) {
+  #div-gpt-ad-1490604501599-11 {
+    padding:0 0 0 15px;
+    display: table-cell;
+    vertical-align: middle;
+    width: 630px!important;
+  }
+  #div-gpt-ad-1490604501599-11 * {
+    width: 630px!important;
+    height: 221px!important;
+  }
+}
+
+/* CSS for ie11 */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .header-title {
+    width: 280px;
+  }
+}
+
+@media all and (min-width: 992px) and (max-width: 1199px) and (-ms-high-contrast: none), (-ms-high-contrast: active){
   .md-smint {
     height: 48px;
   }
