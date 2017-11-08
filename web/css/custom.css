@@ -5460,11 +5460,14 @@ div.article_box div.formlegende span.formleg-def dt {
 }
 
 div.article_box div.formlegende dt {
-    padding: 0 0 0 15px;
+    padding: 0 5px 0 15px;
+    float: none;
+    text-align: left;
 }
 
 div.article_box div.formlegende span.formleg-def dd {
     display: table-cell;
+    padding: 0 0 0 5px;
 }
 
 .tabnote p {
