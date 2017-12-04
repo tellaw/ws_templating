@@ -3181,6 +3181,8 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color=#EC1625, Direction=NaN, St
     border: none;
     color: #697277;
     font-family:myriad-pro;
+    position: relative;
+    z-index: 1;
 }
 .myti-info-compte img {
     display: inline-block;
