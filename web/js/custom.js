@@ -1002,6 +1002,58 @@ $(document).ready(function () {
             }
         });
     };
+
+    // ADV functions
+    $("a.sendCampaign-popin").click(function() {
+
+        if( ! $("#myti-actions-services-popin").html() ) {
+            var ui =
+                '<div id="myti-actions-services-popin" role="dialog" style="display:none;z-index:1001;">'
+                + '<iframe frameborder="0" style="width:100%;height:98%;" src=""></iframe>'
+                + '</div>';
+            $("body").append(ui);
+        }
+
+        window.scrollTo(0,0);
+        $("#myti-actions-services-popin").dialog( {
+            modal: true,
+            title: $(this).attr("title"),
+            width: 800,
+            closeText: "X",
+            open: function(){
+                window.scrollTo(0,0);
+                $(".boxPub").each(function(){$(this).hide();});
+                $("#module_bottom").hide();
+                $(".banner").each(function(){$(this).hide();$("#header").css("margin-top", "100px");});
+            },
+            close: function(){
+                $(".boxPub").each(function(){$(this).show();});
+                $(".banner").each(function(){$(this).show();$("#header").css("margin-top", "0");});
+
+                $('div.ui-dialog').remove();
+                location.reload(true);
+
+            }
+        });
+
+        $("#myti-actions-services-popin").dialog("widget").attr("id","design-myti-actions-services-popin").css("position", "absolute");
+        $("#myti-actions-services-popin iframe").attr("src", $(this).attr("href"));
+        $("#myti-actions-services-popin").dialog("widget").css("top", "150px" );
+        $("#myti-actions-services-popin").css("height", "500px");
+
+        $("#design-myti-actions-services-popin").css("left", (($(window).width() - $("#design-myti-actions-services-popin").width()) / 2));
+        return false;
+    });
+
+    $("img.mode-list").click(function() {
+        $("#mode-list").show();
+        $("#mode-bloc").hide();
+    });
+
+    $("img.mode-bloc").click(function() {
+        $("#mode-bloc").show();
+        $("#mode-list").hide();
+    });
 });
 (function () {
     var v = document.getElementsByClassName("youtube-player");

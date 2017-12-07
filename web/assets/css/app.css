@@ -745,6 +745,7 @@ a.btn-u-xs {
 
 .btn-u.btn-u-default {
 	background: #95a5a6;
+	border: 1px solid #95a5a6;
 }
 .btn-u.btn-u-default:hover,
 .btn-u.btn-u-default:focus,
@@ -829,6 +830,7 @@ a.btn-u-xs {
 
 .btn-u.btn-u-dark {
 	background: #555;
+	border: 1px solid #555;
 }
 .btn-u.btn-u-dark:hover,
 .btn-u.btn-u-dark:focus,

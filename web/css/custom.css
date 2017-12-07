@@ -1199,6 +1199,11 @@ i.fa.margin-right-5 {
 .color-green-eti {
     color: #74b504 !important;
 }
+
+.color-orange-eti {
+    color: #f78a28 !important;
+}
+
 .es-titre {
     font-size: 40px;
 }
@@ -1710,6 +1715,22 @@ i.fa.margin-right-5 {
 .btn-u-blue:focus {
     background-color: #fff !important;
     color: #1b8bbb !important;
+}
+
+.btn-u-default:hover,
+.btn-u-default:focus {
+    background-color: #fff !important;
+    color: #95a5a6 !important;
+}
+
+.btn-u-dark:hover,
+.btn-u-dark:focus {
+    background-color: #fff !important;
+    color: #555 !important;
+}
+
+.btn-u-grey:hover {
+    background: #95a5a6;
 }
 
 #cat-btn:focus {
@@ -2380,10 +2401,6 @@ div[class^="element-wrapper-"] img {
 .btn-x.btn-u-red:hover {
     color: #EC1625;
     background: #fff;
-}
-
-.btn-u-grey:hover {
-    background: #95a5a6;
 }
 
 .btn-expend {
@@ -7101,4 +7118,50 @@ input#picture-input {
 }
 #corps-article .flou {
     display:block;
+}
+
+.tableSummary
+{
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid #EBEBEB;
+}
+
+.tableSummary tr
+{
+    background: #E4E4E4;
+    border-bottom: white 1px solid;
+    border-top: white 1px solid;
+}
+
+
+.tableSummary td
+{
+    padding: 5px;
+}
+
+.formSendCampaign p{
+    padding: 5px;
+}
+
+span#confirmation-ok{
+    cursor:pointer;
+}
+
+#confirmation-no{
+    cursor:pointer;
+}
+
+.myti-bloc-contenu-top h2{
+    width:99%;
+}
+
+.datePerso div select {
+    border: 1px solid #C2C2C2;
+    height:22px;
+    margin:3px
+}
+
+#form-send-campaign label {
+    width:90px;
 }

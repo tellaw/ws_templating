@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'DIN-Alternate-medium';
   src: url("../fonts/din_alternate_medium-webfont.eot");
@@ -1653,3 +1654,138 @@ blockquote {
 
 #presentation .note .date {
   font-family: myriad-pro-semi-bold; }
+
+.listing {
+  width: 100%; }
+  .listing .thDolist {
+    font-weight: bold;
+    padding: 5px; }
+  .listing tbody tr[class^="line"] {
+    letter-spacing: normal;
+    font-size: 14px; }
+    .listing tbody tr[class^="line"].trgreen {
+      color: green; }
+  .listing td {
+    word-break: break-word; }
+  .listing p, .listing a {
+    text-align: center;
+    /* centrage horizontal d'un élément en-ligne */ }
+  .listing img {
+    vertical-align: middle; }
+
+.line0 {
+  background: #E6E6E6; }
+
+.line1 {
+  background: #F1F1F1; }
+
+.button-export {
+  position: absolute;
+  top: 0;
+  right: 20px; }
+  .button-export .myti-buton-export {
+    background: none;
+    border: none;
+    text-decoration: underline;
+    width: auto !important; }
+
+#tweet-list h3 {
+  font-size: 14px;
+  letter-spacing: normal;
+  text-align: left; }
+  #tweet-list h3.top {
+    background: #a6a9af;
+    padding: 2px 0;
+    font-size: 12px;
+    color: #fff;
+    margin: 0;
+    letter-spacing: 1px; }
+    #tweet-list h3.top .border-right-dark {
+      border-right: 1px solid #94979e; }
+    #tweet-list h3.top .border-left-light {
+      border-left: 1px solid #dddee1; }
+
+#tweet-list .question-date-crea {
+  width: 75px;
+  display: block;
+  float: left;
+  padding: 5px 8px; }
+
+#tweet-list .question-date-fin {
+  width: 75px;
+  display: block;
+  float: left;
+  padding: 5px 8px; }
+
+#tweet-list .question-theme {
+  width: 220px;
+  display: block;
+  float: left;
+  padding: 5px 8px; }
+
+#tweet-list .question-titre {
+  width: 200px;
+  display: block;
+  float: left;
+  padding: 5px 8px; }
+
+#tweet-list .ui-accordion .ui-accordion-header, #tweet-list .ui-accordion .ui-state-hover {
+  border: none !important;
+  border-bottom: 1px #dddddd solid !important;
+  font-weight: normal;
+  color: #333;
+  margin: 0;
+  border-radius: 0px;
+  min-height: 40px; }
+
+#tweet-list .ui-accordion.ui-widget {
+  font-family: Arial, Lucida Grande, Lucida Sans, sans-serif; }
+
+#tweet-list .ui-accordion .ui-accordion-content {
+  border-left: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  margin: 0;
+  border-radius: 0px; }
+
+.box-pagination .pagination-actif {
+  padding: 5px 15px;
+  border: 1px solid #1B8BBB;
+  display: block;
+  color: #ffffff;
+  background: #1B8BBB;
+  text-align: center;
+  margin-left: -1px;
+  line-height: 1.42857143; }
+
+.box-pagination .pagination-inactif {
+  padding: 5px 15px;
+  border: 1px solid #dddddd;
+  display: block;
+  color: #777777;
+  background: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  margin-left: -1px;
+  line-height: 1.42857143;
+  width: auto; }
+  .box-pagination .pagination-inactif:hover {
+    color: #ffffff;
+    background: #7f8c8d;
+    border-color: #7f8c8d; }
+
+.box-pagination .pagination-actif-pointilles {
+  padding: 5px 10px;
+  border: 1px solid #dddddd;
+  display: block;
+  color: #777777;
+  background: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  margin-left: -1px;
+  line-height: 1.42857143;
+  width: auto; }
+  .box-pagination .pagination-actif-pointilles:hover {
+    color: #ffffff;
+    background: #7f8c8d;
+    border-color: #7f8c8d; }
