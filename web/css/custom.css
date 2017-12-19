@@ -1765,7 +1765,7 @@ i.fa.margin-right-5 {
     /*background-color: #EC1625!important;
     color: #fff !important;*/
     border-bottom:1px solid #EC1625;
-    color: #EC1625;
+    color: #EC1625!important;
 }
 
 .cat-btn:hover i {
