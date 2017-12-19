@@ -1686,17 +1686,6 @@ i.fa.margin-right-5 {
     color: #EC1625;
 }
 
-.cat-btn:hover {
-    /*background-color: #EC1625!important;
-    color: #fff !important;*/
-    border-bottom:1px solid #EC1625;
-    color: #EC1625;
-}
-
-.cat-btn:hover i {
-    color: #fff !important;
-}
-
 .btn-u-red:hover,
 .btn-u-red:focus {
     background-color: #fff !important;
@@ -1767,7 +1756,20 @@ i.fa.margin-right-5 {
     text-align: left;
     padding: 13px 0;
     font-family: myriad-pro-bold;
-    border:none!important;
+    border-top: none!important;
+    border-left: none!important;
+    border-right: none!important;
+}
+
+.cat-btn:hover {
+    /*background-color: #EC1625!important;
+    color: #fff !important;*/
+    border-bottom:1px solid #EC1625;
+    color: #EC1625;
+}
+
+.cat-btn:hover i {
+    color: #fff !important;
 }
 
 .inline-block {
