@@ -1767,6 +1767,7 @@ i.fa.margin-right-5 {
     text-align: left;
     padding: 13px 0;
     font-family: myriad-pro-bold;
+    border:none!important;
 }
 
 .inline-block {

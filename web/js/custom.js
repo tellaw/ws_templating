@@ -414,7 +414,7 @@ $(document).ready(function () {
         anchor = anchor.substring(anchor.indexOf("?"), anchor.length);
         var anchorFiche = anchor.substring(0, anchor.indexOf("_"));
         $("#" + anchor + "_link").click();
-        if (anchor != "documents" && anchor != "presentation" && anchor != "expert" && anchor != "" && anchor != "details" && anchor != "corps-article" && anchor != "pub" && anchorFiche != "corps-article") {
+        if (anchor != "documents" && anchor != "presentation" && anchor != "expert" && anchor != "" && anchor != "details" && anchor != "corps-article" && anchor != "pub" && anchorFiche != "corps-article" && anchor.indexOf('niv-') == -1 ) {
             $(".col-droite div.pub-bloc div.freezone").hide();
             $(".col-droite-2").hide();
             $(".barre-top").hide();
