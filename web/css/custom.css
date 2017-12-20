@@ -7168,3 +7168,12 @@ span#confirmation-ok{
 #form-send-campaign label {
     width:90px;
 }
+
+img.lazy-show {
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+img[data-src] {
+    opacity: 0;
+}
