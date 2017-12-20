@@ -7172,6 +7172,3 @@ span#confirmation-ok{
 img[data-src] {
     opacity: 0;
 }
-img.lazy-show {
-    opacity: 1;
-}
