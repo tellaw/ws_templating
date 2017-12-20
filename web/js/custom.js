@@ -1545,7 +1545,7 @@ function cartDownload() {
                     .attr('src', $(this).data('src'))
                     .removeClass('lazy')
                     .removeAttr('data-src')
-                    .fadeIn();
+                    .fadeIn("slow");
             }
         });
     }
