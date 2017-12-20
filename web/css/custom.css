@@ -7169,10 +7169,9 @@ span#confirmation-ok{
     width:90px;
 }
 
-img.lazy-show {
-    opacity: 1;
-}
-
 img[data-src] {
     opacity: 0;
+}
+img.lazy-show {
+    opacity: 1;
 }
