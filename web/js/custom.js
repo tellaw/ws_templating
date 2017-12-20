@@ -35,6 +35,12 @@ $(window).ready(function () {
 
 //gestion back des onglets page domaines/secteurs/offres
 $(document).ready(function () {
+    // lazy loading
+    $('img').each(function(){
+        $(this).addClass('lazy');
+    });
+    $(document).lazyload();
+
     // add a hash to the URL when the user clicks on a tab
     $('a[data-toggle="tab"]').on('click', function (e) {
         history.pushState(null, null, $(this).attr('href'));
@@ -1520,18 +1526,26 @@ function cartDownload() {
     return true;
 }
 
-function newsletterActionCheck(parent) {
-
-    if (jQuery(parent).prop("checked")) {
-        var mustCheck=true;
-    } else {
-        var mustCheck=false;
+//lazy loading
+(function($){
+    $.fn.lazyload = function(){
+        $(window).scroll(lazyload);
+        lazyload();
     }
 
-    jQuery('input[parent-checkbox='+parent.id+']').each(function(index, element) {
-        jQuery(element).attr("checked", mustCheck);
-        if (parent.id == "rootThemes") {
-            newsletterActionCheck(element);
-        }
-    });
-}
+    function lazyload(){
+        var winScrollTop = $(window).scrollTop();
+        var winHeight = $(window).height();
+
+        $('img.lazy').each(function(){
+            var imgOTop = $(this).offset().top;
+
+            if(imgOTop < (winHeight + winScrollTop)){
+                $(this)
+                    .attr('src', $(this).data('src'))
+                    .removeClass('lazy')
+                    .removeAttr('data-src');
+            }
+        });
+    }
+})(jQuery);
