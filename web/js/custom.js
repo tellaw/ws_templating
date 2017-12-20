@@ -1542,7 +1542,6 @@ function cartDownload() {
 
             if(imgOTop < (winHeight + winScrollTop)){
                 $(this)
-                    .fadeOut()
                     .attr('src', $(this).data('src'))
                     .removeClass('lazy')
                     .removeAttr('data-src')
