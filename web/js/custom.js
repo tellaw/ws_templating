@@ -39,6 +39,9 @@ $(document).ready(function () {
     $('img').each(function(){
         $(this).addClass('lazy');
     });
+    $('iframe').each(function(){
+        $(this).addClass('lazy');
+    });
     $(document).lazyload();
 
     // add a hash to the URL when the user clicks on a tab
@@ -1537,10 +1540,10 @@ function cartDownload() {
         var winScrollTop = $(window).scrollTop();
         var winHeight = $(window).height();
 
-        $('img.lazy').each(function(){
-            var imgOTop = $(this).offset().top;
+        $('.lazy').each(function(){
+            var elementOTop = $(this).offset().top;
 
-            if(imgOTop < (winHeight + winScrollTop)){
+            if(elementOTop < (winHeight + winScrollTop)){
                 $(this)
                     .attr('src', $(this).data('src'))
                     .addClass('lazy-show')
