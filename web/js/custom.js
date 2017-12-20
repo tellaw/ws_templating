@@ -1545,6 +1545,7 @@ function cartDownload() {
                     .attr('src', $(this).data('src'))
                     .addClass('lazy-show')
                     .removeClass('lazy')
+                    .removeAttr('data-src')
                     .fadeIn("slow");
             }
         });
