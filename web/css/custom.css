@@ -7168,7 +7168,3 @@ span#confirmation-ok{
 #form-send-campaign label {
     width:90px;
 }
-
-img[data-src] {
-    opacity: 0;
-}

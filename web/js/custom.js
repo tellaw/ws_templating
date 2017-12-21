@@ -36,13 +36,13 @@ $(window).ready(function () {
 //gestion back des onglets page domaines/secteurs/offres
 $(document).ready(function () {
     // lazy loading
-    $('img').each(function(){
+    /*$('img').each(function(){
         $(this).addClass('lazy');
     });
     $('iframe').each(function(){
         $(this).addClass('lazy');
     });
-    $(document).lazyload();
+    $(document).lazyload();*/
 
     // add a hash to the URL when the user clicks on a tab
     $('a[data-toggle="tab"]').on('click', function (e) {
