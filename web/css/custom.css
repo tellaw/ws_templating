@@ -3991,7 +3991,8 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color=#EC1625, Direction=NaN, St
 }
 
 #temoignages .testimonials .carousel-control.left {
-    left: -210px;
+    left: -220px;
+    top:12px;
 }
 
 #temoignages .testimonials .testimonial-info span {
@@ -4035,7 +4036,8 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color=#EC1625, Direction=NaN, St
 }
 
 #temoignages-2 .testimonials .carousel-control.left {
-    left: -210px;
+    left: -220px;
+    top:12px;
 }
 
 #temoignages-2 .carousel-arrow {
@@ -4048,7 +4050,8 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color=#EC1625, Direction=NaN, St
 }
 
 .testimonials .carousel-control.right {
-    right: -12px;
+    right: -16px;
+    top:12px;
 }
 
 .width-dt dt {
