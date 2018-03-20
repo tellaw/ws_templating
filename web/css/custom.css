@@ -7195,6 +7195,7 @@ span#confirmation-ok{
     background: url(../images/sprite_pictos_adv_users.png) transparent left 8px scroll no-repeat;
     vertical-align: middle;
     padding: 8px 0;
+    width:195px;
 }
 .myti-recherche-asso-resultat table tbody tr td.actions.enableline {
     background: url(../images/sprite_pictos_adv_users_enable.png) #EBEBEB left 8px scroll no-repeat;
