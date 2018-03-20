@@ -1521,13 +1521,14 @@ blockquote {
   #glossaire a:hover {
     color: #EC1625;
     text-decoration: underline; }
-    #glossaire a:hover:before {
-      content: ">";
-      position: absolute;
-      left: -16px;
-      text-decoration: none;
-      font-size: 12px;
-      top: -2px; }
+
+#glossaire h3 a:before {
+  content: ">";
+  position: absolute;
+  left: -16px;
+  text-decoration: none;
+  font-size: 12px;
+  top: -2px; }
 
 .dark-grey-title strong {
   color: #EC1625;
@@ -1657,6 +1658,8 @@ blockquote {
 
 .listing {
   width: 100%; }
+  .listing > tbody > tr > td {
+    padding: 5px; }
   .listing .thDolist {
     font-weight: bold;
     padding: 5px; }
@@ -1666,7 +1669,8 @@ blockquote {
     .listing tbody tr[class^="line"].trgreen {
       color: green; }
   .listing td {
-    word-break: break-word; }
+    word-break: break-word;
+    -ms-word-break: break-all; }
   .listing p, .listing a {
     text-align: center;
     /* centrage horizontal d'un élément en-ligne */ }
@@ -1789,3 +1793,6 @@ blockquote {
     color: #ffffff;
     background: #7f8c8d;
     border-color: #7f8c8d; }
+
+.box-pagination i.fa {
+  padding: 7px; }

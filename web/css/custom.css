@@ -7187,7 +7187,7 @@ span#confirmation-ok{
     color: green;
     font-size:14px;
 }
-.myti-recherche-asso-resultat table tr td.enableline {
+.myti-recherche-asso-resultat table tr .enableline {
     background: #EBEBEB;
     color: #c2010e;
 }
@@ -7207,7 +7207,7 @@ span#confirmation-ok{
     padding: 0;
 }
 .myti-recherche-asso-resultat table tbody tr td a {
-    color: green;
+    color: #4d5356;
 }
 .myti-recherche-asso-resultat table tbody tr.ACTIVE td,
 .myti-recherche-asso-resultat table tbody tr.ACTIVE td a {
