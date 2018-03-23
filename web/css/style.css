@@ -1670,7 +1670,11 @@ blockquote {
       color: green; }
   .listing td {
     word-break: break-word;
-    -ms-word-break: break-all; }
+    /* For Chrome */
+    -ms-word-break: break-all;
+    /* For IE */
+    word-break: break-all;
+    /* For Firefox */ }
   .listing p, .listing a {
     text-align: center;
     /* centrage horizontal d'un élément en-ligne */ }

@@ -2204,8 +2204,9 @@ blockquote {
     }
   }
   td {
-    word-break: break-word;
-    -ms-word-break: break-all;
+    word-break: break-word;/* For Chrome */
+    -ms-word-break: break-all;/* For IE */
+    word-break: break-all;/* For Firefox */
   }
   p, a  {
     text-align:center; /* centrage horizontal d'un élément en-ligne */
