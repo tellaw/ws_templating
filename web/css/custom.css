@@ -5384,6 +5384,7 @@ div.tableDiv {
     margin-bottom: 10px;
     border: 1px solid #ddd;
     margin: 0 25px;
+    height: auto!important;
 }
 
 div.tableDiv * {
