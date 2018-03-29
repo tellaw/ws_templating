@@ -6635,6 +6635,10 @@ form + a:hover {
     height: 2px;
     margin: 10px 0;
 }
+#error-page .listing a,
+#error-page .listing p {
+    text-align: left;
+}
 
 #container-nofloat {
     float: none;
