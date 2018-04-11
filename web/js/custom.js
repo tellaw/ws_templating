@@ -1529,6 +1529,268 @@ function cartDownload() {
     return true;
 }
 
+// Ce script permet de construire une arborescence (a niveaux quasi-illimites) de checkbox avec logique intuitive de coche/decoche.
+// Il prend en entree un tableau representant le (ou les) arbre(s) (voir ci-dessous).
+
+// var Itree = new Array(
+//		"check1,check2,check3,check4,check5,check6,check7,check8,check9,check10,check11,check12,check13,check14,check15,check16",
+//		"check2,check3,check4", "check5,check6",
+//		"check7,check8,check9,check10,check11",
+//		"check12,check13,check14,check15,check16");
+
+// Itree represente un arbre. Cet arbre est represente par un ensemble
+// d'elements.
+// Ici:
+// "check1,check2,check3" est un element.
+// "check3,check4,check5" est un autre element.
+
+// Chaque element se structure ainsi: Les noeuds sont separes par des virgules.
+// Le premier noeud correspond a un noeud quelconque de l'arbre.
+// Les noeud suivants correspondent a ses fils directs.
+
+// Exemple pour Itree:
+// "check1,check2,check3" : signifie que check1 est le pere direct de
+// check2,check3.
+// "check3,check4,check5" : signifie que check3 est le pere direct de
+// check4,check5.
+//
+// Les noms check1,check2 ... representent les ID des checkbox.
+
+// Attention: il faut veiller a ne pas mettre de cycle !
+// Exemple: ("check1,check2","check2,check1")
+
+// Exemple: On peut representer l'arbre :
+//
+// -- check1
+// --- check3
+// --- check2
+// ------ check4
+// ------ check5
+// Par
+// ("check1,check2,check3","check2,check4,check5");
+
+// Fonctions de gestion d'un arbre
+
+// ======================= Obtenir les fils directs =================
+// ==================================================================
+
+function getDirectChilds(graph, node) {
+
+    var childs = new Array();
+
+    for (i = 0; i < graph.length; i++) {
+
+        var tabNodes = graph[i].split(",");
+
+        if (node == tabNodes[0]) {
+
+            for (j = 1; j < tabNodes.length; j++) {
+                childs.push(tabNodes[j]);
+            }
+        } // Il est possible de mettre un "return childs" ici.
+        // (Les autres noeuds ne seront pas traites)
+
+    }
+
+    return childs;
+}
+
+// ============= Obtenir tous les fils ( recursivement ) ============
+// ==================================================================
+
+function getChilds(graph, node) {
+
+    var childs = getDirectChilds(graph, node);
+    var allChilds = new Array();
+
+    if (childs.length > 0) {
+        for ( var i = 0; i < childs.length; i++) {
+            allChilds = allChilds.concat(getChilds(graph, childs[i]));
+        }
+    }
+
+    return childs.concat(allChilds);
+}
+
+// ================= Obtenir le parent d'un noeud ===================
+// ==================================================================
+
+function getDirectParent(graph, node) {
+
+    for ( var i = 0; i < graph.length; i++) {
+        var tabNodes = graph[i].split(",");
+
+        for ( var j = 1; j < tabNodes.length; j++) {
+            if (tabNodes[j] == node)
+                return tabNodes[0];
+        }
+    }
+    return "";
+}
+
+// ============= Obtenir tous les parents (recursivement) ===========
+// ==================================================================
+
+function getParents(graph, node) {
+
+    var parent = new Array();
+    var node = getDirectParent(graph, node);
+
+    if (node != "") {
+        parent.push(node);
+        parent = parent.concat(getParents(graph, node));
+    }
+
+    return parent;
+}
+
+// Fonctions pour les checkbox
+
+// ==== Coche le noeud parent si tous les fils sont coches ==========
+// ==================================================================
+
+function doCheckParent(graph, nodeId) {
+
+    if (nodeId != "") {
+        var childs = getDirectChilds(graph, nodeId);
+
+        for ( var i = 0; i < childs.length; i++) {
+            if (document.getElementById(childs[i]).checked == false)
+                return;
+        }
+
+        document.getElementById(nodeId).checked = true;
+        doCheckParent(graph, getDirectParent(graph, nodeId));
+    }
+}
+
+// =============== Coche tous les fils du noeud =====================
+// ==================================================================
+
+function doCheck(graph, nodeId) {
+
+    var childs = getChilds(graph, nodeId);
+    var parent = getDirectParent(graph, nodeId);
+
+    for ( var i = 0; i < childs.length; i++) {
+        document.getElementById(childs[i]).checked = true;
+    }
+
+    doCheckParent(graph, parent);
+}
+
+// ======== Decoche tous les fils et tout les noeuds parents ========
+// ==================================================================
+
+function doUncheck(graph, nodeId) {
+
+    var childs = getChilds(graph, nodeId);
+    var parents = getParents(graph, nodeId);
+
+    for ( var i = 0; i < childs.length; i++) {
+        document.getElementById(childs[i]).checked = false;
+    }
+
+    for ( var i = 0; i < parents.length; i++) {
+        document.getElementById(parents[i]).checked = false;
+    }
+
+}
+
+// ====== Fonction principale: coche si pas coche sinon decoche =====
+// ==================================================================
+
+function doEvent(graph, nodeId) {
+
+    node = document.getElementById(nodeId);
+
+    if (node != null) {
+        if (node.checked)
+            doCheck(graph, nodeId);
+        else
+            doUncheck(graph, nodeId);
+    }
+}
+
+function action_check(id) {
+
+    if (document.getElementById(id).checked == false) {
+        document.getElementById(id).checked = true;
+    } else {
+        document.getElementById(id).checked = false;
+    }
+
+    doEvent(Itree, id);
+}
+
+function validateCheckbox(id) {
+    document.getElementById(id).checked = true;
+}
+
+// ######## pour changer le plus des infos coll
+function changesrc(toggle, webRoot) {
+
+    if (document.getElementById('img_' + toggle).className == 'plus') {
+        document.getElementById('div_' + toggle).className = 'infcoll2-bleu';
+        document.getElementById('img_' + toggle).className = 'moins'
+        document.getElementById('img_' + toggle).src = webRoot + '/images/bt-moins.gif';
+    } else {
+        document.getElementById('div_' + toggle).className = 'infcoll2';
+        document.getElementById('img_' + toggle).className = 'plus'
+        document.getElementById('img_' + toggle).src = webRoot + '/images/bt-plus2.gif';
+    }
+}
+
+function checkEmail(frm, alertMessage) {
+    email = frm.email.value;
+
+    var indexOfAt = email.indexOf("@", 1);
+    var indexOfPoint = email.indexOf(".", indexOfAt + 1);
+
+    if ((email.length > 5) && (indexOfAt > -1) && (indexOfPoint > 1)) {
+        return true;
+    } else {
+        alert(alertMessage);
+        return false;
+    }
+}
+
+function newsletterActionCheck(element) {
+    var jElem = jQuery(element);
+    var checkboxType = jElem.attr('checkbox-type');
+
+    switch (checkboxType) {
+        case "ALL":
+        case "THEME":
+            // Coche/Décoche tous les fils
+            jElem.parents('div[class^="infcoll"]:first').find('div[id^="toggle_"]').find('input[type="checkbox"]').prop('checked', element.checked);
+            break;
+        case "TREATY":
+            // Je coche/décoche tous les fils
+            jElem.parents('div[class^="infcoll"]:first').find('div[id^="toggle_"]').find('input[type="checkbox"]').prop('checked', element.checked);
+
+            var parentCheckbox = jElem.parents('div[class^="infcoll"]:first').parents('div[class^="infcoll"]:first').children('div.left').find('input[type="checkbox"]');
+            if (parentCheckbox.size() > 0 && parentCheckbox.attr('checkbox-type') === 'TREATY') {
+                // On est sur une base doc placée sous un pack
+                if (element.checked) {
+                    // Si on coche, on s'assure que le parent est coché
+                    parentCheckbox.prop('checked', true);
+                } else {
+                    // Si on décoche, on regarde si le pack doit rester coché
+                    var children = parentCheckbox.parents('div[class^="infcoll"]:first').find('div[id^="toggle_"]').find('input[type="checkbox"]:checked');
+                    if (children.size() === 0) {
+                        parentCheckbox.prop('checked', false);
+                    }
+                }
+            }
+            break;
+        case "ACTU":
+            // Coche/Décoche tous les fils
+            jElem.parents('div').next("#check_div1").find('input[type="checkbox"]').prop('checked', element.checked);
+            break;
+    }
+}
+
 //lazy loading
 (function($){
     $.fn.lazyload = function(){
