@@ -7286,3 +7286,11 @@ span#confirmation-ok{
 .ng-scope {
     height: 60px;
 }
+.module-interception .btn-txt {
+    width: 208px;
+    margin: 0px auto;
+    display: block;
+}
+.module-interception .btn-txt a {
+    text-decoration: none;
+}
