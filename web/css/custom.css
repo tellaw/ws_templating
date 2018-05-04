@@ -7197,13 +7197,13 @@ span#confirmation-ok{
     color: #c2010e;
 }
 .myti-recherche-asso-resultat table tbody tr td.actions {
-    background: url(../images/sprite_pictos_adv_users.png) transparent left 8px scroll no-repeat;
+    background: url(../images/sprite_pictos_adv_users.png) transparent left center scroll no-repeat;
     vertical-align: middle;
     padding: 8px 0;
     width:195px;
 }
 .myti-recherche-asso-resultat table tbody tr td.actions.enableline {
-    background: url(../images/sprite_pictos_adv_users_enable.png) #EBEBEB left 8px scroll no-repeat;
+    background: url(../images/sprite_pictos_adv_users_enable.png) #EBEBEB left center scroll no-repeat;
     vertical-align: middle;
 }
 .myti-recherche-asso-resultat table tbody tr td.actions a {
