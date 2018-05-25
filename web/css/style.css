@@ -1259,6 +1259,15 @@ a div h3 {
   bottom: 20px; }
   .dossier .acceuil-title * {
     color: #ffffff !important; }
+.dossier.partage {
+    position: absolute;
+    bottom: 20px;
+    left: calc(63% + 35px);
+    padding: 16px 17px 14px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 0 auto;
+    width: 190px;
+    border-bottom: 5px solid #ec1526;}
 
 .dossier .box-colors > div > a {
   position: relative; }
