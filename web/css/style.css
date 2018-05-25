@@ -1259,7 +1259,7 @@ a div h3 {
   bottom: 20px; }
   .dossier .acceuil-title * {
     color: #ffffff !important; }
-.dossier.partage {
+.dossier .partage {
     position: absolute;
     bottom: 20px;
     left: calc(63% + 35px);
