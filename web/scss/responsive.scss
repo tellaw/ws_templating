@@ -1604,11 +1604,17 @@ $color-red : #EC1625 ;
   }
   .dossier {
     .acceuil-title {
-      width: 85%!important;
-      bottom: 6px!important;
+      width: 81% !important;
+      bottom: 59px !important;
       h1 {
         font-size:19px !important
       }
+    }
+    .partage {
+      position: relative;
+      bottom: 0;
+      left: 0;
+      background: none;
     }
   }
   .row-3-blocks {
