@@ -1075,7 +1075,8 @@
     position: relative;
     bottom: 0;
     left: 0;
-    background: none; }
+    background: none;
+    border:none; }
   .row-3-blocks > div {
     min-height: 100%; } }
 
