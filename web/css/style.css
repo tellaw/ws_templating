@@ -1268,6 +1268,9 @@ a div h3 {
     margin: 0 auto;
     width: 190px;
     border-bottom: 5px solid #ec1526;}
+.dossier .partage img {
+  width:29px;
+  height:29px;}
 
 .dossier .box-colors > div > a {
   position: relative; }
