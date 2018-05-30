@@ -1251,7 +1251,6 @@ a div h3 {
 .dossier img:first-child {
   width: 100%;
   height: auto; }
-
 .dossier .acceuil-title {
   background-color: #EC1625 !important;
   width: 63%;
@@ -1271,7 +1270,6 @@ a div h3 {
 .dossier .partage img {
   width:29px;
   height:29px;}
-
 .dossier .box-colors > div > a {
   position: relative; }
   .dossier .box-colors > div > a:hover::before {
