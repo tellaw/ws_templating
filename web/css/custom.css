@@ -4982,11 +4982,19 @@ form textarea {
 
 form input[type="checkbox"],
 form input[type="checkbox"] + label,
+form input[type="checkbox"] + .formError + label,
 form .pasword-remember,
 form input[type="radio"],
 form .client > label {
     width: auto;
     display: inline;
+}
+
+form input[type="checkbox"] + .formError {
+    position: absolute!important;
+    top: auto!important;
+    bottom: 0!important;
+    left: 0!important;
 }
 
 form input[type="checkbox"] {
