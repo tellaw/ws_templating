@@ -1015,6 +1015,11 @@ $(document).ready(function () {
         $(".tab-content-domaine .col-droite-2").appendTo(".tab-content-domaine");
     };
 
+    if(window.matchMedia("(max-width:991px)").matches) {
+        $(".tab-content-rubrique .col-droite-3").appendTo(".tab-content-rubrique");
+        $(".tab-content-domaine .col-droite-2").appendTo(".tab-content-domaine");
+    }
+
     // ADV functions
     $("a.sendCampaign-popin").click(function() {
 
