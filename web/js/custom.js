@@ -1012,7 +1012,7 @@ $(document).ready(function () {
         });
 
         $(".tab-content-rubrique .col-droite-3").appendTo(".tab-content-rubrique");
-        $(".tab-content-domaine .col-droite-2").appendTo(".tab-content-rubrique");
+        $(".tab-content-domaine .col-droite-2").appendTo(".tab-content-domaine");
     };
 
     // ADV functions
