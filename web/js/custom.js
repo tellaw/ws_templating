@@ -198,11 +198,6 @@ $(document).ready(function () {
             });
         }
         $("#button-menu-header i").css({color: "#697277"});
-
-        if ($(window).width() < 992) {
-            $(".tab-content-rubrique .col-droite-3").appendTo($(".tab-content-rubrique"));
-            $(".tab-content-domaine .col-droite-2").appendTo($(".tab-content-domaine"));
-        };
     });
 
     $( ".block-link-hover a.ad" ).hover(
@@ -757,7 +752,17 @@ $(document).ready(function () {
             stickyRight = ($(window).width() - 1140) / 2 - 55;
             $('#sticky-menu-document').css("left", stickyRight).show();
         }
+
+        if ($(window).width() < 992) {
+            $(".tab-content-rubrique .col-droite-3").appendTo($(".tab-content-rubrique"));
+            $(".tab-content-domaine .col-droite-2").appendTo($(".tab-content-domaine"));
+        };
     });
+
+    if ($(window).width() < 992) {
+        $(".tab-content-rubrique .col-droite-3").appendTo($(".tab-content-rubrique"));
+        $(".tab-content-domaine .col-droite-2").appendTo($(".tab-content-domaine"));
+    };
 
     /** Highlight thématique **/
     // On récupère l'URL de la thématique principale
