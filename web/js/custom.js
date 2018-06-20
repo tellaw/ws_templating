@@ -198,6 +198,11 @@ $(document).ready(function () {
             });
         }
         $("#button-menu-header i").css({color: "#697277"});
+
+        if ($(window).width() < 992) {
+            $(".tab-content-rubrique .col-droite-3").appendTo($(".tab-content-rubrique"));
+            $(".tab-content-domaine .col-droite-2").appendTo($(".tab-content-domaine"));
+        };
     });
 
     $( ".block-link-hover a.ad" ).hover(
@@ -1010,12 +1015,6 @@ $(document).ready(function () {
                 $(this).addClass("accordion-toggle");
             }
         });
-    };
-
-    if ($(window).width() < 992) {
-        console.log("je suis dedans");
-        $(".tab-content-rubrique .col-droite-3").appendTo($(".tab-content-rubrique"));
-        $(".tab-content-domaine .col-droite-2").appendTo($(".tab-content-domaine"));
     };
 
     // ADV functions
