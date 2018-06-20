@@ -1013,6 +1013,7 @@ $(document).ready(function () {
     };
 
     if ($(window).width() < 992) {
+        console.log("je suis dedans");
         $(".tab-content-rubrique .col-droite-3").appendTo($(".tab-content-rubrique"));
         $(".tab-content-domaine .col-droite-2").appendTo($(".tab-content-domaine"));
     };
