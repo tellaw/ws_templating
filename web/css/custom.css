@@ -2430,6 +2430,11 @@ div[class^="element-wrapper-"] img {
     margin-right: auto;
     z-index: 1;
     position: relative;
+    padding: 15px 0;
+}
+
+.img-offre {
+    padding: 15px;
 }
 
 .cellule {
