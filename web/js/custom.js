@@ -1073,10 +1073,8 @@ $(document).ready(function () {
     });
 
     /* Sur le meme sujet */
-    if($(".bricobar").length) {
-        BricoCss();
-        $( window ).resize(function(){ BricoCss(); });
-    }
+    BricoCss();
+    $( window ).resize(function(){ BricoCss(); });
 
 });
 (function () {
