@@ -113,8 +113,39 @@ a.color-red-eti:hover {
     cursor: default;
 }
 
-#meme-sujet .content-article > div {
+#meme-sujet {
+    background-color:#dbdbdb;
+    position:relative;
+}
+#meme-sujet .content-article > div:first-child {
     margin: 10px 0 0 0;
+}
+#meme-sujet .tags a {
+    background-color: #697277;
+    color: white;
+    display: inline-block;
+    margin: 0 10px 10px 0;
+}
+#meme-sujet .tags a span {
+    padding: 5px 10px;
+    display: inline-block;
+}
+#meme-sujet ul li {
+    height:22px;
+}
+#meme-sujet ul li a {
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+}
+
+#meme-sujet .bricobar {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    background-color:#dbdbdb;
 }
 
 dl {
