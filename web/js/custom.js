@@ -1073,8 +1073,8 @@ $(document).ready(function () {
     });
 
     /* Sur le meme sujet */
-    BricoCss();
-    $( window ).resize(function(){ BricoCss(); });
+    $(".bricobar").css({"height" : $("#meme-sujet").height(), "width" : $(window).width(), "left" : ((($(window).width() - $(".container").width()) / 2 ) * (-1))});
+    $( window ).resize(function(){ $(".bricobar").css({"height" : $("#meme-sujet").height(), "width" : $(window).width(), "left" : ((($(window).width() - $(".container").width()) / 2 ) * (-1))}); });
 
 });
 (function () {
@@ -1098,10 +1098,6 @@ function refresh(owner) {
     // Peu importe les parametres c'est uniquement pour que ca rafraichisse a
     // tous les coups et que ca ne reaffiche pas l'image en cache.
     owner.setAttribute("src", owner.getAttribute("src") + "?action=refresh");
-}
-
-function BricoCss(){
-    $(".bricobar").css({"height" : $("#meme-sujet").height(), "width" : $(window).width(), "left" : ((($(window).width() - $(".container").width()) / 2 ) * (-1))});
 }
 
 function labnolThumb(id) {
