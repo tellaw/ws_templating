@@ -22,6 +22,8 @@ $(window).resize(function () {
             $("#navbar-x").addClass("in");
         }
     }, false);
+
+    $(".bricobar").css({"height" : $("#meme-sujet").height(), "width" : $(window).width(), "left" : ((($(window).width() - $(".container").width()) / 2 ) * (-1))});
 });
 $(window).ready(function () {
     if ($("#sub-menu").hasClass("fxd")) {
@@ -31,6 +33,7 @@ $(window).ready(function () {
         $("#ti_actu_submenu_container").show();
     }
     //    else if (!$("#sub-menu").hasClass("fxd")) {}
+
 });
 
 //gestion back des onglets page domaines/secteurs/offres
@@ -1071,11 +1074,6 @@ $(document).ready(function () {
         $("#mode-bloc").show();
         $("#mode-list").hide();
     });
-
-    /* Sur le meme sujet */
-    $(".bricobar").css({"height" : $("#meme-sujet").height(), "width" : $(window).width(), "left" : ((($(window).width() - $(".container").width()) / 2 ) * (-1))});
-    $( window ).resize(function(){ $(".bricobar").css({"height" : $("#meme-sujet").height(), "width" : $(window).width(), "left" : ((($(window).width() - $(".container").width()) / 2 ) * (-1))}); });
-
 });
 (function () {
     var v = document.getElementsByClassName("youtube-player");
