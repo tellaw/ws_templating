@@ -126,6 +126,9 @@ a.color-red-eti:hover {
     display: inline-block;
     margin: 0 10px 10px 0;
 }
+#meme-sujet .tags a:hover {
+    background-color: #EC1625;
+}
 #meme-sujet .tags a span {
     padding: 5px 10px;
     display: inline-block;
