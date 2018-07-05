@@ -1418,7 +1418,7 @@ label.text-hover:hover {
   position: relative; }
   .encart-top p {
     background: url("../images/visuel-livresblancs.jpg") no-repeat center center transparent;
-    padding: 96px 0; }
+    padding: 78px 0; }
     .encart-top p > span {
       background: #fff;
       padding: 13px 32px;
@@ -1435,7 +1435,7 @@ label.text-hover:hover {
   position: relative; }
   .encart-top-evenement p {
     background: url("../images/visuel-webinar.jpg") no-repeat center center transparent;
-    padding: 98px 0;
+    padding: 78px 0;
     margin-top: 0; }
     .encart-top-evenement p > span {
       background: #fff;
@@ -1514,6 +1514,11 @@ blockquote {
   .single-evenement .youtube-container iframe {
     width: 100% !important;
     height: 250px !important; }
+
+.single-evenement form select,
+.single-evenement form input,
+.single-evenement form textarea {
+  width: 100%; }
 
 .border-hover {
   display: none; }
