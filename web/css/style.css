@@ -1517,7 +1517,7 @@ blockquote {
     height: 250px !important; }
 
 .single-evenement form select,
-.single-evenement form input,
+.single-evenement form input[type="text"],
 .single-evenement form textarea {
   width: 100%; }
 

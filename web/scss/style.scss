@@ -1999,7 +1999,7 @@ blockquote {
   }
   form {
     select,
-    input,
+    input[type="text"],
     textarea {
       width: 100%;
     }
