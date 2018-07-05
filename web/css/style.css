@@ -1439,7 +1439,8 @@ label.text-hover:hover {
     margin-top: 0; }
     .encart-top-evenement p > span {
       background: #fff;
-      padding: 13px 32px; }
+      padding: 18px 32px;
+      display: inline-block; }
 
 .encart-top-account {
   position: relative; }
