@@ -1080,7 +1080,9 @@
     background: none;
     border: none; }
   .row-3-blocks > div {
-    min-height: 100%; } }
+    min-height: 100%; }
+  .single-evenement .formulaire-di {
+    border-left: 0px solid #c6c6c6; } }
 
 /* Tablette portrait and up */
 @media screen and (min-width: 768px) {

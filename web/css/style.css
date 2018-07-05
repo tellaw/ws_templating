@@ -1521,6 +1521,9 @@ blockquote {
 .single-evenement form textarea {
   width: 100%; }
 
+.single-evenement .formulaire-di {
+  border-left: 1px solid #c6c6c6; }
+
 .border-hover {
   display: none; }
 
