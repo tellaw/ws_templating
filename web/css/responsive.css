@@ -1080,9 +1080,7 @@
     background: none;
     border: none; }
   .row-3-blocks > div {
-    min-height: 100%; }
-  .single-evenement .formulaire-di {
-    border-left: 0px solid #c6c6c6; } }
+    min-height: 100%; } }
 
 /* Tablette portrait and up */
 @media screen and (min-width: 768px) {
@@ -1322,6 +1320,8 @@
 
 /* Medium and down */
 @media screen and (max-width: 991px) {
+  .single-evenement .formulaire-di {
+    border-left: 0px solid #c6c6c6; }
   #div-gpt-ad-1490604501599-11 {
     padding: 0 0 0 37px;
     display: table-cell;

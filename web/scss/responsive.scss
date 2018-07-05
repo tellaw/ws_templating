@@ -1626,11 +1626,6 @@ $color-red : #EC1625 ;
       min-height: 100%;
     }
   }
-  .single-evenement {
-    .formulaire-di {
-      border-left: 0px solid #c6c6c6;
-    }
-  }
 }
 
 /* Tablette portrait and up */
@@ -2010,6 +2005,11 @@ $color-red : #EC1625 ;
 
 /* Medium and down */
 @media screen and (max-width: 991px) {
+  .single-evenement {
+    .formulaire-di {
+      border-left: 0px solid #c6c6c6;
+    }
+  }
   #div-gpt-ad-1490604501599-11 {
     padding:0 0 0 37px;
     display: table-cell;
