@@ -120,7 +120,8 @@ a.color-red-eti:hover {
 #meme-sujet .content-article > div:first-child {
     margin: 10px 0 0 0;
 }
-#meme-sujet .tags a {
+#meme-sujet .tags a,
+#meme-sujet .tags>span {
     background-color: #697277;
     color: white;
     display: inline-block;
@@ -129,7 +130,8 @@ a.color-red-eti:hover {
 #meme-sujet .tags a:hover {
     background-color: #EC1625;
 }
-#meme-sujet .tags a span {
+#meme-sujet .tags a span,
+#meme-sujet .tags>span {
     padding: 5px 10px;
     display: inline-block;
 }
