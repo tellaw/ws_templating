@@ -3278,6 +3278,9 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color=#EC1625, Direction=NaN, St
     font-size: 12px;
 }
 
+#di-conf-popin #form-container {
+    width:100%;
+}
 #di-conf-popin .champs-requis {
     display: inline-block;
     margin: 0;
