@@ -3269,17 +3269,13 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color=#EC1625, Direction=NaN, St
 }
 
 #di-conf-popin .formError {
-    position: absolute!important;
     left:0!important;
-    width:auto!important;
-    top: 26px !important;
 }
 #di-conf-popin .formErrorContent {
     position: relative;
     display: block;
     color: #d11111;
     font-size: 12px;
-    margin-left: 140px;
 }
 
 #di-conf-popin .champs-requis {
