@@ -2168,6 +2168,11 @@ blockquote {
     vertical-align: bottom;
   }
 }
+#dictionary_definition {
+  a {
+    color:$color-red;
+  }
+}
 #header-rubrique {
   >div.row {
     min-height:120px;

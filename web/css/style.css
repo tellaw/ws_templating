@@ -1650,6 +1650,9 @@ blockquote {
   #dictionary_search_box .input-group-btn {
     vertical-align: bottom; }
 
+#dictionary_definition a {
+  color: #EC1625; }
+
 #header-rubrique > div.row {
   min-height: 120px; }
 
