@@ -1652,6 +1652,8 @@ blockquote {
 
 #dictionary_definition a {
   color: #EC1625; }
+  #dictionary_definition a:hover {
+    text-decoration: underline; }
 
 #header-rubrique > div.row {
   min-height: 120px; }

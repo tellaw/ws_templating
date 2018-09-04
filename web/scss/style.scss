@@ -2171,6 +2171,9 @@ blockquote {
 #dictionary_definition {
   a {
     color:$color-red;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 #header-rubrique {
