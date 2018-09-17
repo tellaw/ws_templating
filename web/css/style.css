@@ -1834,15 +1834,15 @@ blockquote {
 .addeventatc.btn-u-red {
   font-family: Avenir_85_Heavy, "Arial Black", Serif;
   padding: 11px 28px;
-  font-size: 18px;
-  background: #005ea8;
-  border: 1px solid #005ea8;
+  font-size: 13px;
+  background: #EC1625;
+  border: 1px solid #EC1625;
   color: #ffffff !important;
   display: inline-block;
   box-shadow: none !important;
   border-radius: 0px; }
   .addeventatc.btn-u-red:hover {
-    color: #005ea8 !important;
+    color: #EC1625 !important;
     text-decoration: none;
     background: #ffffff;
     font-size: 18px; }
