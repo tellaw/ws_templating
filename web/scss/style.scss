@@ -2388,3 +2388,26 @@ blockquote {
     color: #EC1625;
   }
 }
+
+.addeventatc{
+  &.btn-u-red {
+    font-family: Avenir_85_Heavy, "Arial Black", Serif;
+    padding: 11px 28px;
+    font-size: 18px;
+    background: #005ea8;
+    border:1px solid #005ea8;
+    color: #ffffff!important;
+    display: inline-block;
+    box-shadow:none!important;
+    border-radius: 0px;
+    &:hover {
+      color: #005ea8!important;
+      text-decoration: none;
+      background: #ffffff;
+      font-size: 18px;
+    }
+  }
+  .addeventatc_icon {
+    display: none;
+  }
+}
