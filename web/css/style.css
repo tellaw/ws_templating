@@ -1832,15 +1832,18 @@ blockquote {
   color: #EC1625; }
 
 .addeventatc.btn-u-red {
-  font-family: Avenir_85_Heavy, "Arial Black", Serif;
-  padding: 11px 28px;
+  font-family: "myriad-pro", sans-serif;
+  padding: 13px 12px;
   font-size: 13px;
   background: #EC1625;
   border: 1px solid #EC1625;
   color: #ffffff !important;
   display: inline-block;
   box-shadow: none !important;
-  border-radius: 0px; }
+  border-radius: 0px;
+  text-transform: uppercase;
+  font-weight: 400;
+  -webkit-font-smoothing: auto !important; }
   .addeventatc.btn-u-red:hover {
     color: #EC1625 !important;
     text-decoration: none;
