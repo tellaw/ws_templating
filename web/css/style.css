@@ -119,14 +119,6 @@ img.zoom {
   filter: progid:DXImageTransform.Microsoft.Shadow(color=#EC1625, Direction=45, Strength=0);
   margin: 0 auto; }
 
-div.border-red {
-  position: absolute;
-  top: -5px;
-  left: 40px;
-  height: 119px;
-  width: 88px;
-  z-index: 1; }
-
 .picto-article-temoin {
   background: url("../images/picto-article-temoin.png") no-repeat center left transparent;
   height: 52px;
@@ -1149,6 +1141,14 @@ div[id^="background_fiche"] .fiche_step h3 {
 .old-article img {
   height: 250px;
   width: 300px; }
+
+.cadre-downloads div.border-red {
+  position: absolute;
+  top: -5px;
+  left: 40px;
+  height: 119px;
+  width: 88px;
+  z-index: 1; }
 
 .cadre-downloads-large .cadre-downloads {
   padding: 20px 0 0 0; }
