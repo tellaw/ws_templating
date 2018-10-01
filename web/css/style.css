@@ -1142,7 +1142,7 @@ div[id^="background_fiche"] .fiche_step h3 {
   height: 250px;
   width: 300px; }
 
-.cadre-downloads div.border-red {
+.cadre-downloads div.border-red, .cadre-downloads-large div.border-red {
   position: absolute;
   top: -5px;
   left: 40px;
