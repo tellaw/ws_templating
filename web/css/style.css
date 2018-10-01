@@ -1844,7 +1844,7 @@ blockquote {
   text-transform: uppercase;
   font-weight: 400;
   -webkit-font-smoothing: auto !important; }
-  .addeventatc.btn-u-red:hover {
+  .addeventatc.btn-u-red:hover, .addeventatc.btn-u-red:focus {
     color: #EC1625 !important;
     text-decoration: none;
     background: #ffffff;

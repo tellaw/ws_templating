@@ -2404,7 +2404,7 @@ blockquote {
     text-transform: uppercase;
     font-weight:400;
     -webkit-font-smoothing: auto!important;
-    &:hover {
+    &:hover, &:focus {
       color: #EC1625!important;
       text-decoration: none;
       background: #ffffff;
