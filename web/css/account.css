@@ -122,7 +122,7 @@ p {
     .block-link-hover a:hover div i, .block-link-hover a:hover div p, .block-link-hover a:hover div span {
       color: #ffffff; }
 
-.services.block-link-hover a div {
+.services.block-link-hover a div, .services.block-link-hover .link div {
   width: 70px;
   margin: 0 auto;
   height: 58px;
