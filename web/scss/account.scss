@@ -74,7 +74,6 @@ p {
     }
   }
 }
-
 .profil {
   a {
     div {
@@ -82,7 +81,6 @@ p {
     }
   }
 }
-
 .rattacher {
   #secretCode, #code {
     width: 80%;
@@ -101,11 +99,9 @@ p {
     top: -1px;
   }
 }
-
 .pastille {
   background: #EC1625;
 }
-
 .downloads {
   .badge {
     &.one-digit{
@@ -116,7 +112,6 @@ p {
     }
   }
 }
-
 .flou {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+100 */
   background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
@@ -560,9 +555,6 @@ table {
   overflow: hidden;
   padding:5px 0 20px 0;
   font-size:12px;
-  &.form-success.vert {
-    //color : vert;
-  }
   b {
     font-weight: normal;
   }
@@ -673,7 +665,7 @@ input.btn-u.btn-u-blue.letter-spacing-75.btn-carre {
     width: 100%;
     text-align: center;
     display: block;
-    margin: 20px 0 10px;
+    margin: 20px 0 10px 0;
   }
   .button-sup-photo {
     width: auto;
