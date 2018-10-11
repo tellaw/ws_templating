@@ -57,12 +57,12 @@ p {
     width: 86%;
     float: right; }
 
-.services a, .services .link {
+.services a, .services .autre-service {
   display: block;
   min-height: 115px;
   width: 94px;
   margin: 0 auto; }
-  .services a p, .services .link p {
+  .services a p, .services .autre-service p {
     width: 48px;
     margin: 0 auto; }
 
@@ -122,7 +122,7 @@ p {
     .block-link-hover a:hover div i, .block-link-hover a:hover div p, .block-link-hover a:hover div span {
       color: #ffffff; }
 
-.services.block-link-hover a div, .services.block-link-hover .link div {
+.services.block-link-hover a div, .services.block-link-hover .autre-service div {
   width: 70px;
   margin: 0 auto;
   height: 58px;
